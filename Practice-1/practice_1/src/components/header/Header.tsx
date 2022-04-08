@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import Navigation from "../navigation/Menu";
 import { MenuType } from "../../types/menu";
 import SectionTitle from "../title/SectionTitle";
