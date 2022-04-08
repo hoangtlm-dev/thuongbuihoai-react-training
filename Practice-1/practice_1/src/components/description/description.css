@@ -1,0 +1,10 @@
+.description {
+  font-size: 16px;
+  font-family: "SourceSansPro";
+  line-height: 24px;
+  /* width: 540px; */
+  text-align: center;
+  /* padding: 30px 250px; */
+  color: var(--color-heading);
+  /* background-color: var(--color-border); */
+}
