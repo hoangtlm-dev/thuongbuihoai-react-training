@@ -1,0 +1,13 @@
+.card__unit {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  line-height: 13px;
+  font-family: "Montserrat";
+}
+
+.card__price {
+  font-size: 36px;
+  line-height: 44px;
+  font-family: "Montserrat";
+}
