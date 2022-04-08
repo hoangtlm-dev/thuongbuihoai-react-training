@@ -1,0 +1,33 @@
+@import url(../../../icon/fontawesome-free-6.0.0-beta3-web/css/all.css);
+.nav > .nav__icon {
+  display: block;
+  margin-top: 40px;
+  color: var(--color-heading);
+}
+.nav__menu {
+  display: none;
+}
+.nav__title {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+  .nav__list {
+    list-style-type: none;
+    display: flex;
+    margin: 40px 30px 0 0;
+    font-weight: 700;
+    font-family: "SourceSansPro";
+    color: var(--color-heading);
+  }
+  .nav__menu {
+    display: flex;
+  }
+  .nav__menu-item {
+    margin-left: 30px;
+  }
+  .nav > .nav__icon {
+    display: none;
+  }
+}
