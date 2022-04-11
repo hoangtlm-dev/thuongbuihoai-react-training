@@ -1,6 +1,7 @@
 import React from "react";
 import MENU_LIST from "../constants/menu";
 import Navigation from "../components/navigation/Menu";
+import menuBar from "../assets/images/icons/menuBar.svg"
 
 export default {
   /* 👇 The title prop is optional.
@@ -12,5 +13,5 @@ export default {
 };
 
 export function Default() {
-  return <Navigation menuList={MENU_LIST} />;
+  return <Navigation menuList={MENU_LIST} menuBar={menuBar} />;
 }
