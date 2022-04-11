@@ -21,3 +21,41 @@ export function CardFreemium() {
       label="GET STARTED"
     />
 }
+
+export function CardStartUp() {
+  return <Card className="startup"
+      title="STARTUP"
+      unit="$"
+      price={9}
+      value1={CARD_STARTUP.value1}
+      value2={CARD_STARTUP.value2}
+      value3={CARD_STARTUP.value3}
+      label="GET STARTED"
+    />
+}
+
+export function CardBusiness() {
+  return <Card className="business"
+      title="BUSINESS"
+      unit="$"
+      price={29}
+      value1={CARD_BUSINESS.value1}
+      value2={CARD_BUSINESS.value2}
+      value3={CARD_BUSINESS.value3}
+      value4={CARD_BUSINESS.value4}
+      label="GET STARTED"
+    />
+}
+
+export function CardEnterprise() {
+  return <Card className="enterprise"
+      title="ENTERPRISE"
+      unit="$"
+      price={49}
+      value1={CARD_ENTERPRISE.value1}
+      value2={CARD_ENTERPRISE.value2}
+      value3={CARD_ENTERPRISE.value3}
+      value4={CARD_ENTERPRISE.value4}
+      label="GET STARTED"
+    />
+}
