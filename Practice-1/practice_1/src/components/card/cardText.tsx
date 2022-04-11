@@ -1,13 +1,19 @@
 import React from "react";
-import { CardProps } from "../../types/card";
 import "./cardText.css";
+
+interface CardTextProps {
+  value1: string;
+  value2: string;
+  value3: string;
+  value4?: string
+}
 
 export default function CardText({
   value1,
   value2,
   value3,
   value4,
-}: CardProps): JSX.Element {
+}: CardTextProps): JSX.Element {
   return (
     <div className="card__content">
       <p className="card__text">{value1}</p>
