@@ -3,6 +3,14 @@
   font-weight: bold;
   text-transform: uppercase;
   font-size: 12px;
-  line-height: 27px;
-  /* color: var(--color-heading) */
+  line-height: 35px;
+  color: var(--color-heading)
+}
+
+@media screen and (min-width: 1200px) {
+  .card__name {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 1px;
+  }
 }
