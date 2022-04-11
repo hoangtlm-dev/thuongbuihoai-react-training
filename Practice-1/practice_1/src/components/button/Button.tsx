@@ -15,8 +15,7 @@ export default function Button({
   return (
     <button
       type="button"
-      className={`btn btn-${type} ${className}`}
-    >
+      className={`btn btn-${type} ${className}`}>
       {children}
     </button>
   );
