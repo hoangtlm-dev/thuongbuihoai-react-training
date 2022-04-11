@@ -1,0 +1,7 @@
+.plan {
+  background-color: var(--background-color);
+}
+
+.plan__title {
+  text-align: center;
+}
