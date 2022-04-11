@@ -1,5 +1,5 @@
 import React from "react";
-import CardText from "../components/card/cardText";
+import CardText from "../components/card/CardText";
 import { CARD_FREEMIUM, CARD_STARTUP, CARD_BUSINESS, CARD_ENTERPRISE } from "../constants/card";
 
 export default {
