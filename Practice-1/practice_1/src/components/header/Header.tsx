@@ -12,6 +12,7 @@ export interface HeaderProps {
   children3: string;
   MAIN_TEXT: string;
   menuList: MenuType[]
+  menuBar: string;
 }
 
 export default function Header({
@@ -20,22 +21,27 @@ export default function Header({
   children3,
   MAIN_TEXT,
   menuList,
+  menuBar
 }: HeaderProps): JSX.Element {
   return (
     <header className="header">
-      <div className="container">
+      <div className="header__menu">
         <SectionTitle className="nav__title">
           <span>{children1}</span>
         </SectionTitle>
-        <div className="header__content">
-          <SectionTitle className="main__title">
-            <span>{children2}</span>
-          </SectionTitle>
-          <Description className="description">{MAIN_TEXT}</Description>
-          <Button type="secondary">{children3}</Button>
+        <Navigation menuList={menuList} menuBar={menuBar}></Navigation>
+      </div>
+      <div className="container">
+        <div className="header__info">
+          <div className="header__content">
+            <SectionTitle className="main__title">
+              <span>{children2}</span>
+            </SectionTitle>
+            <Description className="description">{MAIN_TEXT}</Description>
+            <Button type="primary">{children3}</Button>
+          </div>
         </div>
       </div>
-      <Navigation menuList={menuList} />
     </header>
   );
 }

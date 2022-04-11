@@ -1,15 +1,39 @@
 .header {
-  padding: 24px 15px;
-  display: flex;
-  justify-content: space-between;
   background: url(../../assets/images/backgrounds/banner.png) no-repeat;
   background-size: cover;
-  padding-bottom: 10%;
+  background-position: 85%;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__info {
+  display: flex;
+  justify-content: center;
 }
 
 .header__content {
-  padding: 0 210px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-bottom: 110px;
+  width: 190px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    justify-content: space-between;
+    background-size: cover;
+  }
+
+  .header__content {
+    width: 347px;
+    margin-bottom: 173px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__content {
+    width: 520px;
+  }
 }
