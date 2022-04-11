@@ -1,0 +1,10 @@
+.nav__bar {
+  display: block;
+  padding: 24px 15px 0 0;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__bar {
+    display: none;
+  }
+}
