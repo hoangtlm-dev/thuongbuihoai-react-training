@@ -11,18 +11,18 @@ export default {
 };
 
 function Primary() {
-  return <Button type="primary">TAKE A TOUR</Button>;
+  return <Button type="light">TAKE A TOUR</Button>;
 }
 
 function Secondary() {
-  return <Button type="secondary">EXPLORE</Button>;
+  return <Button type="primary">EXPLORE</Button>;
 }
 
 const Hover = () => <Button type = "hover btn__hover">GET STARTED</Button>
 Hover.parameters = { pseudo: { hover: true } }
 
 function Third() {
-  return <Button type="third">GET STARTED</Button>;
+  return <Button type="outline">GET STARTED</Button>;
 }
 
 export { Primary, Secondary, Hover, Third }
