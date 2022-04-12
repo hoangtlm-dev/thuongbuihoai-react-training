@@ -30,8 +30,26 @@
   padding: 25px 0 15px;
 }
 
-.section-title--plan__title {
+.section-title--plan__title,
+.section-title--feature-heading__title {
   text-align: center;
+}
+
+.section-title--feature__text {
+  font-size: 11px;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-title--feature__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  font-family: "SourceSansPro";
 }
 
 @media screen and (min-width: 768px) {
@@ -47,9 +65,19 @@
     padding: 35px 30px;
   }
 
-  .section-title--plan__title {
+  .section-title--plan__title,
+  .section-title--feature-heading__title {
     font-size: 32px;
     line-height: 40px;
+  }
+
+  .section-title--feature-heading__title {
+    padding: 40px 0 15px;
+  }
+
+  .section-title--feature__text {
+    font-size: 12px;
+    line-height: 24px;
   }
 }
 
@@ -70,5 +98,21 @@
     font-size: 44px;
     line-height: 48px;
     padding: 60px 0;
+  }
+
+  .section-title--feature-heading__title {
+    font-size: 44px;
+    line-height: 48px;
+    padding: 40px 0 20px;
+  }
+
+  .section-title--feature__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .section-title--feature__title {
+    font-size: 16px;
+    line-height: 30px;
   }
 }
