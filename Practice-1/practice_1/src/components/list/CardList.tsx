@@ -1,6 +1,6 @@
 import React from "react";
 import { CardProps } from "../../types/card";
-import Card from "../card/Card";
+import Card from "../cards/card/Card";
 import "./cardList.css"
 
 interface RenderCard {

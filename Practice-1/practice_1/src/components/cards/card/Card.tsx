@@ -1,10 +1,10 @@
 import React from "react";
-import CardTitle from "../title/CardTitle";
-import { CardPrice } from "./CardPrice";
-import CardText from "./CardText";
-import Button from "../button/Button";
+import CardTitle from "../../title/CardTitle";
+import { CardPrice } from "../cardPrice/CardPrice";
+import CardText from "../cardText/CardText";
+import Button from "../../button/Button";
 import "./card.css"
-import { CardProps } from "../../types/card";
+import { CardProps } from "../../../types/card";
 
 export default function Card({
   className,

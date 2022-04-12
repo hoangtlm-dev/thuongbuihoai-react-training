@@ -16,22 +16,22 @@
 }
 
 .card__info--freemium {
-  background: url(../../assets/images/freemium.png) no-repeat center;
+  background: url(../../../assets/images/freemium.png) no-repeat center;
   background-size: cover;
 }
 
 .card__info--startup {
-  background: url(../../assets/images/startup.png) no-repeat top;
+  background: url(../../../assets/images/startup.png) no-repeat top;
   background-size: cover;
 }
 
 .card__info--business {
-  background: url(../../assets/images/business.png) no-repeat top;
+  background: url(../../../assets/images/business.png) no-repeat top;
   background-size: cover;
 }
 
 .card__info--enterprise {
-  background: url(../../assets/images/enterprise.png) no-repeat top;
+  background: url(../../../assets/images/enterprise.png) no-repeat top;
   background-size: cover;
 }
 
