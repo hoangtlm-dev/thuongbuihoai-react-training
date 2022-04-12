@@ -1,4 +1,4 @@
-.description {
+.description--main {
   font-size: 11px;
   line-height: 16px;
   color: var(--color-heading);
@@ -7,11 +7,29 @@
   align-items: center;
 }
 
+.description--responsive,
+.description--diamond,
+.description--layers {
+  padding-top: 8px;
+  max-width: 190px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 16px;
+  font-family: "SourceSansPro";
+}
+
 @media screen and (min-width: 768px) {
   .description {
     font-size: 11px;
     line-height: 16px;
     padding: 17px 0 22px;
+  }
+
+  .description--responsive,
+  .description--diamond,
+  .description--layers {
+    padding-top: 20px;
+    max-width: 220.00px;
   }
 }
 
@@ -20,5 +38,15 @@
     font-size: 16px;
     line-height: 24px;
     padding-top: 30px;
+  }
+
+  .description--responsive,
+  .description--diamond,
+  .description--layers {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px 0 30px;
+    max-width: 270px;
+    padding: 0;
   }
 }
