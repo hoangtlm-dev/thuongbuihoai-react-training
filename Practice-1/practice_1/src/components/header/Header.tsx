@@ -37,7 +37,7 @@ export default function Header({
             <SectionTitle className="main__title">
               <span>{children2}</span>
             </SectionTitle>
-            <Description className="description">{MAIN_TEXT}</Description>
+            <Description className="main">{MAIN_TEXT}</Description>
             <Button type="primary">{children3}</Button>
           </div>
         </div>
