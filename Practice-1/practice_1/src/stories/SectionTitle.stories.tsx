@@ -13,7 +13,7 @@ export default {
 export function NamePage() {
   return (
     <SectionTitle className="nav__title">
-      <span>HOFMANN</span>
+      <p>HOFMANN</p>
     </SectionTitle>
   );
 }
@@ -21,7 +21,7 @@ export function NamePage() {
 export function MainTitle() {
   return (
     <SectionTitle className="main__title">
-      <span>What Makes A Hotel Boutique</span>
+      <p>What Makes A Hotel Boutique</p>
     </SectionTitle>
   );
 }
@@ -29,7 +29,7 @@ export function MainTitle() {
 export function PlanTitle() {
   return (
     <SectionTitle className="plan__title">
-      <span>Subscribing Plans</span>
+      <p>Subscribing Plans</p>
     </SectionTitle>
   );
 }
@@ -37,7 +37,7 @@ export function PlanTitle() {
 export function FeatureTitle() {
   return (
     <SectionTitle className="feature-heading__title">
-      <span>Feature</span>
+      <p>Feature</p>
     </SectionTitle>
   );
 }
@@ -45,7 +45,7 @@ export function FeatureTitle() {
 export function FeatureText() {
   return (
     <SectionTitle className="feature__text">
-      <span>We're taking it to the next level</span>
+      <p>We're taking it to the next level</p>
     </SectionTitle>
   );
 }
@@ -53,7 +53,7 @@ export function FeatureText() {
 export function FeatureResponsive() {
   return (
     <SectionTitle className="feature__title">
-      <span>Responsive layout</span>
+      <p>Responsive layout</p>
     </SectionTitle>
   );
 }
@@ -61,7 +61,7 @@ export function FeatureResponsive() {
 export function FeatureDiamond() {
   return (
     <SectionTitle className="feature__title">
-      <span>Pixel perfect</span>
+      <p>Pixel perfect</p>
     </SectionTitle>
   );
 }
@@ -69,7 +69,7 @@ export function FeatureDiamond() {
 export function FeatureLayers() {
   return (
     <SectionTitle className="feature__title">
-      <span>Organized layers</span>
+      <p>Organized layers</p>
     </SectionTitle>
   );
 }
@@ -77,7 +77,15 @@ export function FeatureLayers() {
 export function Results() {
   return (
     <SectionTitle className="results__title">
-      <span>Stunning Results</span>
+      <p>Stunning Results</p>
+    </SectionTitle>
+  );
+}
+
+export function ResultsText() {
+  return (
+    <SectionTitle className="results__text">
+      <p>Just look to the statistics we have generate the past year.</p>
     </SectionTitle>
   );
 }
@@ -85,7 +93,7 @@ export function Results() {
 export function AccountTitle() {
   return (
     <SectionTitle className="account__heading">
-      <span>Create An Account</span>
+      <p>Create An Account</p>
     </SectionTitle>
   );
 }

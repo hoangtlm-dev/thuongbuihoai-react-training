@@ -1,5 +1,5 @@
 import React from "react";
-import { CardPrice } from "../components/card/CardPrice";
+import { CardPrice } from "../components/cards/cardPrice/CardPrice";
 
 export default {
   /* 👇 The title prop is optional.

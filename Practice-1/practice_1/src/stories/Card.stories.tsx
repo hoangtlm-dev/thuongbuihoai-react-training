@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../components/card/Card";
+import Card from "../components/cards/card/Card";
 import { CARD_FREEMIUM, CARD_STARTUP, CARD_BUSINESS, CARD_ENTERPRISE } from "../constants/card";
 export default {
   /* 👇 The title prop is optional.
