@@ -1,5 +1,5 @@
 import React from "react";
-import CardList from "../components/card/CardList";
+import CardList from "../components/list/CardList";
 import { CARD_LIST } from "../constants/card";
 export default {
   /* 👇 The title prop is optional.
