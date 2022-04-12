@@ -1,0 +1,61 @@
+.feature__img {
+  padding: 0 15px;
+}
+
+.feature__heading {
+  padding: 30px 0;
+}
+
+.feature__img--desktop > img {
+  width: 290px;
+  height: 168.32px;
+}
+
+@media screen and (min-width: 768px) {
+  .feature__img {
+    padding-bottom: 10px;
+    background: url(../../../assets/images/mac_tablet.png) no-repeat bottom right;
+  }
+
+  .feature__img--desktop > img {
+    display: none;
+  }
+
+  .feature__heading {
+    padding: 28px 0 0;
+  }
+
+  .feature__list {
+    margin: 50px 0 0 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature {
+    display: flex;
+  }
+
+  .feature__heading {
+    padding: 35px 0;
+  }
+
+  .feature__img {
+    background: none;
+    position: relative;
+    z-index: 5;
+  }
+
+  .feature__img--desktop > img {
+    position: absolute;
+    display: block;
+    z-index: 10;
+    right: 72px;
+    right: 72px;
+    width: 770px;
+    height: 500px;
+  }
+
+  .feature__list {
+    margin: 30px 0 0 10px;
+  }
+}
