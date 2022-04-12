@@ -34,10 +34,42 @@ export function PlanTitle() {
   );
 }
 
-export function FeatureTile() {
+export function FeatureTitle() {
   return (
     <SectionTitle className="feature-heading__title">
       <span>Feature</span>
+    </SectionTitle>
+  );
+}
+
+export function FeatureText() {
+  return (
+    <SectionTitle className="feature__text">
+      <span>We're taking it to the next level</span>
+    </SectionTitle>
+  );
+}
+
+export function FeatureResponsive() {
+  return (
+    <SectionTitle className="feature__title">
+      <span>Responsive layout</span>
+    </SectionTitle>
+  );
+}
+
+export function FeatureDiamond() {
+  return (
+    <SectionTitle className="feature__title">
+      <span>Pixel perfect</span>
+    </SectionTitle>
+  );
+}
+
+export function FeatureLayers() {
+  return (
+    <SectionTitle className="feature__title">
+      <span>Organized layers</span>
     </SectionTitle>
   );
 }
