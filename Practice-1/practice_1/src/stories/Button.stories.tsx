@@ -10,19 +10,19 @@ export default {
   component: Button,
 };
 
-function Primary() {
+function Light() {
   return <Button type="light">TAKE A TOUR</Button>;
 }
 
-function Secondary() {
+function Primary() {
   return <Button type="primary">EXPLORE</Button>;
 }
 
 const Hover = () => <Button type = "hover btn__hover">GET STARTED</Button>
 Hover.parameters = { pseudo: { hover: true } }
 
-function Third() {
+function Outline() {
   return <Button type="outline">GET STARTED</Button>;
 }
 
-export { Primary, Secondary, Hover, Third }
+export { Light, Primary, Hover , Outline }
