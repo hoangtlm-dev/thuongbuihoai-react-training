@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/header/Header";
 import MENU_LIST from "../constants/menu";
-import { MAIN_TEXT } from "./Description.stories";
+import { MAIN_TEXT } from "../constants/feature";
 import menuBar from "../assets/images/icons/menuBar.svg"
 
 export default {
