@@ -1,6 +1,6 @@
 import React from "react";
 import { CardProps } from "../../../types/card";
-import CardList from "../../card/CardList";
+import CardList from "../../list/CardList";
 import SectionTitle from "../../title/SectionTitle";
 import "./plan.css"
 
