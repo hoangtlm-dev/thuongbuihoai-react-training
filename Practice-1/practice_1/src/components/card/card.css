@@ -64,6 +64,7 @@
 @media screen and (min-width: 1200px) {
   .card {
     width: 262px;
+    margin: 0;
   }
 
   .card:hover {
