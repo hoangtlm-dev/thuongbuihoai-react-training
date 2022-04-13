@@ -37,7 +37,7 @@ export function PlanTitle() {
 export function FeatureTitle() {
   return (
     <SectionTitle className="feature-heading__title">
-      <p>Feature</p>
+      <p>Features</p>
     </SectionTitle>
   );
 }
@@ -82,10 +82,26 @@ export function Results() {
   );
 }
 
-export function ResultsText() {
+export function TotalConversion() {
   return (
-    <SectionTitle className="results__text">
-      <p>Just look to the statistics we have generate the past year.</p>
+    <SectionTitle className="circle__title">
+      <p>Total conversion</p>
+    </SectionTitle>
+  );
+}
+
+export function FreeDownloads() {
+  return (
+    <SectionTitle className="circle__title">
+      <p>Free downloads</p>
+    </SectionTitle>
+  );
+}
+
+export function UniqueVisitors() {
+  return (
+    <SectionTitle className="circle__title">
+      <p>Unique visitors</p>
     </SectionTitle>
   );
 }
