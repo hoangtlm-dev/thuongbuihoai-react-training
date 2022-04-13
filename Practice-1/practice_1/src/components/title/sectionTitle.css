@@ -52,6 +52,23 @@
   font-family: "SourceSansPro";
 }
 
+.section-title--results__title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+}
+
+.section-title--circle__title {
+  font-family: "SourceSansPro";
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.1px;
+  padding: 18px 0 0;
+}
+
 @media screen and (min-width: 768px) {
   .section-title--main__title {
     padding-top: 123px;
@@ -78,6 +95,11 @@
   .section-title--feature__text {
     font-size: 12px;
     line-height: 24px;
+  }
+
+  .section-title--results__title {
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 
@@ -113,6 +135,16 @@
 
   .section-title--feature__title {
     font-size: 16px;
+    line-height: 30px;
+  }
+
+  .section-title--results__title {
+    font-size: 44px;
+    line-height: 48px;
+  }
+
+  .section-title--circle__title {
+    font-size: 18px;
     line-height: 30px;
   }
 }
