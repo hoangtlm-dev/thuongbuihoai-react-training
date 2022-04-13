@@ -2,6 +2,7 @@ import React from "react";
 import { Description } from "../components/description/Description";
 import { MAIN_TEXT } from "../constants/feature";
 import { FEATURE_RESPONSIVE, FEATURE_DIAMOND, FEATURE_LAYERS } from "../constants/feature";
+import { RESULT_FREE, RESULT_TEXT, RESULT_TOTAL, RESULT_UNIQUE } from "../constants/result";
 
 export default {
   /* 👇 The title prop is optional.
@@ -33,5 +34,29 @@ export function Diamond() {
 export function Layers() {
   return (
     <Description className="layers">{FEATURE_LAYERS}</Description>
+  );
+}
+
+export function ResultsText() {
+  return (
+    <Description className="text">{RESULT_TEXT}</Description>
+  );
+}
+
+export function Total() {
+  return (
+    <Description className="content">{RESULT_TOTAL}</Description>
+  );
+}
+
+export function Free() {
+  return (
+    <Description className="content">{RESULT_FREE}</Description>
+  );
+}
+
+export function Unique() {
+  return (
+    <Description className="content">{RESULT_UNIQUE}</Description>
   );
 }
