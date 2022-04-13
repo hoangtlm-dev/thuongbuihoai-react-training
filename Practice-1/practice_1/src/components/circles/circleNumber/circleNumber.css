@@ -1,0 +1,29 @@
+.circle__number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 5;
+}
+
+.circle__report {
+  font-size: 32px; 
+  line-height: 22px;
+  font-family: "Montserrat";
+}
+
+.circle__report > span {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .circle__report {
+    font-size: 48px;
+    line-height: 42px;
+    letter-spacing: -1.6px;
+  }
+
+  .circle__report > span {
+    font-size: 24px;
+  }
+}
