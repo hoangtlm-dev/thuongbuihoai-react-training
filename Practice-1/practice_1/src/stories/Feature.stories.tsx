@@ -14,7 +14,7 @@ export default {
 
 export function Default() {
   return <Feature
-    headingTitle = "Feature"
+    headingTitle = "Features"
     text = "We're taking it to the next level"
     list={FEATURE}
     imageDesktop = {imageDesktop} 
