@@ -46,9 +46,23 @@
   box-sizing: border-box;
 }
 
+.btn-signUp {
+  padding: 9px 12px;
+  background: var(--master-color);
+  min-width: 140px;
+}
+
 @media screen and (min-width: 768px) {
   .btn-primary {
     padding: 12px 44px;
+  }
+
+  .btn-outline {
+    padding: 9px 20px;
+  }
+
+  .btn-signUp {
+    padding: 13px 12px;
   }
 }
 
@@ -76,5 +90,11 @@
 
   .btn-outline:hover {
     background: var(--master-color);
+  }
+
+  .btn-signUp {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 14px 51px;
   }
 }
