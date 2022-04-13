@@ -34,8 +34,17 @@
   font-family: "SourceSansPro";
 }
 
+.description--signup {
+  font-size: 13.5px;
+  line-height: 22.5px;
+  letter-spacing: 1.4px;
+  color: var(--master-color);
+  text-transform: uppercase;
+  font-family: "SourceSansPro";
+}
+
 @media screen and (min-width: 768px) {
-  .description {
+  .description--main {
     font-size: 11px;
     line-height: 16px;
     padding: 17px 0 22px;
@@ -54,7 +63,8 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .description {
+  .description--main,
+  .description--text {
     font-size: 16px;
     line-height: 24px;
     padding-top: 30px;
@@ -74,5 +84,10 @@
     font-size: 16px;
     line-height: 24px;
     padding: 20px 0 60px;
+  }
+
+  .description--signup {
+    font-size: 18px;
+    line-height: 27px;
   }
 }
