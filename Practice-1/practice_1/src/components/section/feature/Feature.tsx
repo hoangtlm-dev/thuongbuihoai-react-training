@@ -1,7 +1,7 @@
 import React from "react";
 import { FeatureListProps } from "../../../types/feature";
 import Icon from "../../icon/Icon";
-import FeatureList from "../../list/FeatureList";
+import FeatureList from "../../list/featureList/FeatureList";
 import SectionTitle from "../../title/SectionTitle";
 import "./feature.css"
 
@@ -26,7 +26,7 @@ export default function Feature({
           <SectionTitle className = "feature__text"><span>{text}</span></SectionTitle>
         </div>
         <div className="feature">
-        <div className = "feature__list">
+          <div className = "feature__list">
             <FeatureList featureList={list}></FeatureList>
           </div>
           <figure className = "feature__img--desktop">
