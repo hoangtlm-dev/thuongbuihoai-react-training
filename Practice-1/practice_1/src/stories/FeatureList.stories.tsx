@@ -1,5 +1,5 @@
 import React from "react";
-import FeatureList from "../components/list/FeatureList";
+import FeatureList from "../components/list/featureList/FeatureList";
 import { FEATURE } from "../constants/feature";
 
 export default {
