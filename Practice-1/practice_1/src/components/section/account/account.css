@@ -1,0 +1,19 @@
+.account {
+  background: url(../../../assets//images/backgrounds/mountain.png) no-repeat center center;
+  background-size: cover;
+  padding-bottom: 7%;
+}
+
+.account > .container {
+  padding: 0 0 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .account {
+    padding-bottom: 0;
+  }
+}
