@@ -13,7 +13,7 @@
 
 @media screen and (min-width: 768px) {
   .feature__img {
-    padding-bottom: 10px;
+    padding-bottom: 80px;
     background: url(../../../assets/images/mac_tablet.png) no-repeat bottom right;
   }
 

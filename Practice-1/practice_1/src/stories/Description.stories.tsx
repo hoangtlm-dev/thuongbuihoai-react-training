@@ -60,3 +60,9 @@ export function Unique() {
     <Description className="content">{RESULT_UNIQUE}</Description>
   );
 }
+
+export function SignUp() {
+  return (
+    <Description className="signUp">Sign Up</Description>
+  );
+}

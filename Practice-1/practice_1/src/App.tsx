@@ -8,6 +8,8 @@ import Feature from "./components/section/feature/Feature";
 import imageDesktop from "./assets/images/computer.png";
 import Result from "./components/section/result/Result";
 import { RESULT, RESULT_TEXT } from "./constants/result";
+import INPUT_LIST from "./constants/input";
+import Account from "./components/section/account/Account";
 
 
 function App(): JSX.Element {
@@ -21,8 +23,8 @@ function App(): JSX.Element {
     />
     <Plan planTitle={"Subscribing Plans"} cardList={CARD_LIST} />
     <Feature headingTitle = "Features" text = "We're taking it to the next level" list={FEATURE} imageDesktop = {imageDesktop} />
-    <Result title="Stunning Results" text={RESULT_TEXT} list={RESULT}
-  />
+    <Result title="Stunning Results" text={RESULT_TEXT} list={RESULT} />
+    <Account list={INPUT_LIST} />;
     </>
   )
 }

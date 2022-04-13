@@ -11,18 +11,22 @@ export default {
 };
 
 function Light() {
-  return <Button type="light">TAKE A TOUR</Button>;
+  return <Button className="light">Take a tour</Button>;
 }
 
 function Primary() {
-  return <Button type="primary">EXPLORE</Button>;
+  return <Button className="primary">Explore</Button>;
 }
 
-const Hover = () => <Button type = "hover btn__hover">GET STARTED</Button>
+const Hover = () => <Button className = "hover btn__hover">Get started</Button>
 Hover.parameters = { pseudo: { hover: true } }
 
 function Outline() {
-  return <Button type="outline">GET STARTED</Button>;
+  return <Button className="outline">Get started</Button>;
 }
 
-export { Light, Primary, Hover , Outline }
+function SignUp() {
+  return <Button className="signUp">Sign up</Button>;
+}
+
+export { Light, Primary, Hover , Outline, SignUp }

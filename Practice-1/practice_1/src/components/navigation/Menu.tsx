@@ -19,7 +19,7 @@ export default function Navigation({ menuList, menuBar }: NavigationProps): JSX.
     <Bar logo={menuBar}></Bar>
       <div className="nav__menu">
         <ul className="nav__list">{renderMenuList(menuList)}</ul>
-        <Button type="light">TAKE A TOUR</Button>
+        <Button className="light">TAKE A TOUR</Button>
       </div>
     </nav>
   );
