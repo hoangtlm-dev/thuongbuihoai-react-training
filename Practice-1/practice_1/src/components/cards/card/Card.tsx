@@ -25,7 +25,7 @@ export default function Card({
       </div>
       <div className="card__description">
         <CardText value1={value1} value2={value2} value3={value3} value4={value4}></CardText>
-        <Button type="outline">{label}</Button>
+        <Button className="outline">{label}</Button>
       </div>
     </div>
   );
