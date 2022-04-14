@@ -29,4 +29,8 @@ function SignUp() {
   return <Button className="signUp">Sign up</Button>;
 }
 
-export { Light, Primary, Hover , Outline, SignUp }
+function Subscribe() {
+  return <Button className="dark">Subscribe</Button>;
+}
+
+export { Light, Primary, Hover , Outline, SignUp, Subscribe }
