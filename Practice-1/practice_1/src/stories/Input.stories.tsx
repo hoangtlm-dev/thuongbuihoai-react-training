@@ -27,3 +27,9 @@ export function ConfirmPassword() {
     <Input className="info" type="password" placeholder="Confirm password" />
   );
 }
+
+export function Contact() {
+  return (
+    <Input className="contact" type="email" placeholder="Enter Email" />
+  );
+}
