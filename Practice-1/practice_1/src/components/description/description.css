@@ -43,6 +43,14 @@
   font-family: "SourceSansPro";
 }
 
+.description--footer {
+  opacity: 0.5;
+  padding: 10px 22px;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "SourceSansPro";
+}
+
 @media screen and (min-width: 768px) {
   .description--main {
     font-size: 11px;
@@ -59,6 +67,11 @@
 
   .description--content {
     padding: 8px 40px 27px;
+  }
+
+  .description--footer {
+    text-align: start;
+    padding: 5px 0 20px 90px;
   }
 }
 
@@ -89,5 +102,12 @@
   .description--signup {
     font-size: 18px;
     line-height: 27px;
+  }
+
+  .description--footer {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: start;
+    padding: 5px 0 20px 190px;
   }
 }
