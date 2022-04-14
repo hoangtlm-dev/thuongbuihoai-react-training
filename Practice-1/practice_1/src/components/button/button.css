@@ -52,6 +52,16 @@
   min-width: 140px;
 }
 
+.btn-dark {
+  background: var(--background-form-color);
+  font-size: 10px;
+  line-height: 13px;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 25px;
+  color: var(--background-color);
+}
+
 @media screen and (min-width: 768px) {
   .btn-primary {
     padding: 12px 44px;
@@ -63,6 +73,10 @@
 
   .btn-signUp {
     padding: 13px 12px;
+  }
+
+  .btn-dark {
+    padding: 7px 28px;
   }
 }
 
@@ -96,5 +110,13 @@
     font-size: 16px;
     line-height: 20px;
     padding: 14px 51px;
+  }
+
+  .btn-dark {
+    height: 49px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    padding: 4px 25px;
   }
 }
