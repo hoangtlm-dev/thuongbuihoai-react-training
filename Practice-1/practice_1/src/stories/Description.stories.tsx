@@ -2,6 +2,7 @@ import React from "react";
 import { Description } from "../components/description/Description";
 import { MAIN_TEXT } from "../constants/feature";
 import { FEATURE_RESPONSIVE, FEATURE_DIAMOND, FEATURE_LAYERS } from "../constants/feature";
+import { FOOTER_TEXT } from "../constants/footer";
 import { RESULT_FREE, RESULT_TEXT, RESULT_TOTAL, RESULT_UNIQUE } from "../constants/result";
 
 export default {
@@ -64,5 +65,11 @@ export function Unique() {
 export function SignUp() {
   return (
     <Description className="signUp">Sign Up</Description>
+  );
+}
+
+export function FooterText() {
+  return (
+    <Description className="footer">{FOOTER_TEXT}</Description>
   );
 }
