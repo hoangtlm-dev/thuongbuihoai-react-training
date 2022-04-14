@@ -10,6 +10,10 @@ import Result from "./components/section/result/Result";
 import { RESULT, RESULT_TEXT } from "./constants/result";
 import INPUT_LIST from "./constants/input";
 import Account from "./components/section/account/Account";
+import Footer from "./components/footer/Footer";
+import { SPRITES_IMAGE } from "./constants/spriteImage";
+import { FOOTER_CONTACT, FOOTER_TEXT } from "./constants/footer";
+import ABOUT_US from "./constants/about";
 
 
 function App(): JSX.Element {
@@ -24,7 +28,8 @@ function App(): JSX.Element {
     <Plan planTitle={"Subscribing Plans"} cardList={CARD_LIST} />
     <Feature headingTitle = "Features" text = "We're taking it to the next level" list={FEATURE} imageDesktop = {imageDesktop} />
     <Result title="Stunning Results" text={RESULT_TEXT} list={RESULT} />
-    <Account list={INPUT_LIST} />;
+    <Account list={INPUT_LIST} />
+    <Footer spriteImages={SPRITES_IMAGE} footerText={FOOTER_TEXT} aboutUs={ABOUT_US} footerContact={FOOTER_CONTACT} />
     </>
   )
 }
