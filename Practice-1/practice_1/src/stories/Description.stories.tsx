@@ -64,7 +64,7 @@ export function Unique() {
 
 export function SignUp() {
   return (
-    <Description className="signUp">Sign Up</Description>
+    <Description className="signup">Sign Up</Description>
   );
 }
 
