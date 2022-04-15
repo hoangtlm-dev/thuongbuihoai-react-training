@@ -2,14 +2,14 @@ import React from "react";
 import "./cardPrice.css";
 
 interface CardProps {
-  children1: string;
-  children2: number
+  unit: string;
+  price: number
 }
 
-function CardPrice({ children1, children2 }: CardProps): JSX.Element {
+function CardPrice({ unit, price }: CardProps): JSX.Element {
   return (
-      <p className={`card__unit`}> {children1}
-      <span className={`card__price`}>{children2}</span>
+      <p className={`card__unit`}> {unit}
+        <span className={`card__price`}>{price}</span>
       </p>
     )
   }
