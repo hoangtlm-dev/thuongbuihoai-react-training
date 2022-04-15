@@ -4,7 +4,7 @@ import "./button.css";
 interface ButtonProps {
   type?: string,
   className: string,
-  children: string | JSX.Element,
+  children: string,
 }
 
 export default function Button({
