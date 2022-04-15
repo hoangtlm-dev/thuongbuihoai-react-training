@@ -9,10 +9,7 @@ interface CardTextProps {
 }
 
 export default function CardText({
-  value1,
-  value2,
-  value3,
-  value4,
+  value1, value2, value3, value4,
 }: CardTextProps): JSX.Element {
   return (
     <div className="card__content">
