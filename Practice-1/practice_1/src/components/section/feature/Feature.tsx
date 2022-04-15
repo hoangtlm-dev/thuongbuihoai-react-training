@@ -6,15 +6,11 @@ import SectionTitle from "../../title/SectionTitle";
 import "./feature.css"
 
 export interface FeatureProps {
-  headingTitle: string;
-  text: string;
   list: FeatureListProps[];
   imageDesktop: string;
 }
 
 export default function Feature({
-  headingTitle,
-  text,
   list,
   imageDesktop
 }: FeatureProps): JSX.Element {
@@ -22,8 +18,8 @@ export default function Feature({
     <section className = "feature__img">
       <div className="container">
         <div className = "feature__heading">
-          <SectionTitle className = "feature-heading__title"><span>{headingTitle}</span></SectionTitle>
-          <SectionTitle className = "feature__text"><span>{text}</span></SectionTitle>
+          <SectionTitle className = "feature-heading__title"><span>Features</span></SectionTitle>
+          <SectionTitle className = "feature__text"><span>We're taking it to the next level</span></SectionTitle>
         </div>
         <div className="feature">
           <div className = "feature__list">

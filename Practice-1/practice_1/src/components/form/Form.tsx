@@ -11,11 +11,7 @@ interface FormProps {
 }
 export default function Form({ inputList }: FormProps): JSX.Element {
   const renderInputList = (list: InputProps[]) => list.map((item) => (
-    <Input 
-      className="info"
-      type={item.type}
-      placeholder={item.placeholder}
-    />
+    <Input className="info" type={item.type} placeholder={item.placeholder} />
   ));
   return (
     <form className="form">

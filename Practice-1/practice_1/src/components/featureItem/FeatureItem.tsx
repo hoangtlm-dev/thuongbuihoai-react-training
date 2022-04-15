@@ -5,11 +5,7 @@ import SectionTitle from "../title/SectionTitle";
 import "./featureItem.css"
 
 export default function FeatureItem({
-  className,
-  icon,
-  alt,
-  title,
-  content
+  className, icon, alt, title, content
 }: FeatureListProps): JSX.Element {
   return (
     <div className="feature__item">

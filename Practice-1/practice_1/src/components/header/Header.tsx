@@ -6,19 +6,13 @@ import "./header.css";
 import { Description } from "../description/Description";
 import Button from "../button/Button";
 
-export interface HeaderProps {
-  children1: string;
-  children2: string;
-  children3: string;
+interface HeaderProps {
   MAIN_TEXT: string;
   menuList: MenuType[]
   menuBar: string;
 }
 
 export default function Header({
-  children1,
-  children2,
-  children3,
   MAIN_TEXT,
   menuList,
   menuBar
@@ -27,7 +21,7 @@ export default function Header({
     <header className="header">
       <div className="header__menu">
         <SectionTitle className="nav__title">
-          <span>{children1}</span>
+          <span>HOFMANN</span>
         </SectionTitle>
         <Navigation menuList={menuList} menuBar={menuBar}></Navigation>
       </div>
@@ -35,10 +29,10 @@ export default function Header({
         <div className="header__info">
           <div className="header__content">
             <SectionTitle className="main__title">
-              <span>{children2}</span>
+              <span>What Makes A Hotel Boutique</span>
             </SectionTitle>
             <Description className="main">{MAIN_TEXT}</Description>
-            <Button className="primary">{children3}</Button>
+            <Button className="primary">Explore</Button>
           </div>
         </div>
       </div>

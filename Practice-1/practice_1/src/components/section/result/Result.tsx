@@ -6,21 +6,18 @@ import SectionTitle from "../../title/SectionTitle";
 import "./result.css"
 
 export interface ResultProps {
-  title: string;
   text: string;
   list: CircleListProps[];
 }
 
 export default function Result({
-  title,
-  text,
-  list
+  text, list
 }: ResultProps): JSX.Element {
   return (
     <section className = "results">
       <div className = "container">
         <div className = "results__heading">
-          <SectionTitle className="results__title"><p>{title}</p></SectionTitle>
+          <SectionTitle className="results__title"><p>Stunning Results</p></SectionTitle>
           <Description className="text">{text}</Description>
         </div>
         <CircleList circleList={list} />

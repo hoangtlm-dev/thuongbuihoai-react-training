@@ -13,10 +13,10 @@ export default function Account({
 }: AccountProps): JSX.Element {
   return (
     <section className = "account">
-       <div className = "container">
+      <div className = "container">
        <SectionTitle className="account__heading"><p>Create An Account</p></SectionTitle>
        <Form inputList={list}></Form>
-       </div>
-      </section>
+      </div>
+    </section>
   );
 }
