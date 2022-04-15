@@ -11,13 +11,8 @@
         "sourceType": "module"
     },
     "rules": {
-        "semi": ["error", "always"],
-        "react/require-default-props": ["off"],
-        "@typescript-eslint/quotes": ["error", "double"],
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
-        "import/no-extraneous-dependencies": ["off"],
-        "import/extensions": ["off"],
-        "no-plusplus": ["off"],
-        "jsx-a11y/label-has-associated-control": ["off"]
+        "semi": ["error", "always"], // require or disallow semicolons instead of ASI
+        "@typescript-eslint/quotes": ["error", "double"], // 	enforce the consistent use of either backticks, double, or single quotes
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }] // The set of allowed extensions is configurable.
     }
 }
