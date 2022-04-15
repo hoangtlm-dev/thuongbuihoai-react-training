@@ -13,6 +13,6 @@ export default {
 
 export function NamePage() {
   return (
-    <Plan planTitle="Subscribing Plans" cardList={CARD_LIST}/>
+    <Plan cardList={CARD_LIST}/>
   );
 }

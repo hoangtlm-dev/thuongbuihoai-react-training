@@ -1,6 +1,6 @@
 import React from "react";
 import Result from "../components/section/result/Result";
-import { RESULT } from "../constants/result";
+import { RESULT, RESULT_TEXT } from "../constants/result";
 
 export default {
   /* 👇 The title prop is optional.
@@ -12,9 +12,5 @@ export default {
 };
 
 export function Default() {
-  return <Result
-    title="Stunning Results"
-    text="Just look to the statistics we have generate the past year."
-    list={RESULT}
-  />
+  return <Result text={RESULT_TEXT} list={RESULT} />
 }

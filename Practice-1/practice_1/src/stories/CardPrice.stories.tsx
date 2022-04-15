@@ -12,24 +12,24 @@ export default {
 
 export function CardFreemium() {
   return (
-    <CardPrice children1="$" children2={0} ></CardPrice>
+    <CardPrice unit="$" price={0} ></CardPrice>
   );
 }
 
 export function CardStartUp() {
   return (
-    <CardPrice children1="$" children2={9}></CardPrice>
+    <CardPrice unit="$" price={9}></CardPrice>
   );
 }
 
 export function CardBusiness() {
   return (
-    <CardPrice children1="$" children2={29}></CardPrice>
+    <CardPrice unit="$" price={29}></CardPrice>
   );
 }
 
 export function CardEnterprise() {
   return (
-    <CardPrice children1="$" children2={49}></CardPrice>
+    <CardPrice unit="$" price={49}></CardPrice>
   );
 }

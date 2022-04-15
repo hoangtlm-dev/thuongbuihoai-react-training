@@ -14,11 +14,5 @@ export default {
 };
 
 export function Default() {
-  return <Header
-    children1="HOFMANN"
-    children2="What Makes A Hotel Boutique"
-    children3="EXPLORE"
-    MAIN_TEXT={MAIN_TEXT}
-    menuList={MENU_LIST}
-    menuBar={menuBar} />;
+  return <Header MAIN_TEXT={MAIN_TEXT} menuList={MENU_LIST} menuBar={menuBar} />;
 }
