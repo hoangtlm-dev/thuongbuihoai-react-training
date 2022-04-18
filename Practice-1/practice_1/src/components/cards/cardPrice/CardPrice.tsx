@@ -1,16 +1,11 @@
 import React from "react";
-import "./cardPrice.css";
+import { CardPriceProps } from "../../../types/cardPrice";
+import "./cardPrice.css"
 
-interface CardProps {
-  unit: string;
-  price: number
-}
-
-function CardPrice({ unit, price }: CardProps): JSX.Element {
+export default function CardPrice({ unit, price }: CardPriceProps) {
   return (
-      <p className={`card__unit`}> {unit}
-        <span className={`card__price`}>{price}</span>
-      </p>
-    )
-  }
-export { CardPrice };
+    <p className={`card__unit`}> {unit}
+      <span className={`card__price`}>{price}</span>
+    </p>
+  )
+}

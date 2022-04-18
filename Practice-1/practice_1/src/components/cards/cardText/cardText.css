@@ -2,6 +2,8 @@
   font-family: "SourceSansPro";
   font-size: 11px;
   line-height: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 1200px) {

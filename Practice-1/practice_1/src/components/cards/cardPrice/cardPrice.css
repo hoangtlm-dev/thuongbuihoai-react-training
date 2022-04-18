@@ -1,3 +1,12 @@
+.card__number {
+  margin-top: 5px;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
 .card__unit {
   display: flex;
   justify-content: center;
@@ -15,7 +24,17 @@
   color: var(--color-heading);
 }
 
+@media screen and (min-width: 768px) {
+  .card__number {
+    margin-top: 10px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
+  .card__number {
+    margin-top: 35px;
+  }
+
   .card__unit {
     align-items: center;
     font-size: 24px;

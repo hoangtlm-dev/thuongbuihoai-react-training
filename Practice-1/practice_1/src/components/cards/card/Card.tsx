@@ -1,23 +1,30 @@
 import React from "react";
 import CardTitle from "../../title/CardTitle";
-import { CardPrice } from "../cardPrice/CardPrice";
 import CardText from "../cardText/CardText";
 import Button from "../../button/Button";
-import "./card.css"
 import { CardProps } from "../../../types/card";
+import CardPrice from "../cardPrice/CardPrice";
+import "./card.css"
+import Bar from "../../navBar/Bar";
+import Icon from "../../icon/Icon";
 
 export default function Card({
-  className, title, unit, price, value1, value2, value3, value4, label
-}: CardProps): JSX.Element {
+  url,
+  title,
+  unit,
+  price,
+  value,
+}: CardProps) {
   return (
     <div className="card">
-      <div className={`card__info card__info--${className}`}>
+      <Icon icon={url} alt="image card" className="bgCard" />
+      <div className="card__number">
         <CardTitle className="name"><span>{title}</span></CardTitle>
         <CardPrice unit={unit} price={price} ></CardPrice>
       </div>
       <div className="card__description">
-        <CardText value1={value1} value2={value2} value3={value3} value4={value4}></CardText>
-        <Button className="outline">{label}</Button>
+        <CardText value={value}></CardText>
+        <Button className="outline">Get started</Button>
       </div>
     </div>
   );
