@@ -11,20 +11,20 @@ import { RESULT, RESULT_TEXT } from "./constants/result";
 import INPUT_LIST from "./constants/input";
 import Account from "./components/section/account/Account";
 import Footer from "./components/footer/Footer";
-import { SPRITES_IMAGE } from "./constants/spriteImage";
-import { FOOTER_CONTACT, FOOTER_TEXT } from "./constants/footer";
+import { FOOTER_CONTACT, FOOTER_MEDIUM, FOOTER_TEXT } from "./constants/footer";
 import ABOUT_US from "./constants/about";
+import { BUTTON_CONTACT } from "./constants/buttonContact";
 
 
 function App(): JSX.Element {
   return (
     <>
-      <Header MAIN_TEXT={MAIN_TEXT} menuList={MENU_LIST} menuBar={menuBar} />
+      <Header mainText={MAIN_TEXT} menuList={MENU_LIST} menuBar={menuBar} />
       <Plan cardList={CARD_LIST} />
-      <Feature list={FEATURE} imageDesktop = {imageDesktop} />
+      <Feature list={FEATURE} imageDesktop={imageDesktop} />
       <Result text={RESULT_TEXT} list={RESULT} />
       <Account list={INPUT_LIST} />
-      <Footer spriteImages={SPRITES_IMAGE} footerText={FOOTER_TEXT} aboutUs={ABOUT_US} footerContact={FOOTER_CONTACT} />
+      <Footer contact={BUTTON_CONTACT} footerText={FOOTER_TEXT} aboutUs={ABOUT_US} footerContact={FOOTER_CONTACT} infoContact={FOOTER_MEDIUM.contact} />
     </>
   )
 }
