@@ -1,9 +1,6 @@
 import React from "react";
+import { BarProps } from "../../types/bar";
 import "./bar.css"
-
-interface BarProps {
-  logo: string
-}
 
 export default function Bar({ logo }: BarProps): JSX.Element {
   return (
