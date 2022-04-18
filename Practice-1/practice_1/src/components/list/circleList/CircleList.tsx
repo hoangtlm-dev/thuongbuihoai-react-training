@@ -1,15 +1,13 @@
 import React from "react";
-import { CircleListProps } from "../../../types/circle";
+import { CircleListProps } from "../../../types/circleList";
+import { RenderCircle } from "../../../types/resultList";
 import CircleItem from "../../circleItem/CircleItem";
-
-interface RenderCircle {
-  circleList: CircleListProps[];
-}
 
 export default function CircleList({ circleList }: RenderCircle): JSX.Element {
   function renderCircleList(list: CircleListProps[]) {
     return list.map((item) => (
-      <CircleItem 
+      <CircleItem
+        key={item.key}
         className={item.className}
         number1={item.number1}
         number2={item.number2}
@@ -18,6 +16,7 @@ export default function CircleList({ circleList }: RenderCircle): JSX.Element {
       />
     ));
   }
+
   return (
     <div className="result__circle">{renderCircleList(circleList)}</div>
   );
