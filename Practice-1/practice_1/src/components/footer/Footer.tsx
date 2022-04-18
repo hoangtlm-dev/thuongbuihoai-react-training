@@ -1,37 +1,28 @@
 import React from "react";
-import { AboutProps } from "../../types/about";
-import { FooterContact } from "../../types/footer";
-import { SpriteImageProps } from "../../types/spriteImage";
+import { FooterProps } from "../../types/footers";
 import About from "../about/About";
 import { Contact } from "../contact/Contact";
 import Email from "../email/Email";
-import SpriteImage from "../spriteImage/SpritesImage";
+import ButtonContact from "../button/ButtonContact";
 import "./footer.css"
 
-
-export interface FooterProps {
-  spriteImages: SpriteImageProps[];
-  footerText: string;
-  aboutUs: AboutProps[];
-  footerContact: FooterContact[];
-}
-
 export default function Footer({
-  spriteImages,
+  contact,
   footerText,
   aboutUs,
-  footerContact
+  footerContact,
+  infoContact
 }: FooterProps): JSX.Element {
   return (
-    <footer className = "footer">
-      <div className = "container">
-        <div className = "footer__info">
-          <SpriteImage spriteImages={spriteImages} />
+    <footer className="footer">
+      <div className="container">
+        <div className="footer__info">
+          <ButtonContact buttonContacts={contact} />
         </div>
         <hr/>
         <Email footerText={footerText} />
         <About aboutUs={aboutUs} />
-        <Contact footerContact={footerContact} />
+        <Contact footerContact={footerContact} contact={infoContact} />
       </div>
     </footer>
   );
