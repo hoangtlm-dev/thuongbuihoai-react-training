@@ -1,14 +1,11 @@
 import React from "react";
+import { DescriptionProps } from "../../types/description";
 import "./description.css";
 
-interface DescriptionProps {
-  className?: string;
-  children: string | JSX.Element;
-}
-
-function Description({ className, children }: DescriptionProps): JSX.Element {
+export function Description({ className, children }: DescriptionProps): JSX.Element {
   return (
-      <p className={`description description--${className}`}> {children} </p>
-    )
-  }
-export { Description };
+    <p className={`description description--${className}`}>
+      {children}
+    </p>
+  )
+};
