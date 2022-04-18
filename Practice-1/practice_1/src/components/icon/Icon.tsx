@@ -1,11 +1,6 @@
 import React from "react";
+import { IconProps } from "../../types/icon";
 import "./icon.css"
-
-interface IconProps {
-  icon: string
-  alt: string
-  className: string;
-}
 
 export default function Icon({ icon, alt, className }: IconProps): JSX.Element {
   return (
