@@ -1,16 +1,8 @@
 import React from "react";
+import { ButtonProps } from "../../types/button";
 import "./button.css";
 
-interface ButtonProps {
-  type?: string,
-  className: string,
-  children: string,
-}
-
-export default function Button({
-  className,
-  children,
-}: ButtonProps): JSX.Element {
+export default function Button({ className, children }: ButtonProps) {
   return (
     <button
       type= "submit"
