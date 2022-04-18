@@ -1,93 +1,73 @@
 import { CardProps } from "../types/card";
+import freemium from "../assets/images/freemium.png";
+import startup from "../assets/images/startup.png";
+import business from "../assets/images/business.png";
+import enterprise from "../assets/images/enterprise.png";
 
 const CARD_FREEMIUM: CardProps = {
-  value1: "Basic Collections",
-  value2: "10 Messages",
-  value3: "50 Images per Day",
+  url: freemium,
+  value: ["Basic Collections", "10 Messages", "50 Images per Day"],
   title: "FREEMIUM",
   unit: "$",
-  price: 0,
-  label: "GET STARTED"
+  price: 0
 }
 
 const CARD_STARTUP: CardProps = {
-  value1: "Multiple Collections",
-  value2: "100 Messages",
-  value3: "100 Images per Day",
+  url: startup,
+  value: ["Multiple Collections", "100 Messages", "100 Images per Day"],
   title: "START UP",
   unit: "$",
-  price: 9,
-  label: "GET STARTED"
+  price: 9
 }
 
 const CARD_BUSINESS: CardProps = {
-  value1: "Unlimited Collections",
-  value2: "500 Messages",
-  value3: "300 Images per Day",
-  value4: "Project Reviews",
+  url: business,
+  value: ["Unlimited Collections", "500 Messages", "300 Images per Day", "Project Reviews"],
   title: "BUSINESS",
   unit: "$",
-  price: 29,
-  label: "GET STARTED"
+  price: 29
 }
 
 const CARD_ENTERPRISE: CardProps = {
-  value1: "Unlimited Collections",
-  value2: "Unlimited Messages",
-  value3: "Unlimited Images per Day",
-  value4: "Project Reviews",
+  url: enterprise,
+  value: ["Unlimited Collections", "Unlimited Messages", "Unlimited Images per Day", "Project Reviews"],
   title: "ENTERPRISE",
   unit: "$",
-  price: 49,
-  label: "GET STARTED"
+  price: 49
 }
 
 const CARD_LIST: CardProps[] = [
   {
     key: "freemium",
-    className: "freemium",
-    value1: "Basic Collections",
-    value2: "10 Messages",
-    value3: "50 Images per Day",
+    url: freemium,
+    value: ["Basic Collections", "10 Messages", "50 Images per Day"],
     title: "FREEMIUM",
     unit: "$",
     price: 0,
-    label: "GET STARTED"
   },
   {
     key: "startup",
-    className: "startup",
-    value1: "Multiple Collections",
-    value2: "100 Messages",
-    value3: "100 Images per Day",
+    url: startup,
+    value: ["Multiple Collections", "100 Messages", "100 Images per Day"],
     title: "START UP",
     unit: "$",
     price: 9,
-    label: "GET STARTED"
   },
   {
     key: "business",
-    className: "business",
-    value1: "Unlimited Collections",
-    value2: "500 Messages",
-    value3: "300 Images per Day",
-    value4: "Project Reviews",
+    url: business,
+    value: ["Unlimited Collections", "500 Messages", "300 Images per Day", "Project Reviews"],
     title: "BUSINESS",
     unit: "$",
     price: 29,
-    label: "GET STARTED"
   },
   {
     key: "enterprise",
-    className: "enterprise",
-    value1: "Unlimited Collections",
-    value2: "Unlimited Messages",
-    value3: "Unlimited Images per Day",
-    value4: "Project Reviews",
+    url: enterprise,
+    value: ["Unlimited Collections", "Unlimited Messages", "Unlimited Images per Day", "Project Reviews"],
     title: "ENTERPRISE",
     unit: "$",
     price: 49,
-    label: "GET STARTED"
   }
 ]
 export { CARD_FREEMIUM, CARD_STARTUP, CARD_BUSINESS, CARD_ENTERPRISE, CARD_LIST}

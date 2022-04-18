@@ -1,4 +1,4 @@
-import { CircleListProps } from "../types/circle"
+import { CircleListProps } from "../types/circleList"
 
 const RESULT_TEXT = "Just look to the statistics we have generate the past year."
 
@@ -10,6 +10,7 @@ const RESULT_UNIQUE = "WordPress, the premier free open-source blogging utility,
 
 const RESULT: CircleListProps[] = [
   {
+    key: "total",
     number1: 74,
     number2: 98,
     title: "Total conversion",
@@ -17,6 +18,7 @@ const RESULT: CircleListProps[] = [
     className: "74-98",
   },
   {
+    key: "free",
     number1: 39,
     number2: 75,
     title: "Free downloads",
@@ -24,6 +26,7 @@ const RESULT: CircleListProps[] = [
     className: "39-75",
   },
   {
+    key: "unique",
     number1: 81,
     number2: 15,
     title: "Unique visitors",
