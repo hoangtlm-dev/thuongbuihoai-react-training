@@ -1,6 +1,6 @@
 import React from "react";
 import { Contact } from "../components/contact/Contact";
-import { FOOTER_CONTACT } from "../constants/footer";
+import { FOOTER_CONTACT, FOOTER_MEDIUM } from "../constants/footer";
 
 export default {
   /* 👇 The title prop is optional.
@@ -12,5 +12,5 @@ export default {
 };
 
 export function Contacts() {
-  return <Contact footerContact={FOOTER_CONTACT} />;
+  return <Contact footerContact={FOOTER_CONTACT} contact={FOOTER_MEDIUM.contact} />;
 }

@@ -1,9 +1,7 @@
 import React from "react";
 import { Description } from "../components/description/Description";
 import { MAIN_TEXT } from "../constants/feature";
-import { FEATURE_RESPONSIVE, FEATURE_DIAMOND, FEATURE_LAYERS } from "../constants/feature";
-import { FOOTER_TEXT } from "../constants/footer";
-import { RESULT_FREE, RESULT_TEXT, RESULT_TOTAL, RESULT_UNIQUE } from "../constants/result";
+import { FEATURE_RESPONSIVE } from "../constants/feature";
 
 export default {
   /* 👇 The title prop is optional.
@@ -23,53 +21,5 @@ export function MainText() {
 export function Responsive() {
   return (
     <Description className="responsive">{FEATURE_RESPONSIVE}</Description>
-  );
-}
-
-export function Diamond() {
-  return (
-    <Description className="diamond">{FEATURE_DIAMOND}</Description>
-  );
-}
-
-export function Layers() {
-  return (
-    <Description className="layers">{FEATURE_LAYERS}</Description>
-  );
-}
-
-export function ResultsText() {
-  return (
-    <Description className="text">{RESULT_TEXT}</Description>
-  );
-}
-
-export function Total() {
-  return (
-    <Description className="content">{RESULT_TOTAL}</Description>
-  );
-}
-
-export function Free() {
-  return (
-    <Description className="content">{RESULT_FREE}</Description>
-  );
-}
-
-export function Unique() {
-  return (
-    <Description className="content">{RESULT_UNIQUE}</Description>
-  );
-}
-
-export function SignUp() {
-  return (
-    <Description className="signup">Sign Up</Description>
-  );
-}
-
-export function FooterText() {
-  return (
-    <Description className="footer">{FOOTER_TEXT}</Description>
   );
 }

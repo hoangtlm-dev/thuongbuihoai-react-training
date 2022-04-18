@@ -12,6 +12,6 @@ export default {
 
 export function Links() {
   return (
-    <Link value = "Already Have an account?"/>
+    <Link title="Already Have an account?" href="javascript:void(0)" />
   );
 }

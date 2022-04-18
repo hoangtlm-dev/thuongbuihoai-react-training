@@ -12,11 +12,3 @@ export default {
 export function Circle_74_98() {
   return <Circle className="74-98" />;
 }
-
-export function Circle_39_75() {
-  return <Circle className="39-75" />;
-}
-
-export function Circle_81_15() {
-  return <Circle className="81-15" />;
-}

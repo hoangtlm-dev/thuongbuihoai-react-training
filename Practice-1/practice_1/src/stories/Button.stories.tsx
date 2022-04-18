@@ -10,27 +10,12 @@ export default {
   component: Button,
 };
 
-function Light() {
-  return <Button className="light">Take a tour</Button>;
-}
-
 function Primary() {
   return <Button className="primary">Explore</Button>;
-}
-
-const Hover = () => <Button className = "hover btn__hover">Get started</Button>
-Hover.parameters = { pseudo: { hover: true } }
-
-function Outline() {
-  return <Button className="outline">Get started</Button>;
-}
-
-function SignUp() {
-  return <Button className="signUp">Sign up</Button>;
 }
 
 function Subscribe() {
   return <Button className="dark">Subscribe</Button>;
 }
 
-export { Light, Primary, Hover , Outline, SignUp, Subscribe }
+export { Primary, Subscribe }

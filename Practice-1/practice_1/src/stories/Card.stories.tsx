@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../components/cards/card/Card";
-import { CARD_FREEMIUM, CARD_STARTUP, CARD_BUSINESS, CARD_ENTERPRISE } from "../constants/card";
+import { CARD_FREEMIUM } from "../constants/card";
+import free from "../assets/images/freemium.png"
 export default {
   /* 👇 The title prop is optional.
   * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
@@ -11,51 +12,10 @@ export default {
 };
 
 export function CardFreemium() {
-  return <Card className="freemium"
-      title="FREEMIUM"
-      unit="$"
-      price={0}
-      value1={CARD_FREEMIUM.value1}
-      value2={CARD_FREEMIUM.value2}
-      value3={CARD_FREEMIUM.value3}
-      label="GET STARTED"
-    />
-}
-
-export function CardStartUp() {
-  return <Card className="startup"
-      title="STARTUP"
-      unit="$"
-      price={9}
-      value1={CARD_STARTUP.value1}
-      value2={CARD_STARTUP.value2}
-      value3={CARD_STARTUP.value3}
-      label="GET STARTED"
-    />
-}
-
-export function CardBusiness() {
-  return <Card className="business"
-      title="BUSINESS"
-      unit="$"
-      price={29}
-      value1={CARD_BUSINESS.value1}
-      value2={CARD_BUSINESS.value2}
-      value3={CARD_BUSINESS.value3}
-      value4={CARD_BUSINESS.value4}
-      label="GET STARTED"
-    />
-}
-
-export function CardEnterprise() {
-  return <Card className="enterprise"
-      title="ENTERPRISE"
-      unit="$"
-      price={49}
-      value1={CARD_ENTERPRISE.value1}
-      value2={CARD_ENTERPRISE.value2}
-      value3={CARD_ENTERPRISE.value3}
-      value4={CARD_ENTERPRISE.value4}
-      label="GET STARTED"
-    />
+  return <Card url={free}
+    title="FREEMIUM"
+    unit="$"
+    price={0}
+    value={CARD_FREEMIUM.value}
+  />
 }
