@@ -1,13 +1,9 @@
 import React from "react";
 import { MenuType } from "../../types/menu";
+import { NavigationProps } from "../../types/navigation";
 import Button from "../button/Button";
 import Bar from "../navBar/Bar";
-import "./menu.css"
-
-interface NavigationProps {
-  menuList: MenuType[];
-  menuBar: string;
-}
+import "./menu.css";
 
 export default function Navigation({ menuList, menuBar }: NavigationProps): JSX.Element {
   function renderMenuList(list: MenuType[]) {
