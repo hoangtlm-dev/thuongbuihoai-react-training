@@ -1,28 +1,24 @@
 import React from "react";
+import { ContactProps } from "../../types/contact";
 import { FooterContact } from "../../types/footer";
 import "./contact.css"
 
-interface ContactProps {
-  footerContact: FooterContact[]
-}
-
-function Contact({ footerContact }: ContactProps): JSX.Element {
+export function Contact({ footerContact, contact }: ContactProps) {
   function renderFooterContact(list: FooterContact[]) {
     return list.map((item) =>
-      <div className = {`contact__info--${item.className}`}>
-        <ul className = "contact__list">
-          <li className = "contact__item">{item.contact1}</li>
-          <li className = "contact__item">{item.contact2}</li>
-          <li className = "contact__item">{item.contact3}</li>
+      <div className={`contact__info--${item.className}`}>
+        <ul className="contact__list">
+          {
+            contact.map(items => (<li className="contact__item">{items}</li>))
+          }
         </ul>
-        <p className = "contact__text">{item.contact4}</p>
+        <p className="contact__text">{item.info}</p>
       </div>
     );
   }
   return (
-    <address className = "contact">
+    <address className="contact">
       {renderFooterContact(footerContact)}
     </address>
-    )
-  }
-export { Contact }
+  )
+}
