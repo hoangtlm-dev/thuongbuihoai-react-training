@@ -1,13 +1,9 @@
 import React from "react";
+import { LinkProps } from "../../types/link";
 import "./link.css"
 
-interface LinkProps {
-  value: string;
-}
-
-function Link({ value }: LinkProps): JSX.Element {
+export function Link({ title, href }: LinkProps): JSX.Element {
   return (
-    <a title="Already Have an account?" className = "link" href="javascript:void(0)">{value}</a>
-    )
-  }
-export { Link };
+    <a title={title} className="link" href={href}>Already Have an account?</a>
+  )
+}
