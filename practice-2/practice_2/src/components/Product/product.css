@@ -1,0 +1,23 @@
+.product {
+  position: relative;
+}
+
+.product__view {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  margin: 0;
+  width: 250px;
+  padding: 10px 0;
+  color: transparent;
+}
+
+.product__view:hover {
+  color: #333;
+  background-color: #ffd89e;
+}
+
+.product__image {
+  width: 250px;
+  height: 300px;
+}
