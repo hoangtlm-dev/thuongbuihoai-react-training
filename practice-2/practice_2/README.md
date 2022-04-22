@@ -34,7 +34,7 @@
 - Filter Component
 
 # TIMELINE
-- **5 days (April 22, 2022 to May 5, 2022)**
+- 8 days (April 22, 2022 to May 5, 2022) [Estimation time](https://docs.google.com/document/d/1GW_3AFB6Qw9o2RhZlyNd-BDsABWrN1OVZxekfAZZdtU/edit)
 # RUN
 ```
 - Clone project: 
