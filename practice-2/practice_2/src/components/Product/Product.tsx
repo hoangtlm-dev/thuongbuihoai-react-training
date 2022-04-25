@@ -7,11 +7,11 @@ export default function Products({ image }: ProductProps) {
   return (
     <div className="product">
       <img
-      className="product__image"
-      src={image.src}
-      alt={image.alt}
-    />
-    <p className="product__view">Quick view</p>
+        className="product__image"
+        src={image.src}
+        alt={image.alt}
+      />
+      <p className="product__view">Quick view</p>
     </div>
   );
 }

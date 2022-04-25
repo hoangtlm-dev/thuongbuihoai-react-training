@@ -10,14 +10,20 @@
   width: 250px;
   padding: 10px 0;
   color: transparent;
-}
-
-.product__view:hover {
   color: #333;
   background-color: #ffd89e;
+  display: none;
 }
 
 .product__image {
   width: 250px;
   height: 300px;
+}
+
+.product__image:hover {
+  opacity: 0.5;
+}
+
+.product__image:hover+.product__view {
+  display: block;
 }
