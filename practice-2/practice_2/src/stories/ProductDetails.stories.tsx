@@ -1,5 +1,5 @@
 import React from "react";
-import Products from "../components/Product/ProductItem/Product";
+import ProductDetails from "../components/Product/ProductDetails/ProductDetails";
 import { cardImage } from "../constants/card";
 
 export default {
@@ -7,10 +7,10 @@ export default {
   * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
   * to learn how to generate automatic titles
   */
-  title: "Component/Products",
-  component: Products,
+  title: "Component/ProductDetails",
+  component: ProductDetails,
 };
 
 export function Product() {
-  return <Products image={cardImage} />;
+  return <ProductDetails image={cardImage} />;
 }

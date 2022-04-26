@@ -1,15 +1,16 @@
 import React from "react";
-import Button from "../components/Button/Button";
+import Category from "../components/Categories/Categories";
+import { DEFAULT_CATEGORY } from "../constants/categories";
 
 export default {
   /* 👇 The title prop is optional.
   * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
   * to learn how to generate automatic titles
   */
-  title: "Component/Button",
-  component: Button,
+  title: "Component/Category",
+  component: Category,
 };
 
 export function Default() {
-  return <Button children="Filter" className="filter" />;
+  return <Category categoriesList={DEFAULT_CATEGORY} />;
 }
