@@ -1,0 +1,31 @@
+.filterBy {
+  margin: 30px;
+}
+
+.filterBy__item {
+  list-style: none;
+}
+
+.filterBy__group {
+  display: flex;
+}
+
+.filter__checkbox > input {
+  margin-right: 10px;
+}
+
+.filter__text:hover {
+  color: #ffa69e;
+}
+
+.filterBy__list {
+  padding: 0;
+}
+
+.filter__text > span {
+  opacity: 0.5;
+}
+
+.filterBy__title {
+  font-weight: bold;
+}
