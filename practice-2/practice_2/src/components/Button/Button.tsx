@@ -2,12 +2,11 @@ import React from "react";
 import { ButtonProps } from "../../types/button";
 import "./button.css"
 
-export default function Button({ children }: ButtonProps) {
+export default function Button({ children, className }: ButtonProps) {
   return (
-    <button
-      type= "submit"
-      className="btn btn-filter">
+    <label htmlFor="filter__check"
+      className={`btn btn-${className}`}>
       {children}
-    </button>
+    </label>
   );
 }
