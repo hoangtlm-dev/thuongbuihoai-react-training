@@ -1,5 +1,5 @@
 import React from "react";
-import { TitleProps } from "../../types/title";
+import { TitleProps } from "../../types/commonType/title";
 
 export default function Description({
   children,
