@@ -1,6 +1,6 @@
 import { ImagesProps } from "./logo";
 
-export interface UserProps {
+export interface IconProps {
   username: string;
   className?: string;
   avatar: ImagesProps;
