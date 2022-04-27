@@ -1,5 +1,5 @@
 import React from "react";
-import ProductDetails from "../components/Product/ProductDetails/ProductDetails";
+import ProductDetails from "../pages/ProductDetails/ProductDetails";
 import { cardImage } from "../constants/card";
 
 export default {

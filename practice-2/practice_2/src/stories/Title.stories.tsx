@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../components/Title/Title";
+import Title from "../components/common/Title/Title";
 
 export default {
   /* 👇 The title prop is optional.
@@ -11,5 +11,5 @@ export default {
 };
 
 export function Default() {
-  return <Title children="Build Your Pizza" />;
+  return <Title value="Build Your Pizza" />;
 }

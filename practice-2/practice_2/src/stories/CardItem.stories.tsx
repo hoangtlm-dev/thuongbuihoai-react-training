@@ -1,5 +1,5 @@
 import React from "react";
-import CardItem from "../components/Card/CardItem/CardItem";
+import CardItem from "../pages/CardItem/CardItem";
 
 export default {
   /* 👇 The title prop is optional.

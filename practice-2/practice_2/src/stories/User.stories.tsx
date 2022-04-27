@@ -1,5 +1,5 @@
 import React from "react";
-import User from "../components/User/User";
+import Icon from "../components/Icon/Icon";
 import { users } from "../constants/header";
 
 export default {
@@ -7,10 +7,10 @@ export default {
   * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
   * to learn how to generate automatic titles
   */
-  title: "Component/User",
-  component: User,
+  title: "Component/Icon",
+  component: Icon,
 };
 
 export function Default() {
-  return <User username={users.username} avatar={users.avatar} />;
+  return <Icon username={users.username} avatar={users.avatar} />;
 }

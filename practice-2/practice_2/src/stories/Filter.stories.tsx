@@ -1,6 +1,5 @@
 import React from "react";
 import Filter from "../components/Filter/Filter/Filter";
-import { DEFAULT_CATEGORY } from "../constants/categories";
 
 export default {
   /* 👇 The title prop is optional.

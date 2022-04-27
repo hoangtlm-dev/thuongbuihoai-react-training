@@ -1,5 +1,5 @@
 import React from "react";
-import Products from "../components/Product/ProductItem/Product";
+import Products from "../components/ProductItem/Product";
 import { cardImage } from "../constants/card";
 
 export default {
@@ -11,6 +11,8 @@ export default {
   component: Products,
 };
 
-export function Product() {
-  return <Products image={cardImage} />;
+export function Default() {
+  return (
+    <Products id="1" image={cardImage} />
+  );
 }
