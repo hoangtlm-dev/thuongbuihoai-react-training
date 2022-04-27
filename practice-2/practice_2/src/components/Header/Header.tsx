@@ -3,7 +3,7 @@ import { users } from "../../constants/header";
 import { HeaderProps } from "../../types/header";
 import Logo from "../Logo/Logo";
 import Search from "../Search/Search";
-import User from "../User/User";
+import User from "../Icon/Icon";
 import "./header.css"
 
 export default function Header({url}: HeaderProps) {
