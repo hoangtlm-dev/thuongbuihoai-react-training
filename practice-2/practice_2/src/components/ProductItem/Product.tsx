@@ -1,19 +1,21 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 import { ProductProps } from "../../types/product";
 import "./product.css"
 
-export default function Products ({ id, image }: ProductProps) {
+export default function Products ({ product }: ProductProps) {
   return (
-    <div className="product">
-      <img
-        className="product__image"
-        src={image.src}
-        alt={image.alt}
-      />
-      <p className="product__view">
-        <Link className="product__link" to="/detail">Quick view</Link>
-      </p>
-    </div>
+    product.images.map(img => 
+      <div className="product">
+        <img
+          className="product__image"
+          src={product.images[0]}
+        />
+        <p className="product__view">
+          <Link className="product__link" state={{ product: product }} to="/detail">Quick view</Link>
+        </p>
+      </div>
+    )
   )
 }
