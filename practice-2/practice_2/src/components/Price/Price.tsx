@@ -3,11 +3,11 @@ import { PriceProps } from "../../types/price";
 import "./price.css"
 
 export default function Price({
-  children,
+  value,
 }: PriceProps): JSX.Element {
   return (
     <p className="card__price">
-      {children}
+      ${value}
     </p>
   )
 }
