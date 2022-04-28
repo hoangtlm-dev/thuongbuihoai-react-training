@@ -1,0 +1,11 @@
+.product__list {
+  float: left;
+  width: 300px;
+  flex-direction: row;
+  margin: 20px 0 0 100px;
+}
+
+.product__content {
+  display: flex;
+  justify-content: space-between;
+}
