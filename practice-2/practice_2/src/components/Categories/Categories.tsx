@@ -1,13 +1,30 @@
-import React from "react";
-import { CategoriesProps } from "../../types/categories";
-import { FilterProps } from "../../types/filter";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./categories.css"
 
-export default function Category({ categoriesList }: FilterProps) {
-  function renderCategoryList(list: CategoriesProps[]) {
-    return list.map((item) => 
+export default function Category() {
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    async function fetchMyAPI() {
+      const result = await axios
+      .get("categories")
+      .then(function (response) {
+        setCategories(response.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+    }
+
+    fetchMyAPI()
+  }, [])
+
+  function renderCategoryList(categories: []) {
+    return categories.map((category) => 
       <li className="categories__item">
-        <a href="#" key={item.id}>{item.name}</a>
+        <Link to="/" state={category} key={category.id}>{category.name}</Link>
       </li>
     );
   }
@@ -17,7 +34,7 @@ export default function Category({ categoriesList }: FilterProps) {
       <div className="categories">
         <p className="categories__title">PRODUCT CATEGORIES</p>
         <ul className="categories__list">
-          {renderCategoryList(categoriesList)}
+          {renderCategoryList(categories)}
         </ul>
       </div>
     </>
