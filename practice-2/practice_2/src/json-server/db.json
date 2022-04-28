@@ -1,0 +1,36 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Cakes"
+    },
+    {
+      "id": "2",
+      "name": "Ice Cream"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "categoryId": "1",
+      "name": "Build Your Pizza",
+      "price": 14,
+      "quantity": 2,
+      "images": [
+        "https://justshoppe.bolvosites.com/site9-cakeshop/wp-content/uploads/sites/68/2020/02/product-08-300x300.jpg",
+      ],
+      "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+    },
+    {
+      "id": "2",
+      "categoryId": "2",
+      "name": "Sandwich",
+      "price": 20,
+      "quantity": 5,
+      "images": [
+        "https://justshoppe.bolvosites.com/site9-cakeshop/wp-content/uploads/sites/68/2020/02/product-08-300x300.jpg"
+      ],
+      "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+    }
+  ]
+}
