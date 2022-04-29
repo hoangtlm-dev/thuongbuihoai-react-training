@@ -13,22 +13,26 @@
     {
       "id": "1",
       "categoryId": "1",
-      "name": "Build Your Pizza",
+      "name": "Sandwich",
       "price": 14,
-      "quantity": 2,
+      "quantity": 3,
       "images": [
-        "https://justshoppe.bolvosites.com/site9-cakeshop/wp-content/uploads/sites/68/2020/02/product-08-300x300.jpg",
+        "https://justshoppe.bolvosites.com/site9-cakeshop/wp-content/uploads/sites/68/2020/02/product-03-300x300.jpg",
+        "https://justshoppe.bolvosites.com/site9-cakeshop/wp-content/uploads/sites/68/2020/02/product-05-300x300.jpg",
+        "https://justshoppe.bolvosites.com/site9-cakeshop/wp-content/uploads/sites/68/2020/02/product-04-300x300.jpg"
       ],
       "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
     },
     {
       "id": "2",
       "categoryId": "2",
-      "name": "Sandwich",
+      "name": "Blueberry ice cream",
       "price": 20,
-      "quantity": 5,
+      "quantity": 3,
       "images": [
-        "https://justshoppe.bolvosites.com/site9-cakeshop/wp-content/uploads/sites/68/2020/02/product-08-300x300.jpg"
+        "https://justshoppe.bolvosites.com/site9-cakeshop/wp-content/uploads/sites/68/2020/02/product-09-300x300.jpg",
+        "https://justshoppe.bolvosites.com/site9-cakeshop/wp-content/uploads/sites/68/2020/02/product-08-300x300.jpg",
+        "https://justshoppe.bolvosites.com/site9-cakeshop/wp-content/uploads/sites/68/2020/02/product-07-300x300.jpg"
       ],
       "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
     }

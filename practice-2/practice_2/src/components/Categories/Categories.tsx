@@ -1,25 +1,10 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import fetchCategory from "../../hooks/fetchCategory";
 import "./categories.css"
 
 export default function Category() {
-  const [categories, setCategories] = useState([]);
-
-  useEffect(() => {
-    async function fetchMyAPI() {
-      const result = await axios
-      .get("categories")
-      .then(function (response) {
-        setCategories(response.data);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-    }
-
-    fetchMyAPI()
-  }, [])
+  const categories = fetchCategory();
 
   function renderCategoryList(categories: []) {
     return categories.map((category) => 

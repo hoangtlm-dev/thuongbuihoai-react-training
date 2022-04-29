@@ -1,4 +1,6 @@
 export interface ButtonProps {
-  className?: string
+  isHide?: boolean;
   value: string;
+  className?: string;
+  onClick?: Function;
 }

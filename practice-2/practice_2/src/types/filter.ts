@@ -7,3 +7,7 @@ export interface FilterProps {
 export interface FilterByProps {
   filterBy: CategoriesProps[];
 }
+
+export interface FilterInputProps {
+  categoryId?: string;
+}

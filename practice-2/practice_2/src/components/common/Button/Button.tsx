@@ -1,12 +1,11 @@
 import React from "react";
 import { ButtonProps } from "../../../types/commonType/button";
-import "./button.css"
 
 export default function Button({ value, className }: ButtonProps) {
   return (
-    <label htmlFor="filter__check"
-      className={`btn btn-${className}`}>
+    <button
+      className={`btn btn__${className}`}>
       {value}
-    </label>
+    </button>
   );
 }

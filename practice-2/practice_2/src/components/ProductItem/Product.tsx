@@ -6,16 +6,14 @@ import "./product.css"
 
 export default function Products ({ product }: ProductProps) {
   return (
-    product.images.map(img => 
-      <div className="product">
-        <img
-          className="product__image"
-          src={product.images[0]}
-        />
-        <p className="product__view">
-          <Link className="product__link" state={{ product: product }} to="/detail">Quick view</Link>
-        </p>
-      </div>
-    )
+    <div className="product">
+      <img
+        className="product__image"
+        src={product.images[0]}
+      />
+      <p className="product__view">
+        <Link className="product__link" state={{ product }} to="/detail">Quick view</Link>
+      </p>
+    </div>
   )
 }

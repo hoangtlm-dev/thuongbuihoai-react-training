@@ -1,9 +1,7 @@
 import { ImagesProps } from "./logo";
 
 export interface ProductProps {
-  id: string,
-  name: string,
-  image: ImagesProps;
+  image?: ImagesProps;
   product: {}
 }
 
