@@ -24,3 +24,7 @@
   border-radius: 5px;
   text-align: center;
 }
+
+.productDetail__update {
+  display: flex;
+}

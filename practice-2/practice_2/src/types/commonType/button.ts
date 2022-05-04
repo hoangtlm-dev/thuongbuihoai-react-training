@@ -1,6 +1,7 @@
 export interface ButtonProps {
   isHide?: boolean;
-  value: string;
+  value: string | JSX.Element;
   className?: string;
-  onClick?: Function;
+  onClick?: () => void;
+  hideModal?: () => void; 
 }

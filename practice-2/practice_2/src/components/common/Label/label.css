@@ -11,24 +11,3 @@
   color: white;
   background-color: #ffa69e;
 }
-
-.btn__cancel,
-.btn__submit {
-  margin: 10px;
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid gray;
-  float: right;
-}
-
-.btn__cancel:hover {
-  color: white;
-  border-color: darkorange;
-  background-color: darkorange;
-}
-
-.btn__submit {
-  color: white;
-  border-color: cornflowerblue;
-  background-color: cornflowerblue;
-}

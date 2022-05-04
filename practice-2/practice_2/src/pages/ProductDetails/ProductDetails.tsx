@@ -1,25 +1,17 @@
 import React, { useState } from "react";
-import { ProductDetailProps } from "../../types/product";
+import { ProductPropRouter } from "../../types/product";
 import Description from "../../components/Description/Description";
 import Price from "../../components/Price/Price";
 import Title from "../../components/common/Title/Title";
-import "./productDetail.css"
 import { useLocation } from "react-router-dom";
-import ModalDelete from "../../components/Modal/ModalDelete/ModalDelete";
+import Button from "../../components/common/Button/Button";
+import Form from "../../components/Form/Form";
+import "./productDetail.css"
 
-export default function ProductDetails({ image }: ProductDetailProps) {
+export default function ProductDetails() {
   const location = useLocation()
-  const { product } = location.state
-
-  const [open, setOpen] = useState(false)
-
-  const showModal = () => {
-    setOpen(true)
-  }
-
-  const hideModal = () => {
-    setOpen(false)
-  }
+  const  { product }  = location.state as ProductPropRouter;
+  const [openModalUpdate, setOpenModalUpdate] = useState(false)
 
   return (
     <>
@@ -27,29 +19,29 @@ export default function ProductDetails({ image }: ProductDetailProps) {
         <div className="productDetails__img--left">
           <img
             src={product.images[0]}
-            alt={image.alt} />
+            alt="This is image" />
         </div>
         <div className="productDetails__img--right">
-          {product.images.map((img: string) => <img
-            src={img}
-            alt={image.alt} />
-          )}
+          {product.images.map((img: string, index: number) =>
+            <img
+              key={index}
+              src={img}
+              alt="This is image"
+            />
+            )
+          }
         </div>
         <div className="productDetails__info">
-          <Price value={product.price} />
+          <div className="productDetail__update">
+            <Price value={product.price.toString()} />
+            <Button className="btn btn__update" value={<i onClick={() => setOpenModalUpdate(true)} className="fa fa-pen"></i>} />
+          </div>
           <Title value={product.name} />
-          <input className="productDetails__input" type="number" placeholder="1" />
+          <input className="productDetails__input" type="number" value={product.quantity} />
           <Description value={product.description} />
-          <button onClick={showModal}>Delete</button>
         </div>
       </div>
-      {
-        open? (
-          <ModalDelete isShowing={hideModal} id={product.id} />
-        ) : (
-          ""
-        )
-      }
+      {openModalUpdate && <Form id={product.id} hideModalUpdate={setOpenModalUpdate} />}
     </>
   );
 }

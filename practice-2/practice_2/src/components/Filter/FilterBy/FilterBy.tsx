@@ -5,8 +5,8 @@ import "./filterBy.css"
 
 export default function FilterBy({ filterBy }: FilterByProps) {
   function renderFilterBy(list: CategoriesProps[]) {
-    return list.map((item) => 
-      <li className="filterBy__item">
+    return list.map((item, index: number) =>
+      <li key={index} className="filterBy__item">
         <label htmlFor="" className="filterBy__group">
          <span className="filter__checkbox">
           <input type="checkbox" />

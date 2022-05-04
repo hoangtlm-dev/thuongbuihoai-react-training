@@ -1,29 +1,34 @@
+import React, { useContext } from "react";
 import axios from "axios";
 import { ModalDeleteProps } from "../../../types/modal";
-import Button from "../../common/Button/Button";
+import { SUCCESS_MSG } from "../../../constants/message";
+import { ProductListContext } from "../../../App";
 import "./modalDelete.css"
 
-export default function ModalDelete({ id }: ModalDeleteProps) {
-  const handleDeleteProduct = (id: string) => {
-    axios.delete("products/"+ id)
+export default function ModalDelete({ id, hideModal }: ModalDeleteProps) {
+  const setIsReset = useContext(ProductListContext) as Function
+  console.log("setIsReset", setIsReset);
+  const handleDeleteProduct = async (id: string) => {
+   await axios.delete("products/"+ id)
     .catch(function (error) {
       console.log(error.toJSON());
     });
+
+    setIsReset(true)
+    alert(SUCCESS_MSG.MESSAGE_DELETE_PRODUCT)
+    hideModal(false)
   }
 
   return (
     <div className="modal" id="showModal">
       <div className="modal-dialog">
         <div className="modal-content">
-          <div className="modal-header">
-            <h4 className="modal-title" id="productModalLabel">Delete product</h4>
-          </div>
           <div className="modal-body">
             <span>Are you sure to delete this product?</span>
           </div>
           <div className="modal-footer">
-            <Button value="No" className="btn btn-secondary" />
-            <Button onClick={() => handleDeleteProduct(id)} value="Yes" className="btn btn-primary" />
+            <button className="btn btn__no" onClick={() => hideModal(false)}>No</button>
+            <button className="btn btn__yes" onClick={() => handleDeleteProduct(id)}>Yes</button>
           </div>
         </div>
       </div>

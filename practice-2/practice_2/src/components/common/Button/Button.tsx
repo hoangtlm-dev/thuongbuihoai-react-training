@@ -1,5 +1,6 @@
 import React from "react";
 import { ButtonProps } from "../../../types/commonType/button";
+import "./button.css"
 
 export default function Button({ value, className }: ButtonProps) {
   return (
