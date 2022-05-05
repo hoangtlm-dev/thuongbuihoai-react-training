@@ -7,17 +7,22 @@ import ProductDetails from "./pages/ProductDetails/ProductDetails"
 import { logos } from "./constants/header"
 import ProductList from "./pages/ProductList/ProductList"
 import Footer from "./components/Footer/Footer"
+import fetchProduct from "./hooks/fetchProduct"
 
-export const ProductListContext = createContext(Function);
+export const ProductListContext = createContext({});
 function App() {
-  const [isReset, setIsReset] = useState(true)
+  const [isReset, setIsReset] = useState<Boolean>(true)
+  const [filterInput, setFilterInput] = useState("")
+
+  const products = fetchProduct(isReset, setIsReset, filterInput)
+
   return (
     <ProductListContext.Provider value={setIsReset}>
-      <Navigation />
+      <Navigation isReset={isReset} setIsReset={setIsReset} setFilterInput={setFilterInput} />
       <Header url={logos.src} />
-      <Filter />
+      <Filter isReset={isReset} setIsReset={setIsReset} setFilterInput={setFilterInput} />
       <Routes>
-        <Route path="/" element={<ProductList isReset={isReset} setIsReset={setIsReset} />}/>
+        <Route path="/" element={<ProductList products={products} isReset={isReset} setIsReset={setIsReset} />}/>
         <Route path="/detail" element={<ProductDetails />}/>
       </Routes>
       <Footer />

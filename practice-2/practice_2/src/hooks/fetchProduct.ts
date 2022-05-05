@@ -2,10 +2,12 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { FilterInputProps } from "../types/filter";
 
-export default function fetchProduct(isReset: Boolean, setIsReset: Function, filterInput?: FilterInputProps) {
+export default function fetchProduct(isReset: Boolean, setIsReset: Function, filterInput?: {}) {
   const filter = {
     ...filterInput,
   };
+  console.log('filter',filter);
+  
   const queryParams: URLSearchParams = new URLSearchParams(filter);
   const [products, setProducts] = useState([]);
 

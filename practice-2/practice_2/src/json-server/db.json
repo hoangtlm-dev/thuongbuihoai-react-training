@@ -30,7 +30,7 @@
       "price": 20,
       "quantity": "6",
       "images": [
-        "https://justshoppe.bolvosites.com/site9-cakeshop/wp-content/uploads/sites/68/2020/02/product-09-300x300.jpg",
+        "src/assets/images/appleIceCream.jpg",
         "https://justshoppe.bolvosites.com/site9-cakeshop/wp-content/uploads/sites/68/2020/02/product-08-300x300.jpg",
         "https://justshoppe.bolvosites.com/site9-cakeshop/wp-content/uploads/sites/68/2020/02/product-07-300x300.jpg"
       ],

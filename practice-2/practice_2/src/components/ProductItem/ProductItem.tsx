@@ -3,9 +3,9 @@ import { Link } from "react-router-dom"
 import { ProductProps } from "../../types/product";
 import Button from "../common/Button/Button";
 import ModalDelete from "../Modal/ModalDelete/ModalDelete";
-import "./product.css"
+import "./productItem.css"
 
-export default function Products ({ product }: ProductProps) {
+const ProductItem: React.FC<ProductProps> = ({ product }) => {
   const [open, setOpen] = useState(false)
   return (
     <>
@@ -25,3 +25,5 @@ export default function Products ({ product }: ProductProps) {
     </>
   )
 }
+
+export default ProductItem;

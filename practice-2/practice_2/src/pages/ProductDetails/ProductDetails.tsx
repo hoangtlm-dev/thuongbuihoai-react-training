@@ -8,10 +8,14 @@ import Button from "../../components/common/Button/Button";
 import Form from "../../components/Form/Form";
 import "./productDetail.css"
 
-export default function ProductDetails() {
+const ProductDetails: React.FC = () => {
   const location = useLocation()
-  const  { product }  = location.state as ProductPropRouter;
+  const { product }  = location.state as ProductPropRouter;
   const [openModalUpdate, setOpenModalUpdate] = useState(false)
+
+  const handleChangeProductDetail = (newProduct: {}) => {
+    (location.state).product = newProduct
+  }
 
   return (
     <>
@@ -41,7 +45,9 @@ export default function ProductDetails() {
           <Description value={product.description} />
         </div>
       </div>
-      {openModalUpdate && <Form id={product.id} hideModalUpdate={setOpenModalUpdate} />}
+      {openModalUpdate && <Form id={product.id} onChangeProductDetail={handleChangeProductDetail} hideModalUpdate={setOpenModalUpdate} />}
     </>
   );
 }
+
+export default ProductDetails;

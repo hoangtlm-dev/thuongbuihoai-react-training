@@ -3,3 +3,7 @@ export interface CategoriesProps {
   name: string,
   count?: number
 }
+
+export interface CategoryProps {
+  setFilterInput: Function;
+}

@@ -2,12 +2,12 @@ import React from "react";
 import { PriceProps } from "../../types/price";
 import "./price.css"
 
-export default function Price({
-  value,
-}: PriceProps): JSX.Element {
+const Price: React.FC<PriceProps> = ({ value }) => {
   return (
     <p className="card__price">
       ${value}
     </p>
   )
 }
+
+export default Price;
