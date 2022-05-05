@@ -1,6 +1,6 @@
 .modals {
   position: absolute;
-  z-index: 10;
+  z-index: 25;
   top: 5%;
   left: 33%;
   width: 40%;
@@ -64,4 +64,21 @@
 .form__img {
   width: 100px;
   margin-right: 10px;
+}
+
+.form__input--img {
+  width: 100px;
+  border: 1px solid gray;
+}
+
+#form__number {
+  display: flex;
+  flex-direction: row;
+}
+
+.form__quantity,
+.form__price {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
 }
