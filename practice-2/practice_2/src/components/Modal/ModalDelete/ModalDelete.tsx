@@ -5,9 +5,8 @@ import { SUCCESS_MSG } from "../../../constants/message";
 import { ProductListContext } from "../../../App";
 import "./modalDelete.css"
 
-export default function ModalDelete({ id, hideModal }: ModalDeleteProps) {
+const ModalDelete: React.FC<ModalDeleteProps> = ({ id, hideModal }) => {
   const setIsReset = useContext(ProductListContext) as Function
-  console.log("setIsReset", setIsReset);
   const handleDeleteProduct = async (id: string) => {
    await axios.delete("products/"+ id)
     .catch(function (error) {
@@ -35,3 +34,5 @@ export default function ModalDelete({ id, hideModal }: ModalDeleteProps) {
     </div>
   )
 }
+
+export default ModalDelete;
