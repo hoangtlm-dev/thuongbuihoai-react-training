@@ -1,14 +1,17 @@
 import React from "react";
 import { ImagesProps } from "../../types/logo";
 
-export default function Logo({
+const Logo: React.FC<ImagesProps> = ({
   href,
   src,
   alt
-}: ImagesProps) {
+}) => {
+
   return (
     <a href={href}>
       <img className="logo" src={src} alt={alt} />
     </a>
   );
 }
+
+export default Logo;
