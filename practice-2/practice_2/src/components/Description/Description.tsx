@@ -1,12 +1,13 @@
 import React from "react";
 import { TitleProps } from "../../types/commonType/title";
 
-export default function Description({
-  value,
-}: TitleProps): JSX.Element {
+const Description: React.FC<TitleProps> = ({ value }) => {
+
   return (
     <p className="description">
       {value}
     </p>
   )
 }
+
+export default Description;
