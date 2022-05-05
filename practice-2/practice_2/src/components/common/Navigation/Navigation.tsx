@@ -1,7 +1,9 @@
 import React from "react";
+import { SearchByName } from "../../../types/search";
+import Search from "../../Search/Search";
 import "./navigation.css"
 
-export default function Navigation() {
+const Navigation: React.FC<SearchByName> = ({ setFilterInput }) => {
   return (
     <nav className="nav">
       <ul className="nav__list">
@@ -12,6 +14,9 @@ export default function Navigation() {
           <a href="" className="nav__link"> <i className="fa fa-phone"></i> 123 456 7890</a>
         </li>
       </ul>
+      <Search setFilterInput={setFilterInput} />
     </nav>
   );
 }
+
+export default Navigation;

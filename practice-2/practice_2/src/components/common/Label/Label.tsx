@@ -2,7 +2,7 @@ import React from "react";
 import { LabelProps } from "../../../types/commonType/label";
 import "./label.css"
 
-export default function Label({ value, className }: LabelProps) {
+const Label: React.FC<LabelProps> = ({ value, className }) => {
   return (
     <label htmlFor="filter__check"
       className={`label-${className}`}>
@@ -10,3 +10,5 @@ export default function Label({ value, className }: LabelProps) {
     </label>
   );
 }
+
+export default Label;

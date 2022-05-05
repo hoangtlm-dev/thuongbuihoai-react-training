@@ -2,7 +2,7 @@ import React from "react";
 import { ButtonProps } from "../../../types/commonType/button";
 import "./button.css"
 
-export default function Button({ value, className }: ButtonProps) {
+const Button: React.FC<ButtonProps> = ({ value, className }) => {
   return (
     <button
       className={`btn btn__${className}`}>
@@ -10,3 +10,5 @@ export default function Button({ value, className }: ButtonProps) {
     </button>
   );
 }
+
+export default Button;
