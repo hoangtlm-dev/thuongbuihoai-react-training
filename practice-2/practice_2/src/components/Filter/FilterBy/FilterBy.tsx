@@ -3,7 +3,7 @@ import { CategoriesProps } from "../../../types/categories";
 import { FilterByProps } from "../../../types/filter";
 import "./filterBy.css"
 
-export default function FilterBy({ filterBy }: FilterByProps) {
+const FilterBy: React.FC<FilterByProps> = ({ filterBy }) => {
   function renderFilterBy(list: CategoriesProps[]) {
     return list.map((item, index: number) =>
       <li key={index} className="filterBy__item">
@@ -28,3 +28,5 @@ export default function FilterBy({ filterBy }: FilterByProps) {
     </>
   )
 }
+
+export default FilterBy;
