@@ -2,10 +2,7 @@ import React from "react";
 import { IconProps } from "../../types/icon";
 import "./icon.css"
 
-export default function Icon({
-  username,
-  avatar,
-}: IconProps) {
+const Icon: React.FC<IconProps> = ({ username, avatar }) => {
   return (
     <div className="user__active">
       <img src={avatar.src} alt={avatar.alt} className="user__avatar" />
@@ -13,3 +10,5 @@ export default function Icon({
     </div>
   );
 }
+
+export default Icon;
