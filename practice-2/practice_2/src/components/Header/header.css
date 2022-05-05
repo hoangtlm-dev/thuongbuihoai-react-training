@@ -1,5 +1,9 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 30px 100px;
+  padding: 130px 100px 0;
+}
+
+.header__logo {
+  display: flex;
 }
