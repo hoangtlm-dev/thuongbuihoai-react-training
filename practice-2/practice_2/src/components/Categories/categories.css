@@ -1,5 +1,5 @@
 .categories {
-  margin: 30px;
+  margin: 100px 30px 0;
 }
 
 .categories__list {
@@ -12,6 +12,7 @@
 
 .categories__item {
   list-style: none;
+  cursor: pointer;
 }
 
 .categories__item > a {
