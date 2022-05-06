@@ -31,10 +31,10 @@ const Category: React.FC<CategoryProps> = ({ setFilterInput }) => {
     <>
       <div className="categories">
         <p className="categories__title">PRODUCT CATEGORIES</p>
-        <ul className="categories__list">
-          {renderCategoryList(categories as [])}
-          <li className="categories__item" onClick={handleDefaultCategory}>Default</li>
-        </ul>
+          <ul className="categories__list">
+            {renderCategoryList(categories as [])}
+            <li className="categories__item" onClick={handleDefaultCategory}>Default</li>
+          </ul>
       </div>
     </>
   )
