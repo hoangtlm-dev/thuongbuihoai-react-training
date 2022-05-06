@@ -13,42 +13,45 @@ const Form: React.FC<FormProps> = ({ id, hideModalUpdate, onChangeProductDetail 
   const location = useLocation()
   const product: ProductType = (location.state as ProductPropRouter).product
   const [productEdit, setProductEdit] = useState<ProductType>(product)
+
   const categories = fetchCategory();
   const setIsReset = useContext(ProductListContext) as Function
-  const [image, setImage] = useState([])
-
-  useEffect(() => {
-    return () => {
-      image && URL.revokeObjectURL(image.preview)
-    }
-  }, [image])
+  const [selectedFile, setSelectedFile] = useState([]);
 
   const handleUpdateProduct = async (id: string) => {
-    await axios.put("products/"+ id,
-      {...productEdit}
-    )
-    .then(function (response) {
-      setIsReset(true)
-      onChangeProductDetail(response.data)
-      alert(SUCCESS_MSG.MESSAGE_UPDATE_PRODUCT)
-      hideModalUpdate(false)
-    })
-    .catch(function (error) {
-      alert(error)
-    });
-  }
+    for (let i = 0; i < selectedFile.length; i++) {
+      productEdit.images.push("src/assets/images/" + selectedFile[i].name)
+    }
+      await axios ({
+        method: "put",
+        url: "products/"+ id,
+        data:{...productEdit},
+      })
+      .then(function (response) {
+        setIsReset(true)
+        onChangeProductDetail(response.data)
+        alert(SUCCESS_MSG.MESSAGE_UPDATE_PRODUCT)
+        hideModalUpdate(false)
+      })
+      .catch(function (error) {
+        alert(error)
+      });
+    }
 
   const handleChange = (event: { target: { value: {}; name: string; } }) => {
     const value = event.target.value
     const key = event.target.name
     setProductEdit({...productEdit, [key]: value})
-    const file = event.target.files[0]
-    file.preview = URL.createObjectURL(file)
-    console.log("file", file);
-    file.name = "src/assets/image" + file.name
-    console.log("file.name", file.name);
+  }
 
-    setImage(file)
+  const imageChange = (event: React.ChangeEvent) => {
+    const target= event.target;
+    if(target.files) {
+      for(let i = 0; i < event.target.files.length; i++){
+        setSelectedFile(selectedFile => [...selectedFile, target.files[i]] as any);
+        // setSelectedFile(target.files[i])
+      }
+    }
   }
 
   return (
@@ -90,7 +93,7 @@ const Form: React.FC<FormProps> = ({ id, hideModalUpdate, onChangeProductDetail 
                 {product.images.map((img: string, index: number) =>
                   <img key={index} className="form__img" src={img} />
                 )}
-                <input type="file" multiple name="images" onChange={handleChange} className="form__input--img"/>
+                <input type="file" multiple name="images" onChange={imageChange} className="form__input--img"/>
               </div>
             </div>
           </div>
