@@ -11,7 +11,7 @@ const Filter: React.FC<FilterByCategory> = ({ setFilterInput }) => {
     <div className="filter">
       <Label className="filter" value="Filter" />
       <input type="checkbox" hidden className="filter__input" id="filter__check" />
-      <label htmlFor="filter__check" className="filter__overlay"></label>
+      <label htmlFor="filter__check" className="filter__overlay" />
       <div className="filters">
         <Category setFilterInput={setFilterInput}/>
         <FilterBy filterBy={DEFAULT_FILTERER} />
