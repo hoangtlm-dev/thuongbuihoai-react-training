@@ -1,11 +1,7 @@
-.product {
-  position: relative;
-}
-
 .product__view {
   position: absolute;
   text-align: center;
-  bottom: 0;
+  bottom: -19px;
   margin: 0;
   width: 350px;
   padding: 10px 0;

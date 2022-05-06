@@ -10,7 +10,7 @@ import Footer from "./components/Footer/Footer"
 import fetchProduct from "./hooks/fetchProduct"
 
 export const ProductListContext = createContext({});
-function App() {
+const App: React.FC = () => {
   const [isReset, setIsReset] = useState<Boolean>(true)
   const [filterInput, setFilterInput] = useState("")
 

@@ -1,7 +1,7 @@
 import logo from "../assets/images/js-logo4.png";
 import avatar from "../assets/images/appleIceCream.jpg"
 
-const logos = {
+const logos = { //
   src: logo,
   alt: "Just Shoppe",
 };

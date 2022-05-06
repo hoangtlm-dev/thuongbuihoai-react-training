@@ -1,31 +1,27 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { FilterInputProps } from "../types/filter";
 
 export default function fetchProduct(isReset: Boolean, setIsReset: Function, filterInput?: {}) {
   const filter = {
     ...filterInput,
   };
-  console.log('filter',filter);
-  
+
   const queryParams: URLSearchParams = new URLSearchParams(filter);
   const [products, setProducts] = useState([]);
 
   async function fetchMyAPI() {
     const result = await axios
     .get("products?"+ queryParams.toString())
-    .then(function (response) {
-      console.log(response);
+    .then((response) => {
       setProducts(response.data);
     })
-    .catch(function (error) {
+    .catch((error) => {
       console.log(error);
     });
     setIsReset(false)
   }
 
   useEffect(() => {
-    console.log("reset", isReset);
     isReset && fetchMyAPI()
   }, [isReset])
 

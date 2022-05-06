@@ -11,7 +11,7 @@
 
 # TARGET
 - Understand simple flow in React
-- Understand how to use React hooks and how to build an own custom hook
+- Understand how to use React hooks and how to build an own custom hook //
 
 # REQUIREMENT
 - Using React hooks

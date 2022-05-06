@@ -1,4 +1,4 @@
-export interface ProductProps { // type
+export interface ProductProps {
   product: {
     id: string;
     images: string[];
@@ -8,7 +8,7 @@ export interface ProductProps { // type
 export interface ProductListProps {
   isReset: Boolean;
   setIsReset: Function;
-  products
+  products: ProductType[];
 }
 
 export interface ProductType {
