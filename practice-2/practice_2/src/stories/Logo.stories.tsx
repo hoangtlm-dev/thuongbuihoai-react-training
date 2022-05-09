@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../components/Logo/Logo";
-import { logos } from "../constants/header";
+import { LOGOS } from "../constants/header";
 
 export default {
   /* 👇 The title prop is optional.
@@ -12,5 +12,5 @@ export default {
 };
 
 export function Default() {
-  return <Logo href="#" src={logos.src} alt={logos.alt} />;
+  return <Logo href="#" src={LOGOS.src} alt={LOGOS.alt} />;
 }
