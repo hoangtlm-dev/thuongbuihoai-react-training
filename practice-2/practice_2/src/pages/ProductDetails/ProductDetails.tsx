@@ -15,7 +15,7 @@ const ProductDetails: React.FC = () => {
 
   const handleOpenModalUpdate = useCallback(() => {
     setOpenModalUpdate(true)
-  }, [])
+  }, []);
 
   const handleChangeProductDetail = (newProduct: {}) => {
     (location.state).product = newProduct;
