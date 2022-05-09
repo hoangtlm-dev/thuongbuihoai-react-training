@@ -1,6 +1,5 @@
 import React from "react";
 import ProductItem from "../components/ProductItem/ProductItem";
-import { cardImage } from "../constants/card";
 
 export default {
   /* 👇 The title prop is optional.
