@@ -1,26 +1,24 @@
-import React, { useContext } from "react";
-import { ProductListContext } from "../../App";
-import fetchCategory from "../../hooks/fetchCategory";
+import React from "react";
+import useCategory from "../../hooks/useCategory";
 import { CategoriesProps, CategoryProps } from "../../types/categories";
-import "./categories.css"
+import "./categories.css";
 
-const Category: React.FC<CategoryProps> = ({ setFilterInput }) => {
-  const setIsReset = useContext(ProductListContext) as Function
+const Category: React.FC<CategoryProps> = ({ setFilterInput, setOpenModalSearch }) => {
   const handleSearch = (e: React.MouseEvent<HTMLElement>) => {
-    const categoryId = {categoryId : e.currentTarget.dataset.index}
+    const categoryId = {categoryId : e.currentTarget.dataset.index};
     setFilterInput(categoryId);
-    setIsReset(true)
+    setOpenModalSearch(false);
   }
 
   const handleDefaultCategory = () => {
-    const categoryId = ""
+    const categoryId = "";
     setFilterInput(categoryId);
-    setIsReset(true)
+    setOpenModalSearch(false);
   }
 
-  const categories = fetchCategory();
+  const categories = useCategory();
   function renderCategoryList(categories: []) {
-    return categories.map((category: CategoriesProps, index: number) => 
+    return categories.map((category: CategoriesProps, index: number) =>
       <li  key={index} className="categories__item">
         <a data-index={category.id} onClick={handleSearch} key={category.id}>{category.name}</a>
       </li>
@@ -37,7 +35,7 @@ const Category: React.FC<CategoryProps> = ({ setFilterInput }) => {
           </ul>
       </div>
     </>
-  )
+  );
 }
 
 export default Category;
