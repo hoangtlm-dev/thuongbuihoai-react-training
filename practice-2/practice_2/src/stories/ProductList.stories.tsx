@@ -11,5 +11,5 @@ export default {
 };
 
 export function Default() {
-  return <ProductList />;
+  return <ProductList products={[]} />;
 }
