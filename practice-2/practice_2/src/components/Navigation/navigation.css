@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 20;
+  width: 87%;
+  padding: 10px 100px;
+  background-color: #ffa69e;
+}
+
+.nav__list {
+  display: flex;
+  padding: 0;
+}
+
+.nav__item {
+  margin-right: 20px;
+  list-style: none;
+}
+
+.nav__item > a {
+  text-decoration: none;
+  color: white;
+}
