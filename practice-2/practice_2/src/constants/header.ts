@@ -1,12 +1,12 @@
 import logo from "../assets/images/js-logo4.png";
 import avatar from "../assets/images/appleIceCream.jpg"
 
-const logos = { //
+const LOGOS = {
   src: logo,
   alt: "Just Shoppe",
 };
 
-const users = {
+const USERS = {
   username: "Hoai Thuong",
   avatar: {
     src: avatar,
@@ -14,4 +14,4 @@ const users = {
   },
 };
 
-export { logos, users }
+export { LOGOS, USERS };

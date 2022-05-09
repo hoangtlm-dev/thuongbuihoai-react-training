@@ -1,16 +1,5 @@
 import { CategoriesProps } from "../types/categories";
 
-const DEFAULT_CATEGORY: CategoriesProps[] = [
-  {
-    id: "1",
-    name: "Cakes",
-  },
-  {
-    id: "2",
-    name: "Ice Cream"
-  }
-]
-
 const DEFAULT_FILTERER: CategoriesProps[] = [
   {
     id: "1",
@@ -24,4 +13,4 @@ const DEFAULT_FILTERER: CategoriesProps[] = [
   }
 ]
 
-export { DEFAULT_CATEGORY, DEFAULT_FILTERER }
+export { DEFAULT_FILTERER };
