@@ -1,17 +1,4 @@
 export interface ProductProps {
-  product: {
-    id: string;
-    images: string[];
-  };
-}
-
-export interface ProductListProps {
-  isReset: Boolean;
-  setIsReset: Function;
-  products: ProductType[];
-}
-
-export interface ProductType {
   id: string;
   name: string;
   price: number;
@@ -21,7 +8,18 @@ export interface ProductType {
   description: string;
 }
 
-export interface ProductPropRouter {
-  product: ProductType;
+export interface ProductItemProps {
+  product: {
+    id: string;
+    images: string[];
+  };
+}
+
+export interface ProductListProps {
+  products: ProductProps[];
+}
+
+export interface ProductUpdateProps {
+  product: ProductProps;
   setIsReset: Function;
 }

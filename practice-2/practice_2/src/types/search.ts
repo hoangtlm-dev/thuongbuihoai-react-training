@@ -3,7 +3,5 @@ export interface SearchProps {
 }
 
 export interface SearchByName {
-  isReset: Boolean;
-  setIsReset: Function;
   setFilterInput: Function;
 }

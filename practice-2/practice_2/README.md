@@ -41,6 +41,8 @@
 - git clone git@gitlab.asoft-python.com:thuong.buihoai/react-training.git
 - cd react-training
 - git checkout feature/react-practice-2
+- Install json-server: pnpm install json-server
+- Run server: pnpm run server
 - Install dependencies : pnpm install
 - Run app: pnpm dev
 - Open on web: http://localhost:3000/

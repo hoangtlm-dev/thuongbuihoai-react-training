@@ -1,3 +1,4 @@
 export interface HeaderProps {
-  url: string;
+  username: string;
+  image: string;
 }

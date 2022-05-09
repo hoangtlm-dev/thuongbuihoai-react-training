@@ -1,4 +1,4 @@
 export interface TitleProps {
   className?: string;
-  value: string;
+  text: string;
 }

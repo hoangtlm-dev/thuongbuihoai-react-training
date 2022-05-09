@@ -13,7 +13,5 @@ export interface FilterInputProps {
 }
 
 export interface FilterByCategory {
-  isReset: Boolean;
-  setIsReset: Function;
   setFilterInput: Function;
 }

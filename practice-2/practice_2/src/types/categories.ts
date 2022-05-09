@@ -6,4 +6,5 @@ export interface CategoriesProps {
 
 export interface CategoryProps {
   setFilterInput: Function;
+  setOpenModalSearch: Function;
 }
