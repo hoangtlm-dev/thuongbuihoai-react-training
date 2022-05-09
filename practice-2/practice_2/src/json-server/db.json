@@ -1,18 +1,28 @@
 {
   "categories": [
     {
-      "id": "1",
+      "id": "1651999177368",
       "name": "Cakes"
     },
     {
-      "id": "2",
+      "id": "1651999197973",
       "name": "Ice Cream"
+    },
+    {
+      "id": "12345438573",
+      "name": "Apple ice cream",
+      "parent_id": "1651999197973"
+    },
+    {
+      "id": "1234543857322",
+      "name": "Strawberry ice cream",
+      "parent_id": "1651999197973"
     }
   ],
   "products": [
     {
-      "id": "1",
-      "categoryId": "1",
+      "id": "1651999210588",
+      "categoryId": "1651999177368",
       "name": "Sandwich",
       "price": 14,
       "quantity": 3,
@@ -24,9 +34,9 @@
       "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
     },
     {
-      "id": "2",
-      "categoryId": "2",
-      "name": "Blueberry ice cream",
+      "id": "1651912243435",
+      "categoryId": "1651999197973",
+      "name": "Orange ice cream",
       "price": "20",
       "quantity": "6",
       "images": [
