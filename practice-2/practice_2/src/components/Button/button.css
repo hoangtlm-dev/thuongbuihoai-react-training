@@ -1,0 +1,65 @@
+.btn__cancel,
+.btn__submit {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  float: right;
+}
+
+.btn__cancel:hover {
+  color: white;
+  border-color: darkorange;
+  background-color: darkorange;
+}
+
+.btn__submit {
+  color: white;
+  border-color: cornflowerblue;
+  background-color: cornflowerblue;
+}
+
+.btn__no,
+.btn__yes {
+  padding: 2px 5px;
+  border: 1px solid #ffa69e;
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+.btn__no {
+  margin-right: 5px;
+}
+
+.btn__delete,
+.btn__view,
+.btn__update {
+  border: none;
+  background-color: transparent;
+  z-index: 5;
+}
+
+.btn__view > i,
+.btn__update > i {
+  font-size: 20px;
+  color: green;
+}
+
+.btn__delete > i {
+  font-size: 20px;
+  color: red;
+}
+
+.btn__filter {
+  padding: 12px 20px 12px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  background-color: rgba(255,255,255,255);
+  border: 1px solid #ffa69e ;
+  color: #ffa69e;
+}
+
+.btn__filter:hover {
+  color: white;
+  background-color: #ffa69e;
+}
