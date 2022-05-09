@@ -1,20 +1,24 @@
-import React, { useState } from "react";
-import { ProductPropRouter } from "../../types/product";
-import Description from "../../components/Description/Description";
-import Price from "../../components/Price/Price";
-import Title from "../../components/common/Title/Title";
+import React, { useCallback, useState } from "react";
+import { ProductUpdateProps } from "../../types/product";
+import Title from "../components/Title/Title";
+import Text from "../components/Text/Text";
+import Price from "../components/Price/Price";
 import { useLocation } from "react-router-dom";
-import Button from "../../components/common/Button/Button";
-import Form from "../../components/Form/Form";
-import "./productDetail.css"
+import Button from "../../components/Button/Button";
+import ModalUpdate from "../../components/Modal/ModelUpdate/ModalUpdate";
+import "./productDetail.css";
 
 const ProductDetails: React.FC = () => {
-  const location = useLocation()
-  const { product }  = location.state as ProductPropRouter;
-  const [openModalUpdate, setOpenModalUpdate] = useState(false)
+  const location = useLocation();
+  const { product }  = location.state as ProductUpdateProps;
+  const [openModalUpdate, setOpenModalUpdate] = useState(false);
+
+  const handleOpenModalUpdate = useCallback(() => {
+    setOpenModalUpdate(true)
+  }, [])
 
   const handleChangeProductDetail = (newProduct: {}) => {
-    (location.state).product = newProduct
+    (location.state).product = newProduct;
   }
 
   return (
@@ -38,14 +42,14 @@ const ProductDetails: React.FC = () => {
         <div className="productDetails__info">
           <div className="productDetail__update">
             <Price value={product.price.toString()} />
-            <Button className="btn btn__update" value={<i onClick={() => setOpenModalUpdate(true)} className="fa fa-pen"></i>} />
+            <Button className="btn btn__update" text={<i onClick={handleOpenModalUpdate} className="fa fa-pen"></i>} />
           </div>
-          <Title value={product.name} />
+          <Title text={product.name} />
           <input className="productDetails__input" type="number" value={product.quantity} />
-          <Description value={product.description} />
+          <Text text={product.description} />
         </div>
       </div>
-      {openModalUpdate && <Form id={product.id} onChangeProductDetail={handleChangeProductDetail} hideModalUpdate={setOpenModalUpdate} />}
+      {openModalUpdate && <ModalUpdate id={product.id} onChangeProductDetail={handleChangeProductDetail} hideModalUpdate={setOpenModalUpdate} />}
     </>
   );
 }
