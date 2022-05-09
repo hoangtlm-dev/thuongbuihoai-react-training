@@ -1,5 +1,5 @@
 import React from "react";
-import Price from "../components/Price/Price";
+import Price from "../pages/components/Price/Price";
 
 export default {
   /* 👇 The title prop is optional.
@@ -11,5 +11,5 @@ export default {
 };
 
 export function Default() {
-  return <Price children="55000" />;
+  return <Price value="55000" />;
 }
