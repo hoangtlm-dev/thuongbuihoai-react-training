@@ -1,14 +1,17 @@
+.product {
+  position: relative;
+}
+
 .product__view {
   position: absolute;
   text-align: center;
-  bottom: -19px;
+  bottom: 7px;
   margin: 0;
-  width: 350px;
+  width: 270px;
   padding: 10px 0;
   color: transparent;
   color: #333;
   background-color: #ffd89e;
-  display: none;
   z-index: 5;
 }
 
@@ -18,14 +21,10 @@
 }
 
 .product__image {
-  width: 350px;
-  height: 400px;
+  width: 270px;
+  height: 350px;
 }
 
 .product__image:hover {
   opacity: 0.5;
-}
-
-.product__image:hover+.product__view {
-  display: block;
 }

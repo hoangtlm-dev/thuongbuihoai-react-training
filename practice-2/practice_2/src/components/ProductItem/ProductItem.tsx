@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import { Link } from "react-router-dom"
-import { ProductProps } from "../../types/product";
-import Button from "../common/Button/Button";
+import { ProductItemProps } from "../../types/product";
+import Button from "../Button/Button";
 import ModalDelete from "../Modal/ModalDelete/ModalDelete";
-import "./productItem.css"
+import "./productItem.css";
 
-const ProductItem: React.FC<ProductProps> = ({ product }) => {
-  const [open, setOpen] = useState(false)
+const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
+  const [openModalDelete, setOpenModalDelete] = useState(false);
+
+  const handleOpenModalDelete = useCallback(() => {
+    setOpenModalDelete(true)
+  }, []);
+
   return (
     <>
       <div className="product">
@@ -16,14 +21,14 @@ const ProductItem: React.FC<ProductProps> = ({ product }) => {
         />
         <p className="product__view">
           <Link className="product__link" state={{ product }} to="/detail">
-            <Button className="btn btn__view" value={<i className="fa fa-search"></i>} />
+            <Button className="btn btn__view" text={<i className="fa fa-search"></i>} />
           </Link>
-          <Button className="btn btn__delete" value={<i onClick={() => setOpen(true)} className="fa fa-trash"></i>} />
+          <Button className="btn btn__delete" text={<i onClick={handleOpenModalDelete} className="fa fa-trash"></i>} />
         </p>
       </div>
-      {open && <ModalDelete hideModal={setOpen} id={product.id} />}
+      {openModalDelete && <ModalDelete hideModalDelete={setOpenModalDelete} id={product.id} />}
     </>
-  )
+  );
 }
 
 export default ProductItem;
