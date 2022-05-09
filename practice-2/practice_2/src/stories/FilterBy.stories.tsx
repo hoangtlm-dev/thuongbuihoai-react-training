@@ -1,5 +1,5 @@
 import React from "react";
-import FilterBy from "../components/Filter/FilterBy/FilterBy";
+import FilterBy from "../components/Selects/FilterBy/FilterBy";
 import { DEFAULT_FILTERER } from "../constants/categories";
 
 export default {
