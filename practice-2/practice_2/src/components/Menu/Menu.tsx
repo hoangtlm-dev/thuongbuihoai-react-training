@@ -1,13 +1,14 @@
-import React from "react";
+import React, { memo } from "react";
 import { MenuProps, MenuType } from "../../types/menu";
-import "./menu.css"
+import "./menu.css";
 
 const Menu: React.FC<MenuProps> = ({ menuList }) => {
   function renderMenuList(list: MenuType[]) {
     return list.map((item) =>
       <li className="menu__item" key={item.key}>
-        <a href="javascript:void(0)">{item.label}</a>
-      </li>);
+        <a href="">{item.label}</a>
+      </li>
+    );
   }
 
   return (
@@ -17,4 +18,4 @@ const Menu: React.FC<MenuProps> = ({ menuList }) => {
   );
 }
 
-export default Menu;
+export default memo(Menu);
