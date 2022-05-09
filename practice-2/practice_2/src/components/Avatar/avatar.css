@@ -1,0 +1,17 @@
+.active {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 17px;
+  margin-left: 10px;
+}
+
