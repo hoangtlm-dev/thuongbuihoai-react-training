@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header/Header";
-import { logos } from "../constants/header";
+import { USERS } from "../constants/header";
+import url from "../assets/images/js-logo4.png";
 
 export default {
   /* 👇 The title prop is optional.
@@ -12,5 +13,5 @@ export default {
 };
 
 export function Default() {
-  return <Header url={logos.src} />;
+  return <Header username={USERS.username} image={url} />;
 }
