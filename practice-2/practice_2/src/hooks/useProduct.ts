@@ -1,7 +1,8 @@
 import axios from "axios";
+import { PRODUCTS_URL } from "../constants/url";
 import { useEffect, useState } from "react";
 
-export default function fetchProduct(isReset: Boolean, setIsReset: Function, filterInput?: {}) {
+export default function useProduct(filterInput?: {}) {
   const filter = {
     ...filterInput,
   };
@@ -11,19 +12,18 @@ export default function fetchProduct(isReset: Boolean, setIsReset: Function, fil
 
   async function fetchMyAPI() {
     const result = await axios
-    .get("products?"+ queryParams.toString())
+    .get(PRODUCTS_URL + queryParams.toString())
     .then((response) => {
       setProducts(response.data);
     })
     .catch((error) => {
       console.log(error);
     });
-    setIsReset(false)
   }
 
   useEffect(() => {
-    isReset && fetchMyAPI()
-  }, [isReset])
+    fetchMyAPI()
+  }, [products])
 
   return products;
 }

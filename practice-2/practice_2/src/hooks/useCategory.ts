@@ -1,12 +1,13 @@
 import axios from "axios";
+import { CATEGORIES_URL } from "../constants/url";
 import { useEffect, useState } from "react";
 
-export default function fetchCategory() {
+export default function useCategory() {
   const [categories, setCategories] = useState([]);
 
   async function fetchMyAPI() {
     const result = await axios
-    .get("categories")
+    .get(CATEGORIES_URL)
     .then(function (response) {
       setCategories(response.data);
     })
@@ -15,7 +16,6 @@ export default function fetchCategory() {
     });
   }
   useEffect(() => {
-
     fetchMyAPI()
   }, [])
 
