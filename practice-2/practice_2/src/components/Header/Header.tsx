@@ -1,13 +1,13 @@
 import React from "react";
-import { users } from "../../constants/header";
 import { HeaderProps } from "../../types/header";
 import Logo from "../Logo/Logo";
-import User from "../Icon/Icon";
+import url from "../../assets/images/js-logo4.png"
+import Avatar from "../Avatar/Avatar";
 import Menu from "../Menu/Menu";
 import MENU_LIST from "../../constants/menu";
-import "./header.css"
+import "./header.css";
 
-const Header: React.FC<HeaderProps> = ({url}) => {
+const Header: React.FC<HeaderProps> = ({ username, image }) => {
   return (
     <header className="header">
       <div className="header__logo">
@@ -15,9 +15,9 @@ const Header: React.FC<HeaderProps> = ({url}) => {
         <Menu menuList={MENU_LIST} />
       </div>
       <div className="header__user">
-        <User
-          username={users.username}
-          avatar={users.avatar}
+        <Avatar
+          username={username}
+          avatar={image}
         />
       </div>
     </header>
