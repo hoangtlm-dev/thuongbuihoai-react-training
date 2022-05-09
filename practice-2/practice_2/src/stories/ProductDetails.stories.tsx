@@ -1,6 +1,5 @@
 import React from "react";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
-import { cardImage } from "../constants/card";
 
 export default {
   /* 👇 The title prop is optional.
@@ -12,5 +11,5 @@ export default {
 };
 
 export function Product() {
-  return <ProductDetails image={cardImage} />;
+  return <ProductDetails />;
 }
