@@ -1,9 +1,9 @@
 .modal {
-  position: fixed;
-  top: 50%;
-  left: 40%;
-  z-index: 15;
-  padding: 10px;
+  position: absolute;
+  bottom: 20%;
+  margin-left: 5px;
+  font-size: 13px;
+  padding: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   justify-content: center;
