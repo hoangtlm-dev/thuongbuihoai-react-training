@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { ImagesProps } from "../../types/logo";
 
 const Logo: React.FC<ImagesProps> = ({
@@ -14,4 +14,4 @@ const Logo: React.FC<ImagesProps> = ({
   );
 }
 
-export default Logo;
+export default memo(Logo);
