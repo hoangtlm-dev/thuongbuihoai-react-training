@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import { FilterByCategory } from "../../../types/filter";
+import { FilterByCategory } from "@/types/filter";
 import ModalSelects from "../ModalSelects/ModalSelects";
 import "./selectByCategory.css";
 
@@ -7,7 +7,7 @@ const SelectByCategory: React.FC<FilterByCategory> = ({ setFilterInput }) => {
   const [openModalSearch, setOpenModalSearch] = useState(false);
 
   const handleOpenModalFilter = useCallback(() => {
-    setOpenModalSearch(true)
+    setOpenModalSearch(true);
   }, []);
 
   return (

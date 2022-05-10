@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 import { Link } from "react-router-dom"
-import { ProductItemProps } from "../../types/product";
+import { ProductItemProps } from "@/types/product";
 import Button from "../Button/Button";
 import ModalDelete from "../Modal/ModalDelete/ModalDelete";
 import "./productItem.css";

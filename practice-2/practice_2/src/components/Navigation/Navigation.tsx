@@ -1,5 +1,5 @@
 import React from "react";
-import { SearchByName } from "../../types/search";
+import { SearchByName } from "@/types/search";
 import InputSearch from "../InputSearch/InputSearch";
 import "./navigation.css";
 

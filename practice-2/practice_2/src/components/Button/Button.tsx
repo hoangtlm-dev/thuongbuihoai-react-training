@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { ButtonProps } from "../../types/commonType/button";
+import { ButtonProps } from "@/types/commonType/button";
 import "./button.css";
 
 const Button: React.FC<ButtonProps> = ({ text, className }) => {

@@ -1,18 +1,21 @@
 import axios from "axios";
-import React from "react";
-import { ModalDeleteProps } from "../../../types/modal";
-import { SUCCESS_MSG } from "../../../constants/message";
-import { PRODUCT_CRUD } from "../../../constants/url";
+import React, { useContext } from "react";
+import { ModalDeleteProps } from "@/types/modal";
+import { SUCCESS_MSG } from "@/constants/message";
+import { PRODUCT_CRUD } from "@/constants/url";
+import { ProductListContext } from "@/context/MainContext";
 import "./modalDelete.css";
 
 const ModalDelete: React.FC<ModalDeleteProps> = ({ id, hideModalDelete }) => {
+  const setIsReload = useContext(ProductListContext) as Function;
   const handleDeleteProduct = async (id: string) => {
-   await axios.delete(PRODUCT_CRUD + id)
+   await axios.delete(`${PRODUCT_CRUD}${id}`)
     .catch(function (error) {
       console.log(error.toJSON());
     });
 
     alert(SUCCESS_MSG.MESSAGE_DELETE_PRODUCT);
+    setIsReload(true);
     hideModalDelete(false);
   }
 

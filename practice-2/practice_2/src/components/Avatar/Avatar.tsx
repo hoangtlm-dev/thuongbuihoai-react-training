@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { AvatarProps } from "../../types/avatar";
+import { AvatarProps } from "@/types/avatar";
 import "./avatar.css";
 
 const Avatar: React.FC<AvatarProps> = ({ username, avatar }) => {

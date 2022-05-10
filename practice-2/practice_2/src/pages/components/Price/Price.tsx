@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { PriceProps } from "../../../types/price";
+import { PriceProps } from "@/types/price";
 import "./price.css";
 
 const Price: React.FC<PriceProps> = ({ value }) => {

@@ -1,6 +1,6 @@
 import React, { memo, useContext } from "react";
-import { ProductListContext } from "../../App";
-import { SearchProps } from "../../types/search";
+import { ProductListContext } from "@/context/MainContext";
+import { SearchProps } from "@/types/search";
 import "./inputSearch.css";
 
 const InputSearch: React.FC<SearchProps> = ({ setFilterInput }) => {  

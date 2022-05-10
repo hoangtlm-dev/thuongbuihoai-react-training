@@ -1,13 +1,12 @@
 import axios from "axios";
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import useCategory from "../../../hooks/useCategory";
-import { CategoriesProps } from "../../../types/categories";
-import { ProductUpdateProps, ProductProps } from "../../../types/product";
-import { SUCCESS_MSG } from "../../../constants/message";
-import { ProductListContext } from "../../../App";
+import useCategory from "@/hooks/useCategory";
+import { CategoriesProps } from "@/types/categories";
+import { ProductUpdateProps, ProductProps } from "@/types/product";
+import { SUCCESS_MSG } from "@/constants/message";
 import { ModalUpdateProps } from "types/modal";
-import { PRODUCT_CRUD } from "../../../constants/url";
+import { PRODUCT_CRUD } from "@/constants/url";
 import "./modalUpdate.css";
 
 const ModalUpdate: React.FC<ModalUpdateProps> = ({ id, hideModalUpdate, onChangeProductDetail }) => {
@@ -44,10 +43,10 @@ const ModalUpdate: React.FC<ModalUpdateProps> = ({ id, hideModalUpdate, onChange
   }
 
   const imageChange = (event: React.ChangeEvent) => {
-    const target= event.target;
+    const target= event.target as HTMLInputElement;
     if(target.files) {
-      for (let i = 0; i < event.target.files.length; i++) {
-        setSelectedFile(selectedFile => [...selectedFile, target.files[i]] as any);
+      for (let i = 0; i < target.files.length; i++) {
+        setSelectedFile(selectedFile => [...selectedFile, target.files[i]]);
       }
     }
   }

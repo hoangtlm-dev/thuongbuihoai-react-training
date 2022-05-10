@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { ImagesProps } from "../../types/logo";
+import { ImagesProps } from "@/types/logo";
 
 const Logo: React.FC<ImagesProps> = ({
   href,

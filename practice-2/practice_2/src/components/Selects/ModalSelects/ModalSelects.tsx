@@ -2,7 +2,7 @@ import React from "react"
 import { ModalFilterProps } from "types/modal";
 import FilterBy from "../FilterBy/FilterBy";
 import Category from "../../Categories/Categories";
-import { DEFAULT_FILTERER } from "../../../constants/categories";
+import { DEFAULT_FILTERER } from "@/constants/categories";
 
 const ModalSelects: React.FC<ModalFilterProps> = ({ setFilterInput, setOpenModalSearch }) => {
 
