@@ -2,7 +2,7 @@ import axios from "axios";
 import { PRODUCTS_URL } from "../constants/url";
 import { useEffect, useState } from "react";
 
-export default function useProduct(filterInput?: {}) {
+export default function useProduct(isReload: Boolean, setIsReload: Function, filterInput?: {}) {
   const filter = {
     ...filterInput,
   };
@@ -19,11 +19,12 @@ export default function useProduct(filterInput?: {}) {
     .catch((error) => {
       console.log(error);
     });
+    setIsReload(false);
   }
 
   useEffect(() => {
-    fetchMyAPI()
-  }, [products])
+    isReload && fetchMyAPI()
+  }, [isReload])
 
   return products;
 }
