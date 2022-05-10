@@ -1,19 +1,23 @@
-import React from "react";
-import useCategory from "../../hooks/useCategory";
-import { CategoriesProps, CategoryProps } from "../../types/categories";
+import React, { useContext } from "react";
+import { ProductListContext } from "@/context/MainContext";
+import useCategory from "@/hooks/useCategory";
+import { CategoriesProps, CategoryProps } from "@/types/categories";
 import "./categories.css";
 
 const Category: React.FC<CategoryProps> = ({ setFilterInput, setOpenModalSearch }) => {
+  const setIsReset = useContext(ProductListContext) as Function
   const handleSearch = (e: React.MouseEvent<HTMLElement>) => {
     const categoryId = {categoryId : e.currentTarget.dataset.index};
     setFilterInput(categoryId);
     setOpenModalSearch(false);
+    setIsReset(true);
   }
 
   const handleDefaultCategory = () => {
     const categoryId = "";
     setFilterInput(categoryId);
     setOpenModalSearch(false);
+    setIsReset(true);
   }
 
   const categories = useCategory();
