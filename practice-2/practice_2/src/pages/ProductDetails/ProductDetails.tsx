@@ -1,11 +1,11 @@
 import React, { useCallback, useState } from "react";
-import { ProductUpdateProps } from "../../types/product";
+import { ProductProps, ProductUpdateProps } from "@/types/product";
 import Title from "../components/Title/Title";
 import Text from "../components/Text/Text";
 import Price from "../components/Price/Price";
 import { useLocation } from "react-router-dom";
-import Button from "../../components/Button/Button";
-import ModalUpdate from "../../components/Modal/ModelUpdate/ModalUpdate";
+import Button from "@/components/Button/Button";
+import ModalUpdate from "@/components/Modal/ModelUpdate/ModalUpdate";
 import "./productDetail.css";
 
 const ProductDetails: React.FC = () => {
@@ -18,7 +18,7 @@ const ProductDetails: React.FC = () => {
   }, []);
 
   const handleChangeProductDetail = (newProduct: {}) => {
-    (location.state).product = newProduct;
+    (location.state as ProductProps).product = newProduct;
   }
 
   return (
