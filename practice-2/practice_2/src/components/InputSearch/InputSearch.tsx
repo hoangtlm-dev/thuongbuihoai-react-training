@@ -1,14 +1,13 @@
 import React, { memo, useContext } from "react";
-import { ProductListContext } from "@/context/MainContext";
-import { SearchProps } from "@/types/search";
+import { LoadingContext } from "@/context/LoadingContext";
 import "./inputSearch.css";
 
-const InputSearch: React.FC<SearchProps> = ({ setFilterInput }) => {  
-  const setIsReset = useContext(ProductListContext) as Function;
+const InputSearch: React.FC = () => {  
+  const {setIsReload, setFilterInput} = useContext(LoadingContext);
   const handleSearch = (e: { target: { value: string } }) => {
     const nameLike = {name_like:e.target.value};
     setFilterInput(nameLike);
-    setIsReset(true);
+    setIsReload(true);
   }
 
   return (
