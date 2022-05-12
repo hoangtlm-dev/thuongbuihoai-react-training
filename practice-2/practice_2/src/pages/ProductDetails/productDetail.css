@@ -28,3 +28,15 @@
 .productDetail__update {
   display: flex;
 }
+
+.product__prev {
+  display: flex;
+  font-size: 15px;
+  color: green;
+}
+
+.product__prev > i {
+  display: flex;
+  align-self: center;
+  margin-right: 10px;
+}
