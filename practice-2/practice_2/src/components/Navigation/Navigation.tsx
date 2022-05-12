@@ -1,9 +1,8 @@
 import React from "react";
-import { SearchByName } from "@/types/search";
 import InputSearch from "../InputSearch/InputSearch";
 import "./navigation.css";
 
-const Navigation: React.FC<SearchByName> = ({ setFilterInput }) => {
+const Navigation: React.FC = () => {
   return (
     <nav className="nav">
       <ul className="nav__list">
@@ -14,7 +13,7 @@ const Navigation: React.FC<SearchByName> = ({ setFilterInput }) => {
           <a href="" className="nav__link"> <i className="fa fa-phone"></i> 123 456 7890</a>
         </li>
       </ul>
-      <InputSearch setFilterInput={setFilterInput} />
+      <InputSearch />
     </nav>
   );
 }
