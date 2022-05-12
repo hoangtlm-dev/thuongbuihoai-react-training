@@ -7,7 +7,6 @@ import "./productItem.css";
 
 const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
   const [openModalDelete, setOpenModalDelete] = useState(false);
-
   const handleOpenModalDelete = useCallback(() => {
     setOpenModalDelete(true)
   }, []);
@@ -19,12 +18,12 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
           className="product__image"
           src={product.images[0]}
         />
-        <p className="product__view">
+        <div className="product__view">
           <Link className="product__link" state={{ product }} to="/detail">
             <Button className="btn btn__view" text={<i className="fa fa-search"></i>} />
           </Link>
           <Button className="btn btn__delete" text={<i onClick={handleOpenModalDelete} className="fa fa-trash"></i>} />
-        </p>
+        </div>
       </div>
       {openModalDelete && <ModalDelete hideModalDelete={setOpenModalDelete} id={product.id} />}
     </>
