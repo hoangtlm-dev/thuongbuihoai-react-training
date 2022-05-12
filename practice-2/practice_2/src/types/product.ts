@@ -1,4 +1,4 @@
-export interface ProductProps {
+export interface Product {
   id: string;
   name: string;
   price: number;
@@ -10,17 +10,14 @@ export interface ProductProps {
 }
 
 export interface ProductItemProps {
-  product: {
-    id: string;
-    images: string[];
-  };
-}
-
-export interface ProductListProps {
-  products: ProductProps[];
+  product: Product;
 }
 
 export interface ProductUpdateProps {
-  product: ProductProps;
+  product: Product;
   setIsReset: Function;
+}
+
+export interface ProductListProps {
+  products: Product[];
 }

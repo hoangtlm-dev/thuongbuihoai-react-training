@@ -1,4 +1,4 @@
-import { ProductProps } from "./product";
+import { Product } from "./product";
 
 export interface ModalDeleteProps {
   id: string;
@@ -6,12 +6,11 @@ export interface ModalDeleteProps {
 }
 
 export interface ModalUpdateProps {
-  id: string;
+  product: Product;
   hideModalUpdate: Function;
-  onChangeProductDetail: (product: ProductProps) => void;
+  onChangeProductDetail: (product: Product) => void;
 }
 
 export interface ModalFilterProps {
-  setFilterInput: Function;
   setOpenModalSearch: Function;
 }
