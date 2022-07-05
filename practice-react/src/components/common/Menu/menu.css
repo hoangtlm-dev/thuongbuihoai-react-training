@@ -1,0 +1,17 @@
+.menu__list {
+  display: flex;
+}
+
+.menu__item {
+  list-style: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 32px;
+}
+
+.menu__item > a {
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+}
