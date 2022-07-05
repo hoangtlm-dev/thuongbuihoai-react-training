@@ -2,10 +2,14 @@
 
 exports[`Logo component matches snapshot 1`] = `
 <DocumentFragment>
-  <img
-    alt="This is logo"
-    class="logo"
+  <a
     data-testid="logo"
-  />
+    href="/"
+  >
+    <img
+      alt="This is logo"
+      class="logo"
+    />
+  </a>
 </DocumentFragment>
 `;
