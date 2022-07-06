@@ -21,14 +21,32 @@ Primary.args = {
   type: "primary",
 };
 
-export const ButtonSecondary = TemplateButton.bind({});
-ButtonSecondary.args = {
+export const ButtonLight = TemplateButton.bind({});
+ButtonLight.args = {
   text: "Sign Up",
-  type: "secondary",
+  type: "light",
 };
 
-export const ButtonOutline = TemplateButton.bind({});
-ButtonOutline.args = {
+export const ButtonDark = TemplateButton.bind({});
+ButtonDark.args = {
   text: "Sign Up",
-  type: "outline",
+  type: "dark",
+};
+
+export const ButtonLarge = TemplateButton.bind({});
+ButtonLarge.args = {
+  text: "Sign Up",
+  type: "large",
+};
+
+export const ButtonOutlineLight = TemplateButton.bind({});
+ButtonOutlineLight.args = {
+  text: "Login",
+  type: "outline--light",
+};
+
+export const ButtonOutlineDark = TemplateButton.bind({});
+ButtonOutlineDark.args = {
+  text: "Login",
+  type: "outline--dark",
 };
