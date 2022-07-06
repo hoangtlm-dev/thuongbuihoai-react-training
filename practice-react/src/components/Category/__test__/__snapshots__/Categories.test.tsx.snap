@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="categories"
+    data-testid="categories"
+  >
+    <p
+      class="categories__title"
+    >
+      Categories
+    </p>
+    <div
+      class="categoryList"
+      data-testid="category-list"
+    >
+      <div
+        class="categoryList__list"
+      >
+        <figure
+          class="categoryList__image"
+        >
+          <img
+            alt="This is icon beverages"
+          />
+        </figure>
+        <a
+          href="/products"
+        >
+          <p
+            class="categoryList__text"
+          >
+            Beverages
+          </p>
+        </a>
+      </div>
+      <div
+        class="categoryList__list"
+      >
+        <figure
+          class="categoryList__image"
+        >
+          <img
+            alt="This is icon dairy"
+          />
+        </figure>
+        <a
+          href="/products"
+        >
+          <p
+            class="categoryList__text"
+          >
+            Dairy
+          </p>
+        </a>
+      </div>
+      <div
+        class="categoryList__list"
+      >
+        <figure
+          class="categoryList__image"
+        >
+          <img
+            alt="This is icon meat"
+          />
+        </figure>
+        <a
+          href="/products"
+        >
+          <p
+            class="categoryList__text"
+          >
+            Meat
+          </p>
+        </a>
+      </div>
+      <div
+        class="categoryList__list"
+      >
+        <figure
+          class="categoryList__image"
+        >
+          <img
+            alt="This is icon spices-herbs"
+          />
+        </figure>
+        <a
+          href="/products"
+        >
+          <p
+            class="categoryList__text"
+          >
+            Spices & Herbs
+          </p>
+        </a>
+      </div>
+      <div
+        class="categoryList__list"
+      >
+        <figure
+          class="categoryList__image"
+        >
+          <img
+            alt="This is icon stationery"
+          />
+        </figure>
+        <a
+          href="/products"
+        >
+          <p
+            class="categoryList__text"
+          >
+            Stationery
+          </p>
+        </a>
+      </div>
+      <div
+        class="categoryList__list"
+      >
+        <figure
+          class="categoryList__image"
+        >
+          <img
+            alt="This is icon costmetic"
+          />
+        </figure>
+        <a
+          href="/products"
+        >
+          <p
+            class="categoryList__text"
+          >
+            Costmetic
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
