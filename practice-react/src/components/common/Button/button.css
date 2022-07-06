@@ -1,0 +1,14 @@
+.btn {
+  cursor: pointer;
+}
+
+.btn__primary {
+  background: #688F4E;
+  border: none;
+  border-radius: 7.80576px;
+  padding: 25px 55px;
+  font-size: 21.0755px;
+  line-height: 25px;
+  color: #FFFFFF;
+  font-family: "Roboto";
+}
