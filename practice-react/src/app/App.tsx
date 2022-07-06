@@ -1,7 +1,10 @@
 import { memo } from "react";
+import Header from "@components/common/Header/Header";
 
 const App: React.FC = memo(() => {
-  return <h1> React practice </h1>;
+  return (
+    <Header />
+  )
 });
 
 export default App;
