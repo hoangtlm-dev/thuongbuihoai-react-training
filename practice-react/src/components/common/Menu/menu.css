@@ -1,5 +1,6 @@
 .menu__list {
   display: flex;
+  align-items: center;
 }
 
 .menu__item {
@@ -7,7 +8,7 @@
   cursor: pointer;
   font-size: 16px;
   line-height: 19px;
-  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .menu__item > a {
