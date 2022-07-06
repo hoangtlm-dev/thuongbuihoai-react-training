@@ -1,0 +1,23 @@
+.text--blur {
+  font-family: "Poppins";
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.43);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.text--large,
+.text--large-dark {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.text--large {
+  color: #2B463C;
+}
+
+.text--large-dark {
+  color: #000000;
+}
