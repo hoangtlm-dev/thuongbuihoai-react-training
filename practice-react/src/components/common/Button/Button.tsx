@@ -8,11 +8,20 @@ const Button: React.FC<ButtonProps> = memo(({ text, type, onClick }) => {
     case "primary":
       className += " btn__primary";
       break;
-    case "secondary":
-      className += " btn__secondary";
+    case "light":
+      className += " btn--light";
       break;
-    case "outline":
-      className += " btn__outline";
+    case "dark":
+      className += " btn--dark";
+      break;
+    case "large":
+      className += " btn--large";
+      break;
+    case "outline--light":
+      className += " btn__outline--light";
+      break;
+    case "outline--dark":
+      className += " btn__outline--dark";
       break;
     default:
       break;
