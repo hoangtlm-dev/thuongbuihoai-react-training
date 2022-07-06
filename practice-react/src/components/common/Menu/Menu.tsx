@@ -4,7 +4,7 @@ import { MenuProps, MenuType } from "@common-types/menu";
 import "./menu.css";
 
 const Menu: React.FC<MenuProps> = memo(({ menuList }) => {
-  function renderMenuList(list: MenuType[]) {
+  const renderMenuList = (list: MenuType[]) => {
     return list.map((item) => (
       <li className="menu__item" key={item.key}>
         <a href="">{item.label}</a>
