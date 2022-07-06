@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation component matches snapshot 1`] = `
+<DocumentFragment>
+  <nav
+    class="nav"
+    data-testid="navigation-bar"
+  >
+    <a
+      data-testid="logo"
+      href="/"
+    >
+      <img
+        alt="This is logo"
+        class="logo"
+      />
+    </a>
+    <div
+      class="nav__about"
+    >
+      <div
+        class="menu"
+        data-testid="menu"
+      >
+        <ul
+          class="menu__list"
+        >
+          <li
+            class="menu__item"
+          >
+            <a
+              href="/products"
+            >
+              Shop
+            </a>
+          </li>
+          <li
+            class="menu__item"
+          >
+            <a
+              href=""
+            >
+              Orders
+            </a>
+          </li>
+          <li
+            class="menu__item"
+          >
+            <a
+              href=""
+            >
+              Cart
+            </a>
+          </li>
+          <li
+            class="menu__item"
+          >
+            <a
+              href=""
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button
+        class="btn btn--light"
+      >
+        Sign Up
+      </button>
+      <button
+        class="btn btn__outline--light"
+      >
+        Login
+      </button>
+    </div>
+  </nav>
+</DocumentFragment>
+`;
