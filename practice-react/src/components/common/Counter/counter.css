@@ -1,0 +1,25 @@
+.counter {
+  position: relative;
+  z-index: 15;
+}
+
+.counter__input {
+  border: 1px solid #688F4E;
+  border-radius: 24.5px;
+  text-align: center;
+  padding: 14px;
+}
+
+.fa-minus {
+  position: absolute;
+  z-index: 20;
+  top: 30%;
+  left: 22px;
+}
+
+.counter__plus {
+  position: absolute;
+  z-index: 20;
+  top: 5%;
+  right: 25px;
+}
