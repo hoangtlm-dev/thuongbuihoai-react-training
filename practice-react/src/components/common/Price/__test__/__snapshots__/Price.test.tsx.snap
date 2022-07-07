@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Price component matches snapshot 1`] = `
+<DocumentFragment>
+  <p
+    class="price__discount"
+    data-testid="price"
+  >
+    <span
+      class="price--unit"
+    />
+    0
+  </p>
+</DocumentFragment>
+`;
