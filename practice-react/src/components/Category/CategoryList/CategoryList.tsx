@@ -8,10 +8,10 @@ const CategoryList: React.FC<CategoryProps> = ({ categoryList }) => {
     return list.map((item) => (
       <div className="categoryList__list" key={item.key}>
         <figure className="categoryList__image">
-          <img src={item.src} alt={item.alt} />
+          <img className="categoryList__images" src={item.src} alt={item.alt} />
         </figure>
-        <Link to="/products">
-          <p className="categoryList__text">{item.text}</p>
+        <Link className="categoryList__text" to="/products">
+          <p>{item.text}</p>
         </Link>
       </div>
     ));
