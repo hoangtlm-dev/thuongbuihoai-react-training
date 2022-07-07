@@ -23,6 +23,7 @@
   border-radius: 5px;
   width: 235px;
   box-shadow: -50px 50px 200px #F2F2F2;
+  margin-bottom: 245px;
 }
 
 .categoryList__image {
@@ -39,7 +40,7 @@
   text-decoration: none;
 }
 
-@media screen and (min-width: 1366px) {
+/* @media screen and (min-width: 1366px) {
   .categories {
     padding: 85px 0 0 89px;
   }
@@ -74,4 +75,4 @@
   .categoryList__image {
     margin: 16px 0 30px;
   }
-}
+} */
