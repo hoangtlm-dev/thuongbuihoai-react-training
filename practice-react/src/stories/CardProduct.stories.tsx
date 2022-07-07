@@ -16,5 +16,13 @@ const TemplateCardProduct: ComponentStory<typeof CardProduct> = (args) => (
 
 export const CardOffers = TemplateCardProduct.bind({});
 CardOffers.args = {
-  type: "offers"
+  type: "offers",
+  visibleQuantity: true,
+  visibleDiscountPrice: true,
+}
+
+export const CardSelling = TemplateCardProduct.bind({});
+CardSelling.args = {
+  type: "selling",
+  visibleCounter: true,
 }
