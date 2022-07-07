@@ -25,10 +25,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-minus:before {
-  content: "\e900";
-  color: #2b463c;
-}
 .icon-instagram:before {
   content: "\e901";
   color: #2b463c;
@@ -51,5 +47,10 @@
 }
 .icon-cart:before {
   content: "\e906";
+  color: #2b463c;
+  font-size: 40px;
+}
+.icon-minus:before {
+  content: "\e907";
   color: #2b463c;
 }
