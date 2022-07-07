@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./logo.css";
 
 interface LogoProps {
   src: string;

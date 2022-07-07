@@ -16,3 +16,11 @@
   font-weight: 400;
   color: black;
 }
+
+@media screen and (min-width: 1366px) {
+  .menu__item {
+    font-size: 11px;
+    line-height: 13px;
+    margin-right: 22px;
+  }
+}
