@@ -15,3 +15,6 @@ const TemplateCardProduct: ComponentStory<typeof CardProduct> = (args) => (
 );
 
 export const CardOffers = TemplateCardProduct.bind({});
+CardOffers.args = {
+  type: "offers"
+}
