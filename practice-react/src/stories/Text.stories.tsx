@@ -20,6 +20,18 @@ TextBlur.args = {
   type: "blur"
 };
 
+export const TextNormal = TemplateText.bind({});
+TextNormal.args = {
+  text: "Cottage Cheese",
+  type: "normal"
+};
+
+export const TextColor = TemplateText.bind({});
+TextColor.args = {
+  text: "Ice Cream Sundae",
+  type: "color"
+};
+
 export const TextLarge = TemplateText.bind({});
 TextLarge.args = {
   text: "Offers",
