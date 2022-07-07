@@ -1,0 +1,28 @@
+.card__product--offers {
+  width: 369px;
+  margin: 100px 80px 188px 0;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card__product--offers > .test {
+  display: none;
+}
+
+.card__info {
+  padding: 59px 0 60px 44px;
+}
+
+.card__unit {
+  margin: 9px 0 14px;
+}
+
+.card__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 33px 0 0 100px;
+}
+
+.cardProductList__title {
+  margin: 33px 0 0 130px
+}
