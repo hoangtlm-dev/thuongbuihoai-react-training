@@ -24,6 +24,9 @@ const CardProduct: React.FC<CartProductProps> = memo(
       case "selling":
         className = "card__product--selling";
         break;
+      case "popular":
+        className = "card__product--popular";
+        break;
       default:
         break;
     }
@@ -35,6 +38,9 @@ const CardProduct: React.FC<CartProductProps> = memo(
         break;
       case "selling":
         cartInfo = "card__selling";
+        break;
+      case "popular":
+        cartInfo = "card__popular";
         break;
       default:
         break;
