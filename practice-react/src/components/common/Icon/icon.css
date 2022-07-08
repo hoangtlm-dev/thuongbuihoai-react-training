@@ -24,7 +24,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.fa-minus {
+  position: absolute;
+  z-index: 20;
+  top: 30%;
+  left: 22px;
+}
 .icon-instagram:before {
   content: "\e901";
   color: #2b463c;
