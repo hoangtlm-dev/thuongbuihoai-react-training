@@ -18,6 +18,9 @@ const Text: React.FC<TitleProps> = memo(({ text, type }) => {
     case "color":
       className = "text--color";
       break;
+    case "medium":
+      className = "text--medium";
+      break;
     case "large":
       className = "text--large";
       break;

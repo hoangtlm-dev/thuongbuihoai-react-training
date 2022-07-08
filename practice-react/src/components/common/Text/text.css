@@ -22,6 +22,14 @@
   color: #000000;
 }
 
+.text--medium {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  color: #2B463C;
+  width: 561px;
+}
+
 .text--normal,
 .text--color {
   font-family: "Poppins";
