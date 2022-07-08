@@ -6,7 +6,7 @@ const Categories: React.FC = memo(() => {
   return (
     <div data-testid="categories" className="categories">
       <p className="categories__title">Categories</p>
-      <CategoryList categoryList={CATEGORY_LIST} />
+      <CategoryList type="select" isSelect={true} categoryList={CATEGORY_LIST} />
     </div>
   );
 });
