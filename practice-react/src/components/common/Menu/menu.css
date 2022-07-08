@@ -1,3 +1,4 @@
+/* css for component menu */
 .menu__list {
   display: flex;
   align-items: center;
@@ -15,4 +16,20 @@
   text-decoration: none;
   font-weight: 400;
   color: black;
+}
+
+/* css for component menuContact */
+.contact__item {
+  margin-top: 20px;
+}
+
+.contact__item > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.contact__item > a:hover {
+  color: #FFD2DD
 }
