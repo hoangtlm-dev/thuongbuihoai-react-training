@@ -39,7 +39,7 @@
   right: 0;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .header__info {
     margin-top: 147px;
     padding: 0 0 0 115px;
