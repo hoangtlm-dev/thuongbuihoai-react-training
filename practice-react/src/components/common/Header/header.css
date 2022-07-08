@@ -5,8 +5,7 @@
 }
 
 .header__info {
-  margin-top: 207px;
-  padding: 0 0 0 162px;
+  padding: 207px 0 257px 162px;
 }
 
 .header__title {
@@ -37,37 +36,4 @@
   z-index: 10;
   top: 105px;
   right: 0;
-}
-
-@media screen and (min-width: 1200px) {
-  .header__info {
-    margin-top: 147px;
-    padding: 0 0 0 115px;
-  }
-
-  .header__title {
-    font-size: 26px;
-    line-height: 38px;
-    width: 366px;
-    margin: 11px 0 33px;
-  }
-  
-  .header__images--right {
-    width: 565px;
-    height: 650px;
-  }
-  
-  .header__images--basket {
-    width: 717px;
-    height: 546px;
-    top: 12px;
-    right: 174px;
-  }
-  
-  .header__images--top-view {
-    width: 582px;
-    height: 600px;
-    top: 74px;
-    right: 0;
-  }
 }
