@@ -51,7 +51,6 @@
   border-radius: 5px;
   border: none;
   padding: 15px 47px;
-  margin-bottom: 257px;
 }
 
 .btn__outline--light {
@@ -84,29 +83,4 @@
 .btn__outline--dark:hover {
   background: #B1D182;
   border: 2px solid #B1D182;
-}
-
-@media screen and (min-width: 1366px) {
-  .btn--light {
-    font-size: 12px;
-    line-height: 19px;
-    padding: 5px 25px;
-    border-radius: 2px;
-  }
-
-  .btn__outline--light {
-    border-radius: 2px;
-    font-size: 12px;
-    line-height: 19px;
-    padding: 4px 35px;
-    margin-left: 22px;
-  }
-
-  .btn--large {
-    font-size: 12px;
-    line-height: 19px;
-    border-radius: 2px;
-    padding: 12px 33px;
-    margin-bottom: 183px;
-  }
 }
