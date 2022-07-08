@@ -7,7 +7,13 @@ interface placeholder {
 }
 
 const Input: React.FC<placeholder> = memo(({ type, placeholder }) => {
-  return <input className="input input__value" type={type} placeholder={placeholder} />;
+  return (
+    <input
+      className="input input__value"
+      type={type}
+      placeholder={placeholder}
+    />
+  );
 });
 
 export default Input;
