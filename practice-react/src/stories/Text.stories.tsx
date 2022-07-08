@@ -26,6 +26,12 @@ TextNormal.args = {
   type: "normal"
 };
 
+export const TextMedium = TemplateText.bind({});
+TextMedium.args = {
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  type: "medium"
+};
+
 export const TextColor = TemplateText.bind({});
 TextColor.args = {
   text: "Ice Cream Sundae",
