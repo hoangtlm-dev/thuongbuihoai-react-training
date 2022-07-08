@@ -32,15 +32,15 @@
 }
 .icon-instagram:before {
   content: "\e901";
-  color: #2b463c;
+  color: #fff;
 }
 .icon-twitter:before {
   content: "\e902";
-  color: #2b463c;
+  color: #fff;
 }
 .icon-fb:before {
   content: "\e903";
-  color: #2b463c;
+  color: #fff;
 }
 .icon-filter:before {
   content: "\e904";
