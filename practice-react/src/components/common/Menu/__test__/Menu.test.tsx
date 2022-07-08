@@ -2,7 +2,7 @@ import { render } from "@testing-library/react";
 import { createMemoryHistory } from "history";
 import { Router } from "react-router-dom";
 import "@testing-library/jest-dom";
-import MENU_LIST from "../../../../constants/menu";
+import { MENU_LIST } from "../../../../constants/menu";
 import Menu from "../Menu";
 
 describe("Menu component", () => {
