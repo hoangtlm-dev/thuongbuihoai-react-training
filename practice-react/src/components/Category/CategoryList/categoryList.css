@@ -11,7 +11,7 @@
   color: #2B463C;
 }
 
-.categoryList {
+.categoryList--select {
   display: flex;
   margin-bottom: 246px;
 }
@@ -24,6 +24,10 @@
   border-radius: 5px;
   width: 235px;
   box-shadow: -50px 50px 200px #F2F2F2;
+}
+
+.categoryList__checkbox {
+  margin-bottom: 23px;
 }
 
 .categoryList__image {
