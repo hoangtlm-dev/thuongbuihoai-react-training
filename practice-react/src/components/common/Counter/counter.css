@@ -20,6 +20,6 @@
 .counter__plus {
   position: absolute;
   z-index: 20;
-  top: 5%;
+  top: 30%;
   right: 25px;
 }
