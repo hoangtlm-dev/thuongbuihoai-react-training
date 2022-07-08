@@ -14,4 +14,4 @@ const TemplateCounter: ComponentStory<typeof Counter> = (args) => (
   <Counter {...args} />
 );
 
-export const Primary = TemplateCounter.bind({});
+export const Default = TemplateCounter.bind({});
