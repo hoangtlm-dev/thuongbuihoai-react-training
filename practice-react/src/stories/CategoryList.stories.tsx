@@ -17,7 +17,16 @@ const TemplateCategoryList: ComponentStory<typeof CategoryList> = (args) => (
     <CategoryList {...args} />
   </BrowserRouter>
 );
-export const Default = TemplateCategoryList.bind({});
-Default.args = {
+export const Select = TemplateCategoryList.bind({});
+Select.args = {
   categoryList: CATEGORY_LIST,
+  isSelect: true,
+  type: "select"
+};
+
+export const Checkbox = TemplateCategoryList.bind({});
+Checkbox.args = {
+  categoryList: CATEGORY_LIST,
+  isCheckbox: true,
+  type: "checkbox"
 };
