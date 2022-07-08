@@ -21,3 +21,9 @@ export const Default = TemplateLogo.bind({});
 Default.args = {
   src: url,
 };
+
+export const LogoLarge = TemplateLogo.bind({});
+LogoLarge.args = {
+  src: url,
+  type: "large"
+};
