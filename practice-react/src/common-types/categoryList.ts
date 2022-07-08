@@ -4,7 +4,3 @@ export interface CategoryType {
   text: string;
   alt: string;
 }
-
-export interface CategoryProps {
-  categoryList: CategoryType[];
-}
