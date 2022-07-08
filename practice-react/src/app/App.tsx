@@ -5,6 +5,7 @@ import CardProductList from "@components/CardProduct/CardProductOffer/CardProduc
 import CardProductSelling from "@components/CardProduct/CardProductSelling/CardProductSelling";
 import CardPopular from "@components/CardProduct/CardPopular/CardPopular";
 import SignUpSection from "@components/SignUpSection/SignUpSection";
+import Footer from "@components/common/Footer/Footer";
 
 const App: React.FC = memo(() => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = memo(() => {
       <CardProductSelling />
       <CardPopular />
       <SignUpSection />
+      <Footer />
     </>
   );
 });
