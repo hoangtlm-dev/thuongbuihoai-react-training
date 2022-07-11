@@ -1,0 +1,29 @@
+.productList {
+  display: flex;
+}
+
+.productList__page {
+  margin: 100px 0 70px 443px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #979797;
+}
+
+.productList__select {
+  background: #F4F1E9;
+}
+
+.productList__select--category {
+  padding: 32px 198px 47px 98px;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 40px;
+  color: #2B463C;
+}
+
+.productList--popular {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 99px;
+}
