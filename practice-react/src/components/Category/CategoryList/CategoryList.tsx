@@ -1,10 +1,11 @@
 import useSWR from "swr";
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import Checkbox from "@components/common/Checkbox/Checkbox";
-import { Categories } from "@common-types/categoryList";
+import { Categories } from "@common-types/category";
 import { Link } from "react-router-dom";
 import { getData } from "@helpers/fetchApi";
 import { CATEGORIES_URL } from "@constants/url";
+import { CategoriesContext } from "@context/CategoryContext";
 import "./categoryList.css";
 
 interface CategoryProps {
@@ -19,7 +20,24 @@ const CategoryList: React.FC<CategoryProps> = ({
   type,
 }) => {
   // fetch data with useSWR
-  const { data } = useSWR<Categories[]>(CATEGORIES_URL, getData<Categories[]>);
+  const { data } = useSWR(CATEGORIES_URL, getData<Categories[]>);
+  const { setSearchValue, setCategories } = useContext(CategoriesContext);
+
+  useEffect(() => {
+    setCategories(data);
+  }, [data]);
+
+  const handleSearch = (id: string) => (e: React.MouseEvent<HTMLElement>) => {
+    // get current categoryId
+    const categoryId = { categoryId: e.currentTarget.dataset.index };
+    setSearchValue?.(categoryId);
+  };
+
+  // handle search default
+  const handleDefaultCategory = () => {
+    const categoryId = "";
+    setSearchValue?.(categoryId);
+  };
 
   let className = "";
   switch (type) {
@@ -45,7 +63,7 @@ const CategoryList: React.FC<CategoryProps> = ({
                 alt={category.images.alt}
               />
             </figure>
-            <Link className="categoryList__text" to="/products">
+            <Link data-index={category.id} className="categoryList__text" to="/products" onClick={handleSearch(category.id)}>
               <p>{category.name}</p>
             </Link>
           </div>
