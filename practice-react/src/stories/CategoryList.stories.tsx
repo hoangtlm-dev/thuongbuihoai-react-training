@@ -1,6 +1,5 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { BrowserRouter } from "react-router-dom";
-import { CATEGORY_LIST } from "@constants/category";
 import CategoryList from "@components/Category/CategoryList/CategoryList";
 
 export default {
@@ -19,14 +18,12 @@ const TemplateCategoryList: ComponentStory<typeof CategoryList> = (args) => (
 );
 export const Select = TemplateCategoryList.bind({});
 Select.args = {
-  categoryList: CATEGORY_LIST,
   isSelect: true,
   type: "select"
 };
 
 export const Checkbox = TemplateCategoryList.bind({});
 Checkbox.args = {
-  categoryList: CATEGORY_LIST,
   isCheckbox: true,
   type: "checkbox"
 };
