@@ -20,7 +20,6 @@ const CategoryList: React.FC<CategoryProps> = ({
 }) => {
   // fetch data with useSWR
   const { data } = useSWR<Categories[]>(CATEGORIES_URL, getData<Categories[]>);
-  console.log("data", data);
 
   let className = "";
   switch (type) {
