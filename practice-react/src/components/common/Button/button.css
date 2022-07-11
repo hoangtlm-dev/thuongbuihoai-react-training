@@ -78,6 +78,7 @@
   border: 2px solid #688F4E;
   background: transparent;
   border-radius: 5px;
+  margin-left: 32px;
 }
 
 .btn__outline--dark:hover {
