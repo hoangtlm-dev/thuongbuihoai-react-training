@@ -1,9 +1,8 @@
-import { Categories } from "./categoryList";
-
 export interface Product {
   productId: string;
   categoryId: string;
   productName: string;
+  productQuantity: number,
   originalPrice: {
     value: number;
     currency: string;
