@@ -1,10 +1,11 @@
 import React, { memo } from "react";
+import { Link } from "react-router-dom";
 import url from "@assets/images/cottage-cheese.png";
 import Text from "@components/common/Text/Text";
 import Price from "@components/common/Price/Price";
-import "./cardProduct.css";
 import Counter from "@components/common/Counter/Counter";
 import Icon from "@components/common/Icon/Icon";
+import "./cardProduct.css";
 
 interface CartProductProps {
   type: string;
@@ -50,7 +51,12 @@ const CardProduct: React.FC<CartProductProps> = memo(
       <div data-testid="card-product" className={className}>
         <img src={url} alt="This is ice-cream-sundae image" />
         <div className={cartInfo}>
-          <Text text="Cottage Cheese" />
+          <Link
+            className="cart__link"
+            to={`/products/id`}
+          >
+            <Text text="Cottage Cheese" />
+          </Link>
           {visibleQuantity && <p className="card__unit">3kg</p>}
           <Price type="original" value={100} currency="$" />
           {visibleDiscountPrice && (
