@@ -1,15 +1,15 @@
 import { memo } from "react";
 import { Route, Routes } from "react-router-dom";
+import { SWRConfig } from "swr";
 import Header from "@components/common/Header/Header";
 import Categories from "@components/Category/Categories";
-import CardProductList from "@components/CardProduct/CardProductOffer/CardProductOffer";
+import CardProductOffer from "@components/CardProduct/CardProductOffer/CardProductOffer";
 import CardProductSelling from "@components/CardProduct/CardProductSelling/CardProductSelling";
 import CardPopular from "@components/CardProduct/CardPopular/CardPopular";
 import SignUpSection from "@components/SignUpSection/SignUpSection";
 import Footer from "@components/common/Footer/Footer";
 import ProductList from "@pages/ProductList/ProductList";
 import ProductDetail from "@pages/ProductDetail/ProductDetail";
-import { SWRConfig } from "swr";
 
 const App: React.FC = memo(() => {
   return (
@@ -21,7 +21,7 @@ const App: React.FC = memo(() => {
             <>
               <Header />
               <Categories />
-              <CardProductList />
+              <CardProductOffer />
               <CardProductSelling />
               <CardPopular />
               <SignUpSection />
