@@ -1,22 +1,27 @@
+import useSWR from "swr";
 import React from "react";
-import { CategoryType } from "@common-types/categoryList";
-import { Link } from "react-router-dom";
 import Checkbox from "@components/common/Checkbox/Checkbox";
+import { Categories } from "@common-types/categoryList";
+import { Link } from "react-router-dom";
+import { getData } from "@helpers/fetchApi";
+import { CATEGORIES_URL } from "@constants/url";
 import "./categoryList.css";
 
 interface CategoryProps {
-  categoryList: CategoryType[];
   isCheckbox?: boolean;
   isSelect?: boolean;
   type: string;
 }
 
 const CategoryList: React.FC<CategoryProps> = ({
-  categoryList,
   isCheckbox,
   isSelect,
   type,
 }) => {
+  // fetch data with useSWR
+  const { data } = useSWR<Categories[]>(CATEGORIES_URL, getData<Categories[]>);
+  console.log("data", data);
+
   let className = "";
   switch (type) {
     case "select":
@@ -28,35 +33,36 @@ const CategoryList: React.FC<CategoryProps> = ({
     default:
       break;
   }
-  const renderCategoryList = (list: CategoryType[]) => {
-    return list.map((item) => (
-      <>
+
+  const renderCategoryList = (data: Categories[]) => {
+    return data?.map((category: Categories) => (
+      <div key={category.id}>
         {isSelect && (
-          <div className="categoryList__list" key={item.key}>
+          <div className="categoryList__list">
             <figure className="categoryList__image">
               <img
                 className="categoryList__images"
-                src={item.src}
-                alt={item.alt}
+                src={category.images.src}
+                alt={category.images.alt}
               />
             </figure>
             <Link className="categoryList__text" to="/products">
-              <p>{item.text}</p>
+              <p>{category.name}</p>
             </Link>
           </div>
         )}
         {isCheckbox && (
           <div className="categoryList__checkbox">
-            <Checkbox value={item.text} />
+            <Checkbox value={category.name} />
           </div>
         )}
-      </>
+      </div>
     ));
   };
 
   return (
     <div data-testid="category-list" className={className}>
-      {renderCategoryList(categoryList)}
+      {renderCategoryList(data as [])}
     </div>
   );
 };
