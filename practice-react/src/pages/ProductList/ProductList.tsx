@@ -1,11 +1,10 @@
 import React, { memo } from "react";
-import { ProductProps } from "@common-types/product";
 import CategoryList from "@components/Category/CategoryList/CategoryList";
 import NavigationBar from "@components/common/NavigationBar/NavigationBar";
 import CardProduct from "@components/CardProduct/CardProduct";
 import "./productList.css";
 
-const ProductList: React.FC<ProductProps> = memo(({ product }) => {
+const ProductList: React.FC = memo(() => {
   return (
     <>
       <NavigationBar isThemeDark={true} />
@@ -20,9 +19,6 @@ const ProductList: React.FC<ProductProps> = memo(({ product }) => {
             type="popular"
             visibleCounter={true}
             content="popular"
-            isOffer={true}
-            isPopular={false}
-            isBestSelling={false}
           />
         </div>
       </div>
