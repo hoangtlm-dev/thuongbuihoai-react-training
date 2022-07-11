@@ -1,9 +1,10 @@
 import useSWR from "swr";
-import React, { memo } from "react";
+import React, { memo, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Product } from "@common-types/product";
 import { PRODUCTS_URL } from "@constants/url";
 import { getData } from "@helpers/fetchApi";
+import { CategoriesContext } from "@context/CategoryContext";
 import Text from "@components/common/Text/Text";
 import Price from "@components/common/Price/Price";
 import Counter from "@components/common/Counter/Counter";
@@ -13,9 +14,9 @@ import "./cardProduct.css";
 interface CartProductProps {
   type: string;
   content: string;
-  isOffer: boolean;
-  isPopular: boolean;
-  isBestSelling: boolean;
+  isOffer?: boolean;
+  isPopular?: boolean;
+  isBestSelling?: boolean;
   visibleQuantity?: boolean;
   visibleDiscountPrice?: boolean;
   visibleCounter?: boolean;
@@ -31,11 +32,13 @@ const CardProduct: React.FC<CartProductProps> = memo(
     visibleDiscountPrice,
     visibleCounter,
   }) => {
-    const filter = {
-      offer: isOffer.toString(),
-      popular: isPopular.toString(),
-      bestSelling: isBestSelling.toString()
-    }
+    const { searchValue } = useContext(CategoriesContext);
+    const filter = (isOffer|| isPopular|| isBestSelling || searchValue) ? {
+      offer: isOffer,
+      popular: isPopular,
+      bestSelling: isBestSelling,
+      ...searchValue
+    } : {}
     const queryParams: URLSearchParams = new URLSearchParams(filter);
     const { data } = useSWR(PRODUCTS_URL + "?" + queryParams.toString(), getData<Product[]>);
 
@@ -70,31 +73,31 @@ const CardProduct: React.FC<CartProductProps> = memo(
     }
 
     return (
-      <div data-testid="card-product" className={className}>
+      <>
         {data?.map((product) => (
-          <div key={product.productId}>
-            <img className="card__image" src={product.images.src} alt={product.images.alt} />
-            <div className={cartInfo}>
-            <Link className="cart__link" to={`/products/${product?.productId}`}>
-              <Text text={product?.productName} />
-            </Link>
-            {visibleQuantity && (
-              <p className="card__unit">{product?.offerQuantity}</p>
-            )}
+        <div key={product.productId} data-testid="card-product" className={className}>
+          <img className="card__image" src={product.images.src} alt={product.images.alt} />
+          <div className={cartInfo}>
+          <Link className="cart__link" to={`/products/${product?.productId}`}>
+            <Text text={product?.productName} />
+          </Link>
+          {visibleQuantity && (
+            <p className="card__unit">{product?.offerQuantity}</p>
+          )}
+          <Price
+            type="original"
+            value={product?.originalPrice.value}
+            currency={product?.originalPrice.currency} />
+          {visibleDiscountPrice && (
             <Price
-              type="original"
-              value={product?.originalPrice.value}
-              currency={product?.originalPrice.currency} />
-            {visibleDiscountPrice && (
-              <Price
-                type="discount"
-                value={product?.discountPrice.value}
-                currency={product?.discountPrice.currency} />
+              type="discount"
+              value={product?.discountPrice.value}
+              currency={product?.discountPrice.currency} />
             )}
           </div>
           {visibleCounter && (
             <div className="card__counter">
-              <Counter />
+              <Counter counter={product.productQuantity} />
               <div className="card__icon">
                 <Icon iconName="cart" />
               </div>
@@ -102,7 +105,7 @@ const CardProduct: React.FC<CartProductProps> = memo(
           )}
         </div>
         ))}
-      </div>
+      </>
     );
   }
 );
