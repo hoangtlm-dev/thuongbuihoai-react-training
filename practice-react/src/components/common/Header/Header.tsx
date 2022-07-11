@@ -10,7 +10,7 @@ import "./header.css";
 const Header: React.FC = () => {
   return (
     <header data-testid="header" className="header">
-      <NavigationBar />
+      <NavigationBar isThemeLight={true} />
       <div className="header__info">
         <Text text="Lorem ipsum dolor sit" type="blur" />
         <h1 className="header__title">
