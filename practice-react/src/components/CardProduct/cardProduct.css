@@ -37,6 +37,11 @@
   margin: 9px 0 14px;
 }
 
+.card__image {
+  width: 368px;
+  height: 288px;
+}
+
 .card__item--offers,
 .card__item--selling,
 .card__item--popular {

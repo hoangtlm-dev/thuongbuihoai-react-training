@@ -9,10 +9,14 @@ const CardProductSelling: React.FC = memo(() => {
         <Text text="Best Selling Products" type="large" />
       </div>
       <div className="card__item--selling">
-        <CardProduct type="selling" visibleCounter={true} content="selling" />
-        <CardProduct type="selling" visibleCounter={true} content="selling" />
-        <CardProduct type="selling" visibleCounter={true} content="selling" />
-        <CardProduct type="selling" visibleCounter={true} content="selling" />
+        <CardProduct
+          isOffer={false}
+          isPopular={false}
+          isBestSelling={true}
+          type="selling"
+          visibleCounter={true}
+          content="selling"
+        />
       </div>
     </div>
   );

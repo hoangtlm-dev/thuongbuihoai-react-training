@@ -9,10 +9,14 @@ const CardPopular: React.FC = memo(() => {
         <Text text="Popular Products" type="large-dark" />
       </div>
       <div className="card__item--popular">
-        <CardProduct type="popular" visibleCounter={true} content="popular" />
-        <CardProduct type="popular" visibleCounter={true} content="popular" />
-        <CardProduct type="popular" visibleCounter={true} content="popular" />
-        <CardProduct type="popular" visibleCounter={true} content="popular" />
+        <CardProduct
+          isOffer={false}
+          isBestSelling={false}
+          isPopular={true}
+          type="popular"
+          visibleCounter={true}
+          content="popular"
+        />
       </div>
     </div>
   );
