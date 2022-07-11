@@ -54,6 +54,7 @@
       "productId": "164665454657522",
       "categoryId": "1651999197973",
       "productName": "Cottage Cheese",
+      "productQuantity": 3,
       "originalPrice": {
         "value": 150,
         "currency": "$"
@@ -75,6 +76,7 @@
       "productId": "16466545464646547",
       "categoryId": "1651454657522",
       "productName": "Ice Cream Sundae",
+      "productQuantity": 5,
       "originalPrice": {
         "value": 20,
         "currency": "$"
@@ -96,6 +98,7 @@
       "productId": "1646654668992646547",
       "categoryId": "1651924356334",
       "productName": "Beef-Steak",
+      "productQuantity": 9,
       "originalPrice": {
         "value": 50,
         "currency": "$"
