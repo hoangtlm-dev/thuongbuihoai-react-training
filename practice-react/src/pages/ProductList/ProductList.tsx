@@ -16,7 +16,6 @@ const ProductList: React.FC = memo(() => {
           <CategoryList
             type="checkbox"
             isCheckbox={true}
-            categoryList={CATEGORY_LIST}
           />
         </div>
         <div className="productList--popular">
