@@ -1,6 +1,8 @@
-export interface CategoryType {
-  key: string;
-  src: string;
-  text: string;
-  alt: string;
+export interface Categories {
+  id: string;
+  name: string;
+  images: {
+    src: string;
+    alt: string;
+  };
 }
