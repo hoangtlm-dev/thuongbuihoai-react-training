@@ -1,6 +1,7 @@
 .counter {
   position: relative;
   z-index: 15;
+  width: 205px;
 }
 
 .counter__input {
