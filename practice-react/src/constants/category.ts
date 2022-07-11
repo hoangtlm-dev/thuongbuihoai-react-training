@@ -1,4 +1,4 @@
-import { Categories } from "@common-types/categoryList";
+import { Categories } from "@common-types/category";
 
 const CATEGORY: Categories = {
   id: "1234",
