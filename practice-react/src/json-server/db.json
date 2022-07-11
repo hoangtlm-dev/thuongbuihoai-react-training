@@ -1,0 +1,117 @@
+{
+  "categories": [
+    {
+      "id": "1651999177368",
+      "name": "Beverages",
+      "images": {
+        "src": "src/assets/images/icons/beverages.png",
+        "alt": "This is beverages images"
+      }
+    },
+    {
+      "id": "1651999197973",
+      "name": "Dairy",
+      "images": {
+        "src": "src/assets/images/icons/dairy.png",
+        "alt": "This is dairy images"
+      }
+    },
+    {
+      "id": "1651999133333",
+      "name": "Meat",
+      "images": {
+        "src": "src/assets/images/icons/meat.png",
+        "alt": "This is meat images"
+      }
+    },
+    {
+      "id": "1651924356334",
+      "name": "Spices & Herbs",
+      "images": {
+        "src": "src/assets/images/icons/spices-herbs.png",
+        "alt": "This is spices-herbs images"
+      }
+    },
+    {
+      "id": "1651454657532",
+      "name": "Stationery",
+      "images": {
+        "src": "src/assets/images/icons/stationery.png",
+        "alt": "This is stationery images"
+      }
+    },
+    {
+      "id": "1651454657522",
+      "name": "Costmetic",
+      "images": {
+        "src": "src/assets/images/icons/costmetic.png",
+        "alt": "This is costmetic images"
+      }
+    }
+  ],
+  "products": [
+    {
+      "productId": "164665454657522",
+      "categoryId": "1651999197973",
+      "productName": "CottageCheese",
+      "originalPrice": {
+        "value": 150,
+        "currency": "$"
+      },
+      "discountPrice": {
+        "value": 100,
+        "currency": "$"
+      },
+      "offerQuantity": "3 kg",
+      "offer": true,
+      "bestSelling": false,
+      "popular": false,
+      "images": {
+        "src": "src/assets/images/icons/costmetic.png",
+        "alt": "This is costmetic images"
+      }
+    },
+    {
+      "productId": "16466545464646547",
+      "categoryId": "1651454657522",
+      "productName": "Ice Cream Sundae",
+      "originalPrice": {
+        "value": 20,
+        "currency": "$"
+      },
+      "discountPrice": {
+        "value": 20,
+        "currency": "$"
+      },
+      "offerQuantity": null,
+      "offer": false,
+      "bestSelling": true,
+      "popular": false,
+      "images": {
+        "src": "src/assets/images/icons/stationery.png",
+        "alt": "This is stationery images"
+      }
+    },
+    {
+      "productId": "1646654668992646547",
+      "categoryId": "1651924356334",
+      "productName": "Eco-Shampoo",
+      "originalPrice": {
+        "value": 50,
+        "currency": "$"
+      },
+      "discountPrice": {
+        "value": 50,
+        "currency": "$"
+      },
+      "offerQuantity": null,
+      "offer": false,
+      "bestSelling": false,
+      "popular": true,
+      "images": {
+        "src": "src/assets/images/icons/meat.png",
+        "alt": "This is meat images"
+      }
+    }
+  ]
+}
