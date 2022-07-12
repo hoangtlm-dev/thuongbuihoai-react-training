@@ -3,7 +3,7 @@ import "./text.css";
 
 interface TitleProps {
   type?: string;
-  text: string;
+  text?: string;
 }
 
 const Text: React.FC<TitleProps> = memo(({ text, type }) => {
