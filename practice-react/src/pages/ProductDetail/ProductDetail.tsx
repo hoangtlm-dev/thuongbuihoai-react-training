@@ -1,7 +1,8 @@
-import React, { memo } from "react";
+import React, { memo, useContext } from "react";
+import { DataContext } from "@context/DataContext";
+import { useParams } from "react-router-dom";
 import NavigationBar from "@components/common/NavigationBar/NavigationBar";
 import CardProductList from "@components/CardProduct/CardProductList";
-import url from "@assets/images/eco-face-cream.png";
 import background from "@assets/images/backgrounds/gray.png";
 import Text from "@components/common/Text/Text";
 import Price from "@components/common/Price/Price";
@@ -10,11 +11,15 @@ import Button from "@components/common/Button/Button";
 import "./productDetail.css";
 
 const ProductDetail: React.FC = memo(() => {
+  const { id } = useParams();
+  const { products } = useContext(DataContext);
+  const dataElement = products?.find((item) => item.productId === id);
+
   return (
-    <div className="productDetail">
+    <div data-testid="product-detail" className="productDetail">
       <NavigationBar isThemeDark={true} />
       <figure>
-        <img className="productDetail--image" src={url} alt="" />
+        <img className="productDetail--image" src={dataElement?.images.src} alt={dataElement?.images.alt} />
         <img
           className="productDetail--background"
           src={background}
@@ -22,13 +27,13 @@ const ProductDetail: React.FC = memo(() => {
         />
       </figure>
       <div className="productDetail__info">
-        <Text text="Eco-Face cleanser." type="large" />
+        <Text text={dataElement?.productName} type="large" />
         <p className="productDetail__price">Price</p>
-        <Price value={100} type="original" currency="$" />
-        <p className="productDetail__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie ultrices donec pulvinar quis est bibendum suspendisse viverra.</p>
+        <Price value={dataElement?.originalPrice.value} type="original" currency={dataElement?.originalPrice.currency} />
+        <p className="productDetail__description"></p>
         <p className="productDetail__quantity">Quantity</p>
         <div className="productDetail__counter">
-          <Counter counter={0} />
+          <Counter counter={dataElement?.productQuantity} />
         </div>
         <div className="productDetail--btn">
           <Button text="Add to cart" type="large" />
