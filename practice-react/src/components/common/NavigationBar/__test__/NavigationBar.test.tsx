@@ -5,11 +5,21 @@ import "@testing-library/jest-dom";
 import NavigationBar from "../NavigationBar";
 
 describe("Navigation component", () => {
-  test("should render navigation component", () => {
+  test("should render component NavigationBar type 'isThemeDark' ", () => {
     const history = createMemoryHistory();
     const { getByTestId } = render(
       <Router location={history.location} navigator={history}>
-        <NavigationBar />
+        <NavigationBar isThemeDark={true} />
+      </Router>
+    );
+    expect(getByTestId("navigation-bar")).toBeInTheDocument();
+  });
+
+  test("should render component NavigationBar type 'isThemeLight' ", () => {
+    const history = createMemoryHistory();
+    const { getByTestId } = render(
+      <Router location={history.location} navigator={history}>
+        <NavigationBar isThemeLight={true} />
       </Router>
     );
     expect(getByTestId("navigation-bar")).toBeInTheDocument();

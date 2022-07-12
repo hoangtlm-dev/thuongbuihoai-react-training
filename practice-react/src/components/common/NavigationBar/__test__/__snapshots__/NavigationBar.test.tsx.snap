@@ -30,6 +30,7 @@ exports[`Navigation component matches snapshot 1`] = `
         >
           <li
             class="menu__item"
+            data-testid="menu-item"
           >
             <a
               href="/products"
