@@ -1,22 +1,22 @@
 import React, { memo } from "react";
 import Text from "@components/common/Text/Text";
-import CardProduct from "../CardProduct";
+import CardProductList from "../CardProductList";
 
 const CardProductOffer: React.FC = memo(() => {
   return (
-    <div className="cardOffersList">
+    <div data-testid="card-product-offer" className="cardOffersList">
       <div className="cardOffersList__title">
         <Text text="Offers" type="large" />
       </div>
       <div className="card__item--offers">
-        <CardProduct
+        <CardProductList
           type="offers"
+          content="offers"
           isOffer={true}
           isPopular={false}
           isBestSelling={false}
           visibleQuantity={true}
           visibleDiscountPrice={true}
-          content="offers"
         />
       </div>
     </div>
