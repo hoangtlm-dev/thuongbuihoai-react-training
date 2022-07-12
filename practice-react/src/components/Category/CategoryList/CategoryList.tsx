@@ -1,11 +1,11 @@
 import useSWR from "swr";
 import React, { useContext, useEffect } from "react";
-import Checkbox from "@components/common/Checkbox/Checkbox";
 import { Categories } from "@common-types/category";
 import { Link } from "react-router-dom";
 import { getData } from "@helpers/fetchApi";
 import { CATEGORIES_URL } from "@constants/url";
-import { CategoriesContext } from "@context/CategoryContext";
+import { DataContext } from "@context/DataContext";
+import Checkbox from "@components/common/Checkbox/Checkbox";
 import "./categoryList.css";
 
 interface CategoryProps {
@@ -21,13 +21,13 @@ const CategoryList: React.FC<CategoryProps> = ({
 }) => {
   // fetch data with useSWR
   const { data } = useSWR(CATEGORIES_URL, getData<Categories[]>);
-  const { setSearchValue, setCategories } = useContext(CategoriesContext);
+  const { setSearchValue, setCategories, categories } = useContext(DataContext);
 
   useEffect(() => {
     setCategories(data);
   }, [data]);
 
-  const handleSearch = () => (e: React.MouseEvent<HTMLElement>) => {
+  const handleSearch = (e: React.MouseEvent<HTMLElement>) => {
     // get current categoryId
     const categoryId = { categoryId: e.currentTarget.dataset.index };
     setSearchValue?.(categoryId);
@@ -45,8 +45,8 @@ const CategoryList: React.FC<CategoryProps> = ({
       break;
   }
 
-  const renderCategoryList = (data: Categories[]) => {
-    return data?.map((category: Categories) => (
+  const renderCategoryList = () => {
+    return categories?.map((category: Categories) => (
       <div key={category.id}>
         {isSelect && (
           <div className="categoryList__list">
@@ -57,14 +57,14 @@ const CategoryList: React.FC<CategoryProps> = ({
                 alt={category.images.alt}
               />
             </figure>
-            <Link data-index={category.id} className="categoryList__text" to="/products" onClick={handleSearch()}>
-              <p>{category.name}</p>
+            <Link data-index={category.id} className="categoryList__text" to="/products" onClick={handleSearch}>
+              <p data-testid="category-item">{category.name}</p>
             </Link>
           </div>
         )}
         {isCheckbox && (
           <div className="categoryList__checkbox">
-            <Checkbox value={category.name} />
+            <Checkbox categoryId={category.id} onClick={handleSearch} value={category.name} />
           </div>
         )}
       </div>
@@ -73,7 +73,7 @@ const CategoryList: React.FC<CategoryProps> = ({
 
   return (
     <div data-testid="category-list" className={className}>
-      {renderCategoryList(data as [])}
+      {renderCategoryList()}
     </div>
   );
 };
