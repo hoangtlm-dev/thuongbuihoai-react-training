@@ -6,10 +6,3 @@ export interface Categories {
     alt: string;
   };
 }
-
-export interface CategoryContext {
-  searchValue: {} | undefined;
-  setSearchValue: Function;
-  categories: Categories[];
-  setCategories: Function;
-}
