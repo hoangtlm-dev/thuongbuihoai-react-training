@@ -7,12 +7,15 @@ exports[`Navigation component matches snapshot 1`] = `
     data-testid="navigation-bar"
   >
     <a
+      href="/"
+    />
+    <a
       data-testid="logo"
       href="/"
     >
       <img
         alt="This is logo"
-        class="logo"
+        class=""
       />
     </a>
     <div
@@ -63,16 +66,6 @@ exports[`Navigation component matches snapshot 1`] = `
           </li>
         </ul>
       </div>
-      <button
-        class="btn btn--light"
-      >
-        Sign Up
-      </button>
-      <button
-        class="btn btn__outline--light"
-      >
-        Login
-      </button>
     </div>
   </nav>
 </DocumentFragment>
