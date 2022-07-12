@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component matches snapshot 1`] = `
+<DocumentFragment>
+  <input
+    class="input input__value"
+    data-testid="input-value"
+    placeholder="Email address"
+    type="text"
+  />
+</DocumentFragment>
+`;

@@ -6,10 +6,10 @@ import "./productList.css";
 
 const ProductList: React.FC = memo(() => {
   return (
-    <>
+    <div data-testid="product-list">
       <NavigationBar isThemeDark={true} />
       <p className="productList__page">Home/Beverages</p>
-      <div data-testid="product-list" className="productList">
+      <div className="productList">
         <div className="productList__select">
           <p className="productList__select--category">Categories</p>
           <CategoryList type="checkbox" isCheckbox={true} />
@@ -22,7 +22,7 @@ const ProductList: React.FC = memo(() => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 });
 

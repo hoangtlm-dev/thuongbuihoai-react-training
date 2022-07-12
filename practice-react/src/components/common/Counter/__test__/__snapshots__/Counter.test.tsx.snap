@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="counter"
+    data-testid="counter"
+  >
+    <i
+      class="fa fa-minus"
+    />
+    <input
+      class="counter__input"
+      min="0"
+      value=""
+    />
+    <div
+      class="counter__plus"
+    >
+      <i
+        class="icon-plus"
+        data-testid="icon"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

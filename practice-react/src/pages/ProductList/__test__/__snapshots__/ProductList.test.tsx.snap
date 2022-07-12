@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductList component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="product-list"
+  >
+    <nav
+      class="nav"
+      data-testid="navigation-bar"
+    >
+      <a
+        href="/"
+      />
+      <a
+        data-testid="logo"
+        href="/"
+      >
+        <img
+          alt="This is logo"
+          class=""
+        />
+      </a>
+      <div
+        class="nav__about"
+      >
+        <div
+          class="menu"
+          data-testid="menu"
+        >
+          <ul
+            class="menu__list"
+          >
+            <li
+              class="menu__item"
+              data-testid="menu-item"
+            >
+              <a
+                href="/products"
+              >
+                Shop
+              </a>
+            </li>
+            <li
+              class="menu__item"
+            >
+              <a
+                href=""
+              >
+                Orders
+              </a>
+            </li>
+            <li
+              class="menu__item"
+            >
+              <a
+                href=""
+              >
+                Cart
+              </a>
+            </li>
+            <li
+              class="menu__item"
+            >
+              <a
+                href=""
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button
+          class="btn btn--dark"
+        >
+          Sign Up
+        </button>
+        <button
+          class="btn btn__outline--dark"
+        >
+          Login
+        </button>
+      </div>
+    </nav>
+    <p
+      class="productList__page"
+    >
+      Home/Beverages
+    </p>
+    <div
+      class="productList"
+    >
+      <div
+        class="productList__select"
+      >
+        <p
+          class="productList__select--category"
+        >
+          Categories
+        </p>
+        <div
+          class="categoryList--checkbox"
+          data-testid="category-list"
+        />
+      </div>
+      <div
+        class="productList--popular"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
