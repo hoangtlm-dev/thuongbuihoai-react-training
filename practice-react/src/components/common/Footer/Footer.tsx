@@ -8,7 +8,7 @@ import Icon from "../Icon/Icon";
 
 const Footer: React.FC = memo(() => {
   return (
-    <footer className="footer">
+    <footer data-testid="footer" className="footer">
       <div className="footer__info">
         <div className="footer__contact">
           <div className="footer__item">
