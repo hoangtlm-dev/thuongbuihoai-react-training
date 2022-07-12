@@ -2,7 +2,8 @@ export interface Product {
   productId: string;
   categoryId: string;
   productName: string;
-  productQuantity: number,
+  productDescription: string ;
+  productQuantity: number;
   originalPrice: {
     value: number;
     currency: string;
