@@ -7,7 +7,7 @@ import "./signUpSection.css";
 
 const SignUpSection: React.FC = memo(() => {
   return (
-    <section className="section__signUp">
+    <section data-testid="signUp-section" className="section__signUp">
       <figure>
         <img src={url} alt="This is image vegetables-fruits" />
       </figure>
