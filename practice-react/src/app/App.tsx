@@ -1,7 +1,7 @@
 import { memo } from "react";
 import { Route, Routes } from "react-router-dom";
 import { SWRConfig } from "swr";
-import { CategoriesProvider } from "@context/CategoryContext";
+import { DataProvider } from "@context/DataContext";
 import Header from "@components/common/Header/Header";
 import Categories from "@components/Category/Categories";
 import CardProductOffer from "@components/CardProduct/CardProductOffer/CardProductOffer";
@@ -15,7 +15,7 @@ import ProductDetail from "@pages/ProductDetail/ProductDetail";
 const App: React.FC = memo(() => {
   return (
     <SWRConfig value={{ revalidateOnFocus: false }}>
-      <CategoriesProvider>
+      <DataProvider>
         <Routes>
           <Route
             path="/"
@@ -33,7 +33,7 @@ const App: React.FC = memo(() => {
           <Route path="/products" element={<ProductList />} />
           <Route path={`/products/:id`} element={<ProductDetail />} />
         </Routes>
-      </CategoriesProvider>
+      </DataProvider>
       <Footer />
     </SWRConfig>
   );
