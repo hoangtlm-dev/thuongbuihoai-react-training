@@ -54,6 +54,7 @@
       "productId": "164665454657522",
       "categoryId": "1651999197973",
       "productName": "Cottage Cheese",
+      "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie ultrices donec pulvinar quis est bibendum suspendisse viverra.",
       "productQuantity": 3,
       "originalPrice": {
         "value": 150,
@@ -68,7 +69,7 @@
       "bestSelling": false,
       "popular": false,
       "images": {
-        "src": "src/assets/images/cottage-cheese.png",
+        "src": "/src/assets/images/cottage-cheese.png",
         "alt": "This is cottage-cheese images"
       }
     },
@@ -76,6 +77,7 @@
       "productId": "16466545464646547",
       "categoryId": "1651454657522",
       "productName": "Ice Cream Sundae",
+      "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie ultrices donec pulvinar quis est bibendum suspendisse viverra.",
       "productQuantity": 5,
       "originalPrice": {
         "value": 20,
@@ -90,7 +92,7 @@
       "bestSelling": true,
       "popular": false,
       "images": {
-        "src": "src/assets/images/ice-cream-sundae.png",
+        "src": "/src/assets/images/ice-cream-sundae.png",
         "alt": "This is ice-cream-sundae images"
       }
     },
@@ -98,6 +100,7 @@
       "productId": "1646654668992646547",
       "categoryId": "1651924356334",
       "productName": "Beef-Steak",
+      "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie ultrices donec pulvinar quis est bibendum suspendisse viverra.",
       "productQuantity": 9,
       "originalPrice": {
         "value": 50,
@@ -112,7 +115,7 @@
       "bestSelling": false,
       "popular": true,
       "images": {
-        "src": "src/assets/images/beef-steak.png",
+        "src": "/src/assets/images/beef-steak.png",
         "alt": "This is beef-steak images"
       }
     }
