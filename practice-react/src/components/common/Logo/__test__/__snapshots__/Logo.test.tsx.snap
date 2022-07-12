@@ -8,7 +8,7 @@ exports[`Logo component matches snapshot 1`] = `
   >
     <img
       alt="This is logo"
-      class="logo"
+      class=""
     />
   </a>
 </DocumentFragment>
