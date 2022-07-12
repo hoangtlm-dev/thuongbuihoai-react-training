@@ -2,7 +2,7 @@ import React, { memo } from "react";
 import "./price.css";
 
 interface PriceProps {
-  value: number;
+  value?: number;
   type: string;
   currency?: string;
 }
