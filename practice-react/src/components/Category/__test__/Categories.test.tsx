@@ -1,27 +1,29 @@
 import { render } from "@testing-library/react";
 import { createMemoryHistory } from "history";
 import { Router } from "react-router-dom";
+import { DataContextProps } from "@common-types/data";
+import { DataContext } from "@context/DataContext";
 import "@testing-library/jest-dom";
 import Categories from "../Categories";
-import { CategoryContext } from "@common-types/category";
-import { CategoriesContext } from "@context/CategoryContext";
 
-const contextProductMock: CategoryContext = {
+const contextProductMock: DataContextProps = {
   searchValue: {},
-  setSearchValue: () => {},
+  setSearchValue: jest.fn(),
   categories: [],
-  setCategories: () => {},
+  setCategories: jest.fn(),
+  products: [],
+  setProducts: jest.fn(),
 };
 
 describe("Categories component", () => {
   test("should render categories component", () => {
     const history = createMemoryHistory();
     const { getByTestId } = render(
-      <CategoriesContext.Provider value={contextProductMock}>
+      <DataContext.Provider value={contextProductMock}>
         <Router location={history.location} navigator={history}>
           <Categories />
         </Router>
-      </CategoriesContext.Provider>
+      </DataContext.Provider>
     );
     expect(getByTestId("categories")).toBeInTheDocument();
   });
@@ -29,11 +31,11 @@ describe("Categories component", () => {
   test("matches snapshot", () => {
     const history = createMemoryHistory();
     const { asFragment } = render(
-      <CategoriesContext.Provider value={contextProductMock}>
+      <DataContext.Provider value={contextProductMock}>
         <Router location={history.location} navigator={history}>
           <Categories />
         </Router>
-      </CategoriesContext.Provider>
+      </DataContext.Provider>
     );
     expect(asFragment()).toMatchSnapshot();
   });
