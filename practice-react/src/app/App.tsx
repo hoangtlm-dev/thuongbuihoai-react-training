@@ -6,7 +6,7 @@ import Header from "@components/common/Header/Header";
 import Categories from "@components/Category/Categories";
 import CardProductOffer from "@components/CardProduct/CardProductOffer/CardProductOffer";
 import CardProductSelling from "@components/CardProduct/CardProductSelling/CardProductSelling";
-import CardPopular from "@components/CardProduct/CardPopular/CardPopular";
+import CardProductPopular from "@components/CardProduct/CardProductPopular/CardProductPopular";
 import SignUpSection from "@components/SignUpSection/SignUpSection";
 import Footer from "@components/common/Footer/Footer";
 import ProductList from "@pages/ProductList/ProductList";
@@ -25,7 +25,7 @@ const App: React.FC = memo(() => {
                 <Categories />
                 <CardProductOffer />
                 <CardProductSelling />
-                <CardPopular />
+                <CardProductPopular />
                 <SignUpSection />
               </>
             }
