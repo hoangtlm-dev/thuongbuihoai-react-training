@@ -9,6 +9,7 @@ interface placeholder {
 const Input: React.FC<placeholder> = memo(({ type, placeholder }) => {
   return (
     <input
+      data-testid="input-value"
       className="input input__value"
       type={type}
       placeholder={placeholder}
