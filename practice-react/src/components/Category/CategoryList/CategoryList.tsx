@@ -27,15 +27,9 @@ const CategoryList: React.FC<CategoryProps> = ({
     setCategories(data);
   }, [data]);
 
-  const handleSearch = (id: string) => (e: React.MouseEvent<HTMLElement>) => {
+  const handleSearch = () => (e: React.MouseEvent<HTMLElement>) => {
     // get current categoryId
     const categoryId = { categoryId: e.currentTarget.dataset.index };
-    setSearchValue?.(categoryId);
-  };
-
-  // handle search default
-  const handleDefaultCategory = () => {
-    const categoryId = "";
     setSearchValue?.(categoryId);
   };
 
@@ -63,7 +57,7 @@ const CategoryList: React.FC<CategoryProps> = ({
                 alt={category.images.alt}
               />
             </figure>
-            <Link data-index={category.id} className="categoryList__text" to="/products" onClick={handleSearch(category.id)}>
+            <Link data-index={category.id} className="categoryList__text" to="/products" onClick={handleSearch()}>
               <p>{category.name}</p>
             </Link>
           </div>
