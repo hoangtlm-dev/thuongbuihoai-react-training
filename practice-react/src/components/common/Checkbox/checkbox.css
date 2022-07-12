@@ -11,7 +11,7 @@ input[type="checkbox"] {
   border-radius: 2px;
   display: grid;
   place-content: center;
-  transform: translateY(-1.5px);
+  transform: translateY(-9px);
 }
 
 .checkbox__value {
