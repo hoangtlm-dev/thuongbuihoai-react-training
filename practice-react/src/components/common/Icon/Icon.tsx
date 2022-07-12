@@ -32,7 +32,7 @@ const Icon: React.FC<IconProps> = ({ iconName }) => {
     default:
       break;
   }
-  return <i className={className} />;
+  return <i data-testid="icon" className={className} />;
 };
 
 export default Icon;
