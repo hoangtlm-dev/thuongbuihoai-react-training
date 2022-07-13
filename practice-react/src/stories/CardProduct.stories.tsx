@@ -16,7 +16,7 @@ export default {
 } as ComponentMeta<typeof CardProductList>;
 
 const value: DataContextProps = {
-  searchValue: {},
+  searchValue: [],
   setSearchValue: () => {},
   categories: CATEGORY_MOCKING_LIST,
   setCategories: () => {},
