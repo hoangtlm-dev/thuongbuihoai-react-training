@@ -15,3 +15,6 @@ const TemplateCheckbox: ComponentStory<typeof Checkbox> = (args) => (
 );
 
 export const Default = TemplateCheckbox.bind({});
+Default.args = {
+  value: "Beverages"
+}
