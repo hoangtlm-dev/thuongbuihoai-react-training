@@ -7,7 +7,7 @@ import { DataContextProps } from "@common-types/data";
 import { DataContext } from "@context/DataContext";
 
 const contextProductMock: DataContextProps = {
-  searchValue: {},
+  searchValue: [],
   setSearchValue: jest.fn(),
   categories: [],
   setCategories: jest.fn(),
