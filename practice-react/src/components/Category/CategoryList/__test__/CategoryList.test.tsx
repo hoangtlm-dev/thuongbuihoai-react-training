@@ -17,7 +17,7 @@ jest.mock("react", () => ({
 }));
 
 const contextProductMock: DataContextProps = {
-  searchValue: {},
+  searchValue: [],
   setSearchValue: jest.fn(),
   categories: CATEGORY_MOCKING_LIST,
   setCategories: jest.fn(),
@@ -41,7 +41,12 @@ describe("CategoryList component", () => {
     const utils = render(
       <DataContext.Provider value={contextProductMock}>
         <Router location={history.location} navigator={history}>
-          <CategoryList type="select" isSelect={true} />
+          <CategoryList
+            type="select"
+            isSelect={true}
+            onToggleCategory={() => {}}
+            selectedCategories={[]}
+          />
         </Router>
       </DataContext.Provider>
     );
@@ -64,7 +69,12 @@ describe("CategoryList component", () => {
     const { getByTestId } = render(
       <DataContext.Provider value={contextProductMock}>
         <Router location={history.location} navigator={history}>
-          <CategoryList type="select" isSelect={true} />
+          <CategoryList
+            type="select"
+            isSelect={true}
+            onToggleCategory={() => {}}
+            selectedCategories={[]}
+          />
         </Router>
       </DataContext.Provider>
     );
@@ -76,7 +86,12 @@ describe("CategoryList component", () => {
     const { getByTestId } = render(
       <DataContext.Provider value={contextProductMock}>
         <Router location={history.location} navigator={history}>
-          <CategoryList type="checkbox" isCheckbox={true} />
+          <CategoryList
+            type="select"
+            isSelect={true}
+            onToggleCategory={() => {}}
+            selectedCategories={[]}
+          />
         </Router>
       </DataContext.Provider>
     );
@@ -94,7 +109,12 @@ describe("CategoryList component", () => {
     const { asFragment } = render(
       <DataContext.Provider value={contextProductMock}>
         <Router location={history.location} navigator={history}>
-          <CategoryList type="select" isSelect={true} />
+          <CategoryList
+            type="select"
+            isSelect={true}
+            onToggleCategory={() => {}}
+            selectedCategories={[]}
+          />
         </Router>
       </DataContext.Provider>
     );

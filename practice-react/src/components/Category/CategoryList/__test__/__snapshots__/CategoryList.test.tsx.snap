@@ -22,7 +22,7 @@ exports[`CategoryList component matches snapshot 1`] = `
         <a
           class="categoryList__text"
           data-index="1234"
-          href="/products"
+          href="/products/category/1234"
         >
           <p
             data-testid="category-item"
@@ -48,7 +48,7 @@ exports[`CategoryList component matches snapshot 1`] = `
         <a
           class="categoryList__text"
           data-index="12345"
-          href="/products"
+          href="/products/category/12345"
         >
           <p
             data-testid="category-item"
@@ -74,7 +74,7 @@ exports[`CategoryList component matches snapshot 1`] = `
         <a
           class="categoryList__text"
           data-index="12345"
-          href="/products"
+          href="/products/category/12345"
         >
           <p
             data-testid="category-item"
@@ -100,7 +100,7 @@ exports[`CategoryList component matches snapshot 1`] = `
         <a
           class="categoryList__text"
           data-index="12345"
-          href="/products"
+          href="/products/category/12345"
         >
           <p
             data-testid="category-item"
@@ -126,7 +126,7 @@ exports[`CategoryList component matches snapshot 1`] = `
         <a
           class="categoryList__text"
           data-index="12345"
-          href="/products"
+          href="/products/category/12345"
         >
           <p
             data-testid="category-item"
@@ -152,7 +152,7 @@ exports[`CategoryList component matches snapshot 1`] = `
         <a
           class="categoryList__text"
           data-index="12345"
-          href="/products"
+          href="/products/category/12345"
         >
           <p
             data-testid="category-item"
