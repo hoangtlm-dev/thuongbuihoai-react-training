@@ -12,13 +12,8 @@ import { PRODUCTS_URL } from "@constants/url";
 import { getData } from "@helpers/fetchApi";
 import { CATEGORY_MOCKING_LIST } from "@__mocks__/constants/category";
 
-jest.mock("react", () => ({
-  ...jest.requireActual("react"),
-  useState: jest.fn(),
-}));
-
 const contextProductMock: DataContextProps = {
-  searchValue: {},
+  searchValue: [],
   setSearchValue: jest.fn(),
   categories: CATEGORY_MOCKING_LIST,
   setCategories: jest.fn(),
