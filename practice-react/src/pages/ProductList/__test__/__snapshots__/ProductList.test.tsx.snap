@@ -102,6 +102,21 @@ exports[`ProductList component matches snapshot 1`] = `
           class="categoryList--checkbox"
           data-testid="category-list"
         >
+          <div
+            class="categoryList__checkbox"
+          >
+            <label
+              class="checkbox__value"
+            >
+              <input
+                data-index=""
+                multiple=""
+                name="checkbox"
+                type="checkbox"
+              />
+              All
+            </label>
+          </div>
           <div>
             <div
               class="categoryList__checkbox"
@@ -111,6 +126,7 @@ exports[`ProductList component matches snapshot 1`] = `
               >
                 <input
                   data-index="1234"
+                  multiple=""
                   name="checkbox"
                   type="checkbox"
                 />
@@ -127,6 +143,7 @@ exports[`ProductList component matches snapshot 1`] = `
               >
                 <input
                   data-index="12345"
+                  multiple=""
                   name="checkbox"
                   type="checkbox"
                 />
@@ -143,6 +160,7 @@ exports[`ProductList component matches snapshot 1`] = `
               >
                 <input
                   data-index="12345"
+                  multiple=""
                   name="checkbox"
                   type="checkbox"
                 />
@@ -159,6 +177,7 @@ exports[`ProductList component matches snapshot 1`] = `
               >
                 <input
                   data-index="12345"
+                  multiple=""
                   name="checkbox"
                   type="checkbox"
                 />
@@ -175,6 +194,7 @@ exports[`ProductList component matches snapshot 1`] = `
               >
                 <input
                   data-index="12345"
+                  multiple=""
                   name="checkbox"
                   type="checkbox"
                 />
@@ -191,6 +211,7 @@ exports[`ProductList component matches snapshot 1`] = `
               >
                 <input
                   data-index="12345"
+                  multiple=""
                   name="checkbox"
                   type="checkbox"
                 />
@@ -202,7 +223,146 @@ exports[`ProductList component matches snapshot 1`] = `
       </div>
       <div
         class="productList--popular"
-      />
+      >
+        <div
+          class="card__product--popular"
+          data-testid="card-product-list"
+        >
+          <img
+            alt="This is ice-cream-sundae images"
+            class="card__image"
+            src="/src/assets/images/ice-cream-sundae.png"
+          />
+          <div
+            class="card__popular"
+          >
+            <a
+              class="cart__link"
+              href="/products/16466545464646547"
+            >
+              <p
+                class="text--normal"
+                data-testid="text"
+              >
+                Ice Cream Sundae
+              </p>
+            </a>
+            <p
+              class="price__original"
+              data-testid="price"
+            >
+              <span
+                class="price--unit"
+              >
+                $
+              </span>
+              20
+            </p>
+          </div>
+          <div
+            class="card__counter"
+          >
+            <div
+              class="counter"
+              data-testid="counter"
+            >
+              <i
+                class="fa fa-minus"
+              />
+              <input
+                class="counter__input"
+                min="0"
+                value="5"
+              />
+              <div
+                class="counter__plus"
+              >
+                <i
+                  class="icon-plus"
+                  data-testid="icon"
+                />
+              </div>
+            </div>
+            <div
+              class="card__icon"
+            >
+              <i
+                class="icon-cart"
+                data-testid="icon"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="card__product--popular"
+          data-testid="card-product-list"
+        >
+          <img
+            alt="This is beef-steak images"
+            class="card__image"
+            src="/src/assets/images/beef-steak.png"
+          />
+          <div
+            class="card__popular"
+          >
+            <a
+              class="cart__link"
+              href="/products/1646654668992646547"
+            >
+              <p
+                class="text--normal"
+                data-testid="text"
+              >
+                Beef-Steak
+              </p>
+            </a>
+            <p
+              class="price__original"
+              data-testid="price"
+            >
+              <span
+                class="price--unit"
+              >
+                $
+              </span>
+              50
+            </p>
+          </div>
+          <div
+            class="card__counter"
+          >
+            <div
+              class="counter"
+              data-testid="counter"
+            >
+              <i
+                class="fa fa-minus"
+              />
+              <input
+                class="counter__input"
+                min="0"
+                value="9"
+              />
+              <div
+                class="counter__plus"
+              >
+                <i
+                  class="icon-plus"
+                  data-testid="icon"
+                />
+              </div>
+            </div>
+            <div
+              class="card__icon"
+            >
+              <i
+                class="icon-cart"
+                data-testid="icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </DocumentFragment>
