@@ -3,7 +3,7 @@ import "./checkbox.css";
 
 interface CheckboxProps {
   value: string;
-  categoryId: any;
+  categoryId: string;
   onClick: MouseEventHandler<HTMLInputElement>;
 }
 
