@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { render } from "@testing-library/react";
 import { createMemoryHistory } from "history";
 import { Router } from "react-router-dom";
@@ -7,9 +8,15 @@ import { PRODUCT_MOCKING_LIST } from "@__mocks__/constants/product";
 import { DataContext } from "@context/DataContext";
 import "@testing-library/jest-dom";
 import ProductList from "../ProductList";
+import mockAxios from "@__mocks__/axios";
+
+jest.mock("react", () => ({
+  ...jest.requireActual("react"),
+  useState: jest.fn(),
+}));
 
 const contextProductMock: DataContextProps = {
-  searchValue: {},
+  searchValue: [],
   setSearchValue: jest.fn(),
   categories: CATEGORY_MOCKING_LIST,
   setCategories: jest.fn(),
@@ -18,6 +25,16 @@ const contextProductMock: DataContextProps = {
 };
 
 describe("ProductList component", () => {
+  beforeEach(() => {
+    (useState as jest.Mock).mockImplementation(
+      jest.requireActual("react").useState
+    );
+  });
+
+  afterEach(() => {
+    mockAxios.reset();
+  });
+  
   test("should render ProductList component", () => {
     const history = createMemoryHistory();
     const { getByTestId } = render(
