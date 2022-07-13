@@ -7,7 +7,7 @@ import CardProductPopular from "../CardProductPopular";
 import "@testing-library/jest-dom";
 
 const contextProductMock: DataContextProps = {
-  searchValue: {},
+  searchValue: [],
   setSearchValue: jest.fn(),
   categories: [],
   setCategories: jest.fn(),
