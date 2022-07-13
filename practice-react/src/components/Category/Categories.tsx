@@ -5,7 +5,12 @@ const Categories: React.FC = memo(() => {
   return (
     <div data-testid="categories" className="categories">
       <p className="categories__title">Categories</p>
-      <CategoryList type="select" isSelect={true} />
+      <CategoryList
+        type="select"
+        isSelect={true}
+        onToggleCategory={() => {}}
+        selectedCategories={[]}
+      />
     </div>
   );
 });
