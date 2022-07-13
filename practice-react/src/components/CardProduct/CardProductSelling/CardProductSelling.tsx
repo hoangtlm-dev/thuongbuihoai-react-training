@@ -1,8 +1,12 @@
-import React, { memo } from "react";
+import React, { memo, useContext } from "react";
 import Text from "@components/common/Text/Text";
 import CardProductList from "../CardProductList";
+import { DataContext } from "@context/DataContext";
 
 const CardProductSelling: React.FC = memo(() => {
+  const { products } = useContext(DataContext);
+  const productBestSelling = products?.filter((product) => product.bestSelling === true);
+
   return (
     <div data-testid="card-product-selling" className="cardProductSellingList">
       <div className="cardProductSelling__title">
@@ -10,12 +14,10 @@ const CardProductSelling: React.FC = memo(() => {
       </div>
       <div className="card__item--selling">
         <CardProductList
-          isOffer={false}
-          isPopular={false}
-          isBestSelling={true}
           type="selling"
-          visibleCounter={true}
           content="selling"
+          visibleCounter={true}
+          productList={productBestSelling}
         />
       </div>
     </div>
