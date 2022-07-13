@@ -1,10 +1,6 @@
-import useSWR from "swr";
-import React, { memo, useContext, useEffect } from "react";
+import React, { memo } from "react";
 import { Link } from "react-router-dom";
 import { Product } from "@common-types/product";
-import { PRODUCTS_URL } from "@constants/url";
-import { getData } from "@helpers/fetchApi";
-import { DataContext } from "@context/DataContext";
 import Text from "@components/common/Text/Text";
 import Price from "@components/common/Price/Price";
 import Counter from "@components/common/Counter/Counter";
@@ -14,37 +10,20 @@ import "./cardProduct.css";
 interface CartProductProps {
   type: string;
   content: string;
-  isOffer?: boolean;
-  isPopular?: boolean;
-  isBestSelling?: boolean;
   visibleQuantity?: boolean;
   visibleDiscountPrice?: boolean;
   visibleCounter?: boolean;
+  productList?: Product[];
 }
 
 const CardProductList: React.FC<CartProductProps> = memo (
   ({
     type,
-    isOffer,
-    isPopular,
-    isBestSelling,
     visibleQuantity,
     visibleDiscountPrice,
     visibleCounter,
+    productList
   }) => {
-
-  const { searchValue, setProducts } = useContext(DataContext);
-  const filter = (isOffer || isPopular || isBestSelling) ? {
-    offer: isOffer,
-    popular: isPopular,
-    bestSelling: isBestSelling,
-  } : (searchValue) ? {...searchValue} : {};
-  const queryParams: URLSearchParams = new URLSearchParams(filter as {});
-  const { data } = useSWR(PRODUCTS_URL + "?" + queryParams.toString(), getData<Product[]>);
-
-  useEffect(() => {
-    setProducts(data)
-  }, [data]);
 
   let className = "";
   switch (type) {
@@ -78,7 +57,7 @@ const CardProductList: React.FC<CartProductProps> = memo (
 
   return (
     <>
-      {data?.map((product: Product) => (
+      {productList?.map((product: Product) => (
         <div data-testid="card-product-list" key={product.productId} className={className}>
           <img className="card__image" src={product.images.src} alt={product.images.alt} />
           <div className={cartInfo}>
