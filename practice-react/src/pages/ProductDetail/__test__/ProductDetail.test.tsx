@@ -9,7 +9,7 @@ import "@testing-library/jest-dom";
 import ProductDetail from "../ProductDetail";
 
 const contextProductMock: DataContextProps = {
-  searchValue: {},
+  searchValue: [],
   setSearchValue: jest.fn(),
   categories: CATEGORY_MOCKING_LIST,
   setCategories: jest.fn(),
