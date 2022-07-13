@@ -1,10 +1,11 @@
 import { Categories } from "@common-types/category";
+import url from "@assets/images/icons/beverages.png";
 
 const CATEGORY: Categories = {
   id: "1234",
   name: "Beverages",
   images: {
-    src: "@assets/images/icons/beverages.png",
+    src: url,
     alt: "This is icon beverages",
   },
 };
