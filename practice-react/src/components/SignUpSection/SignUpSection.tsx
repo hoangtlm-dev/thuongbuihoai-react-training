@@ -14,12 +14,12 @@ const SignUpSection: React.FC = memo(() => {
       <div className="section__content">
         <Text
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          type="medium"
+          size="medium"
         />
         <div className="section__info">
           <Text
             text="Subscribe to get 10% Discount and promotion"
-            type="normal"
+            size="normal"
           />
         </div>
         <div className="section__address">
