@@ -10,6 +10,7 @@ const Categories: React.FC = memo(() => {
         isSelect={true}
         onToggleCategory={() => {}}
         selectedCategories={[]}
+        id={""}
       />
     </div>
   );
