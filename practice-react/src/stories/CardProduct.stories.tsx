@@ -4,16 +4,16 @@ import { DataContextProps } from "@common-types/data";
 import { CATEGORY_MOCKING_LIST } from "@__mocks__/constants/category";
 import { PRODUCT_MOCKING_LIST } from "@__mocks__/constants/product";
 import { DataContext } from "@context/DataContext";
-import CardProductList from "@components/CardProduct/CardProductList";
+import ProductList from "@components/ProductList/ProductList";
 
 export default {
   /* 👇 The title prop is optional.
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: "Component/CardProductList",
-  component: CardProductList,
-} as ComponentMeta<typeof CardProductList>;
+  title: "Component/ProductList",
+  component: ProductList,
+} as ComponentMeta<typeof ProductList>;
 
 const value: DataContextProps = {
   searchValue: [],
@@ -24,17 +24,17 @@ const value: DataContextProps = {
   setProducts: () => {},
 };
 
-const TemplateCardProductList: ComponentStory<typeof CardProductList> = (
+const TemplateProductList: ComponentStory<typeof ProductList> = (
   args
 ) => (
   <DataContext.Provider value={value}>
     <BrowserRouter>
-      <CardProductList {...args} />
+      <ProductList {...args} />
     </BrowserRouter>
   </DataContext.Provider>
 );
 
-export const CardOffers = TemplateCardProductList.bind({});
+export const CardOffers = TemplateProductList.bind({});
 CardOffers.args = {
   type: "offers",
   visibleQuantity: true,
@@ -42,7 +42,7 @@ CardOffers.args = {
   productList: PRODUCT_MOCKING_LIST,
 };
 
-export const CardSelling = TemplateCardProductList.bind({});
+export const CardSelling = TemplateProductList.bind({});
 CardSelling.args = {
   type: "selling",
   visibleCounter: true,

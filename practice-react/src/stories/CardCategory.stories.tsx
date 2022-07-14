@@ -1,4 +1,4 @@
-import CardCategory from "@components/Category/CardCategory/CardCategory";
+import CategoryCard from "@components/CategoryCard/CategoryCard";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { CATEGORY } from "@__mocks__/constants/category";
 import { BrowserRouter } from "react-router-dom";
@@ -8,17 +8,17 @@ export default {
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: "Component/CardCategory",
-  component: CardCategory,
-} as ComponentMeta<typeof CardCategory>;
+  title: "Component/CategoryCard",
+  component: CategoryCard,
+} as ComponentMeta<typeof CategoryCard>;
 
-const TemplateCardCategory: ComponentStory<typeof CardCategory> = (args) => (
+const TemplateCategoryCard: ComponentStory<typeof CategoryCard> = (args) => (
   <BrowserRouter>
-    <CardCategory {...args} />
+    <CategoryCard {...args} />
   </BrowserRouter>
 );
 
-export const Primary = TemplateCardCategory.bind({});
+export const Primary = TemplateCategoryCard.bind({});
 Primary.args = {
   category: CATEGORY,
 };

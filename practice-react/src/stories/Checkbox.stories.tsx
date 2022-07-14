@@ -1,4 +1,4 @@
-import Checkbox from "@components/common/Checkbox/Checkbox";
+import CategoryCheck from "@components/CategoryCheck/CategoryCheck";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 export default {
@@ -6,15 +6,15 @@ export default {
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: "Component/Checkbox",
-  component: Checkbox,
-} as ComponentMeta<typeof Checkbox>;
+  title: "Component/CategoryCheck",
+  component: CategoryCheck,
+} as ComponentMeta<typeof CategoryCheck>;
 
-const TemplateCheckbox: ComponentStory<typeof Checkbox> = (args) => (
-  <Checkbox {...args} />
+const TemplateCategoryCheck: ComponentStory<typeof CategoryCheck> = (args) => (
+  <CategoryCheck {...args} />
 );
 
-export const Default = TemplateCheckbox.bind({});
+export const Default = TemplateCategoryCheck.bind({});
 Default.args = {
   text: "Beverages"
 }
