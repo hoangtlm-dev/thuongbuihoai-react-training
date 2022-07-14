@@ -1,0 +1,11 @@
+.icon__item {
+  text-decoration: none;
+}
+
+.icon__list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  width: 200px;
+  margin-right: 74px;
+}
