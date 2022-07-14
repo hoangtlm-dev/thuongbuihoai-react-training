@@ -4,7 +4,7 @@
       "id": "1651999177368",
       "name": "Beverages",
       "images": {
-        "src": "src/assets/images/icons/beverages.png",
+        "src": "/src/assets/images/icons/beverages.png",
         "alt": "This is beverages images"
       }
     },
@@ -12,7 +12,7 @@
       "id": "1651999197973",
       "name": "Dairy",
       "images": {
-        "src": "src/assets/images/icons/dairy.png",
+        "src": "/src/assets/images/icons/dairy.png",
         "alt": "This is dairy images"
       }
     },
@@ -20,7 +20,7 @@
       "id": "1651999133333",
       "name": "Meat",
       "images": {
-        "src": "src/assets/images/icons/meat.png",
+        "src": "/src/assets/images/icons/meat.png",
         "alt": "This is meat images"
       }
     },
@@ -28,7 +28,7 @@
       "id": "1651924356334",
       "name": "Spices & Herbs",
       "images": {
-        "src": "src/assets/images/icons/spices-herbs.png",
+        "src": "/src/assets/images/icons/spices-herbs.png",
         "alt": "This is spices-herbs images"
       }
     },
@@ -36,7 +36,7 @@
       "id": "1651454657532",
       "name": "Stationery",
       "images": {
-        "src": "src/assets/images/icons/stationery.png",
+        "src": "/src/assets/images/icons/stationery.png",
         "alt": "This is stationery images"
       }
     },
@@ -44,7 +44,7 @@
       "id": "1651454657522",
       "name": "Costmetic",
       "images": {
-        "src": "src/assets/images/icons/costmetic.png",
+        "src": "/src/assets/images/icons/costmetic.png",
         "alt": "This is costmetic images"
       }
     }
