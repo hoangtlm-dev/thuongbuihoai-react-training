@@ -9,6 +9,7 @@ import "./productList.css";
 const ProductList: React.FC = memo(() => {
   const { products } = useContext(DataContext);
   const { id } = useParams();
+
   const defaultCategories = useMemo(() => {
     return id ? [id] : [];
   }, [id]);
@@ -49,10 +50,11 @@ const ProductList: React.FC = memo(() => {
         <div className="productList__select">
           <p className="productList__select--category">Categories</p>
           <CategoryList
-            selectedCategories={selectedCategories}
-            onToggleCategory={handleToggleCategory}
+            id={id}
             type="checkbox"
             isCheckbox={true}
+            selectedCategories={selectedCategories}
+            onToggleCategory={handleToggleCategory}
           />
         </div>
         <div className="productList--popular">
