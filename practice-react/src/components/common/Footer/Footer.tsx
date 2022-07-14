@@ -1,10 +1,11 @@
 import React, { memo } from "react";
 import { MENU_ABOUT, MENU_HELP, MENU_SERVICE } from "@constants/menu";
-import MenuContact from "../Menu/MenuContact/MenuContact";
+import MenuContact from "../MenuContact/MenuContact";
 import url from "@assets/images/logos/logo.png";
-import "./footer.css";
 import Logo from "../Logo/Logo";
-import Icon from "../Icon/Icon";
+import IconLink from "../IconLink/IconLink";
+import ICON_LINK from "@constants/iconLink";
+import "./footer.css";
 
 const Footer: React.FC = memo(() => {
   return (
@@ -31,11 +32,7 @@ const Footer: React.FC = memo(() => {
       </div>
       <div className="footer__social">
         <Logo type="large" src={url} />
-        <div className="footer__social--group">
-          <Icon iconName="fb" />
-          <Icon iconName="twitter" />
-          <Icon iconName="instagram" />
-        </div>
+        <IconLink iconList={ICON_LINK} />
       </div>
     </footer>
   );
