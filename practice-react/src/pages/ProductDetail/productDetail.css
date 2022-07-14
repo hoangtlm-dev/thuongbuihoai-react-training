@@ -3,7 +3,7 @@
   z-index: 15;
 }
 
-.productDetail--background {
+.productDetail__background {
   position: absolute;
   z-index: 5;
   top: 0;
@@ -11,7 +11,7 @@
   margin-bottom: 70px;
 }
 
-.productDetail--image {
+.productDetail__image {
   margin: 358px 0 335px 287px;
 }
 
@@ -48,15 +48,15 @@
   left: 970px;
 }
 
-.productDetail--btn {
+.productDetail__btn {
   margin-left: 232px;
 }
 
-.productDetail--more {
+.productDetail__more {
   padding: 70px 103px 0;
 }
 
-.productDetail-popular {
+.productDetail__productMore {
   display: flex;
   justify-content: space-between;
 }
