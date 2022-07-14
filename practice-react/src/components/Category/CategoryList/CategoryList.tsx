@@ -9,6 +9,7 @@ import CardCategory from "../CardCategory/CardCategory";
 import "./categoryList.css";
 
 interface CategoryProps {
+  id?: string;
   type: string;
   isSelect?: boolean;
   isCheckbox?: boolean;
@@ -17,6 +18,7 @@ interface CategoryProps {
 }
 
 const CategoryList: React.FC<CategoryProps> = ({
+  id,
   type,
   isSelect,
   isCheckbox,
@@ -50,14 +52,17 @@ const CategoryList: React.FC<CategoryProps> = ({
           <div className="categoryList__list">
             <CardCategory
               onClick={onToggleCategory}
-              category={category} categoryId={category.id} />
+              category={category}
+              categoryId={category.id}
+            />
           </div>
         )}
         {isCheckbox && (
           <div className="categoryList__checkbox">
             <Checkbox
-              onClick={onToggleCategory}
+              onToggleCategory={onToggleCategory}
               categoryId={category.id}
+              checked={category.id == id ? true : false}
               text={category.name}
               value={selectedCategories.includes(category.id)}
             />
@@ -72,9 +77,10 @@ const CategoryList: React.FC<CategoryProps> = ({
       {isCheckbox &&
         <div className="categoryList__checkbox">
           <Checkbox
-            onClick={onToggleCategory}
+            onToggleCategory={onToggleCategory}
             categoryId=""
             text="All"
+            checked={id ? false : true}
             value={!selectedCategories.length}
           />
         </div>
