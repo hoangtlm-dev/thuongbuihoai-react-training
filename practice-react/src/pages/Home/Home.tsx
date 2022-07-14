@@ -4,12 +4,12 @@ import { getData } from "@helpers/fetchApi";
 import { Product } from "@common-types/product";
 import { DataContext } from "@context/DataContext";
 import Header from "@components/common/Header/Header";
-import Categories from "@components/Category/Categories";
-import CardProductOffer from "@components/CardProduct/CardProductOffer/CardProductOffer";
-import CardProductSelling from "@components/CardProduct/CardProductSelling/CardProductSelling";
-import CardProductPopular from "@components/CardProduct/CardProductPopular/CardProductPopular";
+import Categories from "@components/CategoryCardList/CategoryCardList";
 import SignUpSection from "@components/SignUpSection/SignUpSection";
 import useSWR from "swr";
+import ProductOffer from "@sections/ProductOffer/ProductOffer";
+import ProductSelling from "@sections/ProductSelling/ProductSelling";
+import ProductPopular from "@sections/ProductPopular/ProductPopular";
 
 const Home: React.FC = memo(() => {
   const { setProducts } = useContext(DataContext);
@@ -23,9 +23,9 @@ const Home: React.FC = memo(() => {
     <>
       <Header />
       <Categories />
-      <CardProductOffer />
-      <CardProductSelling />
-      <CardProductPopular />
+      <ProductOffer />
+      <ProductSelling />
+      <ProductPopular />
       <SignUpSection />
     </>
   );
