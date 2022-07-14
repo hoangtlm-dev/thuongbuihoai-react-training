@@ -1,6 +1,11 @@
 import React, { memo } from "react";
-import { ButtonProps } from "@common-types/button";
 import "./button.css";
+
+interface ButtonProps {
+  type?: string;
+  text: string;
+  onClick?: () => void;
+}
 
 const Button: React.FC<ButtonProps> = memo(({ text, type, onClick }) => {
   let className = "btn";
