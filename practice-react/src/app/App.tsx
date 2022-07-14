@@ -14,6 +14,7 @@ const App: React.FC = memo(() => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path={`/products/category/:id`} element={<ProductList />} />
+          <Route path="/products" element={<ProductList />} />
           <Route path={`/products/:id`} element={<ProductDetail />} />
         </Routes>
       </DataProvider>
