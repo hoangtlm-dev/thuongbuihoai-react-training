@@ -2,13 +2,14 @@ import React, { memo } from "react";
 import "./text.css";
 
 interface TitleProps {
-  type?: string;
+  size?: string;
+  decoration?: string;
   text?: string;
 }
 
-const Text: React.FC<TitleProps> = memo(({ text, type }) => {
+const Text: React.FC<TitleProps> = memo(({ text, size, decoration }) => {
   let className = "";
-  switch (type) {
+  switch (size) {
     case "blur":
       className = "text--blur";
       break;
