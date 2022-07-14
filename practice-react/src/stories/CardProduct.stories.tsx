@@ -39,10 +39,12 @@ CardOffers.args = {
   type: "offers",
   visibleQuantity: true,
   visibleDiscountPrice: true,
+  productList: PRODUCT_MOCKING_LIST,
 };
 
 export const CardSelling = TemplateCardProductList.bind({});
 CardSelling.args = {
   type: "selling",
   visibleCounter: true,
+  productList: PRODUCT_MOCKING_LIST,
 };
