@@ -7,7 +7,7 @@ const Menu: React.FC<MenuProps> = memo(({ menuList }) => {
   const renderMenuList = (list: MenuType[]) => {
     return list.map((item) => (
       <li className="menu__item" key={item.key}>
-        <a href="">{item.label}</a>
+        <a href={item.url}>{item.label}</a>
       </li>
     ));
   }
