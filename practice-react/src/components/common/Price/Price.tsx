@@ -21,7 +21,7 @@ const Price: React.FC<PriceProps> = memo(({ value = "", type, currency }) => {
   }
   return (
     <p data-testid="price" className={className}>
-      <span className="price--unit">{currency}</span>{value}
+      <span className="price__unit">{currency}</span>{value}
     </p>
   );
 });
