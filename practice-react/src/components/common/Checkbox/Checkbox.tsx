@@ -5,13 +5,14 @@ interface CheckboxProps {
   text: string;
   categoryId: string;
   value: boolean;
-  onClick: Function;
+  onToggleCategory: Function;
+  checked: boolean;
 }
 
-const Checkbox: React.FC<CheckboxProps> = ({ text, onClick, categoryId }) => {
+const Checkbox: React.FC<CheckboxProps> = ({ text, onToggleCategory, categoryId, checked }) => {
   const handleCheck = (event: any) => {
     const value = event.target.checked
-    onClick(categoryId, value);
+    onToggleCategory(categoryId, value);
   }
 
   return (
@@ -20,6 +21,7 @@ const Checkbox: React.FC<CheckboxProps> = ({ text, onClick, categoryId }) => {
         type="checkbox"
         name="checkbox"
         multiple
+        defaultChecked={checked}
         data-index={categoryId}
         onClick={handleCheck}
       />
