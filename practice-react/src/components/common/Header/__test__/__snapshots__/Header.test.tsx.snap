@@ -11,9 +11,6 @@ exports[`Header component matches snapshot 1`] = `
       data-testid="navigation-bar"
     >
       <a
-        href="/"
-      />
-      <a
         data-testid="logo"
         href="/"
       >
