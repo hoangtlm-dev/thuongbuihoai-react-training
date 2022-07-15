@@ -51,7 +51,7 @@ const CategoryList: React.FC<CategoryProps> = ({
         {isSelect && (
           <div className="categoryList__card">
             <CategoryCard
-              onClick={onToggleCategory}
+              onToggleCategory={onToggleCategory}
               category={category}
               categoryId={category.id}
             />
