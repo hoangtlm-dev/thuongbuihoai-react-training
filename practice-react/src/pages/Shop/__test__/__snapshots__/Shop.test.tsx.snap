@@ -11,9 +11,6 @@ exports[`ProductList component matches snapshot 1`] = `
       data-testid="navigation-bar"
     >
       <a
-        href="/"
-      />
-      <a
         data-testid="logo"
         href="/"
       >
@@ -97,7 +94,7 @@ exports[`ProductList component matches snapshot 1`] = `
         <p
           class="shopPage__title"
         >
-          Categories
+          Category
         </p>
         <div
           class=""
