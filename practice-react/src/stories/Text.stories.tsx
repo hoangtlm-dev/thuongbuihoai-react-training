@@ -17,7 +17,7 @@ const TemplateText: ComponentStory<typeof Text> = (args) => (
 export const TextBlur = TemplateText.bind({});
 TextBlur.args = {
   text: "Lorem ipsum dolor sit",
-  size: "blur"
+  decoration: "blur"
 };
 
 export const TextNormal = TemplateText.bind({});
@@ -35,7 +35,7 @@ TextMedium.args = {
 export const TextColor = TemplateText.bind({});
 TextColor.args = {
   text: "Ice Cream Sundae",
-  size: "color"
+  decoration: "highlight"
 };
 
 export const TextLarge = TemplateText.bind({});
@@ -47,5 +47,5 @@ TextLarge.args = {
 export const TextLargeDark = TemplateText.bind({});
 TextLargeDark.args = {
   text: "Popular Products",
-  size: "large-dark"
+  decoration: "dark"
 };
