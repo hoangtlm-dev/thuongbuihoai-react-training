@@ -10,7 +10,7 @@ const ProductPopular: React.FC = memo(() => {
   return (
     <div data-testid="card-product-popular" className="cardPopularList">
       <div className="cardPopular__title">
-        <Text text="Popular Products" size="large-dark" />
+        <Text text="Popular Products" decoration="dark" />
       </div>
       <div className="card__item--popular">
         <ProductList
