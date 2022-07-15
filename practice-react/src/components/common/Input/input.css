@@ -1,5 +1,5 @@
 .input__value {
-  background: #FFFFFF;
+  background: var(--light);
   border-radius: 49.8249px;
   padding: 25px 0 25px 60px;
   width: 682px;
