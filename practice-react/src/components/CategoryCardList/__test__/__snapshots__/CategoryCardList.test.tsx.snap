@@ -12,7 +12,7 @@ exports[`Categories component matches snapshot 1`] = `
       Categories
     </p>
     <div
-      class="categoryList--select"
+      class="categoryList__row"
       data-testid="category-list"
     />
   </div>

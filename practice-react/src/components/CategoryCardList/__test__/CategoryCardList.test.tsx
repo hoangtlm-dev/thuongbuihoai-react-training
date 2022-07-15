@@ -4,7 +4,7 @@ import { Router } from "react-router-dom";
 import { DataContextProps } from "@common-types/data";
 import { DataContext } from "@context/DataContext";
 import "@testing-library/jest-dom";
-import Categories from "../CategoryCardList";
+import CategoryCardList from "../CategoryCardList";
 
 const contextProductMock: DataContextProps = {
   searchValue: [],
@@ -21,7 +21,7 @@ describe("Categories component", () => {
     const { getByTestId } = render(
       <DataContext.Provider value={contextProductMock}>
         <Router location={history.location} navigator={history}>
-          <Categories />
+          <CategoryCardList />
         </Router>
       </DataContext.Provider>
     );
@@ -33,7 +33,7 @@ describe("Categories component", () => {
     const { asFragment } = render(
       <DataContext.Provider value={contextProductMock}>
         <Router location={history.location} navigator={history}>
-          <Categories />
+          <CategoryCardList />
         </Router>
       </DataContext.Provider>
     );
