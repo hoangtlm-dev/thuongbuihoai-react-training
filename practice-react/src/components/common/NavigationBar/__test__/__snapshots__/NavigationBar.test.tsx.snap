@@ -42,7 +42,7 @@ exports[`Navigation component matches snapshot 1`] = `
             class="menu__item"
           >
             <a
-              href=""
+              href="/"
             >
               Orders
             </a>
@@ -51,7 +51,7 @@ exports[`Navigation component matches snapshot 1`] = `
             class="menu__item"
           >
             <a
-              href=""
+              href="/"
             >
               Cart
             </a>
@@ -60,13 +60,23 @@ exports[`Navigation component matches snapshot 1`] = `
             class="menu__item"
           >
             <a
-              href=""
+              href="/"
             >
               Contact
             </a>
           </li>
         </ul>
       </div>
+      <button
+        class="btn btn--light"
+      >
+        Sign Up
+      </button>
+      <button
+        class="btn btn__outline--light"
+      >
+        Login
+      </button>
     </div>
   </nav>
 </DocumentFragment>
