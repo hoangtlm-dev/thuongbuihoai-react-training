@@ -11,9 +11,6 @@ exports[`ProductDetail component matches snapshot 1`] = `
       data-testid="navigation-bar"
     >
       <a
-        href="/"
-      />
-      <a
         data-testid="logo"
         href="/"
       >
@@ -162,7 +159,7 @@ exports[`ProductDetail component matches snapshot 1`] = `
         class="productDetail__title"
       >
         <p
-          class="text--large-dark"
+          class="text--dark"
           data-testid="text"
         >
           Products you may like
