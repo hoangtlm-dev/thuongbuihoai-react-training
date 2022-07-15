@@ -14,6 +14,9 @@ const ProductDetail: React.FC = memo(() => {
   const { id } = useParams();
   const { products } = useContext(DataContext);
   const dataElement = products?.find((item) => item.productId === id);
+  const productMore = products.filter((product) =>
+    dataElement?.categoryId.includes(product.categoryId)
+  );
 
   return (
     <div data-testid="product-detail" className="productDetail">
@@ -53,10 +56,15 @@ const ProductDetail: React.FC = memo(() => {
       </div>
       <div className="productDetail__more">
         <div className="productDetail__title">
-          <Text text="Products you may like" size="large-dark" />
+          <Text text="Products you may like" decoration="dark" />
         </div>
         <div className="productDetail__productMore">
-          <ProductList type="popular" visibleCounter={true} content="popular" />
+          <ProductList
+            type="medium-box"
+            content="quantity"
+            visibleCounter={true}
+            productList={productMore}
+          />
         </div>
       </div>
     </div>
