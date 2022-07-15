@@ -16,7 +16,7 @@ const Header: React.FC = () => {
         }}
       />
       <div className="header__info">
-        <Text text="Lorem ipsum dolor sit" size="blur" />
+        <Text text="Lorem ipsum dolor sit" decoration="blur" />
         <h1 className="header__title">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h1>
