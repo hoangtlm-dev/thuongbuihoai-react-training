@@ -11,7 +11,7 @@ const IconLink: React.FC<IconProps> = ({ iconList }) => {
       </a>
     ));
   };
-  return <div className="icon__list">{renderIconList(iconList)}</div>;
+  return <div data-testid="icon-link" className="icon__list">{renderIconList(iconList)}</div>;
 };
 
 export default IconLink;
