@@ -16,7 +16,7 @@ const CategoryCheck: React.FC<CategoryCheckProps> = ({ text, onToggleCategory, c
   }
 
   return (
-    <label className="checkbox__value">
+    <label data-testid="category-check" className="checkbox__value">
       <input
         type="checkbox"
         name="checkbox"
