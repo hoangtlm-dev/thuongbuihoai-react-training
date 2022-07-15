@@ -31,7 +31,7 @@ exports[`Footer component matches snapshot 1`] = `
                 class="contact__item"
               >
                 <a
-                  href=""
+                  href="/"
                 >
                   Email Marketing
                 </a>
@@ -40,7 +40,7 @@ exports[`Footer component matches snapshot 1`] = `
                 class="contact__item"
               >
                 <a
-                  href=""
+                  href="/"
                 >
                   Campaigns
                 </a>
@@ -49,7 +49,7 @@ exports[`Footer component matches snapshot 1`] = `
                 class="contact__item"
               >
                 <a
-                  href=""
+                  href="/"
                 >
                   Branding
                 </a>
@@ -58,7 +58,7 @@ exports[`Footer component matches snapshot 1`] = `
                 class="contact__item"
               >
                 <a
-                  href=""
+                  href="/"
                 >
                   Offline
                 </a>
@@ -85,7 +85,7 @@ exports[`Footer component matches snapshot 1`] = `
                 class="contact__item"
               >
                 <a
-                  href=""
+                  href="/"
                 >
                   Our Story
                 </a>
@@ -94,7 +94,7 @@ exports[`Footer component matches snapshot 1`] = `
                 class="contact__item"
               >
                 <a
-                  href=""
+                  href="/"
                 >
                   Benefits
                 </a>
@@ -103,7 +103,7 @@ exports[`Footer component matches snapshot 1`] = `
                 class="contact__item"
               >
                 <a
-                  href=""
+                  href="/"
                 >
                   Team
                 </a>
@@ -112,7 +112,7 @@ exports[`Footer component matches snapshot 1`] = `
                 class="contact__item"
               >
                 <a
-                  href=""
+                  href="/"
                 >
                   Careers
                 </a>
@@ -139,7 +139,7 @@ exports[`Footer component matches snapshot 1`] = `
                 class="contact__item"
               >
                 <a
-                  href=""
+                  href="/"
                 >
                   FAQs
                 </a>
@@ -148,7 +148,7 @@ exports[`Footer component matches snapshot 1`] = `
                 class="contact__item"
               >
                 <a
-                  href=""
+                  href="/"
                 >
                   Contact Us
                 </a>
@@ -185,20 +185,39 @@ exports[`Footer component matches snapshot 1`] = `
         />
       </a>
       <div
-        class="footer__social--group"
+        class="icon__list"
+        data-testid="icon-link"
       >
-        <i
-          class="icon-fb"
-          data-testid="icon"
-        />
-        <i
-          class="icon-twitter"
-          data-testid="icon"
-        />
-        <i
-          class="icon-instagram"
-          data-testid="icon"
-        />
+        <a
+          class="icon__item"
+          href="https://vi-vn.facebook.com/"
+          title="Facebook"
+        >
+          <i
+            class="icon-fb"
+            data-testid="icon"
+          />
+        </a>
+        <a
+          class="icon__item"
+          href="https://twitter.com/"
+          title="Twitter"
+        >
+          <i
+            class="icon-twitter"
+            data-testid="icon"
+          />
+        </a>
+        <a
+          class="icon__item"
+          href="https://www.instagram.com/"
+          title="Instagram"
+        >
+          <i
+            class="icon-instagram"
+            data-testid="icon"
+          />
+        </a>
       </div>
     </div>
   </footer>
