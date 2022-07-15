@@ -64,8 +64,8 @@ const Shop: React.FC = memo(() => {
         </div>
         <div className="shopPage__product">
           <ProductList
-            type="popular"
-            content="popular"
+            type="medium-box"
+            content="quantity"
             visibleCounter={true}
             productList={productList}
           />
