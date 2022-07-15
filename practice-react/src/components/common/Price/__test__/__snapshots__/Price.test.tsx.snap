@@ -7,7 +7,7 @@ exports[`Price component matches snapshot 1`] = `
     data-testid="price"
   >
     <span
-      class="price--unit"
+      class="price__unit"
     />
     0
   </p>
