@@ -15,7 +15,7 @@
 .menu__item > a {
   text-decoration: none;
   font-weight: 400;
-  color: black;
+  color: var(--dark);
 }
 
 /* css for component menuContact */
@@ -25,11 +25,11 @@
 
 .contact__item > a {
   text-decoration: none;
-  color: #fff;
+  color: var(--light);
   font-size: 15px;
   line-height: 20px;
 }
 
 .contact__item > a:hover {
-  color: #FFD2DD
+  color: var(--text-secondary);
 }
