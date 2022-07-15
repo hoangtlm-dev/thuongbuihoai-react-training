@@ -36,15 +36,20 @@ const TemplateProductList: ComponentStory<typeof ProductList> = (
 
 export const CardOffers = TemplateProductList.bind({});
 CardOffers.args = {
-  type: "offers",
+  type: "normal",
+  content: "discount",
   visibleQuantity: true,
   visibleDiscountPrice: true,
+  visibleCounter: false,
   productList: PRODUCT_MOCKING_LIST,
 };
 
 export const CardSelling = TemplateProductList.bind({});
 CardSelling.args = {
-  type: "selling",
+  type: "medium",
+  content: "medium",
+  visibleQuantity: false,
+  visibleDiscountPrice: false,
   visibleCounter: true,
   productList: PRODUCT_MOCKING_LIST,
 };
