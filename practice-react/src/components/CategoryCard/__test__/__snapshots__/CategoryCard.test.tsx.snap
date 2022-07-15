@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="categoryCard"
+    data-testid="category-card"
+  >
+    <figure
+      class="categoryCard__image"
+    >
+      <img
+        alt="This is icon beverages"
+      />
+    </figure>
+    <a
+      class="categoryCard__text"
+      href="/products/category/1234"
+    >
+      <p
+        data-testid="category-item"
+      >
+        Beverages
+      </p>
+    </a>
+  </div>
+</DocumentFragment>
+`;
