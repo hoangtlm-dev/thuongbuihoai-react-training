@@ -17,9 +17,7 @@ interface NavigationBarProps {
 const NavigationBar: React.FC<NavigationBarProps> = memo(({ mode }) => {
   return (
     <nav data-testid="navigation-bar" className="nav">
-      <Link to="/">
-        <Logo src={url} />
-      </Link>
+      <Logo src={url} />
       <div className="nav__about">
         <Menu menuList={MENU_LIST} />
         {mode.light && (
