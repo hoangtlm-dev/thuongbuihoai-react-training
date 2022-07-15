@@ -60,7 +60,7 @@
   line-height: 27px;
   padding: 9px 45px;
   border: 2px solid #FFFFFF;
-  background: #B1D182;
+  background: var(--border-secondary);
   margin-left: 32px;
 }
 
@@ -75,13 +75,13 @@
   font-size: 18px;
   line-height: 27px;
   padding: 9px 45px;
-  border: 2px solid #688F4E;
+  border: 2px solid var(--border-primary);
   background: transparent;
   border-radius: 5px;
   margin-left: 32px;
 }
 
 .btn__outline--dark:hover {
-  background: #B1D182;
-  border: 2px solid #B1D182;
+  background: var(--border-secondary);
+  border: 2px solid var(--border-secondary);
 }
