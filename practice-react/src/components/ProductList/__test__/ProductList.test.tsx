@@ -5,7 +5,6 @@ import { render } from "@testing-library/react";
 import { createMemoryHistory } from "history";
 import { Router } from "react-router-dom";
 import { DataContextProps } from "@common-types/data";
-import { useState } from "react";
 import { DataContext } from "@context/DataContext";
 import { PRODUCT_MOCKING_LIST } from "@__mocks__/constants/product";
 import { PRODUCTS_URL } from "@constants/url";
@@ -22,12 +21,6 @@ const contextProductMock: DataContextProps = {
 };
 
 describe("CardProductList component", () => {
-  beforeEach(() => {
-    (useState as jest.Mock).mockImplementation(
-      jest.requireActual("react").useState
-    );
-  });
-
   afterEach(() => {
     mockAxios.reset();
   });
@@ -44,7 +37,7 @@ describe("CardProductList component", () => {
     const { asFragment } = render(
       <DataContext.Provider value={contextProductMock}>
         <Router location={history.location} navigator={history}>
-          <ProductList type="offers" content="offers" />
+          <ProductList type="normal" content="normal" />
         </Router>
       </DataContext.Provider>
     );
