@@ -30,14 +30,14 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: #688F4E;
+  color: var(--border-primary);
 }
 
 .productDetail__description {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: #2B463C;
+  color: var(--text-primary);
   width: 638px;
 }
 
@@ -53,12 +53,12 @@
 }
 
 .productDetail__more {
-  padding: 70px 103px 0;
+  padding: 160px 0 0 100px;
 }
 
 .productDetail__productMore {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .productDetail__title {
