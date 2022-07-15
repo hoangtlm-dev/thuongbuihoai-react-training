@@ -32,30 +32,30 @@
 }
 .icon-instagram:before {
   content: "\e901";
-  color: #fff;
+  color: var(--light);
 }
 .icon-twitter:before {
   content: "\e902";
-  color: #fff;
+  color: var(--light);
 }
 .icon-fb:before {
   content: "\e903";
-  color: #fff;
+  color: var(--light);
 }
 .icon-filter:before {
   content: "\e904";
-  color: #2b463c;
+  color: var(--text-primary);
 }
 .icon-plus:before {
   content: "\e905";
-  color: #2b463c;
+  color: var(--text-primary);
 }
 .icon-cart:before {
   content: "\e906";
-  color: #2b463c;
+  color: var(--text-primary);
   font-size: 40px;
 }
 .icon-minus:before {
   content: "\e907";
-  color: #2b463c;
+  color: var(--text-primary);
 }
