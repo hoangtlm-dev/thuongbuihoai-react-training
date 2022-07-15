@@ -16,7 +16,7 @@ const CategoryCard: React.FC<CategoryCardProps> = memo(
       onClick(categoryId, value);
     };
     return (
-      <div className="categoryCard">
+      <div data-testid="category-card" className="categoryCard">
         <figure className="categoryCard__image">
           <img
             src={category.images.src}
