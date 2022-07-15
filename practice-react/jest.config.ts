@@ -18,6 +18,7 @@ const config: Config.InitialOptions = {
     "^@reducer(.*)$": "<rootDir>/src/reducer$1",
     "^@common-types(.*)$": "<rootDir>/src/common-types$1",
     "^@assets(.*)$": "<rootDir>/src/assets$1",
+    "^@sections(.*)$": "<rootDir>/src/sections$1",
     "^@app(.*)$": "<rootDir>/src/app$1",
   },
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(tsx|ts)$",
