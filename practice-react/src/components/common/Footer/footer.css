@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 133px 94px 57px 313px;
-  background: #688F4E;
+  background: var(--border-primary);
   margin-top: 133px;
 }
 
@@ -11,7 +11,7 @@
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.231818px;
-  color: #FFD2DD;
+  color: var(--text-secondary);
 }
 
 .footer__contact {
@@ -31,7 +31,7 @@
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.204545px;
-  color: #FFFFFF;
+  color: var(--light);
   margin-right: 100px;
 }
 
