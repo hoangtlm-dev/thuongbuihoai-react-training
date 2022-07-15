@@ -1,6 +1,6 @@
 .section__signUp {
   display: flex;
-  background: #F4F1E9;
+  background: var(--bg-light);
 }
 
 .section__content {
