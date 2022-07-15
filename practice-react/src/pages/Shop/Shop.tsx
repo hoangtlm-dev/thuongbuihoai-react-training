@@ -53,7 +53,7 @@ const Shop: React.FC = memo(() => {
       <p className="shopPage__heading">Home/Beverages</p>
       <div className="shopPage__info">
         <div className="shopPage__select">
-          <p className="shopPage__title">Categories</p>
+          <p className="shopPage__title">Category</p>
           <CategoryList
             id={id}
             type="checkbox"
