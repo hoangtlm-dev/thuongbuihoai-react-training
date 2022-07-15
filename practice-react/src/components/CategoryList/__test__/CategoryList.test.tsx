@@ -2,7 +2,7 @@ import "@testing-library/jest-dom";
 import CategoryList from "../CategoryList";
 import mockAxios from "@__mocks__/axios";
 import { useState } from "react";
-import { fireEvent, render, waitFor, screen } from "@testing-library/react";
+import { fireEvent, render } from "@testing-library/react";
 import { createMemoryHistory } from "history";
 import { Router } from "react-router-dom";
 import { DataContextProps } from "@common-types/data";
@@ -42,7 +42,7 @@ describe("CategoryList component", () => {
       <DataContext.Provider value={contextProductMock}>
         <Router location={history.location} navigator={history}>
           <CategoryList
-            type="select"
+            type="row"
             isSelect={true}
             onToggleCategory={() => {}}
             selectedCategories={[]}
@@ -64,13 +64,13 @@ describe("CategoryList component", () => {
     expect(result).toEqual(CATEGORY_MOCKING_LIST);
   });
 
-  test("should render categoryList - type select component", () => {
+  test("should render categoryList - type column component", () => {
     const history = createMemoryHistory();
     const { getByTestId } = render(
       <DataContext.Provider value={contextProductMock}>
         <Router location={history.location} navigator={history}>
           <CategoryList
-            type="select"
+            type="column"
             isSelect={true}
             onToggleCategory={() => {}}
             selectedCategories={[]}
@@ -81,13 +81,13 @@ describe("CategoryList component", () => {
     expect(getByTestId("category-list")).toBeInTheDocument();
   });
 
-  test("should render categoryList - type checkbox component", () => {
+  test("should render categoryList - type row component", () => {
     const history = createMemoryHistory();
     const { getByTestId } = render(
       <DataContext.Provider value={contextProductMock}>
         <Router location={history.location} navigator={history}>
           <CategoryList
-            type="select"
+            type="row"
             isSelect={true}
             onToggleCategory={() => {}}
             selectedCategories={[]}

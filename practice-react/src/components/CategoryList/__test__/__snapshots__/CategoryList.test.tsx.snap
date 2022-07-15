@@ -3,163 +3,181 @@
 exports[`CategoryList component matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="categoryList--select"
+    class=""
     data-testid="category-list"
   >
     <div>
       <div
-        class="categoryList__list"
+        class="categoryList__card"
       >
-        <figure
-          class="categoryList__image"
+        <div
+          class="categoryCard"
+          data-testid="category-card"
         >
-          <img
-            alt="This is icon beverages"
-            class="categoryList__images"
-            src="@assets/images/icons/beverages.png"
-          />
-        </figure>
-        <a
-          class="categoryList__text"
-          data-index="1234"
-          href="/products/category/1234"
-        >
-          <p
-            data-testid="category-item"
+          <figure
+            class="categoryCard__image"
           >
-            Beverages
-          </p>
-        </a>
+            <img
+              alt="This is icon beverages"
+              src="@assets/images/icons/beverages.png"
+            />
+          </figure>
+          <a
+            class="categoryCard__text"
+            href="/products/category/1234"
+          >
+            <p
+              data-testid="category-item"
+            >
+              Beverages
+            </p>
+          </a>
+        </div>
       </div>
     </div>
     <div>
       <div
-        class="categoryList__list"
+        class="categoryList__card"
       >
-        <figure
-          class="categoryList__image"
+        <div
+          class="categoryCard"
+          data-testid="category-card"
         >
-          <img
-            alt="This is icon dairy"
-            class="categoryList__images"
-            src="@assets/images/icons/dairy.png"
-          />
-        </figure>
-        <a
-          class="categoryList__text"
-          data-index="12345"
-          href="/products/category/12345"
-        >
-          <p
-            data-testid="category-item"
+          <figure
+            class="categoryCard__image"
           >
-            Dairy
-          </p>
-        </a>
+            <img
+              alt="This is icon dairy"
+              src="@assets/images/icons/dairy.png"
+            />
+          </figure>
+          <a
+            class="categoryCard__text"
+            href="/products/category/12345"
+          >
+            <p
+              data-testid="category-item"
+            >
+              Dairy
+            </p>
+          </a>
+        </div>
       </div>
     </div>
     <div>
       <div
-        class="categoryList__list"
+        class="categoryList__card"
       >
-        <figure
-          class="categoryList__image"
+        <div
+          class="categoryCard"
+          data-testid="category-card"
         >
-          <img
-            alt="This is icon meat"
-            class="categoryList__images"
-            src="@assets/images/icons/meat.png"
-          />
-        </figure>
-        <a
-          class="categoryList__text"
-          data-index="12345"
-          href="/products/category/12345"
-        >
-          <p
-            data-testid="category-item"
+          <figure
+            class="categoryCard__image"
           >
-            Meat
-          </p>
-        </a>
+            <img
+              alt="This is icon meat"
+              src="@assets/images/icons/meat.png"
+            />
+          </figure>
+          <a
+            class="categoryCard__text"
+            href="/products/category/12345"
+          >
+            <p
+              data-testid="category-item"
+            >
+              Meat
+            </p>
+          </a>
+        </div>
       </div>
     </div>
     <div>
       <div
-        class="categoryList__list"
+        class="categoryList__card"
       >
-        <figure
-          class="categoryList__image"
+        <div
+          class="categoryCard"
+          data-testid="category-card"
         >
-          <img
-            alt="This is icon spices-herbs"
-            class="categoryList__images"
-            src="@assets/images/icons/spices-herbs.png"
-          />
-        </figure>
-        <a
-          class="categoryList__text"
-          data-index="12345"
-          href="/products/category/12345"
-        >
-          <p
-            data-testid="category-item"
+          <figure
+            class="categoryCard__image"
           >
-            Spices & Herbs
-          </p>
-        </a>
+            <img
+              alt="This is icon spices-herbs"
+              src="@assets/images/icons/spices-herbs.png"
+            />
+          </figure>
+          <a
+            class="categoryCard__text"
+            href="/products/category/12345"
+          >
+            <p
+              data-testid="category-item"
+            >
+              Spices & Herbs
+            </p>
+          </a>
+        </div>
       </div>
     </div>
     <div>
       <div
-        class="categoryList__list"
+        class="categoryList__card"
       >
-        <figure
-          class="categoryList__image"
+        <div
+          class="categoryCard"
+          data-testid="category-card"
         >
-          <img
-            alt="This is icon stationery"
-            class="categoryList__images"
-            src="@assets/images/icons/stationery.png"
-          />
-        </figure>
-        <a
-          class="categoryList__text"
-          data-index="12345"
-          href="/products/category/12345"
-        >
-          <p
-            data-testid="category-item"
+          <figure
+            class="categoryCard__image"
           >
-            Stationery
-          </p>
-        </a>
+            <img
+              alt="This is icon stationery"
+              src="@assets/images/icons/stationery.png"
+            />
+          </figure>
+          <a
+            class="categoryCard__text"
+            href="/products/category/12345"
+          >
+            <p
+              data-testid="category-item"
+            >
+              Stationery
+            </p>
+          </a>
+        </div>
       </div>
     </div>
     <div>
       <div
-        class="categoryList__list"
+        class="categoryList__card"
       >
-        <figure
-          class="categoryList__image"
+        <div
+          class="categoryCard"
+          data-testid="category-card"
         >
-          <img
-            alt="This is icon costmetic"
-            class="categoryList__images"
-            src="@assets/images/icons/costmetic.png"
-          />
-        </figure>
-        <a
-          class="categoryList__text"
-          data-index="12345"
-          href="/products/category/12345"
-        >
-          <p
-            data-testid="category-item"
+          <figure
+            class="categoryCard__image"
           >
-            Costmetic
-          </p>
-        </a>
+            <img
+              alt="This is icon costmetic"
+              src="@assets/images/icons/costmetic.png"
+            />
+          </figure>
+          <a
+            class="categoryCard__text"
+            href="/products/category/12345"
+          >
+            <p
+              data-testid="category-item"
+            >
+              Costmetic
+            </p>
+          </a>
+        </div>
       </div>
     </div>
   </div>
