@@ -57,11 +57,11 @@
       "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie ultrices donec pulvinar quis est bibendum suspendisse viverra.",
       "productQuantity": 3,
       "originalPrice": {
-        "value": 150,
+        "value": 135,
         "currency": "$"
       },
       "discountPrice": {
-        "value": 100,
+        "value": 150,
         "currency": "$"
       },
       "offerQuantity": "3 kg",
@@ -74,17 +74,86 @@
       }
     },
     {
+      "productId": "16253778854657522",
+      "categoryId": "1651999133333",
+      "productName": "Cabbage",
+      "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie ultrices donec pulvinar quis est bibendum suspendisse viverra.",
+      "productQuantity": 7,
+      "originalPrice": {
+        "value": 90,
+        "currency": "$"
+      },
+      "discountPrice": {
+        "value": 100,
+        "currency": "$"
+      },
+      "offerQuantity": "3 kg",
+      "offer": true,
+      "bestSelling": false,
+      "popular": false,
+      "images": {
+        "src": "/src/assets/images/cabbage.png",
+        "alt": "This is cottage-cheese images"
+      }
+    },
+    {
+      "productId": "16466523425652223",
+      "categoryId": "1651999177368",
+      "productName": "Beef-steak",
+      "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie ultrices donec pulvinar quis est bibendum suspendisse viverra.",
+      "productQuantity": 3,
+      "originalPrice": {
+        "value": 225,
+        "currency": "$"
+      },
+      "discountPrice": {
+        "value": 250,
+        "currency": "$"
+      },
+      "offerQuantity": "6 kg",
+      "offer": true,
+      "bestSelling": false,
+      "popular": false,
+      "images": {
+        "src": "/src/assets/images/beef-steak.png",
+        "alt": "This is cottage-cheese images"
+      }
+    },
+    {
+      "productId": "16466546878674547",
+      "categoryId": "1651924356334",
+      "productName": "Hand-sanitizer",
+      "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie ultrices donec pulvinar quis est bibendum suspendisse viverra.",
+      "productQuantity": 2,
+      "originalPrice": {
+        "value": 270,
+        "currency": "$"
+      },
+      "discountPrice": {
+        "value": 300,
+        "currency": "$"
+      },
+      "offerQuantity": "4 kg",
+      "offer": true,
+      "bestSelling": false,
+      "popular": false,
+      "images": {
+        "src": "/src/assets/images/hand-sanitizer.png",
+        "alt": "This is cottage-cheese images"
+      }
+    },
+    {
       "productId": "16466545464646547",
-      "categoryId": "1651454657522",
+      "categoryId": "1651454657532",
       "productName": "Ice Cream Sundae",
       "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie ultrices donec pulvinar quis est bibendum suspendisse viverra.",
       "productQuantity": 5,
       "originalPrice": {
-        "value": 20,
+        "value": 157,
         "currency": "$"
       },
       "discountPrice": {
-        "value": 20,
+        "value": 175,
         "currency": "$"
       },
       "offerQuantity": null,
@@ -97,17 +166,63 @@
       }
     },
     {
+      "productId": "123847238564646547",
+      "categoryId": "1651454657522",
+      "productName": "Hand-sanitizer",
+      "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie ultrices donec pulvinar quis est bibendum suspendisse viverra.",
+      "productQuantity": 9,
+      "originalPrice": {
+        "value": 148,
+        "currency": "$"
+      },
+      "discountPrice": {
+        "value": 165,
+        "currency": "$"
+      },
+      "offerQuantity": null,
+      "offer": false,
+      "bestSelling": true,
+      "popular": false,
+      "images": {
+        "src": "/src/assets/images/hand-sanitizer.png",
+        "alt": "This is ice-cream-sundae images"
+      }
+    },
+    {
+      "productId": "1086598958464646547",
+      "categoryId": "1651454657522",
+      "productName": "Farmer’s-milk",
+      "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie ultrices donec pulvinar quis est bibendum suspendisse viverra.",
+      "productQuantity": 5,
+      "originalPrice": {
+        "value": 540,
+        "currency": "$"
+      },
+      "discountPrice": {
+        "value": 600,
+        "currency": "$"
+      },
+      "offerQuantity": null,
+      "offer": false,
+      "bestSelling": true,
+      "popular": false,
+      "images": {
+        "src": "/src/assets/images/farmer’s-milk.png",
+        "alt": "This is ice-cream-sundae images"
+      }
+    },
+    {
       "productId": "1646654668992646547",
       "categoryId": "1651924356334",
       "productName": "Beef-Steak",
       "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie ultrices donec pulvinar quis est bibendum suspendisse viverra.",
       "productQuantity": 9,
       "originalPrice": {
-        "value": 50,
+        "value": 112.5,
         "currency": "$"
       },
       "discountPrice": {
-        "value": 50,
+        "value": 125,
         "currency": "$"
       },
       "offerQuantity": null,
@@ -116,6 +231,52 @@
       "popular": true,
       "images": {
         "src": "/src/assets/images/beef-steak.png",
+        "alt": "This is beef-steak images"
+      }
+    },
+    {
+      "productId": "198608992646547",
+      "categoryId": "1651924356334",
+      "productName": "Eco-Shampoo",
+      "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie ultrices donec pulvinar quis est bibendum suspendisse viverra.",
+      "productQuantity": 5,
+      "originalPrice": {
+        "value": 130.5,
+        "currency": "$"
+      },
+      "discountPrice": {
+        "value": 145,
+        "currency": "$"
+      },
+      "offerQuantity": null,
+      "offer": false,
+      "bestSelling": false,
+      "popular": true,
+      "images": {
+        "src": "/src/assets/images/eco-green-shampoo.png",
+        "alt": "This is beef-steak images"
+      }
+    },
+    {
+      "productId": "12089488992646547",
+      "categoryId": "1651924356334",
+      "productName": "Cabbage",
+      "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie ultrices donec pulvinar quis est bibendum suspendisse viverra.",
+      "productQuantity": 15,
+      "originalPrice": {
+        "value": 175.5,
+        "currency": "$"
+      },
+      "discountPrice": {
+        "value": 195,
+        "currency": "$"
+      },
+      "offerQuantity": null,
+      "offer": false,
+      "bestSelling": false,
+      "popular": true,
+      "images": {
+        "src": "/src/assets/images/cabbage.png",
         "alt": "This is beef-steak images"
       }
     }
