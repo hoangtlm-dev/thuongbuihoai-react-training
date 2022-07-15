@@ -2,7 +2,7 @@
   margin: 100px 0 70px 443px;
   font-size: 24px;
   line-height: 36px;
-  color: #979797;
+  color: var(--text-third);
 }
 
 .shopPage__info {
@@ -10,7 +10,7 @@
 }
 
 .shopPage__select {
-  background: #F4F1E9;
+  background: var(--bg-light);
 }
 
 .shopPage__title {
@@ -18,13 +18,11 @@
   font-weight: 600;
   font-size: 27px;
   line-height: 40px;
-  color: #2B463C;
+  color: var(--text-primary);
 }
 
 .shopPage__product {
   display: flex;
-  flex: 1;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 99px;
+  padding-left: 100px;
 }
