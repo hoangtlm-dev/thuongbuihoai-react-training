@@ -23,7 +23,7 @@ describe("Categories component", () => {
     const { getByTestId } = render(
       <DataContext.Provider value={contextProductMock}>
         <Router location={history.location} navigator={history}>
-          <CategoryCard category={CATEGORY} categoryId={""} onClick={() => {}} />
+          <CategoryCard category={CATEGORY} categoryId={""} onToggleCategory={() => {}} />
         </Router>
       </DataContext.Provider>
     );
@@ -35,7 +35,7 @@ describe("Categories component", () => {
     const { asFragment } = render(
       <DataContext.Provider value={contextProductMock}>
         <Router location={history.location} navigator={history}>
-        <CategoryCard category={CATEGORY} categoryId={""} onClick={() => {}} />
+        <CategoryCard category={CATEGORY} categoryId={""} onToggleCategory={() => {}} />
         </Router>
       </DataContext.Provider>
     );
