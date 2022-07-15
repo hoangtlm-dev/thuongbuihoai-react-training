@@ -6,10 +6,10 @@
 }
 
 .price__original {
-  color: #000000;
+  color: var(--dark);
 }
 
 .price__discount {
   text-decoration-line: line-through;
-  color: rgba(0, 0, 0, 0.71);
+  color: var(--bg-secondary);
 }
