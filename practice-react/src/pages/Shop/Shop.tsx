@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import CategoryList from "@components/CategoryList/CategoryList";
 import NavigationBar from "@components/common/NavigationBar/NavigationBar";
 import ProductList from "@components/ProductList/ProductList";
+import Button from "@components/common/Button/Button";
 import "./shop.css";
 
 const Shop: React.FC = () => {
@@ -57,6 +58,9 @@ const Shop: React.FC = () => {
             selectedCategories={selectedCategories}
             onToggleCategory={handleToggleCategory}
           />
+          <div className="shopPage__button">
+            <Button icon={true} text="Filter" type="large" />
+          </div>
         </div>
         <div className="shopPage__product">
           <ProductList
