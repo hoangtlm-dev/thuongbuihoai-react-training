@@ -19,7 +19,9 @@ const Counter: React.FC<CounterProps> = memo(({ counter }) => {
 
   return (
     <div data-testid="counter" className="counter">
-      <i onClick={handleDecrease} className="fa fa-minus"></i>
+      <div className="counter__minus">
+        <Icon onClick={handleDecrease} iconName="minus" />
+      </div>
       <input className="counter__input" value={count} min={0} />
       <div className="counter__plus">
         <Icon onClick={handleIncrease} iconName="plus" />
