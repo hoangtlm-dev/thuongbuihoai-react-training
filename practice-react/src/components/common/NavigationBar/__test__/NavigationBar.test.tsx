@@ -9,11 +9,7 @@ describe("Navigation component", () => {
     const history = createMemoryHistory();
     const { getByTestId } = render(
       <Router location={history.location} navigator={history}>
-        <NavigationBar
-          mode={{
-            light: true,
-          }}
-        />
+        <NavigationBar mode="light" />
       </Router>
     );
     expect(getByTestId("navigation-bar")).toBeInTheDocument();
@@ -23,11 +19,7 @@ describe("Navigation component", () => {
     const history = createMemoryHistory();
     const { getByTestId } = render(
       <Router location={history.location} navigator={history}>
-        <NavigationBar
-          mode={{
-            dark: true,
-          }}
-        />
+        <NavigationBar mode="dark" />
       </Router>
     );
     expect(getByTestId("navigation-bar")).toBeInTheDocument();
@@ -37,12 +29,7 @@ describe("Navigation component", () => {
     const history = createMemoryHistory();
     const { asFragment } = render(
       <Router location={history.location} navigator={history}>
-        <NavigationBar
-          mode={{
-            light: true,
-            dark: false,
-          }}
-        />
+        <NavigationBar mode="light" />
       </Router>
     );
     expect(asFragment()).toMatchSnapshot();
