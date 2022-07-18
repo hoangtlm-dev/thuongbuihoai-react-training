@@ -8,7 +8,6 @@ const config: Config.InitialOptions = {
       "jest-transform-stub",
     "^.+\\js$": "babel-jest",
   },
-  setupFiles: ["<rootDir>/.jest/setEnvVars.ts"],
   moduleNameMapper: {
     "^@root(.*)$": "<rootDir>/src$1",
     "^@/(.*)$": "<rootDir>/src/$1",
@@ -33,5 +32,4 @@ const config: Config.InitialOptions = {
     "/node_modules/(?!antd|@ant-design|rc-.+?|@babel/runtime).+(js|jsx)$",
   ],
 };
-
 module.exports = config;
