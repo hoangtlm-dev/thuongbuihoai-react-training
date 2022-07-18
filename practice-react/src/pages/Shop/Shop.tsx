@@ -45,11 +45,7 @@ const Shop: React.FC = () => {
 
   return (
     <div data-testid="shop-page" className="shopPage">
-      <NavigationBar
-        mode={{
-          dark: true,
-        }}
-      />
+      <NavigationBar mode="dark" />
       <p className="shopPage__heading">Home/Beverages</p>
       <div className="shopPage__info">
         <div className="shopPage__select">
