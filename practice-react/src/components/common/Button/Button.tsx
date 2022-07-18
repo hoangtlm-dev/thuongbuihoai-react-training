@@ -1,13 +1,15 @@
 import React, { memo } from "react";
+import Icon from "../Icon/Icon";
 import "./button.css";
 
 interface ButtonProps {
   type?: string;
   text: string;
+  icon?: boolean;
   onClick?: () => void;
 }
 
-const Button: React.FC<ButtonProps> = memo(({ text, type, onClick }) => {
+const Button: React.FC<ButtonProps> = memo(({ text, type, onClick, icon }) => {
   let className = "btn";
   switch (type) {
     case "primary":
@@ -32,9 +34,16 @@ const Button: React.FC<ButtonProps> = memo(({ text, type, onClick }) => {
       break;
   }
   return (
-    <button className={className} onClick={onClick}>
-      {text}
-    </button>
+    <>
+      <button className={className} onClick={onClick}>
+        {text}
+      </button>
+      {icon && (
+        <div className="btn btn__icon">
+          <Icon iconName="filter" />
+        </div>
+      )}
+    </>
   );
 });
 
