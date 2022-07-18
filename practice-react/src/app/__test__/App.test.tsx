@@ -14,7 +14,7 @@ describe("App component", () => {
         <App />
       </Router>
     );
-    expect(screen.getByTestId("shop-page")).toBeInTheDocument();
+    expect(screen.getByTestId("loading-page")).toBeInTheDocument();
   });
 
   test("rendering a shop page that uses useLocation", () => {
@@ -38,7 +38,7 @@ describe("App component", () => {
         <App />
       </Router>
     );
-    expect(screen.getByTestId("product-detail")).toBeInTheDocument();
+    expect(screen.getByTestId("loading-page")).toBeInTheDocument();
   });
 
   test("matches snapshot", () => {
