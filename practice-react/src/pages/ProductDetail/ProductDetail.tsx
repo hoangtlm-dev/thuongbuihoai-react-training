@@ -20,11 +20,7 @@ const ProductDetail: React.FC = () => {
 
   return (
     <div data-testid="product-detail" className="productDetail">
-      <NavigationBar
-        mode={{
-          dark: true,
-        }}
-      />
+      <NavigationBar mode="dark" />
       <figure>
         <img
           className="productDetail__image"
