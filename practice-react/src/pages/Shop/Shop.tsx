@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useContext, useMemo, useState } from "react";
+import React, { useCallback, useContext, useMemo, useState } from "react";
 import { DataContext } from "@context/DataContext";
 import { useParams } from "react-router-dom";
 import CategoryList from "@components/CategoryList/CategoryList";
@@ -6,7 +6,7 @@ import NavigationBar from "@components/common/NavigationBar/NavigationBar";
 import ProductList from "@components/ProductList/ProductList";
 import "./shop.css";
 
-const Shop: React.FC = memo(() => {
+const Shop: React.FC = () => {
   const { products } = useContext(DataContext);
   const { id } = useParams();
 
@@ -73,6 +73,6 @@ const Shop: React.FC = memo(() => {
       </div>
     </div>
   );
-});
+};
 
 export default Shop;
