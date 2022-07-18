@@ -26,3 +26,8 @@
   flex-wrap: wrap;
   padding-left: 100px;
 }
+
+.shopPage__button {
+  position: relative;
+  margin: 107px 0 0 91px;
+}
