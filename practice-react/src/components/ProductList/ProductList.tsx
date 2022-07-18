@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { Product } from "@common-types/product";
 import Text from "@components/common/Text/Text";
@@ -16,16 +16,14 @@ interface CartProductProps {
   productList?: Product[];
 }
 
-const CardProductList: React.FC<CartProductProps> = memo (
-  ({
-    type,
-    content,
-    visibleQuantity,
-    visibleDiscountPrice,
-    visibleCounter,
-    productList
-  }) => {
-
+const CardProductList: React.FC<CartProductProps> = ({
+  type,
+  content,
+  visibleQuantity,
+  visibleDiscountPrice,
+  visibleCounter,
+  productList,
+}) => {
   let className = "";
   switch (type) {
     case "normal":
@@ -56,8 +54,16 @@ const CardProductList: React.FC<CartProductProps> = memo (
   return (
     <>
       {productList?.map((product: Product) => (
-        <div data-testid="product-list" key={product.productId} className={className}>
-          <img className="card__image" src={product.images.src} alt={product.images.alt} />
+        <div
+          data-testid="product-list"
+          key={product.productId}
+          className={className}
+        >
+          <img
+            className="card__image"
+            src={product.images.src}
+            alt={product.images.alt}
+          />
           <div className={cartInfo}>
             <Link className="cart__link" to={`/products/${product?.productId}`}>
               <Text size="normal" text={product?.productName} />
@@ -89,7 +95,7 @@ const CardProductList: React.FC<CartProductProps> = memo (
         </div>
       ))}
     </>
-  )}
-);
+  );
+};
 
 export default CardProductList;
