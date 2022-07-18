@@ -1,6 +1,5 @@
 import React, { memo } from "react";
 import { MENU_LIST } from "@constants/menu";
-import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo";
 import url from "../../../assets/images/logos/logo.png";
 import Menu from "../Menu/Menu";
