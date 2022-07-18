@@ -1,4 +1,4 @@
-import React, { memo, useContext } from "react";
+import React, { useContext } from "react";
 import { DataContext } from "@context/DataContext";
 import { useParams } from "react-router-dom";
 import NavigationBar from "@components/common/NavigationBar/NavigationBar";
@@ -10,7 +10,7 @@ import Button from "@components/common/Button/Button";
 import ProductList from "@components/ProductList/ProductList";
 import "./productDetail.css";
 
-const ProductDetail: React.FC = memo(() => {
+const ProductDetail: React.FC = () => {
   const { id } = useParams();
   const { products } = useContext(DataContext);
   const dataElement = products?.find((item) => item.productId === id);
@@ -69,6 +69,6 @@ const ProductDetail: React.FC = memo(() => {
       </div>
     </div>
   );
-});
+};
 
 export default ProductDetail;
