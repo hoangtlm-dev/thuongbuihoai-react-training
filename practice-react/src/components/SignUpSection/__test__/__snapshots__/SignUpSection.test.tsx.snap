@@ -3,7 +3,7 @@
 exports[`SignUpSection component matches snapshot 1`] = `
 <DocumentFragment>
   <section
-    class="section__signUp"
+    class="sectionSignUp"
     data-testid="signUp-section"
   >
     <figure>
@@ -12,7 +12,7 @@ exports[`SignUpSection component matches snapshot 1`] = `
       />
     </figure>
     <div
-      class="section__content"
+      class="sectionSignUp__content"
     >
       <p
         class="text--medium"
@@ -21,7 +21,7 @@ exports[`SignUpSection component matches snapshot 1`] = `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>
       <div
-        class="section__info"
+        class="sectionSignUp__info"
       >
         <p
           class="text--normal"
@@ -31,10 +31,10 @@ exports[`SignUpSection component matches snapshot 1`] = `
         </p>
       </div>
       <div
-        class="section__address"
+        class="sectionSignUp__address"
       >
         <input
-          class="input input__value"
+          class="input__value"
           data-testid="input-value"
           placeholder="Email address"
           type="text"
