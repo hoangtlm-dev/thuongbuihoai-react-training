@@ -7,10 +7,7 @@ import Button from "../Button/Button";
 import "./navigationBar.css";
 
 interface NavigationBarProps {
-  mode: {
-    light?: boolean;
-    dark?: boolean;
-  };
+  mode: "light" | "dark";
 }
 
 const NavigationBar: React.FC<NavigationBarProps> = memo(({ mode }) => {
@@ -19,13 +16,13 @@ const NavigationBar: React.FC<NavigationBarProps> = memo(({ mode }) => {
       <Logo src={url} />
       <div className="nav__about">
         <Menu menuList={MENU_LIST} />
-        {mode.light && (
+        {mode == "light" && (
           <>
             <Button text="Sign Up" type="light" />
             <Button text="Login" type="outline--light" />
           </>
         )}
-        {mode.dark && (
+        {mode =="dark" && (
           <>
             <Button text="Sign Up" type="dark" />
             <Button text="Login" type="outline--dark" />
