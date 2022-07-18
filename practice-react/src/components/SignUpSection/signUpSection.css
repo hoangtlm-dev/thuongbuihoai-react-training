@@ -1,16 +1,16 @@
-.section__signUp {
+.sectionSignUp {
   display: flex;
   background: var(--bg-light);
 }
 
-.section__content {
+.sectionSignUp__content {
   margin-top: 167px;
 }
 
-.section__info {
+.sectionSignUp__info {
   margin: 89px 0 29px;
 }
 
-.section__address > button {
+.sectionSignUp__address > button {
   margin-left: 10px;
 }
