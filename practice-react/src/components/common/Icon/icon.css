@@ -44,7 +44,7 @@
 }
 .icon-filter:before {
   content: "\e904";
-  color: var(--text-primary);
+  color: var(--light);
 }
 .icon-plus:before {
   content: "\e905";
