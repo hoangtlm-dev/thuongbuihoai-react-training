@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { Link } from "react-router-dom";
 import "./logo.css";
 
@@ -7,7 +7,7 @@ interface LogoProps {
   type?: string;
 }
 
-const Logo: React.FC<LogoProps> = ({ src, type }) => {
+const Logo: React.FC<LogoProps> = memo(({ src, type }) => {
   let className = "";
   switch (type) {
     case "medium":
@@ -25,6 +25,6 @@ const Logo: React.FC<LogoProps> = ({ src, type }) => {
       <img className={className} src={src} alt="This is logo" />
     </Link>
   );
-};
+});
 
 export default Logo;
