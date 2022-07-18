@@ -1,4 +1,4 @@
-const PRODUCTS_URL = `${import.meta.env.VITE_BASE_URL}/products`;
-const CATEGORIES_URL = `${import.meta.env.VITE_BASE_URL}/categories`;
+const PRODUCTS_URL = `${process.env.VITE_BASE_URL}/products`;
+const CATEGORIES_URL = `${process.env.VITE_BASE_URL}/categories`;
 
 export { PRODUCTS_URL, CATEGORIES_URL };
