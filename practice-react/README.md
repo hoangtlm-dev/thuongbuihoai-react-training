@@ -29,7 +29,7 @@
 ```
 # INFORMATION .env file
 ```
-- VITE_BASE_URL="http://localhost:1234"
+  VITE_BASE_URL="http://localhost:1234"
 ```
 # RUN
 ```
