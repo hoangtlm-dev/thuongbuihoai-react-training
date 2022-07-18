@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Icon from "../Icon/Icon";
 import "./counter.css";
 
@@ -6,7 +6,7 @@ interface CounterProps {
   counter?: number;
 }
 
-const Counter: React.FC<CounterProps> = ({counter}) => {
+const Counter: React.FC<CounterProps> = memo(({counter}) => {
   return (
     <div data-testid="counter" className="counter">
       <i className="fa fa-minus"></i>
@@ -16,6 +16,6 @@ const Counter: React.FC<CounterProps> = ({counter}) => {
       </div>
     </div>
   );
-};
+});
 
 export default Counter;
