@@ -226,6 +226,23 @@ exports[`ProductList component matches snapshot 1`] = `
             </div>
           </div>
         </div>
+        <div
+          class="shopPage__button"
+        >
+          <button
+            class="btn btn--large"
+          >
+            Filter
+          </button>
+          <div
+            class="btn btn__icon"
+          >
+            <i
+              class="icon-filter"
+              data-testid="icon"
+            />
+          </div>
+        </div>
       </div>
       <div
         class="shopPage__product"
@@ -271,9 +288,14 @@ exports[`ProductList component matches snapshot 1`] = `
               class="counter"
               data-testid="counter"
             >
-              <i
-                class="fa fa-minus"
-              />
+              <div
+                class="counter__minus"
+              >
+                <i
+                  class="icon-minus"
+                  data-testid="icon"
+                />
+              </div>
               <input
                 class="counter__input"
                 min="0"
