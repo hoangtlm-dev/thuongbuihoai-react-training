@@ -1,6 +1,6 @@
 import React, { memo } from "react";
-import Icon from "../Icon/Icon";
 import { IconProps, IconType } from "@common-types/iconLink";
+import Icon from "../Icon/Icon";
 import "./iconLink.css";
 
 const IconLink: React.FC<IconProps> = memo(({ iconList }) => {
