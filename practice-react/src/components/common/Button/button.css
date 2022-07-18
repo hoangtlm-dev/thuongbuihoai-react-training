@@ -44,6 +44,8 @@
 }
 
 .btn--large {
+  position: relative;
+  z-index: 5;
   background: #688F4E;
   color: #FFFFFF;
   font-size: 18px;
@@ -84,4 +86,11 @@
 .btn__outline--dark:hover {
   background: var(--border-secondary);
   border: 2px solid var(--border-secondary);
+}
+
+.btn__icon {
+  position: absolute;
+  z-index: 10;
+  top: 22px;
+  left: 25px;
 }
