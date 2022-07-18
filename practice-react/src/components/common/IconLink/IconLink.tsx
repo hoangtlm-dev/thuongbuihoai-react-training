@@ -1,9 +1,9 @@
-import React from "react";
+import React, { memo } from "react";
 import Icon from "../Icon/Icon";
 import { IconProps, IconType } from "@common-types/iconLink";
 import "./iconLink.css";
 
-const IconLink: React.FC<IconProps> = ({ iconList }) => {
+const IconLink: React.FC<IconProps> = memo(({ iconList }) => {
   const renderIconList = (list: IconType[]) => {
     return list.map((item) => (
       <a
@@ -21,6 +21,6 @@ const IconLink: React.FC<IconProps> = ({ iconList }) => {
       {renderIconList(iconList)}
     </div>
   );
-};
+});
 
 export default IconLink;
