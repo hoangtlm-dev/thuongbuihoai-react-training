@@ -1,4 +1,4 @@
-import React, { memo, useCallback } from "react";
+import React, { memo } from "react";
 import { Link } from "react-router-dom";
 import { Categories } from "@common-types/category";
 import "./categoryCard.css";
