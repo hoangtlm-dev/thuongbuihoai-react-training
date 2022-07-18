@@ -1,7 +1,7 @@
 # REACT PRACTICE
 
 # OVERVIEW
-- This document provides a detailed estimate plan of the React practice 3
+- This document provides a detailed estimate plan of the React practice 4
 
 # TECHNICAL
 - HTML5/CSS3
@@ -10,7 +10,7 @@
 - Vite
 
 # TARGET
-- Understand how to use context, useReducer for state management
+- Understand how to use context for state management
 - Understand how to use SWR for fetching data
 - Understand how to write unit tests for components
 
@@ -27,7 +27,10 @@
   - Using npm:
       npm install -g pnpm
 ```
-
+# INFORMATION .env file
+```
+- VITE_BASE_URL="http://localhost:1234"
+```
 # RUN
 ```
 - Clone project: 
