@@ -1,11 +1,12 @@
-import React, { memo } from "react";
+import React, { memo, MouseEventHandler } from "react";
 import "./icon.css";
 
 interface IconProps {
   iconName: string;
+  onClick?: MouseEventHandler<HTMLElement>;
 }
 
-const Icon: React.FC<IconProps> = memo(({ iconName }) => {
+const Icon: React.FC<IconProps> = memo(({ iconName, onClick }) => {
   let className = "";
   switch (iconName) {
     case "filter":
@@ -32,7 +33,7 @@ const Icon: React.FC<IconProps> = memo(({ iconName }) => {
     default:
       break;
   }
-  return <i data-testid="icon" className={className} />;
+  return <i data-testid="icon" onClick={onClick} className={className} />;
 });
 
 export default Icon;
