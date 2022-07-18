@@ -1,11 +1,11 @@
-import React from "react";
+import React, { memo } from "react";
 import "./icon.css";
 
 interface IconProps {
   iconName: string;
 }
 
-const Icon: React.FC<IconProps> = ({ iconName }) => {
+const Icon: React.FC<IconProps> = memo(({ iconName }) => {
   let className = "";
   switch (iconName) {
     case "filter":
@@ -33,6 +33,6 @@ const Icon: React.FC<IconProps> = ({ iconName }) => {
       break;
   }
   return <i data-testid="icon" className={className} />;
-};
+});
 
 export default Icon;
