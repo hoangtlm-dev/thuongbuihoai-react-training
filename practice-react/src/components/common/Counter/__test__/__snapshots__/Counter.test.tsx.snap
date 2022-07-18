@@ -12,7 +12,7 @@ exports[`Counter component matches snapshot 1`] = `
     <input
       class="counter__input"
       min="0"
-      value=""
+      value="0"
     />
     <div
       class="counter__plus"
