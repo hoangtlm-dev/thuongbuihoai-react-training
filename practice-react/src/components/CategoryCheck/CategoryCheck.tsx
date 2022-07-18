@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo, MouseEvent } from "react";
 import "./categoryCheck.css";
 
 interface CategoryCheckProps {
@@ -9,8 +9,8 @@ interface CategoryCheckProps {
   checked: boolean;
 }
 
-const CategoryCheck: React.FC<CategoryCheckProps> = ({ text, onToggleCategory, categoryId, checked }) => {
-  const handleCheck = (event: any) => {
+const CategoryCheck: React.FC<CategoryCheckProps> = memo(({ text, onToggleCategory, categoryId, checked }) => {
+  const handleCheck = (event: MouseEvent<HTMLInputElement> & {target: HTMLInputElement}) => {
     const value = event.target.checked
     onToggleCategory(categoryId, value);
   }
@@ -28,6 +28,6 @@ const CategoryCheck: React.FC<CategoryCheckProps> = ({ text, onToggleCategory, c
       {text}
     </label>
   );
-};
+});
 
 export default CategoryCheck;
