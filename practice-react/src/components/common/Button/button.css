@@ -2,7 +2,7 @@
   cursor: pointer;
 }
 
-.btn__primary {
+.btn--primary {
   background: #688F4E;
   border: none;
   border-radius: 7.80576px;
@@ -91,6 +91,6 @@
 .btn__icon {
   position: absolute;
   z-index: 10;
-  top: 22px;
-  left: 25px;
+  top: 17px;
+  left: 23px;
 }
