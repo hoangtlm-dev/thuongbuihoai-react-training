@@ -13,7 +13,7 @@ const Button: React.FC<ButtonProps> = memo(({ text, type, onClick, icon }) => {
   let className = "btn";
   switch (type) {
     case "primary":
-      className += " btn__primary";
+      className += " btn--primary";
       break;
     case "light":
       className += " btn--light";
@@ -31,19 +31,18 @@ const Button: React.FC<ButtonProps> = memo(({ text, type, onClick, icon }) => {
       className += " btn__outline--dark";
       break;
     default:
-      break;
+      throw new Error("Invalid type")
   }
+
   return (
-    <>
-      <button className={className} onClick={onClick}>
-        {text}
-      </button>
+    <button className={className} onClick={onClick}>
+      {text}
       {icon && (
         <div className="btn btn__icon">
           <Icon iconName="filter" />
         </div>
       )}
-    </>
+    </button>
   );
 });
 
