@@ -11,18 +11,14 @@ const DataProvider: React.FC<{ children: JSX.Element[] | JSX.Element }> = ({
   const [categories, setCategories] = useState<Categories[]>([]);
   const [products, setProducts] = useState<Product[]>([]);
 
-  const value = useMemo(
-    () => ({
-      products,
-      setProducts,
-      searchValue,
-      setSearchValue,
-      categories,
-      setCategories,
-    }),
-    [products, searchValue]
-  );
-
+  const value = {
+    products,
+    setProducts,
+    searchValue,
+    setSearchValue,
+    categories,
+    setCategories,
+  };
 
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>;
 };
