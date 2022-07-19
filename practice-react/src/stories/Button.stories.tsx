@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { action } from '@storybook/addon-actions';
+import { action } from "@storybook/addon-actions";
 import Button from "@components/common/Button/Button";
 
 export default {
