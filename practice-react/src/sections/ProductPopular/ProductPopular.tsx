@@ -5,7 +5,7 @@ import ProductList from "@components/ProductList/ProductList";
 
 const ProductPopular: React.FC = memo(() => {
   const { products } = useContext(DataContext);
-  const productPopular = products?.filter((product) => product.popular === true);
+  const productPopular = products?.filter((product) => product.popular);
 
   return (
     <div data-testid="card-product-popular" className="cardPopularList">

@@ -5,7 +5,7 @@ import CardProductList from "@components/ProductList/ProductList";
 
 const ProductSelling: React.FC = memo(() => {
   const { products } = useContext(DataContext);
-  const productBestSelling = products?.filter((product) => product.bestSelling === true);
+  const productBestSelling = products?.filter((product) => product.bestSelling);
 
   return (
     <div data-testid="card-product-selling" className="cardProductSellingList">

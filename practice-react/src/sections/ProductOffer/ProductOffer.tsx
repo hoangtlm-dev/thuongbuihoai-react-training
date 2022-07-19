@@ -5,7 +5,7 @@ import ProductList from "@components/ProductList/ProductList";
 
 const ProductOffer: React.FC = () => {
   const { products } = useContext(DataContext);
-  const productOffer = products?.filter((product) => product.offer === true);
+  const productOffer = products?.filter((product) => product.offer);
 
   return (
     <div data-testid="card-product-offer" className="cardOffersList">
