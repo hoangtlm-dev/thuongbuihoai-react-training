@@ -5,7 +5,7 @@ import Input from "@components/common/Input/Input";
 import Button from "@components/common/Button/Button";
 import "./signUpSection.css";
 
-const SignUpSection: React.FC = memo(() => {
+const SignUpSection: React.FC = () => {
   return (
     <section data-testid="signUp-section" className="sectionSignUp">
       <figure>
@@ -29,6 +29,6 @@ const SignUpSection: React.FC = memo(() => {
       </div>
     </section>
   );
-});
+};
 
 export default SignUpSection;

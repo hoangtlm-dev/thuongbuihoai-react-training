@@ -7,7 +7,7 @@ interface PriceProps {
   currency?: string;
 }
 
-const Price: React.FC<PriceProps> = memo(({ value = "", type, currency }) => {
+const Price: React.FC<PriceProps> = memo(({ value, type, currency }) => {
   let className = "";
   switch (type) {
     case "original":
