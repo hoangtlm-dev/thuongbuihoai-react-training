@@ -8,11 +8,11 @@ const ProductSelling: React.FC = memo(() => {
   const productBestSelling = products?.filter((product) => product.bestSelling);
 
   return (
-    <div data-testid="card-product-selling" className="cardProductSellingList">
-      <div className="cardProductSelling__title">
-        <Text text="Best Selling Products" size="large" />
+    <div data-testid="card-product-selling" className="card-product-selling-list">
+      <div className="card-product-selling-title">
+        <Text text="Best Selling Products" size="large" decoration="" />
       </div>
-      <div className="card__item--selling">
+      <div className="card-item-selling">
         <CardProductList
           type="medium"
           content="quantity"

@@ -1,15 +1,15 @@
-.categoryCard {
+.category-card {
   width: 223px;
   display: flex;
   flex-direction: column;
 }
 
-.categoryCard__image {
+.category-card-image {
   margin: 32px 0 60px;
   text-align: center;
 }
 
-.categoryCard__text {
+.category-card-text {
   margin: 0 15px 45px 70px;
   font-weight: 400;
   font-size: 18px;

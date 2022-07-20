@@ -74,7 +74,7 @@ exports[`ProductDetail component matches snapshot 1`] = `
           Sign Up
         </button>
         <button
-          class="btn btn__outline--dark"
+          class="btn btn__outline-dark"
         >
           Login
         </button>
@@ -135,6 +135,7 @@ exports[`ProductDetail component matches snapshot 1`] = `
           <input
             class="counter__input"
             min="0"
+            name="productQuantity"
             value=""
           />
           <div

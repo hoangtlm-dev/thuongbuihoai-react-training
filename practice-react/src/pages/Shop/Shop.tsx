@@ -45,12 +45,12 @@ const Shop: React.FC = () => {
   );
 
   return (
-    <div data-testid="shop-page" className="shopPage">
+    <div data-testid="shop-page" className="shop-page">
       <NavigationBar mode="dark" />
-      <p className="shopPage__heading">Home/Beverages</p>
-      <div className="shopPage__info">
-        <div className="shopPage__select">
-          <p className="shopPage__title">Category</p>
+      <p className="shop-page-heading">Home/Beverages</p>
+      <div className="shop-page-info">
+        <div className="shop-page-select">
+          <p className="shop-page-title">Category</p>
           <CategoryList
             id={id}
             type="checkbox"
@@ -58,11 +58,11 @@ const Shop: React.FC = () => {
             selectedCategories={selectedCategories}
             onToggleCategory={handleToggleCategory}
           />
-          <div className="shopPage__button">
+          <div className="shop-page-button">
             <Button icon={true} text="Filter" type="large" />
           </div>
         </div>
-        <div className="shopPage__product">
+        <div className="shop-page-product">
           <ProductList
             type="medium-box"
             content="quantity"

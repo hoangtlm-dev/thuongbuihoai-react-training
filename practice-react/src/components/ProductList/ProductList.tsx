@@ -17,38 +17,38 @@ interface CartProductProps {
 }
 
 const CardProductList: React.FC<CartProductProps> = ({
-  type,
-  content,
+  type="normal",
+  content="discount",
   visibleQuantity,
   visibleDiscountPrice,
   visibleCounter,
   productList,
 }) => {
-  let className = "";
+  let className = "product-list";
   switch (type) {
     case "normal":
-      className = "productList__normal";
+      className = `${className}-${type}`;
       break;
     case "medium":
-      className = "productList__medium";
+      className = `${className}-${type}`;
       break;
     case "medium-box":
-      className = "productList__medium--box";
+      className = `${className}-${type}`;
       break;
     default:
-      break;
+      throw new Error("Invalid type");
   }
 
-  let cartInfo = "";
+  let cartInfo = "card";
   switch (content) {
     case "discount":
-      cartInfo = "card__discount";
+      cartInfo = `${cartInfo}-${content}`;
       break;
     case "quantity":
-      cartInfo = "card__quantity";
+      cartInfo = `${cartInfo}-${content}`;
       break;
     default:
-      break;
+      throw new Error("Invalid content");
   }
 
   return (
@@ -60,16 +60,16 @@ const CardProductList: React.FC<CartProductProps> = ({
           className={className}
         >
           <img
-            className="card__image"
+            className="card-image"
             src={product.images.src}
             alt={product.images.alt}
           />
           <div className={cartInfo}>
-            <Link className="cart__link" to={`/products/${product?.productId}`}>
-              <Text size="normal" text={product?.productName} />
+            <Link className="cart-link" to={`/products/${product?.productId}`}>
+              <Text size="normal" decoration="" text={product?.productName} />
             </Link>
             {visibleQuantity && (
-              <p className="card__unit">{product?.offerQuantity}</p>
+              <p className="card-unit">{product?.offerQuantity}</p>
             )}
             <Price
               type="original"
@@ -85,9 +85,9 @@ const CardProductList: React.FC<CartProductProps> = ({
             )}
           </div>
           {visibleCounter && (
-            <div className="card__counter">
+            <div className="card-counter">
               <Counter counter={product.productQuantity} />
-              <div className="card__icon">
+              <div className="card-icon">
                 <Icon iconName="cart" />
               </div>
             </div>

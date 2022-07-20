@@ -1,19 +1,19 @@
-.shopPage__heading {
+.shop-page-heading {
   margin: 100px 0 70px 443px;
   font-size: 24px;
   line-height: 36px;
   color: var(--text-third);
 }
 
-.shopPage__info {
+.shop-page-info {
   display: flex;
 }
 
-.shopPage__select {
+.shop-page-select {
   background: var(--bg-light);
 }
 
-.shopPage__title {
+.shop-page-title {
   padding: 32px 198px 47px 98px;
   font-weight: 600;
   font-size: 27px;
@@ -21,13 +21,13 @@
   color: var(--text-primary);
 }
 
-.shopPage__product {
+.shop-page-product {
   display: flex;
   flex-wrap: wrap;
   padding-left: 100px;
 }
 
-.shopPage__button {
+.shop-page-button {
   position: relative;
   margin: 107px 0 0 91px;
 }

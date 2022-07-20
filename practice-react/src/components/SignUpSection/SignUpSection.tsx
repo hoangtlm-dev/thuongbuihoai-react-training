@@ -7,22 +7,24 @@ import "./signUpSection.css";
 
 const SignUpSection: React.FC = () => {
   return (
-    <section data-testid="signUp-section" className="sectionSignUp">
+    <section data-testid="signUp-section" className="section-signup">
       <figure>
         <img src={url} alt="This is image vegetables-fruits" />
       </figure>
-      <div className="sectionSignUp__content">
+      <div className="section-signup-content">
         <Text
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           size="medium"
+          decoration=""
         />
-        <div className="sectionSignUp__info">
+        <div className="section-signup-info">
           <Text
             text="Subscribe to get 10% Discount and promotion"
             size="normal"
+            decoration=""
           />
         </div>
-        <div className="sectionSignUp__address">
+        <div className="section-signup-address">
           <Input type="text" placeholder="Email address" />
           <Button text="Sign Up" type="large" />
         </div>

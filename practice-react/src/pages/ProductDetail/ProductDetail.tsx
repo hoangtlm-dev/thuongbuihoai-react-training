@@ -1,12 +1,8 @@
 import React, { useContext } from "react";
 import { DataContext } from "@context/DataContext";
 import { useParams } from "react-router-dom";
-import NavigationBar from "@components/common/NavigationBar/NavigationBar";
+import { Text, Button, Price, Counter, NavigationBar } from "@components/common/index";
 import background from "@assets/images/backgrounds/gray.png";
-import Text from "@components/common/Text/Text";
-import Price from "@components/common/Price/Price";
-import Counter from "@components/common/Counter/Counter";
-import Button from "@components/common/Button/Button";
 import ProductList from "@components/ProductList/ProductList";
 import "./productDetail.css";
 
@@ -19,42 +15,42 @@ const ProductDetail: React.FC = () => {
   );
 
   return (
-    <div data-testid="product-detail" className="productDetail">
+    <div data-testid="product-detail" className="product-detail">
       <NavigationBar mode="dark" />
       <figure>
         <img
-          className="productDetail__image"
+          className="product-detail-image"
           src={dataElement?.images.src}
           alt={dataElement?.images.alt}
         />
         <img
-          className="productDetail__background"
+          className="product-detail-background"
           src={background}
           alt="This is background"
         />
       </figure>
-      <div className="productDetail__info">
-        <Text text={dataElement?.productName} size="large" />
-        <p className="productDetail__price">Price</p>
+      <div className="product-detail-info">
+        <Text text={dataElement?.productName} size="large" decoration="" />
+        <p className="product-detail-price">Price</p>
         <Price
           value={dataElement?.originalPrice.value}
           type="original"
           currency={dataElement?.originalPrice.currency}
         />
-        <p className="productDetail__description"></p>
-        <p className="productDetail__quantity">Quantity</p>
-        <div className="productDetail__counter">
+        <p className="product-detail-description"></p>
+        <p className="product-detail-quantity">Quantity</p>
+        <div className="product-detail-counter">
           <Counter counter={dataElement?.productQuantity} />
         </div>
-        <div className="productDetail__btn">
+        <div className="product-detail-btn">
           <Button text="Add to cart" type="large" />
         </div>
       </div>
-      <div className="productDetail__more">
-        <div className="productDetail__title">
-          <Text text="Products you may like" decoration="dark" />
+      <div className="product-detail-more">
+        <div className="product-detail-title">
+          <Text text="Products you may like" decoration="dark" size="" />
         </div>
-        <div className="productDetail__productMore">
+        <div className="product-detail-product-more">
           <ProductList
             type="medium-box"
             content="quantity"

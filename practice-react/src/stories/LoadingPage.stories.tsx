@@ -1,4 +1,4 @@
-import LoadingPage from "@components/common/LoadingPage/LoadingPage";
+import { Loader } from "@components/common";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 export default {
@@ -6,12 +6,12 @@ export default {
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: "Component/LoadingPage",
-  component: LoadingPage,
-} as ComponentMeta<typeof LoadingPage>;
+  title: "Component/Loader",
+  component: Loader,
+} as ComponentMeta<typeof Loader>;
 
-const TemplateLoadingPage: ComponentStory<typeof LoadingPage> = (args) => (
-  <LoadingPage {...args} />
+const TemplateLoader: ComponentStory<typeof Loader> = (args) => (
+  <Loader {...args} />
 );
 
-export const LoadingPageCart = TemplateLoadingPage.bind({});
+export const LoaderCart = TemplateLoader.bind({});

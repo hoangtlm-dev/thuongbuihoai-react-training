@@ -2,7 +2,7 @@
   padding: 120px 0 0 125px;
 }
 
-.categories__title {
+.categories-title {
   margin-bottom: 69px;
   font-weight: 600;
   font-size: 24px;
@@ -11,12 +11,12 @@
   color: var(--text-primary);
 }
 
-.categoryList__row {
+.category-list-row {
   display: flex;
   margin-bottom: 246px;
 }
 
-.categoryList__card {
+.category-list-card {
   display: flex;
   flex-direction: column;
   margin-right: 55px;
@@ -26,7 +26,7 @@
   box-shadow: -50px 50px 200px var(--box--light);
 }
 
-.categoryList__checkbox {
+.category-list-checkbox {
   margin: 0 0 23px 73px;
   font-weight: 400;
   font-size: 24px;

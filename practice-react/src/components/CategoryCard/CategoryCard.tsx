@@ -16,12 +16,12 @@ const CategoryCard: React.FC<CategoryCardProps> = memo(
     };
 
     return (
-      <div data-testid="category-card" className="categoryCard">
-        <figure className="categoryCard__image">
+      <div data-testid="category-card" className="category-card">
+        <figure className="category-card-image">
           <img src={category.images.src} alt={category.images.alt} />
         </figure>
         <Link
-          className="categoryCard__text"
+          className="category-card-text"
           to={`/products/category/${category.id}`}
           onClick={handleSelect}
         >

@@ -14,12 +14,12 @@ input[type="checkbox"] {
   transform: translateY(-9px);
 }
 
-.checkbox__value {
+.checkbox-value {
   display: flex;
   align-items: flex-end;
 }
 
-.checkbox__value > input {
+.checkbox-value > input {
   margin-right: 25px;
 }
 

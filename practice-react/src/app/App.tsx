@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { SWRConfig } from "swr";
 import { DataProvider } from "@context/DataContext";
 import Footer from "@components/common/Footer/Footer";
-import LoadingPage from "@components/common/LoadingPage/LoadingPage";
+import Loader from "@components/common/Loader/Loader";
 // Lazy-loaded
 const Shop = lazy(() => import("@pages/Shop/Shop"));
 const Home = lazy(() => import("@pages/Home/Home"));
@@ -15,7 +15,7 @@ const App: React.FC = memo(() => {
     <SWRConfig value={{ revalidateOnFocus: false }}>
       <DataProvider>
         {/* Suspense: Show a <LoadingPage /> while the product list is loading */}
-        <Suspense fallback={<LoadingPage />}>
+        <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path={`/products/category/:id`} element={<Shop />} />

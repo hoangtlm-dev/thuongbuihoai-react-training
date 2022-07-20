@@ -19,7 +19,7 @@ const CategoryCheck: React.FC<CategoryCheckProps> = memo(
     };
 
     return (
-      <label data-testid="category-check" className="checkbox__value">
+      <label data-testid="category-check" className="checkbox-value">
         <input
           type="checkbox"
           name="checkbox"

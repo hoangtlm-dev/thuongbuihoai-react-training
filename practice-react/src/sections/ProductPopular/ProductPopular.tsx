@@ -8,11 +8,11 @@ const ProductPopular: React.FC = memo(() => {
   const productPopular = products?.filter((product) => product.popular);
 
   return (
-    <div data-testid="card-product-popular" className="cardPopularList">
-      <div className="cardPopular__title">
+    <div data-testid="card-product-popular" className="card-popular-list">
+      <div className="card-popular-title">
         <Text text="Popular Products" decoration="dark" />
       </div>
-      <div className="card__item--popular">
+      <div className="card-item-popular">
         <ProductList
           type="medium-box"
           content="quantity"

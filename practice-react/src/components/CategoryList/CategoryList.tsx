@@ -1,5 +1,5 @@
 import useSWR from "swr";
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useMemo } from "react";
 import { Categories } from "@common-types/category";
 import { getData } from "@helpers/fetchApi";
 import { CATEGORIES_URL } from "@constants/url";
@@ -33,23 +33,22 @@ const CategoryList: React.FC<CategoryProps> = ({
     setCategories(data);
   }, [data]);
 
-  let className = "";
-  switch (type) {
-    case "row":
-      className = "categoryList__row";
-      break;
-    case "column":
-      className = "categoryList__column";
-      break;
-    default:
-      break;
-  }
+  const className = useMemo(() => {
+    switch (type) {
+      case "row":
+        return "category-list-row";
+      case "column":
+        return "category-list-column";
+      default:
+        return "category-list"
+    }
+  }, [type]);
 
   const renderCategoryList = () => {
     return categories?.map((category: Categories) => (
       <div key={category.id}>
         {isSelect && (
-          <div className="categoryList__card">
+          <div className="category-list-card">
             <CategoryCard
               onToggleCategory={onToggleCategory}
               category={category}
@@ -58,7 +57,7 @@ const CategoryList: React.FC<CategoryProps> = ({
           </div>
         )}
         {isCheckbox && (
-          <div className="categoryList__checkbox">
+          <div className="category-list-checkbox">
             <CategoryCheck
               onToggleCategory={onToggleCategory}
               categoryId={category.id}
@@ -75,7 +74,7 @@ const CategoryList: React.FC<CategoryProps> = ({
   return (
     <div data-testid="category-list" className={className}>
       {isCheckbox &&
-        <div className="categoryList__checkbox">
+        <div className="category-list-checkbox">
           <CategoryCheck
             onToggleCategory={onToggleCategory}
             categoryId=""
