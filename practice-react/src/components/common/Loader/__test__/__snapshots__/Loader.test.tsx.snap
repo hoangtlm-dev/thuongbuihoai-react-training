@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LoadingPage component matches snapshot 1`] = `
+exports[`Loader component matches snapshot 1`] = `
 <DocumentFragment>
   <div
     class="loader"

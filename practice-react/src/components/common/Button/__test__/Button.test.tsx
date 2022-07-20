@@ -48,18 +48,18 @@ describe("Button component", () => {
     expect(onClickButton).toHaveBeenCalled();
   });
 
-  test("Should render component Button type 'outline--light' ", async () => {
+  test("Should render component Button type 'outline-light' ", async () => {
     render (
-      <Button type="outline--light" onClick={onClickButton} text="Sign Up" />
+      <Button type="outline-light" onClick={onClickButton} text="Sign Up" />
     );
     const clickBtn = screen.getByRole("button", {name: /Sign Up/i});
     fireEvent.click(clickBtn);
     expect(onClickButton).toHaveBeenCalled();
   });
 
-  test("Should render component Button type 'outline--dark' ", async () => {
+  test("Should render component Button type 'outline-dark' ", async () => {
     render (
-      <Button type="outline--dark" onClick={onClickButton} text="Sign Up" />
+      <Button type="outline-dark" onClick={onClickButton} text="Sign Up" />
     );
     const clickBtn = screen.getByRole("button", {name: /Sign Up/i});
     fireEvent.click(clickBtn);

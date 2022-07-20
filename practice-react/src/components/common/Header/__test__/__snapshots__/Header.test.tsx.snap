@@ -74,7 +74,7 @@ exports[`Header component matches snapshot 1`] = `
           Sign Up
         </button>
         <button
-          class="btn btn__outline--light"
+          class="btn btn__outline-light"
         >
           Login
         </button>

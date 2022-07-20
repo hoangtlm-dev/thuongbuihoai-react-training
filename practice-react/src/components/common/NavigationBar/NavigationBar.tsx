@@ -14,18 +14,18 @@ const NavigationBar: React.FC<NavigationBarProps> = memo(({ mode }) => {
   return (
     <nav data-testid="navigation-bar" className="nav">
       <Logo src={url} />
-      <div className="nav__about">
+      <div className="nav-about">
         <Menu menuList={MENU_LIST} />
         {mode == "light" && (
           <>
             <Button text="Sign Up" type="light" />
-            <Button text="Login" type="outline--light" />
+            <Button text="Login" type="outline-light" />
           </>
         )}
-        {mode =="dark" && (
+        {mode == "dark" && (
           <>
             <Button text="Sign Up" type="dark" />
-            <Button text="Login" type="outline--dark" />
+            <Button text="Login" type="outline-dark" />
           </>
         )}
       </div>

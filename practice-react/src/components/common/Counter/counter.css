@@ -4,21 +4,21 @@
   width: 205px;
 }
 
-.counter__input {
+.counter-input {
   border: 1px solid var(--border-primary);
   border-radius: 24.5px;
   text-align: center;
   padding: 14px;
 }
 
-.counter__minus {
+.counter-minus {
   position: absolute;
   z-index: 20;
   top: 33%;
   left: 22px;
 }
 
-.counter__plus {
+.counter-plus {
   position: absolute;
   z-index: 20;
   top: 35%;

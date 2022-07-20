@@ -6,7 +6,7 @@
   margin-top: 133px;
 }
 
-.footer__title {
+.footer-title {
   font-weight: 400;
   font-size: 17px;
   line-height: 22px;
@@ -14,20 +14,20 @@
   color: var(--text-secondary);
 }
 
-.footer__contact {
+.footer-contact {
   display: flex;
 }
 
-.footer__item {
+.footer-item {
   margin-right: 240px;
 }
 
-.footer__about {
+.footer-about {
   display: flex;
   margin-top: 159px;
 }
 
-.footer__service {
+.footer-service {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.204545px;
@@ -35,7 +35,7 @@
   margin-right: 100px;
 }
 
-.footer__social {
+.footer-social {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

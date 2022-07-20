@@ -7,7 +7,7 @@ const IconLink: React.FC<IconProps> = memo(({ iconList }) => {
   const renderIconList = (list: IconType[]) => {
     return list.map((item) => (
       <a
-        className="icon__item"
+        className="icon-item"
         key={item.key}
         title={item.title}
         href={item.url}
@@ -17,7 +17,7 @@ const IconLink: React.FC<IconProps> = memo(({ iconList }) => {
     ));
   };
   return (
-    <div data-testid="icon-link" className="icon__list">
+    <div data-testid="icon-link" className="icon-list">
       {renderIconList(iconList)}
     </div>
   );

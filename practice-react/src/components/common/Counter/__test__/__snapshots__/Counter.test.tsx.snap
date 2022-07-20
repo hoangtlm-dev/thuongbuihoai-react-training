@@ -17,6 +17,7 @@ exports[`Counter component matches snapshot 1`] = `
     <input
       class="counter__input"
       min="0"
+      name="productQuantity"
       value="0"
     />
     <div

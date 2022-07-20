@@ -8,30 +8,29 @@ interface TitleProps {
 }
 
 const Text: React.FC<TitleProps> = memo(({ text, size, decoration }) => {
-  let className = "";
+  let className = "text";
   switch (size) {
     case "normal":
-      className = "text--normal";
+      className = `${className}-${size}`;
       break;
     case "medium":
-      className = "text--medium";
+      className = `${className}-${size}`;
       break;
     case "large":
-      className = "text--large";
+      className = `${className}-${size}`;
       break;
     default:
-      break;
   }
 
   switch (decoration) {
     case "blur":
-      className = "text--blur";
+      className = `${className}-${decoration}`
       break;
     case "highlight":
-      className = "text--highlight";
+      className = `${className}-${decoration}`;
       break;
     case "dark":
-      className = "text--dark";
+      className = `${className}-${decoration}`;
       break;
     default:
       break;

@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { memo, useMemo } from "react";
 import "./price.css";
 
 interface PriceProps {
@@ -7,23 +7,26 @@ interface PriceProps {
   currency?: string;
 }
 
-const Price: React.FC<PriceProps> = memo(({ value, type, currency }) => {
-  let className = "";
-  switch (type) {
-    case "original":
-      className = "price__original";
-      break;
-    case "discount":
-      className = "price__discount";
-      break;
-    default:
-      break;
+const Price: React.FC<PriceProps> = memo(
+  ({ value, type = "original", currency }) => {
+    const className = useMemo(() => {
+      switch (type) {
+        case "original":
+          return "price-original";
+        case "discount":
+          return "price-discount";
+        default:
+          return "price";
+      }
+    }, [type]);
+
+    return (
+      <p data-testid="price" className={className}>
+        <span className="price-unit">{currency}</span>
+        {value}
+      </p>
+    );
   }
-  return (
-    <p data-testid="price" className={className}>
-      <span className="price__unit">{currency}</span>{value}
-    </p>
-  );
-});
+);
 
 export default Price;

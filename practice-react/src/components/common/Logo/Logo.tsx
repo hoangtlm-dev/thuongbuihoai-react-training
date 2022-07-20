@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { memo, useMemo } from "react";
 import { Link } from "react-router-dom";
 import "./logo.css";
 
@@ -7,18 +7,17 @@ interface LogoProps {
   type?: string;
 }
 
-const Logo: React.FC<LogoProps> = memo(({ src, type }) => {
-  let className = "";
-  switch (type) {
-    case "medium":
-      className = "logo--medium";
-      break;
-    case "large":
-      className = "logo--large";
-      break;
-    default:
-      break;
-  }
+const Logo: React.FC<LogoProps> = memo(({ src, type="medium" }) => {
+  const className = useMemo(() => {
+    switch (type) {
+      case "medium":
+        return `logo-${type}`;
+      case "large":
+        return `logo-${type}`;
+      default:
+        return "logo";
+    }
+  }, [type]);
 
   return (
     <Link data-testid="logo" to="/">

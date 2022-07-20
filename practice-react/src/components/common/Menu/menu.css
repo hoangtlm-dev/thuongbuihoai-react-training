@@ -1,10 +1,10 @@
 /* css for component menu */
-.menu__list {
+.menu-list {
   display: flex;
   align-items: center;
 }
 
-.menu__item {
+.menu-item {
   list-style: none;
   cursor: pointer;
   font-size: 16px;
@@ -12,24 +12,24 @@
   margin-right: 32px;
 }
 
-.menu__item > a {
+.menu-item > a {
   text-decoration: none;
   font-weight: 400;
   color: var(--dark);
 }
 
 /* css for component menuContact */
-.contact__item {
+.contact-item {
   margin-top: 20px;
 }
 
-.contact__item > a {
+.contact-item > a {
   text-decoration: none;
   color: var(--light);
   font-size: 15px;
   line-height: 20px;
 }
 
-.contact__item > a:hover {
+.contact-item > a:hover {
   color: var(--text-secondary);
 }

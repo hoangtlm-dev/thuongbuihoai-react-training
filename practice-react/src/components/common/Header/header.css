@@ -4,11 +4,11 @@
   background: var(--bg-first);
 }
 
-.header__info {
+.header-info {
   padding: 207px 0 257px 162px;
 }
 
-.header__title {
+.header-title {
   color: var(--dark);
   font-weight: 600;
   font-size: 36px;
@@ -17,21 +17,21 @@
   margin: 16px 0 47px;
 }
 
-.header__images--right {
+.header-images-right {
   position: absolute;
   z-index: 10;
   top: 0;
   right: 0;
 }
 
-.header__images--basket {
+.header-images-basket {
   position: absolute;
   z-index: 15;
   top: 18px;
   right: 264px;
 }
 
-.header__images--top-view {
+.header-images-top-view {
   position: absolute;
   z-index: 10;
   top: 105px;

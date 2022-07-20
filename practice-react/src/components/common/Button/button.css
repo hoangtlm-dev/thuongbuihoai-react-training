@@ -2,7 +2,7 @@
   cursor: pointer;
 }
 
-.btn--primary {
+.btn-primary {
   background: #688F4E;
   border: none;
   border-radius: 7.80576px;
@@ -13,7 +13,7 @@
   font-family: "Roboto";
 }
 
-.btn--light {
+.btn-light {
   color: #2B463C;
   font-size: 18px;
   line-height: 27px;
@@ -23,12 +23,12 @@
   padding: 9px 35px;
 }
 
-.btn--light:hover {
+.btn-light:hover {
   background: #688F4E;
   color: #FFFFFF;
 }
 
-.btn--dark {
+.btn-dark {
   background: #688F4E;
   color: #FFFFFF;
   font-size: 18px;
@@ -38,12 +38,12 @@
   padding: 9px 35px;
 }
 
-.btn--dark:hover {
+.btn-dark:hover {
   color: #2B463C;
   background: #FFFFFF;
 }
 
-.btn--large {
+.btn-large {
   position: relative;
   z-index: 5;
   background: #688F4E;
@@ -55,7 +55,7 @@
   padding: 15px 47px;
 }
 
-.btn__outline--light {
+.btn-outline-light {
   color: #2B463C;
   border-radius: 5px;
   font-size: 18px;
@@ -66,12 +66,12 @@
   margin-left: 32px;
 }
 
-.btn__outline--light:hover {
+.btn-outline-light:hover {
   border: 2px solid #688F4E;
   background: transparent;
 }
 
-.btn__outline--dark {
+.btn-outline-dark {
   color: #2B463C;
   font-family: "Poppins";
   font-size: 18px;
@@ -83,12 +83,12 @@
   margin-left: 32px;
 }
 
-.btn__outline--dark:hover {
+.btn-outline-dark:hover {
   background: var(--border-secondary);
   border: 2px solid var(--border-secondary);
 }
 
-.btn__icon {
+.btn-icon {
   position: absolute;
   z-index: 10;
   top: 17px;

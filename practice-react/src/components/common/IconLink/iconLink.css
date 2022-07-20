@@ -1,8 +1,8 @@
-.icon__item {
+.icon-item {
   text-decoration: none;
 }
 
-.icon__list {
+.icon-list {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
