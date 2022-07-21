@@ -1,34 +1,136 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NEXTJS TRAINING PLAN
+##### 21th Jul 2022
 
-## Getting Started
+### OVERVIEW
+- Official document: https://nextjs.org/ 
+- Github: https://github.com/vercel/next.js
 
-First, run the development server:
+### TIMELINE
+- 6 days (21/5/2022 - 28/5/2022)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### TARGET
+- Know what is Nextjs, how it works
+- Get familiar with basic features and routing
+- Know how to build and deploy a site with Nextjs
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### BASIC (5 days)
+#### DOCUMENTATION
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+**Getting Started**
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- [System Requirements](https://nextjs.org/docs/getting-started#system-requirements)
+  - [Node.js 12.22.0](https://nodejs.org/) or later
+  - MacOS, Windows (including WSL), and Linux are supported
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+**Basic features**
 
-## Learn More
+- Pages
+- Data Fetching
+- Built-in CSS Support
+- Layouts
+- Image Optimization
+- Font Optimization
+- Static File Serving
+- Fast Refresh
+- ESLint
+- TypeScript
+- Environment variables
+- Supported Browsers and Features
+- Handling Scripts
 
-To learn more about Next.js, take a look at the following resources:
+**Routing**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Introduction
+- Dynamic Routes
+- Imperatively
+- Shallow Routing
+- Going to Production
+- Caching
+- Reducing JavaScript Size
+- Logging
+- Error Handling
+- Loading Performance
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Deployment**
 
-## Deploy on Vercel
+- Next.js build api
+- Manange with Vercel: https://vercel.com/ 
+- Self-hosting
+- Managed server
+  - [AWS Copilot](https://aws.github.io/copilot-cli/)
+  - [Digital Ocean App Platform](https://docs.digitalocean.com/tutorials/app-nextjs-deploy/)
+  - [Google Cloud Run](https://github.com/vercel/next.js/tree/canary/examples/with-docker)
+  - [Heroku](https://elements.heroku.com/buildpacks/mars/heroku-nextjs)
+  - [Railway](https://railway.app/new/starters/nextjs-prisma)
+  - [Render](https://render.com/docs/deploy-nextjs-app)
+  
+- Static only (next export)
+  - [Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/deploy-nextjs)
+  - [Cloudflare Pages](https://developers.cloudflare.com/pages/framework-guides/deploy-a-nextjs-site/)
+  - [Firebase](https://github.com/vercel/next.js/tree/canary/examples/with-firebase-hosting)
+  - [GitHub Pages](https://github.com/vercel/next.js/tree/canary/examples/github-pages)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Testing**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js with Cypress](https://github.com/vercel/next.js/tree/canary/examples/with-cypress)
+- [Next.js with Playwright](https://github.com/vercel/next.js/tree/canary/examples/with-playwright)
+- [Next.js with Jest and React Testing Library](https://github.com/vercel/next.js/tree/canary/examples/with-jest)
+- [Next.js with Vitest](https://github.com/vercel/next.js/tree/canary/examples/with-vitest)
+
+
+### API REFERENCE
+- [CLI](https://nextjs.org/docs/api-reference/cli)
+- [Create Next App](https://nextjs.org/docs/api-reference/create-next-app)
+- [next/router](https://nextjs.org/docs/api-reference/next/router)
+- [next/link](https://nextjs.org/docs/api-reference/next/link)
+- [next/image](https://nextjs.org/docs/api-reference/next/image)
+- [next/script](https://nextjs.org/docs/api-reference/next/script)
+- [next/head](https://nextjs.org/docs/api-reference/next/head)
+- [next/amp](https://nextjs.org/docs/api-reference/next/amp)
+- [next/server](https://nextjs.org/docs/api-reference/next/server)
+- [next/streaming](https://nextjs.org/docs/api-reference/next/streaming)
+- [next/future/image (experimental)](https://nextjs.org/docs/api-reference/next/future/image)
+- [Edge Runtime](https://nextjs.org/docs/api-reference/edge-runtime)
+- [Data Fetching](https://nextjs.org/docs/api-reference/data-fetching/get-initial-props)
+- [Static Optimization Indicator](https://nextjs.org/docs/api-reference/next.config.js/static-optimization-indicator)
+- [next.config.js](https://nextjs.org/docs/api-reference/next.config.js/introduction)
+
+### ADVANCED (1 days)
+- Advanced features
+- Next.js compiler
+- Preview mode
+- Dynamic import
+- Automatic Static Optimization
+- Static HTML Export
+- Absolute Imports and Module Path Aliases
+- Using MDX
+- AMP Support
+- Customizing Babel Config
+- Customizing PostCSS Config
+- Custom Server
+- Custom `App`
+- Custom `Document`
+- Custom Error Page
+- `src` Directory
+- CI Build Caching
+- Multi Zones
+- Measuring performance
+- Middleware
+- Debugging
+- Error Handling
+- Source Maps
+- Codemods
+- Internationalized Routing
+- Output File Tracing
+- Security Headers
+
+**Upgrade & Migration**
+
+- Upgrade React version
+- Upgrade Next.js version
+- SWC replacement
+- Migrating to Next.js
+  - Incrementally Adopting Next.js
+  - Migrating from Gatsby
+  - Migrating from Create React App
+  - Migrating from React Router
