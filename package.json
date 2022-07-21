@@ -6,12 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "server": "json-server --watch --port 1234 json-server/db.json"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "next": "12.2.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "swr": "^1.3.0"
   },
   "devDependencies": {
     "@types/node": "18.0.6",
