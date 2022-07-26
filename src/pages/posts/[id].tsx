@@ -1,5 +1,5 @@
 import React from "react";
-import { BASE_URL } from "../../src/constants/url";
+import { BASE_URL } from "@src/constants/url";
 
 interface Posts {
   id: string;
@@ -26,7 +26,7 @@ export const getStaticPaths = async () => {
   // We'll pre-render only these paths at build time.
   // { fallback: false } means other routes should 404.
   return { paths, fallback: false };
-}
+};
 
 // This also gets called at build time
 export const getStaticProps = async (context: { params: { id: string } }) => {
@@ -38,7 +38,7 @@ export const getStaticProps = async (context: { params: { id: string } }) => {
 
   // Pass post data to the page via props
   return { props: { post } };
-}
+};
 
 // Your page content depends on external data
 const PostPath: React.FC<PostPaths> = ({ post }) => {
