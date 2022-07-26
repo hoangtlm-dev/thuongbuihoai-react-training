@@ -48,3 +48,36 @@
   pnpm run start
   pnpm run cypress
 ```
+
+### Playwright
+
+- Playwright is a testing framework that lets you automate Chromium, Firefox, and WebKit with a single API
+- Can use it to write End-to-End (E2E) and Integration tests across all platforms.
+
+#### Manual setup
+
+```
+  pnpm install --save-dev @playwright/test
+```
+
+- package.json: `"test:e2e": "playwright test"`
+
+### Jest and React Testing Library
+
+- Jest and React Testing Library are frequently used together for **Unit Testing**
+
+#### Setting up Jest (with the Rust Compiler)
+
+```
+  pnpm install --save-dev jest jest-environment-jsdom @testing-library/react @testing-library/jest-dom
+```
+
+**Handling stylesheets and image imports**
+
+```
+  // __mocks__/styleMock.js
+  module.exports = {}
+
+  // __mocks__/fileMock.js
+  module.exports = "test-file-stub";
+```
