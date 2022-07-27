@@ -105,3 +105,70 @@ To get a list of the available CLI commands
 ### withRouter
 
 - If useRouter is not the best fit for you, withRouter can also add the same router object to any component.
+
+## next/link
+
+- Client-side transitions between routes can be enabled via the Link component exported by `next/link`.
+
+### If the route has dynamic segments
+
+### If the child is a custom component that wraps an <a> tag
+
+- If the child of `Link` is a custom component that wraps an `<a> tag`, you must add `passHref` to `Link`
+- If you’re using libraries like styled-components. Without this, the `<a>` tag will not have the `href` attribute
+
+### If the child is a functional component
+
+- If the child of `Link` is a functional component, in addition to using `passHref`, you must wrap the component in `React.forwardRef`:
+
+```
+  import Link from "next/link";
+  import React from "react";
+
+  // `onClick`, `href`, and `ref` need to be passed to the DOM element
+  // for proper handling
+  interface MyButtonProps {
+    onClick?: any;
+    href?: string;
+  }
+
+  const MyButton: React.FC<MyButtonProps> = React.forwardRef(
+    ({ onClick, href }, ref) => {
+      return (
+        <a href={href} onClick={onClick} ref={ref}>
+          Click Me
+        </a>
+      );
+    },
+  );
+
+  function Home() {
+    return (
+      <Link href="/about" passHref>
+        <MyButton />
+      </Link>
+    );
+  }
+
+  export default Home;
+```
+
+### With URL Object
+
+- `Link` can also receive a URL object and it will automatically format it to create the URL string
+
+### Replace the URL instead of push
+
+```
+  <Link href="/about" replace>
+    <a>About us</a>
+  </Link>
+```
+
+### Disable scrolling to the top of the page
+
+```
+  <Link href="/#hashid" scroll={false}>
+    <a>Disables scrolling to the top</a>
+  </Link>
+```
