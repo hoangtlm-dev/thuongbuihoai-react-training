@@ -2,11 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -20,27 +16,13 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@*": [
-        "./*"
-      ],
-      "@pages/*": [
-        "pages/*"
-      ]
+      "@*": ["./*"],
+      "@pages/*": ["pages/*"],
+      "@styles/*": ["styles/*"],
+      "@components/*": ["components/*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "src",
-    "./setupTests.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
-  "types": [
-    "node",
-    "jest",
-    "@types/testing-library__jest-dom"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src", "./setupTests.ts"],
+  "exclude": ["node_modules"],
+  "types": ["node", "jest", "@types/testing-library__jest-dom"]
 }
