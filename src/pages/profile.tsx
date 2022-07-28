@@ -1,5 +1,5 @@
+import { POSTS_URL } from "@src/constants/url";
 import { useEffect, useState } from "react";
-import { POSTS_URL } from "../src/constants/url";
 import { Posts } from "./posts";
 
 const Profile: React.FC = () => {
