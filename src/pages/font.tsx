@@ -1,5 +1,5 @@
 import Head from "next/head";
-import style from "../styles/Home.module.css";
+import style from "../../styles/Home.module.css";
 
 const MyPage: React.FC = () => {
   return (
