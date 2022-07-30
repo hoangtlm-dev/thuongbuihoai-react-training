@@ -6,10 +6,7 @@
   "extends": [
     "next/core-web-vitals",
     "plugin:react/recommended",
-    "airbnb",
-    "plugin:@next/next/recommended",
-    "prettier",
-    "plugin:jest-dom/recommended"
+    "plugin:@next/next/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -27,9 +24,9 @@
         "endOfLine": "auto"
       }
     ],
+    "indent": ["error", 2],
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "react/jsx-props-no-spreading": "off"
   }
 }
-
