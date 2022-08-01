@@ -6,4 +6,5 @@ export interface MenuType {
 
 export interface MenuProps {
   menuList: MenuType[];
+  type?: string;
 }
