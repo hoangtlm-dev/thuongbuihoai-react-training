@@ -1,0 +1,18 @@
+import { MENU_LIST } from "@src/constants/menu";
+import React from "react";
+import Logo from "../Logo/Logo";
+import Menu from "../Menu/Menu";
+import styleNavigation from "./_navigation.module.scss";
+
+const Navigation = () => {
+  return (
+    <nav className={styleNavigation.nav}>
+      <Logo />
+      <div>
+        <Menu type="dark" menuList={MENU_LIST} />
+      </div>
+    </nav>
+  );
+};
+
+export default Navigation;
