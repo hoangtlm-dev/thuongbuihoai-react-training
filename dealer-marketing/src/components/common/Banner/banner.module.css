@@ -1,7 +1,5 @@
 .banner__image {
   position: relative;
-  width: 100%;
-  height: auto;
   z-index: 5;
 }
 
@@ -11,4 +9,8 @@
   left: 40%;
   top: 35%;
   color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  width: 450px;
+  text-align: center;
 }
