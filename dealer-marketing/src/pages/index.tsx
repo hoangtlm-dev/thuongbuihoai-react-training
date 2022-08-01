@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Header from "@src/components/common/Header/Header";
+import Navigation from "@src/components/common/Navigation/Navigation";
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
 
       <main>
         <Header />
+        <Navigation />
       </main>
     </div>
   );
