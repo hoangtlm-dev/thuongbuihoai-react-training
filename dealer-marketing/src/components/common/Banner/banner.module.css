@@ -1,0 +1,14 @@
+.banner__image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 5;
+}
+
+.banner__title {
+  position: absolute;
+  z-index: 10;
+  left: 40%;
+  top: 35%;
+  color: #fff;
+}

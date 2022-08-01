@@ -1,7 +1,7 @@
 import { MENU_CONTACT } from "@src/constants/menu";
 import React from "react";
 import Menu from "../Menu/Menu";
-import headerStyle from "./_header.module.scss";
+import headerStyle from "./header.module.css";
 
 const Header = () => {
   return (

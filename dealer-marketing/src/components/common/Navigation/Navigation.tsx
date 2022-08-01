@@ -2,7 +2,7 @@ import { MENU_LIST } from "@src/constants/menu";
 import React from "react";
 import Logo from "../Logo/Logo";
 import Menu from "../Menu/Menu";
-import styleNavigation from "./_navigation.module.scss";
+import styleNavigation from "./navigation.module.css";
 
 const Navigation = () => {
   return (
