@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import { MenuProps, MenuType } from "@common-types/menu";
-import menuStyle from "./_menu.module.scss";
+import menuStyle from "./menu.module.css";
 
 const Menu: React.FC<MenuProps> = ({ menuList, type }) => {
   const className = useMemo(() => {
