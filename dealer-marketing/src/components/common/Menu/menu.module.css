@@ -1,22 +1,27 @@
-.menu__list {
+.menu-list {
   display: flex;
   justify-content: end;
 }
 
-.menu__item--light {
+.menu-item-light {
   color: #fff;
   list-style: none;
   padding: 0 10px;
 }
 
-.menu__item--dark {
+.menu-item-dark {
   color: black;
   text-transform: uppercase;
   padding: 0 12px;
 }
 
-.menu__item--light > a,
-.menu__item--dark > a {
+.menu-item-light > a,
+.menu-item-dark > a {
   color: inherit;
   text-decoration: none;
+}
+
+.menu-item-light > a:hover,
+.menu-item-dark > a:hover {
+  color: #efb145;
 }

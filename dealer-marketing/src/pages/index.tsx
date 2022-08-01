@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "@src/components/common/Header/Header";
 import Navigation from "@src/components/common/Navigation/Navigation";
 import Banner from "@src/components/common/Banner/Banner";
+import ResearchSection from "@src/sections/ResearchSection";
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
         <Header />
         <Navigation />
         <Banner />
+        <ResearchSection />
       </main>
     </div>
   );

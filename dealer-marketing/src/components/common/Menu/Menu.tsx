@@ -6,9 +6,9 @@ const Menu: React.FC<MenuProps> = ({ menuList, type }) => {
   const className = useMemo(() => {
     switch (type) {
       case "light":
-        return "menu__item--light";
+        return "menu-item-light";
       case "dark":
-        return "menu__item--dark";
+        return "menu-item-dark";
       default:
         return "";
     }
@@ -24,7 +24,7 @@ const Menu: React.FC<MenuProps> = ({ menuList, type }) => {
 
   return (
     <div className={menuStyle.menu}>
-      <ul className={menuStyle.menu__list}>{renderMenuList(menuList)}</ul>
+      <ul className={menuStyle["menu-list"]}>{renderMenuList(menuList)}</ul>
     </div>
   );
 };

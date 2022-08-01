@@ -1,13 +1,12 @@
-.banner__image {
+.banner {
   position: relative;
-  z-index: 5;
 }
 
-.banner__title {
+.banner-title {
   position: absolute;
   z-index: 10;
   left: 40%;
-  top: 35%;
+  top: 50%;
   color: #fff;
   font-size: 30px;
   font-weight: 700;

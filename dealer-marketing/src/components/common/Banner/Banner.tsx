@@ -5,7 +5,7 @@ import styleBanner from "./banner.module.css";
 const Banner = () => {
   return (
     <div className={styleBanner.banner}>
-      <div className={styleBanner.banner__image}>
+      <div className={styleBanner["banner-image"]}>
         <Image
           src="/images/backgrounds/home-page.avif"
           alt="This is banner home page"
@@ -13,7 +13,7 @@ const Banner = () => {
           height={480}
         />
       </div>
-      <h1 className={styleBanner.banner__title}>
+      <h1 className={styleBanner["banner-title"]}>
         Expert Automotive Knowledge at Your Fingertips
       </h1>
     </div>

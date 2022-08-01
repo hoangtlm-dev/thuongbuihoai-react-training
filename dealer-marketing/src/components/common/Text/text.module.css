@@ -1,0 +1,15 @@
+.text-normal {
+  color: #999;
+  font-size: 14px;
+}
+
+.text-medium {
+  color: #3c4858;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.text-large {
+  color: #fff;
+  font-size: 30px;
+}
