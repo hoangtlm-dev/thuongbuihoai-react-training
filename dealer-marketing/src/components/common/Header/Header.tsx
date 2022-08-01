@@ -6,7 +6,7 @@ import headerStyle from "./_header.module.scss";
 const Header = () => {
   return (
     <header className={headerStyle.header}>
-      <Menu menuList={MENU_CONTACT} />
+      <Menu type="light" menuList={MENU_CONTACT} />
     </header>
   );
 };
