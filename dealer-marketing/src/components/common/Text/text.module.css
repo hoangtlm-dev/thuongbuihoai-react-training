@@ -10,7 +10,8 @@
   -webkit-box-orient: vertical;
 }
 
-.text-medium {
+.text-medium,
+.text-medium-outline {
   display: -webkit-box;
   cursor: pointer;
   color: #3c4858;
@@ -24,7 +25,7 @@
   -webkit-box-orient: vertical;
 }
 
-.text-medium:hover {
+.text-medium-outline:hover {
   color: #efb145;
 }
 
