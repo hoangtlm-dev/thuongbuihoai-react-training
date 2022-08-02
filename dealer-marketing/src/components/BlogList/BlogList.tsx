@@ -3,7 +3,7 @@ import { BLOG_URL } from "@src/constants/url";
 import { getData } from "@src/helpers/fetchApi";
 import React from "react";
 import useSWR from "swr";
-import CartBlog from "../CartBlog/CartBlog";
+import CardBlog from "../CardBlog/CardBlog";
 import styleBlogList from "./blogList.module.css";
 
 const BlogList = () => {
@@ -13,7 +13,7 @@ const BlogList = () => {
     <div className={styleBlogList["blog-list"]}>
       {data?.map((blog) => (
         <div key={blog.blogId}>
-          <CartBlog blog={blog} />
+          <CardBlog blog={blog} />
         </div>
       ))}
     </div>
