@@ -1,0 +1,56 @@
+.expert {
+  background-image: url(/images/backgrounds/home-page-oto.avif);
+}
+
+.expert-title {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.expert-list {
+  display: flex;
+  padding: 0 90px 40px;
+  justify-content: space-between;
+}
+
+.expert-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 100px;
+  z-index: 5;
+  width: 350px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.expert-layout {
+  position: absolute;
+  left: 32%;
+  top: -25%;
+  z-index: 10;
+}
+
+.expert-image {
+  border-radius: 50%;
+}
+
+.expert-description {
+  cursor: pointer;
+  text-align: center;
+  color: #3c4858;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 90px 10px 20px;
+}
+
+.expert-contact {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.expert-image-contact {
+  cursor: pointer;
+  border-radius: 5px;
+}
