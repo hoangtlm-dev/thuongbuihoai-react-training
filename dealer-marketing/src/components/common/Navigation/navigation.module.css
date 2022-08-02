@@ -2,5 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 110px;
+  padding: 25px 120px;
+  background-color: #fff;
 }

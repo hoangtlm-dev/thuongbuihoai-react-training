@@ -4,7 +4,7 @@ import Logo from "../Logo/Logo";
 import Menu from "../Menu/Menu";
 import styleNavigation from "./navigation.module.css";
 
-const Navigation = () => {
+const Navigation: React.FC = () => {
   return (
     <nav className={styleNavigation.nav}>
       <Logo />
