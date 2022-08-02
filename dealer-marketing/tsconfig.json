@@ -21,7 +21,8 @@
       "@styles/*": ["src/styles/*"],
       "@components/*": ["src/components/*"],
       "@common-types/*": ["src/common-types/*"],
-      "@constants/*": ["src/constants/*"]
+      "@constants/*": ["src/constants/*"],
+      "@common/*": ["src/components/common/*"]
     }
   },
   "include": [
