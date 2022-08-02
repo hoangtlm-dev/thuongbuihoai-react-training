@@ -1,13 +1,18 @@
-.btn {
+.btn-primary,
+.btn-secondary {
   cursor: pointer;
-}
-
-.btn-primary {
   border: none;
   font-size: 11px;
   padding: 14px 27px;
   border-radius: 50px;
   color: #fff;
   text-transform: uppercase;
+}
+
+.btn-primary {
   background-color: #efb145;
+}
+
+.btn-secondary {
+  background-color: #e91e63;
 }

@@ -16,7 +16,7 @@ const Button: React.FC<ButtonProps> = ({ type, onClick, text, disable }) => {
       case "secondary":
         return `btn-${type}`;
       default:
-        return "btn";
+        return "";
     }
   }, [type]);
 
