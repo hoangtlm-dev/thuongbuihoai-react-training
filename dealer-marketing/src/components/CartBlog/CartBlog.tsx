@@ -1,5 +1,5 @@
 import React from "react";
-import ResearchSection from "@src/sections/ResearchSection";
+import ResearchSection from "@src/sections/ResearchSection/ResearchSection";
 import styleCartBlog from "./cartBlog.module.css";
 import { Blogs } from "@src/common-types/blog";
 
