@@ -1,12 +1,21 @@
 .text-normal {
   color: #999;
   font-size: 14px;
+  letter-spacing: -0.12222px;
+  line-height: 19px;
 }
 
 .text-medium {
+  cursor: pointer;
   color: #3c4858;
   font-size: 22px;
   font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+}
+
+.text-medium:hover {
+  color: #efb145;
 }
 
 .text-large {
