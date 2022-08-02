@@ -2,11 +2,15 @@
   position: relative;
 }
 
+.banner-image {
+  filter: grayscale(40%);
+}
+
 .banner-title {
   position: absolute;
   z-index: 10;
-  left: 40%;
-  top: 50%;
+  left: 35%;
+  top: 40%;
   color: #fff;
   font-size: 30px;
   font-weight: 700;
