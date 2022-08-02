@@ -1,0 +1,46 @@
+.research {
+  text-align: center;
+}
+
+.research-gird {
+  width: 350px;
+}
+
+.research-info {
+  padding-top: 100px;
+}
+
+.research-image {
+  border-radius: 5px;
+}
+
+.research-center {
+  padding: 0 260px;
+}
+
+.research-left {
+  text-align: left;
+}
+
+.research-title {
+  text-transform: uppercase;
+  color: #00bcd4;
+  margin: 20px 0;
+}
+
+.research-description {
+  margin: 10px 0 20px 0;
+}
+
+.research-author {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.research-author:hover {
+  color: #efb145;
+}
+
+.research-button {
+  margin: 40px 0 60px;
+}
