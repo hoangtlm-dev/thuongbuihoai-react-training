@@ -1,0 +1,49 @@
+{
+  "blogs": [
+    {
+      "blogId": "1",
+      "title": "Exploring Influential and Impactful Automotive Advertising Campaigns",
+      "createDate": "July 28, 2022",
+      "expertId": "Donna Welker",
+      "image": {
+        "url": "/images/past-present-future.avif",
+        "alt": "This is image past present future"
+      },
+      "description": "Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months. Nowhere is this more relevant than in the automotive industry, where new campaigns hold the potential to make or break a company. This article will explore some disruptive and impactful automotive marketing campaigns throughout the past century. We'll explore what made them successful and see how they changed the marketing landscape forever."
+    },
+    {
+      "blogId": "2",
+      "title": "How Do You Measure Up? Part Two",
+      "createDate": "July 26, 2022",
+      "expertId": "Adam Dennis",
+      "image": {
+        "url": "/images/star-down.avif",
+        "alt": "This is image start down"
+      },
+      "description": "In Part 1 of this two-part series on website ranking factors, we discussed Page Speed, Page Index, and Technical SEO scores. We look at the results of our AntiguRecon tool which surveyed over 35,000 dealer websites using Google’s algorithm to drive its calculations. We found that independent dealer websites tend to be faster than franchise websites and that we have some work to do if we want to improve our industry’s performance overall. In this article, we look at dealership website Accessibility and website design Best Practices scores. Let’s have some fun…"
+    },
+    {
+      "blogId": "3",
+      "title": "How Do You Measure Up?",
+      "createDate": "July 21, 2022",
+      "expertId": "Donna Welker",
+      "image": {
+        "url": "/images/star-up.avif",
+        "alt": "This is image past present future"
+      },
+      "description": "Google measures everything, from your website’s Page Speed Score, to your SEO or Best Practices Score. Why? Because from Google’s point of view, all of your website data feeds their algorithm’s ability to rank you relative to your competitors."
+    }
+  ],
+  "experts": [
+    {
+      "expertId": "1",
+      "name": "David Adcock",
+      "info": "Binary Auto",
+      "image": {
+        "url": "/images/avatar/adam-dennis.png",
+        "alt": "This is image of Mr adam-dennis"
+      },
+      "description": "Brent Albrecht is currently the Vice President of Business Development at Friendemic. Friendemic provides social media and online reputation services for clients and agencies across the globe. Specialties: Marketing Strategy, Product development and launch, Social Media Marketing, Business Development, Lead Generation, Sales Promotion, Digital Marketing, Database Marketing."
+    }
+  ]
+}
