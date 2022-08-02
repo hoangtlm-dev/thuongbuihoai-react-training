@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.research-gird {
+  padding: 0 90px;
+  width: 350px;
+}
+
 .research-info {
   padding-top: 100px;
 }
@@ -10,8 +15,12 @@
   border-radius: 5px;
 }
 
-.research-content {
+.research-center {
   padding: 0 260px;
+}
+
+.research-left {
+  text-align: left;
 }
 
 .research-title {
