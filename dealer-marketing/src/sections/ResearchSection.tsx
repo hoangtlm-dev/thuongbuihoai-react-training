@@ -3,12 +3,14 @@ import Image from "next/image";
 import Button from "@src/components/common/Button/Button";
 import Text from "@src/components/common/Text/Text";
 import styleResearch from "./researchSection.module.css";
+import { Blogs } from "@src/common-types/blog";
 
 interface ResearchProps {
   layout?: string;
   content?: string;
   imageSmall?: boolean;
   isButton?: boolean;
+  blog?: Blogs;
 }
 
 const ResearchSection: React.FC<ResearchProps> = ({
@@ -16,6 +18,7 @@ const ResearchSection: React.FC<ResearchProps> = ({
   imageSmall = false,
   content = "center",
   isButton = true,
+  blog,
 }) => {
   const layoutContent = useMemo(() => {
     switch (content) {
@@ -44,8 +47,8 @@ const ResearchSection: React.FC<ResearchProps> = ({
       <div className={styleResearch["research-info"]}>
         {imageSmall ? (
           <Image
-            src="/images/past-present-future.avif"
-            alt="This is image past present future"
+            src={blog?.image.url}
+            alt={blog?.image.alt}
             className={styleResearch["research-image"]}
             width={350}
             height={210}
@@ -64,19 +67,27 @@ const ResearchSection: React.FC<ResearchProps> = ({
           <div className={styleResearch["research-heading"]}>
             <Text
               size="medium"
-              text="Exploring Influential and Impactful Automotive Advertising Campaigns"
+              text={
+                blog
+                  ? blog?.title
+                  : "Exploring Influential and Impactful Automotive Advertising Campaigns"
+              }
             />
           </div>
           <p className={styleResearch["research-description"]}>
             By{" "}
             <span className={styleResearch["research-author"]}>
-              Donna Welker{" "}
+              {blog ? blog.expertId : "Donna Welker"}{" "}
             </span>
-            - July 28, 2022
+            - <span>{blog ? blog?.createDate : "July 28, 2022"}</span>
           </p>
           <Text
             size="normal"
-            text="A look at the past, present and future of disruptive marketing in the auto industry Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months...."
+            text={
+              blog
+                ? blog?.description
+                : "A look at the past, present and future of disruptive marketing in the auto industry Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months...."
+            }
           />
           <div className={styleResearch["research-button"]}>
             {isButton ? <Button type="primary" text="Read more" /> : ""}
