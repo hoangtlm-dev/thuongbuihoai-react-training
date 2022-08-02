@@ -7,12 +7,16 @@ html * {
   font-family: "RobotoSlab";
 }
 
+body {
+  background-color: #eee;
+}
+
 .container {
   position: absolute;
   z-index: 15;
   border-radius: 5px;
-  top: 50%;
-  left: 40px;
-  right: 40px;
+  top: 83%;
+  left: 30px;
+  right: 30px;
   background-color: #fff;
 }
