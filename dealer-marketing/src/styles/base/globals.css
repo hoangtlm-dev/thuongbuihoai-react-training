@@ -7,8 +7,19 @@ html * {
   font-family: "RobotoSlab";
 }
 
-body {
+body,
+.first-line,
+.secondary-line {
   background-color: #eee;
+}
+
+.first-line {
+  height: 20px;
+  margin-bottom: 40px;
+}
+
+.secondary-line {
+  height: 100px;
 }
 
 .container {
