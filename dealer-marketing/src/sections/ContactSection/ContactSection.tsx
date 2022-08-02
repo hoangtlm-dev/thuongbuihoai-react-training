@@ -19,7 +19,7 @@ const ContactSection = () => {
         <div className={styleContact["contact-submit"]}>
           <div className={styleContact["contact-input"]}>
             <i className="fa-solid fa-envelope"></i>
-            <Input type="text" placeholder="Your email" />
+            <Input type="text" placeholder="Your email..." />
           </div>
           <Button type="secondary" text="Subscribe" />
         </div>
