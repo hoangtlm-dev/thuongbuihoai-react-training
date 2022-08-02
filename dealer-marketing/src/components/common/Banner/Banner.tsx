@@ -9,7 +9,7 @@ const Banner = () => {
         <Image
           src="/images/backgrounds/home-page.avif"
           alt="This is banner home page"
-          width={1927}
+          width={1349}
           height={480}
         />
       </div>
