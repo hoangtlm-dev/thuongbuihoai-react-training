@@ -11,5 +11,28 @@
 }
 
 .research-content {
-  padding: 0 545px;
+  padding: 0 260px;
+}
+
+.research-title {
+  text-transform: uppercase;
+  color: #00bcd4;
+  margin: 20px 0;
+}
+
+.research-description {
+  margin: 10px 0 20px 0;
+}
+
+.research-author {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.research-author:hover {
+  color: #efb145;
+}
+
+.research-button {
+  margin: 40px 0 60px;
 }
