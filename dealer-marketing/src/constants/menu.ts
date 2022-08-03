@@ -9,7 +9,7 @@ const MENU_CONTACT: MenuType[] = [
   {
     key: "about",
     label: "About",
-    url: "/",
+    url: "/about-us",
   },
 ];
 
