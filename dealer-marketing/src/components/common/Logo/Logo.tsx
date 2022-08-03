@@ -3,12 +3,16 @@ import Image from "next/image";
 
 const Logo: React.FC = () => {
   return (
-    <Image
-      src="/images/logos/logo-dealer-marketing.svg"
-      alt="This is logo"
-      width={256}
-      height={43}
-    />
+    <figure>
+      <a href="/">
+        <Image
+          src="/images/logos/logo-dealer-marketing.svg"
+          alt="This is logo"
+          width={256}
+          height={43}
+        />
+      </a>
+    </figure>
   );
 };
 export default Logo;
