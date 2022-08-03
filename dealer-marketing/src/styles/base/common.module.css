@@ -2,6 +2,10 @@
   background-color: #fff;
 }
 
+.expert {
+  padding: 150px 120px 30px;
+}
+
 .heading {
   font-size: 30px;
   font-weight: 700;
@@ -18,10 +22,6 @@
 .description {
   text-align: center;
   padding: 70px 300px;
-}
-
-.expert {
-  padding: 150px 120px 30px;
 }
 
 .layout {
