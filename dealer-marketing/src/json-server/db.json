@@ -49,6 +49,7 @@
     {
       "expertId": "1",
       "name": "David Adcock",
+      "slug": "david-adcock",
       "info": "Binary Auto",
       "image": {
         "url": "/images/avatar/david-adcock.png",
@@ -59,6 +60,7 @@
     {
       "expertId": "2",
       "name": "Brent-Albrecht",
+      "slug": "brent-albrecht",
       "info": "Friendemic",
       "image": {
         "url": "/images/avatar/brent-albrecht.png",
@@ -69,6 +71,7 @@
     {
       "expertId": "3",
       "name": "Melanie-Borden",
+      "slug": "melanie-borden",
       "info": "Melanie Borden LLC",
       "image": {
         "url": "/images/avatar/melanie-borden.png",
@@ -79,6 +82,7 @@
     {
       "expertId": "4",
       "name": "Matt-Childers",
+      "slug": "matt-childers",
       "info": "DealersLink",
       "image": {
         "url": "/images/avatar/matt-childers.png",
