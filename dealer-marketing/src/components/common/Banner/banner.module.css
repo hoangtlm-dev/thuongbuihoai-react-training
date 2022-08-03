@@ -1,5 +1,6 @@
 .banner {
-  position: relative;
+  position: absolute;
+  z-index: 10;
 }
 
 .banner-image {
