@@ -1,0 +1,53 @@
+.card-expert {
+  position: relative;
+  z-index: 5;
+  width: 251px;
+  border: 2px solid #eee;
+}
+
+.card-layout {
+  position: absolute;
+  left: 25%;
+  top: -35%;
+  z-index: 10;
+}
+
+.card-image {
+  border-radius: 50%;
+}
+
+.card-description {
+  cursor: pointer;
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 100px 10px 10px;
+}
+
+.card-description:hover {
+  color: #efb145;
+}
+
+.card-info {
+  text-align: center;
+  color: #999;
+  font-size: 13px;
+}
+
+.card-button {
+  margin: 20px 0 15px;
+  text-align: center;
+}
+
+.card-button > button {
+  border: none;
+  background-color: #eee;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.card-button > button:hover {
+  color: #efb145;
+}
