@@ -3,6 +3,7 @@ import Image from "next/image";
 import styleCardExpert from "./cardExpert.module.css";
 import { Experts } from "@src/common-types/expert";
 import Button from "../common/Button/Button";
+import Link from "next/link";
 
 interface CardExpertProps {
   expert: Experts;
@@ -20,11 +21,15 @@ const CardExpert: React.FC<CardExpertProps> = ({ expert }) => {
           height={130}
         />
       </figure>
-      <p className={styleCardExpert["card-description"]}>{expert?.name}</p>
+      <Link href={`/expert-panel/${expert.slug}`}>
+        <p className={styleCardExpert["card-description"]}>{expert?.name}</p>
+      </Link>
       <p className={styleCardExpert["card-info"]}>{expert?.info}</p>
-      <div className={styleCardExpert["card-button"]}>
-        <Button icon />
-      </div>
+      <Link href={`/expert-panel/${expert.slug}`}>
+        <div className={styleCardExpert["card-button"]}>
+          <Button icon />
+        </div>
+      </Link>
     </div>
   );
 };
