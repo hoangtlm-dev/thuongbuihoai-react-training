@@ -1,29 +1,65 @@
-.ourExpert {
+.style-our-expert {
   background-color: #fff;
 }
 
-.expert {
+.style-expert {
   padding: 150px 120px 30px;
 }
 
-.heading {
+.style-heading {
   font-size: 30px;
   font-weight: 700;
   color: #3c4858;
   padding-bottom: 20px;
 }
 
-.navigation {
+.style-navigation {
   position: relative;
   z-index: 30;
   box-shadow: 0 4px 18px 0px rgb(0 0 0 / 12%), 0 7px 10px -5px rgb(0 0 0 / 15%);
 }
 
-.description {
+.style-description {
   text-align: center;
   padding: 70px 300px;
 }
 
-.layout {
+.style-layout {
   padding: 50px 90px;
+}
+
+.style-layout-image {
+  position: absolute;
+  z-index: 20;
+  left: 45%;
+  top: -25%;
+}
+
+.style-image {
+  border-radius: 50%;
+}
+
+.style-info {
+  text-align: center;
+  padding: 80px;
+}
+
+.style-name {
+  font-size: 24px;
+  color: #3c4858;
+  font-weight: 700;
+}
+
+.style-content {
+  font-family: "Roboto";
+  color: #3c4858;
+  margin: 20px;
+}
+
+.container-expert {
+  position: relative;
+  z-index: 15;
+  margin: 420px 30px 100px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
