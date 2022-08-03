@@ -3,7 +3,12 @@
   src: url(../../assets/fonts/RobotoSlab-Regular.ttf);
 }
 
-html * {
+@font-face {
+  font-family: "Roboto";
+  src: url(../../assets/fonts/Roboto-Regular.ttf);
+}
+
+html {
   font-family: "RobotoSlab";
 }
 
@@ -23,11 +28,10 @@ body,
 }
 
 .container {
-  position: absolute;
+  position: relative;
   z-index: 15;
   border-radius: 5px;
-  top: 83%;
-  left: 30px;
-  right: 30px;
+  margin: 420px 30px 100px;
   background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
