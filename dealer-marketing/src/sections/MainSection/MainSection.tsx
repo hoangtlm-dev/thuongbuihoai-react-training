@@ -11,6 +11,7 @@ const MainSection = () => {
       <BlogList />
       <ContactSection />
       <ExpertSection />
+      <BlogList />
     </div>
   );
 };
