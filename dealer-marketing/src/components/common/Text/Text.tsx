@@ -13,6 +13,8 @@ const Text: React.FC<TextProps> = ({ text, size = "normal" }) => {
         return "text-normal";
       case "regular":
         return "text-regular";
+      case "regular-dark":
+        return "text-regular-dark";
       case "medium":
         return "text-medium";
       case "medium-outline":
