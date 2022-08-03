@@ -5,10 +5,17 @@ interface ButtonProps {
   type?: string;
   text?: string;
   disable?: boolean;
+  icon?: boolean;
   onClick?: () => void;
 }
 
-const Button: React.FC<ButtonProps> = ({ type, onClick, text, disable }) => {
+const Button: React.FC<ButtonProps> = ({
+  type,
+  onClick,
+  text,
+  disable,
+  icon,
+}) => {
   const className = useMemo(() => {
     switch (type) {
       case "primary":
@@ -26,6 +33,7 @@ const Button: React.FC<ButtonProps> = ({ type, onClick, text, disable }) => {
       disabled={disable}
       onClick={onClick}>
       {text}
+      {icon && <i className="fa-solid fa-arrow-right"></i>}
     </button>
   );
 };
