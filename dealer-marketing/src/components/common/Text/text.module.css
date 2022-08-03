@@ -10,6 +10,13 @@
   -webkit-box-orient: vertical;
 }
 
+.text-regular {
+  color: #999;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+}
+
 .text-medium,
 .text-medium-outline {
   display: -webkit-box;
