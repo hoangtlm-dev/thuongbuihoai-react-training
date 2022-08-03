@@ -4,7 +4,7 @@ const MENU_CONTACT: MenuType[] = [
   {
     key: "our-experts",
     label: "Our Experts",
-    url: "/",
+    url: "/expert-panel",
   },
   {
     key: "about",
