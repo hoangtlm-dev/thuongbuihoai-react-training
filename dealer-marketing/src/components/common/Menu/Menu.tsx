@@ -9,6 +9,8 @@ const Menu: React.FC<MenuProps> = ({ menuList, type }) => {
         return "menu-item-light";
       case "dark":
         return "menu-item-dark";
+      case "normal":
+        return "menu-item-normal";
       default:
         return "";
     }

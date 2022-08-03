@@ -1,6 +1,5 @@
 .menu-list {
   display: flex;
-  justify-content: end;
 }
 
 .menu-item-light {
@@ -15,8 +14,18 @@
   padding: 0 12px;
 }
 
+.menu-item-normal {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  color: #eee;
+  padding: 0 10px;
+  font-family: "Roboto";
+}
+
 .menu-item-light > a,
-.menu-item-dark > a {
+.menu-item-dark > a,
+.menu-item-normal > a {
   color: inherit;
   text-decoration: none;
 }
@@ -24,4 +33,8 @@
 .menu-item-light > a:hover,
 .menu-item-dark > a:hover {
   color: #efb145;
+}
+
+.menu-item-normal > a:hover {
+  color: #fff;
 }
