@@ -2,16 +2,12 @@ import Head from "next/head";
 import React from "react";
 import useSWR from "swr";
 import Image from "next/image";
-import { Blogs } from "@src/common-types/blog";
-import { BLOG_URL } from "@src/constants/url";
-import { getData } from "@src/helpers/fetchApi";
 import { useRouter } from "next/router";
-import Banner from "@src/components/common/Banner/Banner";
-import Footer from "@src/components/common/Footer/Footer";
-import Header from "@src/components/common/Header/Header";
-import Navigation from "@src/components/common/Navigation/Navigation";
+import { BLOG_URL } from "@constants/url";
+import { getData } from "@helpers/fetchApi";
+import { Blogs } from "@common-types/blog";
+import { Banner, Footer, Header, Navigation, Text } from "@components/common";
 import style from "../styles/base/common.module.css";
-import Text from "@src/components/common/Text/Text";
 
 const BlogDetail = () => {
   const router = useRouter();

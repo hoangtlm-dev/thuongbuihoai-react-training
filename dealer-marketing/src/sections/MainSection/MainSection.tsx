@@ -1,8 +1,8 @@
 import React from "react";
-import BlogList from "@src/components/BlogList/BlogList";
-import ResearchSection from "../ResearchSection/ResearchSection";
-import ContactSection from "../ContactSection/ContactSection";
-import ExpertSection from "../ExpertSection/ExpertSection";
+import { BlogList } from "@components";
+import ContactSection from "@sections/ContactSection/ContactSection";
+import ExpertSection from "@sections/ExpertSection/ExpertSection";
+import ResearchSection from "@sections/ResearchSection/ResearchSection";
 
 const MainSection = () => {
   return (

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -17,12 +17,6 @@
     "incremental": true,
     "paths": {
       "@*": ["./*"],
-      "@pages/*": ["src/pages/*"],
-      "@styles/*": ["src/styles/*"],
-      "@components/*": ["src/components/*"],
-      "@common-types/*": ["src/common-types/*"],
-      "@constants/*": ["src/constants/*"],
-      "@common/*": ["src/components/common/*"]
     }
   },
   "include": [

@@ -1,9 +1,8 @@
 import React, { useMemo } from "react";
 import { useRouter } from "next/router";
-import { Blogs } from "@src/common-types/blog";
+import { Blogs } from "@common-types/blog";
+import { Button, Text } from "@components/common";
 import Image from "next/image";
-import Button from "@src/components/common/Button/Button";
-import Text from "@src/components/common/Text/Text";
 import styleResearch from "./researchSection.module.css";
 
 interface ResearchProps {

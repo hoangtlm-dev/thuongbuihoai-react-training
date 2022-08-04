@@ -1,8 +1,8 @@
 import React from "react";
 import useSWR from "swr";
-import { Blogs } from "@src/common-types/blog";
-import { BLOG_URL } from "@src/constants/url";
-import { getData } from "@src/helpers/fetchApi";
+import { Blogs } from "@common-types/blog";
+import { BLOG_URL } from "@constants/url";
+import { getData } from "@helpers/fetchApi";
 import CardBlog from "../CardBlog/CardBlog";
 import styleBlogList from "./blogList.module.css";
 

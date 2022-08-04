@@ -1,7 +1,7 @@
 import React from "react";
-import ResearchSection from "@src/sections/ResearchSection/ResearchSection";
+import { Blogs } from "@common-types/blog";
+import ResearchSection from "@sections/ResearchSection/ResearchSection";
 import styleCardBlog from "./cardBlog.module.css";
-import { Blogs } from "@src/common-types/blog";
 
 interface CartBlogProps {
   blog: Blogs;

@@ -1,7 +1,7 @@
-import { MENU_LIST } from "@src/constants/menu";
 import React from "react";
 import Logo from "../Logo/Logo";
 import Menu from "../Menu/Menu";
+import { MENU_LIST } from "@constants/menu";
 import styleNavigation from "./navigation.module.css";
 
 const Navigation: React.FC = () => {

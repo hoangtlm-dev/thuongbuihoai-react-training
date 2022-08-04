@@ -1,5 +1,5 @@
-import Text from "@src/components/common/Text/Text";
 import React from "react";
+import { Text } from "@components/common";
 import style from "../../styles/base/common.module.css";
 
 const AboutSection = () => {

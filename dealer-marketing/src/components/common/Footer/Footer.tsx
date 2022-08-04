@@ -1,7 +1,7 @@
-import { MENU_CONTACT, MENU_SERVICES } from "@src/constants/menu";
 import React from "react";
 import Menu from "../Menu/Menu";
 import styleFooter from "./footer.module.css";
+import { MENU_CONTACT, MENU_SERVICES } from "@constants/menu";
 
 const Footer: React.FC = () => {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import styleCardExpert from "./cardExpert.module.css";
-import { Experts } from "@src/common-types/expert";
-import Button from "../common/Button/Button";
 import Link from "next/link";
+import { Experts } from "@common-types/expert";
+import { Button } from "@components/common";
+import styleCardExpert from "./cardExpert.module.css";
 
 interface CardExpertProps {
   expert: Experts;

@@ -1,17 +1,13 @@
 import useSWR from "swr";
 import React from "react";
-import { useRouter } from "next/router";
-import { EXPERT_URL } from "@src/constants/url";
-import { getData } from "@src/helpers/fetchApi";
-import { Experts } from "@src/common-types/expert";
 import Head from "next/head";
-import Header from "@src/components/common/Header/Header";
-import Navigation from "@src/components/common/Navigation/Navigation";
-import Banner from "@src/components/common/Banner/Banner";
-import Footer from "@src/components/common/Footer/Footer";
-import style from "../../styles/base/common.module.css";
 import Image from "next/image";
-import Text from "@src/components/common/Text/Text";
+import { EXPERT_URL } from "@constants/url";
+import { getData } from "@helpers/fetchApi";
+import { Experts } from "@common-types/expert";
+import { Banner, Footer, Header, Navigation, Text } from "@components/common";
+import { useRouter } from "next/router";
+import style from "../../styles/base/common.module.css";
 
 const OurExpert = () => {
   const router = useRouter();

@@ -1,10 +1,7 @@
-import Banner from "@src/components/common/Banner/Banner";
-import Footer from "@src/components/common/Footer/Footer";
-import Header from "@src/components/common/Header/Header";
-import Navigation from "@src/components/common/Navigation/Navigation";
-import AboutSection from "@src/sections/AboutSection/AboutSection";
 import Head from "next/head";
 import React from "react";
+import AboutSection from "@sections/AboutSection/AboutSection";
+import { Banner, Footer, Header, Navigation } from "@components/common";
 
 const AboutPage = () => {
   return (

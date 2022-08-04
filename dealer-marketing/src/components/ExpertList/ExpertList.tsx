@@ -1,8 +1,8 @@
 import React from "react";
 import useSWR from "swr";
-import { Experts } from "@src/common-types/expert";
-import { EXPERT_URL } from "@src/constants/url";
-import { getData } from "@src/helpers/fetchApi";
+import { Experts } from "@common-types/expert";
+import { EXPERT_URL } from "@constants/url";
+import { getData } from "@helpers/fetchApi";
 import CardExpert from "../CardExpert/CardExpert";
 import styleExpertList from "./expertList.module.css";
 
