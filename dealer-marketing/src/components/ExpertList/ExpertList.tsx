@@ -1,17 +1,23 @@
-import React from "react";
 import useSWR from "swr";
+import React, { useContext, useEffect } from "react";
 import { Experts } from "@common-types/expert";
 import { EXPERT_URL } from "@constants/url";
 import { getData } from "@helpers/fetchApi";
+import { DataContext } from "@context/DataContext";
 import CardExpert from "../CardExpert/CardExpert";
 import styleExpertList from "./expertList.module.css";
 
 const ExpertList = () => {
+  const { experts, setExperts } = useContext(DataContext);
   const { data } = useSWR(EXPERT_URL, getData<Experts[]>);
+
+  useEffect(() => {
+    setExperts(data);
+  }, [data]);
 
   return (
     <div className={styleExpertList["expert-list"]}>
-      {data?.map((expert) => (
+      {experts?.map((expert) => (
         <div key={expert.expertId}>
           <CardExpert expert={expert} />
         </div>
