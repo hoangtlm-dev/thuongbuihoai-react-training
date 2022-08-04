@@ -3,5 +3,31 @@
   justify-content: space-between;
   align-items: center;
   padding: 25px 120px;
+  background-color: #f8f9f9;
+}
+
+.nav-info {
+  display: flex;
+}
+
+.nav-info > i {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.nav-search {
+  position: absolute;
+  z-index: 15;
+  top: 15%;
+  right: 10%;
+  padding: 7px;
+  border-radius: 5px;
   background-color: #fff;
+}
+
+.nav-search > input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1.5px solid #eee;
 }
