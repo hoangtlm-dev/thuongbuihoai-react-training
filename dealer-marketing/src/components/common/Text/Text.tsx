@@ -21,6 +21,8 @@ const Text: React.FC<TextProps> = ({ text, size = "normal" }) => {
         return "text-medium-outline";
       case "large":
         return "text-large";
+      case "large-dark":
+        return "text-large-dark";
       default:
         return "";
     }
