@@ -16,6 +16,8 @@ const Banner: React.FC<BannerProps> = ({ url, text }) => {
           alt="This is banner home page"
           width={1349}
           height={480}
+          placeholder="blur"
+          blurDataURL="/images/backgrounds/blur.jpg"
         />
       </div>
       <h1 className={styleBanner["banner-title"]}>{text}</h1>

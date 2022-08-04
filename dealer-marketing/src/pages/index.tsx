@@ -1,5 +1,5 @@
-import type { NextPage } from "next";
 import Head from "next/head";
+import type { NextPage } from "next";
 import MainSection from "@sections/MainSection/MainSection";
 import { Banner, Footer, Header, Navigation } from "@components/common";
 

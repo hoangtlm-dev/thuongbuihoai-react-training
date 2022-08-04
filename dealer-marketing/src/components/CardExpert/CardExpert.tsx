@@ -19,6 +19,8 @@ const CardExpert: React.FC<CardExpertProps> = ({ expert }) => {
           className={styleCardExpert["card-image"]}
           width={130}
           height={130}
+          placeholder="blur"
+          blurDataURL="/images/blur.jfif"
         />
       </figure>
       <Link href={`/expert-panel/${expert.slug}`}>

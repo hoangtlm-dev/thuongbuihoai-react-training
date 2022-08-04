@@ -56,6 +56,8 @@ const BlogDetail = () => {
                   className={style["style-image"]}
                   width={60}
                   height={60}
+                  placeholder="blur"
+                  blurDataURL="/images/blur.jfif"
                 />
               </figure>
               <div className={style["style-funeral"]}>

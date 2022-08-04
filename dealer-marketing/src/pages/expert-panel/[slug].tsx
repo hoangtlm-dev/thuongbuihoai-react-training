@@ -39,6 +39,8 @@ const OurExpert = () => {
             className={style["style-image"]}
             width={130}
             height={130}
+            placeholder="blur"
+            blurDataURL="/images/blur.jfif"
           />
         </figure>
         <div className={style["style-info"]}>

@@ -10,6 +10,8 @@ const Logo: React.FC = () => {
           alt="This is logo"
           width={256}
           height={43}
+          placeholder="blur"
+          blurDataURL="/images/blur.jfif"
         />
       </a>
     </figure>
