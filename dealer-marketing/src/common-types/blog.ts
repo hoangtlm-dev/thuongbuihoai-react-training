@@ -2,7 +2,7 @@ export interface Blogs {
   blogId: string;
   title: string;
   slug: string;
-  createDate: any;
+  createDate: string;
   expertId: string;
   image: {
     url: any;
