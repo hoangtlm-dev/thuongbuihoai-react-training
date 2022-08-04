@@ -4,6 +4,7 @@ import { Blogs } from "@src/common-types/blog";
 import Button from "@src/components/common/Button/Button";
 import Text from "@src/components/common/Text/Text";
 import styleResearch from "./researchSection.module.css";
+import Link from "next/link";
 
 interface ResearchProps {
   layout?: string;
@@ -65,14 +66,16 @@ const ResearchSection: React.FC<ResearchProps> = ({
         <div className={styleResearch[layoutContent]}>
           <p className={styleResearch["research-title"]}>Research & analysis</p>
           <div className={styleResearch["research-heading"]}>
-            <Text
-              size="medium-outline"
-              text={
-                blog
-                  ? blog?.title
-                  : "Exploring Influential and Impactful Automotive Advertising Campaigns"
-              }
-            />
+            <Link href={`/blogs/${blog?.slug}`}>
+              <Text
+                size="medium-outline"
+                text={
+                  blog
+                    ? blog?.title
+                    : "Exploring Influential and Impactful Automotive Advertising Campaigns"
+                }
+              />
+            </Link>
           </div>
           <p className={styleResearch["research-description"]}>
             By{" "}
