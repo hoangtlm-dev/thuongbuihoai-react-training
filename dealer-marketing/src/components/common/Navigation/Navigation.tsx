@@ -7,16 +7,13 @@ import styleNavigation from "./navigation.module.css";
 
 const Navigation: React.FC = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);
-  const { searchValue, blogs, setBlogs } = useContext(DataContext);
+  const { setSearchValue } = useContext(DataContext);
   const handleToggleModal = useCallback(() => {
     setOpenModal(!openModal);
   }, [openModal]);
-
   const handleSearch = (event: { target: { value: string } }) => {
     const value = event.target.value;
-    const newBlogs = blogs.filter(function (blogs) {
-      return blogs.title == value;
-    });
+    setSearchValue(value);
   };
 
   return (
