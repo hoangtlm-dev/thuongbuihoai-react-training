@@ -1,7 +1,5 @@
 import React from "react";
-import Button from "@src/components/common/Button/Button";
-import Input from "@src/components/common/Input/Input";
-import Text from "@src/components/common/Text/Text";
+import { Text, Input, Button } from "@components/common";
 import styleContact from "./contactSection.module.css";
 
 const ContactSection = () => {

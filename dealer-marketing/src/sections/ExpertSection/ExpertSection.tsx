@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Text from "@src/components/common/Text/Text";
+import { Text } from "@components/common";
 import styleExpertSection from "./expertSection.module.css";
 
 const ExpertSection = () => {
@@ -18,6 +18,8 @@ const ExpertSection = () => {
               className={styleExpertSection["expert-image"]}
               width={130}
               height={130}
+              placeholder="blur"
+              blurDataURL="/images/blur.jfif"
             />
           </figure>
           <p className={styleExpertSection["expert-description"]}>
@@ -31,6 +33,8 @@ const ExpertSection = () => {
               className={styleExpertSection["expert-image-contact"]}
               width={135}
               height={60}
+              placeholder="blur"
+              blurDataURL="/images/blur.jfif"
             />
           </figure>
         </div>
@@ -42,6 +46,8 @@ const ExpertSection = () => {
               className={styleExpertSection["expert-image"]}
               width={130}
               height={130}
+              placeholder="blur"
+              blurDataURL="/images/blur.jfif"
             />
           </figure>
           <p className={styleExpertSection["expert-description"]}>
@@ -54,6 +60,8 @@ const ExpertSection = () => {
               className={styleExpertSection["expert-image-contact"]}
               width={135}
               height={60}
+              placeholder="blur"
+              blurDataURL="/images/blur.jfif"
             />
           </figure>
         </div>
@@ -65,6 +73,8 @@ const ExpertSection = () => {
               className={styleExpertSection["expert-image"]}
               width={130}
               height={130}
+              placeholder="blur"
+              blurDataURL="/images/blur.jfif"
             />
           </figure>
           <p className={styleExpertSection["expert-description"]}>
@@ -77,6 +87,8 @@ const ExpertSection = () => {
               className={styleExpertSection["expert-image-contact"]}
               width={135}
               height={60}
+              placeholder="blur"
+              blurDataURL="/images/blur.jfif"
             />
           </figure>
         </div>
