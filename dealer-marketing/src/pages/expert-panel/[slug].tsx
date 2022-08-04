@@ -23,7 +23,6 @@ const OurExpert = () => {
     description = "",
     image = { url: "/images/avatar/matt-childers.png", alt: "" },
   } = data ? data[0] : {};
-  console.log("data", data);
 
   return (
     <div>
