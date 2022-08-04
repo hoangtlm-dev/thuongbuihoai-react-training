@@ -1,8 +1,13 @@
-import "../styles/main.css";
 import type { AppProps } from "next/app";
+import { DataProvider } from "@context/DataContext";
+import "../styles/main.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <DataProvider>
+      <Component {...pageProps} />
+    </DataProvider>
+  );
 }
 
 export default MyApp;
