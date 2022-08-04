@@ -22,7 +22,7 @@
   z-index: 5;
   width: 350px;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: var(--light);
 }
 
 .expert-layout {
@@ -39,7 +39,7 @@
 .expert-description {
   cursor: pointer;
   text-align: center;
-  color: #3c4858;
+  color: var(--text-secondary);
   font-size: 18px;
   font-weight: 700;
   padding: 90px 10px 20px;

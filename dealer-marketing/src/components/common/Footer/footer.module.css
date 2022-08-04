@@ -1,12 +1,12 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  background-color: #000;
+  background-color: var(--dark);
   padding: 35px 100px;
 }
 
 .footer-title {
-  color: #eee;
+  color: var(--border-primary);
   font-size: 12px;
   text-align: end;
   margin-top: 25px;

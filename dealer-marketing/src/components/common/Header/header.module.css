@@ -1,6 +1,6 @@
 .header {
   padding: 11px 100px;
-  background-color: black;
+  background-color: var(--dark);
 }
 
 .header-contact {

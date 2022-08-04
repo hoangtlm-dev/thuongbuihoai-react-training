@@ -3,13 +3,13 @@
 }
 
 .menu-item-light {
-  color: #fff;
+  color: var(--light);
   list-style: none;
   padding: 0 10px;
 }
 
 .menu-item-dark {
-  color: black;
+  color: var(--dark);
   text-transform: uppercase;
   padding: 0 12px;
 }
@@ -18,7 +18,7 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
-  color: #eee;
+  color: var(--border-primary);
   padding: 0 10px;
   font-family: "Roboto";
 }
@@ -32,9 +32,9 @@
 
 .menu-item-light > a:hover,
 .menu-item-dark > a:hover {
-  color: #efb145;
+  color: var(--bg-primary);
 }
 
 .menu-item-normal > a:hover {
-  color: #fff;
+  color: var(--light);
 }

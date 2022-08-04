@@ -5,14 +5,14 @@
   font-size: 11px;
   padding: 14px 27px;
   border-radius: 50px;
-  color: #fff;
+  color: var(--light);
   text-transform: uppercase;
 }
 
 .btn-primary {
-  background-color: #efb145;
+  background-color: var(--bg-primary);
 }
 
 .btn-secondary {
-  background-color: #e91e63;
+  background-color: var(--bg-secondary);
 }

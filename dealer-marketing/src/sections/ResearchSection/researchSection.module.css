@@ -26,7 +26,7 @@
 
 .research-title {
   text-transform: uppercase;
-  color: #00bcd4;
+  color: var(--text-third);
   margin: 20px 0;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .research-author:hover {
-  color: #efb145;
+  color: var(--bg-primary);
 }
 
 .research-button {

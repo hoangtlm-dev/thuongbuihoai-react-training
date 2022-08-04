@@ -1,6 +1,6 @@
 .text-normal {
   display: -webkit-box;
-  color: #999;
+  color: var(--text-primary);
   font-size: 14px;
   letter-spacing: -0.12222px;
   line-height: 19px;
@@ -11,7 +11,7 @@
 }
 
 .text-regular {
-  color: #999;
+  color: var(--text-primary);
   font-size: 15px;
   letter-spacing: 0.5px;
   line-height: 22px;
@@ -19,14 +19,14 @@
 
 .text-regular-dark {
   font-size: 14px;
-  color: #3c4858;
+  color: var(--text-secondary);
   font-family: "Roboto";
 }
 
 .text-large-dark {
   font-size: 30px;
   text-align: left;
-  color: #3c4858;
+  color: var(--text-secondary);
   font-weight: 700;
   line-height: 38px;
 }
@@ -35,7 +35,7 @@
 .text-medium-outline {
   display: -webkit-box;
   cursor: pointer;
-  color: #3c4858;
+  color: var(--text-secondary);
   font-size: 22px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -47,11 +47,11 @@
 }
 
 .text-medium-outline:hover {
-  color: #efb145;
+  color: var(--bg-primary);
 }
 
 .text-large {
-  color: #fff;
+  color: var(--light);
   font-size: 30px;
   font-weight: 700;
 }

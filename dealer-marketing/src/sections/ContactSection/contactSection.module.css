@@ -6,7 +6,7 @@
 
 .contact-description {
   font-size: 14px;
-  color: #3c4858;
+  color: var(--text-secondary);
   margin: 30px 0 10px;
 }
 
@@ -22,15 +22,15 @@
   align-items: center;
   margin-left: 20px;
   width: 370px;
-  border-bottom: 1px solid #3c4858;
+  border-bottom: 1px solid var(--text-secondary);
 }
 
 .contact-input > i {
   font-size: 20px;
-  color: #3c4858;
+  color: var(--text-secondary);
   margin-right: 10px;
 }
 
 .contact-input:hover {
-  border-bottom: 2px solid #3c4858;
+  border-bottom: 2px solid var(--text-secondary);
 }

@@ -2,7 +2,7 @@
   position: relative;
   z-index: 5;
   width: 251px;
-  border: 2px solid #eee;
+  border: 2px solid var(--border-primary);
 }
 
 .card-layout {
@@ -19,19 +19,19 @@
 .card-description {
   cursor: pointer;
   text-align: center;
-  color: #000;
+  color: var(--dark);
   font-size: 18px;
   font-weight: 700;
   padding: 100px 10px 10px;
 }
 
 .card-description:hover {
-  color: #efb145;
+  color: var(--bg-primary);
 }
 
 .card-info {
   text-align: center;
-  color: #999;
+  color: var(--text-primary);
   font-size: 13px;
 }
 
@@ -42,12 +42,12 @@
 
 .card-button > button {
   border: none;
-  background-color: #eee;
+  background-color: var(--border-primary);
   border-radius: 50%;
   width: 30px;
   height: 30px;
 }
 
 .card-button > button:hover {
-  color: #efb145;
+  color: var(--bg-primary);
 }
