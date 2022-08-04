@@ -46,3 +46,10 @@
 .research-button {
   margin-top: 40px;
 }
+
+.research-heading > button {
+  border: none;
+  font-family: "RobotoSlab";
+  background-color: transparent;
+  padding: 0;
+}

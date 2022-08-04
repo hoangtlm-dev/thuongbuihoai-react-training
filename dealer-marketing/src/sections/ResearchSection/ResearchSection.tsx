@@ -1,10 +1,10 @@
 import React, { useMemo } from "react";
-import Image from "next/image";
+import { useRouter } from "next/router";
 import { Blogs } from "@src/common-types/blog";
+import Image from "next/image";
 import Button from "@src/components/common/Button/Button";
 import Text from "@src/components/common/Text/Text";
 import styleResearch from "./researchSection.module.css";
-import Link from "next/link";
 
 interface ResearchProps {
   layout?: string;
@@ -21,6 +21,7 @@ const ResearchSection: React.FC<ResearchProps> = ({
   isButton = true,
   blog,
 }) => {
+  const router = useRouter();
   const layoutContent = useMemo(() => {
     switch (content) {
       case "center":
@@ -66,7 +67,7 @@ const ResearchSection: React.FC<ResearchProps> = ({
         <div className={styleResearch[layoutContent]}>
           <p className={styleResearch["research-title"]}>Research & analysis</p>
           <div className={styleResearch["research-heading"]}>
-            <Link href={`/blogs/${blog?.slug}`}>
+            <a onClick={() => router.push(`/${blog?.slug}`)}>
               <Text
                 size="medium-outline"
                 text={
@@ -75,7 +76,7 @@ const ResearchSection: React.FC<ResearchProps> = ({
                     : "Exploring Influential and Impactful Automotive Advertising Campaigns"
                 }
               />
-            </Link>
+            </a>
           </div>
           <p className={styleResearch["research-description"]}>
             By{" "}
