@@ -13,6 +13,14 @@
   padding-bottom: 20px;
 }
 
+.style-card {
+  display: flex;
+}
+
+.style-title {
+  width: 750px;
+}
+
 .style-navigation {
   position: relative;
   z-index: 30;
@@ -54,6 +62,26 @@
   font-family: "Roboto";
   color: #3c4858;
   margin: 20px;
+}
+
+.style-author {
+  display: flex;
+  align-items: center;
+  margin-right: 90px;
+}
+
+.style-funeral > p {
+  margin: 0 0 10px 20px;
+  font-size: 14px;
+  font-family: "Roboto";
+}
+
+.style-funeral > p > span {
+  font-weight: 700;
+}
+
+.style-info-regular {
+  text-align: left;
 }
 
 .container-expert {
