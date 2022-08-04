@@ -18,13 +18,14 @@ const BlogDetail = () => {
   const { slug } = router.query;
   const { data } = useSWR(BLOG_URL + "?slug=" + slug, getData<Blogs[]>);
   const {
-    createDate = "",
-    description = "",
-    image = { url: "/images/avatar/matt-childers.png", alt: "" },
     title = "",
     expertId = "",
+    createDate = "",
+    description = "",
+    image = { url: "/images/past-present-future.avif", alt: "" },
   } = data ? data[0] : {};
-  console.log("data", BLOG_URL + "?slug=" + slug, getData<Blogs[]>);
+
+  console.log("data", data);
 
   return (
     <div>
@@ -43,37 +44,36 @@ const BlogDetail = () => {
 
       <Header />
       <Navigation />
-      <Banner url="/images/backgrounds/bg-oto.jpg" text="" />
-      <div className={style["container-expert"]}>
-        <figure className={style["style-layout-image"]}>
-          <Image
-            src={image.url}
-            alt={image.alt}
-            className={style["style-image"]}
-            width={130}
-            height={130}
-          />
-        </figure>
+      <Banner url={image.url} text="" />
+      <div className="container">
         <div className={style["style-info"]}>
-          <div>
-            <Text size="medium-dark" text={title} />
-            <div>
-              <figure className={style["style-layout-image"]}>
+          <div className={style["style-card"]}>
+            <div className={style["style-title"]}>
+              <Text size="large-dark" text={title} />
+            </div>
+            <hr />
+            <div className={style["style-author"]}>
+              <figure>
                 <Image
                   src={image.url}
                   alt={image.alt}
                   className={style["style-image"]}
-                  width={130}
-                  height={130}
+                  width={60}
+                  height={60}
                 />
               </figure>
-              <p>
-                by <strong>{expertId}</strong>
-                <span>{createDate}</span>
-              </p>
+              <div className={style["style-funeral"]}>
+                <p>
+                  by <span>{expertId}</span>
+                </p>
+                <p>{createDate}</p>
+              </div>
             </div>
           </div>
-          <Text size="regular" text={description} />
+          <hr />
+          <div className={style["style-info-regular"]}>
+            <Text size="regular" text={description} />
+          </div>
         </div>
       </div>
       <Footer />
