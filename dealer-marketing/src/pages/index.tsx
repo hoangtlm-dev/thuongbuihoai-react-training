@@ -1,7 +1,9 @@
 import Head from "next/head";
 import type { NextPage } from "next";
+import { Banner, Navigation } from "@components/common";
+import Header from "@sections/Header/Header";
+import Footer from "@sections/Footer/Footer";
 import MainSection from "@sections/MainSection/MainSection";
-import { Banner, Footer, Header, Navigation } from "@components/common";
 
 const Home: NextPage = () => {
   return (

@@ -6,8 +6,10 @@ import { useRouter } from "next/router";
 import { BLOG_URL } from "@constants/url";
 import { getData } from "@helpers/fetchApi";
 import { Blog } from "@common-types/blog";
-import { Banner, Footer, Header, Navigation, Text } from "@components/common";
+import { Banner, Navigation, Text } from "@components/common";
 import style from "../styles/base/common.module.css";
+import Header from "@sections/Header/Header";
+import Footer from "@sections/Footer/Footer";
 
 const BlogDetail = () => {
   const router = useRouter();

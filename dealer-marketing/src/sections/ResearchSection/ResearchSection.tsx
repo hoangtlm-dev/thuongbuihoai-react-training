@@ -19,14 +19,16 @@ const ResearchSection: React.FC<ResearchProps> = ({
   content = "center",
   isButton = true,
   blog = {
-    createDate: "",
-    description: "",
-    expertId: "",
+    createDate: "July 28, 2022",
+    description:
+      "A look at the past, present and future of disruptive marketing in the auto industry Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months....",
+    expertId: "Donna Welker",
     image: {
       url: "",
       alt: "",
     },
-    title: "",
+    title:
+      "Exploring Influential and Impactful Automotive Advertising Campaigns",
     slug: "",
   },
 }) => {
@@ -81,31 +83,17 @@ const ResearchSection: React.FC<ResearchProps> = ({
           <p className={styleResearch["research-title"]}>Research & analysis</p>
           <div className={styleResearch["research-heading"]}>
             <a onClick={() => router.push(`/${blog?.slug}`)}>
-              <Text
-                size="medium-outline"
-                text={
-                  blog
-                    ? blog?.title
-                    : "Exploring Influential and Impactful Automotive Advertising Campaigns"
-                }
-              />
+              <Text size="medium-outline" text={blog?.title} />
             </a>
           </div>
           <p className={styleResearch["research-description"]}>
             By{" "}
             <span className={styleResearch["research-author"]}>
-              {blog ? blog.expertId : "Donna Welker"}{" "}
+              {blog.expertId}{" "}
             </span>
-            - <span>{blog ? blog?.createDate : "July 28, 2022"}</span>
+            - <span>{blog?.createDate}</span>
           </p>
-          <Text
-            size="normal"
-            text={
-              blog
-                ? blog?.description
-                : "A look at the past, present and future of disruptive marketing in the auto industry Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months...."
-            }
-          />
+          <Text size="normal" text={blog?.description} />
           <div className={styleResearch["research-button"]}>
             {isButton ? <Button type="primary" text="Read more" /> : ""}
           </div>

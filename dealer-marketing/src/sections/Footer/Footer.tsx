@@ -1,7 +1,7 @@
 import React from "react";
-import Menu from "../Menu/Menu";
 import styleFooter from "./footer.module.css";
 import { MENU_CONTACT, MENU_SERVICES } from "@constants/menu";
+import { Menu } from "@components/common";
 
 const Footer: React.FC = () => {
   return (

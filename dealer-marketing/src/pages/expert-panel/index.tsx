@@ -1,8 +1,10 @@
 import React from "react";
 import Head from "next/head";
-import style from "../../styles/base/common.module.css";
-import { Footer, Header, Navigation, Text } from "@components/common";
+import Header from "@sections/Header/Header";
+import Footer from "@sections/Footer/Footer";
+import { Navigation, Text } from "@components/common";
 import { ExpertList } from "@components";
+import style from "../../styles/base/common.module.css";
 
 const OurExpertPage = () => {
   return (

@@ -1,7 +1,9 @@
 import Head from "next/head";
 import React from "react";
+import Footer from "@sections/Footer/Footer";
+import Header from "@sections/Header/Header";
 import AboutSection from "@sections/AboutSection/AboutSection";
-import { Banner, Footer, Header, Navigation } from "@components/common";
+import { Banner, Navigation } from "@components/common";
 
 const AboutPage = () => {
   return (
