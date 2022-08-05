@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import { useRouter } from "next/router";
-import { Blogs } from "@common-types/blog";
+import { Blog } from "@common-types/blog";
 import { Button, Text } from "@components/common";
 import Image from "next/image";
 import styleResearch from "./researchSection.module.css";
@@ -10,7 +10,7 @@ interface ResearchProps {
   content?: string;
   imageSmall?: boolean;
   isButton?: boolean;
-  blog?: Blogs;
+  blog?: Blog;
 }
 
 const ResearchSection: React.FC<ResearchProps> = ({
@@ -18,7 +18,17 @@ const ResearchSection: React.FC<ResearchProps> = ({
   imageSmall = false,
   content = "center",
   isButton = true,
-  blog,
+  blog = {
+    createDate: "",
+    description: "",
+    expertId: "",
+    image: {
+      url: "",
+      alt: "",
+    },
+    title: "",
+    slug: "",
+  },
 }) => {
   const router = useRouter();
   const layoutContent = useMemo(() => {

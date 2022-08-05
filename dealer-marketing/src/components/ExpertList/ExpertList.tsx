@@ -1,6 +1,6 @@
 import useSWR from "swr";
 import React, { useContext, useEffect } from "react";
-import { Experts } from "@common-types/expert";
+import { Expert } from "@common-types/expert";
 import { EXPERT_URL } from "@constants/url";
 import { getData } from "@helpers/fetchApi";
 import { DataContext } from "@context/DataContext";
@@ -9,7 +9,7 @@ import styleExpertList from "./expertList.module.css";
 
 const ExpertList = () => {
   const { experts, setExperts } = useContext(DataContext);
-  const { data } = useSWR(EXPERT_URL, getData<Experts[]>);
+  const { data } = useSWR(EXPERT_URL, getData<Expert[]>);
 
   useEffect(() => {
     setExperts(data);

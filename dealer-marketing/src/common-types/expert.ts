@@ -1,4 +1,4 @@
-export interface Experts {
+export interface Expert {
   expertId: string;
   name: string;
   slug: string;

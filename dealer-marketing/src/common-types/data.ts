@@ -1,10 +1,10 @@
-import { Blogs } from "./blog";
-import { Experts } from "./expert";
+import { Blog } from "./blog";
+import { Expert } from "./expert";
 
 export interface DataContextProps {
-  experts: Experts[];
+  experts: Expert[];
   setExperts: Function;
-  blogs: Blogs[];
+  blogs: Blog[];
   setBlogs: Function;
   searchValue: string;
   setSearchValue: Function;

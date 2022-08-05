@@ -5,14 +5,14 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { BLOG_URL } from "@constants/url";
 import { getData } from "@helpers/fetchApi";
-import { Blogs } from "@common-types/blog";
+import { Blog } from "@common-types/blog";
 import { Banner, Footer, Header, Navigation, Text } from "@components/common";
 import style from "../styles/base/common.module.css";
 
 const BlogDetail = () => {
   const router = useRouter();
   const { slug } = router.query;
-  const { data } = useSWR(BLOG_URL + "?slug=" + slug, getData<Blogs[]>);
+  const { data } = useSWR(BLOG_URL + "?slug=" + slug, getData<Blog[]>);
   const {
     title = "",
     expertId = "",

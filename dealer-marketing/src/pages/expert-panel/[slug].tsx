@@ -4,7 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { EXPERT_URL } from "@constants/url";
 import { getData } from "@helpers/fetchApi";
-import { Experts } from "@common-types/expert";
+import { Expert } from "@common-types/expert";
 import { Banner, Footer, Header, Navigation, Text } from "@components/common";
 import { useRouter } from "next/router";
 import style from "../../styles/base/common.module.css";
@@ -12,7 +12,7 @@ import style from "../../styles/base/common.module.css";
 const OurExpert = () => {
   const router = useRouter();
   const { slug } = router.query;
-  const { data } = useSWR(EXPERT_URL + "?slug=" + slug, getData<Experts[]>);
+  const { data } = useSWR(EXPERT_URL + "?slug=" + slug, getData<Expert[]>);
   const {
     name = "",
     info = "",

@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Experts } from "@common-types/expert";
+import { Expert } from "@common-types/expert";
 import { Button } from "@components/common";
 import styleCardExpert from "./cardExpert.module.css";
 
 interface CardExpertProps {
-  expert: Experts;
+  expert: Expert;
 }
 
 const CardExpert: React.FC<CardExpertProps> = ({ expert }) => {

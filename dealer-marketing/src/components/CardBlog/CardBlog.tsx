@@ -1,10 +1,10 @@
 import React from "react";
-import { Blogs } from "@common-types/blog";
+import { Blog } from "@common-types/blog";
 import ResearchSection from "@sections/ResearchSection/ResearchSection";
 import styleCardBlog from "./cardBlog.module.css";
 
 interface CartBlogProps {
-  blog: Blogs;
+  blog: Blog;
 }
 
 const CartBlog: React.FC<CartBlogProps> = ({ blog }) => {
