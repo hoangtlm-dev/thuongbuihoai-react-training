@@ -20,7 +20,7 @@ const CardExpert: React.FC<CardExpertProps> = ({ expert }) => {
           width={130}
           height={130}
           placeholder="blur"
-          blurDataURL="/images/blur.jfif"
+          blurDataURL="/images/backgrounds/blur.jpg"
         />
       </figure>
       <Link href={`/expert-panel/${expert.slug}`}>

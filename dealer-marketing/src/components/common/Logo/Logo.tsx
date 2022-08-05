@@ -11,7 +11,7 @@ const Logo: React.FC = () => {
           width={256}
           height={43}
           placeholder="blur"
-          blurDataURL="/images/blur.jfif"
+          blurDataURL="/images/backgrounds/blur.jpg"
         />
       </a>
     </figure>

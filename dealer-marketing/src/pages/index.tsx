@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         <Header />
         <Navigation />
         <Banner
-          url="/images/backgrounds/home-page.avif"
+          url="/images/backgrounds/home-page.png"
           text="Expert Automotive Knowledge at Your Fingertips"
         />
         <MainSection />

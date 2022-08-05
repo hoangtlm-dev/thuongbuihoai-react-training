@@ -54,7 +54,7 @@ const ResearchSection: React.FC<ResearchProps> = ({
             width={350}
             height={210}
             placeholder="blur"
-            blurDataURL="/images/blur.jfif"
+            blurDataURL="/images/backgrounds/blur.jpg"
           />
         ) : (
           <Image
@@ -64,7 +64,7 @@ const ResearchSection: React.FC<ResearchProps> = ({
             width={730}
             height={438}
             placeholder="blur"
-            blurDataURL="/images/blur.jfif"
+            blurDataURL="/images/backgrounds/blur.jpg"
           />
         )}
         <div className={styleResearch[layoutContent]}>

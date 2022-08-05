@@ -19,7 +19,7 @@ const ExpertSection = () => {
               width={130}
               height={130}
               placeholder="blur"
-              blurDataURL="/images/blur.jfif"
+              blurDataURL="/images/backgrounds/blur.jpg"
             />
           </figure>
           <p className={styleExpertSection["expert-description"]}>
@@ -34,7 +34,7 @@ const ExpertSection = () => {
               width={135}
               height={60}
               placeholder="blur"
-              blurDataURL="/images/blur.jfif"
+              blurDataURL="/images/backgrounds/blur.jpg"
             />
           </figure>
         </div>
@@ -47,7 +47,7 @@ const ExpertSection = () => {
               width={130}
               height={130}
               placeholder="blur"
-              blurDataURL="/images/blur.jfif"
+              blurDataURL="/images/backgrounds/blur.jpg"
             />
           </figure>
           <p className={styleExpertSection["expert-description"]}>
@@ -61,7 +61,7 @@ const ExpertSection = () => {
               width={135}
               height={60}
               placeholder="blur"
-              blurDataURL="/images/blur.jfif"
+              blurDataURL="/images/backgrounds/blur.jpg"
             />
           </figure>
         </div>
@@ -74,7 +74,7 @@ const ExpertSection = () => {
               width={130}
               height={130}
               placeholder="blur"
-              blurDataURL="/images/blur.jfif"
+              blurDataURL="/images/backgrounds/blur.jpg"
             />
           </figure>
           <p className={styleExpertSection["expert-description"]}>
@@ -88,7 +88,7 @@ const ExpertSection = () => {
               width={135}
               height={60}
               placeholder="blur"
-              blurDataURL="/images/blur.jfif"
+              blurDataURL="/images/backgrounds/blur.jpg"
             />
           </figure>
         </div>

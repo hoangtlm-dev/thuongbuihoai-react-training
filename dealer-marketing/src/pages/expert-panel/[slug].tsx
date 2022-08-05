@@ -40,7 +40,7 @@ const OurExpert = () => {
             width={130}
             height={130}
             placeholder="blur"
-            blurDataURL="/images/blur.jfif"
+            blurDataURL="/images/backgrounds/blur.jpg"
           />
         </figure>
         <div className={style["style-info"]}>
