@@ -3,9 +3,9 @@ export interface Expert {
   name: string;
   slug: string;
   info: string;
-  image: {
+  image?: {
     url: string;
     alt: string;
   };
-  description: string;
+  description?: string;
 }
