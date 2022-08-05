@@ -8,8 +8,8 @@ import { Expert } from "@common-types/expert";
 import { Banner, Navigation, Text } from "@components/common";
 import { useRouter } from "next/router";
 import style from "../../styles/base/common.module.css";
-import Header from "@sections/Header/Header";
-import Footer from "@sections/Footer/Footer";
+import Header from "@sections/Header";
+import Footer from "@sections/Footer";
 
 const OurExpert = () => {
   const router = useRouter();

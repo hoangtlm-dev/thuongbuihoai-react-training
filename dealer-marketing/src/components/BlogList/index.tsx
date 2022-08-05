@@ -4,7 +4,7 @@ import { Blog } from "@common-types/blog";
 import { BLOG_URL } from "@constants/url";
 import { getData } from "@helpers/fetchApi";
 import { DataContext } from "@context/DataContext";
-import CardBlog from "../CardBlog/CardBlog";
+import CardBlog from "../CardBlog";
 import styleBlogList from "./blogList.module.css";
 
 const BlogList = () => {

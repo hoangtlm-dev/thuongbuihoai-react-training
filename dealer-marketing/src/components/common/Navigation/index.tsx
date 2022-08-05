@@ -1,8 +1,8 @@
 import React, { useCallback, useContext, useState } from "react";
 import { MENU_LIST } from "@constants/menu";
 import { DataContext } from "@context/DataContext";
-import Logo from "../Logo/Logo";
-import Menu from "../Menu/Menu";
+import Logo from "../Logo";
+import Menu from "../Menu";
 import styleNavigation from "./navigation.module.css";
 
 const Navigation: React.FC = () => {

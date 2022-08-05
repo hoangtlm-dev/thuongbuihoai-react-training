@@ -4,7 +4,7 @@ import { Expert } from "@common-types/expert";
 import { EXPERT_URL } from "@constants/url";
 import { getData } from "@helpers/fetchApi";
 import { DataContext } from "@context/DataContext";
-import CardExpert from "../CardExpert/CardExpert";
+import CardExpert from "../CardExpert";
 import styleExpertList from "./expertList.module.css";
 
 const ExpertList = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import Menu from "../../components/common/Menu/Menu";
+import Menu from "../../components/common/Menu";
 import { MENU_CONTACT } from "@constants/menu";
 import styleHeader from "./header.module.css";
 

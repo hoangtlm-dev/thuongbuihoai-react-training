@@ -8,8 +8,8 @@ import { getData } from "@helpers/fetchApi";
 import { Blog } from "@common-types/blog";
 import { Banner, Navigation, Text } from "@components/common";
 import style from "../styles/base/common.module.css";
-import Header from "@sections/Header/Header";
-import Footer from "@sections/Footer/Footer";
+import Header from "@sections/Header";
+import Footer from "@sections/Footer";
 
 const BlogDetail = () => {
   const router = useRouter();

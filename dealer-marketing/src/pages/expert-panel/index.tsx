@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
-import Header from "@sections/Header/Header";
-import Footer from "@sections/Footer/Footer";
+import Header from "@sections/Header";
+import Footer from "@sections/Footer";
 import { Navigation, Text } from "@components/common";
 import { ExpertList } from "@components";
 import style from "../../styles/base/common.module.css";

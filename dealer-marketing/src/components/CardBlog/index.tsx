@@ -1,6 +1,6 @@
 import React from "react";
 import { Blog } from "@common-types/blog";
-import ResearchSection from "@sections/ResearchSection/ResearchSection";
+import ResearchSection from "@sections/ResearchSection";
 import styleCardBlog from "./cardBlog.module.css";
 
 interface CartBlogProps {

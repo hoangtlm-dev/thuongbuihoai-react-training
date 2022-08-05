@@ -1,9 +1,9 @@
-import Banner from "./Banner/Banner";
-import Button from "./Button/Button";
-import Input from "./Input/Input";
-import Logo from "./Logo/Logo";
-import Menu from "./Menu/Menu";
-import Navigation from "./Navigation/Navigation";
-import Text from "./Text/Text";
+import Banner from "./Banner";
+import Button from "./Button";
+import Input from "./Input";
+import Logo from "./Logo";
+import Menu from "./Menu";
+import Navigation from "./Navigation";
+import Text from "./Text";
 
 export { Banner, Button, Input, Logo, Menu, Navigation, Text };
