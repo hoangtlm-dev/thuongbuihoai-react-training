@@ -21,7 +21,10 @@ const Navigation: React.FC = () => {
   return (
     <>
       <nav className={styleNavigation.nav}>
-        <Logo />
+        <Logo
+          url="/images/logos/logo-dealer-marketing.svg"
+          blurDataURL="/images/backgrounds/blur.jpg"
+        />
         <div className={styleNavigation["nav-info"]}>
           <Menu type="dark" menuList={MENU_LIST} />
           <i

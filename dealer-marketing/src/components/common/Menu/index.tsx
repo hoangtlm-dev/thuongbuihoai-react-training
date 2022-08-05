@@ -8,7 +8,7 @@ const classNameType = {
   normal: "menu-item-normal",
 };
 
-const Menu: React.FC<MenuProps> = ({ menuList, type }) => {
+const Menu: React.FC<MenuProps> = ({ menuList, type = "menu-item-light" }) => {
   const className = classNameType[type as keyof typeof classNameType] || "";
 
   const renderMenuList = (list: MenuType[]) => {

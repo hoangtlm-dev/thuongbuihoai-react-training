@@ -15,11 +15,11 @@ const classNameType = {
 };
 
 const Button: React.FC<ButtonProps> = ({
-  type,
+  type = "btn-primary",
   onClick,
   text,
-  disable,
-  icon,
+  disable = false,
+  icon = false,
 }) => {
   const className = classNameType[type as keyof typeof classNameType] || "";
 
