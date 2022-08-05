@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React from "react";
 import { useRouter } from "next/router";
 import { Blog } from "@common-types/blog";
 import { Button, Text } from "@components/common";
@@ -12,6 +12,16 @@ interface ResearchProps {
   isButton?: boolean;
   blog?: Blog;
 }
+
+const layoutContentType = {
+  center: "research-center",
+  left: "research-left",
+};
+
+const classNameType = {
+  center: "research",
+  gird: "research-gird",
+};
 
 const ResearchSection: React.FC<ResearchProps> = ({
   layout = "center",
@@ -33,27 +43,9 @@ const ResearchSection: React.FC<ResearchProps> = ({
   },
 }) => {
   const router = useRouter();
-  const layoutContent = useMemo(() => {
-    switch (content) {
-      case "center":
-        return "research-center";
-      case "left":
-        return "research-left";
-      default:
-        return "";
-    }
-  }, [content]);
-
-  const className = useMemo(() => {
-    switch (layout) {
-      case "center":
-        return "research";
-      case "gird":
-        return "research-gird";
-      default:
-        return "";
-    }
-  }, [layout]);
+  const layoutContent =
+    layoutContentType[content as keyof typeof layoutContentType] || "";
+  const className = classNameType[layout as keyof typeof classNameType] || "";
 
   return (
     <div className={styleResearch[className]}>
@@ -83,7 +75,7 @@ const ResearchSection: React.FC<ResearchProps> = ({
           <p className={styleResearch["research-title"]}>Research & analysis</p>
           <div className={styleResearch["research-heading"]}>
             <a onClick={() => router.push(`/${blog?.slug}`)}>
-              <Text size="medium-outline" text={blog?.title} />
+              <Text size="mediumOutline" text={blog?.title} />
             </a>
           </div>
           <p className={styleResearch["research-description"]}>

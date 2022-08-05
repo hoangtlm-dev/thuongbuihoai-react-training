@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React from "react";
 import styleButton from "./button.module.css";
 
 interface ButtonProps {
@@ -9,6 +9,11 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
+const classNameType = {
+  primary: "btn-primary",
+  secondary: "btn-secondary",
+};
+
 const Button: React.FC<ButtonProps> = ({
   type,
   onClick,
@@ -16,16 +21,7 @@ const Button: React.FC<ButtonProps> = ({
   disable,
   icon,
 }) => {
-  const className = useMemo(() => {
-    switch (type) {
-      case "primary":
-        return `btn-${type}`;
-      case "secondary":
-        return `btn-${type}`;
-      default:
-        return "";
-    }
-  }, [type]);
+  const className = classNameType[type as keyof typeof classNameType] || "";
 
   return (
     <button

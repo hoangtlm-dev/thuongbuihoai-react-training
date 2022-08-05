@@ -1,20 +1,15 @@
-import React, { useMemo } from "react";
+import React from "react";
 import { MenuProps, MenuType } from "@common-types/menu";
 import menuStyle from "./menu.module.css";
 
+const classNameType = {
+  light: "menu-item-light",
+  dark: "menu-item-dark",
+  normal: "menu-item-normal",
+};
+
 const Menu: React.FC<MenuProps> = ({ menuList, type }) => {
-  const className = useMemo(() => {
-    switch (type) {
-      case "light":
-        return "menu-item-light";
-      case "dark":
-        return "menu-item-dark";
-      case "normal":
-        return "menu-item-normal";
-      default:
-        return "";
-    }
-  }, [type]);
+  const className = classNameType[type as keyof typeof classNameType] || "";
 
   const renderMenuList = (list: MenuType[]) => {
     return list?.map((item) => (

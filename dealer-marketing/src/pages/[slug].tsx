@@ -47,7 +47,7 @@ const BlogDetail = () => {
         <div className={style["style-info"]}>
           <div className={style["style-card"]}>
             <div className={style["style-title"]}>
-              <Text size="large-dark" text={title} />
+              <Text size="largeDark" text={title} />
             </div>
             <hr />
             <div className={style["style-author"]}>
