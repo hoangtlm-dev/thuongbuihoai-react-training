@@ -61,14 +61,13 @@
 # INFORMATION .env.local file
 
 ```
-
 NEXT_PUBLIC_BASE_URL="http://localhost:1234"
 
 ```
 
-```
-  RUN
+# RUN
 
+```
 - Clone project:
 - git clone git@gitlab.asoft-python.com:thuong.buihoai/react-training.git
 - cd react-training
