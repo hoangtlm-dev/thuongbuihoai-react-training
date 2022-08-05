@@ -7,18 +7,16 @@ interface CartBlogProps {
   blog: Blog;
 }
 
-const CartBlog: React.FC<CartBlogProps> = ({ blog }) => {
-  return (
-    <div className={styleCardBlog["cart-blog"]}>
-      <ResearchSection
-        blog={blog}
-        content="left"
-        layout="gird"
-        isButton={false}
-        imageSmall={true}
-      />
-    </div>
-  );
-};
+const CartBlog: React.FC<CartBlogProps> = ({ blog }) => (
+  <div className={styleCardBlog["cart-blog"]}>
+    <ResearchSection
+      blog={blog}
+      content="left"
+      layout="gird"
+      isButton={false}
+      imageSmall={true}
+    />
+  </div>
+);
 
 export default CartBlog;

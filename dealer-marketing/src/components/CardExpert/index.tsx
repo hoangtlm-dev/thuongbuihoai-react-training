@@ -9,31 +9,29 @@ interface CardExpertProps {
   expert: Expert;
 }
 
-const CardExpert: React.FC<CardExpertProps> = ({ expert }) => {
-  return (
-    <div className={styleCardExpert["card-expert"]}>
-      <figure className={styleCardExpert["card-layout"]}>
-        <Image
-          src={expert?.image.url}
-          alt={expert?.image.alt}
-          className={styleCardExpert["card-image"]}
-          width={130}
-          height={130}
-          placeholder="blur"
-          blurDataURL="/images/backgrounds/blur.jpg"
-        />
-      </figure>
-      <Link href={`/expert-panel/${expert.slug}`}>
-        <p className={styleCardExpert["card-description"]}>{expert?.name}</p>
-      </Link>
-      <p className={styleCardExpert["card-info"]}>{expert?.info}</p>
-      <Link href={`/expert-panel/${expert.slug}`}>
-        <div className={styleCardExpert["card-button"]}>
-          <Button icon />
-        </div>
-      </Link>
-    </div>
-  );
-};
+const CardExpert: React.FC<CardExpertProps> = ({ expert }) => (
+  <div className={styleCardExpert["card-expert"]}>
+    <figure className={styleCardExpert["card-layout"]}>
+      <Image
+        src={expert?.image.url}
+        alt={expert?.image.alt}
+        className={styleCardExpert["card-image"]}
+        width={130}
+        height={130}
+        placeholder="blur"
+        blurDataURL="/images/backgrounds/blur.jpg"
+      />
+    </figure>
+    <Link href={`/expert-panel/${expert.slug}`}>
+      <p className={styleCardExpert["card-description"]}>{expert?.name}</p>
+    </Link>
+    <p className={styleCardExpert["card-info"]}>{expert?.info}</p>
+    <Link href={`/expert-panel/${expert.slug}`}>
+      <div className={styleCardExpert["card-button"]}>
+        <Button icon />
+      </div>
+    </Link>
+  </div>
+);
 
 export default CardExpert;

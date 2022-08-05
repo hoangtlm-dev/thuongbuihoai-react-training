@@ -4,16 +4,14 @@ import ContactSection from "@sections/ContactSection";
 import ExpertSection from "@sections/ExpertSection";
 import ResearchSection from "@sections/ResearchSection";
 
-const MainSection = () => {
-  return (
-    <div className="container">
-      <ResearchSection layout="center" />
-      <BlogList />
-      <ContactSection />
-      <ExpertSection />
-      <BlogList />
-    </div>
-  );
-};
+const MainSection = () => (
+  <div className="container">
+    <ResearchSection layout="center" />
+    <BlogList />
+    <ContactSection />
+    <ExpertSection />
+    <BlogList />
+  </div>
+);
 
 export default MainSection;

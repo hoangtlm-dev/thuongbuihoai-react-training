@@ -6,10 +6,8 @@ interface placeholder {
   placeholder: string;
 }
 
-const Input: React.FC<placeholder> = ({ type, placeholder }) => {
-  return (
-    <input className={styleInput.input} type={type} placeholder={placeholder} />
-  );
-};
+const Input: React.FC<placeholder> = ({ type, placeholder }) => (
+  <input className={styleInput.input} type={type} placeholder={placeholder} />
+);
 
 export default Input;
