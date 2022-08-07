@@ -4,7 +4,7 @@ export interface Blog {
   slug: string;
   createDate: string;
   expertId: string;
-  image?: {
+  image: {
     url: string;
     alt: string;
   };
