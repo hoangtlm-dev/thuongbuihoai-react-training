@@ -1,26 +1,54 @@
-import useSWR from "swr";
 import React from "react";
+import axios from "axios";
 import Head from "next/head";
 import Image from "next/image";
+import { GetStaticProps } from "next";
 import { EXPERT_URL } from "@constants/url";
-import { getData } from "@helpers/fetchApi";
 import { Expert } from "@common-types/expert";
 import { Banner, Navigation, Text } from "@components/common";
-import { useRouter } from "next/router";
-import style from "../../styles/base/common.module.css";
+import { ParsedUrlQuery } from "querystring";
 import Header from "@sections/Header";
 import Footer from "@sections/Footer";
+import style from "../../styles/base/common.module.css";
 
-const OurExpert = () => {
-  const router = useRouter();
-  const { slug } = router.query;
-  const { data } = useSWR(EXPERT_URL + "?slug=" + slug, getData<Expert[]>);
+interface ExpertProps {
+  expert: Expert;
+}
+
+interface IParams extends ParsedUrlQuery {
+  slug: string;
+}
+
+export const getStaticPaths = async () => {
+  const experts = await axios.get(EXPERT_URL);
+
+  const paths = experts.data.map((expert: Expert) => {
+    return {
+      params: { slug: expert.slug.toString() },
+    };
+  });
+
+  return { paths, fallback: false };
+};
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  const { slug } = context.params as IParams;
+  const res = await axios.get(EXPERT_URL + "?slug=" + slug);
+
+  return {
+    props: {
+      expert: res.data[0],
+    },
+  };
+};
+
+const OurExpert: React.FC<ExpertProps> = ({ expert }) => {
   const {
-    name = "",
+    name = "Matt Childers",
     info = "",
     description = "",
     image = { url: "/images/avatar/matt-childers.png", alt: "" },
-  } = data ? data[0] : {};
+  } = expert ? expert : {};
 
   return (
     <div>
