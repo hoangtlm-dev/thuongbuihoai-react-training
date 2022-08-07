@@ -34,8 +34,8 @@ const ResearchSection: React.FC<ResearchProps> = ({
       "A look at the past, present and future of disruptive marketing in the auto industry Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months....",
     expertId: "Donna Welker",
     image: {
-      url: "",
-      alt: "",
+      url: "/images/past-present-future.png",
+      alt: "This is image past present future",
     },
     title:
       "Exploring Influential and Impactful Automotive Advertising Campaigns",
