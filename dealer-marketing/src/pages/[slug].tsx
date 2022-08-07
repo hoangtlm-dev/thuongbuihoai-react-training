@@ -1,29 +1,55 @@
 import Head from "next/head";
 import React from "react";
-import useSWR from "swr";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import { GetStaticProps } from "next";
+import { ParsedUrlQuery } from "querystring";
 import { BLOG_URL } from "@constants/url";
-import { getData } from "@helpers/fetchApi";
 import { Blog } from "@common-types/blog";
 import { Banner, Navigation, Text } from "@components/common";
 import style from "../styles/base/common.module.css";
 import Header from "@sections/Header";
 import Footer from "@sections/Footer";
+import axios from "axios";
 
-const BlogDetail = () => {
-  const router = useRouter();
-  const { slug } = router.query;
-  const { data } = useSWR(BLOG_URL + "?slug=" + slug, getData<Blog[]>);
+interface BlogProps {
+  blog: Blog;
+}
+
+interface IParams extends ParsedUrlQuery {
+  slug: string;
+}
+
+export const getStaticPaths = async () => {
+  const blogs = await axios.get(BLOG_URL);
+
+  const paths = blogs.data.map((blog: Blog) => {
+    return {
+      params: { slug: blog.slug.toString() },
+    };
+  });
+
+  return { paths, fallback: false };
+};
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  const { slug } = context.params as IParams;
+  const res = await axios.get(BLOG_URL + "?slug=" + slug);
+
+  return {
+    props: {
+      blog: res.data[0],
+    },
+  };
+};
+
+const BlogDetail: React.FC<BlogProps> = ({ blog }) => {
   const {
     title = "",
     expertId = "",
     createDate = "",
     description = "",
     image = { url: "/images/past-present-future.avif", alt: "" },
-  } = data ? data[0] : {};
-
-  console.log("data", data);
+  } = blog ? blog : {};
 
   return (
     <div>
