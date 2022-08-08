@@ -9,14 +9,18 @@ const DataProvider: React.FC<{ children: JSX.Element[] | JSX.Element }> = ({
 }) => {
   const [blogs, setBlogs] = useState<Blog[]>([]);
   const [experts, setExperts] = useState<Expert[]>([]);
+  const [errorCode, setErrorCode] = useState<number>(0);
   const [searchValue, setSearchValue] = useState<string>("");
+  console.log("hello", errorCode);
 
   const value = {
     blogs,
     experts,
     setBlogs,
+    errorCode,
     setExperts,
     searchValue,
+    setErrorCode,
     setSearchValue,
   };
 
