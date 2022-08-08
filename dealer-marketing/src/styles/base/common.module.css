@@ -91,3 +91,15 @@
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+.style-not-found {
+  position: fixed;
+  top: 40%;
+  left: 45%;
+  text-align: center;
+}
+
+.style-number {
+  font-size: 50px;
+  font-weight: 700;
+}
