@@ -1,6 +1,7 @@
 import React, { useCallback, useContext, useState } from "react";
 import { MENU_LIST } from "@constants/menu";
 import { DataContext } from "@context/DataContext";
+import Icon from "../Icon";
 import Logo from "../Logo";
 import Menu from "../Menu";
 import styleNavigation from "./navigation.module.css";
@@ -27,9 +28,7 @@ const Navigation: React.FC = () => {
         />
         <div className={styleNavigation["nav-info"]}>
           <Menu type="dark" menuList={MENU_LIST} />
-          <i
-            className="fa-solid fa-magnifying-glass"
-            onClick={handleToggleModal}></i>
+          <Icon iconName="search" onClick={handleToggleModal} />
         </div>
       </nav>
       {openModal && (

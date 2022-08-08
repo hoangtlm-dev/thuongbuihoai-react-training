@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Input, Button } from "@components/common";
+import { Text, Input, Button, Icon } from "@components/common";
 import styleContact from "./contactSection.module.css";
 
 const ContactSection = () => (
@@ -15,7 +15,7 @@ const ContactSection = () => (
       </div>
       <div className={styleContact["contact-submit"]}>
         <div className={styleContact["contact-input"]}>
-          <i className="fa-solid fa-envelope"></i>
+          <Icon iconName="letter" />
           <Input type="text" placeholder="Your email..." />
         </div>
         <Button type="secondary" text="Subscribe" />

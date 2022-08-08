@@ -1,4 +1,5 @@
 import React from "react";
+import Icon from "../Icon";
 import styleButton from "./button.module.css";
 
 interface ButtonProps {
@@ -29,7 +30,7 @@ const Button: React.FC<ButtonProps> = ({
       disabled={disable}
       onClick={onClick}>
       {text}
-      {icon && <i className="fa-solid fa-arrow-right"></i>}
+      {icon && <Icon iconName="arrowRight" />}
     </button>
   );
 };

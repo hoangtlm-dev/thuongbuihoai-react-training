@@ -5,5 +5,6 @@ import Logo from "./Logo";
 import Menu from "./Menu";
 import Navigation from "./Navigation";
 import Text from "./Text";
+import Icon from "./Icon";
 
-export { Banner, Button, Input, Logo, Menu, Navigation, Text };
+export { Banner, Button, Input, Logo, Menu, Navigation, Text, Icon };
