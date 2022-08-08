@@ -22,7 +22,11 @@ const AboutPage = () => (
 
     <Header />
     <Navigation />
-    <Banner url="/images/backgrounds/bg-oto.jpg" text="About Us" />
+    <Banner
+      url="/images/backgrounds/bg-oto.jpg"
+      text="About Us"
+      blurDataURL="/images/backgrounds/blur.jpg"
+    />
     <AboutSection />
     <Footer />
   </>

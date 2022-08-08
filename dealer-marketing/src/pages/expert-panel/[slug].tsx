@@ -60,7 +60,11 @@ const OurExpert: React.FC<ExpertProps> = ({ expert }) => {
 
       <Header />
       <Navigation />
-      <Banner url="/images/backgrounds/bg-oto.jpg" text="" />
+      <Banner
+        url="/images/backgrounds/bg-oto.jpg"
+        text=""
+        blurDataURL="/images/backgrounds/blur.jpg"
+      />
       <div className={style["container-expert"]}>
         <figure className={style["style-layout-image"]}>
           <Image

@@ -5,9 +5,10 @@ import styleBanner from "./banner.module.css";
 interface BannerProps {
   url: string;
   text: string;
+  blurDataURL: string;
 }
 
-const Banner: React.FC<BannerProps> = ({ url, text }) => (
+const Banner: React.FC<BannerProps> = ({ url, text, blurDataURL }) => (
   <div className={styleBanner.banner}>
     <div className={styleBanner["banner-image"]}>
       <Image
@@ -16,7 +17,7 @@ const Banner: React.FC<BannerProps> = ({ url, text }) => (
         width={1349}
         height={480}
         placeholder="blur"
-        blurDataURL="/images/backgrounds/blur.jpg"
+        blurDataURL={blurDataURL}
       />
     </div>
     <h1 className={styleBanner["banner-title"]}>{text}</h1>

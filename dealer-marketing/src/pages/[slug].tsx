@@ -68,7 +68,11 @@ const BlogDetail: React.FC<BlogProps> = ({ blog }) => {
 
       <Header />
       <Navigation />
-      <Banner url={image.url} text="" />
+      <Banner
+        url={image.url}
+        text=""
+        blurDataURL="/images/backgrounds/blur.jpg"
+      />
       <div className="container">
         <div className={style["style-info"]}>
           <div className={style["style-card"]}>
