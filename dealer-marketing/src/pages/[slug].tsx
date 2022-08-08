@@ -24,7 +24,7 @@ export const getStaticPaths = async () => {
 
   const paths = blogs.data.map((blog: Blog) => {
     return {
-      params: { slug: blog.slug.toString() },
+      params: { slug: blog.slug },
     };
   });
 
