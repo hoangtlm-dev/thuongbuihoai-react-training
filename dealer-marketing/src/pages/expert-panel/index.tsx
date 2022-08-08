@@ -28,7 +28,7 @@ const OurExpertPage: React.FC<OurExpertProps> = ({ experts }) => {
   const { setExperts } = useContext(DataContext);
   useEffect(() => {
     setExperts(experts);
-  }, [experts]);
+  }, []);
 
   return (
     <div className={style["style-our-expert"]}>

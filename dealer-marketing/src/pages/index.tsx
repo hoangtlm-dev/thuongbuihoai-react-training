@@ -28,7 +28,7 @@ const Home: NextPage<HomeProps> = ({ blogs }) => {
   const { setBlogs } = useContext(DataContext);
   useEffect(() => {
     setBlogs(blogs);
-  }, [blogs]);
+  }, []);
 
   return (
     <>
