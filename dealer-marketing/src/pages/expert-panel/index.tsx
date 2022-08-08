@@ -12,22 +12,34 @@ import style from "../../styles/base/common.module.css";
 
 interface OurExpertProps {
   experts: Expert[];
+  errorCode: string;
 }
 
 export const getStaticProps = async () => {
-  const res = await axios.get(EXPERT_URL);
-
-  return {
-    props: {
-      experts: res.data,
-    },
-  };
+  try {
+    const res = await axios.get(EXPERT_URL);
+    const experts = res.data;
+    return {
+      props: {
+        experts: experts,
+        errorCode: false,
+      },
+    };
+  } catch (errorCode) {
+    return {
+      props: {
+        experts: [],
+        errorCode: errorCode,
+      },
+    };
+  }
 };
 
-const OurExpertPage: React.FC<OurExpertProps> = ({ experts }) => {
-  const { setExperts } = useContext(DataContext);
+const OurExpertPage: React.FC<OurExpertProps> = ({ experts, errorCode }) => {
+  const { setExperts, setErrorCode } = useContext(DataContext);
   useEffect(() => {
     setExperts(experts);
+    setErrorCode(errorCode);
   }, []);
 
   return (

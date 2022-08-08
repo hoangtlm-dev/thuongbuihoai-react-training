@@ -8,4 +8,6 @@ export interface DataContextProps {
   setBlogs: Function;
   searchValue: string;
   setSearchValue: Function;
+  errorCode: number;
+  setErrorCode: Function;
 }
