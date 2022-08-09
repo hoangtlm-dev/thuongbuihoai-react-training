@@ -16,7 +16,7 @@
 
 ## TIMELINE
 
-- Estimated time: [5 working days](https://docs.google.com/document/d/10hNx8z_SekhrrmkeOvXDOhlHovTX1winTSUHVPP3NxY/edit#)
+- Estimated time: (29/7/2022 - 5/8/2022) [5 working days](https://docs.google.com/document/d/10hNx8z_SekhrrmkeOvXDOhlHovTX1winTSUHVPP3NxY/edit#)
 
 ## TEAM SIZE
 
@@ -28,7 +28,6 @@
 - React
 - CSS Modules
 - Vercel
-- Json server
 
 ## EDITOR
 
@@ -61,7 +60,7 @@
 # INFORMATION .env.local file
 
 ```
-NEXT_PUBLIC_BASE_URL="http://localhost:1234"
+NEXT_PUBLIC_BASE_URL="http://localhost:3000/api"
 
 ```
 
@@ -73,7 +72,6 @@ NEXT_PUBLIC_BASE_URL="http://localhost:1234"
 - cd react-training
 - git checkout feature/practice-nextjs
 - Install dependencies : pnpm install
-- Run server: pnpm run server
 - Run app: pnpm dev
 - Open on web: http://localhost:3000/
 ```
