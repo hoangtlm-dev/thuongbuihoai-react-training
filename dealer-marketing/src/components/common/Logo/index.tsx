@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface LogoProps {
   url: string;
@@ -11,7 +12,7 @@ const Logo: React.FC<LogoProps> = ({
   blurDataURL = "/images/backgrounds/blur.jpg",
 }) => (
   <figure>
-    <a href="/">
+    <Link href="/">
       <Image
         src={url}
         alt="This is logo"
@@ -20,7 +21,7 @@ const Logo: React.FC<LogoProps> = ({
         placeholder="blur"
         blurDataURL={blurDataURL}
       />
-    </a>
+    </Link>
   </figure>
 );
 
