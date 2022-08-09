@@ -10,7 +10,7 @@ interface ResearchProps {
   content?: string;
   imageSmall?: boolean;
   isButton?: boolean;
-  blog?: Blog;
+  blog: Blog;
 }
 
 const layoutContentType = {
@@ -39,7 +39,7 @@ const ResearchSection: React.FC<ResearchProps> = ({
     },
     title:
       "Exploring Influential and Impactful Automotive Advertising Campaigns",
-    slug: "",
+    slug: "exploring-influential-and-impactful-automotive-advertising-campaigns",
   },
 }) => {
   const router = useRouter();

@@ -12,7 +12,10 @@ const classNameType = {
   arrowRight: "icon-arrow-right",
 };
 
-const Icon: React.FC<IconProps> = ({ iconName = "letter", onClick }) => {
+const Icon: React.FC<IconProps> = ({
+  iconName = "letter",
+  onClick = () => {},
+}) => {
   const className = classNameType[iconName as keyof typeof classNameType] || "";
 
   return <i onClick={onClick} className={styleIcon[className]} />;

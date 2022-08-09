@@ -1,5 +1,6 @@
 import React from "react";
 import { MenuProps, MenuType } from "@common-types/menu";
+import { MENU_LIST } from "@constants/menu";
 import menuStyle from "./menu.module.css";
 
 const classNameType = {
@@ -8,7 +9,10 @@ const classNameType = {
   normal: "menu-item-normal",
 };
 
-const Menu: React.FC<MenuProps> = ({ menuList, type = "menu-item-light" }) => {
+const Menu: React.FC<MenuProps> = ({
+  menuList = MENU_LIST,
+  type = "menu-item-light",
+}) => {
   const className = classNameType[type as keyof typeof classNameType] || "";
 
   const renderMenuList = (list: MenuType[]) => {

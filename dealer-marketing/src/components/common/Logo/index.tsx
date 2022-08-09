@@ -6,7 +6,10 @@ interface LogoProps {
   blurDataURL?: string;
 }
 
-const Logo: React.FC<LogoProps> = ({ url, blurDataURL }) => (
+const Logo: React.FC<LogoProps> = ({
+  url = "/images/logos/logo-dealer-marketing.svg",
+  blurDataURL = "/images/backgrounds/blur.jpg",
+}) => (
   <figure>
     <a href="/">
       <Image

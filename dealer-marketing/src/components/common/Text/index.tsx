@@ -16,7 +16,7 @@ const classNameType = {
   largeDark: "text-large-dark",
 };
 
-const Text: React.FC<TextProps> = ({ text, size = "normal" }) => {
+const Text: React.FC<TextProps> = ({ text = "Research", size = "normal" }) => {
   const className = classNameType[size as keyof typeof classNameType] || "";
   return <p className={styleText[className]}>{text}</p>;
 };

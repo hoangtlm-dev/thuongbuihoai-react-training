@@ -4,7 +4,7 @@ import { DataContext } from "@context/DataContext";
 import CardExpert from "../CardExpert";
 import styleExpertList from "./expertList.module.css";
 
-const ExpertList = () => {
+const ExpertList: React.FC = () => {
   const { experts, errorCode } = useContext(DataContext);
 
   if (errorCode) {

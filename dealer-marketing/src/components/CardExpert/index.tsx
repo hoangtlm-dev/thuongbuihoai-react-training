@@ -9,7 +9,19 @@ interface CardExpertProps {
   expert: Expert;
 }
 
-const CardExpert: React.FC<CardExpertProps> = ({ expert }) => (
+const CardExpert: React.FC<CardExpertProps> = ({
+  expert = {
+    name: "Matt-Childers",
+    slug: "matt-childers",
+    info: "DealersLink",
+    image: {
+      url: "/images/avatar/matt-childers.png",
+      alt: "This is image of Mr Matt-Childers",
+    },
+    description:
+      "Brent Albrecht is currently the Vice President of Business Development at Friendemic. Friendemic provides social media and online reputation services for clients and agencies across the globe. Specialties: Marketing Strategy, Product development and launch, Social Media Marketing, Business Development, Lead Generation, Sales Promotion, Digital Marketing, Database Marketing.",
+  },
+}) => (
   <div className={styleCardExpert["card-expert"]}>
     <figure className={styleCardExpert["card-layout"]}>
       <Image

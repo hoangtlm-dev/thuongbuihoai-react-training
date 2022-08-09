@@ -8,7 +8,11 @@ interface BannerProps {
   blurDataURL: string;
 }
 
-const Banner: React.FC<BannerProps> = ({ url, text, blurDataURL }) => (
+const Banner: React.FC<BannerProps> = ({
+  url = "/images/backgrounds/home-page.png",
+  text = "This is home page",
+  blurDataURL = "/images/backgrounds/blur.jpg",
+}) => (
   <div className={styleBanner.banner}>
     <div className={styleBanner["banner-image"]}>
       <Image
