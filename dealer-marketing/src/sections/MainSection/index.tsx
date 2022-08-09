@@ -3,10 +3,11 @@ import { BlogList } from "@components";
 import ContactSection from "@sections/ContactSection";
 import ExpertSection from "@sections/ExpertSection";
 import ResearchSection from "@sections/ResearchSection";
+import { BLOG_MOCKING } from "@constants/blog";
 
 const MainSection = () => (
   <div className="container">
-    <ResearchSection layout="center" />
+    <ResearchSection layout="center" blog={BLOG_MOCKING} />
     <BlogList />
     <ContactSection />
     <ExpertSection />

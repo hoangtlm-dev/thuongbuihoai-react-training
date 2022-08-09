@@ -1,5 +1,11 @@
 .expert {
   background-image: url(/images/backgrounds/home-page-oto.png);
+  background-size: cover;
+}
+
+.expert-position {
+  margin: 0 auto;
+  max-width: 1140px;
 }
 
 .expert-title {
@@ -9,7 +15,7 @@
 
 .expert-list {
   display: flex;
-  padding: 0 90px 40px;
+  padding-bottom: 40px;
   justify-content: space-between;
 }
 

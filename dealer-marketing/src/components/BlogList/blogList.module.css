@@ -1,6 +1,7 @@
 .blog-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -50px 90px;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1140px;
 }

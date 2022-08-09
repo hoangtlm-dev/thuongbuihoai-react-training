@@ -18,8 +18,7 @@ const Banner: React.FC<BannerProps> = ({
       <Image
         src={url}
         alt="This is banner home page"
-        width={1349}
-        height={480}
+        layout="fill"
         placeholder="blur"
         blurDataURL={blurDataURL}
       />
