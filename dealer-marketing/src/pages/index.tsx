@@ -6,8 +6,8 @@ import { Blog } from "@common-types/blog";
 import { useContext, useEffect } from "react";
 import { DataContext } from "@context/DataContext";
 import type { NextPage } from "next";
-import Header from "@sections/Header";
-import Footer from "@sections/Footer";
+import Footer from "@layouts/Footer";
+import Header from "@layouts/Header";
 import MainSection from "@sections/MainSection";
 
 interface HomeProps {

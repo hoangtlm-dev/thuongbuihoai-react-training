@@ -6,8 +6,8 @@ import { EXPERT_URL } from "@constants/url";
 import { Expert } from "@common-types/expert";
 import { DataContext } from "@context/DataContext";
 import Head from "next/head";
-import Header from "@sections/Header";
-import Footer from "@sections/Footer";
+import Header from "@layouts/Header";
+import Footer from "@layouts/Footer";
 import style from "../../styles/base/common.module.css";
 
 interface OurExpertProps {

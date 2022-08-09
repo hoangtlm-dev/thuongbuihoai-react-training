@@ -7,8 +7,8 @@ import { EXPERT_URL } from "@constants/url";
 import { Expert } from "@common-types/expert";
 import { Banner, Navigation, Text } from "@components/common";
 import { ParsedUrlQuery } from "querystring";
-import Header from "@sections/Header";
-import Footer from "@sections/Footer";
+import Footer from "@layouts/Footer";
+import Header from "@layouts/Header";
 import style from "../../styles/base/common.module.css";
 
 interface ExpertProps {

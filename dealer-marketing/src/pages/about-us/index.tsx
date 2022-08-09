@@ -1,7 +1,7 @@
-import Head from "next/head";
 import React from "react";
-import Footer from "@sections/Footer";
-import Header from "@sections/Header";
+import Head from "next/head";
+import Header from "@layouts/Header";
+import Footer from "@layouts/Footer";
 import AboutSection from "@sections/AboutSection";
 import { Banner, Navigation } from "@components/common";
 

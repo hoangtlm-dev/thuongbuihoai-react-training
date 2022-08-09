@@ -1,3 +1,4 @@
+import axios from "axios";
 import Head from "next/head";
 import React from "react";
 import Image from "next/image";
@@ -6,10 +7,9 @@ import { ParsedUrlQuery } from "querystring";
 import { BLOG_URL } from "@constants/url";
 import { Blog } from "@common-types/blog";
 import { Banner, Navigation, Text } from "@components/common";
+import Footer from "@layouts/Footer";
+import Header from "@layouts/Header";
 import style from "../styles/base/common.module.css";
-import Header from "@sections/Header";
-import Footer from "@sections/Footer";
-import axios from "axios";
 
 interface BlogProps {
   blog: Blog;
