@@ -40,7 +40,7 @@ const CardExpert: React.FC<CardExpertProps> = ({
     <p className={styleCardExpert["card-info"]}>{expert?.info}</p>
     <Link href={`/expert-panel/${expert.slug}`}>
       <div className={styleCardExpert["card-button"]}>
-        <Button icon />
+        <Button icon text="" />
       </div>
     </Link>
   </div>
