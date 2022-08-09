@@ -8,12 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "cd .. && husky install dealer-marketing/.husky",
-    "pre-commit-lint": "pnpm lint-staged",
-    "server": "json-server --watch --port 1234 src/json-server/db.json"
+    "pre-commit-lint": "pnpm lint-staged"
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "json-server": "^0.17.0",
     "next": "12.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
