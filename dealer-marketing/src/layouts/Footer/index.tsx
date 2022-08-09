@@ -1,7 +1,7 @@
 import React from "react";
-import styleFooter from "./footer.module.css";
 import { MENU_CONTACT, MENU_SERVICES } from "@constants/menu";
 import { Menu } from "@components/common";
+import styleFooter from "./footer.module.css";
 
 const Footer: React.FC = () => (
   <footer className={styleFooter.footer}>
