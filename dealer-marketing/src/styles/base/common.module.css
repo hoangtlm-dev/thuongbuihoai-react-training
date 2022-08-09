@@ -30,6 +30,8 @@
 .style-description {
   text-align: center;
   padding: 70px 300px;
+  margin: 0 auto;
+  max-width: 1140px;
 }
 
 .style-layout {
