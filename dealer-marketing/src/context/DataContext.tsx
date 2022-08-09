@@ -11,7 +11,6 @@ const DataProvider: React.FC<{ children: JSX.Element[] | JSX.Element }> = ({
   const [experts, setExperts] = useState<Expert[]>([]);
   const [errorCode, setErrorCode] = useState<number>(0);
   const [searchValue, setSearchValue] = useState<string>("");
-  console.log("hello", errorCode);
 
   const value = {
     blogs,
