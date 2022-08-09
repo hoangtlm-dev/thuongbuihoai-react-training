@@ -1,8 +1,14 @@
 import React from "react";
 import Head from "next/head";
+
+// layouts
 import Header from "@layouts/Header";
 import Footer from "@layouts/Footer";
+
+// sections
 import AboutSection from "@sections/AboutSection";
+
+// components
 import { Banner, Navigation } from "@components/common";
 
 const AboutPage = () => (

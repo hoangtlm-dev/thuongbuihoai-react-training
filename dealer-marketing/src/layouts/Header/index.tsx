@@ -1,6 +1,6 @@
 import React from "react";
-import Menu from "../../components/common/Menu";
 import { MENU_CONTACT } from "@constants/menu";
+import { Menu } from "@components/common";
 import styleHeader from "./header.module.css";
 
 const Header = () => (

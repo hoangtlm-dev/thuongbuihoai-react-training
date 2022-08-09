@@ -1,13 +1,22 @@
+import type { NextPage } from "next";
+import { useContext, useEffect } from "react";
 import axios from "axios";
 import Head from "next/head";
+
+// components
 import { Banner, Navigation } from "@components/common";
+
+// constants
 import { BLOG_URL } from "@constants/url";
+
+// common-types
 import { Blog } from "@common-types/blog";
-import { useContext, useEffect } from "react";
-import { DataContext } from "@context/DataContext";
-import type { NextPage } from "next";
+
+// layouts
 import Footer from "@layouts/Footer";
 import Header from "@layouts/Header";
+
+import { DataContext } from "@context/DataContext";
 import MainSection from "@sections/MainSection";
 
 interface HomeProps {

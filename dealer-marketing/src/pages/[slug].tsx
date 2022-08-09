@@ -4,9 +4,17 @@ import React from "react";
 import Image from "next/image";
 import { GetStaticProps } from "next";
 import { ParsedUrlQuery } from "querystring";
+
+// constants
 import { BLOG_URL } from "@constants/url";
+
+// common-types
 import { Blog } from "@common-types/blog";
+
+// components
 import { Banner, Navigation, Text } from "@components/common";
+
+// layouts
 import Footer from "@layouts/Footer";
 import Header from "@layouts/Header";
 import style from "../styles/base/common.module.css";

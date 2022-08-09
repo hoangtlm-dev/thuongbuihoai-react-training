@@ -3,10 +3,18 @@ import axios from "axios";
 import Head from "next/head";
 import Image from "next/image";
 import { GetStaticProps } from "next";
-import { EXPERT_URL } from "@constants/url";
-import { Expert } from "@common-types/expert";
-import { Banner, Navigation, Text } from "@components/common";
 import { ParsedUrlQuery } from "querystring";
+
+// constants
+import { EXPERT_URL } from "@constants/url";
+
+// common-types
+import { Expert } from "@common-types/expert";
+
+// components
+import { Banner, Navigation, Text } from "@components/common";
+
+// layouts
 import Footer from "@layouts/Footer";
 import Header from "@layouts/Header";
 import style from "../../styles/base/common.module.css";

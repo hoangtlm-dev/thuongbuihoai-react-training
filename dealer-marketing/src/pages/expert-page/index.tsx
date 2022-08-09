@@ -1,13 +1,20 @@
-import axios from "axios";
 import React, { useContext, useEffect } from "react";
+import axios from "axios";
+import Head from "next/head";
+
+// components
 import { Navigation, Text } from "@components/common";
 import { ExpertList } from "@components";
+
+// constants
 import { EXPERT_URL } from "@constants/url";
-import { Expert } from "@common-types/expert";
-import { DataContext } from "@context/DataContext";
-import Head from "next/head";
+
+// layouts
 import Header from "@layouts/Header";
 import Footer from "@layouts/Footer";
+
+import { Expert } from "@common-types/expert";
+import { DataContext } from "@context/DataContext";
 import style from "../../styles/base/common.module.css";
 
 interface OurExpertProps {
