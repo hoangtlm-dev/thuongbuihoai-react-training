@@ -34,11 +34,11 @@ const CardExpert: React.FC<CardExpertProps> = ({
         blurDataURL="/images/backgrounds/blur.jpg"
       />
     </figure>
-    <Link href={`/expert-panel/${expert.slug}`}>
+    <Link href={`/expert-page/${expert.slug}`}>
       <p className={styleCardExpert["card-description"]}>{expert?.name}</p>
     </Link>
     <p className={styleCardExpert["card-info"]}>{expert?.info}</p>
-    <Link href={`/expert-panel/${expert.slug}`}>
+    <Link href={`/expert-page/${expert.slug}`}>
       <div className={styleCardExpert["card-button"]}>
         <Button icon text="" />
       </div>
