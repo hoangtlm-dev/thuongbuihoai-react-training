@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { MenuProps, MenuType } from "@common-types/menu";
 import { MENU_LIST } from "@constants/menu";
 import menuStyle from "./menu.module.css";
@@ -30,4 +30,4 @@ const Menu: React.FC<MenuProps> = ({
   );
 };
 
-export default Menu;
+export default memo(Menu);

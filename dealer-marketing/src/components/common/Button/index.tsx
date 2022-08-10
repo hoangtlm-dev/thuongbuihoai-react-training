@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Icon from "../Icon";
 import styleButton from "./button.module.css";
 
@@ -35,4 +35,4 @@ const Button: React.FC<ButtonProps> = ({
   );
 };
 
-export default Button;
+export default memo(Button);

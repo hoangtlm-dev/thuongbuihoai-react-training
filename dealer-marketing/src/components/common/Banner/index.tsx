@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Image from "next/image";
 import styleBanner from "./banner.module.css";
 
@@ -27,4 +27,4 @@ const Banner: React.FC<BannerProps> = ({
   </div>
 );
 
-export default Banner;
+export default memo(Banner);

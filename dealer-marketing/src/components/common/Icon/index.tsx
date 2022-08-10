@@ -1,4 +1,4 @@
-import React, { MouseEventHandler } from "react";
+import React, { memo, MouseEventHandler } from "react";
 import styleIcon from "./icon.module.css";
 
 interface IconProps {
@@ -21,4 +21,4 @@ const Icon: React.FC<IconProps> = ({
   return <i onClick={onClick} className={styleIcon[className]} />;
 };
 
-export default Icon;
+export default memo(Icon);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import styleInput from "./input.module.css";
 
 interface InputProps {
@@ -13,4 +13,4 @@ const Input: React.FC<InputProps> = ({
   <input className={styleInput.input} type={type} placeholder={placeholder} />
 );
 
-export default Input;
+export default memo(Input);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import styleText from "./text.module.css";
 
 interface TextProps {
@@ -21,4 +21,4 @@ const Text: React.FC<TextProps> = ({ text = "Research", size = "normal" }) => {
   return <p className={styleText[className]}>{text}</p>;
 };
 
-export default Text;
+export default memo(Text);
