@@ -16,6 +16,7 @@ import Footer from "@layouts/Footer";
 import { Expert } from "@common-types/expert";
 import { DataContext } from "@context/DataContext";
 import style from "../../styles/base/common.module.css";
+import { EXPERT_RESPONSE_DATA } from "@api-backup/expertResponseData";
 
 interface OurExpertProps {
   experts: Expert[];
@@ -24,8 +25,9 @@ interface OurExpertProps {
 
 export const getStaticProps = async () => {
   try {
-    const res = await axios.get(EXPERT_URL);
-    const experts = res.data;
+    // const res = await axios.get(EXPERT_URL);
+    // const experts = res.data;
+    const experts: Expert[] = EXPERT_RESPONSE_DATA;
     return {
       props: {
         experts: experts,

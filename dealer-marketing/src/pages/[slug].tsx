@@ -18,6 +18,7 @@ import { Banner, Navigation, Text } from "@components/common";
 import Footer from "@layouts/Footer";
 import Header from "@layouts/Header";
 import style from "../styles/base/common.module.css";
+import { BLOG_RESPONSE_DATA } from "@api-backup/blogResponseData";
 
 interface BlogProps {
   blog: Blog;
@@ -28,9 +29,10 @@ interface IParams extends ParsedUrlQuery {
 }
 
 export const getStaticPaths = async () => {
-  const blogs = await axios.get(BLOG_URL);
+  // const blogs = await axios.get(BLOG_URL);
+  const blogs: Blog[] = BLOG_RESPONSE_DATA;
 
-  const paths = blogs.data.map((blog: Blog) => {
+  const paths = blogs.map((blog: Blog) => {
     return {
       params: { slug: blog.slug },
     };
@@ -41,11 +43,12 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { slug } = context.params as IParams;
-  const res = await axios.get(BLOG_URL + "?slug=" + slug);
+  // const res = await axios.get(BLOG_URL + "?slug=" + slug);
+  const res = BLOG_RESPONSE_DATA.filter((item) => item.slug == slug);
 
   return {
     props: {
-      blog: res.data[0],
+      blog: res,
     },
   };
 };
