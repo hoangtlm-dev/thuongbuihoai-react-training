@@ -1,8 +1,10 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { Blog } from "@common-types/blog";
-import { Button, Text } from "@components/common";
+import Link from "next/link";
 import Image from "next/image";
+import { Button, Text } from "@components/common";
+import { Blog } from "@common-types/blog";
+import { Expert } from "@common-types/expert";
 import styleResearch from "./researchSection.module.css";
 
 interface ResearchProps {
@@ -11,6 +13,7 @@ interface ResearchProps {
   imageSmall?: boolean;
   isButton?: boolean;
   blog: Blog;
+  expert?: Expert;
 }
 
 const layoutContentType = {
@@ -40,6 +43,9 @@ const ResearchSection: React.FC<ResearchProps> = ({
     title:
       "Exploring Influential and Impactful Automotive Advertising Campaigns",
     slug: "exploring-influential-and-impactful-automotive-advertising-campaigns",
+  },
+  expert = {
+    slug: "brent-albrecht",
   },
 }) => {
   const router = useRouter();
@@ -73,19 +79,25 @@ const ResearchSection: React.FC<ResearchProps> = ({
         )}
         <div className={styleResearch[layoutContent]}>
           <p className={styleResearch["research-title"]}>Research & analysis</p>
-          <div className={styleResearch["research-heading"]}>
-            <a onClick={() => router.push(`/${blog?.slug}`)}>
-              <Text size="mediumOutline" text={blog?.title} />
-            </a>
+          <div className={styleResearch["research-content"]}>
+            <div className={styleResearch["research-heading"]}>
+              <a onClick={() => router.push(`/${blog?.slug}`)}>
+                <Text size="mediumOutline" text={blog?.title} />
+              </a>
+            </div>
+            <div>
+              <p className={styleResearch["research-description"]}>
+                By{" "}
+                <Link href={`/expert-page/${expert.slug}`}>
+                  <span className={styleResearch["research-author"]}>
+                    {blog.expertId}{" "}
+                  </span>
+                </Link>
+                - <span>{blog?.createDate}</span>
+              </p>
+              <Text size="normal" text={blog?.description} />
+            </div>
           </div>
-          <p className={styleResearch["research-description"]}>
-            By{" "}
-            <span className={styleResearch["research-author"]}>
-              {blog.expertId}{" "}
-            </span>
-            - <span>{blog?.createDate}</span>
-          </p>
-          <Text size="normal" text={blog?.description} />
           <div className={styleResearch["research-button"]}>
             {isButton ? <Button type="primary" text="Read more" /> : ""}
           </div>
