@@ -21,6 +21,7 @@ const Banner: React.FC<BannerProps> = ({
         layout="fill"
         placeholder="blur"
         blurDataURL={blurDataURL}
+        className={styleBanner["banner-image-filter"]}
       />
     </div>
     <h1 className={styleBanner["banner-title"]}>{text}</h1>

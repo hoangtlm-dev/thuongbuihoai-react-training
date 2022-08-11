@@ -6,6 +6,12 @@
 
 .banner-image {
   height: 480px;
+  filter: brightness(0.5);
+}
+
+.banner-image-filter {
+  width: 100%;
+  object-fit: cover;
 }
 
 .banner-title {
