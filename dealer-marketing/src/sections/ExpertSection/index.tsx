@@ -13,7 +13,7 @@ const ExpertSection = () => (
         <div className={styleExpertSection["expert-section"]}>
           <figure className={styleExpertSection["expert-layout"]}>
             <Image
-              src="/images/avatar/ibrahim-mesbah.avif"
+              src="/images/avatar/ibrahim-mesbah.png"
               alt="This is image of Mr adam dennis"
               className={styleExpertSection["expert-image"]}
               width={130}
@@ -41,7 +41,7 @@ const ExpertSection = () => (
         <div className={styleExpertSection["expert-section"]}>
           <figure className={styleExpertSection["expert-layout"]}>
             <Image
-              src="/images/avatar/ilana-shabtay.avif"
+              src="/images/avatar/ilana-shabtay.png"
               alt="This is image of Mr adam dennis"
               className={styleExpertSection["expert-image"]}
               width={130}

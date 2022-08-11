@@ -48,7 +48,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   return {
     props: {
-      blog: res,
+      blog: res[0],
     },
   };
 };
@@ -59,7 +59,7 @@ const BlogDetail: React.FC<BlogProps> = ({ blog }) => {
     expertId = "",
     createDate = "",
     description = "",
-    image = { url: "/images/past-present-future.avif", alt: "" },
+    image = { url: "/images/past-present-future.png", alt: "" },
   } = blog ? blog : {};
 
   return (

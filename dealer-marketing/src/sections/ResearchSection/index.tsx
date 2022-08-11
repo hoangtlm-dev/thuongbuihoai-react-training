@@ -62,7 +62,7 @@ const ResearchSection: React.FC<ResearchProps> = ({
           />
         ) : (
           <Image
-            src="/images/past-present-future.avif"
+            src="/images/past-present-future.png"
             alt="This is image past present future"
             className={styleResearch["research-image"]}
             width={730}

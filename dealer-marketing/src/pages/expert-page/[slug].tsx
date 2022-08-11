@@ -48,7 +48,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   return {
     props: {
-      expert: res,
+      expert: res[0],
     },
   };
 };
