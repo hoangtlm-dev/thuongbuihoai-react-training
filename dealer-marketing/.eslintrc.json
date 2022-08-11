@@ -28,6 +28,8 @@
     "react/prop-types": "off",
     "react/jsx-props-no-spreading": "off",
     "react-hooks/exhaustive-deps": "off",
-    "react-hooks/rules-of-hooks": "off"
+    "react-hooks/rules-of-hooks": "off",
+    "@next/next/inline-script-id": "off",
+    "@next/next/no-script-component-in-head": "off"
   }
 }
