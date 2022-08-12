@@ -18,7 +18,7 @@ const classNameType = {
 const Button: React.FC<ButtonProps> = ({
   type = "btn-primary",
   onClick = () => {},
-  text = "Read more",
+  text = "",
   disable = false,
   icon = false,
 }) => {
