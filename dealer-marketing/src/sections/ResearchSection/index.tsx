@@ -54,10 +54,14 @@ const ResearchSection: React.FC<ResearchProps> = ({
   const className = classNameType[layout as keyof typeof classNameType] || "";
 
   return (
-    <div className={styleResearch[className]}>
+    <div
+      itemScope
+      itemType="https://schema.org/Blog"
+      className={styleResearch[className]}>
       <div className={styleResearch["research-info"]}>
         {imageSmall ? (
           <Image
+            itemProp="image"
             src={blog?.image.url}
             alt={blog?.image.alt}
             className={styleResearch["research-image"]}
@@ -68,6 +72,7 @@ const ResearchSection: React.FC<ResearchProps> = ({
           />
         ) : (
           <Image
+            itemProp="image"
             src="/images/past-present-future.png"
             alt="This is image past present future"
             className={styleResearch["research-image"]}
@@ -93,7 +98,7 @@ const ResearchSection: React.FC<ResearchProps> = ({
                     {blog.expertId}{" "}
                   </span>
                 </Link>
-                - <span>{blog?.createDate}</span>
+                - <span itemProp="dateCreated">{blog?.createDate}</span>
               </p>
               <Text size="normal" text={blog?.description} />
             </div>

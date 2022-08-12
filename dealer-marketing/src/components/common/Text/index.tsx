@@ -18,7 +18,11 @@ const classNameType = {
 
 const Text: React.FC<TextProps> = ({ text = "Research", size = "normal" }) => {
   const className = classNameType[size as keyof typeof classNameType] || "";
-  return <p className={styleText[className]}>{text}</p>;
+  return (
+    <p itemProp="description" className={styleText[className]}>
+      {text}
+    </p>
+  );
 };
 
 export default memo(Text);
