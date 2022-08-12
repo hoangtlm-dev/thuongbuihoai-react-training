@@ -39,14 +39,14 @@ const CardExpert: React.FC<CardExpertProps> = ({
       />
     </figure>
     <Link href={`/expert-page/${expert.slug}`}>
-      <p itemProp="name" className={styleCardExpert["card-description"]}>
+      <p itemProp="name" className={styleCardExpert["card-name"]}>
         {expert?.name}
       </p>
     </Link>
     <p itemProp="description" className={styleCardExpert["card-info"]}>
       {expert?.info}
     </p>
-    <Link itemProp="name" href={`/expert-page/${expert.slug}`}>
+    <Link itemProp="url" href={`/expert-page/${expert.slug}`}>
       <div className={styleCardExpert["card-button"]}>
         <Button icon text="" />
       </div>

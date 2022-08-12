@@ -11,6 +11,7 @@ const classNameType = {
   normal: "text-normal",
   regular: "text-regular",
   regularDark: "text-regular-dark",
+  regularOutline: "text-regular-outline",
   medium: "text-medium",
   mediumOutline: "text-medium-outline",
   large: "text-large",

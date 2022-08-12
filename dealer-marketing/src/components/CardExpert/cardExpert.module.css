@@ -16,7 +16,7 @@
   border-radius: 50%;
 }
 
-.card-description {
+.card-name {
   cursor: pointer;
   text-align: center;
   color: var(--dark);
@@ -25,7 +25,7 @@
   padding: 100px 10px 10px;
 }
 
-.card-description:hover {
+.card-name:hover {
   color: var(--bg-primary);
 }
 

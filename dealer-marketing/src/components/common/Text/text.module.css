@@ -23,6 +23,20 @@
   font-family: "Roboto";
 }
 
+.text-regular-outline {
+  cursor: pointer;
+  text-align: center;
+  color: var(--dark);
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Roboto";
+  padding: 80px 10px 10px;
+}
+
+.text-regular-outline:hover {
+  color: var(--bg-primary);
+}
+
 .text-large-dark {
   font-size: 30px;
   text-align: left;
