@@ -94,9 +94,13 @@ const OurExpert: React.FC<ExpertProps> = ({ expert }) => {
         text=""
         blurDataURL="/images/backgrounds/blur.jpg"
       />
-      <div itemScope className={style["container-expert"]}>
+      <div
+        itemScope
+        itemType="https://schema.org/Person"
+        className={style["container-expert"]}>
         <figure className={style["style-layout-image"]}>
           <Image
+            itemProp="image"
             src={image.url}
             alt={image.alt}
             className={style["style-image"]}
@@ -107,9 +111,13 @@ const OurExpert: React.FC<ExpertProps> = ({ expert }) => {
           />
         </figure>
         <div className={style["style-info"]}>
-          <h2 className={style["style-name"]}>{name}</h2>
-          <p className={style["style-content"]}>{info}</p>
-          <Text size="regular" text={description} />
+          <h2 itemProp="name" className={style["style-name"]}>
+            {name}
+          </h2>
+          <div className={style["style-content"]}>
+            <Text itemProp="description" size="regularDark" text={info} />
+          </div>
+          <Text itemProp="description" size="regular" text={description} />
         </div>
       </div>
       <Footer />

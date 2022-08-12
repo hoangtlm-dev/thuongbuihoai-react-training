@@ -16,19 +16,6 @@
   border-radius: 50%;
 }
 
-.card-name {
-  cursor: pointer;
-  text-align: center;
-  color: var(--dark);
-  font-size: 18px;
-  font-weight: 700;
-  padding: 100px 10px 10px;
-}
-
-.card-name:hover {
-  color: var(--bg-primary);
-}
-
 .card-info {
   text-align: center;
   color: var(--text-primary);
