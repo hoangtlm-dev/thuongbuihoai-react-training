@@ -95,7 +95,7 @@ const BlogDetail: React.FC<BlogProps> = ({ blog }) => {
         text=""
         blurDataURL="/images/backgrounds/blur.jpg"
       />
-      <div className="container">
+      <div itemScope itemType="https://schema.org/Blog" className="container">
         <div className={style["style-info"]}>
           <div className={style["style-card"]}>
             <div className={style["style-title"]}>
@@ -105,6 +105,7 @@ const BlogDetail: React.FC<BlogProps> = ({ blog }) => {
             <div className={style["style-author"]}>
               <figure>
                 <Image
+                  itemProp="image"
                   src={image.url}
                   alt={image.alt}
                   className={style["style-image"]}
@@ -124,7 +125,7 @@ const BlogDetail: React.FC<BlogProps> = ({ blog }) => {
           </div>
           <hr />
           <div className={style["style-info-regular"]}>
-            <Text size="regular" text={description} />
+            <Text itemProp="description" size="regular" text={description} />
           </div>
         </div>
       </div>

@@ -87,7 +87,11 @@ const ResearchSection: React.FC<ResearchProps> = ({
           <div className={styleResearch["research-content"]}>
             <div className={styleResearch["research-heading"]}>
               <a onClick={() => router.push(`/${blog?.slug}`)}>
-                <Text size="mediumOutline" text={blog?.title} />
+                <Text
+                  itemProp="description"
+                  size="mediumOutline"
+                  text={blog?.title}
+                />
               </a>
             </div>
             <div>
@@ -100,7 +104,11 @@ const ResearchSection: React.FC<ResearchProps> = ({
                 </Link>
                 - <span itemProp="dateCreated">{blog?.createDate}</span>
               </p>
-              <Text size="normal" text={blog?.description} />
+              <Text
+                itemProp="description"
+                size="normal"
+                text={blog?.description}
+              />
             </div>
           </div>
           <div className={styleResearch["research-button"]}>

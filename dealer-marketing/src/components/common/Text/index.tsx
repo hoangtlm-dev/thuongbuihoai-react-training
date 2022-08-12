@@ -4,6 +4,7 @@ import styleText from "./text.module.css";
 interface TextProps {
   size?: string;
   text?: string;
+  itemProp?: string;
 }
 
 const classNameType = {
@@ -16,10 +17,14 @@ const classNameType = {
   largeDark: "text-large-dark",
 };
 
-const Text: React.FC<TextProps> = ({ text = "Research", size = "normal" }) => {
+const Text: React.FC<TextProps> = ({
+  text = "Research",
+  size = "normal",
+  itemProp = "description",
+}) => {
   const className = classNameType[size as keyof typeof classNameType] || "";
   return (
-    <p itemProp="description" className={styleText[className]}>
+    <p itemProp={itemProp} className={styleText[className]}>
       {text}
     </p>
   );

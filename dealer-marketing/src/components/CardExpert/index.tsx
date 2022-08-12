@@ -22,9 +22,13 @@ const CardExpert: React.FC<CardExpertProps> = ({
       "Brent Albrecht is currently the Vice President of Business Development at Friendemic. Friendemic provides social media and online reputation services for clients and agencies across the globe. Specialties: Marketing Strategy, Product development and launch, Social Media Marketing, Business Development, Lead Generation, Sales Promotion, Digital Marketing, Database Marketing.",
   },
 }) => (
-  <div itemScope className={styleCardExpert["card-expert"]}>
+  <div
+    itemScope
+    itemType="https://schema.org/Person"
+    className={styleCardExpert["card-expert"]}>
     <figure className={styleCardExpert["card-layout"]}>
       <Image
+        itemProp="image"
         src={expert?.image.url}
         alt={expert?.image.alt}
         className={styleCardExpert["card-image"]}
@@ -35,10 +39,14 @@ const CardExpert: React.FC<CardExpertProps> = ({
       />
     </figure>
     <Link href={`/expert-page/${expert.slug}`}>
-      <p className={styleCardExpert["card-description"]}>{expert?.name}</p>
+      <p itemProp="name" className={styleCardExpert["card-description"]}>
+        {expert?.name}
+      </p>
     </Link>
-    <p className={styleCardExpert["card-info"]}>{expert?.info}</p>
-    <Link href={`/expert-page/${expert.slug}`}>
+    <p itemProp="description" className={styleCardExpert["card-info"]}>
+      {expert?.info}
+    </p>
+    <Link itemProp="name" href={`/expert-page/${expert.slug}`}>
       <div className={styleCardExpert["card-button"]}>
         <Button icon text="" />
       </div>

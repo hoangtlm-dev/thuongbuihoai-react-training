@@ -94,7 +94,7 @@ const OurExpert: React.FC<ExpertProps> = ({ expert }) => {
         text=""
         blurDataURL="/images/backgrounds/blur.jpg"
       />
-      <div className={style["container-expert"]}>
+      <div itemScope className={style["container-expert"]}>
         <figure className={style["style-layout-image"]}>
           <Image
             src={image.url}
