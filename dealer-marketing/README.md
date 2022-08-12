@@ -1,6 +1,6 @@
 # OVERVIEW
 
-- This document provides a detailed estimate of the Next.JS Practice
+- This document provides a detailed estimate of the Next.JS Practice. This practice creates a Dealer-Marketing app with goals that I can apply Next.js knowledge.
 
 ## FEATURES
 
