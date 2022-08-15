@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import { IMAGE } from "@constants/image";
+import CustomImage from "../CustomImage";
 import styleBanner from "./banner.module.css";
-import CustomImage from "../CustomImage/CustomImage";
 
 interface BannerProps {
   url: string;

@@ -1,11 +1,10 @@
 import React from "react";
-import Image from "next/image";
-import { Expert } from "@common-types/expert";
-import { Button, Text } from "@components/common";
-import styleCardExpert from "./cardExpert.module.css";
 import { useRouter } from "next/router";
+import { Expert } from "@common-types/expert";
 import { EXPERT_MOCKING } from "@constants/expert";
-import CustomImage from "@components/common/CustomImage/CustomImage";
+import { Button, CustomImage, Text } from "@components/common";
+import { TextType } from "@components/common/Text";
+import styleCardExpert from "./cardExpert.module.css";
 
 interface CardExpertProps {
   expert: Expert;
@@ -14,10 +13,7 @@ interface CardExpertProps {
 const CardExpert: React.FC<CardExpertProps> = ({ expert = EXPERT_MOCKING }) => {
   const router = useRouter();
   return (
-    <div
-      itemScope
-      itemType="https://schema.org/Person"
-      className={styleCardExpert["card-expert"]}>
+    <div className={styleCardExpert["card-expert"]}>
       <figure className={styleCardExpert["card-layout"]}>
         <CustomImage
           url={expert?.image.url}
@@ -28,10 +24,10 @@ const CardExpert: React.FC<CardExpertProps> = ({ expert = EXPERT_MOCKING }) => {
         />
       </figure>
       <a onClick={() => router.push(`/expert-page/${expert.slug}`)}>
-        <Text size="regularOutline" text={expert?.name} />
+        <Text size={TextType.regularOutline} text={expert?.name} />
       </a>
       <div className={styleCardExpert["card-info"]}>
-        <Text itemProp="description" text={expert?.info} />
+        <Text text={expert?.info} />
       </div>
       <div className={styleCardExpert["card-button"]}>
         <Button

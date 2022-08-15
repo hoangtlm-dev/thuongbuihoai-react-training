@@ -1,13 +1,16 @@
 import React from "react";
-import { Text, Input, Button, Icon } from "@components/common";
 import styleContact from "./contactSection.module.css";
+import { IconType } from "@components/common/Icon";
+import { ButtonType } from "@components/common/Button";
+import { Text, Input, Button, Icon } from "@components/common";
+import { TextType } from "@components/common/Text";
 
 const ContactSection = () => (
   <>
     <div className="first-line"></div>
     <div className={styleContact.contact}>
       <div className={styleContact["contact-info"]}>
-        <Text size="medium" text="Get Tips & Tricks every Week!" />
+        <Text size={TextType.medium} text="Get Tips & Tricks every Week!" />
         <p className={styleContact["contact-description"]}>
           Join our newsletter and get news in your inbox every week! We hate
           spam too, so no worries about this.
@@ -15,10 +18,10 @@ const ContactSection = () => (
       </div>
       <div className={styleContact["contact-submit"]}>
         <div className={styleContact["contact-input"]}>
-          <Icon iconName="letter" />
+          <Icon iconName={IconType.letter} />
           <Input type="text" placeholder="Your email..." />
         </div>
-        <Button type="secondary" text="Subscribe" />
+        <Button type={ButtonType.secondary} text="Subscribe" />
       </div>
     </div>
     <div className="secondary-line"></div>

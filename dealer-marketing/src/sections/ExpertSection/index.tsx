@@ -1,13 +1,14 @@
 import React from "react";
 import { Text } from "@components/common";
 import styleExpertSection from "./expertSection.module.css";
-import CustomImage from "@components/common/CustomImage/CustomImage";
+import CustomImage from "@components/common/CustomImage";
+import { TextType } from "@components/common/Text";
 
 const ExpertSection = () => (
   <div className={styleExpertSection.expert}>
     <div className={styleExpertSection["expert-position"]}>
       <div className={styleExpertSection["expert-title"]}>
-        <Text size="large" text="DMM Expert Podcast Interviews" />
+        <Text size={TextType.large} text="DMM Expert Podcast Interviews" />
       </div>
       <div className={styleExpertSection["expert-list"]}>
         <div className={styleExpertSection["expert-section"]}>

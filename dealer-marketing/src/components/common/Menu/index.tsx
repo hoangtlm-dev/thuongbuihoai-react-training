@@ -1,23 +1,15 @@
 import React, { memo } from "react";
-import { MenuProps, MenuType } from "@common-types/menu";
+import { MenuProps, MenuType, MenuTypeProp } from "@common-types/menu";
 import { MENU_LIST } from "@constants/menu";
 import menuStyle from "./menu.module.css";
 
-const classNameType = {
-  light: "menu-item-light",
-  dark: "menu-item-dark",
-  normal: "menu-item-normal",
-};
-
 const Menu: React.FC<MenuProps> = ({
   menuList = MENU_LIST,
-  type = "menu-item-light",
+  type = MenuTypeProp.dark,
 }) => {
-  const className = classNameType[type as keyof typeof classNameType] || "";
-
   const renderMenuList = (list: MenuType[]) => {
     return list?.map((item) => (
-      <li className={menuStyle[className]} key={item.key}>
+      <li className={menuStyle[type]} key={item.key}>
         <a href={item.url}>{item.label}</a>
       </li>
     ));

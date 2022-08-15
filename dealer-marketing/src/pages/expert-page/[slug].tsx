@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { GetStaticProps } from "next";
 import { ParsedUrlQuery } from "querystring";
 
@@ -12,7 +11,8 @@ import { Banner, Navigation, Text } from "@components/common";
 import { EXPERT_RESPONSE_DATA } from "@api-backup/expertResponseData";
 import Layout from "@layouts";
 import style from "../../styles/base/common.module.css";
-import CustomImage from "@components/common/CustomImage/CustomImage";
+import CustomImage from "@components/common/CustomImage";
+import { TextType } from "@components/common/Text";
 
 interface ExpertProps {
   expert: Expert;
@@ -76,13 +76,11 @@ const OurExpert: React.FC<ExpertProps> = ({ expert }) => {
           />
         </figure>
         <div className={style["style-info"]}>
-          <h2 itemProp="name" className={style["style-name"]}>
-            {name}
-          </h2>
+          <h2 className={style["style-name"]}>{name}</h2>
           <div className={style["style-content"]}>
-            <Text itemProp="description" size="regularDark" text={info} />
+            <Text size={TextType.regularDark} text={info} />
           </div>
-          <Text itemProp="description" size="regular" text={description} />
+          <Text size={TextType.regular} text={description} />
         </div>
       </div>
     </Layout>

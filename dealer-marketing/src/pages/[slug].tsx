@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { GetStaticProps } from "next";
 import { ParsedUrlQuery } from "querystring";
 
@@ -12,7 +11,8 @@ import { Banner, Navigation, Text } from "@components/common";
 import { BLOG_RESPONSE_DATA } from "@api-backup/blogResponseData";
 import Layout from "@layouts";
 import style from "../styles/base/common.module.css";
-import CustomImage from "@components/common/CustomImage/CustomImage";
+import CustomImage from "@components/common/CustomImage";
+import { TextType } from "@components/common/Text";
 
 interface BlogProps {
   blog: Blog;
@@ -68,7 +68,7 @@ const BlogDetail: React.FC<BlogProps> = ({ blog }) => {
         <div className={style["style-info"]}>
           <div className={style["style-card"]}>
             <div className={style["style-title"]}>
-              <Text size="largeDark" text={title} />
+              <Text size={TextType.largeDark} text={title} />
             </div>
             <hr />
             <div className={style["style-author"]}>
@@ -91,7 +91,7 @@ const BlogDetail: React.FC<BlogProps> = ({ blog }) => {
           </div>
           <hr />
           <div className={style["style-info-regular"]}>
-            <Text itemProp="description" size="regular" text={description} />
+            <Text size={TextType.regular} text={description} />
           </div>
         </div>
       </div>

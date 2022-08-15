@@ -1,24 +1,22 @@
 import React, { memo, MouseEventHandler } from "react";
 import styleIcon from "./icon.module.css";
 
+export enum IconType {
+  search = "icon-search",
+  letter = "icon-letter",
+  arrowRight = "icon-arrow-right",
+}
+
 interface IconProps {
-  iconName: string;
+  iconName: IconType;
   onClick?: MouseEventHandler<HTMLElement>;
 }
 
-const classNameType = {
-  search: "icon-search",
-  letter: "icon-letter",
-  arrowRight: "icon-arrow-right",
-};
-
 const Icon: React.FC<IconProps> = ({
-  iconName = "letter",
+  iconName = IconType.search,
   onClick = () => {},
 }) => {
-  const className = classNameType[iconName as keyof typeof classNameType] || "";
-
-  return <i onClick={onClick} className={styleIcon[className]} />;
+  return <i onClick={onClick} className={styleIcon[iconName]} />;
 };
 
 export default memo(Icon);

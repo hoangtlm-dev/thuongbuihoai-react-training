@@ -7,6 +7,7 @@ import { Expert } from "@common-types/expert";
 import { DataContext } from "@context/DataContext";
 import { EXPERT_RESPONSE_DATA } from "@api-backup/expertResponseData";
 import Layout from "@layouts";
+import { TextType } from "@components/common/Text";
 import style from "../../styles/base/common.module.css";
 
 interface OurExpertProps {
@@ -51,7 +52,7 @@ const OurExpertPage: React.FC<OurExpertProps> = ({ experts, errorCode }) => {
         <div className={style["style-description"]}>
           <h2 className={style["style-heading"]}>The DMM Expert Panel</h2>
           <Text
-            size="regular"
+            size={TextType.regular}
             text="Our Expert Panel consists of thirty automotive industry experts who share their knowledge and experience to help keep dealers informed on various topics such as Business Development, Dealership Business, Fixed Ops, Internet Marketing, Advertising, AI, Tech Solutions, Industry & Consumer Research, and more. With a combined LinkedIn following of 113,000+ followers, as an automotive industry professional or vendor, you are guaranteed to learn something new."
           />
         </div>

@@ -1,7 +1,8 @@
 import React, { useCallback, useContext, useState } from "react";
+import Icon, { IconType } from "../Icon";
 import { MENU_LIST } from "@constants/menu";
+import { MenuTypeProp } from "@common-types/menu";
 import { DataContext } from "@context/DataContext";
-import Icon from "../Icon";
 import Logo from "../Logo";
 import Menu from "../Menu";
 import styleNavigation from "./navigation.module.css";
@@ -22,13 +23,10 @@ const Navigation: React.FC = () => {
   return (
     <>
       <nav className={styleNavigation.nav}>
-        <Logo
-          url="/images/logos/logo-dealer-marketing.svg"
-          blurDataURL="/images/backgrounds/blur.jpg"
-        />
+        <Logo url="/images/logos/logo-dealer-marketing.svg" />
         <div className={styleNavigation["nav-info"]}>
-          <Menu type="dark" menuList={MENU_LIST} />
-          <Icon iconName="search" onClick={handleToggleModal} />
+          <Menu type={MenuTypeProp.dark} menuList={MENU_LIST} />
+          <Icon iconName={IconType.search} onClick={handleToggleModal} />
         </div>
       </nav>
       {openModal && (
