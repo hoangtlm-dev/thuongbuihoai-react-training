@@ -1,6 +1,6 @@
 import React, { memo } from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/router";
+import CustomImage from "../CustomImage/CustomImage";
 
 interface LogoProps {
   url: string;
@@ -10,19 +10,21 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({
   url = "/images/logos/logo-dealer-marketing.svg",
   blurDataURL = "/images/backgrounds/blur.jpg",
-}) => (
-  <figure>
-    <Link href="/">
-      <Image
-        src={url}
-        alt="This is logo"
-        width={256}
-        height={43}
-        placeholder="blur"
-        blurDataURL={blurDataURL}
-      />
-    </Link>
-  </figure>
-);
+}) => {
+  const router = useRouter();
+  return (
+    <figure>
+      <a onClick={() => router.push("/")}>
+        <CustomImage
+          url={url}
+          alt="This is logo"
+          width={256}
+          height={43}
+          blurDataURL={blurDataURL}
+        />
+      </a>
+    </figure>
+  );
+};
 
 export default memo(Logo);

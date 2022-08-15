@@ -6,6 +6,7 @@ import { Button, Text } from "@components/common";
 import { Blog } from "@common-types/blog";
 import { Expert } from "@common-types/expert";
 import styleResearch from "./researchSection.module.css";
+import CustomImage from "@components/common/CustomImage/CustomImage";
 
 interface ResearchProps {
   layout?: string;
@@ -60,26 +61,20 @@ const ResearchSection: React.FC<ResearchProps> = ({
       className={styleResearch[className]}>
       <div className={styleResearch["research-info"]}>
         {imageSmall ? (
-          <Image
-            itemProp="image"
-            src={blog?.image.url}
+          <CustomImage
+            url={blog?.image.url}
             alt={blog?.image.alt}
             className={styleResearch["research-image"]}
             width={350}
             height={210}
-            placeholder="blur"
-            blurDataURL="/images/backgrounds/blur.jpg"
           />
         ) : (
-          <Image
-            itemProp="image"
-            src="/images/past-present-future.png"
+          <CustomImage
+            url="/images/past-present-future.png"
             alt="This is image past present future"
             className={styleResearch["research-image"]}
             width={730}
             height={438}
-            placeholder="blur"
-            blurDataURL="/images/backgrounds/blur.jpg"
           />
         )}
         <div className={styleResearch[layoutContent]}>

@@ -5,6 +5,7 @@ import { Button, Text } from "@components/common";
 import styleCardExpert from "./cardExpert.module.css";
 import { useRouter } from "next/router";
 import { EXPERT_MOCKING } from "@constants/expert";
+import CustomImage from "@components/common/CustomImage/CustomImage";
 
 interface CardExpertProps {
   expert: Expert;
@@ -18,15 +19,12 @@ const CardExpert: React.FC<CardExpertProps> = ({ expert = EXPERT_MOCKING }) => {
       itemType="https://schema.org/Person"
       className={styleCardExpert["card-expert"]}>
       <figure className={styleCardExpert["card-layout"]}>
-        <Image
-          itemProp="image"
-          src={expert?.image.url}
+        <CustomImage
+          url={expert?.image.url}
           alt={expert?.image.alt}
-          className={styleCardExpert["card-image"]}
           width={130}
           height={130}
-          placeholder="blur"
-          blurDataURL="/images/backgrounds/blur.jpg"
+          className={styleCardExpert["card-image"]}
         />
       </figure>
       <a onClick={() => router.push(`/expert-page/${expert.slug}`)}>
