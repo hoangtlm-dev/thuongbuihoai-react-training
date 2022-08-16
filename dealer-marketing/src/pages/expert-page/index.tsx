@@ -2,13 +2,13 @@ import React, { useContext, useEffect } from "react";
 // components
 import { Navigation, Text } from "@components/common";
 import { ExpertList } from "@components";
+import { TextType } from "@components/common/Text";
 
 import { Expert } from "@common-types/expert";
 import { DataContext } from "@context/DataContext";
 import { EXPERT_RESPONSE_DATA } from "@api-backup/expertResponseData";
 import Layout from "@layouts";
-import { TextType } from "@components/common/Text";
-import style from "../../styles/base/common.module.css";
+import style from "@/styles/base/common.module.css";
 
 interface OurExpertProps {
   experts: Expert[];

@@ -7,12 +7,12 @@ import { Expert } from "@common-types/expert";
 
 // components
 import { Banner, Navigation, Text } from "@components/common";
+import { TextType } from "@components/common/Text";
+import CustomImage from "@components/common/CustomImage";
 
 import { EXPERT_RESPONSE_DATA } from "@api-backup/expertResponseData";
 import Layout from "@layouts";
-import style from "../../styles/base/common.module.css";
-import CustomImage from "@components/common/CustomImage";
-import { TextType } from "@components/common/Text";
+import style from "@/styles/base/common.module.css";
 
 interface ExpertProps {
   expert: Expert;
@@ -52,20 +52,17 @@ const OurExpert: React.FC<ExpertProps> = ({ expert }) => {
     name = "Matt Childers",
     info = "",
     description = "",
-    image = { url: "/images/avatar/matt-childers.png", alt: "" },
+    image = {
+      url: "/images/avatar/matt-childers.png",
+      alt: "This is avatar of Matt Childers",
+    },
   } = expert ? expert : {};
 
   return (
     <Layout>
       <Navigation />
-      <Banner
-        url="/images/backgrounds/bg-oto.jpg"
-        blurDataURL="/images/backgrounds/blur.jpg"
-      />
-      <div
-        itemScope
-        itemType="https://schema.org/Person"
-        className={style["container-expert"]}>
+      <Banner url="/images/backgrounds/bg-oto.jpg" />
+      <div className={style["container-expert"]}>
         <figure className={style["style-layout-image"]}>
           <CustomImage
             url={image.url}

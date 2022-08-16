@@ -9,11 +9,7 @@ import Layout from "@layouts";
 const AboutPage = () => (
   <Layout>
     <Navigation />
-    <Banner
-      url="/images/backgrounds/bg-oto.jpg"
-      text="About Us"
-      blurDataURL="/images/backgrounds/blur.jpg"
-    />
+    <Banner url="/images/backgrounds/bg-oto.jpg" text="About Us" />
     <AboutSection />
   </Layout>
 );

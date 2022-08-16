@@ -50,7 +50,6 @@ const Home: NextPage<HomeProps> = ({ blogs, errorCode }) => {
       <Navigation />
       <Banner
         url="/images/backgrounds/home-page.png"
-        blurDataURL="/images/backgrounds/blur.jpg"
         text="Expert Automotive Knowledge at Your Fingertips"
       />
       <MainSection />

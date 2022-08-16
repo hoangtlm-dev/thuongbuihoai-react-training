@@ -59,11 +59,7 @@ const BlogDetail: React.FC<BlogProps> = ({ blog }) => {
   return (
     <Layout>
       <Navigation />
-      <Banner
-        url={image.url}
-        text=""
-        blurDataURL="/images/backgrounds/blur.jpg"
-      />
+      <Banner url={image.url} text="" />
       <div itemScope itemType="https://schema.org/Blog" className="container">
         <div className={style["style-info"]}>
           <div className={style["style-card"]}>

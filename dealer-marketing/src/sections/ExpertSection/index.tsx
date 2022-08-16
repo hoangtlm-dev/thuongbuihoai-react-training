@@ -1,8 +1,8 @@
 import React from "react";
 import { Text } from "@components/common";
-import styleExpertSection from "./expertSection.module.css";
 import CustomImage from "@components/common/CustomImage";
 import { TextType } from "@components/common/Text";
+import styleExpertSection from "./expertSection.module.css";
 
 const ExpertSection = () => (
   <div className={styleExpertSection.expert}>
