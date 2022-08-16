@@ -3,7 +3,7 @@
 }
 
 .style-expert {
-  padding: 150px 120px 30px;
+  padding: 80px 80px 50px;
 }
 
 .style-heading {
@@ -29,7 +29,7 @@
 
 .style-description {
   text-align: center;
-  padding: 70px 300px;
+  padding: 70px;
   margin: 0 auto;
   max-width: 1140px;
 }
@@ -89,7 +89,7 @@
 .container-expert {
   position: relative;
   z-index: 15;
-  margin: 420px 30px 100px;
+  margin: -70px 30px 80px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
