@@ -17,7 +17,7 @@ interface TextProps {
   text?: string;
 }
 
-const Text: React.FC<TextProps> = ({ text = "Researchs", size = "normal" }) => {
+const Text: React.FC<TextProps> = ({ text = "Research", size = "normal" }) => {
   return <p className={styleText[size]}>{text}</p>;
 };
 
