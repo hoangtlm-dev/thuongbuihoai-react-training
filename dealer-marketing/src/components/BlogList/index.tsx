@@ -17,7 +17,6 @@ const BlogList: React.FC = () => {
   }, [blogs, searchValue]);
 
   const arrBlog = blogList?.slice(0, 3);
-
   if (errorCode) {
     return <Error statusCode={errorCode} />;
   }
