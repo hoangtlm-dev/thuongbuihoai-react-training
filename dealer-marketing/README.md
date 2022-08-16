@@ -63,6 +63,10 @@
 NEXT_PUBLIC_BASE_URL="http://localhost:3000/api"
 ```
 
+# WORKFLOW
+
+https://gitlab.asoft-python.com/thuong.buihoai/react-training/uploads/ee51f964225745420d7aa7b909d75cfa/image.png
+
 # DEPLOYMENT
 
 ```
