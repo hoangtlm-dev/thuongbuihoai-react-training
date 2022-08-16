@@ -9,7 +9,7 @@ const Menu: React.FC<MenuProps> = ({
 }) => {
   const renderMenuList = (list: MenuType[]) => {
     return list?.map((item) => (
-      <li className={menuStyle[type]} key={item.key}>
+      <li className={menuStyle[`menu-${type}`]} key={item.key}>
         <a href={item.url}>{item.label}</a>
       </li>
     ));

@@ -2,9 +2,9 @@ import React, { memo, MouseEventHandler } from "react";
 import styleIcon from "./icon.module.css";
 
 export enum IconType {
-  search = "icon-search",
-  letter = "icon-letter",
-  arrowRight = "icon-arrow-right",
+  search = "search",
+  letter = "letter",
+  arrowRight = "arrow-right",
 }
 
 interface IconProps {
@@ -16,7 +16,7 @@ const Icon: React.FC<IconProps> = ({
   iconName = IconType.search,
   onClick = () => {},
 }) => {
-  return <i onClick={onClick} className={styleIcon[iconName]} />;
+  return <i onClick={onClick} className={styleIcon[`icon-${iconName}`]} />;
 };
 
 export default memo(Icon);

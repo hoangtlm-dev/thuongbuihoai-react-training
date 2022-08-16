@@ -21,13 +21,13 @@ interface ResearchProps {
 }
 
 export enum LayoutContentType {
-  center = "research-center",
-  left = "research-left",
+  center = "center",
+  left = "left",
 }
 
 export enum ClassNameType {
-  center = "research",
-  grid = "research-grid",
+  center = "section",
+  grid = "grid",
 }
 
 const ResearchSection: React.FC<ResearchProps> = ({
@@ -41,7 +41,7 @@ const ResearchSection: React.FC<ResearchProps> = ({
   const router = useRouter();
 
   return (
-    <div className={styleResearch[layout]}>
+    <div className={styleResearch[`research-${layout}`]}>
       <div className={styleResearch["research-info"]}>
         {imageSmall ? (
           <CustomImage
@@ -60,7 +60,7 @@ const ResearchSection: React.FC<ResearchProps> = ({
             height={438}
           />
         )}
-        <div className={styleResearch[content]}>
+        <div className={styleResearch[`research-${content}`]}>
           <p className={styleResearch["research-title"]}>Research & analysis</p>
           <div className={styleResearch["research-content"]}>
             <div className={styleResearch["research-heading"]}>

@@ -4,8 +4,8 @@ import styleButton from "./button.module.css";
 
 export enum ButtonType {
   default = "",
-  primary = "btn-primary",
-  secondary = "btn-secondary",
+  primary = "primary",
+  secondary = "secondary",
 }
 
 interface ButtonProps {
@@ -24,7 +24,10 @@ const Button: React.FC<ButtonProps> = ({
   icon = false,
 }) => {
   return (
-    <button className={styleButton[type]} disabled={disable} onClick={onClick}>
+    <button
+      className={styleButton[`btn-${type}`]}
+      disabled={disable}
+      onClick={onClick}>
       {text}
       {icon && <Icon iconName={IconType.arrowRight} />}
     </button>

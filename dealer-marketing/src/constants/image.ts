@@ -4,6 +4,7 @@ const IMAGE = {
   width: 1390,
   height: 480,
   blurDataURL: "/images/backgrounds/blur.jpg",
+  logoUrl: "/images/logos/logo-dealer-marketing.svg",
 };
 
 export { IMAGE };

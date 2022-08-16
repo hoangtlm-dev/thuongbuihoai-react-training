@@ -14,7 +14,7 @@ interface ImageProps {
 }
 const CustomImage: React.FC<ImageProps> = ({
   url = IMAGE.url,
-  blurDataURL = "/images/backgrounds/blur.jpg",
+  blurDataURL = IMAGE.blurDataURL,
   className = "banner-image-filter",
   height = IMAGE.height,
   width = IMAGE.width,

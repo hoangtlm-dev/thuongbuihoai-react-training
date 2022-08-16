@@ -2,14 +2,14 @@ import React, { memo } from "react";
 import styleText from "./text.module.css";
 
 export enum TextType {
-  normal = "text-normal",
-  regular = "text-regular",
-  regularDark = "text-regular-dark",
-  regularOutline = "text-regular-outline",
-  medium = "text-medium",
-  mediumOutline = "text-medium-outline",
-  large = "text-large",
-  largeDark = "text-large-dark",
+  normal = "normal",
+  regular = "regular",
+  regularDark = "regular-dark",
+  regularOutline = "regular-outline",
+  medium = "medium",
+  mediumOutline = "medium-outline",
+  large = "large",
+  largeDark = "large-dark",
 }
 
 interface TextProps {
@@ -18,7 +18,7 @@ interface TextProps {
 }
 
 const Text: React.FC<TextProps> = ({ text = "Research", size = "normal" }) => {
-  return <p className={styleText[size]}>{text}</p>;
+  return <p className={styleText[`text-${size}`]}>{text}</p>;
 };
 
 export default memo(Text);

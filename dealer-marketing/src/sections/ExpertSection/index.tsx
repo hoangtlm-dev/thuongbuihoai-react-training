@@ -4,7 +4,7 @@ import CustomImage from "@components/common/CustomImage";
 import { TextType } from "@components/common/Text";
 import styleExpertSection from "./expertSection.module.css";
 
-const ExpertSection = () => (
+const ExpertSection: React.FC = () => (
   <div className={styleExpertSection.expert}>
     <div className={styleExpertSection["expert-position"]}>
       <div className={styleExpertSection["expert-title"]}>

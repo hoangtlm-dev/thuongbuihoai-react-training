@@ -5,7 +5,7 @@ import { ButtonType } from "@components/common/Button";
 import { Text, Input, Button, Icon } from "@components/common";
 import { TextType } from "@components/common/Text";
 
-const ContactSection = () => (
+const ContactSection: React.FC = () => (
   <>
     <div className="first-line"></div>
     <div className={styleContact.contact}>

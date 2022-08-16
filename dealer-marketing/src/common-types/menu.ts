@@ -5,9 +5,9 @@ export interface MenuType {
 }
 
 export enum MenuTypeProp {
-  light = "menu-item-light",
-  dark = "menu-item-dark",
-  normal = "menu-item-normal",
+  light = "item-light",
+  dark = "item-dark",
+  normal = "item-normal",
 }
 
 export interface MenuProps {
