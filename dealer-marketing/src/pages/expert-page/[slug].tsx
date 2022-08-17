@@ -13,7 +13,7 @@ import CustomImage from "@components/common/CustomImage";
 import { EXPERT_RESPONSE_DATA } from "@api-backup/expertResponseData";
 import { IMAGE } from "@constants/image";
 import Layout from "@layouts";
-import style from "@/styles/base/common.module.css";
+import style from "./expert.module.css";
 
 interface ExpertProps {
   expert: Expert;
@@ -73,9 +73,9 @@ const OurExpert: React.FC<ExpertProps> = ({ expert }) => {
             className={style["expert-detail-image"]}
           />
         </figure>
-        <div className={style["style-info"]}>
-          <h2 className={style["style-name"]}>{name}</h2>
-          <div className={style["style-content"]}>
+        <div className={style["expert-detail-info"]}>
+          <h2 className={style["expert-detail-name"]}>{name}</h2>
+          <div className={style["expert-detail-content"]}>
             <Text size={TextType.regularDark} text={info} />
           </div>
           <Text size={TextType.regular} text={description} />

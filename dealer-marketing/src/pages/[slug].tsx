@@ -9,10 +9,10 @@ import { Blog } from "@common-types/blog";
 import { Banner, Navigation, Text } from "@components/common";
 
 import { BLOG_RESPONSE_DATA } from "@api-backup/blogResponseData";
-import Layout from "@layouts";
-import style from "../styles/base/common.module.css";
 import CustomImage from "@components/common/CustomImage";
 import { TextType } from "@components/common/Text";
+import Layout from "@layouts";
+import style from "./style.module.css";
 
 interface BlogProps {
   blog: Blog;
@@ -61,23 +61,23 @@ const BlogDetail: React.FC<BlogProps> = ({ blog }) => {
       <Navigation />
       <Banner url={image.url} text="" />
       <div itemScope itemType="https://schema.org/Blog" className="container">
-        <div className={style["style-info"]}>
-          <div className={style["style-card"]}>
-            <div className={style["style-title"]}>
+        <div className={style["blog-detail-info"]}>
+          <div className={style["blog-detail-card"]}>
+            <div className={style["blog-detail-title"]}>
               <Text size={TextType.largeDark} text={title} />
             </div>
             <hr />
-            <div className={style["style-author"]}>
+            <div className={style["blog-detail-author"]}>
               <figure>
                 <CustomImage
                   url={image.url}
                   alt={image.alt}
                   width={60}
                   height={60}
-                  className={style["style-image"]}
+                  className={style["blog-detail-image"]}
                 />
               </figure>
-              <div className={style["style-funeral"]}>
+              <div className={style["blog-detail-funeral"]}>
                 <p>
                   by <span>{expertId}</span>
                 </p>
@@ -86,9 +86,7 @@ const BlogDetail: React.FC<BlogProps> = ({ blog }) => {
             </div>
           </div>
           <hr />
-          <div className={style["style-info-regular"]}>
-            <Text size={TextType.regular} text={description} />
-          </div>
+          <Text size={TextType.regular} text={description} />
         </div>
       </div>
     </Layout>

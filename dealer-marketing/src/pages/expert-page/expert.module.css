@@ -26,10 +26,39 @@
   max-width: 1140px;
 }
 
+/* expert detail */
 .expert-detail {
   position: relative;
   z-index: 15;
   margin: -70px 30px 80px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.expert-detail-layout {
+  position: absolute;
+  z-index: 20;
+  left: 45%;
+  top: -25%;
+}
+
+.expert-detail-image {
+  border-radius: 50%;
+}
+
+.expert-detail-info {
+  text-align: center;
+  padding: 80px;
+}
+
+.expert-detail-name {
+  font-size: 24px;
+  color: #3c4858;
+  font-weight: 700;
+}
+
+.expert-detail-content {
+  font-family: "Roboto";
+  color: #3c4858;
+  margin: 20px;
 }
