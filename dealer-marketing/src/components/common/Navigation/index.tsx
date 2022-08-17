@@ -3,6 +3,7 @@ import Icon, { IconType } from "../Icon";
 import { MENU_LIST } from "@constants/menu";
 import { MenuTypeProp } from "@common-types/menu";
 import { DataContext } from "@context/DataContext";
+import { IMAGE } from "@constants/image";
 import Logo from "../Logo";
 import Menu from "../Menu";
 import styleNavigation from "./navigation.module.css";
@@ -23,7 +24,7 @@ const Navigation: React.FC = () => {
   return (
     <>
       <nav className={styleNavigation.nav}>
-        <Logo url="/images/logos/logo-dealer-marketing.svg" />
+        <Logo url={IMAGE.logoUrl} />
         <div className={styleNavigation["nav-info"]}>
           <Menu type={MenuTypeProp.dark} menuList={MENU_LIST} />
           <Icon iconName={IconType.search} onClick={handleToggleModal} />

@@ -13,12 +13,12 @@ interface ImageProps {
   layout?: "fill" | "fixed" | "intrinsic" | "responsive";
 }
 const CustomImage: React.FC<ImageProps> = ({
-  url = IMAGE.url,
+  url,
   blurDataURL = IMAGE.blurDataURL,
   className = "banner-image-filter",
   height = IMAGE.height,
   width = IMAGE.width,
-  alt = IMAGE.alt,
+  alt,
   layout,
   placeholder,
 }) => {
