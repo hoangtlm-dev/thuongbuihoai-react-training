@@ -50,7 +50,7 @@ const ResearchSection: React.FC<ResearchProps> = ({
         ) : (
           <CustomImage
             url="/images/past-present-future.png"
-            alt="This is image past present future"
+            alt="This is image past presents future"
             className={styleResearch["research-image"]}
             width={730}
             height={438}
