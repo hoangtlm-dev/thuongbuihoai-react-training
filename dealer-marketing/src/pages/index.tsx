@@ -24,7 +24,7 @@ export const getStaticProps = async () => {
     return {
       props: {
         blogs: blogs,
-        errorCode: false,
+        errorCode: "",
       },
     };
   } catch (errorCode) {

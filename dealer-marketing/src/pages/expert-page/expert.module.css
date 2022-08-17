@@ -1,0 +1,35 @@
+.our-expert-container {
+  background-color: #fff;
+}
+
+.our-expert-list {
+  padding: 80px 80px 50px;
+}
+
+.our-expert-heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: #3c4858;
+  padding-bottom: 20px;
+}
+
+.our-expert-navigation {
+  position: relative;
+  z-index: 30;
+  box-shadow: 0 4px 18px 0px rgb(0 0 0 / 12%), 0 7px 10px -5px rgb(0 0 0 / 15%);
+}
+
+.our-expert-description {
+  text-align: center;
+  padding: 70px;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.expert-detail {
+  position: relative;
+  z-index: 15;
+  margin: -70px 30px 80px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

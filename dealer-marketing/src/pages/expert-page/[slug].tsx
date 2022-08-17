@@ -63,14 +63,14 @@ const OurExpert: React.FC<ExpertProps> = ({ expert }) => {
     <Layout>
       <Navigation />
       <Banner url={IMAGE.bannerUrl} />
-      <div className={style["container-expert"]}>
-        <figure className={style["style-layout-image"]}>
+      <div className={style["expert-detail"]}>
+        <figure className={style["expert-detail-layout"]}>
           <CustomImage
             url={image.url}
             alt={image.alt}
             width={130}
             height={130}
-            className={style["style-image"]}
+            className={style["expert-detail-image"]}
           />
         </figure>
         <div className={style["style-info"]}>
