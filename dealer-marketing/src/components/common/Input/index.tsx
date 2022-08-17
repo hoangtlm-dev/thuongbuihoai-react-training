@@ -6,10 +6,7 @@ interface InputProps {
   placeholder: string;
 }
 
-const Input: React.FC<InputProps> = ({
-  type = "text",
-  placeholder = "Your email...",
-}) => (
+const Input: React.FC<InputProps> = ({ type, placeholder }) => (
   <input className={styleInput.input} type={type} placeholder={placeholder} />
 );
 

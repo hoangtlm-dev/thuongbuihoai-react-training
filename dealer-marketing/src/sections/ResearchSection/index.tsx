@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { Button, Text } from "@components/common";
 import { Blog } from "@common-types/blog";
 import { Expert } from "@common-types/expert";
@@ -37,8 +36,6 @@ const ResearchSection: React.FC<ResearchProps> = ({
   blog,
   expert = EXPERT_MOCKING,
 }) => {
-  const router = useRouter();
-
   return (
     <div className={styleResearch[`research-${layout}`]}>
       <div className={styleResearch["research-info"]}>
@@ -63,9 +60,9 @@ const ResearchSection: React.FC<ResearchProps> = ({
           <p className={styleResearch["research-title"]}>Research & analysis</p>
           <div className={styleResearch["research-content"]}>
             <div className={styleResearch["research-heading"]}>
-              <a onClick={() => router.push(`/${blog?.slug}`)}>
+              <Link href={`/${blog?.slug}`} passHref>
                 <Text size={TextType.mediumOutline} text={blog?.title} />
-              </a>
+              </Link>
             </div>
             <div>
               <p className={styleResearch["research-description"]}>

@@ -15,10 +15,17 @@ export enum TextType {
 interface TextProps {
   size?: string;
   text?: string;
+  onClick?: () => {};
 }
 
-const Text: React.FC<TextProps> = ({ text = "Research", size = "normal" }) => {
-  return <p className={styleText[`text-${size}`]}>{text}</p>;
-};
+const Text: React.FC<TextProps> = React.forwardRef(
+  ({ text = "Research", size = "normal", onClick = () => {} }) => {
+    return (
+      <p onClick={onClick} className={styleText[`text-${size}`]}>
+        {text}
+      </p>
+    );
+  },
+);
 
 export default memo(Text);

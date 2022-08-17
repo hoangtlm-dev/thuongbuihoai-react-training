@@ -11,29 +11,34 @@ interface ImageProps {
   className?: string;
   placeholder?: "blur" | "empty";
   layout?: "fill" | "fixed" | "intrinsic" | "responsive";
+  onClick?: () => {};
 }
-const CustomImage: React.FC<ImageProps> = ({
-  url,
-  blurDataURL = IMAGE.blurDataURL,
-  className = "banner-image-filter",
-  height = IMAGE.height,
-  width = IMAGE.width,
-  alt,
-  layout,
-  placeholder,
-}) => {
-  return (
-    <Image
-      src={url}
-      alt={alt}
-      layout={layout}
-      placeholder={placeholder}
-      width={width}
-      height={height}
-      blurDataURL={blurDataURL}
-      className={className}
-    />
-  );
-};
+const CustomImage: React.FC<ImageProps> = React.forwardRef(
+  ({
+    url,
+    alt,
+    height = IMAGE.height,
+    width = IMAGE.width,
+    blurDataURL = IMAGE.blurDataURL,
+    className = "banner-image-filter",
+    placeholder = "blur",
+    layout = undefined,
+    onClick = () => {},
+  }) => {
+    return (
+      <Image
+        src={url}
+        alt={alt}
+        layout={layout}
+        placeholder={placeholder}
+        width={width}
+        height={height}
+        blurDataURL={blurDataURL}
+        className={className}
+        onClick={onClick}
+      />
+    );
+  },
+);
 
 export default CustomImage;

@@ -1,5 +1,5 @@
 import React from "react";
-import { useRouter } from "next/router";
+import Link from "next/link";
 import { Expert } from "@common-types/expert";
 import { EXPERT_MOCKING } from "@constants/expert";
 import { Button, CustomImage, Text } from "@components/common";
@@ -11,7 +11,6 @@ interface CardExpertProps {
 }
 
 const CardExpert: React.FC<CardExpertProps> = ({ expert = EXPERT_MOCKING }) => {
-  const router = useRouter();
   return (
     <div className={styleCardExpert["card-expert"]}>
       <figure className={styleCardExpert["card-layout"]}>
@@ -23,17 +22,16 @@ const CardExpert: React.FC<CardExpertProps> = ({ expert = EXPERT_MOCKING }) => {
           className={styleCardExpert["card-image"]}
         />
       </figure>
-      <a onClick={() => router.push(`/expert-page/${expert.slug}`)}>
+      <Link href={`/expert-page/${expert.slug}`} passHref>
         <Text size={TextType.regularOutline} text={expert?.name} />
-      </a>
+      </Link>
       <div className={styleCardExpert["card-info"]}>
         <Text text={expert?.info} />
       </div>
       <div className={styleCardExpert["card-button"]}>
-        <Button
-          icon
-          onClick={() => router.push(`/expert-page/${expert.slug}`)}
-        />
+        <Link href={`/expert-page/${expert.slug}`} passHref>
+          <Button icon />
+        </Link>
       </div>
     </div>
   );

@@ -20,8 +20,6 @@ interface HomeProps {
 
 export const getStaticProps = async () => {
   try {
-    // const res = await axios.get(BLOG_URL);
-    // const blogs = res.data;
     const blogs: Blog[] = BLOG_RESPONSE_DATA;
     return {
       props: {
