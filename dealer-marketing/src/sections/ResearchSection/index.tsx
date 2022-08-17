@@ -35,7 +35,7 @@ const ResearchSection: React.FC<ResearchProps> = ({
   layout = ClassNameType.center,
   content = LayoutContentType.center,
   isButton = true,
-  blog = BLOG_MOCKING,
+  blog,
   expert = EXPERT_MOCKING,
 }) => {
   const router = useRouter();

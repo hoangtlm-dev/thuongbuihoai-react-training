@@ -11,6 +11,7 @@ import { TextType } from "@components/common/Text";
 import CustomImage from "@components/common/CustomImage";
 
 import { EXPERT_RESPONSE_DATA } from "@api-backup/expertResponseData";
+import { IMAGE } from "@constants/image";
 import Layout from "@layouts";
 import style from "@/styles/base/common.module.css";
 
@@ -61,7 +62,7 @@ const OurExpert: React.FC<ExpertProps> = ({ expert }) => {
   return (
     <Layout>
       <Navigation />
-      <Banner url="/images/backgrounds/bg-oto.jpg" />
+      <Banner url={IMAGE.bannerUrl} />
       <div className={style["container-expert"]}>
         <figure className={style["style-layout-image"]}>
           <CustomImage

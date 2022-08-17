@@ -8,8 +8,9 @@ import { Banner, Navigation } from "@components/common";
 import { Blog } from "@common-types/blog";
 
 import { DataContext } from "@context/DataContext";
-import MainSection from "@sections/MainSection";
+import { IMAGE } from "@constants/image";
 import { BLOG_RESPONSE_DATA } from "@api-backup/blogResponseData";
+import MainSection from "@sections/MainSection";
 import Layout from "@layouts";
 
 interface HomeProps {
@@ -49,7 +50,7 @@ const Home: NextPage<HomeProps> = ({ blogs, errorCode }) => {
     <Layout>
       <Navigation />
       <Banner
-        url="/images/backgrounds/home-page.png"
+        url={IMAGE.url}
         text="Expert Automotive Knowledge at Your Fingertips"
       />
       <MainSection />
