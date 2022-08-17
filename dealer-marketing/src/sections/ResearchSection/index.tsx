@@ -6,7 +6,6 @@ import { Blog } from "@common-types/blog";
 import { Expert } from "@common-types/expert";
 import { ButtonType } from "@components/common/Button";
 import { TextType } from "@components/common/Text";
-import { BLOG_MOCKING } from "@constants/blog";
 import { EXPERT_MOCKING } from "@constants/expert";
 import CustomImage from "@components/common/CustomImage";
 import styleResearch from "./researchSection.module.css";
