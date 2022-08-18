@@ -1,12 +1,15 @@
 import type { AppProps } from "next/app";
-import { DataProvider } from "@context/DataContext";
+import { BlogProvider } from "@context/BlogContext";
 import "../styles/main.css";
+import { ExpertProvider } from "@context/ExpertContext";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <DataProvider>
-      <Component {...pageProps} />
-    </DataProvider>
+    <BlogProvider>
+      <ExpertProvider>
+        <Component {...pageProps} />
+      </ExpertProvider>
+    </BlogProvider>
   );
 }
 
