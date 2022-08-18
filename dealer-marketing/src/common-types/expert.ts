@@ -9,3 +9,11 @@ export interface Expert {
   };
   description?: string;
 }
+
+export interface ExpertContextProps {
+  experts: Expert[];
+  errorCode: number;
+  setExperts: Function;
+  setErrorCode: Function;
+  handleUpdateExperts: Function;
+}

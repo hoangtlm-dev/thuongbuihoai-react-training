@@ -10,3 +10,14 @@ export interface Blog {
   };
   description?: string;
 }
+
+export interface BlogContextProps {
+  blogs: Blog[];
+  blogList: Blog[];
+  errorCode: number;
+  setBlogs: Function;
+  searchValue: string;
+  setErrorCode: Function;
+  setSearchValue: Function;
+  handleUpdateBlogs: Function;
+}
