@@ -16,8 +16,8 @@
 }
 
 .nav-search {
-  position: absolute;
-  z-index: 15;
+  position: fixed;
+  z-index: 45;
   top: 15%;
   right: 10%;
   padding: 7px;

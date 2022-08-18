@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import Error from "next/error";
-import { DataContext } from "@context/DataContext";
 import CardExpert from "../CardExpert";
 import styleExpertList from "./expertList.module.css";
+import { ExpertContext } from "@context/ExpertContext";
 
 const ExpertList: React.FC = () => {
-  const { experts, errorCode } = useContext(DataContext);
+  const { experts, errorCode } = useContext(ExpertContext);
 
   if (errorCode) {
     return <Error statusCode={errorCode} />;
