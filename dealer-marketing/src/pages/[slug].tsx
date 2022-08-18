@@ -23,7 +23,6 @@ interface IParams extends ParsedUrlQuery {
 }
 
 export const getStaticPaths = async () => {
-  // const blogs = await axios.get(BLOG_URL);
   const blogs: Blog[] = BLOG_RESPONSE_DATA;
 
   const paths = blogs.map((blog: Blog) => {

@@ -24,7 +24,6 @@ interface IParams extends ParsedUrlQuery {
 }
 
 export const getStaticPaths = async () => {
-  // const experts = await axios.get(EXPERT_URL);
   const experts: Expert[] = EXPERT_RESPONSE_DATA;
 
   const paths = experts.map((expert: Expert) => {
@@ -38,7 +37,6 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { slug } = context.params as IParams;
-  // const res = await axios.get(EXPERT_URL + "?slug=" + slug);
   const res = EXPERT_RESPONSE_DATA.filter((item) => item.slug == slug);
 
   return {

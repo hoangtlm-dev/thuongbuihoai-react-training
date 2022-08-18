@@ -5,10 +5,10 @@ import { ExpertList } from "@components";
 import { TextType } from "@components/common/Text";
 
 import { Expert } from "@common-types/expert";
-import { DataContext } from "@context/DataContext";
 import { EXPERT_RESPONSE_DATA } from "@api-backup/expertResponseData";
 import Layout from "@layouts";
 import style from "./expert.module.css";
+import { ExpertContext } from "@context/ExpertContext";
 
 interface OurExpertProps {
   experts: Expert[];
@@ -35,10 +35,9 @@ export const getStaticProps = async () => {
 };
 
 const OurExpertPage: React.FC<OurExpertProps> = ({ experts, errorCode }) => {
-  const { setExperts, setErrorCode } = useContext(DataContext);
+  const { handleUpdateExperts } = useContext(ExpertContext);
   useEffect(() => {
-    setExperts(experts);
-    setErrorCode(errorCode);
+    handleUpdateExperts(errorCode, experts);
   }, []);
 
   return (

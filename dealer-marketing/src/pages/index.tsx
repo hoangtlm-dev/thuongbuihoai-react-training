@@ -7,8 +7,8 @@ import { Banner, Navigation } from "@components/common";
 // common-types
 import { Blog } from "@common-types/blog";
 
-import { DataContext } from "@context/DataContext";
 import { IMAGE } from "@constants/image";
+import { BlogContext } from "@context/BlogContext";
 import { BLOG_RESPONSE_DATA } from "@api-backup/blogResponseData";
 import MainSection from "@sections/MainSection";
 import Layout from "@layouts";
@@ -38,10 +38,9 @@ export const getStaticProps = async () => {
 };
 
 const Home: NextPage<HomeProps> = ({ blogs, errorCode }) => {
-  const { setBlogs, setErrorCode } = useContext(DataContext);
+  const { handleUpdateBlogs } = useContext(BlogContext);
   useEffect(() => {
-    setBlogs(blogs);
-    setErrorCode(errorCode);
+    handleUpdateBlogs(errorCode, blogs);
   }, []);
 
   return (
