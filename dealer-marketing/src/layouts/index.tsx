@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -8,11 +9,16 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <main>
-      <Header />
-      {children}
-      <Footer />
-    </main>
+    <>
+      <Head>
+        <title>Dealer Marketing</title>
+      </Head>
+      <main>
+        <Header />
+        {children}
+        <Footer />
+      </main>
+    </>
   );
 };
 

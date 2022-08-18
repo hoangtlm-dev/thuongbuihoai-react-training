@@ -26,14 +26,29 @@ const Navigation: React.FC = () => {
     });
   };
 
-  const handleToggleModal = useCallback(() => {
-    setOpenModal(!openModal);
-  }, [openModal]);
+  const handleToggleModal = useCallback(
+    (event: { stopPropagation: () => void }) => {
+      event.stopPropagation();
+      setOpenModal(true);
+    },
+    [],
+  );
 
   const handleSearch = (event: { target: { value: string } }) => {
     const value = event.target.value;
     setSearchValue(value);
   };
+
+  const closeSearchBox = (event: Event) => {
+    if (!(event.target as HTMLInputElement).closest("#searchInput")) {
+      setOpenModal(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", closeSearchBox);
+    return () => document.removeEventListener("click", closeSearchBox);
+  }, []);
 
   return (
     <>
@@ -45,7 +60,7 @@ const Navigation: React.FC = () => {
         </div>
       </nav>
       {openModal && (
-        <div className={styleNavigation["nav-search"]}>
+        <div id="searchInput" className={styleNavigation["nav-search"]}>
           <input
             type="text"
             placeholder="Search the site..."
