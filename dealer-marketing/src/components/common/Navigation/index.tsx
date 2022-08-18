@@ -7,6 +7,7 @@ import { BlogContext } from "@context/BlogContext";
 import Logo from "../Logo";
 import Menu from "../Menu";
 import styleNavigation from "./navigation.module.css";
+import SearchBox from "../SearchBox/SearchBox";
 
 const Navigation: React.FC = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);
@@ -60,14 +61,11 @@ const Navigation: React.FC = () => {
         </div>
       </nav>
       {openModal && (
-        <div id="searchInput" className={styleNavigation["nav-search"]}>
-          <input
-            type="text"
-            placeholder="Search the site..."
-            onChange={handleSearch}
-            onClick={scrollToBlogs}
-          />
-        </div>
+        <SearchBox
+          openModal={handleToggleModal}
+          onSearch={handleSearch}
+          onScroll={scrollToBlogs}
+        />
       )}
     </>
   );
