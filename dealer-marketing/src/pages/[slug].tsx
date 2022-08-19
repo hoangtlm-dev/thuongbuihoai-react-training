@@ -36,7 +36,6 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { slug } = context.params as IParams;
-  // const res = await axios.get(BLOG_URL + "?slug=" + slug);
   const res = BLOG_RESPONSE_DATA.filter((item) => item.slug == slug);
 
   return {
