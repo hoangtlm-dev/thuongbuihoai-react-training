@@ -79,7 +79,7 @@ https://dealer-marketing.vercel.app/
 - Clone project:
 - git clone git@gitlab.asoft-python.com:thuong.buihoai/react-training.git
 - cd react-training
-- git checkout feature/practice-nextjs
+- git checkout feature/nextjs-practice
 - Install dependencies : pnpm install
 - Run app: pnpm dev
 - Open on web: http://localhost:3000/
