@@ -22,7 +22,7 @@ const Button: React.FC<ButtonProps> = React.forwardRef(
     text = "",
     disable = false,
     icon = false,
-    onClick = () => {},
+    onClick = () => null,
   }) => {
     return (
       <button

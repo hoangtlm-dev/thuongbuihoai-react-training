@@ -19,7 +19,7 @@ interface TextProps {
 }
 
 const Text: React.FC<TextProps> = React.forwardRef(
-  ({ text = "Research", size = "normal", onClick = () => {} }) => {
+  ({ text = "Research", size = "normal", onClick = () => null }) => {
     return (
       <p onClick={onClick} className={styleText[`text-${size}`]}>
         {text}

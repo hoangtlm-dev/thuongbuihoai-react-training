@@ -35,16 +35,16 @@ const Navigation: React.FC = () => {
     [],
   );
 
-  const handleSearch = (event: { target: { value: string } }) => {
+  const handleSearch = useCallback((event: { target: { value: string } }) => {
     const value = event.target.value;
     setSearchValue(value);
-  };
+  }, []);
 
-  const closeSearchBox = (event: Event) => {
+  const closeSearchBox = useCallback((event: Event) => {
     if (!(event.target as HTMLInputElement).closest("#searchInput")) {
       setOpenModal(false);
     }
-  };
+  }, []);
 
   useEffect(() => {
     document.addEventListener("click", closeSearchBox);

@@ -1,4 +1,9 @@
-import React, { ChangeEventHandler, MouseEventHandler, useEffect } from "react";
+import React, {
+  ChangeEventHandler,
+  memo,
+  MouseEventHandler,
+  useEffect,
+} from "react";
 import Input from "../Input";
 import styleNavigation from "../Navigation/navigation.module.css";
 
@@ -35,4 +40,4 @@ const SearchBox: React.FC<SearchBoxProps> = ({
   );
 };
 
-export default SearchBox;
+export default memo(SearchBox);

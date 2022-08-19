@@ -41,7 +41,7 @@ const Home: NextPage<HomeProps> = ({ blogs, errorCode }) => {
   const { handleUpdateBlogs } = useContext(BlogContext);
   useEffect(() => {
     handleUpdateBlogs(errorCode, blogs);
-  }, []);
+  }, [errorCode, blogs]);
 
   return (
     <Layout>

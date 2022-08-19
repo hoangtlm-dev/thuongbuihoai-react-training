@@ -3,7 +3,7 @@ import { Text } from "@components/common";
 import { TextType } from "@components/common/Text";
 import style from "../../pages/style.module.css";
 
-const AboutSection = () => (
+const AboutSection: React.FC = () => (
   <div className="container">
     <div className={style["about-page-layout"]}>
       <h2 className={style["about-page-heading"]}>The DMM Expert Panel</h2>

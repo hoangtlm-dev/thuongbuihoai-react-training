@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Image from "next/image";
 import { IMAGE } from "@constants/image";
 
@@ -23,7 +23,7 @@ const CustomImage: React.FC<ImageProps> = React.forwardRef(
     className = "banner-image-filter",
     placeholder = "blur",
     layout = undefined,
-    onClick = () => {},
+    onClick = () => null,
   }) => {
     return (
       <Image
@@ -41,4 +41,4 @@ const CustomImage: React.FC<ImageProps> = React.forwardRef(
   },
 );
 
-export default CustomImage;
+export default memo(CustomImage);
