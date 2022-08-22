@@ -1,4 +1,5 @@
 import React, { useCallback, useContext, useEffect, useState } from "react";
+import { debounce } from "lodash";
 import Icon, { IconType } from "../Icon";
 import { MENU_LIST } from "@constants/menu";
 import { MenuTypeProp } from "@common-types/menu";
@@ -35,16 +36,23 @@ const Navigation: React.FC = () => {
     [],
   );
 
-  const handleSearch = useCallback((event: { target: { value: string } }) => {
-    const value = event.target.value;
-    setSearchValue(value);
-  }, []);
+  const handleSearch = React.useRef(
+    debounce(async (event: { target: { value: string } }) => {
+      setSearchValue(event.target.value);
+    }, 1000),
+  ).current;
 
   const closeSearchBox = useCallback((event: Event) => {
     if (!(event.target as HTMLInputElement).closest("#searchInput")) {
       setOpenModal(false);
     }
   }, []);
+
+  useEffect(() => {
+    return () => {
+      handleSearch.cancel();
+    };
+  }, [handleSearch]);
 
   useEffect(() => {
     document.addEventListener("click", closeSearchBox);

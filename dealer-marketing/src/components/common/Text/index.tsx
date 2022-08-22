@@ -15,11 +15,11 @@ export enum TextType {
 interface TextProps {
   size?: string;
   text?: string;
-  onClick?: () => {};
+  onClick?: () => void;
 }
 
 const Text: React.FC<TextProps> = React.forwardRef(
-  ({ text = "Research", size = "normal", onClick = () => null }) => {
+  ({ text = "Research", size = "normal", onClick = () => {} }) => {
     return (
       <p onClick={onClick} className={styleText[`text-${size}`]}>
         {text}

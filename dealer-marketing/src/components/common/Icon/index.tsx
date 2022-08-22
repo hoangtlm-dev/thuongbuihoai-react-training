@@ -12,7 +12,7 @@ interface IconProps {
   onClick?: MouseEventHandler<HTMLElement>;
 }
 
-const Icon: React.FC<IconProps> = ({ iconName, onClick = () => null }) => {
+const Icon: React.FC<IconProps> = ({ iconName, onClick = () => {} }) => {
   return <i onClick={onClick} className={styleIcon[`icon-${iconName}`]} />;
 };
 

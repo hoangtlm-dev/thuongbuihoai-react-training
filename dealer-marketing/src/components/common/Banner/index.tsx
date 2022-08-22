@@ -1,6 +1,6 @@
 import React, { memo } from "react";
+import Image from "next/image";
 import { IMAGE } from "@constants/image";
-import CustomImage from "../CustomImage";
 import styleBanner from "./banner.module.css";
 
 interface BannerProps {
@@ -10,10 +10,10 @@ interface BannerProps {
 }
 
 const Banner: React.FC<BannerProps> = ({ url, text = "", alt = IMAGE.alt }) => (
-  <div className={styleBanner.banner}>
-    <div className={styleBanner["banner-image"]}>
-      <CustomImage layout="fill" url={url} alt={alt} />
-    </div>
+  <div data-testid="banner" className={styleBanner.banner}>
+    <figure className={styleBanner["banner-image"]}>
+      <Image layout="fill" src={url} alt={alt} />
+    </figure>
     <h1 className={styleBanner["banner-title"]}>{text}</h1>
   </div>
 );

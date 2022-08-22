@@ -2,6 +2,7 @@ import React, {
   ChangeEventHandler,
   memo,
   MouseEventHandler,
+  useCallback,
   useEffect,
 } from "react";
 import Input from "../Input";
@@ -17,11 +18,11 @@ const SearchBox: React.FC<SearchBoxProps> = ({
   onScroll,
   onSearch,
 }) => {
-  const closeSearchBox = (event: Event) => {
+  const closeSearchBox = useCallback((event: Event) => {
     if (!(event.target as HTMLInputElement).closest("#searchInput")) {
       openModal(false);
     }
-  };
+  }, []);
 
   useEffect(() => {
     document.addEventListener("click", closeSearchBox);

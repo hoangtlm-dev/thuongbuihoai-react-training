@@ -12,17 +12,17 @@ interface InputProps {
 const Input: React.FC<InputProps> = ({
   type,
   placeholder,
-  onClick = () => null,
-  onChange = () => null,
-  onBlur = () => null,
+  onClick = () => {},
+  onChange = () => {},
+  onBlur = () => {},
 }) => (
   <input
-    onChange={onChange}
-    onClick={onClick}
-    onBlur={onBlur}
     className={styleInput.input}
     type={type}
     placeholder={placeholder}
+    onChange={onChange}
+    onClick={onClick}
+    onBlur={onBlur}
   />
 );
 
