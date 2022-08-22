@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { GetStaticProps } from "next";
 import { ParsedUrlQuery } from "querystring";
 
@@ -6,13 +6,16 @@ import { ParsedUrlQuery } from "querystring";
 import { Blog } from "@common-types/blog";
 
 // components
-import { Banner, Navigation, Text } from "@components/common";
+const Navigation = lazy(() => import("@components/common/Navigation"));
+const Banner = lazy(() => import("@components/common/Banner"));
+const Text = lazy(() => import("@components/common/Text"));
 
 import { BLOG_RESPONSE_DATA } from "@api-backup/blogResponseData";
-import CustomImage from "@components/common/CustomImage";
 import { TextType } from "@components/common/Text";
 import Layout from "@layouts";
 import style from "./style.module.css";
+import Image from "next/image";
+import { Loader } from "@components/common";
 
 interface BlogProps {
   blog: Blog;
@@ -56,37 +59,37 @@ const BlogDetail: React.FC<BlogProps> = ({ blog }) => {
 
   return (
     <Layout>
-      <Navigation />
-      <Banner url={image.url} text="" />
-      <div itemScope itemType="https://schema.org/Blog" className="container">
-        <div className={style["blog-detail-info"]}>
-          <div className={style["blog-detail-card"]}>
-            <div className={style["blog-detail-title"]}>
-              <Text size={TextType.largeDark} text={title} />
-            </div>
-            <hr />
-            <div className={style["blog-detail-author"]}>
-              <figure>
-                <CustomImage
-                  url={image.url}
+      <Suspense fallback={<Loader />}>
+        <Navigation />
+        <Banner url={image.url} text="" />
+        <div itemScope itemType="https://schema.org/Blog" className="container">
+          <div className={style["blog-detail-info"]}>
+            <div className={style["blog-detail-card"]}>
+              <div className={style["blog-detail-title"]}>
+                <Text size={TextType.largeDark} text={title} />
+              </div>
+              <hr />
+              <div className={style["blog-detail-author"]}>
+                <Image
+                  src={image.url}
                   alt={image.alt}
                   width={60}
                   height={60}
                   className={style["blog-detail-image"]}
                 />
-              </figure>
-              <div className={style["blog-detail-funeral"]}>
-                <p>
-                  by <span>{expertId}</span>
-                </p>
-                <p>{createDate}</p>
+                <div className={style["blog-detail-funeral"]}>
+                  <p>
+                    by <span>{expertId}</span>
+                  </p>
+                  <p>{createDate}</p>
+                </div>
               </div>
             </div>
+            <hr />
+            <Text size={TextType.regular} text={description} />
           </div>
-          <hr />
-          <Text size={TextType.regular} text={description} />
         </div>
-      </div>
+      </Suspense>
     </Layout>
   );
 };

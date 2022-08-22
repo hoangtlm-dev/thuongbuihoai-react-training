@@ -1,4 +1,5 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
+import Image from "next/image";
 import { GetStaticProps } from "next";
 import { ParsedUrlQuery } from "querystring";
 
@@ -6,9 +7,10 @@ import { ParsedUrlQuery } from "querystring";
 import { Expert } from "@common-types/expert";
 
 // components
-import { Banner, Navigation, Text } from "@components/common";
+const Navigation = lazy(() => import("@components/common/Navigation"));
+const Banner = lazy(() => import("@components/common/Banner"));
+const Text = lazy(() => import("@components/common/Text"));
 import { TextType } from "@components/common/Text";
-import CustomImage from "@components/common/CustomImage";
 
 import { EXPERT_RESPONSE_DATA } from "@api-backup/expertResponseData";
 import { IMAGE } from "@constants/image";
@@ -59,26 +61,28 @@ const OurExpert: React.FC<ExpertProps> = ({ expert }) => {
 
   return (
     <Layout>
-      <Navigation />
-      <Banner url={IMAGE.bannerUrl} />
-      <div className={style["expert-detail"]}>
-        <figure className={style["expert-detail-layout"]}>
-          <CustomImage
-            url={image.url}
-            alt={image.alt}
-            width={130}
-            height={130}
-            className={style["expert-detail-image"]}
-          />
-        </figure>
-        <div className={style["expert-detail-info"]}>
-          <h2 className={style["expert-detail-name"]}>{name}</h2>
-          <div className={style["expert-detail-content"]}>
-            <Text size={TextType.regularDark} text={info} />
+      <Suspense>
+        <Navigation />
+        <Banner url={IMAGE.bannerUrl} />
+        <div className={style["expert-detail"]}>
+          <figure className={style["expert-detail-layout"]}>
+            <Image
+              src={image.url}
+              alt={image.alt}
+              width={130}
+              height={130}
+              className={style["expert-detail-image"]}
+            />
+          </figure>
+          <div className={style["expert-detail-info"]}>
+            <h2 className={style["expert-detail-name"]}>{name}</h2>
+            <div className={style["expert-detail-content"]}>
+              <Text size={TextType.regularDark} text={info} />
+            </div>
+            <Text size={TextType.regular} text={description} />
           </div>
-          <Text size={TextType.regular} text={description} />
         </div>
-      </div>
+      </Suspense>
     </Layout>
   );
 };

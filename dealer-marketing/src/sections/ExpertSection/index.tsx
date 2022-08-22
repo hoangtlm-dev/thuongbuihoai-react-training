@@ -1,6 +1,6 @@
 import React from "react";
+import Image from "next/image";
 import { Text } from "@components/common";
-import CustomImage from "@components/common/CustomImage";
 import { TextType } from "@components/common/Text";
 import styleExpertSection from "./expertSection.module.css";
 
@@ -13,8 +13,8 @@ const ExpertSection: React.FC = () => (
       <div className={styleExpertSection["expert-list"]}>
         <div className={styleExpertSection["expert-section"]}>
           <figure className={styleExpertSection["expert-layout"]}>
-            <CustomImage
-              url="/images/avatar/ibrahim-mesbah.png"
+            <Image
+              src="/images/avatar/ibrahim-mesbah.png"
               alt="This is image of Mr adam dennis"
               className={styleExpertSection["expert-image"]}
               width={130}
@@ -26,8 +26,8 @@ const ExpertSection: React.FC = () => (
             with Ibrahim Mesbah
           </p>
           <figure className={styleExpertSection["expert-contact"]}>
-            <CustomImage
-              url="/images/inside-auto.png"
+            <Image
+              src="/images/inside-auto.png"
               alt="This is image inside auto"
               className={styleExpertSection["expert-image-contact"]}
               width={135}
@@ -37,8 +37,8 @@ const ExpertSection: React.FC = () => (
         </div>
         <div className={styleExpertSection["expert-section"]}>
           <figure className={styleExpertSection["expert-layout"]}>
-            <CustomImage
-              url="/images/avatar/ilana-shabtay.png"
+            <Image
+              src="/images/avatar/ilana-shabtay.png"
               alt="This is image of Mr adam dennis"
               className={styleExpertSection["expert-image"]}
               width={130}
@@ -49,8 +49,8 @@ const ExpertSection: React.FC = () => (
             Experimarketing Episode 27: No Inventory? No Problem.
           </p>
           <figure className={styleExpertSection["expert-contact"]}>
-            <CustomImage
-              url="/images/experimaketing.png"
+            <Image
+              src="/images/experimaketing.png"
               alt="This is image inside auto"
               className={styleExpertSection["expert-image-contact"]}
               width={135}
@@ -60,8 +60,8 @@ const ExpertSection: React.FC = () => (
         </div>
         <div className={styleExpertSection["expert-section"]}>
           <figure className={styleExpertSection["expert-layout"]}>
-            <CustomImage
-              url="/images/avatar/brent-albrecht.png"
+            <Image
+              src="/images/avatar/brent-albrecht.png"
               alt="This is image of Mr adam dennis"
               className={styleExpertSection["expert-image"]}
               width={130}
@@ -72,8 +72,8 @@ const ExpertSection: React.FC = () => (
             Website Clicks?! they`re Still Clickin
           </p>
           <figure className={styleExpertSection["expert-contact"]}>
-            <CustomImage
-              url="/images/experimaketing.png"
+            <Image
+              src="/images/experimaketing.png"
               alt="This is image inside auto"
               className={styleExpertSection["expert-image-contact"]}
               width={135}

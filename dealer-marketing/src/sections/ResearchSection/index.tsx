@@ -1,12 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button, Text } from "@components/common";
 import { Blog } from "@common-types/blog";
 import { Expert } from "@common-types/expert";
 import { ButtonType } from "@components/common/Button";
 import { TextType } from "@components/common/Text";
 import { EXPERT_MOCKING } from "@constants/expert";
-import CustomImage from "@components/common/CustomImage";
 import styleResearch from "./researchSection.module.css";
 
 interface ResearchProps {
@@ -40,16 +40,16 @@ const ResearchSection: React.FC<ResearchProps> = ({
     <div className={styleResearch[`research-${layout}`]}>
       <div className={styleResearch["research-info"]}>
         {imageSmall ? (
-          <CustomImage
-            url={blog?.image.url}
+          <Image
+            src={blog?.image.url}
             alt={blog?.image.alt}
             className={styleResearch["research-image"]}
             width={350}
             height={210}
           />
         ) : (
-          <CustomImage
-            url="/images/past-present-future.png"
+          <Image
+            src="/images/past-present-future.png"
             alt="This is image past presents future"
             className={styleResearch["research-image"]}
             width={730}
