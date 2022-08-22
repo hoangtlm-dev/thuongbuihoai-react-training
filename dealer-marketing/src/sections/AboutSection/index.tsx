@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { Text } from "@components/common";
 import { TextType } from "@components/common/Text";
 import style from "../../pages/style.module.css";
@@ -54,4 +54,4 @@ const AboutSection: React.FC = () => (
   </div>
 );
 
-export default AboutSection;
+export default memo(AboutSection);

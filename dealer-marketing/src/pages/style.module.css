@@ -16,7 +16,7 @@
 .blog-detail-funeral > p {
   margin: 0 0 10px 20px;
   font-size: 14px;
-  font-family: "Roboto";
+  font-family: "var(--secondary-font)";
 }
 
 .blog-detail-funeral > p > span {

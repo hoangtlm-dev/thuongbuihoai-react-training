@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { BlogList } from "@components";
 import ContactSection from "@sections/ContactSection";
 import ExpertSection from "@sections/ExpertSection";
@@ -15,4 +15,4 @@ const MainSection: React.FC = () => (
   </div>
 );
 
-export default MainSection;
+export default memo(MainSection);

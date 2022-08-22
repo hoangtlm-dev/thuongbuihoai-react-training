@@ -14,7 +14,7 @@
 
 .banner-title {
   position: absolute;
-  z-index: 10;
+  z-index: var(--z-small);
   left: 35%;
   top: 45%;
   color: var(--light);

@@ -1,6 +1,6 @@
 .card-expert {
   position: relative;
-  z-index: 5;
+  z-index: var(--z-zero);
   width: 251px;
   border: 2px solid var(--border-primary);
 }
@@ -9,7 +9,7 @@
   position: absolute;
   left: 25%;
   top: -35%;
-  z-index: 10;
+  z-index: var(--z-small);
 }
 
 .card-image {

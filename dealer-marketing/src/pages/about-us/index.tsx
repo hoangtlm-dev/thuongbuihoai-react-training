@@ -1,16 +1,26 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 // sections
-import AboutSection from "@sections/AboutSection";
+const AboutSection = lazy(() => import("@sections/AboutSection"));
 
 // components
-import { Banner, Navigation } from "@components/common";
+import { Loader } from "@components/common";
+const Banner = lazy(() => import("@components/common/Banner"));
+const Navigation = lazy(() => import("@components/common/Navigation"));
+
+// layouts
 import Layout from "@layouts";
+
+// constants
 import { IMAGE } from "@constants/image";
 
 const AboutPage = () => (
   <Layout>
-    <Navigation />
-    <Banner url={IMAGE.bannerUrl} text="About Us" />
+    <Suspense fallback={<Loader />}>
+      <Navigation />
+    </Suspense>
+    <Suspense fallback={<Loader />}>
+      <Banner url={IMAGE.bannerUrl} text="About Us" />
+    </Suspense>
     <AboutSection />
   </Layout>
 );

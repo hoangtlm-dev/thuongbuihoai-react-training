@@ -20,7 +20,7 @@
 .text-regular-dark {
   font-size: 14px;
   color: var(--text-secondary);
-  font-family: "Roboto";
+  font-family: "var(--secondary-font)";
 }
 
 .text-regular-outline {
@@ -29,7 +29,7 @@
   color: var(--dark);
   font-size: 18px;
   font-weight: 700;
-  font-family: "Roboto";
+  font-family: "var(--secondary-font)";
   padding: 80px 10px 10px;
 }
 

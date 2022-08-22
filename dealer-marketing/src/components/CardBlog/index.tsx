@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { Blog } from "@common-types/blog";
 import ResearchSection, {
   ClassNameType,
@@ -20,4 +20,4 @@ const CartBlog: React.FC<CartBlogProps> = ({ blog = BLOG_MOCKING }) => (
   />
 );
 
-export default CartBlog;
+export default memo(CartBlog);

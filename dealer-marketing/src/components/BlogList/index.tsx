@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { memo, useContext } from "react";
 import Error from "next/error";
 import { BlogContext } from "@context/BlogContext";
 import CardBlog from "../CardBlog";
@@ -23,4 +23,4 @@ const BlogList: React.FC = () => {
   );
 };
 
-export default BlogList;
+export default memo(BlogList);

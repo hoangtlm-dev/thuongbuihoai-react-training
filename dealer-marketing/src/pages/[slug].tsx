@@ -1,4 +1,5 @@
 import React, { lazy, Suspense } from "react";
+import Image from "next/image";
 import { GetStaticProps } from "next";
 import { ParsedUrlQuery } from "querystring";
 
@@ -9,13 +10,15 @@ import { Blog } from "@common-types/blog";
 const Navigation = lazy(() => import("@components/common/Navigation"));
 const Banner = lazy(() => import("@components/common/Banner"));
 const Text = lazy(() => import("@components/common/Text"));
-
-import { BLOG_RESPONSE_DATA } from "@api-backup/blogResponseData";
 import { TextType } from "@components/common/Text";
+import { Loader } from "@components/common";
+
+// api
+import { BLOG_RESPONSE_DATA } from "@api-backup/blogResponseData";
+
+// layouts
 import Layout from "@layouts";
 import style from "./style.module.css";
-import Image from "next/image";
-import { Loader } from "@components/common";
 
 interface BlogProps {
   blog: Blog;
@@ -61,35 +64,41 @@ const BlogDetail: React.FC<BlogProps> = ({ blog }) => {
     <Layout>
       <Suspense fallback={<Loader />}>
         <Navigation />
-        <Banner url={image.url} text="" />
-        <div itemScope itemType="https://schema.org/Blog" className="container">
-          <div className={style["blog-detail-info"]}>
-            <div className={style["blog-detail-card"]}>
-              <div className={style["blog-detail-title"]}>
+      </Suspense>
+      <Suspense fallback={<Loader />}>
+        <Banner url={image.url} />
+      </Suspense>
+      <div itemScope itemType="https://schema.org/Blog" className="container">
+        <div className={style["blog-detail-info"]}>
+          <div className={style["blog-detail-card"]}>
+            <div className={style["blog-detail-title"]}>
+              <Suspense fallback={<Loader />}>
                 <Text size={TextType.largeDark} text={title} />
-              </div>
-              <hr />
-              <div className={style["blog-detail-author"]}>
-                <Image
-                  src={image.url}
-                  alt={image.alt}
-                  width={60}
-                  height={60}
-                  className={style["blog-detail-image"]}
-                />
-                <div className={style["blog-detail-funeral"]}>
-                  <p>
-                    by <span>{expertId}</span>
-                  </p>
-                  <p>{createDate}</p>
-                </div>
-              </div>
+              </Suspense>
             </div>
             <hr />
-            <Text size={TextType.regular} text={description} />
+            <div className={style["blog-detail-author"]}>
+              <Image
+                src={image.url}
+                alt={image.alt}
+                width={60}
+                height={60}
+                className={style["blog-detail-image"]}
+              />
+              <div className={style["blog-detail-funeral"]}>
+                <p>
+                  by <span>{expertId}</span>
+                </p>
+                <p>{createDate}</p>
+              </div>
+            </div>
           </div>
+          <hr />
+          <Suspense fallback={<Loader />}>
+            <Text size={TextType.regular} text={description} />
+          </Suspense>
         </div>
-      </Suspense>
+      </div>
     </Layout>
   );
 };

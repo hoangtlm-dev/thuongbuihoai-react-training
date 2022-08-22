@@ -1,4 +1,4 @@
-import type { NextPage } from "next";
+import type { GetStaticProps, NextPage } from "next";
 import { lazy, Suspense, useContext, useEffect } from "react";
 
 // components
@@ -10,9 +10,16 @@ import { Loader } from "@components/common";
 // common-types
 import { Blog } from "@common-types/blog";
 
+// constants
 import { IMAGE } from "@constants/image";
+
+// context
 import { BlogContext } from "@context/BlogContext";
+
+// api
 import { BLOG_RESPONSE_DATA } from "@api-backup/blogResponseData";
+
+// layouts
 import Layout from "@layouts";
 
 interface HomeProps {
@@ -20,7 +27,7 @@ interface HomeProps {
   errorCode: string;
 }
 
-export const getStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   try {
     const blogs: Blog[] = BLOG_RESPONSE_DATA;
     return {
@@ -49,10 +56,14 @@ const Home: NextPage<HomeProps> = ({ blogs, errorCode }) => {
     <Layout>
       <Suspense fallback={<Loader />}>
         <Navigation />
+      </Suspense>
+      <Suspense fallback={<Loader />}>
         <Banner
           url={IMAGE.url}
           text="Expert Automotive Knowledge at Your Fingertips"
         />
+      </Suspense>
+      <Suspense fallback={<Loader />}>
         <MainSection />
       </Suspense>
     </Layout>

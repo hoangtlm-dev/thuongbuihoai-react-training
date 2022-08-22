@@ -36,3 +36,17 @@
 .contact-input:hover {
   border-bottom: 2px solid var(--text-secondary);
 }
+
+.contact-dash-first,
+.contact-dash-secondary {
+  background-color: var(--border-primary);
+}
+
+.contact-dash-first {
+  height: 20px;
+  margin-bottom: 40px;
+}
+
+.contact-dash-secondary {
+  height: 100px;
+}

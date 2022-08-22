@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { memo, useContext } from "react";
 import Error from "next/error";
 import CardExpert from "../CardExpert";
 import styleExpertList from "./expertList.module.css";
@@ -22,4 +22,4 @@ const ExpertList: React.FC = () => {
   );
 };
 
-export default ExpertList;
+export default memo(ExpertList);

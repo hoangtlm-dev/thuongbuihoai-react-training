@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button, Text } from "@components/common";
@@ -90,4 +90,4 @@ const ResearchSection: React.FC<ResearchProps> = ({
   );
 };
 
-export default ResearchSection;
+export default memo(ResearchSection);

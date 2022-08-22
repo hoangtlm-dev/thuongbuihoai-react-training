@@ -57,7 +57,7 @@
 
 .research-heading > button {
   border: none;
-  font-family: "RobotoSlab";
+  font-family: var(--primary-font);
   background-color: transparent;
   padding: 0;
 }

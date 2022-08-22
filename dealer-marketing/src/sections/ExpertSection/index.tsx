@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Image from "next/image";
 import { Text } from "@components/common";
 import { TextType } from "@components/common/Text";
@@ -86,4 +86,4 @@ const ExpertSection: React.FC = () => (
   </div>
 );
 
-export default ExpertSection;
+export default memo(ExpertSection);

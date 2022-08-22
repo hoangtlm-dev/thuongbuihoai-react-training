@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Expert } from "@common-types/expert";
@@ -36,4 +36,4 @@ const CardExpert: React.FC<CardExpertProps> = ({ expert = EXPERT_MOCKING }) => (
   </div>
 );
 
-export default CardExpert;
+export default memo(CardExpert);

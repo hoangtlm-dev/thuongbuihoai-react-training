@@ -1,13 +1,13 @@
-import React from "react";
-import styleContact from "./contactSection.module.css";
+import React, { memo } from "react";
 import { IconType } from "@components/common/Icon";
 import { ButtonType } from "@components/common/Button";
 import { Text, Input, Button, Icon } from "@components/common";
 import { TextType } from "@components/common/Text";
+import styleContact from "./contactSection.module.css";
 
 const ContactSection: React.FC = () => (
   <>
-    <div className="first-line"></div>
+    <div className={styleContact["contact-dash-first"]}></div>
     <div className={styleContact.contact}>
       <div className={styleContact["contact-info"]}>
         <Text size={TextType.medium} text="Get Tips & Tricks every Week!" />
@@ -24,8 +24,8 @@ const ContactSection: React.FC = () => (
         <Button type={ButtonType.secondary} text="Subscribe" />
       </div>
     </div>
-    <div className="secondary-line"></div>
+    <div className={styleContact["contact-dash-secondary"]}></div>
   </>
 );
 
-export default ContactSection;
+export default memo(ContactSection);
