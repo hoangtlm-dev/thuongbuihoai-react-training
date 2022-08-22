@@ -1,5 +1,5 @@
 import { Menu } from "@components/common";
-import { MENU_LIST } from "@constants/menu";
+import { MENU_CONTACT, MENU_LIST, MENU_SERVICES } from "@constants/menu";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 export default {
@@ -13,7 +13,17 @@ export default {
 
 const TemplateMenu: ComponentStory<typeof Menu> = (args) => <Menu {...args} />;
 
-export const MenuUrl = TemplateMenu.bind({});
-MenuUrl.args = {
+export const MenuList = TemplateMenu.bind({});
+MenuList.args = {
   menuList: MENU_LIST,
+};
+
+export const MenuService = TemplateMenu.bind({});
+MenuService.args = {
+  menuList: MENU_SERVICES,
+};
+
+export const MenuContact = TemplateMenu.bind({});
+MenuContact.args = {
+  menuList: MENU_CONTACT,
 };
