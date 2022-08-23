@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component Matches snapshot 1`] = `
+<div>
+  <header
+    data-testid="header"
+  >
+    <div>
+      <div
+        data-testid="menu"
+      >
+        <ul>
+          <li>
+            <a
+              href="/expert-panel"
+            >
+              Our Experts
+            </a>
+          </li>
+          <li>
+            <a
+              href="/about-us"
+            >
+              About
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</div>
+`;

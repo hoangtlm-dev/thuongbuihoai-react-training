@@ -5,7 +5,7 @@ import styleHeader from "./header.module.css";
 import { MenuTypeProp } from "@common-types/menu";
 
 const Header = () => (
-  <header className={styleHeader.header}>
+  <header data-testid="header" className={styleHeader.header}>
     <div className={styleHeader["header-contact"]}>
       <Menu type={MenuTypeProp.light} menuList={MENU_CONTACT} />
     </div>
