@@ -10,7 +10,7 @@ interface CartBlogProps {
   blog: Blog;
 }
 
-const CartBlog: React.FC<CartBlogProps> = ({ blog = BLOG_MOCKING }) => (
+const CardBlog: React.FC<CartBlogProps> = ({ blog = BLOG_MOCKING }) => (
   <ResearchSection
     blog={blog}
     content={LayoutContentType.left}
@@ -20,4 +20,4 @@ const CartBlog: React.FC<CartBlogProps> = ({ blog = BLOG_MOCKING }) => (
   />
 );
 
-export default memo(CartBlog);
+export default memo(CardBlog);
