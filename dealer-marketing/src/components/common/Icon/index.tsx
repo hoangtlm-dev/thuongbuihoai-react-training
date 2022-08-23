@@ -12,8 +12,12 @@ interface IconProps {
   onClick?: MouseEventHandler<HTMLElement>;
 }
 
-const Icon: React.FC<IconProps> = ({ iconName, onClick = () => {} }) => {
-  return <i onClick={onClick} className={styleIcon[`icon-${iconName}`]} />;
-};
+const Icon: React.FC<IconProps> = ({ iconName, onClick = () => {} }) => (
+  <i
+    data-testid="icon"
+    className={styleIcon[`icon-${iconName}`]}
+    onClick={onClick}
+  />
+);
 
 export default memo(Icon);
