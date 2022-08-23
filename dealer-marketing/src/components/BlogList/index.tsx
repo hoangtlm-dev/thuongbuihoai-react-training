@@ -13,7 +13,7 @@ const BlogList: React.FC = () => {
   }
 
   return (
-    <div className={styleBlogList["blog-list"]}>
+    <div data-testid="blog-list" className={styleBlogList["blog-list"]}>
       {arrBlog?.map((blog) => (
         <div key={blog.blogId}>
           <CardBlog blog={blog} />
