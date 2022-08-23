@@ -30,7 +30,10 @@ const SearchBox: React.FC<SearchBoxProps> = ({
   }, []);
 
   return (
-    <div id="searchInput" className={styleNavigation["nav-search"]}>
+    <div
+      id="searchInput"
+      data-testid="search-box"
+      className={styleNavigation["nav-search"]}>
       <Input
         type="text"
         placeholder="Search the site..."
