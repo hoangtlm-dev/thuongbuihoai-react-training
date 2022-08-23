@@ -5,7 +5,7 @@ import styleFooter from "./footer.module.css";
 import { MenuTypeProp } from "@common-types/menu";
 
 const Footer: React.FC = () => (
-  <footer className={styleFooter.footer}>
+  <footer data-testid="footer" className={styleFooter.footer}>
     <Menu type={MenuTypeProp.normal} menuList={MENU_CONTACT} />
     <div>
       <Menu type={MenuTypeProp.normal} menuList={MENU_SERVICES} />
