@@ -6,7 +6,7 @@ import ResearchSection, { ClassNameType } from "@sections/ResearchSection";
 import { BLOG_MOCKING } from "@constants/blog";
 
 const MainSection: React.FC = () => (
-  <div className="container">
+  <div data-testid="main-section" className="container">
     <ResearchSection layout={ClassNameType.center} blog={BLOG_MOCKING} />
     <BlogList />
     <ContactSection />
