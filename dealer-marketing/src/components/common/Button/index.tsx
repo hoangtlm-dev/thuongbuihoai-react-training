@@ -26,6 +26,7 @@ const Button: React.FC<ButtonProps> = React.forwardRef(
   }) => {
     return (
       <button
+        data-testid="button"
         className={styleButton[`btn-${type}`]}
         disabled={disable}
         onClick={onClick}>
