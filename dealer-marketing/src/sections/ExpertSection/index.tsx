@@ -5,7 +5,7 @@ import { TextType } from "@components/common/Text";
 import styleExpertSection from "./expertSection.module.css";
 
 const ExpertSection: React.FC = () => (
-  <div className={styleExpertSection.expert}>
+  <div data-testid="expert-section" className={styleExpertSection.expert}>
     <div className={styleExpertSection["expert-position"]}>
       <div className={styleExpertSection["expert-title"]}>
         <Text size={TextType.large} text="DMM Expert Podcast Interviews" />
