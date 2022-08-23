@@ -12,7 +12,7 @@ const ExpertList: React.FC = () => {
   }
 
   return (
-    <div className={styleExpertList["expert-list"]}>
+    <div data-testid="expert-list" className={styleExpertList["expert-list"]}>
       {experts?.map((expert) => (
         <div key={expert.expertId}>
           <CardExpert expert={expert} />
