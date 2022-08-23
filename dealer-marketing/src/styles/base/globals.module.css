@@ -18,7 +18,7 @@ body {
 
 .container {
   position: relative;
-  z-index: var(--z-medium);
+  z-index: var(--z-md);
   border-radius: 5px;
   margin: -70px 30px 80px;
   background-color: var(--light);

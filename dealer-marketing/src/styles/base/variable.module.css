@@ -24,8 +24,8 @@
   --secondary-font: "Roboto";
 
   /* z-index */
-  --z-zero: 0;
-  --z-small: 1;
-  --z-medium: 2;
-  --z-lager: 3;
+  --z-tiny: 0;
+  --z-sm: 1;
+  --z-md: 2;
+  --z-lg: 3;
 }

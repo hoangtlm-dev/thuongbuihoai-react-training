@@ -29,7 +29,7 @@
 /* expert detail */
 .expert-detail {
   position: relative;
-  z-index: var(--z-medium);
+  z-index: var(--z-md);
   margin: -70px 30px 80px;
   background-color: #fff;
   box-shadow: var(--bs-first);
@@ -37,7 +37,7 @@
 
 .expert-detail-layout {
   position: absolute;
-  z-index: var(--z-lager);
+  z-index: var(--z-lg);
   left: 45%;
   top: -25%;
 }

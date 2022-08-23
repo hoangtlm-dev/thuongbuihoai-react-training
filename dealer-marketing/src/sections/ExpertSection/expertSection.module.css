@@ -25,7 +25,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin-top: 100px;
-  z-index: var(--z-zero);
+  z-index: var(--z-tiny);
   width: 350px;
   border-radius: 10px;
   background-color: var(--light);
@@ -35,7 +35,7 @@
   position: absolute;
   left: 32%;
   top: -25%;
-  z-index: var(--z-small);
+  z-index: var(--z-sm);
 }
 
 .expert-image {
