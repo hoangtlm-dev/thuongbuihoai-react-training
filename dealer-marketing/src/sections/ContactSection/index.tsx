@@ -7,7 +7,9 @@ import styleContact from "./contactSection.module.css";
 
 const ContactSection: React.FC = () => (
   <>
-    <div className={styleContact["contact-dash-first"]}></div>
+    <div
+      data-testid="contact-section"
+      className={styleContact["contact-dash-first"]}></div>
     <div className={styleContact.contact}>
       <div className={styleContact["contact-info"]}>
         <Text size={TextType.medium} text="Get Tips & Tricks every Week!" />
