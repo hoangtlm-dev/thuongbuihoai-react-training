@@ -37,7 +37,9 @@ const ResearchSection: React.FC<ResearchProps> = ({
   expert = EXPERT_MOCKING,
 }) => {
   return (
-    <div className={styleResearch[`research-${layout}`]}>
+    <div
+      data-testid="research-section"
+      className={styleResearch[`research-${layout}`]}>
       <div className={styleResearch["research-info"]}>
         {imageSmall ? (
           <Image
