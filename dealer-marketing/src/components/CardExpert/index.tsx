@@ -12,7 +12,7 @@ interface CardExpertProps {
 }
 
 const CardExpert: React.FC<CardExpertProps> = ({ expert = EXPERT_MOCKING }) => (
-  <div className={styleCardExpert["card-expert"]}>
+  <div data-testid="card-expert" className={styleCardExpert["card-expert"]}>
     <figure className={styleCardExpert["card-layout"]}>
       <Image
         src={expert?.image.url}
