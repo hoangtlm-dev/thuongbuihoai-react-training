@@ -23,11 +23,12 @@ module.exports = {
     "^@/(.*)$": "<rootDir>/src/$1",
     "^@pages(.*)$": "<rootDir>/src/pages/$1",
     "^@components(.*)$": "<rootDir>/src/components/$1",
-    "^@common(.*)$": "<rootDir>/src/components/common/$1",
+    "^@common(.*)$/": "<rootDir>/src/components/common/$1",
     "^@layouts(.*)$": "<rootDir>/src/layouts/$1",
     "^@common-types(.*)$": "<rootDir>/src/common-types/$1",
     "^@constants(.*)$": "<rootDir>/src/constants/$1",
     "^@context(.*)$": "<rootDir>/src/context/$1",
+    "^@sections(.*)$": "<rootDir>/src/sections/$1",
   },
   // Add more setup options before each test is run
   testPathIgnorePatterns: ["<rootDir>/node_modules/", "<rootDir>/.next/"],
