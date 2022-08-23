@@ -17,6 +17,7 @@ const Input: React.FC<InputProps> = ({
   onBlur = () => {},
 }) => (
   <input
+    data-testid="input-value"
     className={styleInput.input}
     type={type}
     placeholder={placeholder}
