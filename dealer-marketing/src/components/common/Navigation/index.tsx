@@ -57,7 +57,7 @@ const Navigation: React.FC = () => {
 
   return (
     <>
-      <nav className={styleNavigation.nav}>
+      <nav data-testid="navigation" className={styleNavigation.nav}>
         <Logo url={IMAGE.logoUrl} />
         <div className={styleNavigation["nav-info"]}>
           <Menu type={MenuTypeProp.dark} menuList={MENU_LIST} />
