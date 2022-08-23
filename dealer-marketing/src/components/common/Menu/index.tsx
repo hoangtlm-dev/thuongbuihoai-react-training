@@ -1,7 +1,7 @@
+import Link from "next/link";
 import React, { memo } from "react";
 import { MenuProps, MenuType, MenuTypeProp } from "@common-types/menu";
 import menuStyle from "./menu.module.css";
-import Link from "next/link";
 
 const Menu: React.FC<MenuProps> = ({ menuList, type = MenuTypeProp.dark }) => {
   const renderMenuList = (list: MenuType[]) => {
@@ -13,7 +13,7 @@ const Menu: React.FC<MenuProps> = ({ menuList, type = MenuTypeProp.dark }) => {
   };
 
   return (
-    <div className={menuStyle.menu}>
+    <div data-testid="menu" className={menuStyle.menu}>
       <ul className={menuStyle["menu-list"]}>{renderMenuList(menuList)}</ul>
     </div>
   );
