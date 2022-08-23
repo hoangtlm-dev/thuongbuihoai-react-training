@@ -8,6 +8,7 @@ import Logo from "../Logo";
 import Menu from "../Menu";
 import styleNavigation from "./navigation.module.css";
 import SearchBox from "../SearchBox/SearchBox";
+import debounce from "@helpers/debounce";
 
 const Navigation: React.FC = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);
@@ -38,7 +39,7 @@ const Navigation: React.FC = () => {
   const handleSearch = useCallback(
     async (event: { target: { value: string } }) => {
       const value = event.target.value;
-      setTimeout(() => setSearchValue(value), 500);
+      debounce(() => setSearchValue(value), 500);
     },
     [],
   );
