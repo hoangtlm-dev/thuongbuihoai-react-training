@@ -18,17 +18,19 @@ interface TextProps {
   onClick?: () => void;
 }
 
-const Text: React.FC<TextProps> = React.forwardRef(
-  ({ text = "Research", size = "normal", onClick = () => {} }) => {
-    return (
-      <p
-        data-testid="text"
-        onClick={onClick}
-        className={styleText[`text-${size}`]}>
-        {text}
-      </p>
-    );
-  },
-);
+const Text: React.FC<TextProps> = ({
+  text = "Research",
+  size = "normal",
+  onClick = () => {},
+}) => {
+  return (
+    <p
+      data-testid="text"
+      className={styleText[`text-${size}`]}
+      onClick={onClick}>
+      {text}
+    </p>
+  );
+};
 
 export default memo(Text);
