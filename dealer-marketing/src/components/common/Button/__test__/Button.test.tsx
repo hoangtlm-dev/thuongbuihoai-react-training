@@ -13,6 +13,13 @@ describe("Button component", () => {
     expect(onClickButton).toHaveBeenCalled();
   });
 
+  test("Should render Button component with type 'disable'", async () => {
+    render(<Button icon disable text="" type={ButtonType.default} />);
+
+    const clickBtn = screen.getByRole("button");
+    expect(clickBtn).toBeInTheDocument();
+  });
+
   test("Should render Button component with type 'primary'", async () => {
     render(
       <Button
@@ -37,6 +44,14 @@ describe("Button component", () => {
     );
 
     const clickBtn = screen.getByRole("button", { name: /SUBSCRIBE/i });
+    fireEvent.click(clickBtn);
+    expect(onClickButton).toHaveBeenCalled();
+  });
+
+  test("Should render Button component with default value of onClick", async () => {
+    render(<Button text="READ MORE" type={ButtonType.primary} />);
+
+    const clickBtn = screen.getByRole("button", { name: /READ MORE/i });
     fireEvent.click(clickBtn);
     expect(onClickButton).toHaveBeenCalled();
   });

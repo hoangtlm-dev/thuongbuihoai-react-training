@@ -16,25 +16,23 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
-const Button: React.FC<ButtonProps> = React.forwardRef(
-  ({
-    type = ButtonType.default,
-    text = "",
-    disable = false,
-    icon = false,
-    onClick = () => {},
-  }) => {
-    return (
-      <button
-        data-testid="button"
-        className={styleButton[`btn-${type}`]}
-        disabled={disable}
-        onClick={onClick}>
-        {text}
-        {icon && <Icon iconName={IconType.arrowRight} />}
-      </button>
-    );
-  },
-);
+const Button: React.FC<ButtonProps> = ({
+  type = ButtonType.default,
+  text = "",
+  disable = false,
+  icon = false,
+  onClick = () => {},
+}) => {
+  return (
+    <button
+      data-testid="button"
+      className={styleButton[`btn-${type}`]}
+      disabled={disable}
+      onClick={onClick}>
+      {text}
+      {icon && <Icon iconName={IconType.arrowRight} />}
+    </button>
+  );
+};
 
 export default memo(Button);
