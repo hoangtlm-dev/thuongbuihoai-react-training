@@ -68,7 +68,7 @@ const BlogDetail: React.FC<BlogProps> = ({ blog }) => {
       <Suspense fallback={<Loader />}>
         <Banner url={image.url} />
       </Suspense>
-      <div itemScope itemType="https://schema.org/Blog" className="container">
+      <div className="container">
         <div className={style["blog-detail-info"]}>
           <div className={style["blog-detail-card"]}>
             <div className={style["blog-detail-title"]}>

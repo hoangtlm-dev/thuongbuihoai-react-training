@@ -21,7 +21,9 @@ const AboutPage = () => (
     <Suspense fallback={<Loader />}>
       <Banner url={IMAGE.bannerUrl} text="About Us" />
     </Suspense>
-    <AboutSection />
+    <Suspense fallback={<Loader />}>
+      <AboutSection />
+    </Suspense>
   </Layout>
 );
 
