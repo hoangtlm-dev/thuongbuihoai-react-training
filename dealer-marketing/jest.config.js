@@ -22,6 +22,7 @@ module.exports = {
     "^@root(.*)$": "<rootDir>/src$1",
     "^@/(.*)$": "<rootDir>/src/$1",
     "^@pages(.*)$": "<rootDir>/src/pages/$1",
+    "^@api-backup(.*)$": "<rootDir>/src/api-backup/$1",
     "^@components(.*)$": "<rootDir>/src/components/$1",
     "^@common(.*)$/": "<rootDir>/src/components/common/$1",
     "^@layouts(.*)$": "<rootDir>/src/layouts/$1",
@@ -29,6 +30,7 @@ module.exports = {
     "^@constants(.*)$": "<rootDir>/src/constants/$1",
     "^@context(.*)$": "<rootDir>/src/context/$1",
     "^@sections(.*)$": "<rootDir>/src/sections/$1",
+    "^@helpers(.*)$": "<rootDir>/src/helpers/$1",
   },
   // Add more setup options before each test is run
   testPathIgnorePatterns: ["<rootDir>/node_modules/", "<rootDir>/.next/"],
