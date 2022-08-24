@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorPage Matches snapshot 1`] = `
+<div>
+  <div
+    data-testid="error-page"
+  >
+    <div>
+      404
+    </div>
+    <p>
+      This page could not be found.
+    </p>
+    <div>
+      <button
+        data-testid="button"
+      >
+        Back to home
+        <i
+          data-testid="icon"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
