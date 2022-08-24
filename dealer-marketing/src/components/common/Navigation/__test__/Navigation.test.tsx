@@ -1,7 +1,7 @@
 import { BlogContextProps } from "@common-types/blog";
 import { BLOG_MOCKING_LIST } from "@constants/blog";
 import { BlogContext } from "@context/BlogContext";
-import { render } from "@testing-library/react";
+import { fireEvent, render } from "@testing-library/react";
 import Navigation from "../index";
 
 const contextBlogMocking: BlogContextProps = {
@@ -16,6 +16,12 @@ const contextBlogMocking: BlogContextProps = {
 };
 
 describe("Navigation component", () => {
+  const spyScrollTo = jest.fn();
+  beforeEach(() => {
+    Object.defineProperty(global.window, "scrollTo", { value: spyScrollTo });
+    spyScrollTo.mockClear();
+  });
+
   test("Should render Navigation component", () => {
     const { getByTestId } = render(
       <BlogContext.Provider value={contextBlogMocking}>
@@ -23,11 +29,17 @@ describe("Navigation component", () => {
       </BlogContext.Provider>,
     );
     const navigation = getByTestId("navigation");
+    fireEvent.scroll(window, { target: { pageYOffset: 1 } });
+    fireEvent.click(navigation);
     expect(navigation).toBeInTheDocument();
   });
 
   test("Matches snapshot", () => {
-    const { container } = render(<Navigation />);
+    const { container } = render(
+      <BlogContext.Provider value={contextBlogMocking}>
+        <Navigation />
+      </BlogContext.Provider>,
+    );
     expect(container).toMatchSnapshot();
   });
 });
