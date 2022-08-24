@@ -23,6 +23,12 @@ describe("ExpertList component", () => {
     expect(expertList).toBeInTheDocument();
   });
 
+  test("Should render ExpertList component when error data", () => {
+    const { getByTestId } = render(<ExpertList />);
+    const expertList = getByTestId("expert-list");
+    expect(expertList).toBeInTheDocument();
+  });
+
   test("Matches snapshot", () => {
     const { container } = render(
       <ExpertContext.Provider value={contextExpertMocking}>
