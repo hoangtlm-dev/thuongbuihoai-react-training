@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Head>
         <title>Dealer Marketing</title>
       </Head>
-      <main>
+      <main data-testid="layout">
         <Header />
         {children}
         <Footer />
