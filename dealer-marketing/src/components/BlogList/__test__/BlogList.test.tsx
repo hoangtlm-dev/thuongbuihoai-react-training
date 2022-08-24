@@ -2,7 +2,7 @@ import { BlogContextProps } from "@common-types/blog";
 import { BLOG_MOCKING_LIST } from "@constants/blog";
 import { BlogContext } from "@context/BlogContext";
 import { render } from "@testing-library/react";
-import BlogList from "..";
+import BlogList from "../index";
 
 const contextBlogMocking: BlogContextProps = {
   searchValue: "",
@@ -22,6 +22,12 @@ describe("BlogList component", () => {
         <BlogList />
       </BlogContext.Provider>,
     );
+    const blogList = getByTestId("blog-list");
+    expect(blogList).toBeInTheDocument();
+  });
+
+  test("Should render BlogList component with error data", () => {
+    const { getByTestId } = render(<BlogList />);
     const blogList = getByTestId("blog-list");
     expect(blogList).toBeInTheDocument();
   });
