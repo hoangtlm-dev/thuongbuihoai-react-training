@@ -16,12 +16,64 @@ const contextBlogMocking: BlogContextProps = {
 };
 
 describe("Input component", () => {
+  const onClickInput = jest.fn();
+  const onBlur = jest.fn();
   test("Should render Input component", () => {
     const { getByTestId } = render(
-      <Input type="text" placeholder="Your email..." />,
+      <BlogContext.Provider value={contextBlogMocking}>
+        <Input type="text" placeholder="Search the side..." />
+      </BlogContext.Provider>,
     );
     const inputValue = getByTestId("input-value");
     expect(inputValue).toBeInTheDocument();
+  });
+
+  test("Should render Input component with onClick", () => {
+    const { getByTestId } = render(
+      <BlogContext.Provider value={contextBlogMocking}>
+        <Input
+          type="text"
+          onClick={onClickInput}
+          placeholder="Search the side..."
+        />
+      </BlogContext.Provider>,
+    );
+    const inputValue = getByTestId("input-value");
+    fireEvent.click(inputValue);
+    expect(onClickInput).toHaveBeenCalled();
+  });
+
+  test("Should render Input component with default value of onClick", () => {
+    const { getByTestId } = render(
+      <BlogContext.Provider value={contextBlogMocking}>
+        <Input type="text" placeholder="Search the side..." />
+      </BlogContext.Provider>,
+    );
+    const inputValue = getByTestId("input-value");
+    fireEvent.click(inputValue);
+    expect(onClickInput).toHaveBeenCalled();
+  });
+
+  test("Should render Input component with onBlur", () => {
+    const { getByTestId } = render(
+      <BlogContext.Provider value={contextBlogMocking}>
+        <Input type="text" onBlur={onBlur} placeholder="Search the side..." />
+      </BlogContext.Provider>,
+    );
+    const inputValue = getByTestId("input-value");
+    fireEvent.blur(inputValue);
+    expect(onBlur).toHaveBeenCalled();
+  });
+
+  test("Should render Input component with default value of onBlur", () => {
+    const { getByTestId } = render(
+      <BlogContext.Provider value={contextBlogMocking}>
+        <Input type="text" placeholder="Search the side..." />
+      </BlogContext.Provider>,
+    );
+    const inputValue = getByTestId("input-value");
+    fireEvent.blur(inputValue);
+    expect(onBlur).toHaveBeenCalled();
   });
 
   test("Display blog after inputSearch", async () => {
