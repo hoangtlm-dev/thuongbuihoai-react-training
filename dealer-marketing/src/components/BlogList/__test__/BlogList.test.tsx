@@ -26,12 +26,6 @@ describe("BlogList component", () => {
     expect(blogList).toBeInTheDocument();
   });
 
-  test("Should render BlogList component with error data", () => {
-    const { getByTestId } = render(<BlogList />);
-    const blogList = getByTestId("blog-list");
-    expect(blogList).toBeInTheDocument();
-  });
-
   test("Matches snapshot", () => {
     const { container } = render(
       <BlogContext.Provider value={contextBlogMocking}>

@@ -2,7 +2,7 @@ import { ExpertContextProps } from "@common-types/expert";
 import { EXPERT_MOCKING, EXPERT_MOCKING_LIST } from "@constants/expert";
 import { ExpertContext } from "@context/ExpertContext";
 import { render } from "@testing-library/react";
-import CardExpert from "..";
+import CardExpert from "../index";
 
 const contextExpertMocking: ExpertContextProps = {
   experts: EXPERT_MOCKING_LIST,

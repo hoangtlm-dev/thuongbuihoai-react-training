@@ -2,6 +2,7 @@ import { BlogContextProps } from "@common-types/blog";
 import { BLOG_MOCKING, BLOG_MOCKING_LIST } from "@constants/blog";
 import { BlogContext } from "@context/BlogContext";
 import { render } from "@testing-library/react";
+import renderer from "react-test-renderer";
 import BlogDetail from "@pages/[slug]";
 
 const contextBlogMocking: BlogContextProps = {
@@ -26,18 +27,16 @@ describe("BlogDetail page", () => {
     expect(blogDetail).toBeInTheDocument();
   });
 
-  // it('populates the "alert" prop on getContent failure.', async () => {
-  //   // Inject anything you want to test
-  //   const props = await BlogDetail.getInitialProps({
-  //     query: { first: "whatever" },
-  //   });
-
-  //   // And make sure it results in what you want.
-  //   expect(props).toEqual({
-  //     content: BLOG_MOCKING_LIST,
-  //     alert: "There was an error loading data, please try again.",
-  //   });
-  // });
+  test("renders the features with getStaticProps", () => {
+    const tree = renderer
+      .create(
+        <BlogContext.Provider value={contextBlogMocking}>
+          <BlogDetail blog={BLOG_MOCKING} />
+        </BlogContext.Provider>,
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 
   test("Matches snapshot", () => {
     const { container } = render(

@@ -2,7 +2,7 @@ import { jsonLinkingData } from "@constants/linkingData";
 import { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
 
-export default function Document() {
+const Document = () => {
   const jsonLd = {
     "@context": "http://schema.org",
     "@type": "NewsArticle",
@@ -50,4 +50,6 @@ export default function Document() {
       </body>
     </Html>
   );
-}
+};
+
+export default Document;

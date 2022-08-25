@@ -2,7 +2,7 @@ import React, { memo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button, Text } from "@components/common";
-import { Blog } from "@common-types/blog";
+import { Blog, ClassNameType, LayoutContentType } from "@common-types/blog";
 import { Expert } from "@common-types/expert";
 import { ButtonType } from "@components/common/Button";
 import { TextType } from "@components/common/Text";
@@ -16,16 +16,6 @@ interface ResearchProps {
   isButton?: boolean;
   blog: Blog;
   expert?: Expert;
-}
-
-export enum LayoutContentType {
-  center = "center",
-  left = "left",
-}
-
-export enum ClassNameType {
-  center = "section",
-  grid = "grid",
 }
 
 const ResearchSection: React.FC<ResearchProps> = ({
