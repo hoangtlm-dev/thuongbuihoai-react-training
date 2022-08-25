@@ -1,19 +1,6 @@
-import { BlogContextProps } from "@common-types/blog";
-import { BLOG_MOCKING_LIST } from "@constants/blog";
-import { BlogContext } from "@context/BlogContext";
+import debounce from "@helpers/debounce";
 import { fireEvent, render } from "@testing-library/react";
 import Navigation from "../index";
-
-const contextBlogMocking: BlogContextProps = {
-  searchValue: "",
-  setSearchValue: jest.fn(),
-  blogs: BLOG_MOCKING_LIST,
-  blogList: BLOG_MOCKING_LIST,
-  errorCode: 0,
-  setBlogs: jest.fn(),
-  setErrorCode: jest.fn(),
-  handleUpdateBlogs: jest.fn(),
-};
 
 describe("Navigation component", () => {
   const spyScrollTo = jest.fn();
@@ -23,23 +10,34 @@ describe("Navigation component", () => {
   });
 
   test("Should render Navigation component", () => {
-    const { getByTestId } = render(
-      <BlogContext.Provider value={contextBlogMocking}>
-        <Navigation />
-      </BlogContext.Provider>,
-    );
+    const { getByTestId } = render(<Navigation />);
     const navigation = getByTestId("navigation");
     fireEvent.scroll(window, { target: { pageYOffset: 1 } });
     fireEvent.click(navigation);
     expect(navigation).toBeInTheDocument();
   });
 
+  test("should render button when window.pageYOffset = 1", () => {
+    const { getByTestId } = render(<Navigation />);
+    const clickBtn = getByTestId("icon");
+    fireEvent.scroll(window, { target: { pageYOffset: 1 } });
+    fireEvent.click(clickBtn);
+    expect(clickBtn).toBeInTheDocument();
+  });
+
+  jest.useFakeTimers();
+  test("execute just once", () => {
+    const func = jest.fn();
+    const debouncedFunc = debounce(func, 500);
+    debouncedFunc();
+    jest.advanceTimersByTime(500);
+    debouncedFunc();
+    jest.runAllTimers();
+    expect(func).not.toHaveBeenCalled();
+  });
+
   test("Matches snapshot", () => {
-    const { container } = render(
-      <BlogContext.Provider value={contextBlogMocking}>
-        <Navigation />
-      </BlogContext.Provider>,
-    );
+    const { container } = render(<Navigation />);
     expect(container).toMatchSnapshot();
   });
 });
