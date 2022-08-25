@@ -21,3 +21,13 @@ export interface BlogContextProps {
   setSearchValue: Function;
   handleUpdateBlogs: Function;
 }
+
+export enum LayoutContentType {
+  center = "center",
+  left = "left",
+}
+
+export enum ClassNameType {
+  center = "section",
+  grid = "grid",
+}
