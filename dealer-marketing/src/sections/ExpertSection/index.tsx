@@ -1,7 +1,9 @@
 import React, { memo } from "react";
-import Image from "next/image";
 import { Text } from "@components/common";
 import { TextType } from "@components/common/Text";
+import { CardExpert } from "@components";
+import { ExpertContentType } from "@common-types/expert";
+import { EXPERT_SECTION } from "@constants/expert";
 import styleExpertSection from "./expertSection.module.css";
 
 const ExpertSection: React.FC = () => (
@@ -11,76 +13,20 @@ const ExpertSection: React.FC = () => (
         <Text size={TextType.large} text="DMM Expert Podcast Interviews" />
       </div>
       <div className={styleExpertSection["expert-list"]}>
-        <div className={styleExpertSection["expert-section"]}>
-          <figure className={styleExpertSection["expert-layout"]}>
-            <Image
-              src="/images/avatar/ibrahim-mesbah.png"
-              alt="This is image of Mr adam dennis"
-              className={styleExpertSection["expert-image"]}
-              width={130}
-              height={130}
-            />
-          </figure>
-          <p className={styleExpertSection["expert-description"]}>
-            Evaluating OEM Programs and Providing Better Customer Experiences
-            with Ibrahim Mesbah
-          </p>
-          <figure className={styleExpertSection["expert-contact"]}>
-            <Image
-              src="/images/inside-auto.png"
-              alt="This is image inside auto"
-              className={styleExpertSection["expert-image-contact"]}
-              width={135}
-              height={60}
-            />
-          </figure>
-        </div>
-        <div className={styleExpertSection["expert-section"]}>
-          <figure className={styleExpertSection["expert-layout"]}>
-            <Image
-              src="/images/avatar/ilana-shabtay.png"
-              alt="This is image of Mr adam dennis"
-              className={styleExpertSection["expert-image"]}
-              width={130}
-              height={130}
-            />
-          </figure>
-          <p className={styleExpertSection["expert-description"]}>
-            Experimarketing Episode 27: No Inventory? No Problem.
-          </p>
-          <figure className={styleExpertSection["expert-contact"]}>
-            <Image
-              src="/images/experimaketing.png"
-              alt="This is image inside auto"
-              className={styleExpertSection["expert-image-contact"]}
-              width={135}
-              height={60}
-            />
-          </figure>
-        </div>
-        <div className={styleExpertSection["expert-section"]}>
-          <figure className={styleExpertSection["expert-layout"]}>
-            <Image
-              src="/images/avatar/brent-albrecht.png"
-              alt="This is image of Mr adam dennis"
-              className={styleExpertSection["expert-image"]}
-              width={130}
-              height={130}
-            />
-          </figure>
-          <p className={styleExpertSection["expert-description"]}>
-            Website Clicks?! they`re Still Clickin
-          </p>
-          <figure className={styleExpertSection["expert-contact"]}>
-            <Image
-              src="/images/experimaketing.png"
-              alt="This is image inside auto"
-              className={styleExpertSection["expert-image-contact"]}
-              width={135}
-              height={60}
-            />
-          </figure>
-        </div>
+        {EXPERT_SECTION.map((expert) => (
+          <CardExpert
+            key={expert.key}
+            isImage={true}
+            url={expert.src}
+            alt={expert.alt}
+            isLayoutImage={true}
+            isDescription={true}
+            urlContact={expert.srcInfo}
+            altContact={expert.altInfo}
+            description={expert.description}
+            layout={ExpertContentType.grid}
+          />
+        ))}
       </div>
     </div>
   </div>
