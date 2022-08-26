@@ -1,38 +1,91 @@
 import React, { memo } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Expert } from "@common-types/expert";
+import { Expert, ExpertContentType } from "@common-types/expert";
 import { EXPERT_MOCKING } from "@constants/expert";
 import { Button, Text } from "@components/common";
 import { TextType } from "@components/common/Text";
 import styleCardExpert from "./cardExpert.module.css";
+import { IMAGE } from "@constants/image";
 
 interface CardExpertProps {
-  expert: Expert;
+  isImage?: boolean;
+  url?: string;
+  alt?: string;
+  key?: string;
+  isDescription?: boolean;
+  isLayoutImage?: boolean;
+  urlContact?: string;
+  altContact?: string;
+  expert?: Expert;
+  layout?: string;
+  description?: string;
 }
 
-const CardExpert: React.FC<CardExpertProps> = ({ expert = EXPERT_MOCKING }) => (
-  <div data-testid="card-expert" className={styleCardExpert["card-expert"]}>
-    <figure className={styleCardExpert["card-layout"]}>
-      <Image
-        src={expert?.image.url}
-        alt={expert?.image.alt}
-        width={130}
-        height={130}
-        className={styleCardExpert["card-image"]}
-      />
-    </figure>
-    <Link href={`/expert-page/${expert.slug}`} passHref>
-      <Text size={TextType.regularOutline} text={expert?.name} />
-    </Link>
-    <div className={styleCardExpert["card-info"]}>
-      <Text text={expert?.info} />
-    </div>
-    <div className={styleCardExpert["card-button"]}>
+const CardExpert: React.FC<CardExpertProps> = ({
+  isImage = false,
+  url = IMAGE.url,
+  alt = IMAGE.alt,
+  isDescription = false,
+  isLayoutImage = false,
+  urlContact = IMAGE.url,
+  altContact = IMAGE.alt,
+  expert = EXPERT_MOCKING,
+  layout = ExpertContentType.border,
+  description = "This is description of interviews",
+}) => (
+  <div data-testid="card-expert" className={styleCardExpert[`card-${layout}`]}>
+    {isLayoutImage ? (
+      <figure className={styleCardExpert["card-view"]}>
+        <Image
+          src={url}
+          alt={alt}
+          width={130}
+          height={130}
+          className={styleCardExpert["card-image"]}
+        />
+      </figure>
+    ) : (
+      <figure className={styleCardExpert["card-layout"]}>
+        <Image
+          src={expert?.image.url}
+          alt={expert?.image.alt}
+          width={130}
+          height={130}
+          className={styleCardExpert["card-image"]}
+        />
+      </figure>
+    )}
+
+    {isDescription ? (
+      <p className={styleCardExpert["card-description"]}>{description}</p>
+    ) : (
       <Link href={`/expert-page/${expert.slug}`} passHref>
-        <Button icon />
+        <Text size={TextType.regularOutline} text={expert?.name} />
       </Link>
-    </div>
+    )}
+    {isImage ? (
+      <figure className={styleCardExpert["card-contact"]}>
+        <Image
+          src={urlContact}
+          alt={altContact}
+          width={135}
+          height={60}
+          className={styleCardExpert["card-image-contact"]}
+        />
+      </figure>
+    ) : (
+      <>
+        <div className={styleCardExpert["card-info"]}>
+          <Text text={expert?.info} />
+        </div>
+        <div className={styleCardExpert["card-button"]}>
+          <Link href={`/expert-page/${expert.slug}`} passHref>
+            <Button icon />
+          </Link>
+        </div>
+      </>
+    )}
   </div>
 );
 
