@@ -20,11 +20,11 @@ const EXPERT_MOCKING_LIST: Expert[] = [
     slug: "david-adcock",
     info: "Binary Auto",
     image: {
-      url: "/images/avatar/david-adcock.png",
-      alt: "This is image of Mr adam-dennis",
+      url: "/images/avatar/ibrahim-mesbah.png",
+      alt: "This is image of Mr adam dennis",
     },
     description:
-      "Brent Albrecht is currently the Vice President of Business Development at Friendemic. Friendemic provides social media and online reputation services for clients and agencies across the globe. Specialties: Marketing Strategy, Product development and launch, Social Media Marketing, Business Development, Lead Generation, Sales Promotion, Digital Marketing, Database Marketing.",
+      " Evaluating OEM Programs and Providing Better Customer Experiences with Ibrahim Mesbah",
   },
   {
     expertId: "2",
@@ -39,4 +39,32 @@ const EXPERT_MOCKING_LIST: Expert[] = [
       "Brent Albrecht is currently the Vice President of Business Development at Friendemic. Friendemic provides social media and online reputation services for clients and agencies across the globe. Specialties: Marketing Strategy, Product development and launch, Social Media Marketing, Business Development, Lead Generation, Sales Promotion, Digital Marketing, Database Marketing.",
   },
 ];
-export { EXPERT_MOCKING, EXPERT_MOCKING_LIST };
+
+const EXPERT_SECTION = [
+  {
+    key: "1",
+    src: "/images/avatar/ibrahim-mesbah.png",
+    alt: "This is image of Mr adam dennis",
+    description:
+      " Evaluating OEM Programs and Providing Better Customer Experiences with Ibrahim Mesbah",
+    srcInfo: "/images/inside-auto.png",
+    altInfo: "This is image inside auto",
+  },
+  {
+    key: "2",
+    src: "/images/avatar/ilana-shabtay.png",
+    alt: "This is image of Mr ilana-shabtay",
+    description: " Experimarketing Episode 27: No Inventory? No Problem.",
+    srcInfo: "/images/experimaketing.png",
+    altInfo: "This is image inside auto",
+  },
+  {
+    key: "3",
+    src: "/images/avatar/brent-albrecht.png",
+    alt: "This is image of Mr adam dennis",
+    description: " Website Clicks?! they`re Still Clickin",
+    srcInfo: "/images/experimaketing.png",
+    altInfo: "This is image inside auto",
+  },
+];
+export { EXPERT_MOCKING, EXPERT_MOCKING_LIST, EXPERT_SECTION };
