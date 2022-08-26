@@ -17,3 +17,8 @@ export interface ExpertContextProps {
   setErrorCode: Function;
   handleUpdateExperts: Function;
 }
+
+export enum ExpertContentType {
+  border = "border",
+  grid = "grid",
+}
