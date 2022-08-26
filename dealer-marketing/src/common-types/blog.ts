@@ -22,12 +22,12 @@ export interface BlogContextProps {
   handleUpdateBlogs: Function;
 }
 
-export enum LayoutContentType {
+export enum BlogContentType {
   center = "center",
   left = "left",
 }
 
-export enum ClassNameType {
+export enum BlogLayoutType {
   center = "section",
   grid = "grid",
 }
