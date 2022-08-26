@@ -371,7 +371,9 @@ exports[`HomePage Matches snapshot 1`] = `
             </p>
           </div>
           <div>
-            <div>
+            <div
+              data-testid="card-expert"
+            >
               <figure>
                 <span
                   style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
@@ -397,7 +399,7 @@ exports[`HomePage Matches snapshot 1`] = `
                 </span>
               </figure>
               <p>
-                Evaluating OEM Programs and Providing Better Customer Experiences with Ibrahim Mesbah
+                 Evaluating OEM Programs and Providing Better Customer Experiences with Ibrahim Mesbah
               </p>
               <figure>
                 <span
@@ -424,7 +426,9 @@ exports[`HomePage Matches snapshot 1`] = `
                 </span>
               </figure>
             </div>
-            <div>
+            <div
+              data-testid="card-expert"
+            >
               <figure>
                 <span
                   style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
@@ -440,7 +444,7 @@ exports[`HomePage Matches snapshot 1`] = `
                     />
                   </span>
                   <img
-                    alt="This is image of Mr adam dennis"
+                    alt="This is image of Mr ilana-shabtay"
                     data-nimg="intrinsic"
                     decoding="async"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -450,7 +454,7 @@ exports[`HomePage Matches snapshot 1`] = `
                 </span>
               </figure>
               <p>
-                Experimarketing Episode 27: No Inventory? No Problem.
+                 Experimarketing Episode 27: No Inventory? No Problem.
               </p>
               <figure>
                 <span
@@ -477,7 +481,9 @@ exports[`HomePage Matches snapshot 1`] = `
                 </span>
               </figure>
             </div>
-            <div>
+            <div
+              data-testid="card-expert"
+            >
               <figure>
                 <span
                   style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
@@ -503,7 +509,7 @@ exports[`HomePage Matches snapshot 1`] = `
                 </span>
               </figure>
               <p>
-                Website Clicks?! they\`re Still Clickin
+                 Website Clicks?! they\`re Still Clickin
               </p>
               <figure>
                 <span
