@@ -4,11 +4,11 @@ import ContactSection from "@sections/ContactSection";
 import ExpertSection from "@sections/ExpertSection";
 import ResearchSection from "@sections/ResearchSection";
 import { BLOG_MOCKING } from "@constants/blog";
-import { ClassNameType } from "@common-types/blog";
+import { BlogLayoutType } from "@common-types/blog";
 
 const MainSection: React.FC = () => (
   <div data-testid="main-section" className="container">
-    <ResearchSection layout={ClassNameType.center} blog={BLOG_MOCKING} />
+    <ResearchSection layout={BlogLayoutType.center} blog={BLOG_MOCKING} />
     <BlogList />
     <ContactSection />
     <ExpertSection />

@@ -2,7 +2,7 @@ import React, { memo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button, Text } from "@components/common";
-import { Blog, ClassNameType, LayoutContentType } from "@common-types/blog";
+import { Blog, BlogLayoutType, BlogContentType } from "@common-types/blog";
 import { Expert } from "@common-types/expert";
 import { ButtonType } from "@components/common/Button";
 import { TextType } from "@components/common/Text";
@@ -20,8 +20,8 @@ interface ResearchProps {
 
 const ResearchSection: React.FC<ResearchProps> = ({
   imageSmall = false,
-  layout = ClassNameType.center,
-  content = LayoutContentType.center,
+  layout = BlogLayoutType.center,
+  content = BlogContentType.center,
   isButton = true,
   blog,
   expert = EXPERT_MOCKING,
