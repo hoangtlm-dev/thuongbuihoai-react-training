@@ -44,6 +44,8 @@ const CardExpert: React.FC<CardExpertProps> = ({
           width={130}
           height={130}
           className={styleCardExpert["card-image"]}
+          placeholder="blur"
+          blurDataURL={IMAGE.blurDataURL}
         />
       </figure>
     ) : (
@@ -54,6 +56,8 @@ const CardExpert: React.FC<CardExpertProps> = ({
           width={130}
           height={130}
           className={styleCardExpert["card-image"]}
+          placeholder="blur"
+          blurDataURL={IMAGE.blurDataURL}
         />
       </figure>
     )}
@@ -73,6 +77,8 @@ const CardExpert: React.FC<CardExpertProps> = ({
           width={135}
           height={60}
           className={styleCardExpert["card-image-contact"]}
+          placeholder="blur"
+          blurDataURL={IMAGE.blurDataURL}
         />
       </figure>
     ) : (

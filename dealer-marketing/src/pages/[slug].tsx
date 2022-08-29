@@ -19,6 +19,7 @@ import { BLOG_RESPONSE_DATA } from "@api-backup/blogResponseData";
 // layouts
 import Layout from "@layouts";
 import style from "./style.module.css";
+import { IMAGE } from "@constants/image";
 
 interface BlogProps {
   blog: Blog;
@@ -84,6 +85,8 @@ const BlogDetail: React.FC<BlogProps> = ({ blog }) => {
                 width={60}
                 height={60}
                 className={style["blog-detail-image"]}
+                placeholder="blur"
+                blurDataURL={IMAGE.blurDataURL}
               />
               <div className={style["blog-detail-funeral"]}>
                 <p>

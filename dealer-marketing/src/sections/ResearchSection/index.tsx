@@ -8,6 +8,7 @@ import { ButtonType } from "@components/common/Button";
 import { TextType } from "@components/common/Text";
 import { EXPERT_MOCKING } from "@constants/expert";
 import styleResearch from "./researchSection.module.css";
+import { IMAGE } from "@constants/image";
 
 interface ResearchProps {
   layout?: string;
@@ -38,6 +39,8 @@ const ResearchSection: React.FC<ResearchProps> = ({
             className={styleResearch["research-image"]}
             width={350}
             height={210}
+            placeholder="blur"
+            blurDataURL={IMAGE.blurDataURL}
           />
         ) : (
           <Image
@@ -46,6 +49,8 @@ const ResearchSection: React.FC<ResearchProps> = ({
             className={styleResearch["research-image"]}
             width={730}
             height={438}
+            placeholder="blur"
+            blurDataURL={IMAGE.blurDataURL}
           />
         )}
         <div className={styleResearch[`research-${content}`]}>

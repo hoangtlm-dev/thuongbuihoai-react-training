@@ -81,6 +81,8 @@ const OurExpert: React.FC<ExpertProps> = ({ expert }) => {
             width={130}
             height={130}
             className={style["expert-detail-image"]}
+            placeholder="blur"
+            blurDataURL={IMAGE.blurDataURL}
           />
         </figure>
         <div className={style["expert-detail-info"]}>

@@ -12,7 +12,13 @@ interface BannerProps {
 const Banner: React.FC<BannerProps> = ({ url, text = "", alt = IMAGE.alt }) => (
   <div data-testid="banner" className={styleBanner.banner}>
     <figure className={styleBanner["banner-image"]}>
-      <Image layout="fill" src={url} alt={alt} />
+      <Image
+        layout="fill"
+        src={url}
+        alt={alt}
+        placeholder="blur"
+        blurDataURL={IMAGE.blurDataURL}
+      />
     </figure>
     <h1 className={styleBanner["banner-title"]}>{text}</h1>
   </div>
