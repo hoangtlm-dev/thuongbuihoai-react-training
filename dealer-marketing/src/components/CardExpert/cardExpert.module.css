@@ -1,4 +1,5 @@
 .card-border {
+  margin-top: 80px;
   position: relative;
   z-index: var(--z-tiny);
   width: 251px;
