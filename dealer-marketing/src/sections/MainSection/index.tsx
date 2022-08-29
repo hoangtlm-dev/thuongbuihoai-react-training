@@ -1,14 +1,14 @@
 import React, { memo } from "react";
 import { BlogList } from "@components";
-import ContactSection from "@sections/ContactSection";
-import ExpertSection from "@sections/ExpertSection";
-import ResearchSection from "@sections/ResearchSection";
 import { BLOG_MOCKING } from "@constants/blog";
 import { BlogLayoutType } from "@common-types/blog";
+import ContactSection from "@sections/ContactSection";
+import ExpertSection from "@sections/ExpertSection";
+import Card from "@components/Card";
 
 const MainSection: React.FC = () => (
   <div data-testid="main-section" className="container">
-    <ResearchSection layout={BlogLayoutType.center} blog={BLOG_MOCKING} />
+    <Card layout={BlogLayoutType.center} blog={BLOG_MOCKING} />
     <BlogList />
     <ContactSection />
     <ExpertSection />

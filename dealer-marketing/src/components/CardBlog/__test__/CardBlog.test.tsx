@@ -1,19 +1,6 @@
-import { BlogContextProps } from "@common-types/blog";
-import { BLOG_MOCKING, BLOG_MOCKING_LIST } from "@constants/blog";
-import { BlogContext } from "@context/BlogContext";
+import { BLOG_MOCKING } from "@constants/blog";
 import { render, screen } from "@testing-library/react";
 import CardBlog from "../index";
-
-const contextBlogMocking: BlogContextProps = {
-  searchValue: "",
-  setSearchValue: jest.fn(),
-  blogs: BLOG_MOCKING_LIST,
-  blogList: BLOG_MOCKING_LIST,
-  errorCode: 0,
-  setBlogs: jest.fn(),
-  setErrorCode: jest.fn(),
-  handleUpdateBlogs: jest.fn(),
-};
 
 describe("CardBog component", () => {
   test("Should render CardBog component", () => {
@@ -23,11 +10,7 @@ describe("CardBog component", () => {
   });
 
   test("Matches snapshot", () => {
-    const { container } = render(
-      <BlogContext.Provider value={contextBlogMocking}>
-        <CardBlog blog={BLOG_MOCKING} />
-      </BlogContext.Provider>,
-    );
+    const { container } = render(<CardBlog blog={BLOG_MOCKING} />);
     expect(container).toMatchSnapshot();
   });
 });
