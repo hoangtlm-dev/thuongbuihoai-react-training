@@ -1,0 +1,63 @@
+.research-section {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.research-grid {
+  width: 350px;
+}
+
+.research-info {
+  padding-top: 100px;
+}
+
+.research-image {
+  border-radius: 5px;
+}
+
+.research-center {
+  padding: 0 260px;
+}
+
+.research-left {
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.research-title {
+  text-transform: uppercase;
+  color: var(--text-third);
+  margin: 20px 0;
+}
+
+.research-description {
+  margin: 10px 0 20px 0;
+}
+
+.research-author {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.research-author:hover {
+  color: var(--bg-primary);
+}
+
+.research-content {
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  justify-content: space-between;
+}
+
+.research-button {
+  margin-top: 40px;
+}
+
+.research-heading > button {
+  border: none;
+  font-family: var(--primary-font);
+  background-color: transparent;
+  padding: 0;
+}
