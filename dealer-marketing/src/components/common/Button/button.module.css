@@ -16,3 +16,15 @@
 .btn-secondary {
   background-color: var(--bg-secondary);
 }
+
+.btn-icon {
+  border: none;
+  background-color: var(--border-primary);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.btn-icon:hover {
+  color: var(--bg-primary);
+}

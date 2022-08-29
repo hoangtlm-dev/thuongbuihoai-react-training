@@ -7,6 +7,7 @@ import { Button, Text } from "@components/common";
 import { TextType } from "@components/common/Text";
 import styleCardExpert from "./cardExpert.module.css";
 import { IMAGE } from "@constants/image";
+import { ButtonType } from "@components/common/Button";
 
 interface CardExpertProps {
   isImage?: boolean;
@@ -81,7 +82,7 @@ const CardExpert: React.FC<CardExpertProps> = ({
         </div>
         <div className={styleCardExpert["card-button"]}>
           <Link href={`/expert-page/${expert.slug}`} passHref>
-            <Button icon />
+            <Button type={ButtonType.buttonIcon} icon />
           </Link>
         </div>
       </>

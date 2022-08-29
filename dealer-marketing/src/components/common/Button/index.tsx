@@ -6,6 +6,7 @@ export enum ButtonType {
   default = "",
   primary = "primary",
   secondary = "secondary",
+  buttonIcon = "icon",
 }
 
 interface ButtonProps {

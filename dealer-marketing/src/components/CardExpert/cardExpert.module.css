@@ -47,18 +47,6 @@
   text-align: center;
 }
 
-.card-button > button {
-  border: none;
-  background-color: var(--border-primary);
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-}
-
-.card-button > button:hover {
-  color: var(--bg-primary);
-}
-
 .card-description {
   cursor: pointer;
   text-align: center;
