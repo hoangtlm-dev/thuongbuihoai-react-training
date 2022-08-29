@@ -12,7 +12,7 @@ export default {
 } as ComponentMeta<typeof Input>;
 
 const TemplateInput: ComponentStory<typeof Input> = (args) => (
-  <Input {...args} onClick={action("onClick action")} />
+  <Input {...args} onChange={action("onChang value")} />
 );
 
 export const InputText = TemplateInput.bind({});

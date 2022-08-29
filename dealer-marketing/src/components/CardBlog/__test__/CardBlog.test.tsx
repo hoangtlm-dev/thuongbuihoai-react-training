@@ -17,11 +17,7 @@ const contextBlogMocking: BlogContextProps = {
 
 describe("CardBog component", () => {
   test("Should render CardBog component", () => {
-    render(
-      <BlogContext.Provider value={contextBlogMocking}>
-        <CardBlog blog={BLOG_MOCKING} />
-      </BlogContext.Provider>,
-    );
+    render(<CardBlog blog={BLOG_MOCKING} />);
     const cardBog = screen.getByText(/RESEARCH & ANALYSIS/i);
     expect(cardBog).toBeInTheDocument();
   });
