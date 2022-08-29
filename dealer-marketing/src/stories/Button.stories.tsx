@@ -31,7 +31,7 @@ Secondary.args = {
 export const ButtonIcon = TemplateButton.bind({});
 ButtonIcon.args = {
   text: "",
-  type: ButtonType.default,
+  type: ButtonType.buttonIcon,
   icon: true,
 };
 
