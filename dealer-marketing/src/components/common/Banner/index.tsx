@@ -9,7 +9,11 @@ interface BannerProps {
   alt?: string;
 }
 
-const Banner: React.FC<BannerProps> = ({ url, text = "", alt = IMAGE.alt }) => (
+const Banner: React.FC<BannerProps> = ({
+  url,
+  text = "",
+  alt = IMAGE.altBanner,
+}) => (
   <div data-testid="banner" className={styleBanner.banner}>
     <div className={styleBanner["banner-image"]}>
       <Image
