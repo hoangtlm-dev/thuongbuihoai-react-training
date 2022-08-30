@@ -7,8 +7,8 @@
 }
 
 .our-expert-heading {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: var(--f-xlarge);
+  font-weight: var(--w-bold);
   color: #3c4858;
   padding-bottom: 20px;
 }
@@ -52,9 +52,9 @@
 }
 
 .expert-detail-name {
-  font-size: 24px;
+  font-size: var(--f-large);
   color: #3c4858;
-  font-weight: 700;
+  font-weight: var(--w-bold);
 }
 
 .expert-detail-content {
