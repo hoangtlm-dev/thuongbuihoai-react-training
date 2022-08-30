@@ -18,8 +18,8 @@
   left: 35%;
   top: 45%;
   color: var(--light);
-  font-size: 30px;
-  font-weight: 700;
+  font-size: var(--f-xlarge);
+  font-weight: var(--w-bold);
   width: 450px;
   text-align: center;
 }
