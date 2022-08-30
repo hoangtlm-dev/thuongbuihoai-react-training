@@ -39,7 +39,7 @@
 .card-info {
   text-align: center;
   color: var(--text-primary);
-  font-size: 13px;
+  font-size: var(--f-normal);
 }
 
 .card-button {
@@ -51,8 +51,8 @@
   cursor: pointer;
   text-align: center;
   color: var(--text-secondary);
-  font-size: 18px;
-  font-weight: 700;
+  font-size: var(--f-secondary);
+  font-weight: var(--w-bold);
   padding: 90px 10px 20px;
 }
 
