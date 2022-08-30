@@ -25,12 +25,12 @@ interface CardExpertProps {
 
 const CardExpert: React.FC<CardExpertProps> = ({
   isImage = false,
-  url = IMAGE.url,
-  alt = IMAGE.alt,
+  url = IMAGE.urlExpert,
+  alt = IMAGE.altExpert,
   isDescription = false,
   isLayoutImage = false,
-  urlContact = IMAGE.url,
-  altContact = IMAGE.alt,
+  urlContact = IMAGE.urlContact,
+  altContact = IMAGE.altContact,
   expert = EXPERT_MOCKING,
   layout = ExpertContentType.border,
   description = "This is description of interviews",
