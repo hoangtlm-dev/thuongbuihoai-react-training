@@ -28,4 +28,21 @@
   --z-sm: 1;
   --z-md: 2;
   --z-lg: 3;
+
+  /* font-size */
+  --f-tiny: 11px;
+  --f-small: 12px;
+  --f-normal: 13px;
+  --f-regular: 14px;
+  --f-medium: 15px;
+  --f-secondary: 18px;
+  --f-primary: 20px;
+  --f-third: 22px;
+  --f-large: 24px;
+  --f-xlarge: 30px;
+  --f-xxlarge: 50px;
+
+  /* font weight */
+  --w-normal: normal;
+  --w-bold: 700;
 }
