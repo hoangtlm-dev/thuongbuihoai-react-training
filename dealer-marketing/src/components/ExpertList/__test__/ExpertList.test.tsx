@@ -1,5 +1,13 @@
+import { EXPERT_MOCKING_LIST } from "@constants/expert";
 import { render } from "@testing-library/react";
 import ExpertList from "../index";
+
+jest.mock("@context/ExpertContext");
+const ExpertContext = require("@context/ExpertContext");
+
+ExpertContext.ExpertProvider.mockImplementation(() => {
+  return { experts: EXPERT_MOCKING_LIST, errorCode: "success" };
+});
 
 describe("ExpertList component", () => {
   test("Should render ExpertList component", () => {

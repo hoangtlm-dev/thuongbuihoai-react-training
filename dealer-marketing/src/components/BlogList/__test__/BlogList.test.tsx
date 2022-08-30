@@ -1,37 +1,23 @@
-import { BlogContextProps } from "@common-types/blog";
 import { BLOG_MOCKING_LIST } from "@constants/blog";
-import { BlogContext } from "@context/BlogContext";
 import { render } from "@testing-library/react";
 import BlogList from "../index";
 
-const contextBlogMocking: BlogContextProps = {
-  searchValue: "",
-  setSearchValue: jest.fn(),
-  blogs: BLOG_MOCKING_LIST,
-  blogList: BLOG_MOCKING_LIST,
-  errorCode: 0,
-  setBlogs: jest.fn(),
-  setErrorCode: jest.fn(),
-  handleUpdateBlogs: jest.fn(),
-};
+jest.mock("@context/BlogContext");
+const BlogContext = require("@context/BlogContext");
+
+BlogContext.BlogProvider.mockImplementation(() => {
+  return { blogs: BLOG_MOCKING_LIST, errorCode: "success" };
+});
 
 describe("BlogList component", () => {
   test("Should render BlogList component", () => {
-    const { getByTestId } = render(
-      <BlogContext.Provider value={contextBlogMocking}>
-        <BlogList />
-      </BlogContext.Provider>,
-    );
+    const { getByTestId } = render(<BlogList />);
     const blogList = getByTestId("blog-list");
     expect(blogList).toBeInTheDocument();
   });
 
   test("Matches snapshot", () => {
-    const { container } = render(
-      <BlogContext.Provider value={contextBlogMocking}>
-        <BlogList />
-      </BlogContext.Provider>,
-    );
+    const { container } = render(<BlogList />);
     expect(container).toMatchSnapshot();
   });
 });

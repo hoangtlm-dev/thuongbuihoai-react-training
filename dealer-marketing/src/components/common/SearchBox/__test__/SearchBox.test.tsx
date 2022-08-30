@@ -2,10 +2,10 @@ import { fireEvent, render } from "@testing-library/react";
 import debounce from "@helpers/debounce";
 import SearchBox from "../SearchBox";
 
-const openModal = jest.fn();
-const searchValue = jest.fn();
-const onScroll = jest.fn();
 describe("SearchBox component", () => {
+  const openModal = jest.fn();
+  const searchValue = jest.fn();
+  const onScroll = jest.fn();
   test("Should render SearchBox component", () => {
     const { getByTestId } = render(
       <SearchBox
