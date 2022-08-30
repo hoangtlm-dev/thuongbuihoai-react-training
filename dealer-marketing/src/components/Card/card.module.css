@@ -37,7 +37,7 @@
 
 .research-author {
   cursor: pointer;
-  font-weight: 700;
+  font-weight: var(--w-bold);
 }
 
 .research-author:hover {

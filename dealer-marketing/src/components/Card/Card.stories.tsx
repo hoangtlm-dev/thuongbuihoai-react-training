@@ -23,7 +23,7 @@ CardBlogCenter.args = {
 
 export const CardBlogLeft = TemplateCard.bind({});
 CardBlogLeft.args = {
-  isButton: false,
+  hasButton: false,
   blog: BLOG_MOCKING,
   layout: BlogLayoutType.grid,
   content: BlogContentType.left,

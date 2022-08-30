@@ -14,7 +14,7 @@ interface CardProps {
   layout?: string;
   content?: string;
   imageSmall?: boolean;
-  isButton?: boolean;
+  hasButton?: boolean;
   blog: Blog;
   expert?: Expert;
 }
@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({
   imageSmall = false,
   layout = BlogLayoutType.center,
   content = BlogContentType.center,
-  isButton = true,
+  hasButton = true,
   blog,
   expert = EXPERT_MOCKING,
 }) => {
@@ -75,7 +75,7 @@ const Card: React.FC<CardProps> = ({
             </div>
           </div>
           <div className={styleResearch["research-button"]}>
-            {isButton ? (
+            {hasButton ? (
               <Button type={ButtonType.primary} text="Read more" />
             ) : (
               ""

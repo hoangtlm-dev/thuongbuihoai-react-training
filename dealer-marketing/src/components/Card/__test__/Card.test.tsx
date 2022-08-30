@@ -24,7 +24,7 @@ describe("Card component", () => {
     const { getByTestId } = render(
       <Card
         imageSmall
-        isButton
+        hasButton
         expert={EXPERT_MOCKING}
         layout="left"
         content="grid"
