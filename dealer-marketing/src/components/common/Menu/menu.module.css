@@ -16,8 +16,8 @@
 
 .menu-item-normal {
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: var(--w-bold);
+  font-size: var(--f-regular);
   color: var(--border-primary);
   padding: 0 10px;
   font-family: "var(--secondary-font)";
