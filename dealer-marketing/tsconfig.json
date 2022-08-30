@@ -16,7 +16,17 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@*": ["./*"]
+      "@*": ["./*"],
+      "@api-backup/*": ["api-backup/*"],
+      "@common-types/*": ["common-types/*"],
+      "@components/*": ["components/*"],
+      "@common/*": ["components/common/*"],
+      "@pages/*": ["pages/*"],
+      "@constants/*": ["constants/*"],
+      "@layouts/*": ["layouts/*"],
+      "@sections/*": ["sections/*"],
+      "@context/*": ["context/*"],
+      "@helpers/*": ["helpers/*"]
     }
   },
   "include": [
