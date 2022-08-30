@@ -7,7 +7,7 @@
 
 .footer-title {
   color: var(--border-primary);
-  font-size: 12px;
+  font-size: var(--f-normal);
   text-align: end;
   margin-top: 25px;
 }
