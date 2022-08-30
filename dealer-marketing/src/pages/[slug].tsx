@@ -92,7 +92,7 @@ const BlogDetail: React.FC<BlogProps> = ({ blog }) => {
                 <p>
                   by <span>{expertId}</span>
                 </p>
-                <p>{createDate}</p>
+                <Text size={TextType.regularDark} text={createDate} />
               </div>
             </div>
           </div>
