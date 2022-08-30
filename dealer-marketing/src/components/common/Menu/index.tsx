@@ -12,11 +12,7 @@ const Menu: React.FC<MenuProps> = ({ menuList, type = MenuTypeProp.dark }) => {
     ));
   };
 
-  return (
-    <div data-testid="menu" className={menuStyle.menu}>
-      <ul className={menuStyle["menu-list"]}>{renderMenuList(menuList)}</ul>
-    </div>
-  );
+  return <ul className={menuStyle["menu-list"]}>{renderMenuList(menuList)}</ul>;
 };
 
 export default memo(Menu);
