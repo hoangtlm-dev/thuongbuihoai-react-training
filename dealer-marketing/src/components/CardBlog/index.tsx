@@ -12,7 +12,7 @@ const CardBlog: React.FC<CartBlogProps> = ({ blog = BLOG_MOCKING }) => (
     blog={blog}
     content={BlogContentType.left}
     layout={BlogLayoutType.grid}
-    isButton={false}
+    hasButton={false}
     imageSmall={true}
   />
 );
