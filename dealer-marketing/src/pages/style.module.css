@@ -15,12 +15,12 @@
 
 .blog-detail-funeral > p {
   margin: 0 0 10px 20px;
-  font-size: 14px;
+  font-size: var(--f-regular);
   font-family: "var(--secondary-font)";
 }
 
 .blog-detail-funeral > p > span {
-  font-weight: 700;
+  font-weight: var(--w-bold);
 }
 
 .blog-detail-info {
@@ -33,8 +33,8 @@
 
 /* about page */
 .about-page-heading {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: var(--f-xlarge);
+  font-weight: var(--w-bold);
   color: #3c4858;
   padding-bottom: 20px;
 }
@@ -52,8 +52,8 @@
 }
 
 .status-number {
-  font-size: 50px;
-  font-weight: 700;
+  font-size: var(--f-xxlarge);
+  font-weight: var(--w-bold);
 }
 
 .status-back {
