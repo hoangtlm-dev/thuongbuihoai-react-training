@@ -1,8 +1,10 @@
+import { BlogContext } from "@context/BlogContext";
+import debounce from "@helpers/debounce";
 import React, {
-  ChangeEventHandler,
   memo,
   MouseEventHandler,
   useCallback,
+  useContext,
   useEffect,
 } from "react";
 import Input from "../Input";
@@ -10,24 +12,18 @@ import styleNavigation from "../Navigation/navigation.module.css";
 
 interface SearchBoxProps {
   openModal: Function;
-  onSearch: ChangeEventHandler<HTMLInputElement>;
   onScroll: MouseEventHandler<HTMLInputElement>;
 }
-const SearchBox: React.FC<SearchBoxProps> = ({
-  openModal,
-  onScroll,
-  onSearch,
-}) => {
-  const closeSearchBox = useCallback((event: Event) => {
-    if (!(event.target as HTMLInputElement).closest("#searchInput")) {
-      openModal(false);
-    }
-  }, []);
+const SearchBox: React.FC<SearchBoxProps> = ({ onScroll }) => {
+  const { setSearchValue } = useContext(BlogContext);
 
-  useEffect(() => {
-    document.addEventListener("click", closeSearchBox);
-    return () => document.removeEventListener("click", closeSearchBox);
-  }, []);
+  const handleSearch = useCallback(
+    async (event: { target: { value: string } }) => {
+      const value = event.target.value;
+      debounce(() => setSearchValue(value), 500);
+    },
+    [],
+  );
 
   return (
     <div
@@ -37,7 +33,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({
       <Input
         type="text"
         placeholder="Search the site..."
-        onChange={onSearch}
+        onChange={handleSearch}
         onClick={onScroll}
       />
     </div>

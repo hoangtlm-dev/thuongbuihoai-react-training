@@ -8,11 +8,7 @@ describe("SearchBox component", () => {
   const onScroll = jest.fn();
   test("Should render SearchBox component", () => {
     const { getByTestId } = render(
-      <SearchBox
-        openModal={openModal}
-        onSearch={searchValue}
-        onScroll={onScroll}
-      />,
+      <SearchBox openModal={openModal} onScroll={onScroll} />,
     );
     const searchBox = getByTestId("search-box");
     expect(searchBox).toBeInTheDocument();
@@ -26,11 +22,7 @@ describe("SearchBox component", () => {
     debouncedFunc();
     jest.runAllTimers();
     const { getByTestId } = render(
-      <SearchBox
-        openModal={openModal}
-        onSearch={searchValue}
-        onScroll={onScroll}
-      />,
+      <SearchBox openModal={openModal} onScroll={onScroll} />,
     );
     const searchBox = getByTestId("search-box");
     fireEvent.click(searchBox);
@@ -39,11 +31,7 @@ describe("SearchBox component", () => {
 
   test("Matches snapshot", () => {
     const { container } = render(
-      <SearchBox
-        openModal={openModal}
-        onSearch={searchValue}
-        onScroll={onScroll}
-      />,
+      <SearchBox openModal={openModal} onScroll={onScroll} />,
     );
     expect(container).toMatchSnapshot();
   });
