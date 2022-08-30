@@ -2,7 +2,7 @@
 .btn-secondary {
   cursor: pointer;
   border: none;
-  font-size: 11px;
+  font-size: var(--f-tiny);
   padding: 14px 27px;
   border-radius: 50px;
   color: var(--light);
