@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { Blog, BlogLayoutType, BlogContentType } from "@common-types/blog";
+import { Blog, BlogLayoutType, BlogContentType } from "@self-types/blog";
 import { BLOG_MOCKING } from "@constants/blog";
 import Card from "@components/Card";
 

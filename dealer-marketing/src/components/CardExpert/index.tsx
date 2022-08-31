@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Expert, ExpertContentType } from "@common-types/expert";
+import { Expert, ExpertContentType } from "@self-types/expert";
 import { EXPERT_MOCKING } from "@constants/expert";
 import { Button, Text } from "@components/common";
 import { TextType } from "@components/common/Text";

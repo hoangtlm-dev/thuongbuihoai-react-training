@@ -1,4 +1,4 @@
-import { RouterType } from "@common-types/routes";
+import { RouterType } from "@self-types/routes";
 
 const ROUTER_CONTACT: RouterType[] = [
   {

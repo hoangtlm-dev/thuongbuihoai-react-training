@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { BlogContentType, BlogLayoutType } from "@common-types/blog";
+import { BlogContentType, BlogLayoutType } from "@self-types/blog";
 import { BLOG_MOCKING } from "@constants/blog";
 import Card from "../Card";
 

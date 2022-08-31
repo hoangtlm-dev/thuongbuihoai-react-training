@@ -1,5 +1,5 @@
 import { createContext, useMemo, useState } from "react";
-import { Blog, BlogContextProps } from "@common-types/blog";
+import { Blog, BlogContextProps } from "@self-types/blog";
 
 const BlogContext = createContext<BlogContextProps>({} as BlogContextProps);
 const BlogProvider: React.FC<{ children: JSX.Element[] | JSX.Element }> = ({

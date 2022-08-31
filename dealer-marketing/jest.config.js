@@ -26,7 +26,7 @@ module.exports = {
     "^@components(.*)$": "<rootDir>/src/components/$1",
     "^@common(.*)$/": "<rootDir>/src/components/common/$1",
     "^@layouts(.*)$": "<rootDir>/src/layouts/$1",
-    "^@common-types(.*)$": "<rootDir>/src/common-types/$1",
+    "^@self-types(.*)$": "<rootDir>/src/types/$1",
     "^@constants(.*)$": "<rootDir>/src/constants/$1",
     "^@context(.*)$": "<rootDir>/src/context/$1",
     "^@sections(.*)$": "<rootDir>/src/sections/$1",

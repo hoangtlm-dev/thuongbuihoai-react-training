@@ -1,4 +1,4 @@
-import { Blog } from "@common-types/blog";
+import { Blog } from "@self-types/blog";
 
 const BLOG_RESPONSE_DATA: Blog[] = [
   {

@@ -547,6 +547,7 @@ exports[`BlogDetail page renders the features with getStaticProps 1`] = `
         <div>
           <p
             data-testid="text"
+            onClick={[Function]}
           >
             Exploring Influential and Impactful Automotive Advertising Campaigns
           </p>
@@ -682,6 +683,7 @@ exports[`BlogDetail page renders the features with getStaticProps 1`] = `
             </p>
             <p
               data-testid="text"
+              onClick={[Function]}
             >
               July 28, 2022
             </p>
@@ -691,6 +693,7 @@ exports[`BlogDetail page renders the features with getStaticProps 1`] = `
       <hr />
       <p
         data-testid="text"
+        onClick={[Function]}
       >
         Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months. Nowhere is this more relevant than in the automotive industry, where new campaigns hold the potential to make or break a company. This article will explore some disruptive and impactful automotive marketing campaigns throughout the past century. We'll explore what made them successful and see how they changed the marketing landscape forever.
       </p>

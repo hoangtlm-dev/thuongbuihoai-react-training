@@ -8,7 +8,7 @@ const MainSection = lazy(() => import("@sections/MainSection"));
 import { Loader } from "@components/common";
 
 // common-types
-import { Blog } from "@common-types/blog";
+import { Blog } from "@self-types/blog";
 
 // constants
 import { IMAGE } from "@constants/image";

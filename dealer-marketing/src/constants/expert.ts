@@ -1,4 +1,4 @@
-import { Expert } from "@common-types/expert";
+import { Expert } from "@self-types/expert";
 
 const EXPERT_MOCKING: Expert = {
   expertId: "1",

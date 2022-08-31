@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { EXPERT_MOCKING } from "@constants/expert";
 import { CardExpert } from "@components/index";
-import { ExpertContentType } from "@common-types/expert";
+import { ExpertContentType } from "@self-types/expert";
 import { IMAGE } from "@constants/image";
 
 export default {

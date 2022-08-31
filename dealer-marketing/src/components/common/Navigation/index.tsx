@@ -6,7 +6,7 @@ import Logo from "../Logo";
 import Menu from "../Menu";
 import styleNavigation from "./navigation.module.css";
 import SearchBox from "../SearchBox/SearchBox";
-import { RouterTypeProp } from "@common-types/routes";
+import { RouterTypeProp } from "@self-types/routes";
 
 const Navigation: React.FC = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);

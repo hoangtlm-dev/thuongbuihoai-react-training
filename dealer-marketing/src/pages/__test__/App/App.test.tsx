@@ -1,7 +1,7 @@
-import { ExpertContextProps } from "@common-types/expert";
+import { ExpertContextProps } from "@self-types/expert";
 import { EXPERT_MOCKING_LIST } from "@constants/expert";
 import { ExpertContext } from "@context/ExpertContext";
-import { BlogContextProps } from "@common-types/blog";
+import { BlogContextProps } from "@self-types/blog";
 import { BLOG_MOCKING_LIST } from "@constants/blog";
 import { BlogContext } from "@context/BlogContext";
 import { render } from "@testing-library/react";

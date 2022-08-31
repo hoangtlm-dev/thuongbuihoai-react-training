@@ -4,7 +4,7 @@ import { GetStaticProps } from "next";
 import { ParsedUrlQuery } from "querystring";
 
 // common-types
-import { Expert } from "@common-types/expert";
+import { Expert } from "@self-types/expert";
 
 // components
 const Navigation = lazy(() => import("@components/common/Navigation"));

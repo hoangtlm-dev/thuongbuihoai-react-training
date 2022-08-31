@@ -1,5 +1,5 @@
 import { EXPERT_MOCKING, EXPERT_MOCKING_LIST } from "@constants/expert";
-import { ExpertContextProps } from "@common-types/expert";
+import { ExpertContextProps } from "@self-types/expert";
 import { ExpertContext } from "@context/ExpertContext";
 import { render } from "@testing-library/react";
 import OurExpert from "@pages/expert-page/[slug]";

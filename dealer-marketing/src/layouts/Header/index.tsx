@@ -2,7 +2,7 @@ import React from "react";
 import { ROUTER_CONTACT } from "@constants/routes";
 import { Menu } from "@components/common";
 import styleHeader from "./header.module.css";
-import { RouterTypeProp } from "@common-types/routes";
+import { RouterTypeProp } from "@self-types/routes";
 
 const Header = () => (
   <header data-testid="header" className={styleHeader.header}>

@@ -1,4 +1,4 @@
-import { JsonLinkingData } from "@common-types/linkingData";
+import { JsonLinkingData } from "@self-types/linkingData";
 
 const jsonLinkingData: JsonLinkingData = {
   description: "This is web dealer-marketing",

@@ -2,7 +2,7 @@ import React from "react";
 import { ROUTER_CONTACT, ROUTER_SERVICES } from "@constants/routes";
 import { Menu } from "@components/common";
 import styleFooter from "./footer.module.css";
-import { RouterTypeProp } from "@common-types/routes";
+import { RouterTypeProp } from "@self-types/routes";
 
 const Footer: React.FC = () => (
   <footer data-testid="footer" className={styleFooter.footer}>

@@ -1,4 +1,4 @@
-import { BlogContextProps } from "@common-types/blog";
+import { BlogContextProps } from "types/blog";
 import { BLOG_MOCKING_LIST } from "@constants/blog";
 import { BlogContext } from "@context/BlogContext";
 import { render } from "@testing-library/react";

@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { Expert, ExpertContextProps } from "@common-types/expert";
+import { Expert, ExpertContextProps } from "@self-types/expert";
 
 const ExpertContext = createContext<ExpertContextProps>(
   {} as ExpertContextProps,

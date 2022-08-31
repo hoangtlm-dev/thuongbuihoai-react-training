@@ -1,4 +1,4 @@
-import { Expert } from "@common-types/expert";
+import { Expert } from "@self-types/expert";
 
 const EXPERT_RESPONSE_DATA: Expert[] = [
   {

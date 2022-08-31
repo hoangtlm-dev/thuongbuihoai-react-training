@@ -1,4 +1,4 @@
-import { RouterProps, RouterTypeProp, RouterType } from "@common-types/routes";
+import { RouterProps, RouterTypeProp, RouterType } from "@self-types/routes";
 import Link from "next/link";
 import React, { memo } from "react";
 import menuStyle from "./menu.module.css";

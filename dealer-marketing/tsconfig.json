@@ -17,7 +17,7 @@
     "incremental": true,
     "paths": {
       "@api-backup/*": ["api-backup/*"],
-      "@common-types/*": ["common-types/*"],
+      "@self-types/*": ["types/*"],
       "@components/*": ["components/*"],
       "@common/*": ["components/common/*"],
       "@pages/*": ["pages/*"],
