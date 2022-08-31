@@ -8,7 +8,9 @@ exports[`ErrorPage Matches snapshot 1`] = `
     <div>
       404
     </div>
-    <p>
+    <p
+      data-testid="text"
+    >
       This page could not be found.
     </p>
     <div>

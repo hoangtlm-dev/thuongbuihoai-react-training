@@ -9,26 +9,24 @@ exports[`HomePage Matches snapshot 1`] = `
       data-testid="header"
     >
       <div>
-        <div
+        <ul
           data-testid="menu"
         >
-          <ul>
-            <li>
-              <a
-                href="/expert-panel"
-              >
-                Our Experts
-              </a>
-            </li>
-            <li>
-              <a
-                href="/about-us"
-              >
-                About
-              </a>
-            </li>
-          </ul>
-        </div>
+          <li>
+            <a
+              href="/expert-panel"
+            >
+              Our Experts
+            </a>
+          </li>
+          <li>
+            <a
+              href="/about-us"
+            >
+              About
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <nav
@@ -62,40 +60,38 @@ exports[`HomePage Matches snapshot 1`] = `
         </span>
       </div>
       <div>
-        <div
+        <ul
           data-testid="menu"
         >
-          <ul>
-            <li>
-              <a
-                href="/"
-              >
-                Research
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-              >
-                Best practice
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-              >
-                Commentary
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-              >
-                Reviews
-              </a>
-            </li>
-          </ul>
-        </div>
+          <li>
+            <a
+              href="/"
+            >
+              Research
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+            >
+              Best practice
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+            >
+              Commentary
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+            >
+              Reviews
+            </a>
+          </li>
+        </ul>
         <i
           data-testid="icon"
         />
@@ -109,7 +105,7 @@ exports[`HomePage Matches snapshot 1`] = `
           style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
         >
           <img
-            alt="This is home page"
+            alt="This is image of banner"
             data-nimg="fill"
             decoding="async"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -675,54 +671,50 @@ exports[`HomePage Matches snapshot 1`] = `
     <footer
       data-testid="footer"
     >
-      <div
+      <ul
         data-testid="menu"
       >
-        <ul>
+        <li>
+          <a
+            href="/expert-panel"
+          >
+            Our Experts
+          </a>
+        </li>
+        <li>
+          <a
+            href="/about-us"
+          >
+            About
+          </a>
+        </li>
+      </ul>
+      <div>
+        <ul
+          data-testid="menu"
+        >
           <li>
             <a
-              href="/expert-panel"
+              href="/"
             >
-              Our Experts
+              Privacy policy
             </a>
           </li>
           <li>
             <a
-              href="/about-us"
+              href="/"
             >
-              About
+              Terms of service
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+            >
+              Advertise
             </a>
           </li>
         </ul>
-      </div>
-      <div>
-        <div
-          data-testid="menu"
-        >
-          <ul>
-            <li>
-              <a
-                href="/"
-              >
-                Privacy policy
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-              >
-                Terms of service
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-              >
-                Advertise
-              </a>
-            </li>
-          </ul>
-        </div>
         <p>
           Copyright © 2022 Dealer Marketing Magazine
         </p>

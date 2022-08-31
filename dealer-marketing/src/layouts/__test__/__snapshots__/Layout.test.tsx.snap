@@ -9,35 +9,9 @@ exports[`Layout component Matches snapshot 1`] = `
       data-testid="header"
     >
       <div>
-        <div
+        <ul
           data-testid="menu"
         >
-          <ul>
-            <li>
-              <a
-                href="/expert-panel"
-              >
-                Our Experts
-              </a>
-            </li>
-            <li>
-              <a
-                href="/about-us"
-              >
-                About
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <footer
-      data-testid="footer"
-    >
-      <div
-        data-testid="menu"
-      >
-        <ul>
           <li>
             <a
               href="/expert-panel"
@@ -54,34 +28,54 @@ exports[`Layout component Matches snapshot 1`] = `
           </li>
         </ul>
       </div>
+    </header>
+    <footer
+      data-testid="footer"
+    >
+      <ul
+        data-testid="menu"
+      >
+        <li>
+          <a
+            href="/expert-panel"
+          >
+            Our Experts
+          </a>
+        </li>
+        <li>
+          <a
+            href="/about-us"
+          >
+            About
+          </a>
+        </li>
+      </ul>
       <div>
-        <div
+        <ul
           data-testid="menu"
         >
-          <ul>
-            <li>
-              <a
-                href="/"
-              >
-                Privacy policy
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-              >
-                Terms of service
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-              >
-                Advertise
-              </a>
-            </li>
-          </ul>
-        </div>
+          <li>
+            <a
+              href="/"
+            >
+              Privacy policy
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+            >
+              Terms of service
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+            >
+              Advertise
+            </a>
+          </li>
+        </ul>
         <p>
           Copyright © 2022 Dealer Marketing Magazine
         </p>

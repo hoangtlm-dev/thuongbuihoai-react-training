@@ -6,26 +6,24 @@ exports[`Header component Matches snapshot 1`] = `
     data-testid="header"
   >
     <div>
-      <div
+      <ul
         data-testid="menu"
       >
-        <ul>
-          <li>
-            <a
-              href="/expert-panel"
-            >
-              Our Experts
-            </a>
-          </li>
-          <li>
-            <a
-              href="/about-us"
-            >
-              About
-            </a>
-          </li>
-        </ul>
-      </div>
+        <li>
+          <a
+            href="/expert-panel"
+          >
+            Our Experts
+          </a>
+        </li>
+        <li>
+          <a
+            href="/about-us"
+          >
+            About
+          </a>
+        </li>
+      </ul>
     </div>
   </header>
 </div>

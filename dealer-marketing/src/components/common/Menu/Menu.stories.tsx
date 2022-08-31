@@ -1,5 +1,9 @@
 import { Menu } from "@components/common";
-import { MENU_CONTACT, MENU_LIST, MENU_SERVICES } from "@constants/menu";
+import {
+  ROUTER_CONTACT,
+  ROUTER_LIST,
+  ROUTER_SERVICES,
+} from "@constants/routes";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 export default {
@@ -15,15 +19,15 @@ const TemplateMenu: ComponentStory<typeof Menu> = (args) => <Menu {...args} />;
 
 export const MenuList = TemplateMenu.bind({});
 MenuList.args = {
-  menuList: MENU_LIST,
+  menuList: ROUTER_LIST,
 };
 
 export const MenuService = TemplateMenu.bind({});
 MenuService.args = {
-  menuList: MENU_SERVICES,
+  menuList: ROUTER_SERVICES,
 };
 
 export const MenuContact = TemplateMenu.bind({});
 MenuContact.args = {
-  menuList: MENU_CONTACT,
+  menuList: ROUTER_CONTACT,
 };

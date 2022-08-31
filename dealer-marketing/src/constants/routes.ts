@@ -1,6 +1,6 @@
-import { MenuType } from "@common-types/menu";
+import { RouterType } from "@common-types/routes";
 
-const MENU_CONTACT: MenuType[] = [
+const ROUTER_CONTACT: RouterType[] = [
   {
     key: "our-experts",
     label: "Our Experts",
@@ -13,7 +13,7 @@ const MENU_CONTACT: MenuType[] = [
   },
 ];
 
-const MENU_LIST: MenuType[] = [
+const ROUTER_LIST: RouterType[] = [
   {
     key: "research",
     label: "Research",
@@ -36,7 +36,7 @@ const MENU_LIST: MenuType[] = [
   },
 ];
 
-const MENU_SERVICES: MenuType[] = [
+const ROUTER_SERVICES: RouterType[] = [
   {
     key: "privacy-policy",
     label: "Privacy policy",
@@ -54,4 +54,4 @@ const MENU_SERVICES: MenuType[] = [
   },
 ];
 
-export { MENU_CONTACT, MENU_LIST, MENU_SERVICES };
+export { ROUTER_CONTACT, ROUTER_LIST, ROUTER_SERVICES };
