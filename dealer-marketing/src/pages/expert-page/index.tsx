@@ -15,7 +15,7 @@ import { Expert } from "@common-types/expert";
 import { EXPERT_RESPONSE_DATA } from "@api-backup/expertResponseData";
 
 // layouts
-import Layout from "@layouts";
+import Layout from "@layouts/index";
 
 // context
 import { ExpertContext } from "@context/ExpertContext";

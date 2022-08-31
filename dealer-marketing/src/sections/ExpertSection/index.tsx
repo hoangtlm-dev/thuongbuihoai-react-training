@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import { Text } from "@components/common";
 import { TextType } from "@components/common/Text";
-import { CardExpert } from "@components";
+import { CardExpert } from "@components/index";
 import { ExpertContentType } from "@common-types/expert";
 import { EXPERT_SECTION } from "@constants/expert";
 import styleExpertSection from "./expertSection.module.css";

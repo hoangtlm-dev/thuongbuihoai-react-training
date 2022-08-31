@@ -17,7 +17,7 @@ import { Loader } from "@components/common";
 import { BLOG_RESPONSE_DATA } from "@api-backup/blogResponseData";
 
 // layouts
-import Layout from "@layouts";
+import Layout from "@layouts/index";
 import style from "./style.module.css";
 import { IMAGE } from "@constants/image";
 

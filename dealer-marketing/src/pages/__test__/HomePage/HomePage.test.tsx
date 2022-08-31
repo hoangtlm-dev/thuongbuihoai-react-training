@@ -2,7 +2,7 @@ import { BlogContextProps } from "@common-types/blog";
 import { BLOG_MOCKING_LIST } from "@constants/blog";
 import { BlogContext } from "@context/BlogContext";
 import { render } from "@testing-library/react";
-import Home from "@pages";
+import Home from "@pages/index";
 
 const contextBlogMocking: BlogContextProps = {
   searchValue: "",

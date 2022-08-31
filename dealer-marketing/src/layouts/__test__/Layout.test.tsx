@@ -1,4 +1,4 @@
-import Layout from "@layouts";
+import Layout from "@layouts/index";
 import { render } from "@testing-library/react";
 
 describe("Layout component", () => {

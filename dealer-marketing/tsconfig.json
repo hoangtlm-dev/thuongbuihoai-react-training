@@ -16,7 +16,6 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@*": ["./*"],
       "@api-backup/*": ["api-backup/*"],
       "@common-types/*": ["common-types/*"],
       "@components/*": ["components/*"],

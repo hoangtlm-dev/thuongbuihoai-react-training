@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { BlogList } from "@components";
+import { BlogList } from "@components/index";
 import { BLOG_MOCKING } from "@constants/blog";
 import { BlogLayoutType } from "@common-types/blog";
 import ContactSection from "@sections/ContactSection";

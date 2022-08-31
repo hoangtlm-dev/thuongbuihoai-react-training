@@ -8,7 +8,7 @@ const Banner = lazy(() => import("@components/common/Banner"));
 const Navigation = lazy(() => import("@components/common/Navigation"));
 
 // layouts
-import Layout from "@layouts";
+import Layout from "@layouts/index";
 
 // constants
 import { IMAGE } from "@constants/image";

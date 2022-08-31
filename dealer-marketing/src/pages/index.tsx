@@ -20,7 +20,7 @@ import { BlogContext } from "@context/BlogContext";
 import { BLOG_RESPONSE_DATA } from "@api-backup/blogResponseData";
 
 // layouts
-import Layout from "@layouts";
+import Layout from "@layouts/index";
 
 interface HomeProps {
   blogs: Blog[];
