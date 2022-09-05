@@ -4,7 +4,6 @@ exports[`SearchBox component Matches snapshot 1`] = `
 <div>
   <div
     data-testid="search-box"
-    id="searchInput"
   >
     <input
       data-testid="input-value"

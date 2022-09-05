@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import Icon, { IconType } from "../Icon";
 import { ROUTER_LIST } from "@constants/routes";
 import { IMAGE } from "@constants/image";
@@ -33,16 +33,18 @@ const Navigation: React.FC = () => {
     [],
   );
 
-  const closeSearchBox = useCallback((event: Event) => {
-    if (!(event.target as HTMLInputElement).closest("#searchInput")) {
+  const inputRef = useRef<HTMLInputElement>(null);
+  const handleClickOutside = (event: MouseEvent) => {
+    if (inputRef.current && !inputRef.current.contains(event.target as Node)) {
       setOpenModal(false);
     }
-  }, []);
-
+  };
   useEffect(() => {
-    document.addEventListener("click", closeSearchBox);
-    return () => document.removeEventListener("click", closeSearchBox);
-  }, []);
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [inputRef]);
 
   return (
     <>
@@ -54,7 +56,11 @@ const Navigation: React.FC = () => {
         </div>
       </nav>
       {openModal && (
-        <SearchBox openModal={handleToggleModal} onScroll={scrollToBlogs} />
+        <SearchBox
+          ref={inputRef}
+          openModal={handleToggleModal}
+          onScroll={scrollToBlogs}
+        />
       )}
     </>
   );

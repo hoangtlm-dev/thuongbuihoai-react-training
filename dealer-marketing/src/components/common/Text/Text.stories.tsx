@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { TextType } from "@components/common/Text";
 import { Text } from "@components/common";
+import { SizeType, ThemeType } from ".";
 
 export default {
   /* 👇 The title prop is optional.
@@ -16,47 +16,47 @@ const TemplateText: ComponentStory<typeof Text> = (args) => <Text {...args} />;
 export const TextNormal = TemplateText.bind({});
 TextNormal.args = {
   text: "Dealer Marketing",
-  size: TextType.normal,
+  size: SizeType.normal,
 };
 
 export const TextRegular = TemplateText.bind({});
 TextRegular.args = {
   text: "Dealer Marketing",
-  size: TextType.regular,
+  size: SizeType.regular,
 };
 
 export const TextRegularDark = TemplateText.bind({});
 TextRegularDark.args = {
   text: "Dealer Marketing",
-  size: TextType.regularDark,
+  size: ThemeType.primary,
 };
 
 export const TextRegularOutline = TemplateText.bind({});
 TextRegularOutline.args = {
   text: "Dealer Marketing",
-  size: TextType.regularOutline,
+  size: ThemeType.secondary,
 };
 
 export const TextMedium = TemplateText.bind({});
 TextMedium.args = {
   text: "Dealer Marketing",
-  size: TextType.medium,
+  size: SizeType.medium,
 };
 
 export const TextMediumOutline = TemplateText.bind({});
 TextMediumOutline.args = {
   text: "Dealer Marketing",
-  size: TextType.mediumOutline,
+  size: ThemeType.light,
 };
 
 export const TextLarge = TemplateText.bind({});
 TextLarge.args = {
   text: "Dealer Marketing",
-  size: TextType.large,
+  size: SizeType.large,
 };
 
 export const TextLargeDark = TemplateText.bind({});
 TextLargeDark.args = {
   text: "Dealer Marketing",
-  size: TextType.largeDark,
+  size: ThemeType.dark,
 };

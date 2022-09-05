@@ -1,36 +1,42 @@
 import React, { memo } from "react";
 import styleText from "./text.module.css";
 
-export enum TextType {
+export enum SizeType {
+  default = "",
   normal = "normal",
   regular = "regular",
-  regularDark = "regular-dark",
-  regularOutline = "regular-outline",
   medium = "medium",
-  mediumOutline = "medium-outline",
   large = "large",
-  largeDark = "large-dark",
+}
+
+export enum ThemeType {
+  default = "",
+  primary = "primary",
+  secondary = "secondary",
+  light = "light",
+  dark = "dark",
 }
 
 interface TextProps {
   size?: string;
+  theme?: string;
   text?: string;
-  onClick?: () => void;
 }
 
-const Text: React.FC<TextProps> = ({
-  text = "Research",
-  size = "normal",
-  onClick = () => {},
-}) => {
-  return (
-    <p
-      data-testid="text"
-      className={styleText[`text-${size}`]}
-      onClick={onClick}>
-      {text}
-    </p>
-  );
-};
+const Text = React.forwardRef<HTMLInputElement, TextProps>(
+  (
+    { text = "Research", size = SizeType.default, theme = ThemeType.default },
+    ref,
+  ) => {
+    return (
+      <p
+        ref={ref}
+        data-testid="text"
+        className={styleText[`${size ? `text-${size}` : `text-${theme}`}`]}
+        dangerouslySetInnerHTML={{ __html: `${text}` }}
+      />
+    );
+  },
+);
 
 export default memo(Text);

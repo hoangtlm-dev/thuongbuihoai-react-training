@@ -4,28 +4,28 @@
   color: var(--text-primary);
 }
 
-.text-regular-dark,
-.text-large-dark,
+.text-primary,
+.text-dark,
 .text-medium,
-.text-medium-outline {
+.text-light {
   color: var(--text-secondary);
 }
 
-.text-regular-outline:hover,
-.text-medium-outline:hover {
+.text-secondary:hover,
+.text-light:hover {
   color: var(--bg-primary);
 }
 
-.text-regular-outline,
-.text-large-dark,
+.text-secondary,
+.text-dark,
 .text-large,
 .text-medium,
-.text-medium-outline {
+.text-light {
   font-weight: var(--w-bold);
 }
 
 .text-normal,
-.text-regular-dark {
+.text-primary {
   font-size: var(--f-regular);
 }
 
@@ -45,21 +45,21 @@
   line-height: 22px;
 }
 
-.text-regular-dark {
+.text-primary {
   margin-bottom: 10px;
 }
 
-.text-regular-dark,
-.text-regular-outline {
+.text-primary,
+.text-secondary {
   font-family: "var(--secondary-font)";
 }
 
-.text-large-dark,
+.text-dark,
 .text-large {
   font-size: var(--f-xlarge);
 }
 
-.text-regular-outline {
+.text-secondary {
   cursor: pointer;
   text-align: center;
   color: var(--dark);
@@ -67,13 +67,13 @@
   padding: 80px 10px 10px;
 }
 
-.text-large-dark {
+.text-dark {
   text-align: left;
   line-height: 38px;
 }
 
 .text-medium,
-.text-medium-outline {
+.text-light {
   display: -webkit-box;
   cursor: pointer;
   font-size: var(--f-third);
