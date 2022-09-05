@@ -41,10 +41,14 @@ exports[`ExpertSection component Matches snapshot 1`] = `
               <noscript />
             </span>
           </figure>
-          <p>
-             Evaluating OEM Programs and Providing Better Customer Experiences with Ibrahim Mesbah
-          </p>
-          <figure>
+          <div>
+            <p
+              data-testid="text"
+            >
+               Evaluating OEM Programs and Providing Better Customer Experiences with Ibrahim Mesbah
+            </p>
+          </div>
+          <div>
             <span
               style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
             >
@@ -67,7 +71,7 @@ exports[`ExpertSection component Matches snapshot 1`] = `
               />
               <noscript />
             </span>
-          </figure>
+          </div>
         </div>
         <div
           data-testid="card-expert"
@@ -96,10 +100,14 @@ exports[`ExpertSection component Matches snapshot 1`] = `
               <noscript />
             </span>
           </figure>
-          <p>
-             Experimarketing Episode 27: No Inventory? No Problem.
-          </p>
-          <figure>
+          <div>
+            <p
+              data-testid="text"
+            >
+               Experimarketing Episode 27: No Inventory? No Problem.
+            </p>
+          </div>
+          <div>
             <span
               style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
             >
@@ -122,7 +130,7 @@ exports[`ExpertSection component Matches snapshot 1`] = `
               />
               <noscript />
             </span>
-          </figure>
+          </div>
         </div>
         <div
           data-testid="card-expert"
@@ -151,10 +159,14 @@ exports[`ExpertSection component Matches snapshot 1`] = `
               <noscript />
             </span>
           </figure>
-          <p>
-             Website Clicks?! they\`re Still Clickin
-          </p>
-          <figure>
+          <div>
+            <p
+              data-testid="text"
+            >
+               Website Clicks?! they\`re Still Clickin
+            </p>
+          </div>
+          <div>
             <span
               style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
             >
@@ -177,7 +189,7 @@ exports[`ExpertSection component Matches snapshot 1`] = `
               />
               <noscript />
             </span>
-          </figure>
+          </div>
         </div>
       </div>
     </div>

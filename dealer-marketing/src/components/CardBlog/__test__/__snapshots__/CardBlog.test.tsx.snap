@@ -29,36 +29,59 @@ exports[`CardBog component Matches snapshot 1`] = `
         <noscript />
       </span>
       <div>
-        <p>
-          Research & analysis
-        </p>
         <div>
+          <p
+            data-testid="text"
+          >
+            Research & analysis
+          </p>
+        </div>
+        <div>
+          <div>
+            <a
+              href="/exploring-influential-and-impactful-automotive-advertising-campaigns"
+            >
+              <p
+                data-testid="text"
+              >
+                Exploring Influential and Impactful Automotive Advertising Campaigns
+              </p>
+            </a>
+          </div>
           <div>
             <p
               data-testid="text"
             >
-              Exploring Influential and Impactful Automotive Advertising Campaigns
-            </p>
-          </div>
-          <div>
-            <p>
-              By
-               
-              <span>
-                Donna Welker
-                 
+              
+                  By 
+                  
+              <link
+                href="{\\"/expert-page/matt-childers\\"}"
+              />
+              
+                    
+              <span
+                class="undefined"
+              >
+                
+                      Donna Welker 
+                    
               </span>
-              - 
+              
+                  
+                  - 
               <span>
                 July 28, 2022
               </span>
-            </p>
-            <p
-              data-testid="text"
-            >
-              Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months. Nowhere is this more relevant than in the automotive industry, where new campaigns hold the potential to make or break a company. This article will explore some disruptive and impactful automotive marketing campaigns throughout the past century. We'll explore what made them successful and see how they changed the marketing landscape forever.
+              
+                  
             </p>
           </div>
+          <p
+            data-testid="text"
+          >
+            Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months. Nowhere is this more relevant than in the automotive industry, where new campaigns hold the potential to make or break a company. This article will explore some disruptive and impactful automotive marketing campaigns throughout the past century. We'll explore what made them successful and see how they changed the marketing landscape forever.
+          </p>
         </div>
         <div />
       </div>

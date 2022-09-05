@@ -222,9 +222,13 @@ exports[`BlogDetail page Matches snapshot 1`] = `
             </a>
           </li>
         </ul>
-        <p>
-          Copyright © 2022 Dealer Marketing Magazine
-        </p>
+        <div>
+          <p
+            data-testid="text"
+          >
+            Copyright © 2022 Dealer Marketing Magazine
+          </p>
+        </div>
       </div>
     </footer>
   </main>
@@ -546,11 +550,13 @@ exports[`BlogDetail page renders the features with getStaticProps 1`] = `
       <div>
         <div>
           <p
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Exploring Influential and Impactful Automotive Advertising Campaigns",
+              }
+            }
             data-testid="text"
-            onClick={[Function]}
-          >
-            Exploring Influential and Impactful Automotive Advertising Campaigns
-          </p>
+          />
         </div>
         <hr />
         <div>
@@ -682,21 +688,25 @@ exports[`BlogDetail page renders the features with getStaticProps 1`] = `
               </span>
             </p>
             <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "July 28, 2022",
+                }
+              }
               data-testid="text"
-              onClick={[Function]}
-            >
-              July 28, 2022
-            </p>
+            />
           </div>
         </div>
       </div>
       <hr />
       <p
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months. Nowhere is this more relevant than in the automotive industry, where new campaigns hold the potential to make or break a company. This article will explore some disruptive and impactful automotive marketing campaigns throughout the past century. We'll explore what made them successful and see how they changed the marketing landscape forever.",
+          }
+        }
         data-testid="text"
-        onClick={[Function]}
-      >
-        Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months. Nowhere is this more relevant than in the automotive industry, where new campaigns hold the potential to make or break a company. This article will explore some disruptive and impactful automotive marketing campaigns throughout the past century. We'll explore what made them successful and see how they changed the marketing landscape forever.
-      </p>
+      />
     </div>
   </div>
   <footer
@@ -756,9 +766,16 @@ exports[`BlogDetail page renders the features with getStaticProps 1`] = `
           </a>
         </li>
       </ul>
-      <p>
-        Copyright © 2022 Dealer Marketing Magazine
-      </p>
+      <div>
+        <p
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Copyright © 2022 Dealer Marketing Magazine",
+            }
+          }
+          data-testid="text"
+        />
+      </div>
     </div>
   </footer>
 </main>

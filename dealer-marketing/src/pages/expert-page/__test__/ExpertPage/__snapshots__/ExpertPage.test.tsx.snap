@@ -142,11 +142,15 @@ exports[`ExpertPage Matches snapshot 1`] = `
                   <noscript />
                 </span>
               </figure>
-              <p
-                data-testid="text"
+              <a
+                href="/expert-page/david-adcock"
               >
-                David Adcock
-              </p>
+                <p
+                  data-testid="text"
+                >
+                  David Adcock
+                </p>
+              </a>
               <div>
                 <p
                   data-testid="text"
@@ -193,11 +197,15 @@ exports[`ExpertPage Matches snapshot 1`] = `
                   <noscript />
                 </span>
               </figure>
-              <p
-                data-testid="text"
+              <a
+                href="/expert-page/brent-albrecht"
               >
-                Brent-Albrecht
-              </p>
+                <p
+                  data-testid="text"
+                >
+                  Brent-Albrecht
+                </p>
+              </a>
               <div>
                 <p
                   data-testid="text"
@@ -266,9 +274,13 @@ exports[`ExpertPage Matches snapshot 1`] = `
             </a>
           </li>
         </ul>
-        <p>
-          Copyright © 2022 Dealer Marketing Magazine
-        </p>
+        <div>
+          <p
+            data-testid="text"
+          >
+            Copyright © 2022 Dealer Marketing Magazine
+          </p>
+        </div>
       </div>
     </footer>
   </main>

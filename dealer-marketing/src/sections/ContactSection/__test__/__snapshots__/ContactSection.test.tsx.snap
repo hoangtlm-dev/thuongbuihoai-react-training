@@ -12,9 +12,13 @@ exports[`ContactSection component Matches snapshot 1`] = `
       >
         Get Tips & Tricks every Week!
       </p>
-      <p>
-        Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
-      </p>
+      <div>
+        <p
+          data-testid="text"
+        >
+          Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+        </p>
+      </div>
     </div>
     <div>
       <div>

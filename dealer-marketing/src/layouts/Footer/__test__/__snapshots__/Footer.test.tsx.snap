@@ -49,9 +49,13 @@ exports[`Footer component Matches snapshot 1`] = `
           </a>
         </li>
       </ul>
-      <p>
-        Copyright © 2022 Dealer Marketing Magazine
-      </p>
+      <div>
+        <p
+          data-testid="text"
+        >
+          Copyright © 2022 Dealer Marketing Magazine
+        </p>
+      </div>
     </div>
   </footer>
 </div>

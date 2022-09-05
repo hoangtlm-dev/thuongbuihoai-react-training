@@ -149,36 +149,59 @@ exports[`HomePage Matches snapshot 1`] = `
             <noscript />
           </span>
           <div>
-            <p>
-              Research & analysis
-            </p>
             <div>
+              <p
+                data-testid="text"
+              >
+                Research & analysis
+              </p>
+            </div>
+            <div>
+              <div>
+                <a
+                  href="/exploring-influential-and-impactful-automotive-advertising-campaigns"
+                >
+                  <p
+                    data-testid="text"
+                  >
+                    Exploring Influential and Impactful Automotive Advertising Campaigns
+                  </p>
+                </a>
+              </div>
               <div>
                 <p
                   data-testid="text"
                 >
-                  Exploring Influential and Impactful Automotive Advertising Campaigns
-                </p>
-              </div>
-              <div>
-                <p>
-                  By
-                   
-                  <span>
-                    Donna Welker
-                     
+                  
+                  By 
+                  
+                  <link
+                    href="{\\"/expert-page/matt-childers\\"}"
+                  />
+                  
+                    
+                  <span
+                    class="undefined"
+                  >
+                    
+                      Donna Welker 
+                    
                   </span>
+                  
+                  
                   - 
                   <span>
                     July 28, 2022
                   </span>
-                </p>
-                <p
-                  data-testid="text"
-                >
-                  Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months. Nowhere is this more relevant than in the automotive industry, where new campaigns hold the potential to make or break a company. This article will explore some disruptive and impactful automotive marketing campaigns throughout the past century. We'll explore what made them successful and see how they changed the marketing landscape forever.
+                  
+                  
                 </p>
               </div>
+              <p
+                data-testid="text"
+              >
+                Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months. Nowhere is this more relevant than in the automotive industry, where new campaigns hold the potential to make or break a company. This article will explore some disruptive and impactful automotive marketing campaigns throughout the past century. We'll explore what made them successful and see how they changed the marketing landscape forever.
+              </p>
             </div>
             <div>
               <button
@@ -221,36 +244,59 @@ exports[`HomePage Matches snapshot 1`] = `
                 <noscript />
               </span>
               <div>
-                <p>
-                  Research & analysis
-                </p>
                 <div>
+                  <p
+                    data-testid="text"
+                  >
+                    Research & analysis
+                  </p>
+                </div>
+                <div>
+                  <div>
+                    <a
+                      href="/exploring-influential-and-impactful-automotive-advertising-campaigns"
+                    >
+                      <p
+                        data-testid="text"
+                      >
+                        Exploring Influential and Impactful Automotive Advertising Campaigns
+                      </p>
+                    </a>
+                  </div>
                   <div>
                     <p
                       data-testid="text"
                     >
-                      Exploring Influential and Impactful Automotive Advertising Campaigns
-                    </p>
-                  </div>
-                  <div>
-                    <p>
-                      By
-                       
-                      <span>
-                        Donna Welker
-                         
+                      
+                  By 
+                  
+                      <link
+                        href="{\\"/expert-page/matt-childers\\"}"
+                      />
+                      
+                    
+                      <span
+                        class="undefined"
+                      >
+                        
+                      Donna Welker 
+                    
                       </span>
-                      - 
+                      
+                  
+                  - 
                       <span>
                         July 28, 2022
                       </span>
-                    </p>
-                    <p
-                      data-testid="text"
-                    >
-                      Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months. Nowhere is this more relevant than in the automotive industry, where new campaigns hold the potential to make or break a company. This article will explore some disruptive and impactful automotive marketing campaigns throughout the past century. We'll explore what made them successful and see how they changed the marketing landscape forever.
+                      
+                  
                     </p>
                   </div>
+                  <p
+                    data-testid="text"
+                  >
+                    Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months. Nowhere is this more relevant than in the automotive industry, where new campaigns hold the potential to make or break a company. This article will explore some disruptive and impactful automotive marketing campaigns throughout the past century. We'll explore what made them successful and see how they changed the marketing landscape forever.
+                  </p>
                 </div>
                 <div />
               </div>
@@ -285,36 +331,59 @@ exports[`HomePage Matches snapshot 1`] = `
                 <noscript />
               </span>
               <div>
-                <p>
-                  Research & analysis
-                </p>
                 <div>
+                  <p
+                    data-testid="text"
+                  >
+                    Research & analysis
+                  </p>
+                </div>
+                <div>
+                  <div>
+                    <a
+                      href="/how-do-you-measure-up-part-two"
+                    >
+                      <p
+                        data-testid="text"
+                      >
+                        How Do You Measure Up? Part Two
+                      </p>
+                    </a>
+                  </div>
                   <div>
                     <p
                       data-testid="text"
                     >
-                      How Do You Measure Up? Part Two
-                    </p>
-                  </div>
-                  <div>
-                    <p>
-                      By
-                       
-                      <span>
-                        Adam Dennis
-                         
+                      
+                  By 
+                  
+                      <link
+                        href="{\\"/expert-page/matt-childers\\"}"
+                      />
+                      
+                    
+                      <span
+                        class="undefined"
+                      >
+                        
+                      Adam Dennis 
+                    
                       </span>
-                      - 
+                      
+                  
+                  - 
                       <span>
                         July 26, 2022
                       </span>
-                    </p>
-                    <p
-                      data-testid="text"
-                    >
-                      In Part 1 of this two-part series on website ranking factors, we discussed Page Speed, Page Index, and Technical SEO scores. We look at the results of our AntiguRecon tool which surveyed over 35,000 dealer websites using Google’s algorithm to drive its calculations. We found that independent dealer websites tend to be faster than franchise websites and that we have some work to do if we want to improve our industry’s performance overall. In this article, we look at dealership website Accessibility and website design Best Practices scores. Let’s have some fun…
+                      
+                  
                     </p>
                   </div>
+                  <p
+                    data-testid="text"
+                  >
+                    In Part 1 of this two-part series on website ranking factors, we discussed Page Speed, Page Index, and Technical SEO scores. We look at the results of our AntiguRecon tool which surveyed over 35,000 dealer websites using Google’s algorithm to drive its calculations. We found that independent dealer websites tend to be faster than franchise websites and that we have some work to do if we want to improve our industry’s performance overall. In this article, we look at dealership website Accessibility and website design Best Practices scores. Let’s have some fun…
+                  </p>
                 </div>
                 <div />
               </div>
@@ -332,9 +401,13 @@ exports[`HomePage Matches snapshot 1`] = `
           >
             Get Tips & Tricks every Week!
           </p>
-          <p>
-            Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
-          </p>
+          <div>
+            <p
+              data-testid="text"
+            >
+              Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+            </p>
+          </div>
         </div>
         <div>
           <div>
@@ -394,10 +467,14 @@ exports[`HomePage Matches snapshot 1`] = `
                   <noscript />
                 </span>
               </figure>
-              <p>
-                 Evaluating OEM Programs and Providing Better Customer Experiences with Ibrahim Mesbah
-              </p>
-              <figure>
+              <div>
+                <p
+                  data-testid="text"
+                >
+                   Evaluating OEM Programs and Providing Better Customer Experiences with Ibrahim Mesbah
+                </p>
+              </div>
+              <div>
                 <span
                   style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
                 >
@@ -420,7 +497,7 @@ exports[`HomePage Matches snapshot 1`] = `
                   />
                   <noscript />
                 </span>
-              </figure>
+              </div>
             </div>
             <div
               data-testid="card-expert"
@@ -449,10 +526,14 @@ exports[`HomePage Matches snapshot 1`] = `
                   <noscript />
                 </span>
               </figure>
-              <p>
-                 Experimarketing Episode 27: No Inventory? No Problem.
-              </p>
-              <figure>
+              <div>
+                <p
+                  data-testid="text"
+                >
+                   Experimarketing Episode 27: No Inventory? No Problem.
+                </p>
+              </div>
+              <div>
                 <span
                   style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
                 >
@@ -475,7 +556,7 @@ exports[`HomePage Matches snapshot 1`] = `
                   />
                   <noscript />
                 </span>
-              </figure>
+              </div>
             </div>
             <div
               data-testid="card-expert"
@@ -504,10 +585,14 @@ exports[`HomePage Matches snapshot 1`] = `
                   <noscript />
                 </span>
               </figure>
-              <p>
-                 Website Clicks?! they\`re Still Clickin
-              </p>
-              <figure>
+              <div>
+                <p
+                  data-testid="text"
+                >
+                   Website Clicks?! they\`re Still Clickin
+                </p>
+              </div>
+              <div>
                 <span
                   style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
                 >
@@ -530,7 +615,7 @@ exports[`HomePage Matches snapshot 1`] = `
                   />
                   <noscript />
                 </span>
-              </figure>
+              </div>
             </div>
           </div>
         </div>
@@ -566,36 +651,59 @@ exports[`HomePage Matches snapshot 1`] = `
                 <noscript />
               </span>
               <div>
-                <p>
-                  Research & analysis
-                </p>
                 <div>
+                  <p
+                    data-testid="text"
+                  >
+                    Research & analysis
+                  </p>
+                </div>
+                <div>
+                  <div>
+                    <a
+                      href="/exploring-influential-and-impactful-automotive-advertising-campaigns"
+                    >
+                      <p
+                        data-testid="text"
+                      >
+                        Exploring Influential and Impactful Automotive Advertising Campaigns
+                      </p>
+                    </a>
+                  </div>
                   <div>
                     <p
                       data-testid="text"
                     >
-                      Exploring Influential and Impactful Automotive Advertising Campaigns
-                    </p>
-                  </div>
-                  <div>
-                    <p>
-                      By
-                       
-                      <span>
-                        Donna Welker
-                         
+                      
+                  By 
+                  
+                      <link
+                        href="{\\"/expert-page/matt-childers\\"}"
+                      />
+                      
+                    
+                      <span
+                        class="undefined"
+                      >
+                        
+                      Donna Welker 
+                    
                       </span>
-                      - 
+                      
+                  
+                  - 
                       <span>
                         July 28, 2022
                       </span>
-                    </p>
-                    <p
-                      data-testid="text"
-                    >
-                      Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months. Nowhere is this more relevant than in the automotive industry, where new campaigns hold the potential to make or break a company. This article will explore some disruptive and impactful automotive marketing campaigns throughout the past century. We'll explore what made them successful and see how they changed the marketing landscape forever.
+                      
+                  
                     </p>
                   </div>
+                  <p
+                    data-testid="text"
+                  >
+                    Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months. Nowhere is this more relevant than in the automotive industry, where new campaigns hold the potential to make or break a company. This article will explore some disruptive and impactful automotive marketing campaigns throughout the past century. We'll explore what made them successful and see how they changed the marketing landscape forever.
+                  </p>
                 </div>
                 <div />
               </div>
@@ -630,36 +738,59 @@ exports[`HomePage Matches snapshot 1`] = `
                 <noscript />
               </span>
               <div>
-                <p>
-                  Research & analysis
-                </p>
                 <div>
+                  <p
+                    data-testid="text"
+                  >
+                    Research & analysis
+                  </p>
+                </div>
+                <div>
+                  <div>
+                    <a
+                      href="/how-do-you-measure-up-part-two"
+                    >
+                      <p
+                        data-testid="text"
+                      >
+                        How Do You Measure Up? Part Two
+                      </p>
+                    </a>
+                  </div>
                   <div>
                     <p
                       data-testid="text"
                     >
-                      How Do You Measure Up? Part Two
-                    </p>
-                  </div>
-                  <div>
-                    <p>
-                      By
-                       
-                      <span>
-                        Adam Dennis
-                         
+                      
+                  By 
+                  
+                      <link
+                        href="{\\"/expert-page/matt-childers\\"}"
+                      />
+                      
+                    
+                      <span
+                        class="undefined"
+                      >
+                        
+                      Adam Dennis 
+                    
                       </span>
-                      - 
+                      
+                  
+                  - 
                       <span>
                         July 26, 2022
                       </span>
-                    </p>
-                    <p
-                      data-testid="text"
-                    >
-                      In Part 1 of this two-part series on website ranking factors, we discussed Page Speed, Page Index, and Technical SEO scores. We look at the results of our AntiguRecon tool which surveyed over 35,000 dealer websites using Google’s algorithm to drive its calculations. We found that independent dealer websites tend to be faster than franchise websites and that we have some work to do if we want to improve our industry’s performance overall. In this article, we look at dealership website Accessibility and website design Best Practices scores. Let’s have some fun…
+                      
+                  
                     </p>
                   </div>
+                  <p
+                    data-testid="text"
+                  >
+                    In Part 1 of this two-part series on website ranking factors, we discussed Page Speed, Page Index, and Technical SEO scores. We look at the results of our AntiguRecon tool which surveyed over 35,000 dealer websites using Google’s algorithm to drive its calculations. We found that independent dealer websites tend to be faster than franchise websites and that we have some work to do if we want to improve our industry’s performance overall. In this article, we look at dealership website Accessibility and website design Best Practices scores. Let’s have some fun…
+                  </p>
                 </div>
                 <div />
               </div>
@@ -715,9 +846,13 @@ exports[`HomePage Matches snapshot 1`] = `
             </a>
           </li>
         </ul>
-        <p>
-          Copyright © 2022 Dealer Marketing Magazine
-        </p>
+        <div>
+          <p
+            data-testid="text"
+          >
+            Copyright © 2022 Dealer Marketing Magazine
+          </p>
+        </div>
       </div>
     </footer>
   </main>

@@ -33,36 +33,59 @@ exports[`MainSection component Matches snapshot 1`] = `
           <noscript />
         </span>
         <div>
-          <p>
-            Research & analysis
-          </p>
           <div>
+            <p
+              data-testid="text"
+            >
+              Research & analysis
+            </p>
+          </div>
+          <div>
+            <div>
+              <a
+                href="/exploring-influential-and-impactful-automotive-advertising-campaigns"
+              >
+                <p
+                  data-testid="text"
+                >
+                  Exploring Influential and Impactful Automotive Advertising Campaigns
+                </p>
+              </a>
+            </div>
             <div>
               <p
                 data-testid="text"
               >
-                Exploring Influential and Impactful Automotive Advertising Campaigns
-              </p>
-            </div>
-            <div>
-              <p>
-                By
-                 
-                <span>
-                  Donna Welker
-                   
+                
+                  By 
+                  
+                <link
+                  href="{\\"/expert-page/matt-childers\\"}"
+                />
+                
+                    
+                <span
+                  class="undefined"
+                >
+                  
+                      Donna Welker 
+                    
                 </span>
-                - 
+                
+                  
+                  - 
                 <span>
                   July 28, 2022
                 </span>
-              </p>
-              <p
-                data-testid="text"
-              >
-                Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months. Nowhere is this more relevant than in the automotive industry, where new campaigns hold the potential to make or break a company. This article will explore some disruptive and impactful automotive marketing campaigns throughout the past century. We'll explore what made them successful and see how they changed the marketing landscape forever.
+                
+                  
               </p>
             </div>
+            <p
+              data-testid="text"
+            >
+              Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months. Nowhere is this more relevant than in the automotive industry, where new campaigns hold the potential to make or break a company. This article will explore some disruptive and impactful automotive marketing campaigns throughout the past century. We'll explore what made them successful and see how they changed the marketing landscape forever.
+            </p>
           </div>
           <div>
             <button
@@ -87,9 +110,13 @@ exports[`MainSection component Matches snapshot 1`] = `
         >
           Get Tips & Tricks every Week!
         </p>
-        <p>
-          Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
-        </p>
+        <div>
+          <p
+            data-testid="text"
+          >
+            Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+          </p>
+        </div>
       </div>
       <div>
         <div>
@@ -149,10 +176,14 @@ exports[`MainSection component Matches snapshot 1`] = `
                 <noscript />
               </span>
             </figure>
-            <p>
-               Evaluating OEM Programs and Providing Better Customer Experiences with Ibrahim Mesbah
-            </p>
-            <figure>
+            <div>
+              <p
+                data-testid="text"
+              >
+                 Evaluating OEM Programs and Providing Better Customer Experiences with Ibrahim Mesbah
+              </p>
+            </div>
+            <div>
               <span
                 style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
               >
@@ -175,7 +206,7 @@ exports[`MainSection component Matches snapshot 1`] = `
                 />
                 <noscript />
               </span>
-            </figure>
+            </div>
           </div>
           <div
             data-testid="card-expert"
@@ -204,10 +235,14 @@ exports[`MainSection component Matches snapshot 1`] = `
                 <noscript />
               </span>
             </figure>
-            <p>
-               Experimarketing Episode 27: No Inventory? No Problem.
-            </p>
-            <figure>
+            <div>
+              <p
+                data-testid="text"
+              >
+                 Experimarketing Episode 27: No Inventory? No Problem.
+              </p>
+            </div>
+            <div>
               <span
                 style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
               >
@@ -230,7 +265,7 @@ exports[`MainSection component Matches snapshot 1`] = `
                 />
                 <noscript />
               </span>
-            </figure>
+            </div>
           </div>
           <div
             data-testid="card-expert"
@@ -259,10 +294,14 @@ exports[`MainSection component Matches snapshot 1`] = `
                 <noscript />
               </span>
             </figure>
-            <p>
-               Website Clicks?! they\`re Still Clickin
-            </p>
-            <figure>
+            <div>
+              <p
+                data-testid="text"
+              >
+                 Website Clicks?! they\`re Still Clickin
+              </p>
+            </div>
+            <div>
               <span
                 style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
               >
@@ -285,7 +324,7 @@ exports[`MainSection component Matches snapshot 1`] = `
                 />
                 <noscript />
               </span>
-            </figure>
+            </div>
           </div>
         </div>
       </div>

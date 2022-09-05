@@ -29,11 +29,15 @@ exports[`CardExpert component Matches snapshot 1`] = `
         <noscript />
       </span>
     </figure>
-    <p
-      data-testid="text"
+    <a
+      href="/expert-page/matt-childers"
     >
-      Matt-Childers
-    </p>
+      <p
+        data-testid="text"
+      >
+        Matt-Childers
+      </p>
+    </a>
     <div>
       <p
         data-testid="text"
