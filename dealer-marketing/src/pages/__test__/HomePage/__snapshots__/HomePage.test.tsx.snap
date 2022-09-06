@@ -159,6 +159,7 @@ exports[`HomePage Matches snapshot 1`] = `
             <div>
               <div>
                 <a
+                  data-testid="custom-link"
                   href="/exploring-influential-and-impactful-automotive-advertising-campaigns"
                 >
                   <p
@@ -254,6 +255,7 @@ exports[`HomePage Matches snapshot 1`] = `
                 <div>
                   <div>
                     <a
+                      data-testid="custom-link"
                       href="/exploring-influential-and-impactful-automotive-advertising-campaigns"
                     >
                       <p
@@ -341,6 +343,7 @@ exports[`HomePage Matches snapshot 1`] = `
                 <div>
                   <div>
                     <a
+                      data-testid="custom-link"
                       href="/how-do-you-measure-up-part-two"
                     >
                       <p
@@ -661,6 +664,7 @@ exports[`HomePage Matches snapshot 1`] = `
                 <div>
                   <div>
                     <a
+                      data-testid="custom-link"
                       href="/exploring-influential-and-impactful-automotive-advertising-campaigns"
                     >
                       <p
@@ -748,6 +752,7 @@ exports[`HomePage Matches snapshot 1`] = `
                 <div>
                   <div>
                     <a
+                      data-testid="custom-link"
                       href="/how-do-you-measure-up-part-two"
                     >
                       <p

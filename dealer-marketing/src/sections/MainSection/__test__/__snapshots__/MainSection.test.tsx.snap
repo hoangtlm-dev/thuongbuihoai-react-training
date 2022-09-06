@@ -43,6 +43,7 @@ exports[`MainSection component Matches snapshot 1`] = `
           <div>
             <div>
               <a
+                data-testid="custom-link"
                 href="/exploring-influential-and-impactful-automotive-advertising-campaigns"
               >
                 <p

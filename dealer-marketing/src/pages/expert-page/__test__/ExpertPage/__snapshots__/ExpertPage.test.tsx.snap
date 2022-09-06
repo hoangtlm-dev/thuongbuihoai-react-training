@@ -143,6 +143,7 @@ exports[`ExpertPage Matches snapshot 1`] = `
                 </span>
               </figure>
               <a
+                data-testid="custom-link"
                 href="/expert-page/david-adcock"
               >
                 <p
@@ -198,6 +199,7 @@ exports[`ExpertPage Matches snapshot 1`] = `
                 </span>
               </figure>
               <a
+                data-testid="custom-link"
                 href="/expert-page/brent-albrecht"
               >
                 <p

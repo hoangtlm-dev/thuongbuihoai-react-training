@@ -2,11 +2,11 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import Icon, { IconType } from "../Icon";
 import { ROUTER_LIST } from "@constants/routes";
 import { IMAGE } from "@constants/image";
+import { RouterTypeProp } from "@self-types/routes";
 import Logo from "../Logo";
 import Menu from "../Menu";
-import styleNavigation from "./navigation.module.css";
 import SearchBox from "../SearchBox/SearchBox";
-import { RouterTypeProp } from "@self-types/routes";
+import styleNavigation from "./navigation.module.css";
 
 const Navigation: React.FC = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);

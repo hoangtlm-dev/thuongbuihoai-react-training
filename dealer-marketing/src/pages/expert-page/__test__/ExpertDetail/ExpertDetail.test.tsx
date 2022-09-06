@@ -1,34 +1,23 @@
 import { EXPERT_MOCKING, EXPERT_MOCKING_LIST } from "@constants/expert";
-import { ExpertContextProps } from "@self-types/expert";
-import { ExpertContext } from "@context/ExpertContext";
 import { render } from "@testing-library/react";
 import OurExpert from "@pages/expert-page/[slug]";
 
-const contextExpertMocking: ExpertContextProps = {
-  experts: EXPERT_MOCKING_LIST,
-  errorCode: 0,
-  setExperts: jest.fn(),
-  setErrorCode: jest.fn(),
-  handleUpdateExperts: jest.fn(),
-};
+jest.mock("@context/ExpertContext");
+const ExpertContext = require("@context/ExpertContext");
+
+ExpertContext.ExpertProvider.mockImplementation(() => {
+  return { experts: EXPERT_MOCKING_LIST, errorCode: "success" };
+});
 
 describe("ExpertDetail page", () => {
   test("Should render ExpertDetail page", () => {
-    const { getByTestId } = render(
-      <ExpertContext.Provider value={contextExpertMocking}>
-        <OurExpert expert={EXPERT_MOCKING} />
-      </ExpertContext.Provider>,
-    );
+    const { getByTestId } = render(<OurExpert expert={EXPERT_MOCKING} />);
     const expertDetail = getByTestId("layout");
     expect(expertDetail).toBeInTheDocument();
   });
 
   test("Matches snapshot", () => {
-    const { container } = render(
-      <ExpertContext.Provider value={contextExpertMocking}>
-        <OurExpert expert={EXPERT_MOCKING} />
-      </ExpertContext.Provider>,
-    );
+    const { container } = render(<OurExpert expert={EXPERT_MOCKING} />);
     expect(container).toMatchSnapshot();
   });
 });

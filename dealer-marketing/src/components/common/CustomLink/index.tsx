@@ -7,14 +7,12 @@ interface LinkProps {
   children: JSX.Element;
 }
 
-const CustomLink: React.FC<LinkProps> = ({ href, children }) => {
-  return (
-    <Link href={href} passHref>
-      <a className={linkStyle.link} href={href}>
-        {children}
-      </a>
-    </Link>
-  );
-};
+const CustomLink: React.FC<LinkProps> = ({ href, children }) => (
+  <Link href={href} passHref>
+    <a data-testid="custom-link" className={linkStyle.link} href={href}>
+      {children}
+    </a>
+  </Link>
+);
 
 export default CustomLink;
