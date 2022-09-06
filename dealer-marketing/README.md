@@ -70,7 +70,11 @@ NEXT_PUBLIC_BASE_URL="http://localhost:3000/api"
 # DEPLOYMENT
 
 ```
-https://dealer-marketing-ht.vercel.app/
+- App
+https://dealer-marketing.vercel.app/
+
+- Storybook
+https://dealer-marketing-storybook.vercel.app/
 ```
 
 # RUN
