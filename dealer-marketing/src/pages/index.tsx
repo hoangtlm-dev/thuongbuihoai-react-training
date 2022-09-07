@@ -1,3 +1,4 @@
+import axios from "axios";
 import type { GetStaticProps, NextPage } from "next";
 import { lazy, Suspense, useContext, useEffect } from "react";
 
@@ -12,12 +13,10 @@ import { Blog } from "@self-types/blog";
 
 // constants
 import { IMAGE } from "@constants/image";
+import { BLOGS_URL } from "@constants/url";
 
 // context
 import { BlogContext } from "@context/BlogContext";
-
-// api
-import { BLOG_RESPONSE_DATA } from "@api-backup/blogResponseData";
 
 // layouts
 import Layout from "@layouts/index";
@@ -29,7 +28,8 @@ interface HomeProps {
 
 export const getStaticProps: GetStaticProps = async () => {
   try {
-    const blogs: Blog[] = BLOG_RESPONSE_DATA;
+    const res = await axios.get(BLOGS_URL);
+    const blogs = res.data;
     return {
       props: {
         blogs: blogs,

@@ -1,3 +1,4 @@
+import axios from "axios";
 import { GetStaticProps } from "next";
 import React, { lazy, Suspense, useContext, useEffect } from "react";
 
@@ -11,11 +12,11 @@ import { Loader } from "@components/common";
 // common-types
 import { Expert } from "@self-types/expert";
 
-// api
-import { EXPERT_RESPONSE_DATA } from "@api-backup/expertResponseData";
-
 // layouts
 import Layout from "@layouts/index";
+
+// constants
+import { EXPERTS_URL } from "@constants/url";
 
 // context
 import { ExpertContext } from "@context/ExpertContext";
@@ -28,7 +29,9 @@ interface OurExpertProps {
 
 export const getStaticProps: GetStaticProps = async () => {
   try {
-    const experts: Expert[] = EXPERT_RESPONSE_DATA;
+    const res = await axios.get(EXPERTS_URL);
+    const experts = res.data;
+
     return {
       props: {
         experts: experts,
