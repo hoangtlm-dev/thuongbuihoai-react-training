@@ -60,7 +60,7 @@
 # INFORMATION .env.local file
 
 ```
-NEXT_PUBLIC_BASE_URL="http://localhost:3000/api"
+NEXT_PUBLIC_DEVELOPMENT=https://63183dc9f6b281877c66cbe0.mockapi.io
 ```
 
 # WORKFLOW
