@@ -17,6 +17,7 @@ const nextConfig = {
     imageSizes: [190, 240, 330, 450],
     minimumCacheTTL: 60,
   },
+  pageExtensions: ["mdx", "md", "jsx", "js", "tsx", "ts"],
 };
 
 module.exports = nextConfig;
