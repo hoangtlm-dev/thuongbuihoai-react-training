@@ -16,7 +16,7 @@
 
 ## TIMELINE
 
-- Estimated time: (29/7/2022 - 5/8/2022) [5 working days](https://docs.google.com/document/d/1Z6lftn0NQNdCeZ4BgTOoaTBS9kBSNZv_awwHmY10o0U/edit#heading=h.b81umtm0t9oh)
+- Estimated time: (22/8/2022 - 30/8/2022) [7 working days](https://docs.google.com/document/d/1Z6lftn0NQNdCeZ4BgTOoaTBS9kBSNZv_awwHmY10o0U/edit#heading=h.b81umtm0t9oh)
 
 ## TEAM SIZE
 
@@ -26,6 +26,8 @@
 
 - NextJs
 - React
+- Storybook
+- Jest - React testing lib
 - CSS Modules
 - Vercel
 
@@ -57,7 +59,7 @@
   npm install -g pnpm
   ```
 
-# INFORMATION .env.local file
+# INFORMATION .env.development file
 
 ```
 NEXT_PUBLIC_DEVELOPMENT=https://63183dc9f6b281877c66cbe0.mockapi.io
