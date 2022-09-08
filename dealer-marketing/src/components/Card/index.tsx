@@ -9,6 +9,7 @@ import { IMAGE } from "@constants/image";
 import { SizeType, ThemeType } from "@components/common/Text";
 import CustomLink from "@components/common/CustomLink";
 import styleResearch from "./card.module.css";
+import Link from "next/link";
 
 interface CardProps {
   layout?: string;
@@ -81,7 +82,9 @@ const Card: React.FC<CardProps> = ({
           </div>
           <div className={styleResearch["research-button"]}>
             {hasButton ? (
-              <Button type={ButtonType.primary} text="Read more" />
+              <Link href="blog-page">
+                <Button type={ButtonType.primary} text="Read more" />
+              </Link>
             ) : (
               ""
             )}
