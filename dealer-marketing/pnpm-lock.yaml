@@ -35,12 +35,14 @@ specifiers:
   jest: ^28.1.3
   jest-dom: ^4.0.0
   jest-environment-jsdom: ^28.1.3
+  jest-mock-axios: 4.7.0-beta
   lint-staged: ^13.0.3
   next: 12.2.2
   prettier: ^2.7.1
   react: 18.2.0
   react-dom: 18.2.0
   react-test-renderer: ^18.2.0
+  swr: ^1.3.0
   ts-jest: ^28.0.8
   tsconfig-paths-webpack-plugin: ^3.5.2
   typescript: 4.7.4
@@ -51,6 +53,7 @@ dependencies:
   next: 12.2.2_twoewwu6sg7cdf3ao6njtbftne
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  swr: 1.3.0_react@18.2.0
 
 devDependencies:
   '@babel/core': 7.18.10
@@ -85,6 +88,7 @@ devDependencies:
   jest: 28.1.3_@types+node@18.6.2
   jest-dom: 4.0.0
   jest-environment-jsdom: 28.1.3
+  jest-mock-axios: 4.7.0-beta_@types+node@18.6.2
   lint-staged: 13.0.3
   prettier: 2.7.1
   react-test-renderer: 18.2.0_react@18.2.0
@@ -3081,7 +3085,7 @@ packages:
       react-dom: 18.2.0_react@18.2.0
       regenerator-runtime: 0.13.9
       store2: 2.14.2
-      synchronous-promise: 2.0.15
+      synchronous-promise: 2.0.16
       ts-dedent: 2.2.0
       util-deprecate: 1.0.2
     dev: true
@@ -3610,7 +3614,7 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       regenerator-runtime: 0.13.9
-      synchronous-promise: 2.0.15
+      synchronous-promise: 2.0.16
       ts-dedent: 2.2.0
       unfetch: 4.2.0
       util-deprecate: 1.0.2
@@ -3790,7 +3794,7 @@ packages:
       regenerator-runtime: 0.13.9
       slash: 3.0.0
       stable: 0.1.8
-      synchronous-promise: 2.0.15
+      synchronous-promise: 2.0.16
       ts-dedent: 2.2.0
       util-deprecate: 1.0.2
     dev: true
@@ -9315,6 +9319,19 @@ packages:
       stack-utils: 2.0.5
     dev: true
 
+  /jest-mock-axios/4.7.0-beta_@types+node@18.6.2:
+    resolution: {integrity: sha512-Af2Ao1GX18tD69+iWoOV8XVgf2u7ZnZ6xNRGBTtFtuizm72m4V2DRbuPF3kDkaILLJmrcuQVY+Go7fnbFKGMqw==}
+    dependencies:
+      '@jest/globals': 28.1.3
+      jest: 28.0.3_@types+node@18.6.2
+      synchronous-promise: 2.0.16
+    transitivePeerDependencies:
+      - '@types/node'
+      - node-notifier
+      - supports-color
+      - ts-node
+    dev: true
+
   /jest-mock/27.5.1:
     resolution: {integrity: sha512-K4jKbY1d4ENhbrG2zuPWaQBvDly+iZ2yAW+T1fATN78hc0sInwn7wZB8XtlNnvHug5RMwV897Xm4LqmPM4e2Og==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
@@ -9551,6 +9568,25 @@ packages:
       '@types/node': 18.6.2
       merge-stream: 2.0.0
       supports-color: 8.1.1
+    dev: true
+
+  /jest/28.0.3_@types+node@18.6.2:
+    resolution: {integrity: sha512-uS+T5J3w5xyzd1KSJCGKhCo8WTJXbNl86f5SW11wgssbandJOVLRKKUxmhdFfmKxhPeksl1hHZ0HaA8VBzp7xA==}
+    engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
+    hasBin: true
+    peerDependencies:
+      node-notifier: ^8.0.1 || ^9.0.0 || ^10.0.0
+    peerDependenciesMeta:
+      node-notifier:
+        optional: true
+    dependencies:
+      '@jest/core': 28.1.3
+      import-local: 3.1.0
+      jest-cli: 28.1.3_@types+node@18.6.2
+    transitivePeerDependencies:
+      - '@types/node'
+      - supports-color
+      - ts-node
     dev: true
 
   /jest/28.1.3_@types+node@18.6.2:
@@ -12851,6 +12887,14 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
+  /swr/1.3.0_react@18.2.0:
+    resolution: {integrity: sha512-dkghQrOl2ORX9HYrMDtPa7LTVHJjCTeZoB1dqTbnnEDlSvN8JEKpYIYurDfvbQFUUS8Cg8PceFVZNkW0KNNYPw==}
+    peerDependencies:
+      react: ^16.11.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /symbol-tree/3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
     dev: true
@@ -12865,8 +12909,8 @@ packages:
       object.getownpropertydescriptors: 2.1.4
     dev: true
 
-  /synchronous-promise/2.0.15:
-    resolution: {integrity: sha512-k8uzYIkIVwmT+TcglpdN50pS2y1BDcUnBPK9iJeGu0Pl1lOI8pD6wtzgw91Pjpe+RxtTncw32tLxs/R0yNL2Mg==}
+  /synchronous-promise/2.0.16:
+    resolution: {integrity: sha512-qImOD23aDfnIDNqlG1NOehdB9IYsn1V9oByPjKY1nakv2MQYCEMyX033/q+aEtYCpmYK1cv2+NTmlH+ra6GA5A==}
     dev: true
 
   /tapable/1.1.3:
