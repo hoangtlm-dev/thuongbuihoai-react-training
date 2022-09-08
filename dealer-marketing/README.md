@@ -9,6 +9,7 @@
 - User can search blog by title
 - User can see blog details
 - User can see expert details
+- Unit test coverage should greater than 80%
 
 ## DESIGN
 
