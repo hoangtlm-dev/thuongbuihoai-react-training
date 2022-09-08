@@ -16,9 +16,9 @@
 .blog-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 80px
+  margin: 0 85px;
 }
 
 .blog-item {
-  margin: 0px 25px;
+  margin: 0px 20px;
 }
