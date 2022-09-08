@@ -13,7 +13,7 @@ import { Blog } from "@self-types/blog";
 
 // constants
 import { IMAGE } from "@constants/image";
-import { API_BLOGS, BLOGS_URL } from "@constants/url";
+import { BLOGS_URL } from "@constants/url";
 
 // context
 import { BlogContext } from "@context/BlogContext";
