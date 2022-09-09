@@ -91,4 +91,6 @@ https://dealer-marketing-storybook.vercel.app/
 - Install dependencies : pnpm install
 - Run app: pnpm dev
 - Open on web: http://localhost:3000/
+- Run storybook: pnpm storybook
+- View story book on web: http://localhost:6006/
 ```
