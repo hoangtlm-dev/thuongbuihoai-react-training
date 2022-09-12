@@ -7,5 +7,17 @@ import Navigation from "./Navigation";
 import Text from "./Text";
 import Icon from "./Icon";
 import Loader from "./Loader";
+import ErrorBoundary from "./ErrorBoundary";
 
-export { Banner, Button, Input, Logo, Menu, Navigation, Text, Icon, Loader };
+export {
+  Banner,
+  Button,
+  Input,
+  Logo,
+  Menu,
+  Navigation,
+  Text,
+  Icon,
+  Loader,
+  ErrorBoundary,
+};

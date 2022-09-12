@@ -1,8 +1,16 @@
-import React, { memo, MouseEventHandler, useCallback, useContext } from "react";
+import React, {
+  lazy,
+  memo,
+  MouseEventHandler,
+  Suspense,
+  useCallback,
+  useContext,
+} from "react";
 import { BlogContext } from "@context/BlogContext";
 import debounce from "@helpers/debounce";
-import Input from "../Input";
 import styleNavigation from "../Navigation/navigation.module.css";
+import Loader from "../Loader";
+const Input = lazy(() => import("../Input"));
 
 interface SearchBoxProps {
   openModal: Function;
@@ -22,13 +30,15 @@ const SearchBox = React.forwardRef<HTMLInputElement, SearchBoxProps>(
     );
     return (
       <div data-testid="search-box" className={styleNavigation["nav-search"]}>
-        <Input
-          type="text"
-          ref={ref}
-          placeholder="Search the site..."
-          onChange={handleSearch}
-          onClick={onScroll}
-        />
+        <Suspense fallback={<Loader />}>
+          <Input
+            type="text"
+            ref={ref}
+            placeholder="Search the site..."
+            onChange={handleSearch}
+            onClick={onScroll}
+          />
+        </Suspense>
       </div>
     );
   },
