@@ -1,5 +1,6 @@
 import { Component, ReactNode } from "react";
 import Button from "../Button";
+import styleError from "./errorBoundary.module.css";
 
 interface ErrorBoundaryState {
   hasError: boolean;
@@ -32,8 +33,8 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   render() {
     if (this.state.hasError) {
       return (
-        <div data-testid="error-boundary">
-          <h1>Something went wrong.</h1>
+        <div className={styleError.error} data-testid="error-boundary">
+          <h1 className={styleError["error-title"]}>Something went wrong.</h1>
           <Button
             onClick={() => this.setState({ hasError: false })}
             icon

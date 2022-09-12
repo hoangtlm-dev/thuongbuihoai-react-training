@@ -1,0 +1,10 @@
+.error {
+  position: fixed;
+  top: 45%;
+  left: 43%;
+  text-align: center;
+}
+
+.error-title {
+  margin-bottom: 10px;
+}
