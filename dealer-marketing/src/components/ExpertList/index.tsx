@@ -3,6 +3,7 @@ import Error from "next/error";
 import CardExpert from "../CardExpert";
 import styleExpertList from "./expertList.module.css";
 import { ExpertContext } from "@context/ExpertContext";
+import { ErrorBoundary } from "@components/common";
 
 const ExpertList: React.FC = () => {
   const { experts, errorCode } = useContext(ExpertContext);
@@ -12,13 +13,15 @@ const ExpertList: React.FC = () => {
   }
 
   return (
-    <div data-testid="expert-list" className={styleExpertList["expert-list"]}>
-      {experts?.map((expert) => (
-        <div key={expert.expertId}>
-          <CardExpert expert={expert} />
-        </div>
-      ))}
-    </div>
+    <ErrorBoundary>
+      <div data-testid="expert-list" className={styleExpertList["expert-list"]}>
+        {experts?.map((expert) => (
+          <div key={expert.expertId}>
+            <CardExpert expert={expert} />
+          </div>
+        ))}
+      </div>
+    </ErrorBoundary>
   );
 };
 
