@@ -19,6 +19,7 @@ const SearchBox = React.forwardRef<HTMLInputElement, SearchBoxProps>(
       },
       [],
     );
+
     return (
       <div data-testid="search-box" className={styleNavigation["nav-search"]}>
         <Input
