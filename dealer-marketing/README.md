@@ -98,8 +98,7 @@ https://dealer-marketing-storybook.vercel.app/
 - cd react-training
 - git checkout feature/nextjs-practice
 - cd dealer-marketing
-- create .env.development file
-    NEXT_PUBLIC_ENDPOINTS=https://63183dc9f6b281877c66cbe0.mockapi.io
+- create .env.development file: `NEXT_PUBLIC_ENDPOINTS=https://63183dc9f6b281877c66cbe0.mockapi.io`
 - Install dependencies : pnpm install
 - Run app: pnpm dev
 - Open on web: http://localhost:3000/
