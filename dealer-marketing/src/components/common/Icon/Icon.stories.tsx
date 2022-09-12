@@ -17,13 +17,3 @@ export const IconSearch = TemplateIcon.bind({});
 IconSearch.args = {
   iconName: IconType.search,
 };
-
-export const IconLetter = TemplateIcon.bind({});
-IconLetter.args = {
-  iconName: IconType.letter,
-};
-
-export const IconArrowRight = TemplateIcon.bind({});
-IconArrowRight.args = {
-  iconName: IconType.arrowRight,
-};
