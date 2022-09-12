@@ -9,6 +9,16 @@
 - User can search blog by title
 - User can see blog details
 - User can see expert details
+
+# EXTRA FEATURES
+
+- Party town
+- Schema
+- dangerouslySetInnerHTML
+
+## TARGET
+
+- Understand and apply getStaticProps and getStaticPath
 - Unit test coverage should greater than 80%
 
 ## DESIGN
@@ -88,6 +98,12 @@ https://dealer-marketing-storybook.vercel.app/
 - cd react-training
 - git checkout feature/nextjs-practice
 - cd dealer-marketing
+- create .env.development file
+```
+
+NEXT_PUBLIC_ENDPOINTS=https://63183dc9f6b281877c66cbe0.mockapi.io
+
+```
 - Install dependencies : pnpm install
 - Run app: pnpm dev
 - Open on web: http://localhost:3000/
