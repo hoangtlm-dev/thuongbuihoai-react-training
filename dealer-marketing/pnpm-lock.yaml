@@ -26,6 +26,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.31.0
   axios: ^0.27.2
   babel-loader: ^8.2.5
+  babel-plugin-dynamic-import-node: ^2.3.3
   dotenv-load: ^2.0.1
   eslint: 8.20.0
   eslint-config-next: 12.2.3
@@ -35,6 +36,7 @@ specifiers:
   jest-dom: ^4.0.0
   jest-environment-jsdom: ^28.1.3
   jest-mock-axios: 4.7.0-beta
+  jest-next-dynamic: ^1.0.1
   lint-staged: ^13.0.3
   next: 12.2.2
   prettier: ^2.7.1
@@ -79,6 +81,7 @@ devDependencies:
   '@types/testing-library__jest-dom': 5.14.5
   '@typescript-eslint/eslint-plugin': 5.31.0_he2ccbldppg44uulnyq4rwocfa
   babel-loader: 8.2.5_@babel+core@7.18.10
+  babel-plugin-dynamic-import-node: 2.3.3
   eslint: 8.20.0
   eslint-config-next: 12.2.3_he2ccbldppg44uulnyq4rwocfa
   eslint-plugin-prettier: 4.2.1_vvfpqh5kol6rhqy7beehv5uezq
@@ -87,6 +90,7 @@ devDependencies:
   jest-dom: 4.0.0
   jest-environment-jsdom: 28.1.3
   jest-mock-axios: 4.7.0-beta_@types+node@18.6.2
+  jest-next-dynamic: 1.0.1
   lint-staged: 13.0.3
   prettier: 2.7.1
   react-test-renderer: 18.2.0_react@18.2.0
@@ -9344,6 +9348,10 @@ packages:
     dependencies:
       '@jest/types': 28.1.3
       '@types/node': 18.6.2
+    dev: true
+
+  /jest-next-dynamic/1.0.1:
+    resolution: {integrity: sha512-peo9yRvUn8u6PZro9AzzjxpgUc+1NZhZMan+1xzk7Bz1vA0d5IC2Iw8E7bkC2cwl9AG3XxTaqPVAXbC3aMbVkw==}
     dev: true
 
   /jest-pnp-resolver/1.2.2_jest-resolve@28.1.3:
