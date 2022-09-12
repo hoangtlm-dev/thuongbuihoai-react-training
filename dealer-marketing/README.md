@@ -94,7 +94,8 @@ https://dealer-marketing-storybook.vercel.app/
 - cd dealer-marketing
 ```
 
-```create .env.development file:
+```
+- create .env.development file:
 - NEXT_PUBLIC_ENDPOINTS=https://63183dc9f6b281877c66cbe0.mockapi.io
 ```
 
