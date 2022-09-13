@@ -15,9 +15,11 @@ export interface BlogContextProps {
   blogs: Blog[];
   blogList: Blog[];
   errorCode: number;
+  isLoading: boolean;
   setBlogs: Function;
   searchValue: string;
   setErrorCode: Function;
+  setIsLoading: Function;
   setSearchValue: Function;
   handleUpdateBlogs: Function;
 }
