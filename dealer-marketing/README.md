@@ -10,12 +10,6 @@
 - User can see blog details
 - User can see expert details
 
-# EXTRA FEATURES
-
-- Party town
-- Schema
-- dangerouslySetInnerHTML
-
 ## TARGET
 
 - Understand and apply getStaticProps and getStaticPath
