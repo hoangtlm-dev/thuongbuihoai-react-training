@@ -1,6 +1,6 @@
 import { fireEvent, render } from "@testing-library/react";
 import debounce from "@helpers/debounce";
-import SearchBox from "../SearchBox";
+import SearchBox from "../index";
 
 describe("SearchBox component", () => {
   test("Should render SearchBox component", () => {

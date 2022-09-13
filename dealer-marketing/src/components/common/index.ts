@@ -8,6 +8,7 @@ import Text from "./Text";
 import Icon from "./Icon";
 import Loader from "./Loader";
 import ErrorBoundary from "./ErrorBoundary";
+import SearchBox from "./SearchBox";
 
 export {
   Banner,
@@ -20,4 +21,5 @@ export {
   Icon,
   Loader,
   ErrorBoundary,
+  SearchBox,
 };

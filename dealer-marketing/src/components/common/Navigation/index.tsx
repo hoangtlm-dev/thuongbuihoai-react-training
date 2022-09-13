@@ -9,11 +9,11 @@ import Icon, { IconType } from "../Icon";
 import { ROUTER_LIST } from "@constants/routes";
 import { IMAGE } from "@constants/image";
 import { RouterTypeProp } from "@self-types/routes";
+import { BlogContext } from "@context/BlogContext";
 import Logo from "../Logo";
 import Menu from "../Menu";
-import SearchBox from "../SearchBox/SearchBox";
 import styleNavigation from "./navigation.module.css";
-import { BlogContext } from "@context/BlogContext";
+import SearchBox from "../SearchBox";
 
 const Navigation: React.FC = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);
