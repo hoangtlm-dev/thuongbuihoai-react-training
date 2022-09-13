@@ -8,6 +8,7 @@ const BlogProvider: React.FC<{ children: JSX.Element[] | JSX.Element }> = ({
   const [blogs, setBlogs] = useState<Blog[]>([]);
   const [errorCode, setErrorCode] = useState<number>(0);
   const [searchValue, setSearchValue] = useState<string>("");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const blogList = useMemo(() => {
     return searchValue
@@ -30,8 +31,10 @@ const BlogProvider: React.FC<{ children: JSX.Element[] | JSX.Element }> = ({
     setBlogs,
     blogList,
     errorCode,
+    isLoading,
     searchValue,
     setErrorCode,
+    setIsLoading,
     setSearchValue,
     handleUpdateBlogs,
   };
