@@ -5,12 +5,12 @@
   left: 0;
   bottom: 0;
   right: 0;
-  border: 10px solid var(--text-primary);
-  border-top: 10px solid var(--text-third);
+  border: 8px solid var(--text-primary);
+  border-top: 8px solid var(--text-third);
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  animation: spin 2s linear infinite;
+  width: 80px;
+  height: 80px;
+  animation: spin 1.5s linear infinite;
 }
 
 @keyframes spin {
