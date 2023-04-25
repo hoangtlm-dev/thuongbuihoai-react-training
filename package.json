@@ -13,13 +13,14 @@
     "test": "jest",
     "prepare": "cd .. && husky install products-management/.husky",
     "pre-commit-lint": "pnpm lint-staged",
-    "pre-push-lint": "rm -rf storybook-static/ && build-storybook -s public && vite build"
+    "pre-push-lint": "rm -rf storybook-static/ && pnpm build-storybook -s public && vite build"
   },
   "dependencies": {
     "axios": "^0.24.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "swr": "^1.3.0"
+    "swr": "^1.3.0",
+    "@storybook/addon-actions": "^6.3.6"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
