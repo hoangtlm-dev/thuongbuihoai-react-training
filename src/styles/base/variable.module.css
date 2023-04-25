@@ -3,11 +3,13 @@
   --light: #fff;
 
   /* text color */
-  --text-primary: #00072B;
-  --text-secondary: #DB303F;
-  --text-ternary: #D92D20;
-  --text-quaternary: #7F56D9;
-  --text-quinary: #D0D5DD;
+  --text-primary: #00072b;
+  --text-secondary: #db303f;
+  --text-ternary: #d92d20;
+  --text-quaternary: #7f56d9;
+  --text-quinary: #d0d5dd;
+  --text-primary-100: #0c0033;
+  --text-primary-200: #475467;
 
   /* box-shadow */
   --bs-primary: 0px 1px 2px rgba(16, 24, 40, 0.05);;
