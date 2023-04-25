@@ -6,19 +6,6 @@ const config: Config.InitialOptions = {
   transform: {
     '^.+\\.(t|j)sx?$': 'ts-jest',
   },
-  moduleNameMapper: {
-    "^@root(.*)$": "<rootDir>/src$1",
-    "^@/(.*)$": "<rootDir>/src/$1",
-    "^@components(.*)$": "<rootDir>/src/components$1",
-    "^@pages(.*)$": "<rootDir>/src/pages$1",
-    "^@context(.*)$": "<rootDir>/src/context$1",
-    "^@hooks(.*)$": "<rootDir>/src/hooks$1",
-    "^@constants(.*)$": "<rootDir>/src/constants$1",
-    "^@helpers(.*)$": "<rootDir>/src/helpers$1",
-    "^@reducer(.*)$": "<rootDir>/src/reducer$1",
-    "^@assets(.*)$": "<rootDir>/src/assets$1",
-    "^@app(.*)$": "<rootDir>/src/app$1",
-  },
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(tsx|ts)$",
   testEnvironment: "jsdom",
   moduleDirectories: [
@@ -29,6 +16,10 @@ const config: Config.InitialOptions = {
   ],
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   modulePaths: ["node_modules", "<rootDir>/src"],
+  moduleNameMapper: {
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+  }
 };
 
 module.exports = config;
