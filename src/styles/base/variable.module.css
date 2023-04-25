@@ -1,0 +1,18 @@
+:root {
+  --dark: #000;
+  --light: #fff;
+
+  /* text color */
+  --text-primary: #00072B;
+  --text-secondary: #DB303F;
+  --text-ternary: #D92D20;
+  --text-quaternary: #7F56D9;
+  --text-quinary: #D0D5DD;
+
+  /* box-shadow */
+  --bs-primary: 0px 1px 2px rgba(16, 24, 40, 0.05);;
+
+  /* font weight */
+  --w-normal: normal;
+  --w-semibold: 600;
+}

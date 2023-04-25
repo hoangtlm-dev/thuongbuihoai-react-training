@@ -1,42 +1,42 @@
 .btn-primary {
   border: none;
   background-color: transparent;
-  color: #00072B;
-  font-weight: 600;
+  color: var(--text-primary);
+  font-weight: var(--w-semibold);
 }
 
 .btn-secondary {
   border: none;
   background-color: transparent;
-  color: #DB303F;
-  font-weight: 600;
+  color: var(--text-secondary);
+  font-weight: var(--w-semibold);
 }
 
 .btn-tertiary {
-  background-color: #fff;
-  border: 1px solid #D0D5DD;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  background-color: var(--light);
+  border: 1px solid var(--text-quinary);
+  box-shadow: var(--bs-primary);
   border-radius: 8px;
   padding: 10px 58px;
-  font-weight: 600;
+  font-weight: var(--w-semibold);
 }
 
 .btn-quaternary {
-  color: #fff;
-  background-color: #D92D20;
-  border: 1px solid #D92D20;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  color: var(--light);
+  background-color: var(--text-ternary);
+  border: 1px solid var(--text-ternary);
+  box-shadow: var(--bs-primary);
   border-radius: 8px;
   padding: 10px 58px;
-  font-weight: 600;
+  font-weight: var(--w-semibold);
 }
 
 .btn-quinary {
-  color: #fff;
-  background-color: #7F56D9;
-  border: 1px solid #D0D5DD;
-  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  color: var(--light);
+  background-color: var(--text-quaternary);
+  border: 1px solid var(--text-quinary);
+  box-shadow: var(--bs-primary);
   border-radius: 8px;
   padding: 10px 58px;
-  font-weight: 600;
+  font-weight: var(--w-semibold);
 }
