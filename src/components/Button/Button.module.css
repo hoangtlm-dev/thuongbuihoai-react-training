@@ -1,0 +1,42 @@
+.btn-primary {
+  border: none;
+  background-color: transparent;
+  color: #00072B;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  border: none;
+  background-color: transparent;
+  color: #DB303F;
+  font-weight: 600;
+}
+
+.btn-tertiary {
+  background-color: #fff;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  padding: 10px 58px;
+  font-weight: 600;
+}
+
+.btn-quaternary {
+  color: #fff;
+  background-color: #D92D20;
+  border: 1px solid #D92D20;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  padding: 10px 58px;
+  font-weight: 600;
+}
+
+.btn-quinary {
+  color: #fff;
+  background-color: #7F56D9;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  padding: 10px 58px;
+  font-weight: 600;
+}
