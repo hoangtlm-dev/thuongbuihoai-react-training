@@ -10,6 +10,8 @@
   --text-quinary: #d0d5dd;
   --text-primary-100: #0c0033;
   --text-primary-200: #475467;
+  --text-secondary-100: #7fc008;
+  --text-secondary-200: #Dfe2e9;
 
   /* box-shadow */
   --bs-primary: 0px 1px 2px rgba(16, 24, 40, 0.05);;
