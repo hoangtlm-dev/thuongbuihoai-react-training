@@ -1,30 +1,39 @@
-import React, { memo } from "react";
+import React, { memo } from 'react';
+import styleButton from './Button.module.css';
 
 export enum ButtonType {
-  default = "",
-  primary = "primary",
-  secondary = "secondary",
-  buttonIcon = "icon",
+  default = '',
+  primary = 'primary',
+  secondary = 'secondary',
+  tertiary = 'tertiary',
+  quaternary = 'quaternary',
+  quinary = 'quinary'
 }
 
 interface ButtonProps {
   type?: ButtonType;
   text?: string;
   disable?: boolean;
+  children?: React.ReactNode;
   onClick?: () => void;
 }
 
 const Button: React.FC<ButtonProps> = ({
   type = ButtonType.default,
-  text = "",
+  text = '',
   disable = false,
-  onClick = () => {},
+  children,
+  onClick = () => {}
 }) => {
   return (
     <button
+      data-testid='button'
+      className={styleButton[`btn-${type}`]}
       disabled={disable}
-      onClick={onClick}>
+      onClick={onClick}
+    >
       {text}
+      {children}
     </button>
   );
 };
