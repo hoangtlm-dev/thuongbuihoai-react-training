@@ -1,0 +1,14 @@
+.text-normal {
+  font-size: 14px;
+  color: #00072B;
+}
+
+.text-large {
+  font-size: 60px;
+  font-weight: 700;
+  color: #0C0033;
+}
+
+.text-primary {
+  color: #475467;
+}
