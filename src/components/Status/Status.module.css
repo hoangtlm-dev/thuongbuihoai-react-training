@@ -1,0 +1,26 @@
+.status-primary,
+.status-secondary,
+.status-tertiary {
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.status-primary {
+  color: #7FC008;
+  border: 1px solid #7FC008;
+  width: 78px;
+}
+
+.status-secondary {
+  color: #DB303F;
+  border: 1px solid #DB303F;
+  width: 73px;
+}
+
+.status-tertiary {
+  background: #fff;
+  border: 1px solid #DFE2E9;
+  border-radius: 8px;
+  width: 57px;
+}
