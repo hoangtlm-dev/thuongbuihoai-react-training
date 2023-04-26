@@ -71,8 +71,8 @@ export const COLUMNS_HEADER = [
   {
     value: 'Action',
     key: 'action'
-  },
-]
+  }
+];
 
 export const TABLE: TableType[] = [
   {
@@ -90,7 +90,7 @@ export const TABLE: TableType[] = [
       alt: 'This is image product IBM'
     },
     brand: 'Evan Flores',
-    price: 452.85,
+    price: 452.85
   },
   {
     id: '2',
@@ -107,6 +107,6 @@ export const TABLE: TableType[] = [
       alt: 'This is image Arlene Wilson'
     },
     brand: 'Arlene Wilson',
-    price: 901.33,
+    price: 901.33
   }
-]
+];

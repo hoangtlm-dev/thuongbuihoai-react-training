@@ -1,0 +1,9 @@
+.row-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cell-avatar {
+  margin-right: 20px;
+}

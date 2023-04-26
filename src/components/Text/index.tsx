@@ -16,7 +16,7 @@ export enum ThemeType {
 interface TextProps {
   size?: string;
   theme?: string;
-  text?: string;
+  text?: string | number;
 }
 
 const Text: React.FC<TextProps> = ({
