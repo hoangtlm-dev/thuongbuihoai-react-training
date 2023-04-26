@@ -1,0 +1,8 @@
+.cell-content {
+  display: flex;
+  align-items: center;
+}
+
+.cell-avatar {
+  margin-right: 20px;
+}
