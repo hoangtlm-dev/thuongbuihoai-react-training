@@ -42,7 +42,7 @@ TableCellSecondary.args = {
 export const TableCellStatus = TemplateTableCell.bind({});
 TableCellStatus.args = {
   children: (
-    <Status value='Available' type='primary' />
+    <Status value={true} type='primary' />
   ),
 };
 
@@ -56,7 +56,7 @@ TableCellText.args = {
 export const TableCellQuantity = TemplateTableCell.bind({});
 TableCellQuantity.args = {
   children: (
-    <Status value='9771' type='tertiary' />
+    <Status quantity={9771} type='tertiary' />
   ),
 };
 
