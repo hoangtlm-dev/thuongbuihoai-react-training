@@ -9,7 +9,8 @@ export enum StatusType {
 }
 
 interface StatusLabel {
-  value?: string;
+  value?: boolean;
+  quantity?: number;
   type?: string;
   className?: string;
 }
@@ -17,11 +18,22 @@ interface StatusLabel {
 const Status: React.FC<StatusLabel> = ({
   type = StatusType.default,
   value = '',
-  className = '',
+  quantity = 0,
+  className = ''
 }) => {
   return (
-    <div data-testid='status' className={`${className} ${styles[`status-${type}`]}`}>
-      {value}
+    <div
+      data-testid='status'
+      className={`${className} ${styles[`status-${type}`]} 
+      ${
+        quantity
+          ? styles[`status-${type}`]
+          : value
+          ? styles['status-primary']
+          : styles['status-secondary']
+      }`}
+    >
+      {quantity ? quantity : `${value ? 'Available' : 'Sold out'}`}
     </div>
   );
 };
