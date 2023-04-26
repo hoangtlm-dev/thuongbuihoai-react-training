@@ -1,5 +1,6 @@
 import React, { memo } from 'react';
-import { StatusTypes } from '../../types/Status';
+import { StatusTypes } from '../../types/status';
+import styles from './Dropdown.module.css'
 
 interface DropdownProps {
   className?: string;
@@ -8,11 +9,13 @@ interface DropdownProps {
 
 const Dropdown: React.FC<DropdownProps> = ({className = '', data = []}) => {
   return (
-    <select name="" id="" className={className}>
+   <div data-testid='dropdown' className={styles['select-dropdown']}>
+     <select name="" id="" className={`${className}`}>
       {data.map((item) => (
         <option value="">{item.value}</option>
       ))}
     </select>
+   </div>
   );
 };
 
