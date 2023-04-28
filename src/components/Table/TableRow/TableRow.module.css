@@ -1,9 +1,9 @@
-.row-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .cell-avatar {
   margin-right: 20px;
+}
+
+.cell-icon-dots {
+  width: 23px;
+  height: 7px;
+  background-image: url('/src/assets/icons/dots-icon.svg');
 }

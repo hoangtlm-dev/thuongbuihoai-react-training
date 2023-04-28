@@ -10,7 +10,7 @@ interface DropdownProps {
 const Dropdown: React.FC<DropdownProps> = ({className = '', data = []}) => {
   return (
    <div data-testid='dropdown' className={styles['select-dropdown']}>
-     <select name="" id="" className={`${className}`}>
+     <select name="" id="" className={`${className} ${styles['select-option']}`}>
       {data.map((item) => (
         <option value="">{item.value}</option>
       ))}
