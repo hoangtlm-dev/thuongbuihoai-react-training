@@ -1,5 +1,5 @@
+import { ProductType } from '../types/product';
 import { StatusTypes } from '../types/status';
-import { TableType } from '../types/table';
 import { ASSETS } from './assets';
 
 export const STATUS: StatusTypes[] = [
@@ -74,7 +74,7 @@ export const COLUMNS_HEADER = [
   }
 ];
 
-export const TABLE: TableType[] = [
+export const TABLE: ProductType[] = [
   {
     id: '1',
     productImage: {

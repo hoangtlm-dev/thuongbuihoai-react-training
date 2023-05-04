@@ -4,12 +4,12 @@ import TableCell from '../TableCell';
 import Avatar from '../../Avatar';
 import Text from '../../Text';
 import Status from '../../Status';
-import { TableType } from '../../../types/table';
+import { ProductType } from '../../../types/product';
 
 interface TableRowProps {
   className?: string;
   children?: React.ReactNode;
-  data?: TableType[];
+  data?: ProductType[];
 }
 
 const TableRow: React.FC<TableRowProps> = ({ className = '', data = [] }) => {

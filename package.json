@@ -59,7 +59,8 @@
     "storybook": "^7.0.6",
     "ts-jest": "^28.0.8",
     "typescript": "^5.0.2",
-    "vite": "^4.3.0"
+    "vite": "^4.3.0",
+    "vite-plugin-environment": "^1.1.3"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
