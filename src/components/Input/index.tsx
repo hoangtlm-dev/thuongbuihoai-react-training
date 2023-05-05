@@ -1,5 +1,7 @@
-import React, { ChangeEventHandler, memo, MouseEventHandler } from 'react';
+import React, { ChangeEventHandler, memo, MouseEventHandler, useCallback, useContext } from 'react';
 import styles from './input.module.css';
+import { ProductContext } from '../../contexts/ProductContext';
+import debounce from '../../helpers/debounce';
 
 export enum InputType {
   primary = 'primary',
@@ -8,6 +10,8 @@ export enum InputType {
 
 interface InputProps {
   type?: string;
+  value?: string;
+  key?: string;
   styleInput?: string;
   className?: string;
   placeholder: string;
@@ -18,6 +22,8 @@ interface InputProps {
 
 const Input: React.FC<InputProps> = ({
   type = '',
+  key = '',
+  value = '',
   styleInput = '',
   className = '',
   placeholder = '',
@@ -28,6 +34,8 @@ const Input: React.FC<InputProps> = ({
   return (
     <input
       data-testid='input-value'
+      key={key}
+      value={value}
       className={`${className} ${styles[`input-${styleInput}`]}`}
       type={type}
       placeholder={placeholder}

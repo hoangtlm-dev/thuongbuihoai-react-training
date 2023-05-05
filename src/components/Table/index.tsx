@@ -10,13 +10,13 @@ interface TableProps {
 }
 
 const Table: React.FC<TableProps> = ({ className = '' }) => {
-  const { products } = useContext(ProductContext);
-  {(!products) && <div>Loading...</div> }
+  const { productList } = useContext(ProductContext);
+  {(!productList) && <div>Loading...</div> }
   return (
     <table className={`${className} ${styles['table']}`}>
       <TableHead columns={COLUMNS_HEADER} />
       <tbody>
-        <TableRow data={products}/>
+        <TableRow data={productList}/>
       </tbody>
     </table>
   );
