@@ -9,7 +9,8 @@ const valueInitial = {
   product: '',
   brand: '',
   quantity: '',
-  price: ''
+  price: '',
+  type: ''
 }
 
 const ProductContext = createContext<ProductContextType>({} as ProductContextType);
@@ -26,7 +27,8 @@ const ProductProvider: React.FC<{children: JSX.Element[] | JSX.Element}> = ({ ch
           product.product?.toLowerCase().includes(searchValue.product.toLowerCase()) &&
           product.brand?.toLowerCase().includes(searchValue.brand.toLowerCase()) &&
           product.quantity?.toString().includes(searchValue.quantity) &&
-          product.price?.toString().includes(searchValue.price)
+          product.price?.toString().includes(searchValue.price) &&
+          product.type?.toLowerCase().includes(searchValue.type.toLowerCase())
         )
       : products;
   }, [products, searchValue]);

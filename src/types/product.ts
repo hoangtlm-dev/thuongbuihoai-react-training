@@ -40,7 +40,8 @@ export interface ProductContextType {
     product: string;
     brand: string;
     quantity: string;
-    price: string
+    price: string;
+    type: string;
   };
   setSearchValue: Function;
   isLoading: boolean;
