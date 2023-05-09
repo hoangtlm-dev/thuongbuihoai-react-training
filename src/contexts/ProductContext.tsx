@@ -10,7 +10,8 @@ const valueInitial = {
   brand: '',
   quantity: '',
   price: '',
-  type: ''
+  type: '',
+  status: ''
 }
 
 const ProductContext = createContext<ProductContextType>({} as ProductContextType);
@@ -28,7 +29,7 @@ const ProductProvider: React.FC<{children: JSX.Element[] | JSX.Element}> = ({ ch
           product.brand?.toLowerCase().includes(searchValue.brand.toLowerCase()) &&
           product.quantity?.toString().includes(searchValue.quantity) &&
           product.price?.toString().includes(searchValue.price) &&
-          product.type?.toLowerCase().includes(searchValue.type.toLowerCase())
+          product.type?.toLowerCase().includes(searchValue.type?.toLowerCase())
         )
       : products;
   }, [products, searchValue]);
@@ -40,7 +41,7 @@ const ProductProvider: React.FC<{children: JSX.Element[] | JSX.Element}> = ({ ch
         setIsLoading(isLoading);
         setSearchValue({
           ...searchValue,
-          [key]: value
+          [key]: value,
         });
       }, 500);
     },
@@ -54,7 +55,7 @@ const ProductProvider: React.FC<{children: JSX.Element[] | JSX.Element}> = ({ ch
     setIsLoading,
     setSearchValue,
     handleSearch
-  }), [products, searchValue]);
+  }), [productList, searchValue]);
 
   return (
     <ProductContext.Provider value={value}>

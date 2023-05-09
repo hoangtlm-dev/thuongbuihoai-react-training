@@ -13,7 +13,6 @@ interface TableHeadProps {
 const TableHead: React.FC<TableHeadProps> = ({ columns = [] }) => {
   const { searchValue, handleSearch } = useContext(ProductContext);
   console.log('searchValue', searchValue);
-
   return (
     <thead>
       <tr>
@@ -23,13 +22,17 @@ const TableHead: React.FC<TableHeadProps> = ({ columns = [] }) => {
               <div className={styles['th-value']}>
                 {column.value}
                 {column === columns[1] ? (
-                  <Dropdown className={styles['th-status']} options={STATUS} />
+                  <Dropdown
+                    className={styles['th-status']}
+                    options={STATUS}
+                    onChange={(e) => handleSearch(column.key as string, e.target?.value || '')}
+                   />
                 ) : (
                   <Dropdown
-                    selectOption={searchValue[column.key]}
                     className={styles['th-type']}
                     options={TYPE}
-                    onClick={() => handleSearch(column.key as string, 'Bravo')}
+                    onChange={(e) => handleSearch(column.key as string, e.target?.value || '')
+                  }
                   />
                 )}
               </div>

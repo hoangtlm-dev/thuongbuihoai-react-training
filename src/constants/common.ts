@@ -24,7 +24,7 @@ export const TYPE: StatusTypes[] = [
   {
     id: '1',
     value: 'All',
-    key: 'all'
+    key: ''
   },
   {
     id: '2',

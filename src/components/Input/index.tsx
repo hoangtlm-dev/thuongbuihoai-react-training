@@ -1,7 +1,5 @@
-import React, { ChangeEventHandler, memo, MouseEventHandler, useCallback, useContext } from 'react';
+import React, { ChangeEventHandler, memo, MouseEventHandler } from 'react';
 import styles from './input.module.css';
-import { ProductContext } from '../../contexts/ProductContext';
-import debounce from '../../helpers/debounce';
 
 export enum InputType {
   primary = 'primary',
