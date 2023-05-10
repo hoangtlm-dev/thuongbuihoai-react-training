@@ -6,17 +6,17 @@ export const STATUS: StatusTypes[] = [
   {
     id: '1',
     value: 'All',
-    key: 'all'
+    key: ''
   },
   {
     id: '2',
     value: 'Available',
-    key: 'available'
+    key: true
   },
   {
     id: '3',
     value: 'Sold out',
-    key: 'sold-out'
+    key: false
   }
 ];
 
@@ -37,7 +37,7 @@ export const TYPE: StatusTypes[] = [
     key: 'alfa'
   },
   {
-    id: '3',
+    id: '4',
     value: 'Gold',
     key: 'gold'
   }

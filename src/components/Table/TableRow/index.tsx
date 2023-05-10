@@ -16,7 +16,7 @@ const TableRow: React.FC<TableRowProps> = ({ className = '', data = [] }) => {
   return (
     <>
       {data.map(item => (
-        <tr className={`${className} ${styles['row-content']}`}>
+        <tr key={item.id} className={`${className} ${styles['row-content']}`}>
             <TableCell
               children={
                 <>

@@ -21,15 +21,17 @@ const ProductProvider: React.FC<{children: JSX.Element[] | JSX.Element}> = ({ ch
 
   const data = useSWR(PRODUCT_URL, getData<ProductType[]>);
   const products = data.data;
-
+  const isShowAll = searchValue.status === '';
   const productList = useMemo(() => {
     return searchValue
       ? products?.filter((product: ProductType) =>
+          isShowAll ? product.product?.toLowerCase().includes(searchValue.product.toLowerCase()) :
           product.product?.toLowerCase().includes(searchValue.product.toLowerCase()) &&
           product.brand?.toLowerCase().includes(searchValue.brand.toLowerCase()) &&
           product.quantity?.toString().includes(searchValue.quantity) &&
           product.price?.toString().includes(searchValue.price) &&
-          product.type?.toLowerCase().includes(searchValue.type?.toLowerCase())
+          product.type?.toLowerCase().includes(searchValue.type?.toLowerCase()) &&
+          (searchValue.status as string | boolean) === product.status
         )
       : products;
   }, [products, searchValue]);

@@ -25,14 +25,22 @@ const TableHead: React.FC<TableHeadProps> = ({ columns = [] }) => {
                   <Dropdown
                     className={styles['th-status']}
                     options={STATUS}
-                    onChange={(e) => handleSearch(column.key as string, e.target?.value || '')}
-                   />
+                    onChange={e =>
+                      handleSearch(
+                        column.key as string,
+                        (e.target.value
+                          ? e.target.value === 'true'
+                          : '') as string
+                      )
+                    }
+                  />
                 ) : (
                   <Dropdown
                     className={styles['th-type']}
                     options={TYPE}
-                    onChange={(e) => handleSearch(column.key as string, e.target?.value || '')
-                  }
+                    onChange={e =>
+                      handleSearch(column.key as string, e.target?.value || '')
+                    }
                   />
                 )}
               </div>

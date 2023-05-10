@@ -17,13 +17,11 @@ const Dropdown: React.FC<DropdownProps> = ({
   return (
     <div data-testid='dropdown' className={styles['select-dropdown']}>
       <select
-        name=''
-        id=''
         className={`${className} ${styles['select-option']}`}
         onChange={onChange}
       >
         {options.map(option => (
-          <option value={option.key}>{option.value}</option>
+          <option key={option.id} value={option.key?.toString()}>{option.value}</option>
         ))}
       </select>
     </div>

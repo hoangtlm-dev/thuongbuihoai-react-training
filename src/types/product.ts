@@ -37,11 +37,12 @@ export interface ProductAction {
 export interface ProductContextType {
   productList?: ProductType[];
   searchValue: {
-    product: string;
-    brand: string;
-    quantity: string;
-    price: string;
-    type: string;
+    product?: string;
+    brand?: string;
+    quantity?: string;
+    price?: string;
+    type?: string;
+    status?: string;
   };
   setSearchValue: Function;
   isLoading: boolean;
