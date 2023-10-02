@@ -10,6 +10,6 @@ describe("Button page", () => {
 
   test("renders homepage unchanged", () => {
     const { container } = render(<Button />);
-    expect(container).toMatchSnapshot();
+    expect(container).toMatchSnapshot(); 
   });
 });
