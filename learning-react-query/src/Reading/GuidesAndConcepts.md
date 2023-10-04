@@ -82,3 +82,15 @@ const result = useQuery({
 - When the new data arrives, the previous `data` is seamlessly swapped to show the new data.
 #### Lagging Infinite Query results with keepPreviousData
 - While not as common, the `keepPreviousData` option also works flawlessly with the `useInfiniteQuery` hook, so you can seamlessly allow your users to continue to see cached data while infinite query keys change over time.
+### Infinite Queries
+- Rendering lists that can additively "load more" data onto an existing set of data or "infinite scroll" is also a very common UI pattern. TanStack Query supports a useful version of `useQuery` called `useInfiniteQuery` for querying these types of lists.
+- When using `useInfiniteQuery`, you'll notice a few things are different:
+  - `data` is now an object containing infinite query data:
+  - `data.pages` array containing the fetched pages
+  - `data.pageParams` array containing the page params used to fetch the pages
+  - The `fetchNextPage` and `fetchPreviousPage` functions are now available
+  - The `getNextPageParam` and `getPreviousPageParam` options are available for both determining if there is more data to load and the information to fetch it.
+  - A `hasNextPage` boolean is now available and is true if `getNextPageParam` returns a value other than undefined
+  - A `hasPreviousPage` boolean is now available and is true if `getPreviousPageParam` returns a value other than undefined
+  - The `isFetchingNextPage` and `isFetchingPreviousPage` booleans are now available to distinguish between a background refresh state and a loading more state
+- **Note**: ***When using options like initialData or select in your query, make sure that when you restructure your data that it still includes data.pages and data.pageParams properties, otherwise your changes will be overwritten by the query in its return!***

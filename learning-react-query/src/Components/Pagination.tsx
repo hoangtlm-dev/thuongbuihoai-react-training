@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import {
   useQuery,
@@ -14,7 +14,7 @@ async function fetchProjects(page = 0) {
 
 const Pagination = () => {
   const queryClient = useQueryClient()
-  const [page, setPage] = React.useState(0)
+  const [page, setPage] = useState(0)
 
   const { status, data, error, isFetching, isPreviousData } = useQuery({
     queryKey: ['experts', page],
@@ -24,7 +24,7 @@ const Pagination = () => {
   })
 
   // Prefetch the next page!
-  React.useEffect(() => {
+  useEffect(() => {
     if (!isPreviousData && data?.hasMore) {
       queryClient.prefetchQuery({
         queryKey: ['experts', page + 1],
