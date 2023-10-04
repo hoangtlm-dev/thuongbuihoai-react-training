@@ -2,12 +2,12 @@ import { useMutation, useQuery, QueryClient } from "react-query";
 import { useState } from "react";
 import axios from "axios";
 
-const fetchUsers = async () => {
+export const fetchUsers = async () => {
     const response = await axios.get('https://63183dc9f6b281877c66cbe0.mockapi.io/api/experts');
     return response.data;
   }
 
-const createUser = async (newUser: string) => {
+export const createUser = async (newUser: string) => {
     const response = await axios.post('https://63183dc9f6b281877c66cbe0.mockapi.io/api/experts', newUser);
     return response.data;
 }
