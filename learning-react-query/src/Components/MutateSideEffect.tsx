@@ -43,7 +43,7 @@ const CRUDUserList = () => {
     }
 
     if (error) {
-      return <div>Error: {error.message}</div>;
+      return <div>Error: {(error as any).message}</div>;
     }
 
     return (
@@ -58,7 +58,7 @@ const CRUDUserList = () => {
         />
         <button onClick={handleAddUser}>Add User</button>
         <ul>
-          {data.map((user) => (
+          {data.map((user: any) => (
             <li>{user.name}</li>
           ))}
         </ul>

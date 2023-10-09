@@ -1,12 +1,9 @@
 import { useQuery } from 'react-query';
-import axios from 'axios';
+import { fetchUsers } from './MutateSideEffect';
 
 const UserList = () => {
   // Use useQuery to make GET requests and manage caching
-  const { data, error, isLoading } = useQuery(['experts', 1], async () => {
-    const response = await axios.get('https://63183dc9f6b281877c66cbe0.mockapi.io/api/experts');
-    return response.data;
-  });
+  const { data, error, isLoading } = useQuery('experts', fetchUsers);
 
   if (isLoading) {
     return <div>Loading...</div>;

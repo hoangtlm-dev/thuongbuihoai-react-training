@@ -7,6 +7,8 @@ import AddUser from './Components/AddUser'
 import CRUDUserList from './Components/MutateSideEffect'
 import BackgroundFetching from './Components/BackgroundFetching'
 import Pagination from './Components/Pagination'
+import InfiniteQuery from './Components/InfiniteQuery'
+import Mutations from './Components/Mutations'
 
 const App = () => {
   const queryClient = new QueryClient()
@@ -17,7 +19,9 @@ const App = () => {
       <AddUser />
       <CRUDUserList />
       <BackgroundFetching />
-      <Pagination />
+      {/* <Pagination /> */}
+      <InfiniteQuery />
+      <Mutations />
     </QueryClientProvider>
   )
 }
