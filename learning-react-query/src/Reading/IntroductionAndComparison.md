@@ -54,13 +54,3 @@ const mutation = useMutation({
 })
 ```
 - If mutations fail because the device is offline, they will be retried in the same order when the device reconnects.
-###### Query Invalidation
-- Waiting for queries to become stale before they are fetched again doesn't always work, especially when you know for a fact that a query's data is out of date because of something the user has done. For that purpose, the `QueryClient` has an `invalidateQueries` method that lets you intelligently mark queries as stale and potentially refetch them too!
-```
-// Invalidate every query in the cache
-  queryClient.invalidateQueries()
-// Invalidate every query with a key that starts with `todos`
-  queryClient.invalidateQueries({ queryKey: ['todos'] })
-```
-###### Query Matching with `invalidateQueries`
-- When using APIs like `invalidateQueries` and `removeQueries` (and others that support partial query matching), you can match multiple queries by their prefix, or get really specific and match an exact query
