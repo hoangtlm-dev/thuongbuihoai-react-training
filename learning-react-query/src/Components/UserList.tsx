@@ -1,9 +1,8 @@
-import { useQuery } from 'react-query';
-import { fetchUsers } from './MutateSideEffect';
+import { fetchData } from '../Helpers/useQuery';
 
 const UserList = () => {
   // Use useQuery to make GET requests and manage caching
-  const { data, error, isLoading } = useQuery('experts', fetchUsers);
+  const { data, error, isLoading } = fetchData();
 
   if (isLoading) {
     return <div>Loading...</div>;
