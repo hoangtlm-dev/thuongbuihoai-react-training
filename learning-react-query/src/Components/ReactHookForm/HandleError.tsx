@@ -9,6 +9,8 @@ const HandleError = () => {
   const onSubmit = (data: any) => console.log(data)
 
   return (
+    <>
+    <h2>Handle Error</h2>
     <form className="form-input" onSubmit={handleSubmit(onSubmit)}>
       <input
         {...register("firstName", { required: true })}
@@ -26,6 +28,7 @@ const HandleError = () => {
 
       <input type="submit" />
     </form>
+    </>
   )
 }
 
