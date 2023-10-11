@@ -156,3 +156,125 @@ register('test', { required: false });  // ✅
   handleSubmit(async (data) => await fetchAPI(data))
 ```
   - `handleSubmit` function will `not swallow errors` that occurred `inside your onSubmit callback`, so we recommend you to try and catch inside async request and handle those errors gracefully for your customers.
+
+### trigger
+- **"trigger"** is a function used to activate error checking of a field (field) or check the entire form (form) and return information about the errors of the fields.
+### control
+- This object contains methods for registering components into React Hook Form.
+- **Important**: do not access any of the properties inside this object directly. It's for internal usage only.
+### From
+```
+  <Form
+    action="/api"
+    method="post" // default to post
+    onSubmit={() => {}} // function to be called before the request
+    onSuccess={() => {}} // valid response
+    onError={() => {}} // error response
+    validateStatus={(status) => status >= 200} // validate status code
+  />
+```
+- **Rules**
+  - If want to prepare or omit submission data, please use handleSubmit or onSubmit.
+  ```
+    const { handleSubmit, control } = useForm();
+    const onSubmit =(data) => callback(prepareData(data))
+    <form onSubmit={handleSubmit(onSubmit)} />
+    // or
+    <Form
+      onSubmit={({ data }) => {
+        console.log(data)
+      }}
+    />
+  ```
+### useController
+- **(props?: UseControllerProps) => { field: object, fieldState: object, formState: object }**
+- This custom hook powers `Controller`. Additionally, it shares the same props and methods as Controller. It's useful for creating reusable Controlled input.
+- **Tips**
+  - It's important to be aware of each prop's responsibility when working with external controlled components, such as `MUI`, `AntD`, `Chakra UI`. Its job is to spy on the input, report, and set its value.
+    - `onChange`: send data back to hook form
+    - `onBlur`: report input has been interacted (focus and blur)
+    - `value`: set up input initial and updated value
+    - `ref`: allow input to be focused with error
+    - `name`: give input an unique name
+### useFormContext
+- This custom hook allows you to access the form context. `useFormContext` is intended to be used in deeply nested structures, where it would become inconvenient to pass the context as a prop.
+- This hook will return all the useForm return methods and props.
+```
+  const methods = useForm()
+  <FormProvider {...methods} /> // all the useForm return props
+  const methods = useFormContext() // retrieve those props
+```
+- **Rules:** ***You need to wrap your form with the `FormProvider` component for `useFormContext` to work properly.***
+### FormProvider
+- This component will host context object and allow consuming component to subscribe to context and use useForm props and methods.
+- **Rules:** ***Avoid using nested FormProvider***
+### useWatch
+- Behaves similarly to the watch API, however, this will isolate re-rendering at the custom hook level and potentially result in better performance for your application.
+- **Rules:**
+  - The initial return value from useWatch will always return what's inside of defaultValue or defaultValues from useForm.
+  - The only difference between `useWatch` and `watch` is at the root (useForm) level or the custom hook level update.
+  - useWatch's execution order matters, which means if you update a form value before the subscription is in place, then the value updated will be ignored.
+  ```
+  setValue("test", "data")
+  useWatch({ name: "test" }) // ❌ subscription is happened after value update, no update received
+  useWatch({ name: "example" }) // ✅ input value update will be received and trigger re-render
+  setValue("example", "data")
+  ```
+- Compare watch and useWatch
+  - **watch**:
+    - `watch` is a function provided by React Hook Form.
+    - You use `watch` outside of components to monitor the values of fields in the form.
+    - You pass the name of the field you want to watch to `watch`, and it returns the value of that field.
+    ```
+      const { watch } = useForm();
+      const fieldValue = watch("fieldName");
+    ```
+  - **useWatch**
+    - `useWatch` is a hook that you import from the React Hook Form library.
+    - You use `useWatch` inside functional components to monitor the values of fields.
+    - You provide control (the form control object) and the name of the field to `useWatch`.
+    - `useWatch` provides the ability to watch the value of a field without triggering the entire form to re-render when the value changes. This can help optimize performance and avoid unnecessary form re-renders.
+  - In summary, both `watch` and `useWatch` allow you to monitor the values of fields in a form, but `useWatch` is a hook that provides deeper integration and offers the ability to watch values without re-triggering the entire form.
+### useFormState
+- This custom hook allows you to subscribe to each form state, and isolate the re-render at the custom hook level.
+- It has its scope in terms of form state subscription, so it would not affect other useFormState and useForm.
+- Using this hook can reduce the re-render impact on large and complex form application.
+### ErrorMessage
+```
+npm install @hookform/error-message
+```
+### useFieldArray
+- Custom hook for working with Field Arrays (dynamic form). The motivation is to provide better user experience and performance
+- **Rules**
+  - `useFieldArray` automatically generates a unique identifier named id which is used for key prop.
+  ```
+  // ✅ correct:
+  {fields.map((field, index) => <input key={field.id} ... />)}
+
+  // ❌ incorrect:
+  {fields.map((field, index) => <input key={index} ... />)}
+  ```
+  - It's recommend to not stack actions one after another.
+  ```
+  onClick={() => {
+    append({ test: 'test' });
+    remove(0);
+  }}
+  // ✅ Better solution: the remove action is happened after the second render
+  React.useEffect(() => {
+    remove(0);
+  }, [remove])
+
+  onClick={() => {
+    append({ test: 'test' });
+  }}
+  ```
+- Typescript:
+  - When register input name, you will have to cast them as `const`
+  ```
+  <input key={field.id} {...register(`test.${index}.test` as const)} />
+  ```
+  - for nested field array, you will have to cast the field array by its name
+  ```
+  const { fields } = useFieldArray({ name: `test.${index}.keyValue` as 'test.0.keyValue' });
+  ```
