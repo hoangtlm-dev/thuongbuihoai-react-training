@@ -14,6 +14,16 @@ import SendData from './Components/ReactHookForm/SendData';
 import SchemaYup from './Components/ReactHookForm/SchemaYup';
 import Watch from './Components/ReactHookForm/Watch';
 import ResetField from './Components/ReactHookForm/ResetField';
+import SetError from './Components/ReactHookForm/SetError';
+import ServerError from './Components/ReactHookForm/ServerError';
+import Trigger from './Components/ReactHookForm/Trigger';
+import ExampleController from './Components/ReactHookForm/Controller';
+import ExampleUseWatch from './Components/ReactHookForm/UseWatch';
+import ExampleUseFormState from './Components/ReactHookForm/UseFormState';
+import ExampleErrorMessage from './Components/ReactHookForm/ErrorMessage';
+import ExampleUseFieldArray from './Components/ReactHookForm/UseFieldArray';
+import ExampleCounterStore from './Components/Zustand/CounterStore';
+import ExampleUpdateState from './Components/Zustand/UpdateState';
 
 const App = () => {
   const queryClient = new QueryClient()
@@ -36,6 +46,18 @@ const App = () => {
       <SchemaYup />
       <Watch />
       <ResetField />
+      <SetError />
+      <ServerError />
+      <Trigger />
+      <ExampleController />
+      <ExampleUseWatch />
+      <ExampleUseFormState />
+      <ExampleErrorMessage />
+      <ExampleUseFieldArray />
+
+      {/* Zustand */}
+      <ExampleCounterStore />
+      <ExampleUpdateState />
     </QueryClientProvider>
   )
 }
