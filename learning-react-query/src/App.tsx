@@ -24,6 +24,7 @@ import ExampleErrorMessage from './Components/ReactHookForm/ErrorMessage';
 import ExampleUseFieldArray from './Components/ReactHookForm/UseFieldArray';
 import ExampleCounterStore from './Components/Zustand/CounterStore';
 import ExampleUpdateState from './Components/Zustand/UpdateState';
+import RestState from './Components/Zustand/ResetState';
 
 const App = () => {
   const queryClient = new QueryClient()
@@ -58,6 +59,7 @@ const App = () => {
       {/* Zustand */}
       <ExampleCounterStore />
       <ExampleUpdateState />
+      <RestState />
     </QueryClientProvider>
   )
 }

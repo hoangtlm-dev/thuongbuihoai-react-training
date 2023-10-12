@@ -6,7 +6,7 @@ type CounterType = {
   decrement: () => void;
 }
 
-const useCounterStore = create<CounterType>((set) => ({
+export const useCounterStore = create<CounterType>()((set) => ({
   count: 0,
   increment: () => set(state => ({ count: state.count + 1 })),
   decrement: () => set(state => ({ count: state.count - 1 })),
@@ -16,7 +16,7 @@ const ExampleCounterStore = () => {
   const { count, increment, decrement } = useCounterStore();
 
   return (
-    <div>
+    <div data-testid="counter-store">
       <h2>Example with Zustand</h2>
       <p>Count: {count}</p>
       <button onClick={increment}>Increment</button>
