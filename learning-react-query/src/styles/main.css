@@ -1,0 +1,22 @@
+.expert-list {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.expert-item {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid gray;
+  width: 300px;
+}
+
+.expert-image {
+  border-radius: 50%;
+}
+
+.form-add-expert {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}

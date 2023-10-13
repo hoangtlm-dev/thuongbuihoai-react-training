@@ -35,7 +35,7 @@ const CRUDUserList = () => {
       const newUser = { name: newUserName };
 
       // Use mutate to create a new user.
-      await mutation.mutateAsync(newUser as any);
+      mutation.mutate(newUser as any);
     };
 
     if (isLoading) {

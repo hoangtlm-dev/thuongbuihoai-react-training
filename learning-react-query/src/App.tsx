@@ -25,12 +25,16 @@ import ExampleUseFieldArray from './Components/ReactHookForm/UseFieldArray';
 import ExampleCounterStore from './Components/Zustand/CounterStore';
 import ExampleUpdateState from './Components/Zustand/UpdateState';
 import RestState from './Components/Zustand/ResetState';
+import ExpertList from './example-crud-expert/components/ExpertList';
 
 const App = () => {
   const queryClient = new QueryClient()
 
   return (
     <QueryClientProvider client={queryClient}>
+      {/* Example management Expert List */}
+      <ExpertList />
+
       {/* React Query */}
       <UserList />
       <AddUser />
