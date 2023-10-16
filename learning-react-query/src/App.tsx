@@ -26,6 +26,7 @@ import ExampleCounterStore from './Components/Zustand/CounterStore';
 import ExampleUpdateState from './Components/Zustand/UpdateState';
 import RestState from './Components/Zustand/ResetState';
 import ExpertList from './example-crud-expert/components/ExpertList';
+import ProductList from './Components/SeeMore';
 
 const App = () => {
   const queryClient = new QueryClient()
@@ -36,16 +37,17 @@ const App = () => {
       <ExpertList />
 
       {/* React Query */}
-      <UserList />
-      <AddUser />
-      <CRUDUserList />
-      <BackgroundFetching />
+      {/* <UserList />
+      <AddUser /> */}
+      {/* <CRUDUserList /> */}
+      <ProductList />
+      {/* <BackgroundFetching /> */}
       {/* <Pagination /> */}
-      <InfiniteQuery />
-      <Mutations />
+      {/* <InfiniteQuery />
+      <Mutations /> */}
 
       {/* React Hook Form */}
-      <Input />
+      {/* <Input />
       <HandleError />
       <SendData />
       <SchemaYup />
@@ -58,12 +60,12 @@ const App = () => {
       <ExampleUseWatch />
       <ExampleUseFormState />
       <ExampleErrorMessage />
-      <ExampleUseFieldArray />
+      <ExampleUseFieldArray /> */}
 
       {/* Zustand */}
-      <ExampleCounterStore />
+      {/* <ExampleCounterStore />
       <ExampleUpdateState />
-      <RestState />
+      <RestState /> */}
     </QueryClientProvider>
   )
 }
