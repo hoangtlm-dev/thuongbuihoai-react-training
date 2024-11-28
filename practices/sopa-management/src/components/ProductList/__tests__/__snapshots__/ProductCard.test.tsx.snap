@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductList component matches snapshot 1`] = `
+<div>
+  <div
+    class="product-card"
+    data-testid="product-card"
+  >
+    <div
+      class="card"
+      data-testid="card"
+    >
+      <div
+        class="card-item"
+      >
+        <div
+          class="card-image"
+        >
+          <a
+            aria-label="link to home page"
+            data-testid="image-link"
+            href="/products/1"
+          >
+            <img
+              alt="This is black shoes"
+              class="card-image-item"
+              height="130"
+              sizes=""
+              src="/images/products/black-shoes.png"
+              width="322"
+            />
+          </a>
+        </div>
+        <div
+          class="card-info"
+        >
+          <a
+            aria-label="Black shoes"
+            class="card-name"
+            href="/products/1"
+          >
+            Black shoes
+          </a>
+          <div
+            class="card-description"
+          >
+            <p
+              class=" text-highlight-primary"
+              data-testid="text"
+            >
+              Black
+            </p>
+            <p
+              class=" price-primary"
+              data-testid="price"
+            >
+              $
+              87
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="card"
+      data-testid="card"
+    >
+      <div
+        class="card-item"
+      >
+        <div
+          class="card-image"
+        >
+          <a
+            aria-label="link to home page"
+            data-testid="image-link"
+            href="/products/2"
+          >
+            <img
+              alt="This is blue shoes"
+              class="card-image-item"
+              height="130"
+              sizes=""
+              src="/images/products/blue-shoes.png"
+              width="322"
+            />
+          </a>
+        </div>
+        <div
+          class="card-info"
+        >
+          <a
+            aria-label="Blue shoes"
+            class="card-name"
+            href="/products/2"
+          >
+            Blue shoes
+          </a>
+          <div
+            class="card-description"
+          >
+            <p
+              class=" text-highlight-primary"
+              data-testid="text"
+            >
+              Blue
+            </p>
+            <p
+              class=" price-primary"
+              data-testid="price"
+            >
+              $
+              45
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

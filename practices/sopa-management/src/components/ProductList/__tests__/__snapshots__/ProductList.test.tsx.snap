@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductList component matches snapshot 1`] = `
+<div>
+  <div
+    class="product"
+    data-testid="product"
+  >
+    <div
+      class="product-list"
+      data-testid="product-list"
+    />
+    <div
+      class="product-btn"
+    >
+      <button
+        aria-label="Show more"
+        class="product-item-btn btn btn-primary"
+        data-testid="button"
+      >
+        Show More
+      </button>
+    </div>
+  </div>
+</div>
+`;

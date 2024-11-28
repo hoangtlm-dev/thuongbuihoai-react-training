@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component matches snapshot 1`] = `
+<div>
+  <div
+    class="header"
+    data-testid="header"
+  >
+    <a
+      aria-label="link to home page"
+      data-testid="image-link"
+      href="/login"
+    >
+      <img
+        alt="/images/logos/black-logo.svg"
+        class=""
+        height="24"
+        sizes=""
+        src="/images/logos/black-logo.svg"
+        width="144"
+      />
+    </a>
+    <div
+      class="header-menu"
+    >
+      <div
+        class="menu"
+        data-testid="menu"
+      >
+        <ul
+          class="undefined menu-list-horizontal"
+        >
+          <li
+            class="menu-main-horizontal"
+          />
+          <li
+            class="undefined menu-item-horizontal"
+          >
+            <a
+              aria-label="Men"
+              href="/"
+            >
+              Men
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-horizontal"
+          >
+            <a
+              aria-label="Women"
+              href="/"
+            >
+              Women
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-horizontal"
+          >
+            <a
+              aria-label="Accessories"
+              href="/"
+            >
+              Accessories
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-horizontal"
+          >
+            <a
+              aria-label="About"
+              href="/"
+            >
+              About
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button
+        aria-label="Shoe Finder Quiz"
+        class=" btn btn-out-line-primary"
+        data-testid="button"
+      >
+        Shoe Finder Quiz
+      </button>
+    </div>
+    <div
+      class="header-support"
+    >
+      <p
+        class="header-text text-normal"
+        data-testid="text"
+      >
+        Support
+      </p>
+      <div
+        class="header-user account"
+        data-testid="logout"
+      >
+        <button
+          aria-label="User"
+          class=" btn btn-icon-primary"
+          data-testid="button"
+        >
+          <div
+            class="undefined icon-user"
+            data-testid="icon"
+          />
+        </button>
+      </div>
+      <button
+        aria-label="Shopping bag"
+        class="header-btn btn btn-icon-primary"
+        data-testid="button"
+      >
+        <div
+          class="undefined icon-bag"
+          data-testid="icon"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

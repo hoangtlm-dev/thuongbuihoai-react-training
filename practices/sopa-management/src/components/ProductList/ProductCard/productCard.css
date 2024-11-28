@@ -1,0 +1,7 @@
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: var(--w-extra-large);
+  justify-content: space-between;
+}

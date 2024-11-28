@@ -1,0 +1,55 @@
+.detail {
+  padding: var(--px-extra-normal) var(--py-medium);
+  margin: 0 auto;
+  width: var(--w-extra-large);
+  min-height: 100vh;
+}
+
+.detail-product {
+  display: flex;
+}
+
+.detail-image {
+  display: flex;
+  align-items: center;
+  min-width: var(--w-x-large);
+  height: var(--h-extra-large);
+  background-color: var(--bg-primary);
+  justify-content: center;
+}
+
+.detail-info {
+  margin-left: var(--m-large);
+}
+
+.detail-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--m-large);
+}
+
+.detail-size {
+  margin: var(--m-large) 0;
+}
+
+.detail-text-size {
+  margin-bottom: var(--m-regular);
+}
+
+.detail-rating {
+  display: flex;
+  align-items: center;
+  width: 192px;
+  justify-content: space-between;
+  margin-top: var(--m-normal);
+}
+
+.detail-btn {
+  margin: 0 0 var(--m-extra-medium) 1px;
+}
+
+.detail-description {
+  font-size: var(--text-extra-sm);
+  line-height: 22px;
+}

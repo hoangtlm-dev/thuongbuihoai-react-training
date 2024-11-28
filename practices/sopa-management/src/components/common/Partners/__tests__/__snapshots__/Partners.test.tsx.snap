@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Partners component matches snapshot 1`] = `
+<div>
+  <div
+    class="partners"
+    data-testid="partners"
+  >
+    <p
+      class="partners-heading text-medium"
+      data-testid="text"
+    >
+      “These are the most thoughtfully designed sneakers on the market.”
+    </p>
+    <div
+      class="partners-image"
+    >
+      <div
+        class="undefined icon-vogua"
+        data-testid="icon"
+      />
+      <div
+        class="undefined icon-esquire"
+        data-testid="icon"
+      />
+      <div
+        class="undefined icon-human"
+        data-testid="icon"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,42 @@
+.menu-list-horizontal {
+  display: flex;
+}
+
+.menu-item-horizontal {
+  list-style: none;
+  font-size: var(--text-sm);
+  margin-right: var(--m-extra-medium);
+}
+
+.menu-item-horizontal > a {
+  font-size: var(--text-extra-sm);
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.menu-main-vertical {
+  margin-bottom: var(--m-medium);
+}
+
+.menu-list-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item-vertical {
+  list-style: none;
+  font-size: var(--text-sm);
+  margin-bottom: var(--m-medium);
+}
+
+.menu-item-vertical > a,
+.menu-main-vertical {
+  font-size: var(--text-extra-sm);
+  text-decoration: none;
+  color: var(--light);
+}
+
+.menu-main-vertical {
+  font-size: var(--text-base);
+  font-weight: var(--font-medium);
+}

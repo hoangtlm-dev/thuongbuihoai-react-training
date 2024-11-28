@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login component matches snapshot 1`] = `
+<div>
+  <form
+    class="form"
+    data-testid="login"
+  >
+    <p
+      class=" text-extra-medium"
+      data-testid="text"
+    >
+      Login
+    </p>
+    <div
+      class="form-input"
+    >
+      <div
+        class="form-email"
+      >
+        <div
+          class="input-wrapper"
+          data-testid="input-value"
+        >
+          <label
+            class="label label-"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="input input-"
+            id="email"
+            name="email"
+            type=""
+          />
+        </div>
+      </div>
+      <div
+        class="form-password"
+      >
+        <div
+          class="input-wrapper"
+          data-testid="input-value"
+        >
+          <label
+            class="label label-"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="input input-"
+            id="password"
+            name="password"
+            type="password"
+          />
+        </div>
+      </div>
+      <button
+        aria-label="Login"
+        class=" btn btn-tertiary"
+        data-testid="button"
+        type="submit"
+      >
+        Login
+      </button>
+    </div>
+  </form>
+</div>
+`;

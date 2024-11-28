@@ -1,0 +1,97 @@
+.carousel {
+  position: relative;
+  width: var(--w-extra-large);
+  margin: var(--m-3xl) auto var(--m-extra-large);
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-info {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.carousel-heading {
+  color: var(--light);
+  font-family: 'var(--font-secondary)';
+  font-weight: var(--font-bold);
+  line-height: 74px;
+  margin-bottom: var(--m-xl);
+  width: 570px;
+}
+
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 1;
+}
+
+.carousel-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+  display: block;
+  border-radius: 16px;
+  width: 1170px;
+  height: 657px;
+}
+
+.carousel-control {
+  border-radius: 50%;
+  color: var(--light);
+  cursor: pointer;
+  display: none;
+  font-size: var(--text-medium);
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  margin: 0 var(--m-small);
+}
+
+.carousel-bullet {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--light);
+  margin: 0 1px var(--m-extra-normal);
+  cursor: pointer;
+}
+
+#carousel-1:checked ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--dark);
+}

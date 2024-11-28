@@ -1,0 +1,61 @@
+.counter {
+  position: relative;
+  border-radius: var(--rounded-secondary);
+  border: 1px solid var(--border-primary);
+  height: var(--h-normal);
+  width: var(--w-normal);
+}
+
+.counter-minus,
+.counter-minus-disable {
+  height: 44px;
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+}
+
+.counter-minus-disable {
+  cursor: not-allowed;
+}
+
+.counter-plus {
+  position: absolute;
+  top: 22px;
+  left: 121px;
+}
+
+.counter-minus:before,
+.counter-minus-disable:before,
+.counter-plus:before,
+.counter-plus:after {
+  content: '';
+  position: absolute;
+  background-color: var(--text-tertiary);
+  height: 2px;
+  width: 10px;
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  margin-left: -5px;
+}
+
+.counter-plus:after {
+  transform: rotate(90deg);
+}
+
+.counter-input {
+  position: absolute;
+  font-size: var(--text-base);
+  font-weight: var(--font-semi-bold);
+  border: none;
+  width: 50px;
+  left: 34%;
+  top: 10px;
+  text-align: center;
+}
+
+.counter-input::-webkit-outer-spin-button,
+.counter-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

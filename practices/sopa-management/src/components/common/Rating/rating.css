@@ -1,0 +1,37 @@
+.rating {
+  width: var(--w-extra-large);
+  margin: var(--m-8xl) auto;
+  text-align: center;
+}
+
+.rating-info {
+  width: 600px;
+  font-size: var(--text-regular);
+  margin: var(--m-xl) auto var(--m-2xl);
+}
+
+.rating-point {
+  font-size: 56px;
+  font-family: 'var(--font-secondary)';
+  font-weight: var(--font-bold);
+}
+
+.rating-vote,
+.rating-star {
+  display: flex;
+  width: 132px;
+  justify-content: space-between;
+}
+
+.rating-vote {
+  margin: var(--m-extra-medium) auto;
+}
+
+.rating-star {
+  margin-right: var(--m-normal);
+}
+
+.rating-review {
+  line-height: 18px;
+  margin-bottom: var(--m-xl);
+}

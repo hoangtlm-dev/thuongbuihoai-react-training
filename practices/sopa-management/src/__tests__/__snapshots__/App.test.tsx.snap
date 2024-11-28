@@ -1,0 +1,625 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="header"
+    data-testid="header"
+  >
+    <a
+      aria-label="link to home page"
+      data-testid="image-link"
+      href="/login"
+    >
+      <img
+        alt="/images/logos/black-logo.svg"
+        class=""
+        height="24"
+        sizes=""
+        src="/images/logos/black-logo.svg"
+        width="144"
+      />
+    </a>
+    <div
+      class="header-menu"
+    >
+      <div
+        class="menu"
+        data-testid="menu"
+      >
+        <ul
+          class="undefined menu-list-horizontal"
+        >
+          <li
+            class="menu-main-horizontal"
+          />
+          <li
+            class="undefined menu-item-horizontal"
+          >
+            <a
+              aria-label="Men"
+              href="/"
+            >
+              Men
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-horizontal"
+          >
+            <a
+              aria-label="Women"
+              href="/"
+            >
+              Women
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-horizontal"
+          >
+            <a
+              aria-label="Accessories"
+              href="/"
+            >
+              Accessories
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-horizontal"
+          >
+            <a
+              aria-label="About"
+              href="/"
+            >
+              About
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button
+        aria-label="Shoe Finder Quiz"
+        class=" btn btn-out-line-primary"
+        data-testid="button"
+      >
+        Shoe Finder Quiz
+      </button>
+    </div>
+    <div
+      class="header-support"
+    >
+      <p
+        class="header-text text-normal"
+        data-testid="text"
+      >
+        Support
+      </p>
+      <div
+        class="header-user account"
+        data-testid="logout"
+      >
+        <button
+          aria-label="User"
+          class=" btn btn-icon-primary"
+          data-testid="button"
+        >
+          <div
+            class="undefined icon-user"
+            data-testid="icon"
+          />
+        </button>
+      </div>
+      <button
+        aria-label="Shopping bag"
+        class="header-btn btn btn-icon-primary"
+        data-testid="button"
+      >
+        <div
+          class="undefined icon-bag"
+          data-testid="icon"
+        />
+      </button>
+    </div>
+  </div>
+  <div
+    class="carousel"
+    data-testid="carousel"
+  >
+    <div
+      class="carousel-inner"
+    >
+      <input
+        aria-hidden="true"
+        checked=""
+        class="carousel-open input input-"
+        data-testid="input"
+        hidden=""
+        id="carousel-1"
+        name="carousel"
+        type="radio"
+        value=""
+      />
+      <figure
+        class="carousel-item"
+      >
+        <img
+          alt="This is banner"
+          class=""
+          data-testid="image"
+          src="/images/banner.webp"
+        />
+      </figure>
+      <input
+        aria-hidden="true"
+        class="carousel-open input input-"
+        data-testid="input"
+        hidden=""
+        id="carousel-2"
+        name="carousel"
+        type="radio"
+        value=""
+      />
+      <figure
+        class="carousel-item"
+      >
+        <img
+          alt="This is banner"
+          class=""
+          data-testid="image"
+          src="/images/banner-2.webp"
+        />
+      </figure>
+      <input
+        aria-hidden="true"
+        class="carousel-open input input-"
+        data-testid="input"
+        hidden=""
+        id="carousel-3"
+        name="carousel"
+        type="radio"
+        value=""
+      />
+      <figure
+        class="carousel-item"
+      >
+        <img
+          alt="This is banner"
+          class=""
+          data-testid="image"
+          src="/images/banner.webp"
+        />
+      </figure>
+      <ul
+        class="carousel-indicators"
+      >
+        <li>
+          <label
+            class="carousel-bullet"
+            for="carousel-1"
+          />
+        </li>
+        <li>
+          <label
+            class="carousel-bullet"
+            for="carousel-2"
+          />
+        </li>
+        <li>
+          <label
+            class="carousel-bullet"
+            for="carousel-3"
+          />
+        </li>
+      </ul>
+    </div>
+    <div
+      class="carousel-info"
+    >
+      <p
+        class="carousel-heading text-large"
+        data-testid="text"
+      >
+        Step inside, for comfort and magic await you.
+      </p>
+      <button
+        aria-label="Show now"
+        class=" btn btn-primary"
+        data-testid="button"
+      >
+        Show now
+      </button>
+    </div>
+  </div>
+  <div
+    class="partners"
+    data-testid="partners"
+  >
+    <p
+      class="partners-heading text-medium"
+      data-testid="text"
+    >
+      “These are the most thoughtfully designed sneakers on the market.”
+    </p>
+    <div
+      class="partners-image"
+    >
+      <div
+        class="undefined icon-vogua"
+        data-testid="icon"
+      />
+      <div
+        class="undefined icon-esquire"
+        data-testid="icon"
+      />
+      <div
+        class="undefined icon-human"
+        data-testid="icon"
+      />
+    </div>
+  </div>
+  <div
+    class="product"
+    data-testid="product"
+  >
+    <div
+      class="loading-container"
+      data-testid="loading-page"
+    >
+      <div
+        class="circle"
+      />
+      <div
+        class="circle"
+      />
+      <div
+        class="circle"
+      />
+    </div>
+  </div>
+  <div
+    class="footer"
+    data-testid="footer"
+  >
+    <div
+      class="footer-content"
+    >
+      <div
+        class="footer-email"
+      >
+        <a
+          aria-label="link to home page"
+          data-testid="image-link"
+          href="/"
+        >
+          <img
+            alt="/images/logos/white-logo.svg"
+            class=""
+            height="36"
+            sizes=""
+            src="/images/logos/white-logo.svg"
+            width="180"
+          />
+        </a>
+        <p
+          class="footer-text text-light"
+          data-testid="text"
+        >
+          Stay informed about Sopa with our latest releases and founder news.
+        </p>
+        <button
+          aria-label="Enter email here for updates"
+          class=" btn btn-out-line-secondary"
+          data-testid="button"
+        >
+          Enter email here for updates
+        </button>
+      </div>
+      <div
+        class="menu"
+        data-testid="menu"
+      >
+        <ul
+          class="undefined menu-list-vertical"
+        >
+          <li
+            class="menu-main-vertical"
+          >
+            Products
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Model-000"
+              href="/"
+            >
+              Model-000
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Model-001"
+              href="/"
+            >
+              Model-001
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Laces"
+              href="/"
+            >
+              Laces
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Masks"
+              href="/"
+            >
+              Masks
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="No-show Socks"
+              href="/"
+            >
+              No-show Socks
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Crew Socks"
+              href="/"
+            >
+              Crew Socks
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Gift Cards"
+              href="/"
+            >
+              Gift Cards
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="menu"
+        data-testid="menu"
+      >
+        <ul
+          class="undefined menu-list-vertical"
+        >
+          <li
+            class="menu-main-vertical"
+          >
+            Support
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Help Center"
+              href="/"
+            >
+              Help Center
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="FAQs"
+              href="/"
+            >
+              FAQs
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Order"
+              href="/"
+            >
+              Order
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Order Status"
+              href="/"
+            >
+              Order Status
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Returns & Exchanges"
+              href="/"
+            >
+              Returns & Exchanges
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Contact Us"
+              href="/"
+            >
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="menu"
+        data-testid="menu"
+      >
+        <ul
+          class="undefined menu-list-vertical"
+        >
+          <li
+            class="menu-main-vertical"
+          >
+            Everything Else
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Community"
+              href="/"
+            >
+              Community
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Why Sopa"
+              href="/"
+            >
+              Why Sopa
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="About"
+              href="/"
+            >
+              About
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Discount Program"
+              href="/"
+            >
+              Discount Program
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Sopa Blog"
+              href="/"
+            >
+              Sopa Blog
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Sopa Ambassadors"
+              href="/"
+            >
+              Sopa Ambassadors
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="footer-social"
+      >
+        <ul
+          class="social-list"
+          data-testid="social"
+        >
+          <li
+            class="social-item"
+          >
+            <a
+              aria-label="link to twitter"
+              class="social-link"
+              href="https://twitter.com"
+              title="twitter"
+            >
+              <div
+                class="undefined icon-twitter"
+                data-testid="icon"
+              />
+            </a>
+            <p
+              class=" text-light"
+              data-testid="text"
+            >
+              Twitter
+            </p>
+          </li>
+          <li
+            class="social-item"
+          >
+            <a
+              aria-label="link to instagram"
+              class="social-link"
+              href="https://instagram.com"
+              title="instagram"
+            >
+              <div
+                class="undefined icon-instagram"
+                data-testid="icon"
+              />
+            </a>
+            <p
+              class=" text-light"
+              data-testid="text"
+            >
+              Instagram
+            </p>
+          </li>
+          <li
+            class="social-item"
+          >
+            <a
+              aria-label="link to facebook"
+              class="social-link"
+              href="https://facebook.com"
+              title="facebook"
+            >
+              <div
+                class="undefined icon-facebook"
+                data-testid="icon"
+              />
+            </a>
+            <p
+              class=" text-light"
+              data-testid="text"
+            >
+              Facebook
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div
+    style="position: fixed; z-index: 9999; top: 16px; left: 16px; right: 16px; bottom: 16px; pointer-events: none;"
+  />
+</DocumentFragment>
+`;

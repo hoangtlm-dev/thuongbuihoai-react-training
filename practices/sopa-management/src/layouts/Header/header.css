@@ -1,0 +1,27 @@
+.header {
+  width: var(--w-extra-large);
+  margin: var(--m-medium) auto 0;
+  position: relative;
+}
+
+.header,
+.header-menu,
+.header-support {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-user {
+  position: absolute;
+  top: 3px;
+  left: 93%;
+}
+
+.header-btn {
+  margin-left: var(--m-regular);
+}
+
+.header-text {
+  margin-right: var(--m-3xl);
+}

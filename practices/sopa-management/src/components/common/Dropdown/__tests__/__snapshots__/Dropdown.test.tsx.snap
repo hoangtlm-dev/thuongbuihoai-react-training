@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class=" custom-dropdown"
+    data-testid="dropdown"
+  >
+    <p
+      class="dropdown-label text-"
+      data-testid="text"
+    >
+      Sopa
+    </p>
+  </div>
+</DocumentFragment>
+`;

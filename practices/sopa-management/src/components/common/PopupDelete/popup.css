@@ -1,0 +1,29 @@
+.popup {
+  position: absolute;
+  background-color: var(--light);
+  border-radius: var(--rounded-primary);
+  padding: var(--px-extra-normal);
+  top: 40%;
+  right: var(--w-extra-large);
+  width: 245px;
+}
+
+.popup-btn {
+  text-align: center;
+  margin-top: var(--m-large);
+}
+
+.popup-cancel,
+.popup-delete {
+  padding: 10px 20px;
+  border: none;
+  border-radius:  var(--rounded-tertiary);
+}
+
+.popup-cancel {
+  margin-right: var(--m-extra-small);
+}
+
+.popup-delete {
+  background-color: var(--text-primary);
+}

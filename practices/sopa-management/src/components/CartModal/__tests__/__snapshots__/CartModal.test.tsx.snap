@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal component Matches snapshot 1`] = `
+<div>
+  <div
+    class="overlay"
+    data-testid="cart-modal"
+  >
+    <div
+      class="cart"
+    >
+      <div
+        class="cart-header"
+      >
+        <p
+          class="cart-text text-"
+          data-testid="text"
+        >
+          Cart
+        </p>
+        <button
+          aria-label="Close"
+          class=" btn btn-icon-primary"
+          data-testid="button"
+        >
+          <div
+            class="undefined icon-close"
+            data-testid="icon"
+          />
+        </button>
+      </div>
+      <div
+        class="card-body"
+      >
+        <div
+          class="cart-item"
+          data-testid="cart-item"
+        >
+          <div
+            class="cart-info"
+          >
+            <div
+              class="cart-image"
+            >
+              <img
+                alt="This is black shoes"
+                class="cart-image-item"
+                data-testid="image"
+                src="/images/products/black-shoes.png"
+              />
+            </div>
+            <div
+              class="cart-description"
+            >
+              <p
+                class="cart-text text-"
+                data-testid="text"
+              >
+                Black shoes
+              </p>
+              <p
+                class="cart-color text-highlight-primary"
+                data-testid="text"
+              >
+                Color: Black
+              </p>
+              <p
+                class="cart-size text-highlight-primary"
+                data-testid="text"
+              >
+                Size: Small
+              </p>
+              <div
+                class="card-quantity"
+              >
+                <div
+                  class="counter"
+                  data-testid="counter"
+                >
+                  <button
+                    aria-label="Decrement"
+                    class="counter-minus btn btn-icon-primary"
+                    data-testid="button"
+                  />
+                  <input
+                    aria-hidden="true"
+                    class=" counter-input input-"
+                    data-testid="input"
+                    id=""
+                    name=""
+                    type="number"
+                    value="2"
+                  />
+                  <button
+                    aria-label="Increment"
+                    class="counter-plus btn btn-icon-primary"
+                    data-testid="button"
+                  />
+                </div>
+                <button
+                  aria-label="Trash"
+                  class="cart-btn btn btn-icon-secondary"
+                  data-testid="button"
+                >
+                  <div
+                    class="undefined icon-trash"
+                    data-testid="icon"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <p
+            class="cart-price price-tertiary"
+            data-testid="price"
+          >
+            $
+            87
+          </p>
+        </div>
+        <div
+          class="cart-item"
+          data-testid="cart-item"
+        >
+          <div
+            class="cart-info"
+          >
+            <div
+              class="cart-image"
+            >
+              <img
+                alt="This is blue shoes"
+                class="cart-image-item"
+                data-testid="image"
+                src="/images/products/blue-shoes.png"
+              />
+            </div>
+            <div
+              class="cart-description"
+            >
+              <p
+                class="cart-text text-"
+                data-testid="text"
+              >
+                Blue shoes
+              </p>
+              <p
+                class="cart-color text-highlight-primary"
+                data-testid="text"
+              >
+                Color: Blue
+              </p>
+              <p
+                class="cart-size text-highlight-primary"
+                data-testid="text"
+              >
+                Size: Medium
+              </p>
+              <div
+                class="card-quantity"
+              >
+                <div
+                  class="counter"
+                  data-testid="counter"
+                >
+                  <button
+                    aria-label="Decrement"
+                    class="counter-minus-disable btn btn-icon-primary"
+                    data-testid="button"
+                    disabled=""
+                  />
+                  <input
+                    aria-hidden="true"
+                    class=" counter-input input-"
+                    data-testid="input"
+                    id=""
+                    name=""
+                    type="number"
+                    value="1"
+                  />
+                  <button
+                    aria-label="Increment"
+                    class="counter-plus btn btn-icon-primary"
+                    data-testid="button"
+                  />
+                </div>
+                <button
+                  aria-label="Trash"
+                  class="cart-btn btn btn-icon-secondary"
+                  data-testid="button"
+                >
+                  <div
+                    class="undefined icon-trash"
+                    data-testid="icon"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <p
+            class="cart-price price-tertiary"
+            data-testid="price"
+          >
+            $
+            45
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div
+        class="cart-footer"
+      >
+        <p
+          class="cart-text text-"
+          data-testid="text"
+        >
+          Subtotal
+        </p>
+        <p
+          class=" price-tertiary"
+          data-testid="price"
+        >
+          $
+          219
+        </p>
+      </div>
+      <button
+        aria-label=""
+        class="cart-disable btn btn-"
+        data-testid="button"
+        disabled=""
+      >
+        Update
+      </button>
+    </div>
+  </div>
+</div>
+`;

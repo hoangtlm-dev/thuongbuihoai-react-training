@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component Matches snapshot 1`] = `
+<div>
+  <button
+    aria-label=""
+    class=" btn btn-"
+    data-testid="button"
+  >
+    SHOW MORE
+  </button>
+</div>
+`;

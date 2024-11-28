@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Social component matches snapshot 1`] = `
+<DocumentFragment>
+  <ul
+    class="social-list"
+    data-testid="social"
+  >
+    <li
+      class="social-item"
+    >
+      <a
+        aria-label="link to twitter"
+        class="social-link"
+        href="https://twitter.com"
+        title="twitter"
+      >
+        <div
+          class="undefined icon-twitter"
+          data-testid="icon"
+        />
+      </a>
+      <p
+        class=" text-light"
+        data-testid="text"
+      >
+        Twitter
+      </p>
+    </li>
+    <li
+      class="social-item"
+    >
+      <a
+        aria-label="link to instagram"
+        class="social-link"
+        href="https://instagram.com"
+        title="instagram"
+      >
+        <div
+          class="undefined icon-instagram"
+          data-testid="icon"
+        />
+      </a>
+      <p
+        class=" text-light"
+        data-testid="text"
+      >
+        Instagram
+      </p>
+    </li>
+    <li
+      class="social-item"
+    >
+      <a
+        aria-label="link to facebook"
+        class="social-link"
+        href="https://facebook.com"
+        title="facebook"
+      >
+        <div
+          class="undefined icon-facebook"
+          data-testid="icon"
+        />
+      </a>
+      <p
+        class=" text-light"
+        data-testid="text"
+      >
+        Facebook
+      </p>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

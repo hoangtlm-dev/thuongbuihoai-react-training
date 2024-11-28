@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rating component matches snapshot 1`] = `
+<div>
+  <div
+    class="rating"
+    data-testid="rating"
+  >
+    <p
+      class=" text-extra-medium"
+      data-testid="text"
+    >
+      Ratings and Reviews
+    </p>
+    <p
+      class="rating-info text-regular"
+      data-testid="text"
+    >
+      An overwhelming 97% of reviewers have endorsed this product, recommending it wholeheartedly to their friends and family.
+    </p>
+    <p
+      class="rating-point text-large"
+      data-testid="text"
+    >
+      4.7
+    </p>
+    <div
+      class="rating-review"
+    >
+      <div
+        class="rating-vote"
+        data-testid="rating-star"
+      >
+        <div
+          class="undefined icon-star"
+          data-testid="icon"
+        />
+        <div
+          class="undefined icon-star"
+          data-testid="icon"
+        />
+        <div
+          class="undefined icon-star"
+          data-testid="icon"
+        />
+        <div
+          class="undefined icon-star"
+          data-testid="icon"
+        />
+        <div
+          class="undefined icon-star"
+          data-testid="icon"
+        />
+      </div>
+      <p
+        class=" text-normal"
+        data-testid="text"
+      >
+        Based on 3,205 reviews
+      </p>
+    </div>
+    <hr />
+  </div>
+</div>
+`;

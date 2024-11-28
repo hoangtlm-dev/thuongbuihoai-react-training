@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductDetail component matches snapshot 1`] = `
+<div>
+  <div
+    class="detail"
+    data-testid="detail"
+  >
+    <div
+      class="detail-product"
+      data-testid="product-detail"
+    >
+      <div
+        class="detail-image"
+      >
+        <img
+          alt="This is black shoes"
+          src="/images/products/black-shoes.png"
+        />
+      </div>
+      <div
+        class="detail-info"
+      >
+        <div
+          class="detail-name"
+        >
+          <div
+            class="detail-description"
+          >
+            <p
+              class=" text-regular"
+              data-testid="text"
+            >
+              Black shoes
+            </p>
+            <div
+              class="detail-rating"
+            >
+              <div
+                class="rating-star"
+                data-testid="rating-star"
+              >
+                <div
+                  class="undefined icon-star"
+                  data-testid="icon"
+                />
+                <div
+                  class="undefined icon-star"
+                  data-testid="icon"
+                />
+                <div
+                  class="undefined icon-star"
+                  data-testid="icon"
+                />
+                <div
+                  class="undefined icon-star"
+                  data-testid="icon"
+                />
+                <div
+                  class="undefined icon-star"
+                  data-testid="icon"
+                />
+              </div>
+              <p
+                class=" text-normal"
+                data-testid="text"
+              >
+                4.7(3205)
+              </p>
+            </div>
+          </div>
+          <p
+            class=" price-tertiary"
+            data-testid="price"
+          >
+            $
+            87
+          </p>
+        </div>
+        <p
+          class=" text-extra-regular"
+          data-testid="text"
+        >
+          Color: Black
+        </p>
+        <div
+          class="detail-size"
+        >
+          <p
+            class="detail-text-size text-extra-regular"
+            data-testid="text"
+          >
+            Size
+          </p>
+          <div
+            class=" custom-dropdown"
+            data-testid="dropdown"
+          >
+            <p
+              class="dropdown-label text-"
+              data-testid="text"
+            >
+              Large
+            </p>
+          </div>
+        </div>
+        <button
+          aria-label="Add to bag"
+          class="detail-btn btn btn-secondary"
+          data-testid="button"
+        >
+          Add to bag $87
+        </button>
+        <p
+          class="detail-description text-"
+          data-testid="text"
+        >
+          Our goal in designing the super-soft Atoms Crew Socks was to provide a seamless match with your Atoms shoes, enhancing your comfort for everyday wear - making them the perfect socks for your everyday shoes.
+        </p>
+      </div>
+    </div>
+    <div
+      class="rating"
+      data-testid="rating"
+    >
+      <p
+        class=" text-extra-medium"
+        data-testid="text"
+      >
+        Ratings and Reviews
+      </p>
+      <p
+        class="rating-info text-regular"
+        data-testid="text"
+      >
+        An overwhelming 97% of reviewers have endorsed this product, recommending it wholeheartedly to their friends and family.
+      </p>
+      <p
+        class="rating-point text-large"
+        data-testid="text"
+      >
+        4.7
+      </p>
+      <div
+        class="rating-review"
+      >
+        <div
+          class="rating-vote"
+          data-testid="rating-star"
+        >
+          <div
+            class="undefined icon-star"
+            data-testid="icon"
+          />
+          <div
+            class="undefined icon-star"
+            data-testid="icon"
+          />
+          <div
+            class="undefined icon-star"
+            data-testid="icon"
+          />
+          <div
+            class="undefined icon-star"
+            data-testid="icon"
+          />
+          <div
+            class="undefined icon-star"
+            data-testid="icon"
+          />
+        </div>
+        <p
+          class=" text-normal"
+          data-testid="text"
+        >
+          Based on 3,205 reviews
+        </p>
+      </div>
+      <hr />
+    </div>
+  </div>
+</div>
+`;

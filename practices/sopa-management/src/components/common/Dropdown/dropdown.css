@@ -1,0 +1,58 @@
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  width: var(--w-medium);
+  border-radius: var(--rounded-tiny);
+  border: 1px solid var(--border-primary);
+}
+
+.dropdown-label,
+.custom-dropdown > a[role="button"],
+.custom-dropdown > .dropdown-link {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: var(--rounded-tiny);
+}
+
+.dropdown-label:after,
+.custom-dropdown > a[role="button"]:after {
+  content: '';
+  position: absolute;
+  left: 335px;
+  top: 40%;
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-image: url(../../../assets/icons/arrow.svg);
+}
+
+.dropdown-list {
+  position: absolute;
+  list-style: none;
+  border-radius: var(--rounded-tiny);
+  margin-top: var(--m-tiny);
+  z-index: 1;
+  width: 100%;
+  background: var(--light);
+  border: 1px solid var(--border-primary);
+  padding: 3px 0;
+}
+
+.dropdown-option {
+  display: block;
+  padding: var(--p-tiny) var(--py-extra-base);
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.dropdown-option:hover,
+.dropdown-option:focus {
+  background: var(--border-primary);
+  cursor: pointer;
+}
+
+.dropdown-link {
+  color: var(--dark);
+}

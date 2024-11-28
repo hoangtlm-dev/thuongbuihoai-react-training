@@ -1,0 +1,78 @@
+.icon-close,
+.icon-facebook,
+.icon-instagram,
+.icon-twitter,
+.icon-bag,
+.icon-user,
+.icon-esquire,
+.icon-vogua,
+.icon-human,
+.icon-trash,
+.icon-star {
+  display: inline-block;
+}
+
+
+.icon-close,
+.icon-facebook,
+.icon-instagram,
+.icon-twitter,
+.icon-bag,
+.icon-user {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-close {
+  background-image: url(../../../assets/icons/close.svg);
+}
+
+.icon-facebook {
+  background-image: url(../../../assets/icons/facebook.svg);
+}
+
+.icon-instagram {
+  background-image: url(../../../assets/icons/instagram.svg);
+}
+
+.icon-twitter {
+  background-image: url(../../../assets/icons/twitter.svg);
+}
+
+.icon-bag {
+  background-image: url(../../../assets/icons/shopping-bag.svg);
+}
+
+.icon-user {
+  background-image: url(../../../assets/icons/user.svg);
+}
+
+.icon-esquire {
+  width: 247px;
+  height: 67px;
+  background-image: url(../../../assets/icons/esquire.svg);
+}
+
+.icon-vogua {
+  width: 224px;
+  height: 58px;
+  background-image: url(../../../assets/icons/vogua.svg);
+}
+
+.icon-human {
+  width: 112px;
+  height: 40px;
+  background-image: url(../../../assets/icons/humans-of-new-york.svg);
+}
+
+.icon-trash {
+  width: 20px;
+  height: 20px;
+  background-image: url(../../../assets/icons/trash.svg);
+}
+
+.icon-star {
+  width: 16px;
+  height: 16px;
+  background-image: url(../../../assets/icons/star.svg);
+}

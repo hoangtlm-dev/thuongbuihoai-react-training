@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carousel component matches snapshot 1`] = `
+<div>
+  <div
+    class="carousel"
+    data-testid="carousel"
+  >
+    <div
+      class="carousel-inner"
+    >
+      <input
+        aria-hidden="true"
+        checked=""
+        class="carousel-open input input-"
+        data-testid="input"
+        hidden=""
+        id="carousel-1"
+        name="carousel"
+        type="radio"
+        value=""
+      />
+      <figure
+        class="carousel-item"
+      >
+        <img
+          alt="This is banner"
+          class=""
+          data-testid="image"
+          src="/images/banner.webp"
+        />
+      </figure>
+      <input
+        aria-hidden="true"
+        class="carousel-open input input-"
+        data-testid="input"
+        hidden=""
+        id="carousel-2"
+        name="carousel"
+        type="radio"
+        value=""
+      />
+      <figure
+        class="carousel-item"
+      >
+        <img
+          alt="This is banner"
+          class=""
+          data-testid="image"
+          src="/images/banner-2.webp"
+        />
+      </figure>
+      <input
+        aria-hidden="true"
+        class="carousel-open input input-"
+        data-testid="input"
+        hidden=""
+        id="carousel-3"
+        name="carousel"
+        type="radio"
+        value=""
+      />
+      <figure
+        class="carousel-item"
+      >
+        <img
+          alt="This is banner"
+          class=""
+          data-testid="image"
+          src="/images/banner.webp"
+        />
+      </figure>
+      <ul
+        class="carousel-indicators"
+      >
+        <li>
+          <label
+            class="carousel-bullet"
+            for="carousel-1"
+          />
+        </li>
+        <li>
+          <label
+            class="carousel-bullet"
+            for="carousel-2"
+          />
+        </li>
+        <li>
+          <label
+            class="carousel-bullet"
+            for="carousel-3"
+          />
+        </li>
+      </ul>
+    </div>
+    <div
+      class="carousel-info"
+    >
+      <p
+        class="carousel-heading text-large"
+        data-testid="text"
+      >
+        Step inside, for comfort and magic await you.
+      </p>
+      <button
+        aria-label="Show now"
+        class=" btn btn-primary"
+        data-testid="button"
+      >
+        Show now
+      </button>
+    </div>
+  </div>
+</div>
+`;

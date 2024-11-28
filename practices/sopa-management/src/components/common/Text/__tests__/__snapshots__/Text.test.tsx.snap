@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text component Matches snapshot 1`] = `
+<div>
+  <p
+    class=" text-normal"
+    data-testid="text"
+  >
+    Sopa Management
+  </p>
+</div>
+`;

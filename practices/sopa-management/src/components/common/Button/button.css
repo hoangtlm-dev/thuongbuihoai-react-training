@@ -1,0 +1,57 @@
+.btn {
+  cursor: pointer;
+}
+
+.btn-primary {
+  padding: var(--px-normal) 0;
+  width: 181px;
+  background-color: var(--text-primary);
+  border-radius:  var(--rounded-tertiary);
+  border: none;
+}
+
+.btn-secondary,
+.btn-tertiary {
+  background-color: var(--dark);
+  border-radius: var(--rounded-tertiary);
+  color: var(--light);
+  padding: var(--px-normal) 0;
+  width: var(--w-medium);
+  border: none;
+}
+
+.btn-tertiary {
+  width: var(--w-large);
+  padding: var(--px-normal) 0;
+}
+
+.btn-icon-primary {
+  background-color: transparent;
+  border: none;
+}
+
+.btn-icon-secondary {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--border-primary);
+  padding: 0 var(--px-base);
+}
+
+.btn-out-line-primary {
+  width: var(--w-normal);
+  padding: var(--p-extra-small) 0;
+  border-radius: var(--rounded-secondary);
+  color: var(--text-quaternary);
+  border: 1px solid var(--text-quaternary);
+  background: var(--light);
+}
+
+.btn-out-line-secondary {
+  width: var(--w-extra-normal);
+  padding: var(--px-base) 0;
+  border-radius: var(--rounded-tertiary);
+  border: 1px solid var(--light);
+  color: var(--light);
+  background: transparent;
+  font-size: var(--text-extra-sm);
+}

@@ -1,0 +1,109 @@
+:root {
+  /* Text color */
+  --light: #fff;
+  --dark: #02021d;
+
+  --text-primary: #c1f651;
+  --text-secondary: #696969;
+  --text-tertiary: #75869c;
+  --text-quaternary: #276426;
+
+  /* Font size */
+  --text-sm: 14px;
+  --text-extra-sm: 16px;
+  --text-regular: 18px;
+  --text-base: 20px;
+  --text-extra-base: 24px;
+  --text-medium: 40px;
+  --text-extra-medium: 48px;
+  --text-large: 66px;
+
+  /* Fonts */
+  --font-primary: 'rubik';
+  --font-secondary: 'notoSerifLao';
+
+  /* Font weight */
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /* Line height */
+  --leading-primary: 24px;
+  --leading-secondary: 46px;
+  --leading-tertiary: 56px;
+  --leading-quaternary: 74px;
+
+  /* Border color */
+  --border-primary: #e3e5ed;
+  --border-secondary: #3184ff;
+  --border-tertiary: #f14e2e;
+
+  /* Background color */
+  --bg-primary: #f2f2f2;
+  --bg-secondary: rgba(2, 2, 29, 0.4);
+
+  /* Border radius */
+  --rounded-tiny: 8px;
+  --rounded-primary: 16px;
+  --rounded-secondary: 24px;
+  --rounded-tertiary: 32px;
+
+  /* Padding */
+  --p-tiny: 5px;
+  --p-small: 9px;
+  --p-extra-small: 10px;
+  --p-base: 11px;
+  --px-base: 13px;
+  --py-extra-base: 15px;
+  --px-normal: 20px;
+  --px-extra-normal: 40px;
+  --px-medium: 80px;
+  --py-normal: 24px;
+  --py-extra-normal: 35px;
+  --py-base: 100px;
+  --py-medium: 135px;
+
+  /* Margin */
+  --m-tiny: 3px;
+  --m-small: 4px;
+  --m-extra-small: 5px;
+  --m-normal: 8px;
+  --m-extra-normal: 10px;
+  --m-regular: 12px;
+  --m-extra-regular: 16px;
+  --m-medium: 20px;
+  --m-extra-medium: 24px;
+  --m-large: 30px;
+  --m-extra-large: 32px;
+  --m-xl: 40px;
+  --m-2xl: 48px;
+  --m-3xl: 50px;
+  --m-4xl: 60px;
+  --m-5xl: 80px;
+  --m-5xl: 90px;
+  --m-7xl: 110px;
+  --m-8xl: 160px;
+
+  /* Width */
+  --w-tiny: 20px;
+  --w-small: 24px;
+  --w-extra-small: 130px;
+  --w-normal: 149px;
+  --w-extra-normal: 320px;
+  --w-base: 322px;
+  --w-medium: 370px;
+  --w-extra-medium: 450px;
+  --w-large: 470px;
+  --w-xs-large: 605px;
+  --w-x-large: 770px;
+  --w-extra-large: 1170px;
+
+  /* Height */
+  --h-tiny: 20px;
+  --h-small: 24px;
+  --h-normal: 46px;
+  --h-extra-normal: 130px;
+  --h-medium: 398px;
+  --h-large: 502px;
+  --h-extra-large: 588px;
+}

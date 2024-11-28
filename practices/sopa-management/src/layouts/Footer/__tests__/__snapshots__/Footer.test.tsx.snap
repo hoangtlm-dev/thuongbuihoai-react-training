@@ -1,0 +1,350 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component matches snapshot 1`] = `
+<div>
+  <div
+    class="footer"
+    data-testid="footer"
+  >
+    <div
+      class="footer-content"
+    >
+      <div
+        class="footer-email"
+      >
+        <a
+          aria-label="link to home page"
+          data-testid="image-link"
+          href="/"
+        >
+          <img
+            alt="/images/logos/white-logo.svg"
+            class=""
+            height="36"
+            sizes=""
+            src="/images/logos/white-logo.svg"
+            width="180"
+          />
+        </a>
+        <p
+          class="footer-text text-light"
+          data-testid="text"
+        >
+          Stay informed about Sopa with our latest releases and founder news.
+        </p>
+        <button
+          aria-label="Enter email here for updates"
+          class=" btn btn-out-line-secondary"
+          data-testid="button"
+        >
+          Enter email here for updates
+        </button>
+      </div>
+      <div
+        class="menu"
+        data-testid="menu"
+      >
+        <ul
+          class="undefined menu-list-vertical"
+        >
+          <li
+            class="menu-main-vertical"
+          >
+            Products
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Model-000"
+              href="/"
+            >
+              Model-000
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Model-001"
+              href="/"
+            >
+              Model-001
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Laces"
+              href="/"
+            >
+              Laces
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Masks"
+              href="/"
+            >
+              Masks
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="No-show Socks"
+              href="/"
+            >
+              No-show Socks
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Crew Socks"
+              href="/"
+            >
+              Crew Socks
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Gift Cards"
+              href="/"
+            >
+              Gift Cards
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="menu"
+        data-testid="menu"
+      >
+        <ul
+          class="undefined menu-list-vertical"
+        >
+          <li
+            class="menu-main-vertical"
+          >
+            Support
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Help Center"
+              href="/"
+            >
+              Help Center
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="FAQs"
+              href="/"
+            >
+              FAQs
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Order"
+              href="/"
+            >
+              Order
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Order Status"
+              href="/"
+            >
+              Order Status
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Returns & Exchanges"
+              href="/"
+            >
+              Returns & Exchanges
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Contact Us"
+              href="/"
+            >
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="menu"
+        data-testid="menu"
+      >
+        <ul
+          class="undefined menu-list-vertical"
+        >
+          <li
+            class="menu-main-vertical"
+          >
+            Everything Else
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Community"
+              href="/"
+            >
+              Community
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Why Sopa"
+              href="/"
+            >
+              Why Sopa
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="About"
+              href="/"
+            >
+              About
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Discount Program"
+              href="/"
+            >
+              Discount Program
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Sopa Blog"
+              href="/"
+            >
+              Sopa Blog
+            </a>
+          </li>
+          <li
+            class="undefined menu-item-vertical"
+          >
+            <a
+              aria-label="Sopa Ambassadors"
+              href="/"
+            >
+              Sopa Ambassadors
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="footer-social"
+      >
+        <ul
+          class="social-list"
+          data-testid="social"
+        >
+          <li
+            class="social-item"
+          >
+            <a
+              aria-label="link to twitter"
+              class="social-link"
+              href="https://twitter.com"
+              title="twitter"
+            >
+              <div
+                class="undefined icon-twitter"
+                data-testid="icon"
+              />
+            </a>
+            <p
+              class=" text-light"
+              data-testid="text"
+            >
+              Twitter
+            </p>
+          </li>
+          <li
+            class="social-item"
+          >
+            <a
+              aria-label="link to instagram"
+              class="social-link"
+              href="https://instagram.com"
+              title="instagram"
+            >
+              <div
+                class="undefined icon-instagram"
+                data-testid="icon"
+              />
+            </a>
+            <p
+              class=" text-light"
+              data-testid="text"
+            >
+              Instagram
+            </p>
+          </li>
+          <li
+            class="social-item"
+          >
+            <a
+              aria-label="link to facebook"
+              class="social-link"
+              href="https://facebook.com"
+              title="facebook"
+            >
+              <div
+                class="undefined icon-facebook"
+                data-testid="icon"
+              />
+            </a>
+            <p
+              class=" text-light"
+              data-testid="text"
+            >
+              Facebook
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;

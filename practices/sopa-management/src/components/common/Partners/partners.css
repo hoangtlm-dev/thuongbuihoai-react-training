@@ -1,0 +1,21 @@
+.partners {
+  width: 970px;
+  margin: var(--m-5xl) auto;
+  padding: var(--px-medium) var(--py-base);
+  text-align: center;
+  border-radius: var(--rounded-secondary);
+  background: var(--bg-primary);
+}
+
+.partners-heading {
+  width: 780px;
+  margin: 0 auto var(--m-4xl);
+  font-family: 'var(--font-secondary)';
+  font-weight: var(--font-bold);
+  line-height: var(--leading-secondary);
+}
+
+.partners-image {
+  display: flex;
+  justify-content: space-between;
+}

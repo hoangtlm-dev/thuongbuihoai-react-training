@@ -1,0 +1,25 @@
+.footer {
+  background-color: var(--dark);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--px-medium) var(--py-medium);
+  margin: 0 auto;
+  width: var(--w-extra-large);
+}
+
+.footer-email {
+  margin-top: var(--m-extra-regular);
+  width: var(--w-base);
+}
+
+.footer-text {
+  margin: var(--m-xl) 0 var(--m-large);
+  line-height: var(--leading-primary);
+}
+
+.footer-social {
+  margin-top: var(--m-5xl);
+}

@@ -1,0 +1,12 @@
+.product {
+  padding: var(--px-medium) var(--py-medium);
+}
+
+.product-btn {
+  text-align: center;
+}
+
+.product-item-btn {
+  font-family: 'var(--font-primary)';
+  font-size: var(--text-extra-sm);
+}
