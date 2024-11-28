@@ -1,0 +1,9 @@
+.footer {
+  margin-top: 100px;
+  background-color: gray;
+  padding: 20px;
+}
+
+.footer__contact {
+  text-align: center;
+}

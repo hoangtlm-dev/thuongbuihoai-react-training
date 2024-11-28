@@ -1,0 +1,14 @@
+.filter {
+  padding: 50px 100px 0;
+}
+
+.modal__filter {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  max-width: 100%;
+  background-color: #eee;
+  z-index: 10;
+}
