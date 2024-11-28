@@ -1,0 +1,62 @@
+.icon--responsive {
+  width: 38.55px;
+  height: 36px;
+  padding: 0 17px 0 15px;
+}
+
+.icon--diamond {
+  width: 35.8px;
+  height: 26.89px;
+  padding: 0 14px 0 20px;
+}
+
+.icon--layers {
+  width: 30px;
+  height: 33px;
+  padding: 0 16px 0 23px;
+}
+
+.icon--bgCard {
+  background-size: cover;
+  background: no-repeat top;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+  z-index: 5;
+}
+
+@media screen and (min-width: 768px) {
+  .icon--responsive {
+    width: 40px;
+    height: 37px;
+  }
+
+  .icon--diamond {
+    width: 36px;
+    height: 33px;
+  }
+
+  .icon--layers {
+    width: 31px;
+    height: 38px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon--responsive {
+    width: 52px;
+    height: 44px;
+    padding: 10px 20px 0 0;
+  }
+
+  .icon--diamond {
+    width: 44.12px;
+    height: 37.82px;
+    padding: 10px 24px 0 5px;
+  }
+
+  .icon--layers {
+    width: 34.8px;
+    height: 47.07px;
+    padding: 10px 28px 0 10px;
+  }
+}

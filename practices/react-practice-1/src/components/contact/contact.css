@@ -1,0 +1,55 @@
+.contact {
+  text-align: center;
+}
+
+.contact__info--larger {
+  display: none;
+}
+
+.contact__item,
+.contact__text {
+  font-size: 11px;
+  line-height: 16px;
+  opacity: 0.5;
+  font-family: "SourceSansPro";
+}
+
+.contact__text {
+  padding: 16px 0 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    text-align: inherit;
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .contact__list {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    padding: 0;
+  }
+
+  .contact__info--medium {
+    display: none;
+  }
+
+  .contact__info--larger {
+    display: block;
+  }
+
+  .contact__item,
+  .contact__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .contact__text {
+    padding: 24px 0 42px;
+  }
+}

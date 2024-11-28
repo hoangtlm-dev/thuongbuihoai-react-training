@@ -1,0 +1,113 @@
+.description--main {
+  font-size: 11px;
+  line-height: 16px;
+  color: var(--color-heading);
+  font-family: "SourceSansPro";
+  padding: 15px 0 20px;
+  align-items: center;
+}
+
+.description--responsive,
+.description--diamond,
+.description--layers {
+  padding-top: 8px;
+  max-width: 190px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 16px;
+  font-family: "SourceSansPro";
+}
+
+.description--content {
+  padding: 8px 70px 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 16px;
+  font-family: "SourceSansPro";
+}
+
+.description--text {
+  font-size: 11px;
+  line-height: 16px;
+  padding: 7px 13px;
+  font-family: "SourceSansPro";
+}
+
+.description--signup {
+  font-size: 13.5px;
+  line-height: 22.5px;
+  letter-spacing: 1.4px;
+  color: var(--master-color);
+  text-transform: uppercase;
+  font-family: "SourceSansPro";
+}
+
+.description--footer {
+  opacity: 0.5;
+  padding: 10px 22px;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "SourceSansPro";
+}
+
+@media screen and (min-width: 768px) {
+  .description--main {
+    font-size: 11px;
+    line-height: 16px;
+    padding: 17px 0 22px;
+  }
+
+  .description--responsive,
+  .description--diamond,
+  .description--layers {
+    padding-top: 20px;
+    max-width: 220.00px;
+  }
+
+  .description--content {
+    padding: 8px 40px 27px;
+  }
+
+  .description--footer {
+    text-align: start;
+    padding: 5px 0 20px 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .description--main,
+  .description--text {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 30px;
+  }
+
+  .description--responsive,
+  .description--diamond,
+  .description--layers {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px 0 30px;
+    max-width: 270px;
+    padding: 0;
+  }
+
+  .description--content {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 20px 0 60px;
+  }
+
+  .description--signup {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .description--footer {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: start;
+    padding: 5px 0 20px 190px;
+  }
+}

@@ -1,0 +1,169 @@
+.section-title {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+}
+
+.section-title--nav__title {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  padding: 24px 0 0 15px;
+  color: var(--master-color);
+  text-transform: uppercase;
+}
+
+.section-title--main__title {
+  color: var(--color-heading);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  padding-top: 80px;
+  letter-spacing: -0.8px;
+}
+
+.section-title--plan__title {
+  padding: 25px 0 15px;
+}
+
+.section-title--plan__title,
+.section-title--feature-heading__title {
+  text-align: center;
+}
+
+.section-title--feature__text {
+  font-size: 11px;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-title--feature__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  font-family: "SourceSansPro";
+}
+
+.section-title--results__title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+}
+
+.section-title--circle__title {
+  font-family: "SourceSansPro";
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.1px;
+  padding: 18px 0 0;
+}
+
+.section-title--account__heading {
+  padding: 45px 0 20px;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+  color: var(--color-heading);
+}
+
+@media screen and (min-width: 768px) {
+  .section-title--main__title {
+    padding-top: 123px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .section-title--nav__title {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 35px 30px;
+  }
+
+  .section-title--plan__title,
+  .section-title--feature-heading__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .section-title--feature-heading__title {
+    padding: 40px 0 15px;
+  }
+
+  .section-title--feature__text {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .section-title--results__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .section-title--account__heading {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title--main__title {
+    padding-top: 62px;
+    font-size: 44px;
+    line-height: 48px;
+  }
+
+  .section-title--nav__title {
+    font-size: 36px;
+    line-height: 50px;
+    padding: 54px 150px;
+  }
+
+  .section-title--plan__title {
+    font-size: 44px;
+    line-height: 48px;
+    padding: 60px 0;
+  }
+
+  .section-title--feature-heading__title {
+    font-size: 44px;
+    line-height: 48px;
+    padding: 40px 0 20px;
+  }
+
+  .section-title--feature__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .section-title--feature__title {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .section-title--results__title {
+    font-size: 44px;
+    line-height: 48px;
+  }
+
+  .section-title--circle__title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .section-title--account__heading {
+    padding: 45px 0 36px;
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
