@@ -1,0 +1,14 @@
+.text-normal {
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.text-large {
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--text-primary-100);
+}
+
+.text-primary {
+  color: var(--text-primary-200);
+}

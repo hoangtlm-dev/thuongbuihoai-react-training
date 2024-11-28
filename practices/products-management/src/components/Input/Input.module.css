@@ -1,0 +1,11 @@
+.input-primary {
+  border: none;
+}
+
+.input-secondary {
+  background: var(--light);
+  border: 1px solid var(--text-quinary);
+  box-shadow: var(--bs-primary);
+  border-radius: 8px;
+  padding: 5px 10px;
+}

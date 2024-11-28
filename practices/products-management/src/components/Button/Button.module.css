@@ -1,0 +1,42 @@
+.btn-primary {
+  border: none;
+  background-color: transparent;
+  color: var(--text-primary);
+  font-weight: var(--w-semibold);
+}
+
+.btn-secondary {
+  border: none;
+  background-color: transparent;
+  color: var(--text-secondary);
+  font-weight: var(--w-semibold);
+}
+
+.btn-tertiary {
+  background-color: var(--light);
+  border: 1px solid var(--text-quinary);
+  box-shadow: var(--bs-primary);
+  border-radius: 8px;
+  padding: 10px 58px;
+  font-weight: var(--w-semibold);
+}
+
+.btn-quaternary {
+  color: var(--light);
+  background-color: var(--text-ternary);
+  border: 1px solid var(--text-ternary);
+  box-shadow: var(--bs-primary);
+  border-radius: 8px;
+  padding: 10px 58px;
+  font-weight: var(--w-semibold);
+}
+
+.btn-quinary {
+  color: var(--light);
+  background-color: var(--text-quaternary);
+  border: 1px solid var(--text-quinary);
+  box-shadow: var(--bs-primary);
+  border-radius: 8px;
+  padding: 10px 58px;
+  font-weight: var(--w-semibold);
+}

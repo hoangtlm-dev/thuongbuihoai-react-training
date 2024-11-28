@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar component Matches snapshot 1`] = `
+<div>
+  <img
+    alt="This is image brand IBM"
+    class=" undefined"
+    data-testid="avatar"
+    src="/src/assets/Avatar/arlene-wilson.png"
+  />
+</div>
+`;
