@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Home
 ### REACT TRAINING PLAN
 #### April 1, 2022
@@ -154,3 +155,10 @@ This is not in the plan, trainees may want to read more about debugging tools, s
 - [Ant Design](https://ant.design/)
 ##### React Router
 - [React Router v6](https://reactrouter.com/)
+=======
+## Next.js App Router Course - Starter
+
+This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
+
+For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+>>>>>>> af329834 (Initial commit from Create Next App)
