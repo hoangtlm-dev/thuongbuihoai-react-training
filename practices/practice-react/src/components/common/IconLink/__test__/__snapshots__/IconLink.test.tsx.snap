@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconLink component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="icon__list"
+    data-testid="icon-link"
+  >
+    <a
+      class="icon__item"
+      href="https://vi-vn.facebook.com/"
+      title="Facebook"
+    >
+      <i
+        class="icon-fb"
+        data-testid="icon"
+      />
+    </a>
+    <a
+      class="icon__item"
+      href="https://twitter.com/"
+      title="Twitter"
+    >
+      <i
+        class="icon-twitter"
+        data-testid="icon"
+      />
+    </a>
+    <a
+      class="icon__item"
+      href="https://www.instagram.com/"
+      title="Instagram"
+    >
+      <i
+        class="icon-instagram"
+        data-testid="icon"
+      />
+    </a>
+  </div>
+</DocumentFragment>
+`;

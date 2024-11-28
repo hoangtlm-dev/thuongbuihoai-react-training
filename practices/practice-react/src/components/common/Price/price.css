@@ -1,0 +1,15 @@
+.price-original,
+.price-discount {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.price-original {
+  color: var(--dark);
+}
+
+.price-discount {
+  text-decoration-line: line-through;
+  color: var(--bg-secondary);
+}

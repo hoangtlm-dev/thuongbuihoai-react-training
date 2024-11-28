@@ -1,0 +1,84 @@
+/* style for product list */
+.product-list-normal {
+  width: 384px;
+  margin: 100px 70px 188px 0;
+  background: var(--light);
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.product-list-medium {
+  width: 368px;
+  border-radius: 20px;
+  margin: 50px 85px 164px 0;
+  background: var(--light);
+}
+
+.product-list-medium-box {
+  width: 368px;
+  background: var(--light);
+  border-radius: 10px;
+  margin: 0 80px 159px 0;
+  box-shadow: 0px 16px 70px var(--box-first);
+}
+
+/* style for card in product list */
+.cart-link {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.card-discount {
+  padding: 59px 0 60px 44px;
+}
+
+.card-quantity {
+  padding: 57px 0 15px 40px;
+}
+
+.card-unit {
+  margin: 9px 0 14px;
+  color: var(--bg-secondary);
+}
+
+.card-image {
+  width: 368px;
+  height: 288px;
+}
+
+.card-item-offers,
+.card-item-selling,
+.card-item-popular {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-item-offers {
+  margin: 33px 0 0 90px;
+}
+
+.card-item-selling,
+.card-item-popular {
+  padding-left: 100px;
+}
+
+.card-counter {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 35px 18px;
+}
+
+.card-offers-list-title {
+  margin: 33px 0 0 130px
+}
+
+.card-popular-title {
+  margin: 205px 0 44px 103px
+}
+
+.card-product-selling-title {
+  padding: 84px 0 49px 125px;
+}
+
+.card-product-selling-list {
+  background: var(--bg-light);
+}

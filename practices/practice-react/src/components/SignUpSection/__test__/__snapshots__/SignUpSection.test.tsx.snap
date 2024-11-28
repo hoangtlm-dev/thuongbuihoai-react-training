@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignUpSection component matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="sectionSignUp"
+    data-testid="signUp-section"
+  >
+    <figure>
+      <img
+        alt="This is image vegetables-fruits"
+      />
+    </figure>
+    <div
+      class="sectionSignUp__content"
+    >
+      <p
+        class="text--medium"
+        data-testid="text"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <div
+        class="sectionSignUp__info"
+      >
+        <p
+          class="text--normal"
+          data-testid="text"
+        >
+          Subscribe to get 10% Discount and promotion
+        </p>
+      </div>
+      <div
+        class="sectionSignUp__address"
+      >
+        <input
+          class="input__value"
+          data-testid="input-value"
+          placeholder="Email address"
+          type="text"
+        />
+        <button
+          class="btn btn--large"
+        >
+          Sign Up
+        </button>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardPopular component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="cardPopularList"
+    data-testid="card-product-popular"
+  >
+    <div
+      class="cardPopular__title"
+    >
+      <p
+        class="text--dark"
+        data-testid="text"
+      >
+        Popular Products
+      </p>
+    </div>
+    <div
+      class="card__item--popular"
+    />
+  </div>
+</DocumentFragment>
+`;

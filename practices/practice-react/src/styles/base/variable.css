@@ -1,0 +1,23 @@
+:root {
+  --dark: #000;
+  --light: #fff;
+
+  /* text color */
+  --text-primary: #2B463C;
+  --text-secondary: #FFD2DD;
+  --text-third: #979797;
+
+  /* background color */
+  --bg-first: rgba(177, 209, 130, 0.12);
+  --bg-secondary: rgba(0, 0, 0, 0.71);
+  --bg-third: rgba(0, 0, 0, 0.43);
+  --bg-light: #F4F1E9;
+
+  /* border color */
+  --border-primary: #688F4E;
+  --border-secondary: #B1D182;
+
+  /* box-shadow color */
+  --box--light: #F2F2F2;
+  --box-first: rgba(0, 0, 0, 0.1);
+}

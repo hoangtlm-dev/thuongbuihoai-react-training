@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories component matches snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="checkbox__value"
+    data-testid="category-check"
+  >
+    <input
+      data-index=""
+      multiple=""
+      name="checkbox"
+      type="checkbox"
+    />
+    Dairy
+  </label>
+</DocumentFragment>
+`;

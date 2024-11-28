@@ -1,0 +1,42 @@
+import React from "react";
+import Button from "../Button/Button";
+import Text from "../Text/Text";
+import NavigationBar from "../NavigationBar/NavigationBar";
+import backgroundGreen from "@assets/images/backgrounds/green.png";
+import backgroundBasket from "@assets/images/backgrounds/basket-full.png";
+import backgroundTopView from "@assets/images/backgrounds/top-view.png";
+import "./header.css";
+
+const Header: React.FC = () => {
+  return (
+    <header data-testid="header" className="header">
+      <NavigationBar mode="light" />
+      <div className="header-info">
+        <Text text="Lorem ipsum dolor sit" decoration="blur" />
+        <h1 className="header-title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </h1>
+        <Button text="Sign Up" type="large" />
+      </div>
+      <figure>
+        <img
+          className="header-images-right"
+          src={backgroundGreen}
+          alt="This is background green color"
+        />
+        <img
+          className="header-images-basket"
+          src={backgroundBasket}
+          alt="This is background basket-full"
+        />
+        <img
+          className="header-images-top-view"
+          src={backgroundTopView}
+          alt="This is background top-view"
+        />
+      </figure>
+    </header>
+  );
+};
+
+export default Header;

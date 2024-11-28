@@ -1,0 +1,96 @@
+.btn {
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #688F4E;
+  border: none;
+  border-radius: 7.80576px;
+  padding: 25px 55px;
+  font-size: 21.0755px;
+  line-height: 25px;
+  color: #FFFFFF;
+  font-family: "Roboto";
+}
+
+.btn-light {
+  color: #2B463C;
+  font-size: 18px;
+  line-height: 27px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+  padding: 9px 35px;
+}
+
+.btn-light:hover {
+  background: #688F4E;
+  color: #FFFFFF;
+}
+
+.btn-dark {
+  background: #688F4E;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 27px;
+  border-radius: 5px;
+  border: none;
+  padding: 9px 35px;
+}
+
+.btn-dark:hover {
+  color: #2B463C;
+  background: #FFFFFF;
+}
+
+.btn-large {
+  position: relative;
+  z-index: 5;
+  background: #688F4E;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 27px;
+  border-radius: 5px;
+  border: none;
+  padding: 15px 47px;
+}
+
+.btn-outline-light {
+  color: #2B463C;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 9px 45px;
+  border: 2px solid #FFFFFF;
+  background: var(--border-secondary);
+  margin-left: 32px;
+}
+
+.btn-outline-light:hover {
+  border: 2px solid #688F4E;
+  background: transparent;
+}
+
+.btn-outline-dark {
+  color: #2B463C;
+  font-family: "Poppins";
+  font-size: 18px;
+  line-height: 27px;
+  padding: 9px 45px;
+  border: 2px solid var(--border-primary);
+  background: transparent;
+  border-radius: 5px;
+  margin-left: 32px;
+}
+
+.btn-outline-dark:hover {
+  background: var(--border-secondary);
+  border: 2px solid var(--border-secondary);
+}
+
+.btn-icon {
+  position: absolute;
+  z-index: 10;
+  top: 17px;
+  left: 23px;
+}

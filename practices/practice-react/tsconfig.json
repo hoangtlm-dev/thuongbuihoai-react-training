@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@*": ["./*"],
+    },
+  },
+  "include": ["src", "src/wdyr.ts"],
+  "exclude": ["node_modules"],
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "types": ["node", "jest", "@types/testing-library__jest-dom"]
+}

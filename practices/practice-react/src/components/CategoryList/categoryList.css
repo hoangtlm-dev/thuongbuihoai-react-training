@@ -1,0 +1,35 @@
+.categories {
+  padding: 120px 0 0 125px;
+}
+
+.categories-title {
+  margin-bottom: 69px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: capitalize;
+  color: var(--text-primary);
+}
+
+.category-list-row {
+  display: flex;
+  margin-bottom: 246px;
+}
+
+.category-list-card {
+  display: flex;
+  flex-direction: column;
+  margin-right: 55px;
+  background: var(--light);
+  border-radius: 5px;
+  width: 235px;
+  box-shadow: -50px 50px 200px var(--box--light);
+}
+
+.category-list-checkbox {
+  margin: 0 0 23px 73px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--text-primary);
+}

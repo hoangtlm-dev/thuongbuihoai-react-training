@@ -1,0 +1,39 @@
+.header {
+  position: relative;
+  z-index: 20;
+  background: var(--bg-first);
+}
+
+.header-info {
+  padding: 207px 0 257px 162px;
+}
+
+.header-title {
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  width: 515px;
+  margin: 16px 0 47px;
+}
+
+.header-images-right {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+}
+
+.header-images-basket {
+  position: absolute;
+  z-index: 15;
+  top: 18px;
+  right: 264px;
+}
+
+.header-images-top-view {
+  position: absolute;
+  z-index: 10;
+  top: 105px;
+  right: 0;
+}

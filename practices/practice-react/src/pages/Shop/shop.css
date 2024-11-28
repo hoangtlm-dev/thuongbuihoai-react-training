@@ -1,0 +1,33 @@
+.shop-page-heading {
+  margin: 100px 0 70px 443px;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--text-third);
+}
+
+.shop-page-info {
+  display: flex;
+}
+
+.shop-page-select {
+  background: var(--bg-light);
+}
+
+.shop-page-title {
+  padding: 32px 198px 47px 98px;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 40px;
+  color: var(--text-primary);
+}
+
+.shop-page-product {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 100px;
+}
+
+.shop-page-button {
+  position: relative;
+  margin: 107px 0 0 91px;
+}

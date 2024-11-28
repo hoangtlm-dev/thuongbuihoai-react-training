@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuContact component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="contact"
+    data-testid="contact"
+  >
+    <ul
+      class="contact__list"
+    >
+      <li
+        class="contact__item"
+      >
+        <a
+          href="/"
+        >
+          Email Marketing
+        </a>
+      </li>
+      <li
+        class="contact__item"
+      >
+        <a
+          href="/"
+        >
+          Campaigns
+        </a>
+      </li>
+      <li
+        class="contact__item"
+      >
+        <a
+          href="/"
+        >
+          Branding
+        </a>
+      </li>
+      <li
+        class="contact__item"
+      >
+        <a
+          href="/"
+        >
+          Offline
+        </a>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  position: relative;
+  z-index: 20;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 110px 0 162px;
+}
+
+.nav-about {
+  display: flex;
+  align-items: center;
+  margin: 32px;
+}

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="counter"
+    data-testid="counter"
+  >
+    <div
+      class="counter__minus"
+    >
+      <i
+        class="icon-minus"
+        data-testid="icon"
+      />
+    </div>
+    <input
+      class="counter__input"
+      min="0"
+      name="productQuantity"
+      value="0"
+    />
+    <div
+      class="counter__plus"
+    >
+      <i
+        class="icon-plus"
+        data-testid="icon"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

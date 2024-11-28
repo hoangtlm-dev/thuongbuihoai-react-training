@@ -1,0 +1,35 @@
+/* css for component menu */
+.menu-list {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  list-style: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 32px;
+}
+
+.menu-item > a {
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--dark);
+}
+
+/* css for component menuContact */
+.contact-item {
+  margin-top: 20px;
+}
+
+.contact-item > a {
+  text-decoration: none;
+  color: var(--light);
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.contact-item > a:hover {
+  color: var(--text-secondary);
+}

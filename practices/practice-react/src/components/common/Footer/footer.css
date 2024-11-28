@@ -1,0 +1,43 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 133px 94px 57px 313px;
+  background: var(--border-primary);
+  margin-top: 133px;
+}
+
+.footer-title {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.231818px;
+  color: var(--text-secondary);
+}
+
+.footer-contact {
+  display: flex;
+}
+
+.footer-item {
+  margin-right: 240px;
+}
+
+.footer-about {
+  display: flex;
+  margin-top: 159px;
+}
+
+.footer-service {
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.204545px;
+  color: var(--light);
+  margin-right: 100px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
