@@ -1,0 +1,33 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 120px;
+  background-color: var(--bg-third);
+}
+
+.nav-info {
+  display: flex;
+}
+
+.nav-info > i {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.nav-search {
+  position: fixed;
+  z-index: 45;
+  top: 15%;
+  right: 10%;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: var(--light);
+}
+
+.nav-search > input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1.5px solid var(--border-primary);
+}

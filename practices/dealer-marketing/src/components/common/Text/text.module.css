@@ -1,0 +1,90 @@
+.text-normal,
+.text-large,
+.text-regular {
+  color: var(--text-primary);
+}
+
+.text-primary,
+.text-dark,
+.text-medium,
+.text-light {
+  color: var(--text-secondary);
+}
+
+.text-secondary:hover,
+.text-light:hover {
+  color: var(--bg-primary);
+}
+
+.text-secondary,
+.text-dark,
+.text-large,
+.text-medium,
+.text-light {
+  font-weight: var(--w-bold);
+}
+
+.text-normal,
+.text-primary {
+  font-size: var(--f-regular);
+}
+
+.text-normal {
+  display: -webkit-box;
+  letter-spacing: -0.12222px;
+  line-height: 19px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.text-regular {
+  font-size: var(--f-medium);
+  letter-spacing: 0.5px;
+  line-height: 22px;
+}
+
+.text-primary {
+  margin-bottom: 10px;
+}
+
+.text-primary,
+.text-secondary {
+  font-family: "var(--secondary-font)";
+}
+
+.text-dark,
+.text-large {
+  font-size: var(--f-xlarge);
+}
+
+.text-secondary {
+  cursor: pointer;
+  text-align: center;
+  color: var(--dark);
+  font-size: var(--f-secondary);
+  padding: 80px 10px 10px;
+}
+
+.text-dark {
+  text-align: left;
+  line-height: 38px;
+}
+
+.text-medium,
+.text-light {
+  display: -webkit-box;
+  cursor: pointer;
+  font-size: var(--f-third);
+  letter-spacing: 0.5px;
+  line-height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.text-large {
+  color: var(--light);
+}

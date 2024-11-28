@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu component Matches snapshot 1`] = `
+<div>
+  <ul
+    data-testid="menu"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Research
+      </a>
+    </li>
+    <li>
+      <a
+        href="/"
+      >
+        Best practice
+      </a>
+    </li>
+    <li>
+      <a
+        href="/"
+      >
+        Commentary
+      </a>
+    </li>
+    <li>
+      <a
+        href="/"
+      >
+        Reviews
+      </a>
+    </li>
+  </ul>
+</div>
+`;

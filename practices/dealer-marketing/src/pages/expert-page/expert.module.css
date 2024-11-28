@@ -1,0 +1,64 @@
+.our-expert-container {
+  background-color: var(--light);
+}
+
+.our-expert-list {
+  padding: 0 80px 50px;
+}
+
+.our-expert-heading {
+  font-size: var(--f-xlarge);
+  font-weight: var(--w-bold);
+  color: #3c4858;
+  padding-bottom: 20px;
+}
+
+.our-expert-navigation {
+  position: relative;
+  z-index: 30;
+  box-shadow: var(--bs-second);
+}
+
+.our-expert-description {
+  text-align: center;
+  padding: 70px;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+/* expert detail */
+.expert-detail {
+  position: relative;
+  z-index: var(--z-md);
+  margin: -70px 30px 80px;
+  background-color: var(--light);
+  box-shadow: var(--bs-first);
+}
+
+.expert-detail-layout {
+  position: absolute;
+  z-index: var(--z-lg);
+  left: 45%;
+  top: -25%;
+}
+
+.expert-detail-image {
+  border-radius: 50%;
+}
+
+.expert-detail-info {
+  text-align: center;
+  padding: 80px;
+}
+
+.expert-detail-name {
+  font-size: var(--f-large);
+  color: #3c4858;
+  font-weight: var(--w-bold);
+}
+
+.expert-detail-content {
+  font-family: "var(--secondary-font)";
+  color: #3c4858;
+  margin: 20px;
+}

@@ -1,0 +1,782 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogDetail page Matches snapshot 1`] = `
+<div>
+  <main
+    data-testid="layout"
+  >
+    <header
+      data-testid="header"
+    >
+      <div>
+        <ul
+          data-testid="menu"
+        >
+          <li>
+            <a
+              href="/expert-panel"
+            >
+              Our Experts
+            </a>
+          </li>
+          <li>
+            <a
+              href="/about-us"
+            >
+              About
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <nav
+      data-testid="navigation"
+    >
+      <div
+        data-testid="logo"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27256%27%20height=%2743%27/%3e"
+              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            />
+          </span>
+          <img
+            alt="This is logo"
+            data-nimg="intrinsic"
+            decoding="async"
+            href="/"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; background-size: cover; background-position: 0% 0%; filter: blur(20px); background-image: url(/images/backgrounds/blur.jpg);"
+          />
+          <noscript />
+        </span>
+      </div>
+      <div>
+        <ul
+          data-testid="menu"
+        >
+          <li>
+            <a
+              href="/"
+            >
+              Research
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+            >
+              Best practice
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+            >
+              Commentary
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+            >
+              Reviews
+            </a>
+          </li>
+        </ul>
+        <i
+          data-testid="icon"
+        />
+      </div>
+    </nav>
+    <div
+      data-testid="banner"
+    >
+      <div>
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+        >
+          <img
+            alt="This is image of banner"
+            data-nimg="fill"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; background-size: cover; background-position: 0% 0%; filter: blur(20px); background-image: url(/images/backgrounds/blur.jpg);"
+          />
+          <noscript />
+        </span>
+      </div>
+      <h1 />
+    </div>
+    <div
+      class="container"
+    >
+      <div>
+        <div>
+          <div>
+            <p
+              data-testid="text"
+            >
+              Exploring Influential and Impactful Automotive Advertising Campaigns
+            </p>
+          </div>
+          <hr />
+          <div>
+            <span
+              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+            >
+              <span
+                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2760%27%20height=%2760%27/%3e"
+                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                />
+              </span>
+              <img
+                alt="This is image past present future"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; background-size: cover; background-position: 0% 0%; filter: blur(20px); background-image: url(/images/backgrounds/blur.jpg);"
+              />
+              <noscript />
+            </span>
+            <div>
+              <p>
+                by 
+                <span>
+                  Donna Welker
+                </span>
+              </p>
+              <p
+                data-testid="text"
+              >
+                July 28, 2022
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p
+          data-testid="text"
+        >
+          Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months. Nowhere is this more relevant than in the automotive industry, where new campaigns hold the potential to make or break a company. This article will explore some disruptive and impactful automotive marketing campaigns throughout the past century. We'll explore what made them successful and see how they changed the marketing landscape forever.
+        </p>
+      </div>
+    </div>
+    <footer
+      data-testid="footer"
+    >
+      <ul
+        data-testid="menu"
+      >
+        <li>
+          <a
+            href="/expert-panel"
+          >
+            Our Experts
+          </a>
+        </li>
+        <li>
+          <a
+            href="/about-us"
+          >
+            About
+          </a>
+        </li>
+      </ul>
+      <div>
+        <ul
+          data-testid="menu"
+        >
+          <li>
+            <a
+              href="/"
+            >
+              Privacy policy
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+            >
+              Terms of service
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+            >
+              Advertise
+            </a>
+          </li>
+        </ul>
+        <div>
+          <p
+            data-testid="text"
+          >
+            Copyright © 2022 Dealer Marketing Magazine
+          </p>
+        </div>
+      </div>
+    </footer>
+  </main>
+</div>
+`;
+
+exports[`BlogDetail page renders the features with getStaticProps 1`] = `
+<main
+  data-testid="layout"
+>
+  <header
+    data-testid="header"
+  >
+    <div>
+      <ul
+        data-testid="menu"
+      >
+        <li>
+          <a
+            href="/expert-panel"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Our Experts
+          </a>
+        </li>
+        <li>
+          <a
+            href="/about-us"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            About
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <nav
+    data-testid="navigation"
+  >
+    <div
+      data-testid="logo"
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "inline-block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "relative",
+            "width": "initial",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "padding": 0,
+              "width": "initial",
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27256%27%20height=%2743%27/%3e"
+            style={
+              Object {
+                "background": "none",
+                "border": 0,
+                "display": "block",
+                "height": "initial",
+                "margin": 0,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "padding": 0,
+                "width": "initial",
+              }
+            }
+          />
+        </span>
+        <img
+          alt="This is logo"
+          data-nimg="intrinsic"
+          decoding="async"
+          href="/"
+          onClick={[Function]}
+          onError={[Function]}
+          onLoad={[Function]}
+          onMouseEnter={[Function]}
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style={
+            Object {
+              "backgroundImage": "url(\\"/images/backgrounds/blur.jpg\\")",
+              "backgroundPosition": "0% 0%",
+              "backgroundSize": "cover",
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "filter": "blur(20px)",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+        <noscript>
+          <img
+            alt="This is logo"
+            data-nimg="intrinsic"
+            decoding="async"
+            href="/"
+            loading="lazy"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            src="/images/logos/logo-dealer-marketing.svg"
+            srcSet="/images/logos/logo-dealer-marketing.svg 1x, /images/logos/logo-dealer-marketing.svg 2x"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </noscript>
+      </span>
+    </div>
+    <div>
+      <ul
+        data-testid="menu"
+      >
+        <li>
+          <a
+            href="/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Research
+          </a>
+        </li>
+        <li>
+          <a
+            href="/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Best practice
+          </a>
+        </li>
+        <li>
+          <a
+            href="/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Commentary
+          </a>
+        </li>
+        <li>
+          <a
+            href="/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Reviews
+          </a>
+        </li>
+      </ul>
+      <i
+        data-testid="icon"
+        onClick={[Function]}
+      />
+    </div>
+  </nav>
+  <div
+    data-testid="banner"
+  >
+    <div>
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "bottom": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": "initial",
+            "left": 0,
+            "margin": 0,
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": "initial",
+          }
+        }
+      >
+        <img
+          alt="This is image of banner"
+          data-nimg="fill"
+          decoding="async"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style={
+            Object {
+              "backgroundImage": "url(\\"/images/backgrounds/blur.jpg\\")",
+              "backgroundPosition": "0% 0%",
+              "backgroundSize": "cover",
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "filter": "blur(20px)",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+        <noscript>
+          <img
+            alt="This is image of banner"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=%2Fimages%2Fpast-present-future.png&w=3840&q=75"
+            srcSet="/_next/image?url=%2Fimages%2Fpast-present-future.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fpast-present-future.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fpast-present-future.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fpast-present-future.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fpast-present-future.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fpast-present-future.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fpast-present-future.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fpast-present-future.png&w=3840&q=75 3840w"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </noscript>
+      </span>
+    </div>
+    <h1 />
+  </div>
+  <div
+    className="container"
+  >
+    <div>
+      <div>
+        <div>
+          <p
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Exploring Influential and Impactful Automotive Advertising Campaigns",
+              }
+            }
+            data-testid="text"
+          />
+        </div>
+        <hr />
+        <div>
+          <span
+            style={
+              Object {
+                "background": "none",
+                "border": 0,
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "height": "initial",
+                "margin": 0,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "overflow": "hidden",
+                "padding": 0,
+                "position": "relative",
+                "width": "initial",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "background": "none",
+                  "border": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "height": "initial",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "opacity": 1,
+                  "padding": 0,
+                  "width": "initial",
+                }
+              }
+            >
+              <img
+                alt=""
+                aria-hidden={true}
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2760%27%20height=%2760%27/%3e"
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "display": "block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "padding": 0,
+                    "width": "initial",
+                  }
+                }
+              />
+            </span>
+            <img
+              alt="This is image past present future"
+              data-nimg="intrinsic"
+              decoding="async"
+              onError={[Function]}
+              onLoad={[Function]}
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style={
+                Object {
+                  "backgroundImage": "url(\\"/images/backgrounds/blur.jpg\\")",
+                  "backgroundPosition": "0% 0%",
+                  "backgroundSize": "cover",
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "filter": "blur(20px)",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+            <noscript>
+              <img
+                alt="This is image past present future"
+                data-nimg="intrinsic"
+                decoding="async"
+                loading="lazy"
+                src="/_next/image?url=%2Fimages%2Fpast-present-future.png&w=128&q=75"
+                srcSet="/_next/image?url=%2Fimages%2Fpast-present-future.png&w=64&q=75 1x, /_next/image?url=%2Fimages%2Fpast-present-future.png&w=128&q=75 2x"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </noscript>
+          </span>
+          <div>
+            <p>
+              by 
+              <span>
+                Donna Welker
+              </span>
+            </p>
+            <p
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "July 28, 2022",
+                }
+              }
+              data-testid="text"
+            />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months. Nowhere is this more relevant than in the automotive industry, where new campaigns hold the potential to make or break a company. This article will explore some disruptive and impactful automotive marketing campaigns throughout the past century. We'll explore what made them successful and see how they changed the marketing landscape forever.",
+          }
+        }
+        data-testid="text"
+      />
+    </div>
+  </div>
+  <footer
+    data-testid="footer"
+  >
+    <ul
+      data-testid="menu"
+    >
+      <li>
+        <a
+          href="/expert-panel"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Our Experts
+        </a>
+      </li>
+      <li>
+        <a
+          href="/about-us"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          About
+        </a>
+      </li>
+    </ul>
+    <div>
+      <ul
+        data-testid="menu"
+      >
+        <li>
+          <a
+            href="/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Privacy policy
+          </a>
+        </li>
+        <li>
+          <a
+            href="/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Terms of service
+          </a>
+        </li>
+        <li>
+          <a
+            href="/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Advertise
+          </a>
+        </li>
+      </ul>
+      <div>
+        <p
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Copyright © 2022 Dealer Marketing Magazine",
+            }
+          }
+          data-testid="text"
+        />
+      </div>
+    </div>
+  </footer>
+</main>
+`;

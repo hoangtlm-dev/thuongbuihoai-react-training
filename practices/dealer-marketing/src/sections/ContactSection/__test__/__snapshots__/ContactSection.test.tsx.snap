@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactSection component Matches snapshot 1`] = `
+<div>
+  <div
+    data-testid="contact-section"
+  />
+  <div>
+    <div>
+      <p
+        data-testid="text"
+      >
+        Get Tips & Tricks every Week!
+      </p>
+      <div>
+        <p
+          data-testid="text"
+        >
+          Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+        </p>
+      </div>
+    </div>
+    <div>
+      <div>
+        <i
+          data-testid="icon"
+        />
+        <input
+          data-testid="input-value"
+          placeholder="Your email..."
+          type="text"
+        />
+      </div>
+      <button
+        data-testid="button"
+      >
+        Subscribe
+      </button>
+    </div>
+  </div>
+  <div />
+</div>
+`;

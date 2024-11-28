@@ -1,0 +1,67 @@
+.card-border {
+  margin-top: 80px;
+  position: relative;
+  z-index: var(--z-tiny);
+  width: 251px;
+  border: 2px solid var(--border-primary);
+}
+
+.card-grid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 100px;
+  z-index: var(--z-tiny);
+  width: 350px;
+  border-radius: 10px;
+  background-color: var(--light);
+}
+
+.card-layout {
+  position: absolute;
+  left: 25%;
+  top: -35%;
+  z-index: var(--z-sm);
+}
+
+.card-view {
+  position: absolute;
+  left: 32%;
+  top: -25%;
+  z-index: var(--z-sm);
+}
+
+.card-image {
+  border-radius: 50%;
+}
+
+.card-info {
+  text-align: center;
+  color: var(--text-primary);
+  font-size: var(--f-normal);
+}
+
+.card-button {
+  margin: 20px 0 15px;
+  text-align: center;
+}
+
+.card-description {
+  cursor: pointer;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: var(--f-secondary);
+  font-weight: var(--w-bold);
+  padding: 90px 10px 20px;
+}
+
+.card-contact {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card-image-contact {
+  cursor: pointer;
+  border-radius: 5px;
+}

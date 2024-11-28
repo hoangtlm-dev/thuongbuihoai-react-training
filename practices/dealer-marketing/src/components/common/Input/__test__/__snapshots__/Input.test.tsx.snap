@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component Matches snapshot 1`] = `
+<div>
+  <input
+    data-testid="input-value"
+    placeholder="Your email..."
+    type="text"
+  />
+</div>
+`;

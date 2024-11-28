@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+cd dealer-marketing
+pnpm exec commitlint --edit "${1}"

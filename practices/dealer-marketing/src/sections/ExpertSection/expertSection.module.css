@@ -1,0 +1,20 @@
+.expert {
+  background-image: url(/images/backgrounds/home-page-oto.png);
+  background-size: cover;
+}
+
+.expert-position {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.expert-title {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.expert-list {
+  display: flex;
+  padding-bottom: 40px;
+  justify-content: space-between;
+}

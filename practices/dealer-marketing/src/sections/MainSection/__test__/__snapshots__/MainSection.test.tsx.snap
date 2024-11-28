@@ -1,0 +1,338 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainSection component Matches snapshot 1`] = `
+<div>
+  <div
+    class="container"
+    data-testid="main-section"
+  >
+    <div
+      data-testid="research-section"
+    >
+      <div>
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27730%27%20height=%27438%27/%3e"
+              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            />
+          </span>
+          <img
+            alt="This is image past presents future"
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; background-size: cover; background-position: 0% 0%; filter: blur(20px); background-image: url(/images/backgrounds/blur.jpg);"
+          />
+          <noscript />
+        </span>
+        <div>
+          <div>
+            <p
+              data-testid="text"
+            >
+              Research & analysis
+            </p>
+          </div>
+          <div>
+            <div>
+              <a
+                data-testid="custom-link"
+                href="/exploring-influential-and-impactful-automotive-advertising-campaigns"
+              >
+                <p
+                  data-testid="text"
+                >
+                  Exploring Influential and Impactful Automotive Advertising Campaigns
+                </p>
+              </a>
+            </div>
+            <div>
+              <p
+                data-testid="text"
+              >
+                
+                  By 
+                  
+                <link
+                  href="{\\"/expert-page/matt-childers\\"}"
+                />
+                
+                    
+                <span
+                  class="undefined"
+                >
+                  
+                      Donna Welker 
+                    
+                </span>
+                
+                  
+                  - 
+                <span>
+                  July 28, 2022
+                </span>
+                
+                  
+              </p>
+            </div>
+            <p
+              data-testid="text"
+            >
+              Advertising has come a long way since its humble beginnings. There's no doubt about it – marketing remains an ever-changing landscape: What worked a few years ago may not be effective today, and what's popular now may be out of style in a few months. Nowhere is this more relevant than in the automotive industry, where new campaigns hold the potential to make or break a company. This article will explore some disruptive and impactful automotive marketing campaigns throughout the past century. We'll explore what made them successful and see how they changed the marketing landscape forever.
+            </p>
+          </div>
+          <div>
+            <button
+              data-testid="button"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-testid="blog-list"
+    />
+    <div
+      data-testid="contact-section"
+    />
+    <div>
+      <div>
+        <p
+          data-testid="text"
+        >
+          Get Tips & Tricks every Week!
+        </p>
+        <div>
+          <p
+            data-testid="text"
+          >
+            Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <i
+            data-testid="icon"
+          />
+          <input
+            data-testid="input-value"
+            placeholder="Your email..."
+            type="text"
+          />
+        </div>
+        <button
+          data-testid="button"
+        >
+          Subscribe
+        </button>
+      </div>
+    </div>
+    <div />
+    <div
+      data-testid="expert-section"
+    >
+      <div>
+        <div>
+          <p
+            data-testid="text"
+          >
+            DMM Expert Podcast Interviews
+          </p>
+        </div>
+        <div>
+          <div
+            data-testid="card-expert"
+          >
+            <figure>
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27130%27%20height=%27130%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="This is image of Mr adam dennis"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; background-size: cover; background-position: 0% 0%; filter: blur(20px); background-image: url(/images/backgrounds/blur.jpg);"
+                />
+                <noscript />
+              </span>
+            </figure>
+            <div>
+              <p
+                data-testid="text"
+              >
+                 Evaluating OEM Programs and Providing Better Customer Experiences with Ibrahim Mesbah
+              </p>
+            </div>
+            <div>
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27135%27%20height=%2760%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="This is image inside auto"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; background-size: cover; background-position: 0% 0%; filter: blur(20px); background-image: url(/images/backgrounds/blur.jpg);"
+                />
+                <noscript />
+              </span>
+            </div>
+          </div>
+          <div
+            data-testid="card-expert"
+          >
+            <figure>
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27130%27%20height=%27130%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="This is image of Mr ilana-shabtay"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; background-size: cover; background-position: 0% 0%; filter: blur(20px); background-image: url(/images/backgrounds/blur.jpg);"
+                />
+                <noscript />
+              </span>
+            </figure>
+            <div>
+              <p
+                data-testid="text"
+              >
+                 Experimarketing Episode 27: No Inventory? No Problem.
+              </p>
+            </div>
+            <div>
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27135%27%20height=%2760%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="This is image inside auto"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; background-size: cover; background-position: 0% 0%; filter: blur(20px); background-image: url(/images/backgrounds/blur.jpg);"
+                />
+                <noscript />
+              </span>
+            </div>
+          </div>
+          <div
+            data-testid="card-expert"
+          >
+            <figure>
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27130%27%20height=%27130%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="This is image of Mr adam dennis"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; background-size: cover; background-position: 0% 0%; filter: blur(20px); background-image: url(/images/backgrounds/blur.jpg);"
+                />
+                <noscript />
+              </span>
+            </figure>
+            <div>
+              <p
+                data-testid="text"
+              >
+                 Website Clicks?! they\`re Still Clickin
+              </p>
+            </div>
+            <div>
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27135%27%20height=%2760%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="This is image inside auto"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; background-size: cover; background-position: 0% 0%; filter: blur(20px); background-image: url(/images/backgrounds/blur.jpg);"
+                />
+                <noscript />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-testid="blog-list"
+    />
+  </div>
+</div>
+`;

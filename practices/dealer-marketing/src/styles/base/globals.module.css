@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "var(--primary-font)";
+  src: url(../../assets/fonts/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+  font-family: "var(--secondary-font)";
+  src: url(../../assets/fonts/Roboto-Regular.ttf);
+}
+
+html {
+  font-family: "var(--primary-font)";
+}
+
+body {
+  background-color: var(--border-primary);
+}
+
+.container {
+  position: relative;
+  z-index: var(--z-md);
+  border-radius: 5px;
+  margin: -70px 30px 80px;
+  background-color: var(--light);
+  box-shadow: var(--bs-first);
+}

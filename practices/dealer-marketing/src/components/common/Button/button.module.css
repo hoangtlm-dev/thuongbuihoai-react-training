@@ -1,0 +1,30 @@
+.btn-primary,
+.btn-secondary {
+  cursor: pointer;
+  border: none;
+  font-size: var(--f-tiny);
+  padding: 14px 27px;
+  border-radius: 50px;
+  color: var(--light);
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: var(--bg-primary);
+}
+
+.btn-secondary {
+  background-color: var(--bg-secondary);
+}
+
+.btn-icon {
+  border: none;
+  background-color: var(--border-primary);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.btn-icon:hover {
+  color: var(--bg-primary);
+}

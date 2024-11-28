@@ -1,0 +1,48 @@
+:root {
+  --dark: #000;
+  --light: #fff;
+
+  /* text color */
+  --text-primary: #999;
+  --text-secondary: #3c4858;
+  --text-third: #00bcd4;
+
+  /* background color */
+  --bg-primary: #efb145;
+  --bg-secondary: #e91e63;
+  --bg-third: #f8f9f9;
+
+  /* border color */
+  --border-primary: #eee;
+
+  /* box-shadow */
+  --bs-first: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --bs-second: 0 4px 18px 0px rgb(0 0 0 / 12%), 0 7px 10px -5px rgb(0 0 0 / 15%);
+
+  /* font-family */
+  --primary-font: "RobotoSlab";
+  --secondary-font: "Roboto";
+
+  /* z-index */
+  --z-tiny: 0;
+  --z-sm: 1;
+  --z-md: 2;
+  --z-lg: 3;
+
+  /* font-size */
+  --f-tiny: 11px;
+  --f-small: 12px;
+  --f-normal: 13px;
+  --f-regular: 14px;
+  --f-medium: 15px;
+  --f-secondary: 18px;
+  --f-primary: 20px;
+  --f-third: 22px;
+  --f-large: 24px;
+  --f-xlarge: 30px;
+  --f-xxlarge: 50px;
+
+  /* font weight */
+  --w-normal: normal;
+  --w-bold: 700;
+}

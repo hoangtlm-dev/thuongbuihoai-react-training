@@ -1,0 +1,7 @@
+.expert-list {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1140px;
+  justify-content: space-between;
+  background-color: var(--light);
+}

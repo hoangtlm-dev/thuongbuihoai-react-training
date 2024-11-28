@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--dark);
+  padding: 35px 100px;
+}
+
+.footer-title {
+  color: var(--border-primary);
+  font-size: var(--f-normal);
+  text-align: end;
+  margin-top: 25px;
+}

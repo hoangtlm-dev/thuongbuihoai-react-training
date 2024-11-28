@@ -1,0 +1,25 @@
+.banner {
+  width: 100%;
+}
+
+.banner-image {
+  height: 480px;
+  filter: brightness(0.5);
+}
+
+.banner-image-filter {
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner-title {
+  position: absolute;
+  z-index: var(--z-sm);
+  left: 35%;
+  top: 45%;
+  color: var(--light);
+  font-size: var(--f-xlarge);
+  font-weight: var(--w-bold);
+  width: 450px;
+  text-align: center;
+}

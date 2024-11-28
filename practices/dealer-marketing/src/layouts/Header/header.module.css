@@ -1,0 +1,9 @@
+.header {
+  padding: 11px 100px;
+  background-color: var(--dark);
+}
+
+.header-contact {
+  display: flex;
+  flex-direction: row-reverse;
+}

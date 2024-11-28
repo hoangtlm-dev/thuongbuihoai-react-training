@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@api-backup/*": ["api-backup/*"],
+      "@self-types/*": ["types/*"],
+      "@components/*": ["components/*"],
+      "@common/*": ["components/common/*"],
+      "@pages/*": ["pages/*"],
+      "@constants/*": ["constants/*"],
+      "@layouts/*": ["layouts/*"],
+      "@sections/*": ["sections/*"],
+      "@context/*": ["context/*"],
+      "@helpers/*": ["helpers/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src",
+    "commitlint.config.js"
+  ],
+  "exclude": ["node_modules"],
+  "types": ["node", "jest", "@types/testing-library__jest-dom"]
+}

@@ -1,0 +1,18 @@
+.blog-list {
+  position: relative;
+  z-index: var(--z-tiny);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1140px;
+  min-height: 600px;
+}
+
+.blog-title {
+  position: absolute;
+  z-index: var(--z-sm);
+  top: 40%;
+  left: 40%;
+  text-align: center;
+}
